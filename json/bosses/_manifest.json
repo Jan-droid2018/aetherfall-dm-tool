@@ -1,0 +1,870 @@
+{
+  "schema_version": "aetherfall.bosses.v1",
+  "generated_from": [
+    "Bosse - Gigas Shadow - Der schwarze Koloss.md",
+    "Index - Bosse HG 10.md",
+    "Bosse - Knochenvogt - Der gebundene Torhüter.md",
+    "Bosse - Schwelzahn - Der Aschenjäger.md",
+    "Index - Bosse HG 12.md",
+    "Bosse - Klappergardist - Der Stahlwirbel.md",
+    "Bosse - Stammwall - Der Schneisenbrecher.md",
+    "Bosse - Steinkern - Der ungebrochene Runenwart.md",
+    "Bosse - Gewittergrat - Der Fjordbrecher.md",
+    "Index - Bosse HG 13.md",
+    "Bosse - Klagglas - Der Scherbenchor.md",
+    "Bosse - Grauharnisch - Der letzte Wachhauptmann.md",
+    "Index - Bosse HG 14.md",
+    "Bosse - Klingensturz - Die Kronenjägerin.md",
+    "Bosse - Reifbrecher - Der Gletscherhetzer.md",
+    "Bosse - Trugstern - Der wandernde Irrschein.md",
+    "Index - Bosse HG 15.md",
+    "Bosse - Sturmkranz - Dämmergreif.md",
+    "Index - Bosse HG 16.md",
+    "Bosse - Kronenwall - Der versiegelte Koloss.md",
+    "Index - Bosse HG 20.md",
+    "Bosse - Vielgestalt-Mimik.md",
+    "Index - Bosse HG 3.md",
+    "Bosse - Moosgrat - Der alte Nestpanzer.md",
+    "Index - Bosse HG 4.md",
+    "Bosse - Mahlzahn - Der Speicherbrecher.md",
+    "Index - Bosse HG 5.md",
+    "Bosse - Risskamm - Der Unterwegbrecher.md",
+    "Bosse - Dornkranz - Der Pfadfänger.md",
+    "Bosse - Glutkrone - Die Aschenmatriarchin.md",
+    "Index - Bosse HG 6.md",
+    "Boss - Rostfaust - Der Wegabschneider.md",
+    "Bosse - Schleiermaul - Der Tiefenlauerer.md",
+    "Bosse - Böenfang - Der Windhetzer.md",
+    "Index - Bosse HG 7.md",
+    "Bosse - Scherbenzahn - Der Schattenhauptmann.md",
+    "Index - Bosse HG 8.md",
+    "Bosse - Rotwurz - Der Aderjäger.md",
+    "Bosse - Schieferkamm - Der Geröllbrecher.md",
+    "Index - Bosse HG 9.md",
+    "Bosse - Kryptenfang - Der letzte Wachhund.md",
+    "Bosse - Sogzahn – Der Uferjäger.md",
+    "Index - Bosse HG 90.md",
+    "Bosse - Roxas - Prüfung des Königsanhängers.md",
+    "Index - Bosse HG 94.md",
+    "Bosse - Omega und Omega Aionios.md",
+    "Index - Bosse HG 95.md",
+    "Bosse - Sephiroth - One-Winged Angel.md",
+    "Index - Bosse HG 97.md",
+    "Bosse - Silberwolf und Silberwolf St. 999.md",
+    "Index - Bosse.md"
+  ],
+  "boss_count": 32,
+  "bosses": [
+    {
+      "id": "gigas-shadow-der-schwarze-koloss",
+      "name": "Gigas Shadow – Der schwarze Koloss",
+      "source_file": "Bosse - Gigas Shadow - Der schwarze Koloss.md",
+      "json_file": "gigas-shadow-der-schwarze-koloss.json",
+      "challenge_rating": 10,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 8,
+      "actions_by_level": {
+        "1": 8,
+        "5": 8,
+        "10": 8,
+        "15": 8,
+        "20": 8,
+        "25": 8,
+        "30": 8,
+        "35": 8,
+        "40": 8
+      }
+    },
+    {
+      "id": "knochenvogt-der-gebundene-torhueter",
+      "name": "Knochenvogt – Der gebundene Torhüter",
+      "source_file": "Bosse - Knochenvogt - Der gebundene Torhüter.md",
+      "json_file": "knochenvogt-der-gebundene-torhueter.json",
+      "challenge_rating": 10,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 8,
+      "actions_by_level": {
+        "1": 8,
+        "5": 8,
+        "10": 8,
+        "15": 8,
+        "20": 8,
+        "25": 8,
+        "30": 8,
+        "35": 8,
+        "40": 8
+      }
+    },
+    {
+      "id": "schwelzahn-der-aschenjaeger",
+      "name": "Schwelzahn – Der Aschenjäger",
+      "source_file": "Bosse - Schwelzahn - Der Aschenjäger.md",
+      "json_file": "schwelzahn-der-aschenjaeger.json",
+      "challenge_rating": 10,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 8,
+      "actions_by_level": {
+        "1": 8,
+        "5": 8,
+        "10": 8,
+        "15": 8,
+        "20": 8,
+        "25": 8,
+        "30": 8,
+        "35": 8,
+        "40": 8
+      }
+    },
+    {
+      "id": "klappergardist-der-stahlwirbel",
+      "name": "Klappergardist – Der Stahlwirbel",
+      "source_file": "Bosse - Klappergardist - Der Stahlwirbel.md",
+      "json_file": "klappergardist-der-stahlwirbel.json",
+      "challenge_rating": 12,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 8,
+      "actions_by_level": {
+        "1": 8,
+        "5": 8,
+        "10": 8,
+        "15": 8,
+        "20": 8,
+        "25": 8,
+        "30": 8,
+        "35": 8,
+        "40": 8
+      }
+    },
+    {
+      "id": "stammwall-der-schneisenbrecher",
+      "name": "Stammwall – Der Schneisenbrecher",
+      "source_file": "Bosse - Stammwall - Der Schneisenbrecher.md",
+      "json_file": "stammwall-der-schneisenbrecher.json",
+      "challenge_rating": 12,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 8,
+      "actions_by_level": {
+        "1": 8,
+        "5": 8,
+        "10": 8,
+        "15": 8,
+        "20": 8,
+        "25": 8,
+        "30": 8,
+        "35": 8,
+        "40": 8
+      }
+    },
+    {
+      "id": "steinkern-der-ungebrochene-runenwart",
+      "name": "Steinkern – Der ungebrochene Runenwart",
+      "source_file": "Bosse - Steinkern - Der ungebrochene Runenwart.md",
+      "json_file": "steinkern-der-ungebrochene-runenwart.json",
+      "challenge_rating": 12,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 8,
+      "actions_by_level": {
+        "1": 8,
+        "5": 8,
+        "10": 8,
+        "15": 8,
+        "20": 8,
+        "25": 8,
+        "30": 8,
+        "35": 8,
+        "40": 8
+      }
+    },
+    {
+      "id": "gewittergrat-der-fjordbrecher",
+      "name": "Gewittergrat – Der Fjordbrecher",
+      "source_file": "Bosse - Gewittergrat - Der Fjordbrecher.md",
+      "json_file": "gewittergrat-der-fjordbrecher.json",
+      "challenge_rating": 13,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 8,
+      "actions_by_level": {
+        "1": 8,
+        "5": 8,
+        "10": 8,
+        "15": 8,
+        "20": 8,
+        "25": 8,
+        "30": 8,
+        "35": 8,
+        "40": 8
+      }
+    },
+    {
+      "id": "klagglas-der-scherbenchor",
+      "name": "Klagglas – Der Scherbenchor",
+      "source_file": "Bosse - Klagglas - Der Scherbenchor.md",
+      "json_file": "klagglas-der-scherbenchor.json",
+      "challenge_rating": 13,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 8,
+      "actions_by_level": {
+        "1": 8,
+        "5": 8,
+        "10": 8,
+        "15": 8,
+        "20": 8,
+        "25": 8,
+        "30": 8,
+        "35": 8,
+        "40": 8
+      }
+    },
+    {
+      "id": "grauharnisch-der-letzte-wachhauptmann",
+      "name": "Grauharnisch – Der letzte Wachhauptmann",
+      "source_file": "Bosse - Grauharnisch - Der letzte Wachhauptmann.md",
+      "json_file": "grauharnisch-der-letzte-wachhauptmann.json",
+      "challenge_rating": 14,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 10,
+      "actions_by_level": {
+        "1": 10,
+        "5": 10,
+        "10": 10,
+        "15": 10,
+        "20": 10,
+        "25": 10,
+        "30": 10,
+        "35": 10,
+        "40": 10
+      }
+    },
+    {
+      "id": "klingensturz-die-kronenjaegerin",
+      "name": "Klingensturz – Die Kronenjägerin",
+      "source_file": "Bosse - Klingensturz - Die Kronenjägerin.md",
+      "json_file": "klingensturz-die-kronenjaegerin.json",
+      "challenge_rating": 14,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 8,
+      "actions_by_level": {
+        "1": 8,
+        "5": 8,
+        "10": 8,
+        "15": 8,
+        "20": 8,
+        "25": 8,
+        "30": 8,
+        "35": 8,
+        "40": 8
+      }
+    },
+    {
+      "id": "reifbrecher-der-gletscherhetzer",
+      "name": "Reifbrecher – Der Gletscherhetzer",
+      "source_file": "Bosse - Reifbrecher - Der Gletscherhetzer.md",
+      "json_file": "reifbrecher-der-gletscherhetzer.json",
+      "challenge_rating": 14,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 8,
+      "actions_by_level": {
+        "1": 8,
+        "5": 8,
+        "10": 8,
+        "15": 8,
+        "20": 8,
+        "25": 8,
+        "30": 8,
+        "35": 8,
+        "40": 8
+      }
+    },
+    {
+      "id": "trugstern-der-wandernde-irrschein",
+      "name": "Trugstern – Der wandernde Irrschein",
+      "source_file": "Bosse - Trugstern - Der wandernde Irrschein.md",
+      "json_file": "trugstern-der-wandernde-irrschein.json",
+      "challenge_rating": 14,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 8,
+      "actions_by_level": {
+        "1": 8,
+        "5": 8,
+        "10": 8,
+        "15": 8,
+        "20": 8,
+        "25": 8,
+        "30": 8,
+        "35": 8,
+        "40": 8
+      }
+    },
+    {
+      "id": "sturmkranz-daemmergreif",
+      "name": "Sturmkranz-Dämmergreif",
+      "source_file": "Bosse - Sturmkranz - Dämmergreif.md",
+      "json_file": "sturmkranz-daemmergreif.json",
+      "challenge_rating": 15,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 8,
+      "actions_by_level": {
+        "1": 8,
+        "5": 8,
+        "10": 8,
+        "15": 8,
+        "20": 8,
+        "25": 8,
+        "30": 8,
+        "35": 8,
+        "40": 8
+      }
+    },
+    {
+      "id": "kronenwall-der-versiegelte-koloss",
+      "name": "Kronenwall – Der versiegelte Koloss",
+      "source_file": "Bosse - Kronenwall - Der versiegelte Koloss.md",
+      "json_file": "kronenwall-der-versiegelte-koloss.json",
+      "challenge_rating": 16,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 9,
+      "actions_by_level": {
+        "1": 9,
+        "5": 9,
+        "10": 9,
+        "15": 9,
+        "20": 9,
+        "25": 9,
+        "30": 9,
+        "35": 9,
+        "40": 9
+      }
+    },
+    {
+      "id": "vielgestalt-mimik",
+      "name": "Vielgestalt-Mimik",
+      "source_file": "Bosse - Vielgestalt-Mimik.md",
+      "json_file": "vielgestalt-mimik.json",
+      "challenge_rating": 20,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 8,
+      "actions_by_level": {
+        "1": 8,
+        "5": 8,
+        "10": 8,
+        "15": 8,
+        "20": 8,
+        "25": 8,
+        "30": 8,
+        "35": 8,
+        "40": 8
+      }
+    },
+    {
+      "id": "moosgrat-der-alte-nestpanzer",
+      "name": "Moosgrat – Der alte Nestpanzer",
+      "source_file": "Bosse - Moosgrat - Der alte Nestpanzer.md",
+      "json_file": "moosgrat-der-alte-nestpanzer.json",
+      "challenge_rating": 3,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 8,
+      "actions_by_level": {
+        "1": 8,
+        "5": 8,
+        "10": 8,
+        "15": 8,
+        "20": 8,
+        "25": 8,
+        "30": 8,
+        "35": 8,
+        "40": 8
+      }
+    },
+    {
+      "id": "mahlzahn-der-speicherbrecher",
+      "name": "Mahlzahn – Der Speicherbrecher",
+      "source_file": "Bosse - Mahlzahn - Der Speicherbrecher.md",
+      "json_file": "mahlzahn-der-speicherbrecher.json",
+      "challenge_rating": 4,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 7,
+      "actions_by_level": {
+        "1": 7,
+        "5": 7,
+        "10": 7,
+        "15": 7,
+        "20": 7,
+        "25": 7,
+        "30": 7,
+        "35": 7,
+        "40": 7
+      }
+    },
+    {
+      "id": "risskamm-der-unterwegbrecher",
+      "name": "Risskamm – Der Unterwegbrecher",
+      "source_file": "Bosse - Risskamm - Der Unterwegbrecher.md",
+      "json_file": "risskamm-der-unterwegbrecher.json",
+      "challenge_rating": 5,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 7,
+      "actions_by_level": {
+        "1": 7,
+        "5": 7,
+        "10": 7,
+        "15": 7,
+        "20": 7,
+        "25": 7,
+        "30": 7,
+        "35": 7,
+        "40": 7
+      }
+    },
+    {
+      "id": "dornkranz-der-pfadfaenger",
+      "name": "Dornkranz – Der Pfadfänger",
+      "source_file": "Bosse - Dornkranz - Der Pfadfänger.md",
+      "json_file": "dornkranz-der-pfadfaenger.json",
+      "challenge_rating": 6,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 8,
+      "actions_by_level": {
+        "1": 8,
+        "5": 8,
+        "10": 8,
+        "15": 8,
+        "20": 8,
+        "25": 8,
+        "30": 8,
+        "35": 8,
+        "40": 8
+      }
+    },
+    {
+      "id": "glutkrone-die-aschenmatriarchin",
+      "name": "Glutkrone – Die Aschenmatriarchin",
+      "source_file": "Bosse - Glutkrone - Die Aschenmatriarchin.md",
+      "json_file": "glutkrone-die-aschenmatriarchin.json",
+      "challenge_rating": 6,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 7,
+      "actions_by_level": {
+        "1": 7,
+        "5": 7,
+        "10": 7,
+        "15": 7,
+        "20": 7,
+        "25": 7,
+        "30": 7,
+        "35": 7,
+        "40": 7
+      }
+    },
+    {
+      "id": "rostfaust-der-wegabschneider",
+      "name": "Rostfaust – Der Wegabschneider",
+      "source_file": "Boss - Rostfaust - Der Wegabschneider.md",
+      "json_file": "rostfaust-der-wegabschneider.json",
+      "challenge_rating": 6,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 8,
+      "actions_by_level": {
+        "1": 8,
+        "5": 8,
+        "10": 8,
+        "15": 8,
+        "20": 8,
+        "25": 8,
+        "30": 8,
+        "35": 8,
+        "40": 8
+      }
+    },
+    {
+      "id": "schleiermaul-der-tiefenlauerer",
+      "name": "Schleiermaul – Der Tiefenlauerer",
+      "source_file": "Bosse - Schleiermaul - Der Tiefenlauerer.md",
+      "json_file": "schleiermaul-der-tiefenlauerer.json",
+      "challenge_rating": 6,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 8,
+      "actions_by_level": {
+        "1": 8,
+        "5": 8,
+        "10": 8,
+        "15": 8,
+        "20": 8,
+        "25": 8,
+        "30": 8,
+        "35": 8,
+        "40": 8
+      }
+    },
+    {
+      "id": "boeenfang-der-windhetzer",
+      "name": "Böenfang – Der Windhetzer",
+      "source_file": "Bosse - Böenfang - Der Windhetzer.md",
+      "json_file": "boeenfang-der-windhetzer.json",
+      "challenge_rating": 7,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 8,
+      "actions_by_level": {
+        "1": 8,
+        "5": 8,
+        "10": 8,
+        "15": 8,
+        "20": 8,
+        "25": 8,
+        "30": 8,
+        "35": 8,
+        "40": 8
+      }
+    },
+    {
+      "id": "scherbenzahn-der-schattenhauptmann",
+      "name": "Scherbenzahn – Der Schattenhauptmann",
+      "source_file": "Bosse - Scherbenzahn - Der Schattenhauptmann.md",
+      "json_file": "scherbenzahn-der-schattenhauptmann.json",
+      "challenge_rating": 7,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 8,
+      "actions_by_level": {
+        "1": 8,
+        "5": 8,
+        "10": 8,
+        "15": 8,
+        "20": 8,
+        "25": 8,
+        "30": 8,
+        "35": 8,
+        "40": 8
+      }
+    },
+    {
+      "id": "rotwurz-der-aderjaeger",
+      "name": "Rotwurz – Der Aderjäger",
+      "source_file": "Bosse - Rotwurz - Der Aderjäger.md",
+      "json_file": "rotwurz-der-aderjaeger.json",
+      "challenge_rating": 8,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 9,
+      "actions_by_level": {
+        "1": 9,
+        "5": 9,
+        "10": 9,
+        "15": 9,
+        "20": 9,
+        "25": 9,
+        "30": 9,
+        "35": 9,
+        "40": 9
+      }
+    },
+    {
+      "id": "schieferkamm-der-geroellbrecher",
+      "name": "Schieferkamm – Der Geröllbrecher",
+      "source_file": "Bosse - Schieferkamm - Der Geröllbrecher.md",
+      "json_file": "schieferkamm-der-geroellbrecher.json",
+      "challenge_rating": 8,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 8,
+      "actions_by_level": {
+        "1": 8,
+        "5": 8,
+        "10": 8,
+        "15": 8,
+        "20": 8,
+        "25": 8,
+        "30": 8,
+        "35": 8,
+        "40": 8
+      }
+    },
+    {
+      "id": "kryptenfang-der-letzte-wachhund",
+      "name": "Kryptenfang – Der letzte Wachhund",
+      "source_file": "Bosse - Kryptenfang - Der letzte Wachhund.md",
+      "json_file": "kryptenfang-der-letzte-wachhund.json",
+      "challenge_rating": 9,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 8,
+      "actions_by_level": {
+        "1": 8,
+        "5": 8,
+        "10": 8,
+        "15": 8,
+        "20": 8,
+        "25": 8,
+        "30": 8,
+        "35": 8,
+        "40": 8
+      }
+    },
+    {
+      "id": "sogzahn-der-uferjaeger",
+      "name": "Sogzahn – Der Uferjäger",
+      "source_file": "Bosse - Sogzahn – Der Uferjäger.md",
+      "json_file": "sogzahn-der-uferjaeger.json",
+      "challenge_rating": 9,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 8,
+      "actions_by_level": {
+        "1": 8,
+        "5": 8,
+        "10": 8,
+        "15": 8,
+        "20": 8,
+        "25": 8,
+        "30": 8,
+        "35": 8,
+        "40": 8
+      }
+    },
+    {
+      "id": "roxas-pruefung-des-koenigsanhaengers",
+      "name": "Roxas – Prüfung des Königsanhängers",
+      "source_file": "Bosse - Roxas - Prüfung des Königsanhängers.md",
+      "json_file": "roxas-pruefung-des-koenigsanhaengers.json",
+      "challenge_rating": 90,
+      "phase_count": 3,
+      "level_count": 9,
+      "action_overview_count": 15,
+      "actions_by_level": {
+        "1": 15,
+        "5": 15,
+        "10": 15,
+        "15": 15,
+        "20": 15,
+        "25": 15,
+        "30": 15,
+        "35": 15,
+        "40": 15
+      }
+    },
+    {
+      "id": "omega-omega-aionios",
+      "name": "Omega / Omega Aionios",
+      "source_file": "Bosse - Omega und Omega Aionios.md",
+      "json_file": "omega-omega-aionios.json",
+      "challenge_rating": 94,
+      "phase_count": 3,
+      "level_count": 9,
+      "action_overview_count": 20,
+      "actions_by_level": {
+        "1": 20,
+        "5": 20,
+        "10": 20,
+        "15": 20,
+        "20": 20,
+        "25": 20,
+        "30": 20,
+        "35": 20,
+        "40": 20
+      }
+    },
+    {
+      "id": "sephiroth",
+      "name": "Sephiroth",
+      "source_file": "Bosse - Sephiroth - One-Winged Angel.md",
+      "json_file": "sephiroth.json",
+      "challenge_rating": 95,
+      "phase_count": 3,
+      "level_count": 9,
+      "action_overview_count": 18,
+      "actions_by_level": {
+        "1": 18,
+        "5": 18,
+        "10": 18,
+        "15": 18,
+        "20": 18,
+        "25": 18,
+        "30": 18,
+        "35": 18,
+        "40": 18
+      }
+    },
+    {
+      "id": "silberwolf-silberwolf-st-999",
+      "name": "Silberwolf / Silberwolf St. 999",
+      "source_file": "Bosse - Silberwolf und Silberwolf St. 999.md",
+      "json_file": "silberwolf-silberwolf-st-999.json",
+      "challenge_rating": 97,
+      "phase_count": 2,
+      "level_count": 9,
+      "action_overview_count": 20,
+      "actions_by_level": {
+        "1": 20,
+        "5": 20,
+        "10": 20,
+        "15": 20,
+        "20": 20,
+        "25": 20,
+        "30": 20,
+        "35": 20,
+        "40": 20
+      }
+    }
+  ],
+  "warning_count": 29,
+  "warnings": [
+    {
+      "source_file": "Bosse - Gigas Shadow - Der schwarze Koloss.md",
+      "message": "Kampfoptionen in Kerndaten (7) weichen von Aktionsübersicht (8) ab.",
+      "line": 19,
+      "boss_name": "Gigas Shadow – Der schwarze Koloss"
+    },
+    {
+      "source_file": "Index - Bosse HG 10.md",
+      "message": "Keine Boss-H1 mit Kerndaten-Tabelle gefunden."
+    },
+    {
+      "source_file": "Index - Bosse HG 12.md",
+      "message": "Keine Boss-H1 mit Kerndaten-Tabelle gefunden."
+    },
+    {
+      "source_file": "Bosse - Klappergardist - Der Stahlwirbel.md",
+      "message": "Kampfoptionen in Kerndaten (6) weichen von Aktionsübersicht (8) ab.",
+      "line": 21,
+      "boss_name": "Klappergardist – Der Stahlwirbel"
+    },
+    {
+      "source_file": "Bosse - Gewittergrat - Der Fjordbrecher.md",
+      "message": "Kampfoptionen in Kerndaten (7) weichen von Aktionsübersicht (8) ab.",
+      "line": 33,
+      "boss_name": "Gewittergrat – Der Fjordbrecher"
+    },
+    {
+      "source_file": "Index - Bosse HG 13.md",
+      "message": "Keine Boss-H1 mit Kerndaten-Tabelle gefunden."
+    },
+    {
+      "source_file": "Index - Bosse HG 14.md",
+      "message": "Keine Boss-H1 mit Kerndaten-Tabelle gefunden."
+    },
+    {
+      "source_file": "Index - Bosse HG 15.md",
+      "message": "Keine Boss-H1 mit Kerndaten-Tabelle gefunden."
+    },
+    {
+      "source_file": "Index - Bosse HG 16.md",
+      "message": "Keine Boss-H1 mit Kerndaten-Tabelle gefunden."
+    },
+    {
+      "source_file": "Index - Bosse HG 20.md",
+      "message": "Keine Boss-H1 mit Kerndaten-Tabelle gefunden."
+    },
+    {
+      "source_file": "Index - Bosse HG 3.md",
+      "message": "Keine Boss-H1 mit Kerndaten-Tabelle gefunden."
+    },
+    {
+      "source_file": "Bosse - Moosgrat - Der alte Nestpanzer.md",
+      "message": "Kampfoptionen in Kerndaten (7) weichen von Aktionsübersicht (8) ab.",
+      "line": 14,
+      "boss_name": "Moosgrat – Der alte Nestpanzer"
+    },
+    {
+      "source_file": "Index - Bosse HG 4.md",
+      "message": "Keine Boss-H1 mit Kerndaten-Tabelle gefunden."
+    },
+    {
+      "source_file": "Bosse - Mahlzahn - Der Speicherbrecher.md",
+      "message": "Kampfoptionen in Kerndaten (6) weichen von Aktionsübersicht (7) ab.",
+      "line": 17,
+      "boss_name": "Mahlzahn – Der Speicherbrecher"
+    },
+    {
+      "source_file": "Index - Bosse HG 5.md",
+      "message": "Keine Boss-H1 mit Kerndaten-Tabelle gefunden."
+    },
+    {
+      "source_file": "Index - Bosse HG 6.md",
+      "message": "Keine Boss-H1 mit Kerndaten-Tabelle gefunden."
+    },
+    {
+      "source_file": "Boss - Rostfaust - Der Wegabschneider.md",
+      "message": "Kampfoptionen in Kerndaten (7) weichen von Aktionsübersicht (8) ab.",
+      "line": 16,
+      "boss_name": "Rostfaust – Der Wegabschneider"
+    },
+    {
+      "source_file": "Bosse - Schleiermaul - Der Tiefenlauerer.md",
+      "message": "Kampfoptionen in Kerndaten (7) weichen von Aktionsübersicht (8) ab.",
+      "line": 17,
+      "boss_name": "Schleiermaul – Der Tiefenlauerer"
+    },
+    {
+      "source_file": "Bosse - Böenfang - Der Windhetzer.md",
+      "message": "Kampfoptionen in Kerndaten (7) weichen von Aktionsübersicht (8) ab.",
+      "line": 19,
+      "boss_name": "Böenfang – Der Windhetzer"
+    },
+    {
+      "source_file": "Index - Bosse HG 7.md",
+      "message": "Keine Boss-H1 mit Kerndaten-Tabelle gefunden."
+    },
+    {
+      "source_file": "Bosse - Scherbenzahn - Der Schattenhauptmann.md",
+      "message": "Kampfoptionen in Kerndaten (7) weichen von Aktionsübersicht (8) ab.",
+      "line": 17,
+      "boss_name": "Scherbenzahn – Der Schattenhauptmann"
+    },
+    {
+      "source_file": "Index - Bosse HG 8.md",
+      "message": "Keine Boss-H1 mit Kerndaten-Tabelle gefunden."
+    },
+    {
+      "source_file": "Bosse - Schieferkamm - Der Geröllbrecher.md",
+      "message": "Kampfoptionen in Kerndaten (7) weichen von Aktionsübersicht (8) ab.",
+      "line": 18,
+      "boss_name": "Schieferkamm – Der Geröllbrecher"
+    },
+    {
+      "source_file": "Index - Bosse HG 9.md",
+      "message": "Keine Boss-H1 mit Kerndaten-Tabelle gefunden."
+    },
+    {
+      "source_file": "Index - Bosse HG 90.md",
+      "message": "Keine Boss-H1 mit Kerndaten-Tabelle gefunden."
+    },
+    {
+      "source_file": "Index - Bosse HG 94.md",
+      "message": "Keine Boss-H1 mit Kerndaten-Tabelle gefunden."
+    },
+    {
+      "source_file": "Index - Bosse HG 95.md",
+      "message": "Keine Boss-H1 mit Kerndaten-Tabelle gefunden."
+    },
+    {
+      "source_file": "Index - Bosse HG 97.md",
+      "message": "Keine Boss-H1 mit Kerndaten-Tabelle gefunden."
+    },
+    {
+      "source_file": "Index - Bosse.md",
+      "message": "Keine Boss-H1 mit Kerndaten-Tabelle gefunden."
+    }
+  ]
+}

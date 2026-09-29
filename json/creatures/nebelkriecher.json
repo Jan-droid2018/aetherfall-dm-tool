@@ -1,0 +1,4567 @@
+{
+  "schema_version": "aetherfall.creatures.v1",
+  "id": "nebelkriecher",
+  "name": "Nebelkriecher",
+  "source_file": "Kreaturen - Nebelkriecher.md",
+  "core": {
+    "creature_type": "Bestie",
+    "classification": "Weltkreatur",
+    "origin": "Sylvarra – Nebelauen",
+    "occurrence": "Vor allem in den Mooren, flachen Seen, feuchten Waldsenken und überfluteten Tälern der Nebelauen; einzelne Populationen kommen auch in anderen dauerhaft feuchten Gebieten Sylvarras sowie entlang langsam fließender Gewässer vor.",
+    "challenge_rating": {
+      "raw": "3 – Sehr schwache / einfache Bedrohung",
+      "value": 3,
+      "label": "Sehr schwache / einfache Bedrohung"
+    },
+    "encounter_rank": "Standard",
+    "archetype": "Standard",
+    "elemental_affinity": "Keine feste Elementprägung",
+    "size": "Mittel; meist 1,1–1,5 m Körperlänge, flach gebaut und auf vier kräftigen Gliedmaßen laufend",
+    "intelligence": "Tierisch; geduldig, lernfähig, stark revier- und jagdorientiert",
+    "extra_fields": {},
+    "raw_fields": {
+      "Kreaturenart": "Bestie",
+      "Einordnung": "Weltkreatur",
+      "Ursprüngliche Herkunft": "Sylvarra – Nebelauen",
+      "Bekanntes Vorkommen": "Vor allem in den Mooren, flachen Seen, feuchten Waldsenken und überfluteten Tälern der Nebelauen; einzelne Populationen kommen auch in anderen dauerhaft feuchten Gebieten Sylvarras sowie entlang langsam fließender Gewässer vor.",
+      "Herausforderungsgrad": "**3 – Sehr schwache / einfache Bedrohung**",
+      "Begegnungsrang": "Standard",
+      "Archetyp": "Standard",
+      "Elementare Eigenschaft": "Keine feste Elementprägung",
+      "Größenordnung": "Mittel; meist 1,1–1,5 m Körperlänge, flach gebaut und auf vier kräftigen Gliedmaßen laufend",
+      "Intelligenzniveau": "Tierisch; geduldig, lernfähig, stark revier- und jagdorientiert"
+    },
+    "raw_table_markdown": "| Kerndaten | Angabe |\n|---|---|\n| Kreaturenart | Bestie |\n| Einordnung | Weltkreatur |\n| Ursprüngliche Herkunft | Sylvarra – Nebelauen |\n| Bekanntes Vorkommen | Vor allem in den Mooren, flachen Seen, feuchten Waldsenken und überfluteten Tälern der Nebelauen; einzelne Populationen kommen auch in anderen dauerhaft feuchten Gebieten Sylvarras sowie entlang langsam fließender Gewässer vor. |\n| Herausforderungsgrad | **3 – Sehr schwache / einfache Bedrohung** |\n| Begegnungsrang | Standard |\n| Archetyp | Standard |\n| Elementare Eigenschaft | Keine feste Elementprägung |\n| Größenordnung | Mittel; meist 1,1–1,5 m Körperlänge, flach gebaut und auf vier kräftigen Gliedmaßen laufend |\n| Intelligenzniveau | Tierisch; geduldig, lernfähig, stark revier- und jagdorientiert |"
+  },
+  "action_overview": {
+    "headers": [
+      "Nr.",
+      "Aktion",
+      "Typ",
+      "Grundfunktion"
+    ],
+    "actions": [
+      {
+        "number": 1,
+        "name": "Moorbiss",
+        "type": "Angriff",
+        "base_function": "Zuverlässiger Nahkampfangriff und normale Schadensoption.",
+        "id": "nebelkriecher-overview-a01-moorbiss",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "1",
+          "Aktion": "Moorbiss",
+          "Typ": "Angriff",
+          "Grundfunktion": "Zuverlässiger Nahkampfangriff und normale Schadensoption."
+        }
+      },
+      {
+        "number": 2,
+        "name": "Sumpfsprung",
+        "type": "Angriff / Bewegung",
+        "base_function": "Kurze Annäherung bis 3 m mit etwas geringerem Schaden.",
+        "id": "nebelkriecher-overview-a02-sumpfsprung",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "2",
+          "Aktion": "Sumpfsprung",
+          "Typ": "Angriff / Bewegung",
+          "Grundfunktion": "Kurze Annäherung bis 3 m mit etwas geringerem Schaden."
+        }
+      },
+      {
+        "number": 3,
+        "name": "Nebelhülle",
+        "type": "Defensive Aktion",
+        "base_function": "Dichte Eigenverhüllung; +2 auf den nächsten Ausweichwurf gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung.",
+        "id": "nebelkriecher-overview-a03-nebelhuelle",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "3",
+          "Aktion": "Nebelhülle",
+          "Typ": "Defensive Aktion",
+          "Grundfunktion": "Dichte Eigenverhüllung; +2 auf den nächsten Ausweichwurf gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung."
+        }
+      }
+    ]
+  },
+  "shared_action_details": [],
+  "lore_and_rules": [
+    {
+      "title": "Überblick",
+      "id": "ueberblick",
+      "markdown": "Der **Nebelkriecher** ist ein blasses amphibisches Raubtier der nördlichen **Nebelauen Sylvarras**. Er lebt dort, wo flaches Wasser, weicher Moorboden, dichtes Schilf und niedriger Nebel ineinander übergehen. Sein Körper ist niedrig, breit und dafür gebaut, nahezu lautlos zwischen Wasser und Land zu wechseln.\n\nEin einzelner Nebelkriecher ist kein übermächtiger Gegner. Seine Gefährlichkeit entsteht daraus, dass er **schlecht zu erkennen, sehr geduldig und im feuchten Gelände überraschend beweglich** ist. Er wartet häufig regungslos im Wasser, bis Beute nahe genug kommt, stößt sich dann mit den kräftigen Hintergliedmaßen vor und versucht, mit einem kurzen Biss oder Sprungangriff wieder Abstand zu gewinnen.\n\nSein auffälligstes Merkmal ist die Fähigkeit, den eigenen Körper für kurze Zeit in **dichten, kalten Nebel** zu hüllen. Dieser Nebel ist keine vollwertige Zaubermagie. Mehrere Hautdrüsen und Luftsäcke verdampfen gespeicherte Feuchtigkeit in einem feinen, kalten Ausstoß. Im ohnehin feuchten Klima der Nebelauen entsteht dadurch für wenige Augenblicke eine kompakte weiße Hülle, welche die Konturen des Tieres verschwimmen lässt.\n\nFür frühe Abenteurergruppen ist der Nebelkriecher damit ein Gegner, der erstmals deutlich macht, dass **Sicht, Gelände und Bewegung** Teil eines Kampfes sein können, ohne bereits komplexe Zustandsketten oder mächtige Magie einzuführen.",
+      "tables": [],
+      "source": {
+        "line_start": 33,
+        "line_end": 42
+      }
+    },
+    {
+      "title": "Erscheinungsbild und Anatomie",
+      "id": "erscheinungsbild-und-anatomie",
+      "markdown": "Der Nebelkriecher besitzt einen langen, flachen Rumpf mit breitem Brustkorb und einem leicht abgeplatteten Kopf. Die Haut ist **blassgrau, cremeweiß oder schwach bläulich** und wirkt im trockenen Zustand fast durchscheinend. Im Wasser nimmt sie einen matten Glanz an, der sie zwischen Nebel, Schlamm und heller Wasseroberfläche schwer erkennbar macht.\n\nSeine vier Gliedmaßen sind kräftig, aber nicht hoch. Die Vorderbeine enden in breiten, gespreizten Zehen mit kleinen Haftpolstern. Die Hinterbeine sind länger und muskulöser und dienen sowohl zum Schwimmen als auch zu kurzen, explosionsartigen Sprüngen.\n\nZwischen den Zehen liegen dünne Schwimmhäute. Auf festem, trockenem Boden wirken Nebelkriecher daher etwas schwerfällig. Auf nassem Untergrund, in Schlamm oder in flachem Wasser können sie dagegen abrupt beschleunigen.\n\nDer Kopf besitzt keine ausgeprägte Schnauze. Das Maul ist breit und mit mehreren Reihen kleiner, nach hinten gerichteter Zähne besetzt. Sie sind nicht dafür gemacht, Knochen zu brechen, sondern rutschige Beute festzuhalten.\n\nDie Augen sitzen leicht erhöht auf dem Schädel. Dadurch kann ein Nebelkriecher fast vollständig untertauchen und dennoch über die Wasseroberfläche sehen. Zusätzlich besitzt er druckempfindliche Sinnesfelder entlang von Kiefer, Hals und Flanken. Diese reagieren auf Bewegungen im Wasser und auf starke Bodenvibrationen.\n\nEntlang des Halses und der Flanken liegen kleine, kaum sichtbare **Feuchtigkeitsdrüsen und dehnbare Luftsäcke**. Werden sie gleichzeitig angespannt, wird gespeicherte Feuchtigkeit als extrem feines Aerosol ausgestoßen. In feuchter Umgebung kondensiert dieses Aerosol sofort zu einer dichten Nebelhülle.",
+      "tables": [],
+      "source": {
+        "line_start": 43,
+        "line_end": 56
+      }
+    },
+    {
+      "title": "Herkunft und Entstehung",
+      "id": "herkunft-und-entstehung",
+      "markdown": "Nebelkriecher gelten als natürliche Tierart der **Nebelauen**. Ihre Entstehung wird weder Eidryth noch einem bekannten künstlichen Eingriff zugeschrieben.\n\nDie Nebelauen bestehen aus Mooren, Seen, feuchten Wäldern und Tälern, in denen dichter Nebel ein beständiger Teil der Landschaft ist. Für ein Tier, das aus dem Hinterhalt jagt, bietet diese Umgebung einen erheblichen Selektionsvorteil: Wer seine Silhouette brechen und kurze Sichtfenster ausnutzen kann, kommt leichter an Beute heran und entgeht zugleich größeren Räubern.\n\nDie besondere Nebelerzeugung wird deshalb als extreme Anpassung an die ohnehin feuchte Umwelt verstanden. Ein Nebelkriecher kann in trockener Luft zwar noch Feuchtigkeit ausstoßen, doch die entstehende Hülle bleibt wesentlich dünner und zerfällt schneller.",
+      "tables": [],
+      "source": {
+        "line_start": 57,
+        "line_end": 64
+      }
+    },
+    {
+      "title": "Vorkommen und Lebensraum",
+      "id": "vorkommen-und-lebensraum",
+      "markdown": "Nebelkriecher bevorzugen Orte, an denen Wasser und Land keine klare Grenze bilden. Typische Lebensräume sind:\n\n- flache Moorseen,\n- überflutete Waldsenken,\n- Schilfgürtel,\n- langsam fließende Seitenarme,\n- nasse Wurzelflächen,\n- Torfgruben,\n- sumpfige Uferbereiche,\n- halb versunkene Ruinen,\n- feuchte Höhlen mit offenem Wasserzugang.\n\nBesonders häufig werden sie in abgelegenen Bereichen der Nebelauen angetroffen, die nicht dauerhaft über Stege erschlossen sind.\n\nEin Nebelkriecher benötigt keinen tiefen See. Bereits knietiefes Wasser genügt ihm, solange ausreichend Deckung und Nahrung vorhanden sind. Zum Ruhen gräbt er flache Mulden unter Wurzeln, zwischen Torfkanten oder unter umgestürzten Baumstämmen.",
+      "tables": [],
+      "source": {
+        "line_start": 65,
+        "line_end": 82
+      }
+    },
+    {
+      "title": "Verhalten und Lebensweise",
+      "id": "verhalten-und-lebensweise",
+      "markdown": "Nebelkriecher sind überwiegend in der Dämmerung und nachts aktiv. Bei dichtem Tagesnebel können sie jedoch auch am Tag jagen.\n\nSie leben meist **einzeln oder paarweise**. Während der Brutzeit kann ein Elternpaar mehrere Jungtiere in einem geschützten Wasserbereich dulden. Außerhalb dieser Zeit meiden erwachsene Tiere einander eher, wenn genügend Jagdraum vorhanden ist.\n\nIhre Nahrung besteht aus Fischen, großen Insekten, kleinen Sumpftieren, Wasservögeln, Amphibien und gelegentlich kleinen Säugetieren. Menschen gehören nicht zu ihrer bevorzugten Beute. Ein hungriger oder verletzter Nebelkriecher kann jedoch einzelne Reisende, Kinder, kleine Nutztiere oder erschöpfte Personen als mögliches Ziel betrachten.\n\nBei der Jagd bleibt das Tier oft minutenlang vollständig regungslos. Erst wenn sich ein Ziel in günstiger Entfernung befindet, folgt ein kurzer Angriff. Scheitert dieser, verfolgt der Nebelkriecher die Beute nicht unbegrenzt. Er zieht sich bevorzugt in Wasser, Schilf oder Nebel zurück und wartet auf eine neue Gelegenheit.",
+      "tables": [],
+      "source": {
+        "line_start": 83,
+        "line_end": 92
+      }
+    },
+    {
+      "title": "Spuren und Vorzeichen",
+      "id": "spuren-und-vorzeichen",
+      "markdown": "Typische Hinweise auf einen Nebelkriecher sind:\n\n- breite, vierzehige Abdrücke im weichen Schlamm,\n- kurze Schleifspuren des Bauches zwischen zwei Wasserstellen,\n- ungewöhnlich glatte Durchgänge im Schilf,\n- Fischreste mit vielen kleinen, parallelen Zahnspuren,\n- kreisförmige Wasserbewegungen ohne sichtbares Tier,\n- lokal dichter werdender Nebel auf sehr kleiner Fläche,\n- feuchte Abdrücke auf ansonsten trockeneren Wurzeln oder Steinen,\n- ein kurzes, tiefes Kehllaut-Klicken unmittelbar vor einem Sprung.\n\nEin einzelner Nebelfleck ist in den Nebelauen bedeutungslos. Wiederholt auftretende, **sehr kompakte Nebelballen knapp über dem Boden oder Wasser** können dagegen auf ein jagendes Tier hinweisen.",
+      "tables": [],
+      "source": {
+        "line_start": 93,
+        "line_end": 107
+      }
+    },
+    {
+      "title": "Beziehung zu Bewohnern und Kulturen",
+      "id": "beziehung-zu-bewohnern-und-kulturen",
+      "markdown": "Die Bewohner der Nebelauen betrachten Nebelkriecher als bekannte, aber ernst zu nehmende Wildtiere. Sie werden nicht als übernatürliches Omen behandelt.\n\nFischer und Torfstecher erkennen ihre Spuren meist schnell. An häufig genutzten Arbeitsstellen werden Schilfgürtel zurückgeschnitten und flache Wassergräben offengehalten, damit sich die Tiere nicht unbemerkt bis direkt an einen Steg heranschieben können.\n\nJäger verfolgen Nebelkriecher selten ohne Grund. Ihr Fleisch gilt als zäh und wenig wertvoll, während die feuchte Haut schnell verdirbt. Gelegentlich werden die Drüsen untersucht, aus denen der Nebel ausgestoßen wird, doch ihre Funktion lässt sich außerhalb eines lebenden Körpers nur schwer erhalten.\n\nIn Myrath und Silbermoor wird die Art vor allem als Beispiel dafür genannt, wie stark sich Tiere an die besonderen Bedingungen der Nebelauen angepasst haben.",
+      "tables": [],
+      "source": {
+        "line_start": 108,
+        "line_end": 117
+      }
+    },
+    {
+      "title": "Kampfverhalten",
+      "id": "kampfverhalten",
+      "markdown": "Ein Nebelkriecher beginnt eine Begegnung bevorzugt aus Deckung oder in flachem Wasser.\n\nSeine einfachste Angriffsform ist der **Moorbiss**. Dabei schnappt er mit dem breiten Kiefer nach einem nahen Ziel und zieht sofort den Kopf zurück.\n\nMit **Sumpfsprung** stößt er sich explosiv vom Boden oder aus dem Wasser ab, überwindet eine kurze Distanz und trifft das Ziel mit Körper und Kiefer. Der Angriff verursacht weniger direkten Schaden als der Moorbiss, enthält aber bereits die kurze Annäherung.\n\nDie **Nebelhülle** ist seine wichtigste defensive Option. Der Nebelkriecher opfert dafür eine Angriffsaktion, verhüllt seinen Körper kurzzeitig und erschwert einen einzelnen sichtbasierten Angriff aus größerer Entfernung.\n\nSinkt ein Nebelkriecher unter ungefähr **25 % seiner maximalen LP**, versucht er normalerweise, Wasser, dichtes Schilf oder Moornebel zu erreichen und zu fliehen. Er kämpft nur dann länger, wenn ein Gelege oder Jungtiere unmittelbar bedroht sind.",
+      "tables": [],
+      "source": {
+        "line_start": 118,
+        "line_end": 129
+      }
+    },
+    {
+      "title": "Taktik für den Game Master",
+      "id": "taktik-fuer-den-game-master",
+      "markdown": "- **Eröffnung:** Beginnt nach Möglichkeit im oder unmittelbar am Wasser und nutzt Gelände statt offenen Frontalangriff.\n- **Standarddruck:** Moorbiss ist die verlässlichste Schadensoption.\n- **Distanz schließen:** Sumpfsprung wird verwendet, wenn ein Ziel knapp außerhalb der Nahdistanz steht.\n- **Defensive:** Nebelhülle ist sinnvoll, wenn mehrere Fernkämpfer Sicht auf das Tier haben oder ein Rückzug vorbereitet wird.\n- **Gelände:** Im Wasser bleibt der Nebelkriecher mobil; auf trockenem offenen Boden verliert er einen großen Teil seiner Identität.\n- **Flucht:** Unter 25 % LP sucht er den nächsten glaubwürdigen Rückzugsweg.\n- **Gruppen:** Mehrere Nebelkriecher erhalten keine automatischen Rudelboni und koordinieren ihre Nebelhüllen nicht taktisch perfekt.",
+      "tables": [],
+      "source": {
+        "line_start": 130,
+        "line_end": 139
+      }
+    },
+    {
+      "title": "Mechanische Grundidentität",
+      "id": "mechanische-grundidentitaet",
+      "markdown": "**LP-Hauptattribut:** Stärke (ST) – der kräftige Rumpf, die massiven Hintergliedmaßen und die dichte Muskulatur bestimmen die körperliche Belastbarkeit.  \n**LP-Sekundärattribut:** Willenskraft (WI) – bildet Überlebensinstinkt und die Fähigkeit ab, trotz Verletzung kurze Jagd- und Fluchtimpulse aufrechtzuerhalten.  \n**Bonusprofil:** Beweglichkeit und Wahrnehmung bilden die wichtigsten aktiven Werte. Stärke trägt Biss, Sprung und Haltbarkeit; Intelligenz, Kreativität und Charisma bleiben niedrig.  \n**Offensivprofil:** Einfacher Nahkämpfer. Der Moorbiss liegt je nach Stufe ungefähr bei `0,48–0,53 GE` pro Aktion. Sumpfsprung verursacht geringeren direkten Schaden und bezahlt einen Teil seines Budgets für die kurze Annäherung.  \n**Defensivprofil:** **Standard.** Lebenspunkte und feste Verteidigung liegen im HG-3-Bereich unterhalb einer vollwertigen Standardkreatur. Die Nebelhülle ist keine passive Dauerverteidigung, sondern kostet eine Aktion.  \n**Bewegungsprofil:** Land 8 m; Schwimmen 12 m. Die hohe Schwimmbewegung ist anatomisch begründet und erzeugt keine zusätzliche freie Aktion.  \n**Elementprofil:** Keine feste Elementprägung. **10 % Resistenz gegen Wasser** durch den dauerhaft feuchten, amphibischen Körper und **10 % Verwundbarkeit gegen Feuer** durch empfindliche, austrocknende Haut.  \n**Aktionsanzahl:** 3 unterschiedliche Kampfoptionen.  \n**Phasenprofil:** Kein Phasenwechsel.",
+      "tables": [],
+      "source": {
+        "line_start": 140,
+        "line_end": 151
+      }
+    },
+    {
+      "title": "Elementare Besonderheiten",
+      "id": "elementare-besonderheiten",
+      "markdown": "- **Wasser – 10 % Resistenz:** Haut, Schleimschicht und Kreislauf sind an starke Feuchtigkeit, kaltes Wasser und wechselnden Wasserdruck angepasst. Wasserschaden wird nach den normalen Regeln um **10 % reduziert**.\n- **Feuer – 10 % Verwundbarkeit:** Starke Hitze beschädigt die dünne, feuchte Haut besonders schnell und lässt die schützende Schleimschicht austrocknen. Der Nebelkriecher erleidet **10 % zusätzlichen Feuerschaden**.\n\nDiese Eigenschaften sind **physiologische Anpassungen** und verleihen dem Nebelkriecher **keine feste Elementprägung**.",
+      "tables": [],
+      "source": {
+        "line_start": 152,
+        "line_end": 158
+      }
+    },
+    {
+      "title": "Aktionsübersicht",
+      "id": "aktionsuebersicht",
+      "markdown": "| Nr. | Aktion | Typ | Grundfunktion |\n|---:|---|---|---|\n| 1 | Moorbiss | Angriff | Zuverlässiger Nahkampfangriff und normale Schadensoption. |\n| 2 | Sumpfsprung | Angriff / Bewegung | Kurze Annäherung bis 3 m mit etwas geringerem Schaden. |\n| 3 | Nebelhülle | Defensive Aktion | Dichte Eigenverhüllung; +2 auf den nächsten Ausweichwurf gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung. |\n\n---",
+      "tables": [
+        {
+          "headers": [
+            "Nr.",
+            "Aktion",
+            "Typ",
+            "Grundfunktion"
+          ],
+          "rows": [
+            {
+              "Nr.": "1",
+              "Aktion": "Moorbiss",
+              "Typ": "Angriff",
+              "Grundfunktion": "Zuverlässiger Nahkampfangriff und normale Schadensoption."
+            },
+            {
+              "Nr.": "2",
+              "Aktion": "Sumpfsprung",
+              "Typ": "Angriff / Bewegung",
+              "Grundfunktion": "Kurze Annäherung bis 3 m mit etwas geringerem Schaden."
+            },
+            {
+              "Nr.": "3",
+              "Aktion": "Nebelhülle",
+              "Typ": "Defensive Aktion",
+              "Grundfunktion": "Dichte Eigenverhüllung; +2 auf den nächsten Ausweichwurf gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung."
+            }
+          ],
+          "raw_markdown": "| Nr. | Aktion | Typ | Grundfunktion |\n|---:|---|---|---|\n| 1 | Moorbiss | Angriff | Zuverlässiger Nahkampfangriff und normale Schadensoption. |\n| 2 | Sumpfsprung | Angriff / Bewegung | Kurze Annäherung bis 3 m mit etwas geringerem Schaden. |\n| 3 | Nebelhülle | Defensive Aktion | Dichte Eigenverhüllung; +2 auf den nächsten Ausweichwurf gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung. |"
+        }
+      ],
+      "source": {
+        "line_start": 159,
+        "line_end": 167
+      }
+    }
+  ],
+  "levels": [
+    {
+      "level": 1,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "135",
+          "physische_verteidigung": "7",
+          "magieverteidigung": "6",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 8 m; Schwimmen 12 m",
+          "nebelhuelle": "+2 auf den nächsten passenden Ausweichwurf"
+        },
+        "raw_fields": {
+          "Maximale LP": "135",
+          "Physische Verteidigung": "7",
+          "Magieverteidigung": "6",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 8 m; Schwimmen 12 m",
+          "Nebelhülle": "+2 auf den nächsten passenden Ausweichwurf"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+2) + ST-Bonus (+0)) × 10) + ((WI-Modifikator (+1) + WI-Bonus (+0)) × 5) + (1 × 10) = 135 LP",
+        "markdown": "`100 + ((ST-Modifikator (+2) + ST-Bonus (+0)) × 10) + ((WI-Modifikator (+1) + WI-Bonus (+0)) × 5) + (1 × 10) = 135 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Moorbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+4) + BW-Bonus (+4)",
+            "range_area": "Nah",
+            "damage_effect": "5W8 + ST-Mod. (+2) + ST-Bonus (+0)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "24,5",
+            "avg_hit_damage": "16,7",
+            "avg_expected_effect": "11,5",
+            "ge_share": "0,51",
+            "notes": null,
+            "avg_raw_damage_value": 24.5,
+            "avg_hit_damage_value": 16.7,
+            "ge_share_value": 0.51,
+            "id": "nebelkriecher-l01-a01-moorbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Moorbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+4) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "5W8 + ST-Mod. (+2) + ST-Bonus (+0)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "24,5",
+              "Ø Treffer-Endschaden": "16,7",
+              "Ø Erwartungswirkung": "11,5",
+              "GE-Anteil": "0,51",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Sumpfsprung",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Bewegung",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+4) + BW-Bonus (+4)",
+            "range_area": "Bis 3 m Annäherung + Nah",
+            "damage_effect": "4W8 + ST-Mod. (+2) + ST-Bonus (+0)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "20,0",
+            "avg_hit_damage": "12,1",
+            "avg_expected_effect": "8,3 Schaden + Bewegung",
+            "ge_share": "0,42 gesamt",
+            "notes": "Bewegung ist bereits Teil der Aktion.",
+            "avg_raw_damage_value": 20.0,
+            "avg_hit_damage_value": 12.1,
+            "id": "nebelkriecher-l01-a02-sumpfsprung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Sumpfsprung",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Bewegung",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+4) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Bis 3 m Annäherung + Nah",
+              "Schaden / Wirkung": "4W8 + ST-Mod. (+2) + ST-Bonus (+0)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "20,0",
+              "Ø Treffer-Endschaden": "12,1",
+              "Ø Erwartungswirkung": "8,3 Schaden + Bewegung",
+              "GE-Anteil": "0,42 gesamt",
+              "Zusatz": "Bewegung ist bereits Teil der Aktion."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Nebelhülle",
+            "cost": "1 Aktion",
+            "type": "defensive Aktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst / etwa 1 m körpernah",
+            "damage_effect": "+2 auf den nächsten passenden Ausweichwurf",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "defensiv",
+            "notes": "Nur gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung.",
+            "id": "nebelkriecher-l01-a03-nebelhuelle",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Nebelhülle",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Aktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst / etwa 1 m körpernah",
+              "Schaden / Wirkung": "+2 auf den nächsten passenden Ausweichwurf",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "defensiv",
+              "Zusatz": "Nur gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "nebelkriecher-l01-moorbiss",
+          "name": "Moorbiss",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+4) + BW-Bonus (+4)`",
+          "damage": "`5W8 + ST-Modifikator (+2) + ST-Bonus (+0)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Nebelkriecher schlägt den breiten Kiefer in das Ziel und zieht den Kopf unmittelbar wieder zurück. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er erzeugt **keine kostenlose Bewegung, keinen automatischen Folgetreffer und keine zusätzliche Kontrollwirkung**.",
+          "stacking": "Mehrere Nebelkriecher können dasselbe Ziel mit Moorbiss angreifen; jeder Angriff wird getrennt gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+4) + BW-Bonus (+4)`",
+            "Schaden": "`5W8 + ST-Modifikator (+2) + ST-Bonus (+0)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Nebelkriecher schlägt den breiten Kiefer in das Ziel und zieht den Kopf unmittelbar wieder zurück. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er erzeugt **keine kostenlose Bewegung, keinen automatischen Folgetreffer und keine zusätzliche Kontrollwirkung**.",
+            "Stapelung": "Mehrere Nebelkriecher können dasselbe Ziel mit Moorbiss angreifen; jeder Angriff wird getrennt gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 211,
+            "line_end": 222
+          }
+        },
+        {
+          "id": "nebelkriecher-l01-sumpfsprung",
+          "name": "Sumpfsprung",
+          "type": "Körperlicher Angriff / Bewegung",
+          "cost": "1 Aktion",
+          "requirement": "Das Ziel befindet sich zu Beginn der Aktion höchstens 3 m außerhalb der normalen Nahdistanz und zwischen Nebelkriecher und Ziel liegt ein begehbarer beziehungsweise durch den Sprung überwindbarer gerader Weg.",
+          "range": "Bis zu 3 m geradlinige Annäherung, danach Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+4) + BW-Bonus (+4)`",
+          "damage": "`4W8 + ST-Modifikator (+2) + ST-Bonus (+0)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Nebelkriecher stößt sich mit den Hinterbeinen ab, bewegt sich im Rahmen dieser Aktion bis zu **3 m geradlinig auf das Ziel zu** und führt anschließend genau einen Biss aus. Die Bewegung ist Bestandteil derselben Aktion und erzeugt **keine zusätzliche freie Bewegung nach dem Angriff**. Kann der Nebelkriecher das Ziel nach der Annäherung nicht in Nahdistanz erreichen, findet kein Angriff statt.",
+          "stacking": "Keine besondere Stapelwirkung. Mehrere Nebelkriecher handeln ihre Sprünge unabhängig voneinander ab.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Bewegung",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Das Ziel befindet sich zu Beginn der Aktion höchstens 3 m außerhalb der normalen Nahdistanz und zwischen Nebelkriecher und Ziel liegt ein begehbarer beziehungsweise durch den Sprung überwindbarer gerader Weg.",
+            "Reichweite": "Bis zu 3 m geradlinige Annäherung, danach Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+4) + BW-Bonus (+4)`",
+            "Schaden": "`4W8 + ST-Modifikator (+2) + ST-Bonus (+0)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Nebelkriecher stößt sich mit den Hinterbeinen ab, bewegt sich im Rahmen dieser Aktion bis zu **3 m geradlinig auf das Ziel zu** und führt anschließend genau einen Biss aus. Die Bewegung ist Bestandteil derselben Aktion und erzeugt **keine zusätzliche freie Bewegung nach dem Angriff**. Kann der Nebelkriecher das Ziel nach der Annäherung nicht in Nahdistanz erreichen, findet kein Angriff statt.",
+            "Stapelung": "Keine besondere Stapelwirkung. Mehrere Nebelkriecher handeln ihre Sprünge unabhängig voneinander ab."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 223,
+            "line_end": 235
+          }
+        },
+        {
+          "id": "nebelkriecher-l01-nebelhuelle",
+          "name": "Nebelhülle",
+          "type": "Defensive Aktion",
+          "cost": "1 Aktion",
+          "requirement": "Der Nebelkriecher muss atmen können und darf nicht vollständig ausgetrocknet sein.",
+          "target": "Selbst",
+          "area": "Körpernahe Nebelhülle; ungefähr 1 m um den eigenen Körper",
+          "rule_effect": "Der Nebelkriecher presst gespeicherte Feuchtigkeit durch Hautdrüsen aus und hüllt sich in dichten kalten Nebel. Gegen den **nächsten sichtbasierten Angriff**, dessen Angreifer beim Angriff **mehr als 2 m** vom Nebelkriecher entfernt ist, erhält der Nebelkriecher **+2 auf seinen Ausweichwurf**. Danach endet der Bonus sofort.",
+          "stacking": "Nebelhülle stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt eine noch bestehende Nebelhülle.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, spätestens zu Beginn des nächsten eigenen Zuges oder wenn eine Wirkung den Nebel vollständig zerstreut.",
+          "extra_fields": {
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis die Hülle vorzeitig endet",
+            "Einschränkung": "Angriffe aus höchstens 2 m Entfernung, Wirkungen ohne Sichtbezug und Flächeneffekte, die keinen Ausweichwurf gegen den Nebelkriecher verwenden, werden durch Nebelhülle nicht verändert. Die Aktion macht den Nebelkriecher nicht unsichtbar."
+          },
+          "raw_fields": {
+            "Typ": "Defensive Aktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Der Nebelkriecher muss atmen können und darf nicht vollständig ausgetrocknet sein.",
+            "Ziel": "Selbst",
+            "Fläche": "Körpernahe Nebelhülle; ungefähr 1 m um den eigenen Körper",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis die Hülle vorzeitig endet",
+            "Regelwirkung": "Der Nebelkriecher presst gespeicherte Feuchtigkeit durch Hautdrüsen aus und hüllt sich in dichten kalten Nebel. Gegen den **nächsten sichtbasierten Angriff**, dessen Angreifer beim Angriff **mehr als 2 m** vom Nebelkriecher entfernt ist, erhält der Nebelkriecher **+2 auf seinen Ausweichwurf**. Danach endet der Bonus sofort.",
+            "Einschränkung": "Angriffe aus höchstens 2 m Entfernung, Wirkungen ohne Sichtbezug und Flächeneffekte, die keinen Ausweichwurf gegen den Nebelkriecher verwenden, werden durch Nebelhülle nicht verändert. Die Aktion macht den Nebelkriecher nicht unsichtbar.",
+            "Stapelung": "Nebelhülle stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt eine noch bestehende Nebelhülle.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, spätestens zu Beginn des nächsten eigenen Zuges oder wenn eine Wirkung den Nebel vollständig zerstreut."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 236,
+            "line_end": 248
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**10 % Verwundbarkeit**",
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 168,
+        "line_end": 255
+      }
+    },
+    {
+      "level": 5,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "190",
+          "physische_verteidigung": "9",
+          "magieverteidigung": "8",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 8 m; Schwimmen 12 m",
+          "nebelhuelle": "+2 auf den nächsten passenden Ausweichwurf"
+        },
+        "raw_fields": {
+          "Maximale LP": "190",
+          "Physische Verteidigung": "9",
+          "Magieverteidigung": "8",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 8 m; Schwimmen 12 m",
+          "Nebelhülle": "+2 auf den nächsten passenden Ausweichwurf"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+2) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+1) + WI-Bonus (+1)) × 5) + (5 × 10) = 190 LP",
+        "markdown": "`100 + ((ST-Modifikator (+2) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+1) + WI-Bonus (+1)) × 5) + (5 × 10) = 190 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Moorbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+4) + BW-Bonus (+5)",
+            "range_area": "Nah",
+            "damage_effect": "6W8 + ST-Mod. (+2) + ST-Bonus (+1)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "30,0",
+            "avg_hit_damage": "21,2",
+            "avg_expected_effect": "14,6",
+            "ge_share": "0,53",
+            "notes": null,
+            "avg_raw_damage_value": 30.0,
+            "avg_hit_damage_value": 21.2,
+            "ge_share_value": 0.53,
+            "id": "nebelkriecher-l05-a01-moorbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Moorbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+4) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "6W8 + ST-Mod. (+2) + ST-Bonus (+1)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "30,0",
+              "Ø Treffer-Endschaden": "21,2",
+              "Ø Erwartungswirkung": "14,6",
+              "GE-Anteil": "0,53",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Sumpfsprung",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Bewegung",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+4) + BW-Bonus (+5)",
+            "range_area": "Bis 3 m Annäherung + Nah",
+            "damage_effect": "5W8 + ST-Mod. (+2) + ST-Bonus (+1)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "25,5",
+            "avg_hit_damage": "16,7",
+            "avg_expected_effect": "11,5 Schaden + Bewegung",
+            "ge_share": "0,47 gesamt",
+            "notes": "Bewegung ist bereits Teil der Aktion.",
+            "avg_raw_damage_value": 25.5,
+            "avg_hit_damage_value": 16.7,
+            "id": "nebelkriecher-l05-a02-sumpfsprung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Sumpfsprung",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Bewegung",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+4) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Bis 3 m Annäherung + Nah",
+              "Schaden / Wirkung": "5W8 + ST-Mod. (+2) + ST-Bonus (+1)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "25,5",
+              "Ø Treffer-Endschaden": "16,7",
+              "Ø Erwartungswirkung": "11,5 Schaden + Bewegung",
+              "GE-Anteil": "0,47 gesamt",
+              "Zusatz": "Bewegung ist bereits Teil der Aktion."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Nebelhülle",
+            "cost": "1 Aktion",
+            "type": "defensive Aktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst / etwa 1 m körpernah",
+            "damage_effect": "+2 auf den nächsten passenden Ausweichwurf",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "defensiv",
+            "notes": "Nur gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung.",
+            "id": "nebelkriecher-l05-a03-nebelhuelle",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Nebelhülle",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Aktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst / etwa 1 m körpernah",
+              "Schaden / Wirkung": "+2 auf den nächsten passenden Ausweichwurf",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "defensiv",
+              "Zusatz": "Nur gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "nebelkriecher-l05-moorbiss",
+          "name": "Moorbiss",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+4) + BW-Bonus (+5)`",
+          "damage": "`6W8 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Nebelkriecher schlägt den breiten Kiefer in das Ziel und zieht den Kopf unmittelbar wieder zurück. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er erzeugt **keine kostenlose Bewegung, keinen automatischen Folgetreffer und keine zusätzliche Kontrollwirkung**.",
+          "stacking": "Mehrere Nebelkriecher können dasselbe Ziel mit Moorbiss angreifen; jeder Angriff wird getrennt gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+4) + BW-Bonus (+5)`",
+            "Schaden": "`6W8 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Nebelkriecher schlägt den breiten Kiefer in das Ziel und zieht den Kopf unmittelbar wieder zurück. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er erzeugt **keine kostenlose Bewegung, keinen automatischen Folgetreffer und keine zusätzliche Kontrollwirkung**.",
+            "Stapelung": "Mehrere Nebelkriecher können dasselbe Ziel mit Moorbiss angreifen; jeder Angriff wird getrennt gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 299,
+            "line_end": 310
+          }
+        },
+        {
+          "id": "nebelkriecher-l05-sumpfsprung",
+          "name": "Sumpfsprung",
+          "type": "Körperlicher Angriff / Bewegung",
+          "cost": "1 Aktion",
+          "requirement": "Das Ziel befindet sich zu Beginn der Aktion höchstens 3 m außerhalb der normalen Nahdistanz und zwischen Nebelkriecher und Ziel liegt ein begehbarer beziehungsweise durch den Sprung überwindbarer gerader Weg.",
+          "range": "Bis zu 3 m geradlinige Annäherung, danach Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+4) + BW-Bonus (+5)`",
+          "damage": "`5W8 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Nebelkriecher stößt sich mit den Hinterbeinen ab, bewegt sich im Rahmen dieser Aktion bis zu **3 m geradlinig auf das Ziel zu** und führt anschließend genau einen Biss aus. Die Bewegung ist Bestandteil derselben Aktion und erzeugt **keine zusätzliche freie Bewegung nach dem Angriff**. Kann der Nebelkriecher das Ziel nach der Annäherung nicht in Nahdistanz erreichen, findet kein Angriff statt.",
+          "stacking": "Keine besondere Stapelwirkung. Mehrere Nebelkriecher handeln ihre Sprünge unabhängig voneinander ab.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Bewegung",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Das Ziel befindet sich zu Beginn der Aktion höchstens 3 m außerhalb der normalen Nahdistanz und zwischen Nebelkriecher und Ziel liegt ein begehbarer beziehungsweise durch den Sprung überwindbarer gerader Weg.",
+            "Reichweite": "Bis zu 3 m geradlinige Annäherung, danach Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+4) + BW-Bonus (+5)`",
+            "Schaden": "`5W8 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Nebelkriecher stößt sich mit den Hinterbeinen ab, bewegt sich im Rahmen dieser Aktion bis zu **3 m geradlinig auf das Ziel zu** und führt anschließend genau einen Biss aus. Die Bewegung ist Bestandteil derselben Aktion und erzeugt **keine zusätzliche freie Bewegung nach dem Angriff**. Kann der Nebelkriecher das Ziel nach der Annäherung nicht in Nahdistanz erreichen, findet kein Angriff statt.",
+            "Stapelung": "Keine besondere Stapelwirkung. Mehrere Nebelkriecher handeln ihre Sprünge unabhängig voneinander ab."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 311,
+            "line_end": 323
+          }
+        },
+        {
+          "id": "nebelkriecher-l05-nebelhuelle",
+          "name": "Nebelhülle",
+          "type": "Defensive Aktion",
+          "cost": "1 Aktion",
+          "requirement": "Der Nebelkriecher muss atmen können und darf nicht vollständig ausgetrocknet sein.",
+          "target": "Selbst",
+          "area": "Körpernahe Nebelhülle; ungefähr 1 m um den eigenen Körper",
+          "rule_effect": "Der Nebelkriecher presst gespeicherte Feuchtigkeit durch Hautdrüsen aus und hüllt sich in dichten kalten Nebel. Gegen den **nächsten sichtbasierten Angriff**, dessen Angreifer beim Angriff **mehr als 2 m** vom Nebelkriecher entfernt ist, erhält der Nebelkriecher **+2 auf seinen Ausweichwurf**. Danach endet der Bonus sofort.",
+          "stacking": "Nebelhülle stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt eine noch bestehende Nebelhülle.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, spätestens zu Beginn des nächsten eigenen Zuges oder wenn eine Wirkung den Nebel vollständig zerstreut.",
+          "extra_fields": {
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis die Hülle vorzeitig endet",
+            "Einschränkung": "Angriffe aus höchstens 2 m Entfernung, Wirkungen ohne Sichtbezug und Flächeneffekte, die keinen Ausweichwurf gegen den Nebelkriecher verwenden, werden durch Nebelhülle nicht verändert. Die Aktion macht den Nebelkriecher nicht unsichtbar."
+          },
+          "raw_fields": {
+            "Typ": "Defensive Aktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Der Nebelkriecher muss atmen können und darf nicht vollständig ausgetrocknet sein.",
+            "Ziel": "Selbst",
+            "Fläche": "Körpernahe Nebelhülle; ungefähr 1 m um den eigenen Körper",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis die Hülle vorzeitig endet",
+            "Regelwirkung": "Der Nebelkriecher presst gespeicherte Feuchtigkeit durch Hautdrüsen aus und hüllt sich in dichten kalten Nebel. Gegen den **nächsten sichtbasierten Angriff**, dessen Angreifer beim Angriff **mehr als 2 m** vom Nebelkriecher entfernt ist, erhält der Nebelkriecher **+2 auf seinen Ausweichwurf**. Danach endet der Bonus sofort.",
+            "Einschränkung": "Angriffe aus höchstens 2 m Entfernung, Wirkungen ohne Sichtbezug und Flächeneffekte, die keinen Ausweichwurf gegen den Nebelkriecher verwenden, werden durch Nebelhülle nicht verändert. Die Aktion macht den Nebelkriecher nicht unsichtbar.",
+            "Stapelung": "Nebelhülle stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt eine noch bestehende Nebelhülle.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, spätestens zu Beginn des nächsten eigenen Zuges oder wenn eine Wirkung den Nebel vollständig zerstreut."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 324,
+            "line_end": 336
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**10 % Verwundbarkeit**",
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 256,
+        "line_end": 343
+      }
+    },
+    {
+      "level": 10,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "265",
+          "physische_verteidigung": "11",
+          "magieverteidigung": "10",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 8 m; Schwimmen 12 m",
+          "nebelhuelle": "+2 auf den nächsten passenden Ausweichwurf"
+        },
+        "raw_fields": {
+          "Maximale LP": "265",
+          "Physische Verteidigung": "11",
+          "Magieverteidigung": "10",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 8 m; Schwimmen 12 m",
+          "Nebelhülle": "+2 auf den nächsten passenden Ausweichwurf"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+3) + ST-Bonus (+2)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+1)) × 5) + (10 × 10) = 265 LP",
+        "markdown": "`100 + ((ST-Modifikator (+3) + ST-Bonus (+2)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+1)) × 5) + (10 × 10) = 265 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Moorbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+            "range_area": "Nah",
+            "damage_effect": "7W8 + ST-Mod. (+3) + ST-Bonus (+2)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "36,5",
+            "avg_hit_damage": "25,8",
+            "avg_expected_effect": "17,7",
+            "ge_share": "0,52",
+            "notes": null,
+            "avg_raw_damage_value": 36.5,
+            "avg_hit_damage_value": 25.8,
+            "ge_share_value": 0.52,
+            "id": "nebelkriecher-l10-a01-moorbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Moorbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "7W8 + ST-Mod. (+3) + ST-Bonus (+2)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "36,5",
+              "Ø Treffer-Endschaden": "25,8",
+              "Ø Erwartungswirkung": "17,7",
+              "GE-Anteil": "0,52",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Sumpfsprung",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Bewegung",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+            "range_area": "Bis 3 m Annäherung + Nah",
+            "damage_effect": "6W8 + ST-Mod. (+3) + ST-Bonus (+2)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "32,0",
+            "avg_hit_damage": "21,2",
+            "avg_expected_effect": "14,6 Schaden + Bewegung",
+            "ge_share": "0,48 gesamt",
+            "notes": "Bewegung ist bereits Teil der Aktion.",
+            "avg_raw_damage_value": 32.0,
+            "avg_hit_damage_value": 21.2,
+            "id": "nebelkriecher-l10-a02-sumpfsprung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Sumpfsprung",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Bewegung",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Bis 3 m Annäherung + Nah",
+              "Schaden / Wirkung": "6W8 + ST-Mod. (+3) + ST-Bonus (+2)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "32,0",
+              "Ø Treffer-Endschaden": "21,2",
+              "Ø Erwartungswirkung": "14,6 Schaden + Bewegung",
+              "GE-Anteil": "0,48 gesamt",
+              "Zusatz": "Bewegung ist bereits Teil der Aktion."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Nebelhülle",
+            "cost": "1 Aktion",
+            "type": "defensive Aktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst / etwa 1 m körpernah",
+            "damage_effect": "+2 auf den nächsten passenden Ausweichwurf",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "defensiv",
+            "notes": "Nur gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung.",
+            "id": "nebelkriecher-l10-a03-nebelhuelle",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Nebelhülle",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Aktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst / etwa 1 m körpernah",
+              "Schaden / Wirkung": "+2 auf den nächsten passenden Ausweichwurf",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "defensiv",
+              "Zusatz": "Nur gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "nebelkriecher-l10-moorbiss",
+          "name": "Moorbiss",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+5) + BW-Bonus (+4)`",
+          "damage": "`7W8 + ST-Modifikator (+3) + ST-Bonus (+2)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Nebelkriecher schlägt den breiten Kiefer in das Ziel und zieht den Kopf unmittelbar wieder zurück. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er erzeugt **keine kostenlose Bewegung, keinen automatischen Folgetreffer und keine zusätzliche Kontrollwirkung**.",
+          "stacking": "Mehrere Nebelkriecher können dasselbe Ziel mit Moorbiss angreifen; jeder Angriff wird getrennt gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+5) + BW-Bonus (+4)`",
+            "Schaden": "`7W8 + ST-Modifikator (+3) + ST-Bonus (+2)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Nebelkriecher schlägt den breiten Kiefer in das Ziel und zieht den Kopf unmittelbar wieder zurück. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er erzeugt **keine kostenlose Bewegung, keinen automatischen Folgetreffer und keine zusätzliche Kontrollwirkung**.",
+            "Stapelung": "Mehrere Nebelkriecher können dasselbe Ziel mit Moorbiss angreifen; jeder Angriff wird getrennt gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 387,
+            "line_end": 398
+          }
+        },
+        {
+          "id": "nebelkriecher-l10-sumpfsprung",
+          "name": "Sumpfsprung",
+          "type": "Körperlicher Angriff / Bewegung",
+          "cost": "1 Aktion",
+          "requirement": "Das Ziel befindet sich zu Beginn der Aktion höchstens 3 m außerhalb der normalen Nahdistanz und zwischen Nebelkriecher und Ziel liegt ein begehbarer beziehungsweise durch den Sprung überwindbarer gerader Weg.",
+          "range": "Bis zu 3 m geradlinige Annäherung, danach Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+5) + BW-Bonus (+4)`",
+          "damage": "`6W8 + ST-Modifikator (+3) + ST-Bonus (+2)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Nebelkriecher stößt sich mit den Hinterbeinen ab, bewegt sich im Rahmen dieser Aktion bis zu **3 m geradlinig auf das Ziel zu** und führt anschließend genau einen Biss aus. Die Bewegung ist Bestandteil derselben Aktion und erzeugt **keine zusätzliche freie Bewegung nach dem Angriff**. Kann der Nebelkriecher das Ziel nach der Annäherung nicht in Nahdistanz erreichen, findet kein Angriff statt.",
+          "stacking": "Keine besondere Stapelwirkung. Mehrere Nebelkriecher handeln ihre Sprünge unabhängig voneinander ab.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Bewegung",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Das Ziel befindet sich zu Beginn der Aktion höchstens 3 m außerhalb der normalen Nahdistanz und zwischen Nebelkriecher und Ziel liegt ein begehbarer beziehungsweise durch den Sprung überwindbarer gerader Weg.",
+            "Reichweite": "Bis zu 3 m geradlinige Annäherung, danach Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+5) + BW-Bonus (+4)`",
+            "Schaden": "`6W8 + ST-Modifikator (+3) + ST-Bonus (+2)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Nebelkriecher stößt sich mit den Hinterbeinen ab, bewegt sich im Rahmen dieser Aktion bis zu **3 m geradlinig auf das Ziel zu** und führt anschließend genau einen Biss aus. Die Bewegung ist Bestandteil derselben Aktion und erzeugt **keine zusätzliche freie Bewegung nach dem Angriff**. Kann der Nebelkriecher das Ziel nach der Annäherung nicht in Nahdistanz erreichen, findet kein Angriff statt.",
+            "Stapelung": "Keine besondere Stapelwirkung. Mehrere Nebelkriecher handeln ihre Sprünge unabhängig voneinander ab."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 399,
+            "line_end": 411
+          }
+        },
+        {
+          "id": "nebelkriecher-l10-nebelhuelle",
+          "name": "Nebelhülle",
+          "type": "Defensive Aktion",
+          "cost": "1 Aktion",
+          "requirement": "Der Nebelkriecher muss atmen können und darf nicht vollständig ausgetrocknet sein.",
+          "target": "Selbst",
+          "area": "Körpernahe Nebelhülle; ungefähr 1 m um den eigenen Körper",
+          "rule_effect": "Der Nebelkriecher presst gespeicherte Feuchtigkeit durch Hautdrüsen aus und hüllt sich in dichten kalten Nebel. Gegen den **nächsten sichtbasierten Angriff**, dessen Angreifer beim Angriff **mehr als 2 m** vom Nebelkriecher entfernt ist, erhält der Nebelkriecher **+2 auf seinen Ausweichwurf**. Danach endet der Bonus sofort.",
+          "stacking": "Nebelhülle stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt eine noch bestehende Nebelhülle.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, spätestens zu Beginn des nächsten eigenen Zuges oder wenn eine Wirkung den Nebel vollständig zerstreut.",
+          "extra_fields": {
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis die Hülle vorzeitig endet",
+            "Einschränkung": "Angriffe aus höchstens 2 m Entfernung, Wirkungen ohne Sichtbezug und Flächeneffekte, die keinen Ausweichwurf gegen den Nebelkriecher verwenden, werden durch Nebelhülle nicht verändert. Die Aktion macht den Nebelkriecher nicht unsichtbar."
+          },
+          "raw_fields": {
+            "Typ": "Defensive Aktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Der Nebelkriecher muss atmen können und darf nicht vollständig ausgetrocknet sein.",
+            "Ziel": "Selbst",
+            "Fläche": "Körpernahe Nebelhülle; ungefähr 1 m um den eigenen Körper",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis die Hülle vorzeitig endet",
+            "Regelwirkung": "Der Nebelkriecher presst gespeicherte Feuchtigkeit durch Hautdrüsen aus und hüllt sich in dichten kalten Nebel. Gegen den **nächsten sichtbasierten Angriff**, dessen Angreifer beim Angriff **mehr als 2 m** vom Nebelkriecher entfernt ist, erhält der Nebelkriecher **+2 auf seinen Ausweichwurf**. Danach endet der Bonus sofort.",
+            "Einschränkung": "Angriffe aus höchstens 2 m Entfernung, Wirkungen ohne Sichtbezug und Flächeneffekte, die keinen Ausweichwurf gegen den Nebelkriecher verwenden, werden durch Nebelhülle nicht verändert. Die Aktion macht den Nebelkriecher nicht unsichtbar.",
+            "Stapelung": "Nebelhülle stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt eine noch bestehende Nebelhülle.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, spätestens zu Beginn des nächsten eigenen Zuges oder wenn eine Wirkung den Nebel vollständig zerstreut."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 412,
+            "line_end": 424
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**10 % Verwundbarkeit**",
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 344,
+        "line_end": 431
+      }
+    },
+    {
+      "level": 15,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "330",
+          "physische_verteidigung": "13",
+          "magieverteidigung": "12",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 8 m; Schwimmen 12 m",
+          "nebelhuelle": "+2 auf den nächsten passenden Ausweichwurf"
+        },
+        "raw_fields": {
+          "Maximale LP": "330",
+          "Physische Verteidigung": "13",
+          "Magieverteidigung": "12",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 8 m; Schwimmen 12 m",
+          "Nebelhülle": "+2 auf den nächsten passenden Ausweichwurf"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+3) + ST-Bonus (+3)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+2)) × 5) + (15 × 10) = 330 LP",
+        "markdown": "`100 + ((ST-Modifikator (+3) + ST-Bonus (+3)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+2)) × 5) + (15 × 10) = 330 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Moorbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+5)",
+            "range_area": "Nah",
+            "damage_effect": "8W8 + ST-Mod. (+3) + ST-Bonus (+3)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "42,0",
+            "avg_hit_damage": "29,3",
+            "avg_expected_effect": "20,1",
+            "ge_share": "0,50",
+            "notes": null,
+            "avg_raw_damage_value": 42.0,
+            "avg_hit_damage_value": 29.3,
+            "ge_share_value": 0.5,
+            "id": "nebelkriecher-l15-a01-moorbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Moorbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "8W8 + ST-Mod. (+3) + ST-Bonus (+3)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "42,0",
+              "Ø Treffer-Endschaden": "29,3",
+              "Ø Erwartungswirkung": "20,1",
+              "GE-Anteil": "0,50",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Sumpfsprung",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Bewegung",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+5)",
+            "range_area": "Bis 3 m Annäherung + Nah",
+            "damage_effect": "7W8 + ST-Mod. (+3) + ST-Bonus (+3)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "37,5",
+            "avg_hit_damage": "24,7",
+            "avg_expected_effect": "17,0 Schaden + Bewegung",
+            "ge_share": "0,48 gesamt",
+            "notes": "Bewegung ist bereits Teil der Aktion.",
+            "avg_raw_damage_value": 37.5,
+            "avg_hit_damage_value": 24.7,
+            "id": "nebelkriecher-l15-a02-sumpfsprung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Sumpfsprung",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Bewegung",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Bis 3 m Annäherung + Nah",
+              "Schaden / Wirkung": "7W8 + ST-Mod. (+3) + ST-Bonus (+3)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "37,5",
+              "Ø Treffer-Endschaden": "24,7",
+              "Ø Erwartungswirkung": "17,0 Schaden + Bewegung",
+              "GE-Anteil": "0,48 gesamt",
+              "Zusatz": "Bewegung ist bereits Teil der Aktion."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Nebelhülle",
+            "cost": "1 Aktion",
+            "type": "defensive Aktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst / etwa 1 m körpernah",
+            "damage_effect": "+2 auf den nächsten passenden Ausweichwurf",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "defensiv",
+            "notes": "Nur gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung.",
+            "id": "nebelkriecher-l15-a03-nebelhuelle",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Nebelhülle",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Aktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst / etwa 1 m körpernah",
+              "Schaden / Wirkung": "+2 auf den nächsten passenden Ausweichwurf",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "defensiv",
+              "Zusatz": "Nur gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "nebelkriecher-l15-moorbiss",
+          "name": "Moorbiss",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+5) + BW-Bonus (+5)`",
+          "damage": "`8W8 + ST-Modifikator (+3) + ST-Bonus (+3)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Nebelkriecher schlägt den breiten Kiefer in das Ziel und zieht den Kopf unmittelbar wieder zurück. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er erzeugt **keine kostenlose Bewegung, keinen automatischen Folgetreffer und keine zusätzliche Kontrollwirkung**.",
+          "stacking": "Mehrere Nebelkriecher können dasselbe Ziel mit Moorbiss angreifen; jeder Angriff wird getrennt gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+5) + BW-Bonus (+5)`",
+            "Schaden": "`8W8 + ST-Modifikator (+3) + ST-Bonus (+3)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Nebelkriecher schlägt den breiten Kiefer in das Ziel und zieht den Kopf unmittelbar wieder zurück. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er erzeugt **keine kostenlose Bewegung, keinen automatischen Folgetreffer und keine zusätzliche Kontrollwirkung**.",
+            "Stapelung": "Mehrere Nebelkriecher können dasselbe Ziel mit Moorbiss angreifen; jeder Angriff wird getrennt gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 475,
+            "line_end": 486
+          }
+        },
+        {
+          "id": "nebelkriecher-l15-sumpfsprung",
+          "name": "Sumpfsprung",
+          "type": "Körperlicher Angriff / Bewegung",
+          "cost": "1 Aktion",
+          "requirement": "Das Ziel befindet sich zu Beginn der Aktion höchstens 3 m außerhalb der normalen Nahdistanz und zwischen Nebelkriecher und Ziel liegt ein begehbarer beziehungsweise durch den Sprung überwindbarer gerader Weg.",
+          "range": "Bis zu 3 m geradlinige Annäherung, danach Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+5) + BW-Bonus (+5)`",
+          "damage": "`7W8 + ST-Modifikator (+3) + ST-Bonus (+3)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Nebelkriecher stößt sich mit den Hinterbeinen ab, bewegt sich im Rahmen dieser Aktion bis zu **3 m geradlinig auf das Ziel zu** und führt anschließend genau einen Biss aus. Die Bewegung ist Bestandteil derselben Aktion und erzeugt **keine zusätzliche freie Bewegung nach dem Angriff**. Kann der Nebelkriecher das Ziel nach der Annäherung nicht in Nahdistanz erreichen, findet kein Angriff statt.",
+          "stacking": "Keine besondere Stapelwirkung. Mehrere Nebelkriecher handeln ihre Sprünge unabhängig voneinander ab.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Bewegung",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Das Ziel befindet sich zu Beginn der Aktion höchstens 3 m außerhalb der normalen Nahdistanz und zwischen Nebelkriecher und Ziel liegt ein begehbarer beziehungsweise durch den Sprung überwindbarer gerader Weg.",
+            "Reichweite": "Bis zu 3 m geradlinige Annäherung, danach Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+5) + BW-Bonus (+5)`",
+            "Schaden": "`7W8 + ST-Modifikator (+3) + ST-Bonus (+3)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Nebelkriecher stößt sich mit den Hinterbeinen ab, bewegt sich im Rahmen dieser Aktion bis zu **3 m geradlinig auf das Ziel zu** und führt anschließend genau einen Biss aus. Die Bewegung ist Bestandteil derselben Aktion und erzeugt **keine zusätzliche freie Bewegung nach dem Angriff**. Kann der Nebelkriecher das Ziel nach der Annäherung nicht in Nahdistanz erreichen, findet kein Angriff statt.",
+            "Stapelung": "Keine besondere Stapelwirkung. Mehrere Nebelkriecher handeln ihre Sprünge unabhängig voneinander ab."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 487,
+            "line_end": 499
+          }
+        },
+        {
+          "id": "nebelkriecher-l15-nebelhuelle",
+          "name": "Nebelhülle",
+          "type": "Defensive Aktion",
+          "cost": "1 Aktion",
+          "requirement": "Der Nebelkriecher muss atmen können und darf nicht vollständig ausgetrocknet sein.",
+          "target": "Selbst",
+          "area": "Körpernahe Nebelhülle; ungefähr 1 m um den eigenen Körper",
+          "rule_effect": "Der Nebelkriecher presst gespeicherte Feuchtigkeit durch Hautdrüsen aus und hüllt sich in dichten kalten Nebel. Gegen den **nächsten sichtbasierten Angriff**, dessen Angreifer beim Angriff **mehr als 2 m** vom Nebelkriecher entfernt ist, erhält der Nebelkriecher **+2 auf seinen Ausweichwurf**. Danach endet der Bonus sofort.",
+          "stacking": "Nebelhülle stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt eine noch bestehende Nebelhülle.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, spätestens zu Beginn des nächsten eigenen Zuges oder wenn eine Wirkung den Nebel vollständig zerstreut.",
+          "extra_fields": {
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis die Hülle vorzeitig endet",
+            "Einschränkung": "Angriffe aus höchstens 2 m Entfernung, Wirkungen ohne Sichtbezug und Flächeneffekte, die keinen Ausweichwurf gegen den Nebelkriecher verwenden, werden durch Nebelhülle nicht verändert. Die Aktion macht den Nebelkriecher nicht unsichtbar."
+          },
+          "raw_fields": {
+            "Typ": "Defensive Aktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Der Nebelkriecher muss atmen können und darf nicht vollständig ausgetrocknet sein.",
+            "Ziel": "Selbst",
+            "Fläche": "Körpernahe Nebelhülle; ungefähr 1 m um den eigenen Körper",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis die Hülle vorzeitig endet",
+            "Regelwirkung": "Der Nebelkriecher presst gespeicherte Feuchtigkeit durch Hautdrüsen aus und hüllt sich in dichten kalten Nebel. Gegen den **nächsten sichtbasierten Angriff**, dessen Angreifer beim Angriff **mehr als 2 m** vom Nebelkriecher entfernt ist, erhält der Nebelkriecher **+2 auf seinen Ausweichwurf**. Danach endet der Bonus sofort.",
+            "Einschränkung": "Angriffe aus höchstens 2 m Entfernung, Wirkungen ohne Sichtbezug und Flächeneffekte, die keinen Ausweichwurf gegen den Nebelkriecher verwenden, werden durch Nebelhülle nicht verändert. Die Aktion macht den Nebelkriecher nicht unsichtbar.",
+            "Stapelung": "Nebelhülle stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt eine noch bestehende Nebelhülle.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, spätestens zu Beginn des nächsten eigenen Zuges oder wenn eine Wirkung den Nebel vollständig zerstreut."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 500,
+            "line_end": 512
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**10 % Verwundbarkeit**",
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 432,
+        "line_end": 519
+      }
+    },
+    {
+      "level": 20,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "405",
+          "physische_verteidigung": "15",
+          "magieverteidigung": "14",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 8 m; Schwimmen 12 m",
+          "nebelhuelle": "+2 auf den nächsten passenden Ausweichwurf"
+        },
+        "raw_fields": {
+          "Maximale LP": "405",
+          "Physische Verteidigung": "15",
+          "Magieverteidigung": "14",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 8 m; Schwimmen 12 m",
+          "Nebelhülle": "+2 auf den nächsten passenden Ausweichwurf"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+4) + ST-Bonus (+4)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+2)) × 5) + (20 × 10) = 405 LP",
+        "markdown": "`100 + ((ST-Modifikator (+4) + ST-Bonus (+4)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+2)) × 5) + (20 × 10) = 405 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Moorbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range_area": "Nah",
+            "damage_effect": "9W8 + ST-Mod. (+4) + ST-Bonus (+4)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "48,5",
+            "avg_hit_damage": "33,8",
+            "avg_expected_effect": "23,3",
+            "ge_share": "0,50",
+            "notes": null,
+            "avg_raw_damage_value": 48.5,
+            "avg_hit_damage_value": 33.8,
+            "ge_share_value": 0.5,
+            "id": "nebelkriecher-l20-a01-moorbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Moorbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "9W8 + ST-Mod. (+4) + ST-Bonus (+4)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "48,5",
+              "Ø Treffer-Endschaden": "33,8",
+              "Ø Erwartungswirkung": "23,3",
+              "GE-Anteil": "0,50",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Sumpfsprung",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Bewegung",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range_area": "Bis 3 m Annäherung + Nah",
+            "damage_effect": "8W8 + ST-Mod. (+4) + ST-Bonus (+4)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "44,0",
+            "avg_hit_damage": "29,3",
+            "avg_expected_effect": "20,1 Schaden + Bewegung",
+            "ge_share": "0,49 gesamt",
+            "notes": "Bewegung ist bereits Teil der Aktion.",
+            "avg_raw_damage_value": 44.0,
+            "avg_hit_damage_value": 29.3,
+            "id": "nebelkriecher-l20-a02-sumpfsprung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Sumpfsprung",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Bewegung",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Bis 3 m Annäherung + Nah",
+              "Schaden / Wirkung": "8W8 + ST-Mod. (+4) + ST-Bonus (+4)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "44,0",
+              "Ø Treffer-Endschaden": "29,3",
+              "Ø Erwartungswirkung": "20,1 Schaden + Bewegung",
+              "GE-Anteil": "0,49 gesamt",
+              "Zusatz": "Bewegung ist bereits Teil der Aktion."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Nebelhülle",
+            "cost": "1 Aktion",
+            "type": "defensive Aktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst / etwa 1 m körpernah",
+            "damage_effect": "+2 auf den nächsten passenden Ausweichwurf",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "defensiv",
+            "notes": "Nur gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung.",
+            "id": "nebelkriecher-l20-a03-nebelhuelle",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Nebelhülle",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Aktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst / etwa 1 m körpernah",
+              "Schaden / Wirkung": "+2 auf den nächsten passenden Ausweichwurf",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "defensiv",
+              "Zusatz": "Nur gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "nebelkriecher-l20-moorbiss",
+          "name": "Moorbiss",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5)`",
+          "damage": "`9W8 + ST-Modifikator (+4) + ST-Bonus (+4)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Nebelkriecher schlägt den breiten Kiefer in das Ziel und zieht den Kopf unmittelbar wieder zurück. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er erzeugt **keine kostenlose Bewegung, keinen automatischen Folgetreffer und keine zusätzliche Kontrollwirkung**.",
+          "stacking": "Mehrere Nebelkriecher können dasselbe Ziel mit Moorbiss angreifen; jeder Angriff wird getrennt gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5)`",
+            "Schaden": "`9W8 + ST-Modifikator (+4) + ST-Bonus (+4)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Nebelkriecher schlägt den breiten Kiefer in das Ziel und zieht den Kopf unmittelbar wieder zurück. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er erzeugt **keine kostenlose Bewegung, keinen automatischen Folgetreffer und keine zusätzliche Kontrollwirkung**.",
+            "Stapelung": "Mehrere Nebelkriecher können dasselbe Ziel mit Moorbiss angreifen; jeder Angriff wird getrennt gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 563,
+            "line_end": 574
+          }
+        },
+        {
+          "id": "nebelkriecher-l20-sumpfsprung",
+          "name": "Sumpfsprung",
+          "type": "Körperlicher Angriff / Bewegung",
+          "cost": "1 Aktion",
+          "requirement": "Das Ziel befindet sich zu Beginn der Aktion höchstens 3 m außerhalb der normalen Nahdistanz und zwischen Nebelkriecher und Ziel liegt ein begehbarer beziehungsweise durch den Sprung überwindbarer gerader Weg.",
+          "range": "Bis zu 3 m geradlinige Annäherung, danach Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5)`",
+          "damage": "`8W8 + ST-Modifikator (+4) + ST-Bonus (+4)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Nebelkriecher stößt sich mit den Hinterbeinen ab, bewegt sich im Rahmen dieser Aktion bis zu **3 m geradlinig auf das Ziel zu** und führt anschließend genau einen Biss aus. Die Bewegung ist Bestandteil derselben Aktion und erzeugt **keine zusätzliche freie Bewegung nach dem Angriff**. Kann der Nebelkriecher das Ziel nach der Annäherung nicht in Nahdistanz erreichen, findet kein Angriff statt.",
+          "stacking": "Keine besondere Stapelwirkung. Mehrere Nebelkriecher handeln ihre Sprünge unabhängig voneinander ab.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Bewegung",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Das Ziel befindet sich zu Beginn der Aktion höchstens 3 m außerhalb der normalen Nahdistanz und zwischen Nebelkriecher und Ziel liegt ein begehbarer beziehungsweise durch den Sprung überwindbarer gerader Weg.",
+            "Reichweite": "Bis zu 3 m geradlinige Annäherung, danach Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5)`",
+            "Schaden": "`8W8 + ST-Modifikator (+4) + ST-Bonus (+4)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Nebelkriecher stößt sich mit den Hinterbeinen ab, bewegt sich im Rahmen dieser Aktion bis zu **3 m geradlinig auf das Ziel zu** und führt anschließend genau einen Biss aus. Die Bewegung ist Bestandteil derselben Aktion und erzeugt **keine zusätzliche freie Bewegung nach dem Angriff**. Kann der Nebelkriecher das Ziel nach der Annäherung nicht in Nahdistanz erreichen, findet kein Angriff statt.",
+            "Stapelung": "Keine besondere Stapelwirkung. Mehrere Nebelkriecher handeln ihre Sprünge unabhängig voneinander ab."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 575,
+            "line_end": 587
+          }
+        },
+        {
+          "id": "nebelkriecher-l20-nebelhuelle",
+          "name": "Nebelhülle",
+          "type": "Defensive Aktion",
+          "cost": "1 Aktion",
+          "requirement": "Der Nebelkriecher muss atmen können und darf nicht vollständig ausgetrocknet sein.",
+          "target": "Selbst",
+          "area": "Körpernahe Nebelhülle; ungefähr 1 m um den eigenen Körper",
+          "rule_effect": "Der Nebelkriecher presst gespeicherte Feuchtigkeit durch Hautdrüsen aus und hüllt sich in dichten kalten Nebel. Gegen den **nächsten sichtbasierten Angriff**, dessen Angreifer beim Angriff **mehr als 2 m** vom Nebelkriecher entfernt ist, erhält der Nebelkriecher **+2 auf seinen Ausweichwurf**. Danach endet der Bonus sofort.",
+          "stacking": "Nebelhülle stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt eine noch bestehende Nebelhülle.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, spätestens zu Beginn des nächsten eigenen Zuges oder wenn eine Wirkung den Nebel vollständig zerstreut.",
+          "extra_fields": {
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis die Hülle vorzeitig endet",
+            "Einschränkung": "Angriffe aus höchstens 2 m Entfernung, Wirkungen ohne Sichtbezug und Flächeneffekte, die keinen Ausweichwurf gegen den Nebelkriecher verwenden, werden durch Nebelhülle nicht verändert. Die Aktion macht den Nebelkriecher nicht unsichtbar."
+          },
+          "raw_fields": {
+            "Typ": "Defensive Aktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Der Nebelkriecher muss atmen können und darf nicht vollständig ausgetrocknet sein.",
+            "Ziel": "Selbst",
+            "Fläche": "Körpernahe Nebelhülle; ungefähr 1 m um den eigenen Körper",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis die Hülle vorzeitig endet",
+            "Regelwirkung": "Der Nebelkriecher presst gespeicherte Feuchtigkeit durch Hautdrüsen aus und hüllt sich in dichten kalten Nebel. Gegen den **nächsten sichtbasierten Angriff**, dessen Angreifer beim Angriff **mehr als 2 m** vom Nebelkriecher entfernt ist, erhält der Nebelkriecher **+2 auf seinen Ausweichwurf**. Danach endet der Bonus sofort.",
+            "Einschränkung": "Angriffe aus höchstens 2 m Entfernung, Wirkungen ohne Sichtbezug und Flächeneffekte, die keinen Ausweichwurf gegen den Nebelkriecher verwenden, werden durch Nebelhülle nicht verändert. Die Aktion macht den Nebelkriecher nicht unsichtbar.",
+            "Stapelung": "Nebelhülle stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt eine noch bestehende Nebelhülle.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, spätestens zu Beginn des nächsten eigenen Zuges oder wenn eine Wirkung den Nebel vollständig zerstreut."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 588,
+            "line_end": 600
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**10 % Verwundbarkeit**",
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 520,
+        "line_end": 607
+      }
+    },
+    {
+      "level": 25,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 11,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "11",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "470",
+          "physische_verteidigung": "17",
+          "magieverteidigung": "16",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 8 m; Schwimmen 12 m",
+          "nebelhuelle": "+2 auf den nächsten passenden Ausweichwurf"
+        },
+        "raw_fields": {
+          "Maximale LP": "470",
+          "Physische Verteidigung": "17",
+          "Magieverteidigung": "16",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 8 m; Schwimmen 12 m",
+          "Nebelhülle": "+2 auf den nächsten passenden Ausweichwurf"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+4) + ST-Bonus (+5)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+3)) × 5) + (25 × 10) = 470 LP",
+        "markdown": "`100 + ((ST-Modifikator (+4) + ST-Bonus (+5)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+3)) × 5) + (25 × 10) = 470 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Moorbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range_area": "Nah",
+            "damage_effect": "10W8 + ST-Mod. (+4) + ST-Bonus (+5)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "54,0",
+            "avg_hit_damage": "37,4",
+            "avg_expected_effect": "25,7",
+            "ge_share": "0,49",
+            "notes": null,
+            "avg_raw_damage_value": 54.0,
+            "avg_hit_damage_value": 37.4,
+            "ge_share_value": 0.49,
+            "id": "nebelkriecher-l25-a01-moorbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Moorbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "10W8 + ST-Mod. (+4) + ST-Bonus (+5)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "54,0",
+              "Ø Treffer-Endschaden": "37,4",
+              "Ø Erwartungswirkung": "25,7",
+              "GE-Anteil": "0,49",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Sumpfsprung",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Bewegung",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range_area": "Bis 3 m Annäherung + Nah",
+            "damage_effect": "9W8 + ST-Mod. (+4) + ST-Bonus (+5)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "49,5",
+            "avg_hit_damage": "32,8",
+            "avg_expected_effect": "22,6 Schaden + Bewegung",
+            "ge_share": "0,48 gesamt",
+            "notes": "Bewegung ist bereits Teil der Aktion.",
+            "avg_raw_damage_value": 49.5,
+            "avg_hit_damage_value": 32.8,
+            "id": "nebelkriecher-l25-a02-sumpfsprung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Sumpfsprung",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Bewegung",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Bis 3 m Annäherung + Nah",
+              "Schaden / Wirkung": "9W8 + ST-Mod. (+4) + ST-Bonus (+5)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "49,5",
+              "Ø Treffer-Endschaden": "32,8",
+              "Ø Erwartungswirkung": "22,6 Schaden + Bewegung",
+              "GE-Anteil": "0,48 gesamt",
+              "Zusatz": "Bewegung ist bereits Teil der Aktion."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Nebelhülle",
+            "cost": "1 Aktion",
+            "type": "defensive Aktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst / etwa 1 m körpernah",
+            "damage_effect": "+2 auf den nächsten passenden Ausweichwurf",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "defensiv",
+            "notes": "Nur gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung.",
+            "id": "nebelkriecher-l25-a03-nebelhuelle",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Nebelhülle",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Aktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst / etwa 1 m körpernah",
+              "Schaden / Wirkung": "+2 auf den nächsten passenden Ausweichwurf",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "defensiv",
+              "Zusatz": "Nur gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "nebelkriecher-l25-moorbiss",
+          "name": "Moorbiss",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5)`",
+          "damage": "`10W8 + ST-Modifikator (+4) + ST-Bonus (+5)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Nebelkriecher schlägt den breiten Kiefer in das Ziel und zieht den Kopf unmittelbar wieder zurück. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er erzeugt **keine kostenlose Bewegung, keinen automatischen Folgetreffer und keine zusätzliche Kontrollwirkung**.",
+          "stacking": "Mehrere Nebelkriecher können dasselbe Ziel mit Moorbiss angreifen; jeder Angriff wird getrennt gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5)`",
+            "Schaden": "`10W8 + ST-Modifikator (+4) + ST-Bonus (+5)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Nebelkriecher schlägt den breiten Kiefer in das Ziel und zieht den Kopf unmittelbar wieder zurück. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er erzeugt **keine kostenlose Bewegung, keinen automatischen Folgetreffer und keine zusätzliche Kontrollwirkung**.",
+            "Stapelung": "Mehrere Nebelkriecher können dasselbe Ziel mit Moorbiss angreifen; jeder Angriff wird getrennt gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 651,
+            "line_end": 662
+          }
+        },
+        {
+          "id": "nebelkriecher-l25-sumpfsprung",
+          "name": "Sumpfsprung",
+          "type": "Körperlicher Angriff / Bewegung",
+          "cost": "1 Aktion",
+          "requirement": "Das Ziel befindet sich zu Beginn der Aktion höchstens 3 m außerhalb der normalen Nahdistanz und zwischen Nebelkriecher und Ziel liegt ein begehbarer beziehungsweise durch den Sprung überwindbarer gerader Weg.",
+          "range": "Bis zu 3 m geradlinige Annäherung, danach Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5)`",
+          "damage": "`9W8 + ST-Modifikator (+4) + ST-Bonus (+5)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Nebelkriecher stößt sich mit den Hinterbeinen ab, bewegt sich im Rahmen dieser Aktion bis zu **3 m geradlinig auf das Ziel zu** und führt anschließend genau einen Biss aus. Die Bewegung ist Bestandteil derselben Aktion und erzeugt **keine zusätzliche freie Bewegung nach dem Angriff**. Kann der Nebelkriecher das Ziel nach der Annäherung nicht in Nahdistanz erreichen, findet kein Angriff statt.",
+          "stacking": "Keine besondere Stapelwirkung. Mehrere Nebelkriecher handeln ihre Sprünge unabhängig voneinander ab.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Bewegung",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Das Ziel befindet sich zu Beginn der Aktion höchstens 3 m außerhalb der normalen Nahdistanz und zwischen Nebelkriecher und Ziel liegt ein begehbarer beziehungsweise durch den Sprung überwindbarer gerader Weg.",
+            "Reichweite": "Bis zu 3 m geradlinige Annäherung, danach Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5)`",
+            "Schaden": "`9W8 + ST-Modifikator (+4) + ST-Bonus (+5)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Nebelkriecher stößt sich mit den Hinterbeinen ab, bewegt sich im Rahmen dieser Aktion bis zu **3 m geradlinig auf das Ziel zu** und führt anschließend genau einen Biss aus. Die Bewegung ist Bestandteil derselben Aktion und erzeugt **keine zusätzliche freie Bewegung nach dem Angriff**. Kann der Nebelkriecher das Ziel nach der Annäherung nicht in Nahdistanz erreichen, findet kein Angriff statt.",
+            "Stapelung": "Keine besondere Stapelwirkung. Mehrere Nebelkriecher handeln ihre Sprünge unabhängig voneinander ab."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 663,
+            "line_end": 675
+          }
+        },
+        {
+          "id": "nebelkriecher-l25-nebelhuelle",
+          "name": "Nebelhülle",
+          "type": "Defensive Aktion",
+          "cost": "1 Aktion",
+          "requirement": "Der Nebelkriecher muss atmen können und darf nicht vollständig ausgetrocknet sein.",
+          "target": "Selbst",
+          "area": "Körpernahe Nebelhülle; ungefähr 1 m um den eigenen Körper",
+          "rule_effect": "Der Nebelkriecher presst gespeicherte Feuchtigkeit durch Hautdrüsen aus und hüllt sich in dichten kalten Nebel. Gegen den **nächsten sichtbasierten Angriff**, dessen Angreifer beim Angriff **mehr als 2 m** vom Nebelkriecher entfernt ist, erhält der Nebelkriecher **+2 auf seinen Ausweichwurf**. Danach endet der Bonus sofort.",
+          "stacking": "Nebelhülle stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt eine noch bestehende Nebelhülle.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, spätestens zu Beginn des nächsten eigenen Zuges oder wenn eine Wirkung den Nebel vollständig zerstreut.",
+          "extra_fields": {
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis die Hülle vorzeitig endet",
+            "Einschränkung": "Angriffe aus höchstens 2 m Entfernung, Wirkungen ohne Sichtbezug und Flächeneffekte, die keinen Ausweichwurf gegen den Nebelkriecher verwenden, werden durch Nebelhülle nicht verändert. Die Aktion macht den Nebelkriecher nicht unsichtbar."
+          },
+          "raw_fields": {
+            "Typ": "Defensive Aktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Der Nebelkriecher muss atmen können und darf nicht vollständig ausgetrocknet sein.",
+            "Ziel": "Selbst",
+            "Fläche": "Körpernahe Nebelhülle; ungefähr 1 m um den eigenen Körper",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis die Hülle vorzeitig endet",
+            "Regelwirkung": "Der Nebelkriecher presst gespeicherte Feuchtigkeit durch Hautdrüsen aus und hüllt sich in dichten kalten Nebel. Gegen den **nächsten sichtbasierten Angriff**, dessen Angreifer beim Angriff **mehr als 2 m** vom Nebelkriecher entfernt ist, erhält der Nebelkriecher **+2 auf seinen Ausweichwurf**. Danach endet der Bonus sofort.",
+            "Einschränkung": "Angriffe aus höchstens 2 m Entfernung, Wirkungen ohne Sichtbezug und Flächeneffekte, die keinen Ausweichwurf gegen den Nebelkriecher verwenden, werden durch Nebelhülle nicht verändert. Die Aktion macht den Nebelkriecher nicht unsichtbar.",
+            "Stapelung": "Nebelhülle stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt eine noch bestehende Nebelhülle.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, spätestens zu Beginn des nächsten eigenen Zuges oder wenn eine Wirkung den Nebel vollständig zerstreut."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 676,
+            "line_end": 688
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**10 % Verwundbarkeit**",
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 608,
+        "line_end": 695
+      }
+    },
+    {
+      "level": 30,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 6,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+6"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 11,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "11",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "540",
+          "physische_verteidigung": "19",
+          "magieverteidigung": "18",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 8 m; Schwimmen 12 m",
+          "nebelhuelle": "+2 auf den nächsten passenden Ausweichwurf"
+        },
+        "raw_fields": {
+          "Maximale LP": "540",
+          "Physische Verteidigung": "19",
+          "Magieverteidigung": "18",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 8 m; Schwimmen 12 m",
+          "Nebelhülle": "+2 auf den nächsten passenden Ausweichwurf"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+5) + ST-Bonus (+6)) × 10) + ((WI-Modifikator (+4) + WI-Bonus (+2)) × 5) + (30 × 10) = 540 LP",
+        "markdown": "`100 + ((ST-Modifikator (+5) + ST-Bonus (+6)) × 10) + ((WI-Modifikator (+4) + WI-Bonus (+2)) × 5) + (30 × 10) = 540 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Moorbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+            "range_area": "Nah",
+            "damage_effect": "11W8 + ST-Mod. (+5) + ST-Bonus (+6)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "60,5",
+            "avg_hit_damage": "41,9",
+            "avg_expected_effect": "28,8",
+            "ge_share": "0,49",
+            "notes": null,
+            "avg_raw_damage_value": 60.5,
+            "avg_hit_damage_value": 41.9,
+            "ge_share_value": 0.49,
+            "id": "nebelkriecher-l30-a01-moorbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Moorbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "11W8 + ST-Mod. (+5) + ST-Bonus (+6)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "60,5",
+              "Ø Treffer-Endschaden": "41,9",
+              "Ø Erwartungswirkung": "28,8",
+              "GE-Anteil": "0,49",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Sumpfsprung",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Bewegung",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+            "range_area": "Bis 3 m Annäherung + Nah",
+            "damage_effect": "10W8 + ST-Mod. (+5) + ST-Bonus (+6)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "56,0",
+            "avg_hit_damage": "37,4",
+            "avg_expected_effect": "25,7 Schaden + Bewegung",
+            "ge_share": "0,49 gesamt",
+            "notes": "Bewegung ist bereits Teil der Aktion.",
+            "avg_raw_damage_value": 56.0,
+            "avg_hit_damage_value": 37.4,
+            "id": "nebelkriecher-l30-a02-sumpfsprung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Sumpfsprung",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Bewegung",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Bis 3 m Annäherung + Nah",
+              "Schaden / Wirkung": "10W8 + ST-Mod. (+5) + ST-Bonus (+6)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "56,0",
+              "Ø Treffer-Endschaden": "37,4",
+              "Ø Erwartungswirkung": "25,7 Schaden + Bewegung",
+              "GE-Anteil": "0,49 gesamt",
+              "Zusatz": "Bewegung ist bereits Teil der Aktion."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Nebelhülle",
+            "cost": "1 Aktion",
+            "type": "defensive Aktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst / etwa 1 m körpernah",
+            "damage_effect": "+2 auf den nächsten passenden Ausweichwurf",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "defensiv",
+            "notes": "Nur gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung.",
+            "id": "nebelkriecher-l30-a03-nebelhuelle",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Nebelhülle",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Aktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst / etwa 1 m körpernah",
+              "Schaden / Wirkung": "+2 auf den nächsten passenden Ausweichwurf",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "defensiv",
+              "Zusatz": "Nur gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "nebelkriecher-l30-moorbiss",
+          "name": "Moorbiss",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+7) + BW-Bonus (+5)`",
+          "damage": "`11W8 + ST-Modifikator (+5) + ST-Bonus (+6)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Nebelkriecher schlägt den breiten Kiefer in das Ziel und zieht den Kopf unmittelbar wieder zurück. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er erzeugt **keine kostenlose Bewegung, keinen automatischen Folgetreffer und keine zusätzliche Kontrollwirkung**.",
+          "stacking": "Mehrere Nebelkriecher können dasselbe Ziel mit Moorbiss angreifen; jeder Angriff wird getrennt gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+7) + BW-Bonus (+5)`",
+            "Schaden": "`11W8 + ST-Modifikator (+5) + ST-Bonus (+6)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Nebelkriecher schlägt den breiten Kiefer in das Ziel und zieht den Kopf unmittelbar wieder zurück. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er erzeugt **keine kostenlose Bewegung, keinen automatischen Folgetreffer und keine zusätzliche Kontrollwirkung**.",
+            "Stapelung": "Mehrere Nebelkriecher können dasselbe Ziel mit Moorbiss angreifen; jeder Angriff wird getrennt gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 739,
+            "line_end": 750
+          }
+        },
+        {
+          "id": "nebelkriecher-l30-sumpfsprung",
+          "name": "Sumpfsprung",
+          "type": "Körperlicher Angriff / Bewegung",
+          "cost": "1 Aktion",
+          "requirement": "Das Ziel befindet sich zu Beginn der Aktion höchstens 3 m außerhalb der normalen Nahdistanz und zwischen Nebelkriecher und Ziel liegt ein begehbarer beziehungsweise durch den Sprung überwindbarer gerader Weg.",
+          "range": "Bis zu 3 m geradlinige Annäherung, danach Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+7) + BW-Bonus (+5)`",
+          "damage": "`10W8 + ST-Modifikator (+5) + ST-Bonus (+6)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Nebelkriecher stößt sich mit den Hinterbeinen ab, bewegt sich im Rahmen dieser Aktion bis zu **3 m geradlinig auf das Ziel zu** und führt anschließend genau einen Biss aus. Die Bewegung ist Bestandteil derselben Aktion und erzeugt **keine zusätzliche freie Bewegung nach dem Angriff**. Kann der Nebelkriecher das Ziel nach der Annäherung nicht in Nahdistanz erreichen, findet kein Angriff statt.",
+          "stacking": "Keine besondere Stapelwirkung. Mehrere Nebelkriecher handeln ihre Sprünge unabhängig voneinander ab.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Bewegung",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Das Ziel befindet sich zu Beginn der Aktion höchstens 3 m außerhalb der normalen Nahdistanz und zwischen Nebelkriecher und Ziel liegt ein begehbarer beziehungsweise durch den Sprung überwindbarer gerader Weg.",
+            "Reichweite": "Bis zu 3 m geradlinige Annäherung, danach Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+7) + BW-Bonus (+5)`",
+            "Schaden": "`10W8 + ST-Modifikator (+5) + ST-Bonus (+6)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Nebelkriecher stößt sich mit den Hinterbeinen ab, bewegt sich im Rahmen dieser Aktion bis zu **3 m geradlinig auf das Ziel zu** und führt anschließend genau einen Biss aus. Die Bewegung ist Bestandteil derselben Aktion und erzeugt **keine zusätzliche freie Bewegung nach dem Angriff**. Kann der Nebelkriecher das Ziel nach der Annäherung nicht in Nahdistanz erreichen, findet kein Angriff statt.",
+            "Stapelung": "Keine besondere Stapelwirkung. Mehrere Nebelkriecher handeln ihre Sprünge unabhängig voneinander ab."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 751,
+            "line_end": 763
+          }
+        },
+        {
+          "id": "nebelkriecher-l30-nebelhuelle",
+          "name": "Nebelhülle",
+          "type": "Defensive Aktion",
+          "cost": "1 Aktion",
+          "requirement": "Der Nebelkriecher muss atmen können und darf nicht vollständig ausgetrocknet sein.",
+          "target": "Selbst",
+          "area": "Körpernahe Nebelhülle; ungefähr 1 m um den eigenen Körper",
+          "rule_effect": "Der Nebelkriecher presst gespeicherte Feuchtigkeit durch Hautdrüsen aus und hüllt sich in dichten kalten Nebel. Gegen den **nächsten sichtbasierten Angriff**, dessen Angreifer beim Angriff **mehr als 2 m** vom Nebelkriecher entfernt ist, erhält der Nebelkriecher **+2 auf seinen Ausweichwurf**. Danach endet der Bonus sofort.",
+          "stacking": "Nebelhülle stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt eine noch bestehende Nebelhülle.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, spätestens zu Beginn des nächsten eigenen Zuges oder wenn eine Wirkung den Nebel vollständig zerstreut.",
+          "extra_fields": {
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis die Hülle vorzeitig endet",
+            "Einschränkung": "Angriffe aus höchstens 2 m Entfernung, Wirkungen ohne Sichtbezug und Flächeneffekte, die keinen Ausweichwurf gegen den Nebelkriecher verwenden, werden durch Nebelhülle nicht verändert. Die Aktion macht den Nebelkriecher nicht unsichtbar."
+          },
+          "raw_fields": {
+            "Typ": "Defensive Aktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Der Nebelkriecher muss atmen können und darf nicht vollständig ausgetrocknet sein.",
+            "Ziel": "Selbst",
+            "Fläche": "Körpernahe Nebelhülle; ungefähr 1 m um den eigenen Körper",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis die Hülle vorzeitig endet",
+            "Regelwirkung": "Der Nebelkriecher presst gespeicherte Feuchtigkeit durch Hautdrüsen aus und hüllt sich in dichten kalten Nebel. Gegen den **nächsten sichtbasierten Angriff**, dessen Angreifer beim Angriff **mehr als 2 m** vom Nebelkriecher entfernt ist, erhält der Nebelkriecher **+2 auf seinen Ausweichwurf**. Danach endet der Bonus sofort.",
+            "Einschränkung": "Angriffe aus höchstens 2 m Entfernung, Wirkungen ohne Sichtbezug und Flächeneffekte, die keinen Ausweichwurf gegen den Nebelkriecher verwenden, werden durch Nebelhülle nicht verändert. Die Aktion macht den Nebelkriecher nicht unsichtbar.",
+            "Stapelung": "Nebelhülle stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt eine noch bestehende Nebelhülle.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, spätestens zu Beginn des nächsten eigenen Zuges oder wenn eine Wirkung den Nebel vollständig zerstreut."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 764,
+            "line_end": 776
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**10 % Verwundbarkeit**",
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 696,
+        "line_end": 783
+      }
+    },
+    {
+      "level": 35,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 7,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+7"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 25,
+          "modifier": 7,
+          "bonus": 6,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "25",
+            "Modifikator": "+7",
+            "Bonus": "+6"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "610",
+          "physische_verteidigung": "21",
+          "magieverteidigung": "20",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 8 m; Schwimmen 12 m",
+          "nebelhuelle": "+2 auf den nächsten passenden Ausweichwurf"
+        },
+        "raw_fields": {
+          "Maximale LP": "610",
+          "Physische Verteidigung": "21",
+          "Magieverteidigung": "20",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 8 m; Schwimmen 12 m",
+          "Nebelhülle": "+2 auf den nächsten passenden Ausweichwurf"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+5) + ST-Bonus (+7)) × 10) + ((WI-Modifikator (+4) + WI-Bonus (+4)) × 5) + (35 × 10) = 610 LP",
+        "markdown": "`100 + ((ST-Modifikator (+5) + ST-Bonus (+7)) × 10) + ((WI-Modifikator (+4) + WI-Bonus (+4)) × 5) + (35 × 10) = 610 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Moorbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+            "range_area": "Nah",
+            "damage_effect": "12W8 + ST-Mod. (+5) + ST-Bonus (+7)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "66,0",
+            "avg_hit_damage": "45,5",
+            "avg_expected_effect": "31,2",
+            "ge_share": "0,48",
+            "notes": null,
+            "avg_raw_damage_value": 66.0,
+            "avg_hit_damage_value": 45.5,
+            "ge_share_value": 0.48,
+            "id": "nebelkriecher-l35-a01-moorbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Moorbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "12W8 + ST-Mod. (+5) + ST-Bonus (+7)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "66,0",
+              "Ø Treffer-Endschaden": "45,5",
+              "Ø Erwartungswirkung": "31,2",
+              "GE-Anteil": "0,48",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Sumpfsprung",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Bewegung",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+            "range_area": "Bis 3 m Annäherung + Nah",
+            "damage_effect": "11W8 + ST-Mod. (+5) + ST-Bonus (+7)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "61,5",
+            "avg_hit_damage": "40,9",
+            "avg_expected_effect": "28,1 Schaden + Bewegung",
+            "ge_share": "0,48 gesamt",
+            "notes": "Bewegung ist bereits Teil der Aktion.",
+            "avg_raw_damage_value": 61.5,
+            "avg_hit_damage_value": 40.9,
+            "id": "nebelkriecher-l35-a02-sumpfsprung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Sumpfsprung",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Bewegung",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+              "Reichweite / Fläche": "Bis 3 m Annäherung + Nah",
+              "Schaden / Wirkung": "11W8 + ST-Mod. (+5) + ST-Bonus (+7)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "61,5",
+              "Ø Treffer-Endschaden": "40,9",
+              "Ø Erwartungswirkung": "28,1 Schaden + Bewegung",
+              "GE-Anteil": "0,48 gesamt",
+              "Zusatz": "Bewegung ist bereits Teil der Aktion."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Nebelhülle",
+            "cost": "1 Aktion",
+            "type": "defensive Aktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst / etwa 1 m körpernah",
+            "damage_effect": "+2 auf den nächsten passenden Ausweichwurf",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "defensiv",
+            "notes": "Nur gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung.",
+            "id": "nebelkriecher-l35-a03-nebelhuelle",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Nebelhülle",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Aktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst / etwa 1 m körpernah",
+              "Schaden / Wirkung": "+2 auf den nächsten passenden Ausweichwurf",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "defensiv",
+              "Zusatz": "Nur gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "nebelkriecher-l35-moorbiss",
+          "name": "Moorbiss",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+7) + BW-Bonus (+6)`",
+          "damage": "`12W8 + ST-Modifikator (+5) + ST-Bonus (+7)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Nebelkriecher schlägt den breiten Kiefer in das Ziel und zieht den Kopf unmittelbar wieder zurück. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er erzeugt **keine kostenlose Bewegung, keinen automatischen Folgetreffer und keine zusätzliche Kontrollwirkung**.",
+          "stacking": "Mehrere Nebelkriecher können dasselbe Ziel mit Moorbiss angreifen; jeder Angriff wird getrennt gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+7) + BW-Bonus (+6)`",
+            "Schaden": "`12W8 + ST-Modifikator (+5) + ST-Bonus (+7)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Nebelkriecher schlägt den breiten Kiefer in das Ziel und zieht den Kopf unmittelbar wieder zurück. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er erzeugt **keine kostenlose Bewegung, keinen automatischen Folgetreffer und keine zusätzliche Kontrollwirkung**.",
+            "Stapelung": "Mehrere Nebelkriecher können dasselbe Ziel mit Moorbiss angreifen; jeder Angriff wird getrennt gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 827,
+            "line_end": 838
+          }
+        },
+        {
+          "id": "nebelkriecher-l35-sumpfsprung",
+          "name": "Sumpfsprung",
+          "type": "Körperlicher Angriff / Bewegung",
+          "cost": "1 Aktion",
+          "requirement": "Das Ziel befindet sich zu Beginn der Aktion höchstens 3 m außerhalb der normalen Nahdistanz und zwischen Nebelkriecher und Ziel liegt ein begehbarer beziehungsweise durch den Sprung überwindbarer gerader Weg.",
+          "range": "Bis zu 3 m geradlinige Annäherung, danach Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+7) + BW-Bonus (+6)`",
+          "damage": "`11W8 + ST-Modifikator (+5) + ST-Bonus (+7)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Nebelkriecher stößt sich mit den Hinterbeinen ab, bewegt sich im Rahmen dieser Aktion bis zu **3 m geradlinig auf das Ziel zu** und führt anschließend genau einen Biss aus. Die Bewegung ist Bestandteil derselben Aktion und erzeugt **keine zusätzliche freie Bewegung nach dem Angriff**. Kann der Nebelkriecher das Ziel nach der Annäherung nicht in Nahdistanz erreichen, findet kein Angriff statt.",
+          "stacking": "Keine besondere Stapelwirkung. Mehrere Nebelkriecher handeln ihre Sprünge unabhängig voneinander ab.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Bewegung",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Das Ziel befindet sich zu Beginn der Aktion höchstens 3 m außerhalb der normalen Nahdistanz und zwischen Nebelkriecher und Ziel liegt ein begehbarer beziehungsweise durch den Sprung überwindbarer gerader Weg.",
+            "Reichweite": "Bis zu 3 m geradlinige Annäherung, danach Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+7) + BW-Bonus (+6)`",
+            "Schaden": "`11W8 + ST-Modifikator (+5) + ST-Bonus (+7)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Nebelkriecher stößt sich mit den Hinterbeinen ab, bewegt sich im Rahmen dieser Aktion bis zu **3 m geradlinig auf das Ziel zu** und führt anschließend genau einen Biss aus. Die Bewegung ist Bestandteil derselben Aktion und erzeugt **keine zusätzliche freie Bewegung nach dem Angriff**. Kann der Nebelkriecher das Ziel nach der Annäherung nicht in Nahdistanz erreichen, findet kein Angriff statt.",
+            "Stapelung": "Keine besondere Stapelwirkung. Mehrere Nebelkriecher handeln ihre Sprünge unabhängig voneinander ab."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 839,
+            "line_end": 851
+          }
+        },
+        {
+          "id": "nebelkriecher-l35-nebelhuelle",
+          "name": "Nebelhülle",
+          "type": "Defensive Aktion",
+          "cost": "1 Aktion",
+          "requirement": "Der Nebelkriecher muss atmen können und darf nicht vollständig ausgetrocknet sein.",
+          "target": "Selbst",
+          "area": "Körpernahe Nebelhülle; ungefähr 1 m um den eigenen Körper",
+          "rule_effect": "Der Nebelkriecher presst gespeicherte Feuchtigkeit durch Hautdrüsen aus und hüllt sich in dichten kalten Nebel. Gegen den **nächsten sichtbasierten Angriff**, dessen Angreifer beim Angriff **mehr als 2 m** vom Nebelkriecher entfernt ist, erhält der Nebelkriecher **+2 auf seinen Ausweichwurf**. Danach endet der Bonus sofort.",
+          "stacking": "Nebelhülle stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt eine noch bestehende Nebelhülle.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, spätestens zu Beginn des nächsten eigenen Zuges oder wenn eine Wirkung den Nebel vollständig zerstreut.",
+          "extra_fields": {
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis die Hülle vorzeitig endet",
+            "Einschränkung": "Angriffe aus höchstens 2 m Entfernung, Wirkungen ohne Sichtbezug und Flächeneffekte, die keinen Ausweichwurf gegen den Nebelkriecher verwenden, werden durch Nebelhülle nicht verändert. Die Aktion macht den Nebelkriecher nicht unsichtbar."
+          },
+          "raw_fields": {
+            "Typ": "Defensive Aktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Der Nebelkriecher muss atmen können und darf nicht vollständig ausgetrocknet sein.",
+            "Ziel": "Selbst",
+            "Fläche": "Körpernahe Nebelhülle; ungefähr 1 m um den eigenen Körper",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis die Hülle vorzeitig endet",
+            "Regelwirkung": "Der Nebelkriecher presst gespeicherte Feuchtigkeit durch Hautdrüsen aus und hüllt sich in dichten kalten Nebel. Gegen den **nächsten sichtbasierten Angriff**, dessen Angreifer beim Angriff **mehr als 2 m** vom Nebelkriecher entfernt ist, erhält der Nebelkriecher **+2 auf seinen Ausweichwurf**. Danach endet der Bonus sofort.",
+            "Einschränkung": "Angriffe aus höchstens 2 m Entfernung, Wirkungen ohne Sichtbezug und Flächeneffekte, die keinen Ausweichwurf gegen den Nebelkriecher verwenden, werden durch Nebelhülle nicht verändert. Die Aktion macht den Nebelkriecher nicht unsichtbar.",
+            "Stapelung": "Nebelhülle stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt eine noch bestehende Nebelhülle.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, spätestens zu Beginn des nächsten eigenen Zuges oder wenn eine Wirkung den Nebel vollständig zerstreut."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 852,
+            "line_end": 864
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**10 % Verwundbarkeit**",
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 784,
+        "line_end": 871
+      }
+    },
+    {
+      "level": 40,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 8,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+8"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 26,
+          "modifier": 8,
+          "bonus": 6,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "26",
+            "Modifikator": "+8",
+            "Bonus": "+6"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 25,
+          "modifier": 7,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "25",
+            "Modifikator": "+7",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 11,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "11",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "685",
+          "physische_verteidigung": "23",
+          "magieverteidigung": "22",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 8 m; Schwimmen 12 m",
+          "nebelhuelle": "+2 auf den nächsten passenden Ausweichwurf"
+        },
+        "raw_fields": {
+          "Maximale LP": "685",
+          "Physische Verteidigung": "23",
+          "Magieverteidigung": "22",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 8 m; Schwimmen 12 m",
+          "Nebelhülle": "+2 auf den nächsten passenden Ausweichwurf"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+6) + ST-Bonus (+8)) × 10) + ((WI-Modifikator (+5) + WI-Bonus (+4)) × 5) + (40 × 10) = 685 LP",
+        "markdown": "`100 + ((ST-Modifikator (+6) + ST-Bonus (+8)) × 10) + ((WI-Modifikator (+5) + WI-Bonus (+4)) × 5) + (40 × 10) = 685 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Moorbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+            "range_area": "Nah",
+            "damage_effect": "13W8 + ST-Mod. (+6) + ST-Bonus (+8)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "72,5",
+            "avg_hit_damage": "50,0",
+            "avg_expected_effect": "34,4",
+            "ge_share": "0,48",
+            "notes": null,
+            "avg_raw_damage_value": 72.5,
+            "avg_hit_damage_value": 50.0,
+            "ge_share_value": 0.48,
+            "id": "nebelkriecher-l40-a01-moorbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Moorbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "13W8 + ST-Mod. (+6) + ST-Bonus (+8)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "72,5",
+              "Ø Treffer-Endschaden": "50,0",
+              "Ø Erwartungswirkung": "34,4",
+              "GE-Anteil": "0,48",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Sumpfsprung",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Bewegung",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+            "range_area": "Bis 3 m Annäherung + Nah",
+            "damage_effect": "12W8 + ST-Mod. (+6) + ST-Bonus (+8)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "68,0",
+            "avg_hit_damage": "45,5",
+            "avg_expected_effect": "31,2 Schaden + Bewegung",
+            "ge_share": "0,49 gesamt",
+            "notes": "Bewegung ist bereits Teil der Aktion.",
+            "avg_raw_damage_value": 68.0,
+            "avg_hit_damage_value": 45.5,
+            "id": "nebelkriecher-l40-a02-sumpfsprung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Sumpfsprung",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Bewegung",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+              "Reichweite / Fläche": "Bis 3 m Annäherung + Nah",
+              "Schaden / Wirkung": "12W8 + ST-Mod. (+6) + ST-Bonus (+8)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "68,0",
+              "Ø Treffer-Endschaden": "45,5",
+              "Ø Erwartungswirkung": "31,2 Schaden + Bewegung",
+              "GE-Anteil": "0,49 gesamt",
+              "Zusatz": "Bewegung ist bereits Teil der Aktion."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Nebelhülle",
+            "cost": "1 Aktion",
+            "type": "defensive Aktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst / etwa 1 m körpernah",
+            "damage_effect": "+2 auf den nächsten passenden Ausweichwurf",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "defensiv",
+            "notes": "Nur gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung.",
+            "id": "nebelkriecher-l40-a03-nebelhuelle",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Nebelhülle",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Aktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst / etwa 1 m körpernah",
+              "Schaden / Wirkung": "+2 auf den nächsten passenden Ausweichwurf",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "defensiv",
+              "Zusatz": "Nur gegen einen sichtbasierten Angriff aus mehr als 2 m Entfernung."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "nebelkriecher-l40-moorbiss",
+          "name": "Moorbiss",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+8) + BW-Bonus (+6)`",
+          "damage": "`13W8 + ST-Modifikator (+6) + ST-Bonus (+8)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Nebelkriecher schlägt den breiten Kiefer in das Ziel und zieht den Kopf unmittelbar wieder zurück. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er erzeugt **keine kostenlose Bewegung, keinen automatischen Folgetreffer und keine zusätzliche Kontrollwirkung**.",
+          "stacking": "Mehrere Nebelkriecher können dasselbe Ziel mit Moorbiss angreifen; jeder Angriff wird getrennt gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+8) + BW-Bonus (+6)`",
+            "Schaden": "`13W8 + ST-Modifikator (+6) + ST-Bonus (+8)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Nebelkriecher schlägt den breiten Kiefer in das Ziel und zieht den Kopf unmittelbar wieder zurück. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er erzeugt **keine kostenlose Bewegung, keinen automatischen Folgetreffer und keine zusätzliche Kontrollwirkung**.",
+            "Stapelung": "Mehrere Nebelkriecher können dasselbe Ziel mit Moorbiss angreifen; jeder Angriff wird getrennt gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 915,
+            "line_end": 926
+          }
+        },
+        {
+          "id": "nebelkriecher-l40-sumpfsprung",
+          "name": "Sumpfsprung",
+          "type": "Körperlicher Angriff / Bewegung",
+          "cost": "1 Aktion",
+          "requirement": "Das Ziel befindet sich zu Beginn der Aktion höchstens 3 m außerhalb der normalen Nahdistanz und zwischen Nebelkriecher und Ziel liegt ein begehbarer beziehungsweise durch den Sprung überwindbarer gerader Weg.",
+          "range": "Bis zu 3 m geradlinige Annäherung, danach Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+8) + BW-Bonus (+6)`",
+          "damage": "`12W8 + ST-Modifikator (+6) + ST-Bonus (+8)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Nebelkriecher stößt sich mit den Hinterbeinen ab, bewegt sich im Rahmen dieser Aktion bis zu **3 m geradlinig auf das Ziel zu** und führt anschließend genau einen Biss aus. Die Bewegung ist Bestandteil derselben Aktion und erzeugt **keine zusätzliche freie Bewegung nach dem Angriff**. Kann der Nebelkriecher das Ziel nach der Annäherung nicht in Nahdistanz erreichen, findet kein Angriff statt.",
+          "stacking": "Keine besondere Stapelwirkung. Mehrere Nebelkriecher handeln ihre Sprünge unabhängig voneinander ab.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Bewegung",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Das Ziel befindet sich zu Beginn der Aktion höchstens 3 m außerhalb der normalen Nahdistanz und zwischen Nebelkriecher und Ziel liegt ein begehbarer beziehungsweise durch den Sprung überwindbarer gerader Weg.",
+            "Reichweite": "Bis zu 3 m geradlinige Annäherung, danach Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+8) + BW-Bonus (+6)`",
+            "Schaden": "`12W8 + ST-Modifikator (+6) + ST-Bonus (+8)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Nebelkriecher stößt sich mit den Hinterbeinen ab, bewegt sich im Rahmen dieser Aktion bis zu **3 m geradlinig auf das Ziel zu** und führt anschließend genau einen Biss aus. Die Bewegung ist Bestandteil derselben Aktion und erzeugt **keine zusätzliche freie Bewegung nach dem Angriff**. Kann der Nebelkriecher das Ziel nach der Annäherung nicht in Nahdistanz erreichen, findet kein Angriff statt.",
+            "Stapelung": "Keine besondere Stapelwirkung. Mehrere Nebelkriecher handeln ihre Sprünge unabhängig voneinander ab."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 927,
+            "line_end": 939
+          }
+        },
+        {
+          "id": "nebelkriecher-l40-nebelhuelle",
+          "name": "Nebelhülle",
+          "type": "Defensive Aktion",
+          "cost": "1 Aktion",
+          "requirement": "Der Nebelkriecher muss atmen können und darf nicht vollständig ausgetrocknet sein.",
+          "target": "Selbst",
+          "area": "Körpernahe Nebelhülle; ungefähr 1 m um den eigenen Körper",
+          "rule_effect": "Der Nebelkriecher presst gespeicherte Feuchtigkeit durch Hautdrüsen aus und hüllt sich in dichten kalten Nebel. Gegen den **nächsten sichtbasierten Angriff**, dessen Angreifer beim Angriff **mehr als 2 m** vom Nebelkriecher entfernt ist, erhält der Nebelkriecher **+2 auf seinen Ausweichwurf**. Danach endet der Bonus sofort.",
+          "stacking": "Nebelhülle stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt eine noch bestehende Nebelhülle.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, spätestens zu Beginn des nächsten eigenen Zuges oder wenn eine Wirkung den Nebel vollständig zerstreut.",
+          "extra_fields": {
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis die Hülle vorzeitig endet",
+            "Einschränkung": "Angriffe aus höchstens 2 m Entfernung, Wirkungen ohne Sichtbezug und Flächeneffekte, die keinen Ausweichwurf gegen den Nebelkriecher verwenden, werden durch Nebelhülle nicht verändert. Die Aktion macht den Nebelkriecher nicht unsichtbar."
+          },
+          "raw_fields": {
+            "Typ": "Defensive Aktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Der Nebelkriecher muss atmen können und darf nicht vollständig ausgetrocknet sein.",
+            "Ziel": "Selbst",
+            "Fläche": "Körpernahe Nebelhülle; ungefähr 1 m um den eigenen Körper",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis die Hülle vorzeitig endet",
+            "Regelwirkung": "Der Nebelkriecher presst gespeicherte Feuchtigkeit durch Hautdrüsen aus und hüllt sich in dichten kalten Nebel. Gegen den **nächsten sichtbasierten Angriff**, dessen Angreifer beim Angriff **mehr als 2 m** vom Nebelkriecher entfernt ist, erhält der Nebelkriecher **+2 auf seinen Ausweichwurf**. Danach endet der Bonus sofort.",
+            "Einschränkung": "Angriffe aus höchstens 2 m Entfernung, Wirkungen ohne Sichtbezug und Flächeneffekte, die keinen Ausweichwurf gegen den Nebelkriecher verwenden, werden durch Nebelhülle nicht verändert. Die Aktion macht den Nebelkriecher nicht unsichtbar.",
+            "Stapelung": "Nebelhülle stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt eine noch bestehende Nebelhülle.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, spätestens zu Beginn des nächsten eigenen Zuges oder wenn eine Wirkung den Nebel vollständig zerstreut."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 940,
+            "line_end": 952
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**10 % Verwundbarkeit**",
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 872,
+        "line_end": 959
+      }
+    }
+  ],
+  "post_sections": [
+    {
+      "title": "Einsatz im Spiel",
+      "id": "einsatz-im-spiel",
+      "markdown": "Der Nebelkriecher eignet sich besonders für frühe Begegnungen in Sümpfen, Mooren und flachen Gewässern. Er sollte nicht wie ein stumpfer Frontgegner gespielt werden, sondern als Tier, das kurze Sichtfenster und Gelände nutzt.\n\nEine einzelne Kreatur kann eine kleine Gruppe beschäftigen, ohne einen Kampf unnötig zu verlängern. Zwei oder mehrere Exemplare werden gefährlicher, wenn die Gruppe auf engem Steg, im Wasser oder zwischen dichtem Schilf kämpfen muss. Sie erhalten jedoch **keine zusätzlichen Gruppenboni**.\n\nDie Nebelhülle sollte sichtbar beschrieben werden: Haut und Flanken spannen sich an, kalte Feuchtigkeit tritt aus, und innerhalb eines Augenblicks verschwimmt der blasse Körper im weißen Dunst. Dadurch können Spieler erkennen, dass eine defensive Wirkung aktiv ist und ihre Positionierung entsprechend anpassen.\n\nAuf trockenem, offenem Boden verliert der Nebelkriecher einen Teil seines natürlichen Vorteils. Das macht ihn zu einem Gegner, bei dem die Wahl des Kampfplatzes eine spürbare Rolle spielt, ohne die Grundregeln zu überladen.",
+      "tables": [],
+      "source": {
+        "line_start": 960,
+        "line_end": 968
+      }
+    }
+  ],
+  "statistics": {
+    "level_count": 9,
+    "action_count_by_level": {
+      "1": 3,
+      "5": 3,
+      "10": 3,
+      "15": 3,
+      "20": 3,
+      "25": 3,
+      "30": 3,
+      "35": 3,
+      "40": 3
+    },
+    "shared_action_detail_count": 0
+  },
+  "source": {
+    "line_start": 16,
+    "line_end": 968
+  }
+}

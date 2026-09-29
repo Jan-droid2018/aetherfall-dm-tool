@@ -1,0 +1,424 @@
+{
+  "schema_version": "aetherfall.class_abilities.v1",
+  "generated_from": [
+    "Klassen - Blutzeichner - Klassenfähigkeiten.md",
+    "Klassen - Blutzeichner.md",
+    "Klassen - Fernzeitträger - Klassenfähigkeiten.md",
+    "Klassen - Fernzeitträger.md",
+    "Klassen - Glanzräuber - Klassenfähigkeiten.md",
+    "Klassen - Glanzräuber.md",
+    "Klassen - Glutpfleger - Klassenfähigkeiten.md",
+    "Klassen - Glutpfleger.md",
+    "Klassen - Heimkehrhüter - Klassenfähigkeiten.md",
+    "Klassen - Heimkehrhüter.md",
+    "Klassen - Index.md",
+    "Klassen - Klassenliste - Eidwächter (Tanks).md",
+    "Klassen - Klassenliste - Kraftweber (Supporter).md",
+    "Klassen - Klassenliste - Lebenshüter (Heiler).md",
+    "Klassen - Klassenliste - Schleierbrecher (Debuffer).md",
+    "Klassen - Klassenliste - Vollstrecker (Damage Dealer).md",
+    "Klassen - Klingenchor - Klassenfähigkeiten.md",
+    "Klassen - Klingenchor.md",
+    "Klassen - Kraftschatten - Klassenfähigkeiten.md",
+    "Klassen - Kraftschatten.md",
+    "Klassen - Kraftverteiler - Klassenfähigkeiten.md",
+    "Klassen - Kraftverteiler.md",
+    "Klassen - Leerenmantel - Klassenfähigkeiten.md",
+    "Klassen - Leerenmantel.md",
+    "Klassen - Nachhallmeister - Klassenfähigkeiten.md",
+    "Klassen - Nachhallmeister.md",
+    "Klassen - Namensbrecher - Klassenfähigkeiten.md",
+    "Klassen - Namensbrecher.md",
+    "Klassen - Opferkelch - Klassenfähigkeiten.md",
+    "Klassen - Opferkelch.md",
+    "Klassen - Relaisträger - Klassenfähigkeiten.md",
+    "Klassen - Relaisträger.md",
+    "Klassen - Rudelrufer - Klassenfähigkeiten.md",
+    "Klassen - Rudelrufer.md",
+    "Klassen - Scherbenhüter - Klassenfähigkeiten.md",
+    "Klassen - Scherbenhüter.md",
+    "Klassen - Schicksalsformer - Klassenfähigkeiten.md",
+    "Klassen - Schicksalsformer.md",
+    "Klassen - Schmerzlöser - Klassenfähigkeiten.md",
+    "Klassen - Schmerzlöser.md",
+    "Klassen - Sternensplitter - Klassenfähigkeiten.md",
+    "Klassen - Sternensplitter.md",
+    "Klassen - Taktbrecher - Klassenfähigkeiten.md",
+    "Klassen - Taktbrecher.md",
+    "Klassen - Tauhüter - Klassenfähigkeiten.md",
+    "Klassen - Tauhüter.md",
+    "Klassen - Tiefenpanzer - Klassenfähigkeiten.md",
+    "Klassen - Tiefenpanzer.md",
+    "Klassen - Ursprungsvermächtnis - Auftrag Fähigkeiten-Generierung.md",
+    "Klassen - Ursprungsvermächtnis - Klassenbeschreibung.md",
+    "Klassen - Ursprungsvermächtnis - Klassenfähigkeiten.md",
+    "Klassen - Ursprungsvermächtnis - Lore-Klassenbeschreibung.md",
+    "Klassen - Waffenarchivar - Klassenfähigkeiten.md",
+    "Klassen - Waffenarchivar.md",
+    "Klassen - Wundensammler - Klassenfähigkeiten.md",
+    "Klassen - Wundensammler.md",
+    "Klassen - Zeitdämpfer - Klassenfähigkeiten.md",
+    "Klassen - Zeitdämpfer.md",
+    "Klassen - Zornleiter - Klassenfähigkeiten.md",
+    "Klassen - Zornleiter.md"
+  ],
+  "class_count": 27,
+  "classes": [
+    {
+      "id": "blutzeichner",
+      "name": "Blutzeichner",
+      "source_file": "Klassen - Blutzeichner - Klassenfähigkeiten.md",
+      "json_file": "blutzeichner.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "fernzeittraeger",
+      "name": "Fernzeitträger",
+      "source_file": "Klassen - Fernzeitträger - Klassenfähigkeiten.md",
+      "json_file": "fernzeittraeger.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "glanzraeuber",
+      "name": "Glanzräuber",
+      "source_file": "Klassen - Glanzräuber - Klassenfähigkeiten.md",
+      "json_file": "glanzraeuber.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "glutpfleger",
+      "name": "Glutpfleger",
+      "source_file": "Klassen - Glutpfleger - Klassenfähigkeiten.md",
+      "json_file": "glutpfleger.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "heimkehrhueter",
+      "name": "Heimkehrhüter",
+      "source_file": "Klassen - Heimkehrhüter - Klassenfähigkeiten.md",
+      "json_file": "heimkehrhueter.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "klingenchor",
+      "name": "Klingenchor",
+      "source_file": "Klassen - Klingenchor - Klassenfähigkeiten.md",
+      "json_file": "klingenchor.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "kraftschatten",
+      "name": "Kraftschatten",
+      "source_file": "Klassen - Kraftschatten - Klassenfähigkeiten.md",
+      "json_file": "kraftschatten.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "kraftverteiler",
+      "name": "Kraftverteiler",
+      "source_file": "Klassen - Kraftverteiler - Klassenfähigkeiten.md",
+      "json_file": "kraftverteiler.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "leerenmantel",
+      "name": "Leerenmantel",
+      "source_file": "Klassen - Leerenmantel - Klassenfähigkeiten.md",
+      "json_file": "leerenmantel.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "nachhallmeister",
+      "name": "Nachhallmeister",
+      "source_file": "Klassen - Nachhallmeister - Klassenfähigkeiten.md",
+      "json_file": "nachhallmeister.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "namensbrecher",
+      "name": "Namensbrecher",
+      "source_file": "Klassen - Namensbrecher - Klassenfähigkeiten.md",
+      "json_file": "namensbrecher.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "opferkelch",
+      "name": "Opferkelch",
+      "source_file": "Klassen - Opferkelch - Klassenfähigkeiten.md",
+      "json_file": "opferkelch.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "relaistraeger",
+      "name": "Relaisträger",
+      "source_file": "Klassen - Relaisträger - Klassenfähigkeiten.md",
+      "json_file": "relaistraeger.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "rudelrufer",
+      "name": "Rudelrufer",
+      "source_file": "Klassen - Rudelrufer - Klassenfähigkeiten.md",
+      "json_file": "rudelrufer.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "scherbenhueter",
+      "name": "Scherbenhüter",
+      "source_file": "Klassen - Scherbenhüter - Klassenfähigkeiten.md",
+      "json_file": "scherbenhueter.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "schicksalsformer",
+      "name": "Schicksalsformer",
+      "source_file": "Klassen - Schicksalsformer - Klassenfähigkeiten.md",
+      "json_file": "schicksalsformer.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "schmerzloeser",
+      "name": "Schmerzlöser",
+      "source_file": "Klassen - Schmerzlöser - Klassenfähigkeiten.md",
+      "json_file": "schmerzloeser.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "sternensplitter",
+      "name": "Sternensplitter",
+      "source_file": "Klassen - Sternensplitter - Klassenfähigkeiten.md",
+      "json_file": "sternensplitter.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "taktbrecher",
+      "name": "Taktbrecher",
+      "source_file": "Klassen - Taktbrecher - Klassenfähigkeiten.md",
+      "json_file": "taktbrecher.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "tauhueter",
+      "name": "Tauhüter",
+      "source_file": "Klassen - Tauhüter - Klassenfähigkeiten.md",
+      "json_file": "tauhueter.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "tiefenpanzer",
+      "name": "Tiefenpanzer",
+      "source_file": "Klassen - Tiefenpanzer - Klassenfähigkeiten.md",
+      "json_file": "tiefenpanzer.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "ursprungsvermaechtnis-verbindlicher-auftrag-zur-generierung-der-klassenfaehigkeiten",
+      "name": "Ursprungsvermächtnis – Verbindlicher Auftrag zur Generierung der Klassenfähigkeiten",
+      "source_file": "Klassen - Ursprungsvermächtnis - Auftrag Fähigkeiten-Generierung.md",
+      "json_file": "ursprungsvermaechtnis-verbindlicher-auftrag-zur-generierung-der-klassenfaehigkeiten.json",
+      "level_count": 0,
+      "ability_count": 0
+    },
+    {
+      "id": "ursprungsvermaechtnis",
+      "name": "Ursprungsvermächtnis",
+      "source_file": "Klassen - Ursprungsvermächtnis - Klassenfähigkeiten.md",
+      "json_file": "ursprungsvermaechtnis.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "waffenarchivar",
+      "name": "Waffenarchivar",
+      "source_file": "Klassen - Waffenarchivar - Klassenfähigkeiten.md",
+      "json_file": "waffenarchivar.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "wundensammler",
+      "name": "Wundensammler",
+      "source_file": "Klassen - Wundensammler - Klassenfähigkeiten.md",
+      "json_file": "wundensammler.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "zeitdaempfer",
+      "name": "Zeitdämpfer",
+      "source_file": "Klassen - Zeitdämpfer - Klassenfähigkeiten.md",
+      "json_file": "zeitdaempfer.json",
+      "level_count": 40,
+      "ability_count": 200
+    },
+    {
+      "id": "zornleiter",
+      "name": "Zornleiter",
+      "source_file": "Klassen - Zornleiter - Klassenfähigkeiten.md",
+      "json_file": "zornleiter.json",
+      "level_count": 40,
+      "ability_count": 200
+    }
+  ],
+  "warning_count": 34,
+  "warnings": [
+    {
+      "source_file": "Klassen - Blutzeichner.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Fernzeitträger.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Glanzräuber.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Glutpfleger.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Heimkehrhüter.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Index.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Klassenliste - Eidwächter (Tanks).md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Klassenliste - Kraftweber (Supporter).md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Klassenliste - Lebenshüter (Heiler).md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Klassenliste - Schleierbrecher (Debuffer).md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Klassenliste - Vollstrecker (Damage Dealer).md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Klingenchor.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Kraftschatten.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Kraftverteiler.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Leerenmantel.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Nachhallmeister.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Namensbrecher.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Opferkelch.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Relaisträger.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Rudelrufer.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Scherbenhüter.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Schicksalsformer.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Schmerzlöser.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Sternensplitter.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Taktbrecher.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Tauhüter.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Tiefenpanzer.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Ursprungsvermächtnis - Auftrag Fähigkeiten-Generierung.md",
+      "message": "Stufen entsprechen nicht exakt 1..40. Gefunden: []",
+      "class_name": "Ursprungsvermächtnis – Verbindlicher Auftrag zur Generierung der Klassenfähigkeiten"
+    },
+    {
+      "source_file": "Klassen - Ursprungsvermächtnis - Klassenbeschreibung.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Ursprungsvermächtnis - Lore-Klassenbeschreibung.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Waffenarchivar.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Wundensammler.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Zeitdämpfer.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    },
+    {
+      "source_file": "Klassen - Zornleiter.md",
+      "message": "Keine Überschrift '# ... Klassenfähigkeiten' gefunden."
+    }
+  ]
+}

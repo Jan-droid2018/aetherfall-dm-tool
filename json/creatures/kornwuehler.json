@@ -1,0 +1,4546 @@
+{
+  "schema_version": "aetherfall.creatures.v1",
+  "id": "kornwuehler",
+  "name": "Kornwühler",
+  "source_file": "Kreaturen - Kornwühler.md",
+  "core": {
+    "creature_type": "Bestie",
+    "classification": "Weltkreatur",
+    "origin": "Caldria – Sonnenauen",
+    "occurrence": "Vor allem in den Sonnenauen und Kronlanden Caldrias; außerdem in Kornspeichern, Mühlen, Scheunen, Vorratskellern, Marktlagern und entlang großer Getreide-Handelswege. Einzelne Populationen wurden durch Warenlieferungen auch in andere Regionen verschleppt.",
+    "challenge_rating": {
+      "raw": "1 – Sehr schwache / einfache Bedrohung",
+      "value": 1,
+      "label": "Sehr schwache / einfache Bedrohung"
+    },
+    "encounter_rank": "Standard",
+    "archetype": "Fragil",
+    "elemental_affinity": "Keine feste Elementprägung",
+    "size": "Klein; meist 0,4–0,7 m Körperlänge ohne Schwanz und etwa 0,2–0,35 m Schulterhöhe",
+    "intelligence": "Tierisch; vorsichtig, lernfähig, futterorientiert und an wiederkehrende Wege sowie Geräusche gut gewöhnbar",
+    "extra_fields": {},
+    "raw_fields": {
+      "Kreaturenart": "Bestie",
+      "Einordnung": "Weltkreatur",
+      "Ursprüngliche Herkunft": "Caldria – Sonnenauen",
+      "Bekanntes Vorkommen": "Vor allem in den Sonnenauen und Kronlanden Caldrias; außerdem in Kornspeichern, Mühlen, Scheunen, Vorratskellern, Marktlagern und entlang großer Getreide-Handelswege. Einzelne Populationen wurden durch Warenlieferungen auch in andere Regionen verschleppt.",
+      "Herausforderungsgrad": "**1 – Sehr schwache / einfache Bedrohung**",
+      "Begegnungsrang": "Standard",
+      "Archetyp": "Fragil",
+      "Elementare Eigenschaft": "Keine feste Elementprägung",
+      "Größenordnung": "Klein; meist 0,4–0,7 m Körperlänge ohne Schwanz und etwa 0,2–0,35 m Schulterhöhe",
+      "Intelligenzniveau": "Tierisch; vorsichtig, lernfähig, futterorientiert und an wiederkehrende Wege sowie Geräusche gut gewöhnbar"
+    },
+    "raw_table_markdown": "| Kerndaten | Angabe |\n|---|---|\n| Kreaturenart | Bestie |\n| Einordnung | Weltkreatur |\n| Ursprüngliche Herkunft | Caldria – Sonnenauen |\n| Bekanntes Vorkommen | Vor allem in den Sonnenauen und Kronlanden Caldrias; außerdem in Kornspeichern, Mühlen, Scheunen, Vorratskellern, Marktlagern und entlang großer Getreide-Handelswege. Einzelne Populationen wurden durch Warenlieferungen auch in andere Regionen verschleppt. |\n| Herausforderungsgrad | **1 – Sehr schwache / einfache Bedrohung** |\n| Begegnungsrang | Standard |\n| Archetyp | Fragil |\n| Elementare Eigenschaft | Keine feste Elementprägung |\n| Größenordnung | Klein; meist 0,4–0,7 m Körperlänge ohne Schwanz und etwa 0,2–0,35 m Schulterhöhe |\n| Intelligenzniveau | Tierisch; vorsichtig, lernfähig, futterorientiert und an wiederkehrende Wege sowie Geräusche gut gewöhnbar |"
+  },
+  "action_overview": {
+    "headers": [
+      "Nr.",
+      "Aktion",
+      "Typ",
+      "Grundfunktion"
+    ],
+    "actions": [
+      {
+        "number": 1,
+        "name": "Nagebiss",
+        "type": "Angriff",
+        "base_function": "Zuverlässiger Nahkampfangriff und normale Standardoption.",
+        "id": "kornwuehler-overview-a01-nagebiss",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "1",
+          "Aktion": "Nagebiss",
+          "Typ": "Angriff",
+          "Grundfunktion": "Zuverlässiger Nahkampfangriff und normale Standardoption."
+        }
+      },
+      {
+        "number": 2,
+        "name": "Fersenzupfer",
+        "type": "Angriff / Kontrolle",
+        "base_function": "Geringerer Schaden; kann die Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m senken.",
+        "id": "kornwuehler-overview-a02-fersenzupfer",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "2",
+          "Aktion": "Fersenzupfer",
+          "Typ": "Angriff / Kontrolle",
+          "Grundfunktion": "Geringerer Schaden; kann die Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m senken."
+        }
+      },
+      {
+        "number": 3,
+        "name": "Spaltenhuschen",
+        "type": "Defensive Bewegungsaktion",
+        "base_function": "Kurze Bewegung in Deckung; danach +2 auf den nächsten Ausweichwurf, solange der Kornwühler an der Deckung bleibt.",
+        "id": "kornwuehler-overview-a03-spaltenhuschen",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "3",
+          "Aktion": "Spaltenhuschen",
+          "Typ": "Defensive Bewegungsaktion",
+          "Grundfunktion": "Kurze Bewegung in Deckung; danach +2 auf den nächsten Ausweichwurf, solange der Kornwühler an der Deckung bleibt."
+        }
+      }
+    ]
+  },
+  "shared_action_details": [],
+  "lore_and_rules": [
+    {
+      "title": "Überblick",
+      "id": "ueberblick",
+      "markdown": "Der **Kornwühler** ist ein kleiner, nachtaktiver Vorratsschädling, der sich bevorzugt dort ansiedelt, wo Getreide, Trockenfrüchte, Saatgut oder andere haltbare Lebensmittel in größeren Mengen gelagert werden. Sein Körper erinnert aus der Entfernung an ein gedrungenes Nagetier, doch sein Kopf ist breiter und die beiden vorderen Schneidezähne sind ungewöhnlich kräftig.\n\nEin einzelner Kornwühler stellt für bewaffnete Reisende kaum eine ernsthafte Gefahr dar. Problematisch werden die Tiere durch ihre **Beharrlichkeit und ihre kleinen Gruppen**. Mehrere Exemplare können innerhalb weniger Nächte Säcke öffnen, Kisten annagen, dünne Bretter durchbrechen und ganze Vorratskammern verunreinigen.\n\nKornwühler suchen normalerweise keinen Kampf. Werden sie überrascht, fliehen sie zunächst in Spalten, unter Regale oder hinter Vorratsstapel. Erst wenn der Fluchtweg versperrt ist, Jungtiere bedroht werden oder eine Gruppe direkt in ihrem Futterbau gestellt wird, beißen sie nach Füßen und Händen.\n\nFür unerfahrene Abenteurer sind Kornwühler deshalb weniger ein klassischer Räuber als eine **kleine, hektische Begegnungsgefahr in engen Räumen**. Mehrere Tiere zwischen Kisten, Säcken und schmalen Durchgängen können überraschend lästig werden, bleiben aber bewusst eine sehr niedrige Bedrohung.",
+      "tables": [],
+      "source": {
+        "line_start": 33,
+        "line_end": 42
+      }
+    },
+    {
+      "title": "Erscheinungsbild und Anatomie",
+      "id": "erscheinungsbild-und-anatomie",
+      "markdown": "Der Kornwühler besitzt einen gedrungenen Körper mit kurzen Beinen, breiten Pfoten und einem langen, beinahe unbehaarten Schwanz. Sein Fell ist meist strohbraun, graubraun oder staubfarben und tarnt ihn zwischen Getreide, Holz, Leinen und trockener Erde.\n\nDer Kopf ist im Verhältnis zum Körper auffällig breit. Die kräftige Kiefermuskulatur zieht sich bis weit hinter die Wangen, wodurch der Vorderkopf fast keilförmig wirkt. Zwei lange Schneidezähne stehen leicht nach vorn. Ihre Vorderseiten sind hart und gelblich bis dunkelbernsteinfarben. Mit ihnen kann der Kornwühler Stoff, Leder, dünnes Holz und weiche Mörtelfugen Stück für Stück abtragen.\n\nDie Augen sind groß genug, um in schwachem Licht Bewegungen zu erkennen, aber nicht für weite Sicht ausgelegt. Deutlich wichtiger sind die langen Tasthaare an Schnauze und Vorderbeinen. Mit ihnen prüft das Tier enge Durchgänge, ohne den Kopf vollständig hineinstecken zu müssen.\n\nDie Vorderpfoten besitzen kurze, gebogene Krallen. Sie dienen zum Graben in lockerer Erde, zum Festhalten an rauem Holz und zum Auseinanderziehen bereits beschädigter Säcke. Kornwühler sind keine hervorragenden Kletterer, können aber an Regalen, Kistenstapeln und groben Holzwänden kurze Strecken überwinden.\n\nTrotz ihrer kräftigen Zähne sind Kornwühler körperlich **vergleichsweise fragil**. Ihr Fell bietet kaum Schutz, und ihr leichter Knochenbau ist eher auf schnelle Richtungswechsel und das Verschwinden in engen Spalten ausgelegt als auf einen offenen Kampf.",
+      "tables": [],
+      "source": {
+        "line_start": 43,
+        "line_end": 54
+      }
+    },
+    {
+      "title": "Herkunft und Entstehung",
+      "id": "herkunft-und-entstehung",
+      "markdown": "Die ältesten verbreiteten Berichte über Kornwühler stammen aus den **Sonnenauen Caldrias**, wo große Mengen Getreide angebaut, transportiert und eingelagert werden. Dort fanden die Tiere über lange Zeit ideale Bedingungen: volle Speicher, Scheunen, Mühlen, trockene Keller und ständig bewegte Waren.\n\nKornwühler gelten als natürliche Tierart. Es gibt keine Hinweise darauf, dass sie künstlich erschaffen oder durch Eidryth verändert wurden. Ihre ungewöhnlich kräftigen Nagezähne werden vielmehr als Anpassung an harte Samenschalen, trockene Pflanzenfasern und den Zugang zu geschützten Vorräten verstanden.\n\nMit Getreidesäcken, Saatgutkisten und Wagenladungen breiteten sie sich aus den Sonnenauen in andere Teile Caldrias aus. Besonders die dicht besiedelten Kronlande bieten ihnen zahlreiche neue Lagerplätze. Von großen Handelszentren aus können einzelne Tiere oder ganze Würfe unbemerkt mit Waren weiterreisen.",
+      "tables": [],
+      "source": {
+        "line_start": 55,
+        "line_end": 62
+      }
+    },
+    {
+      "title": "Vorkommen und Lebensraum",
+      "id": "vorkommen-und-lebensraum",
+      "markdown": "Kornwühler bevorzugen trockene, geschützte Orte mit verlässlicher Nahrung. Typische Lebensräume sind:\n\n- Kornspeicher und Scheunen,\n- Mühlen und Backhäuser mit Vorratsräumen,\n- Markt- und Handelsspeicher,\n- Vorratskeller großer Gutshöfe,\n- Wagenhallen und Karawanenlager,\n- Zwischenräume unter hölzernen Böden,\n- Hohlräume in dünnen Wänden,\n- verlassene Gebäude mit zurückgelassenen Vorräten,\n- Feldränder kurz nach der Ernte.\n\nIn freier Landschaft leben sie in kurzen Erdbauen nahe Feldern, Hecken oder trockenen Böschungen. Sobald sie jedoch Zugang zu Gebäuden finden, bevorzugen sie deren gleichmäßigere Temperaturen und die hohe Nahrungsdichte.\n\nEin Kornwühlerbau in einem Speicher liegt häufig hinter einer Wandverkleidung, unter dem Boden oder innerhalb eines Stapels aus beschädigten Kisten. Die Tiere tragen trockene Halme, Stofffasern und Papierstücke hinein und legen mehrere kleine Futterkammern an.",
+      "tables": [],
+      "source": {
+        "line_start": 63,
+        "line_end": 80
+      }
+    },
+    {
+      "title": "Verhalten und Lebensweise",
+      "id": "verhalten-und-lebensweise",
+      "markdown": "Kornwühler sind überwiegend nachtaktiv. Mit Einbruch der Dunkelheit verlassen sie ihre Verstecke und folgen wiederkehrenden Laufwegen entlang von Wänden, Balken und Regalen.\n\nSie leben meist in **kleinen Gruppen von drei bis acht Tieren**. Diese Gruppen besitzen keine ausgeprägte Rangordnung. Mehrere erwachsene Tiere nutzen jedoch dieselben Futterwege und reagieren gemeinsam auf Alarmrufe.\n\nDie Nahrung besteht hauptsächlich aus Getreide, Saatgut, Nüssen, Trockenfrüchten und anderen energiereichen Vorräten. Gelegentlich fressen sie Insekten, Küchenreste oder weiche Pflanzenbestandteile. Sie töten keine größeren Tiere als Nahrung.\n\nKornwühler lernen schnell, welche Geräusche Gefahr ankündigen. Regelmäßige Schritte eines Müllers oder Lagerarbeiters können sie von den unregelmäßigen Bewegungen eines Fremden unterscheiden. Wiederholt aufgestellte einfache Fallen werden nach einigen Verlusten häufig gemieden.\n\nBei Gefahr stoßen sie kurze, raue Quieklaute aus. Daraufhin ziehen sich andere Tiere in Spalten zurück oder wechseln den Laufweg. Eine Gruppe verteidigt ihren Vorrat nicht bis zum Tod. Ist ein sicherer Fluchtweg offen, wird er fast immer genutzt.",
+      "tables": [],
+      "source": {
+        "line_start": 81,
+        "line_end": 92
+      }
+    },
+    {
+      "title": "Spuren und Vorzeichen",
+      "id": "spuren-und-vorzeichen",
+      "markdown": "Typische Hinweise auf Kornwühler sind:\n\n- halbmondförmige Nagespuren an Holzkisten und Balken,\n- kleine Löcher nahe dem unteren Rand von Getreidesäcken,\n- schmale Laufspuren im Mehl- oder Kornstaub,\n- verstreute Schalen und angeknabberte Körner,\n- trockene Halme oder Stofffasern in Wandspalten,\n- feines Holzmehl unter angenagten Brettern,\n- kleine dunkle Kotspuren entlang wiederkehrender Wege,\n- leises Scharren und kurzes Knacken während der Nacht.\n\nEin einzelnes beschädigtes Kornkorn bedeutet wenig. Mehrere sauber angenagte Säcke in derselben Höhe deuten dagegen oft auf eine feste Kornwühlergruppe hin.",
+      "tables": [],
+      "source": {
+        "line_start": 93,
+        "line_end": 107
+      }
+    },
+    {
+      "title": "Beziehung zu Bewohnern und Kulturen",
+      "id": "beziehung-zu-bewohnern-und-kulturen",
+      "markdown": "In den Sonnenauen und Kronlanden gelten Kornwühler vor allem als **wirtschaftlicher Schädling**. Bauern und Müller fürchten weniger den direkten Angriff als verdorbene Saat, verlorene Wintervorräte und beschädigte Lagerbehälter.\n\nSpeicher werden deshalb regelmäßig auf Nagespuren geprüft. Säcke stehen möglichst nicht direkt an Wänden, beschädigte Bretter werden ersetzt, und Lebensmittel werden in dichten Behältern oder auf erhöhten Gestellen gelagert. Katzen, kleine Jagdtiere und einfache Fallen werden vielerorts zur Kontrolle der Bestände eingesetzt.\n\nGroße Kornwühlergruppen werden manchmal von bezahlten Fängern entfernt. Dabei versucht man zuerst, Fluchtwege und Futterzugänge zu kontrollieren, weil ein Kampf zwischen vielen Tieren in einem vollen Lager mehr Schaden anrichten kann als die Tiere selbst.\n\nUnter Lagerarbeitern existiert die einfache Erfahrung, dass ein Kornwühler selten allein gefunden wird. Wer ein Tier am Tage offen durch einen Speicher laufen sieht, überprüft deshalb nicht nur die unmittelbare Stelle, sondern auch Wände, Boden und benachbarte Vorräte.",
+      "tables": [],
+      "source": {
+        "line_start": 108,
+        "line_end": 117
+      }
+    },
+    {
+      "title": "Kampfverhalten",
+      "id": "kampfverhalten",
+      "markdown": "Ein Kornwühler eröffnet keinen Kampf gegen einen größeren Gegner, solange ein Fluchtweg vorhanden ist. Wird er in die Enge getrieben, versucht er mit einem schnellen **Nagebiss** Platz zu schaffen.\n\nDer **Fersenzupfer** richtet sich gegen Beine und Füße. Er verursacht weniger Schaden, kann ein Ziel aber kurz aus dem Schritt bringen. Mehrere Kornwühler nutzen diese Aktion unabhängig voneinander; die Bewegungsreduktion selbst stapelt sich nicht.\n\nMit **Spaltenhuschen** schießt der Kornwühler zwischen Kisten, Möbel, Sackstapel oder Wandvorsprünge und nutzt die Umgebung als kurzfristige Deckung. Die Bewegung schützt ihn nicht automatisch vor Reaktionen – seine Stärke liegt darin, schnell wieder eine ungünstige Angriffslinie für den Gegner zu schaffen.\n\nSinkt ein Kornwühler unter ungefähr ein Viertel seiner maximalen LP, versucht er grundsätzlich zu fliehen. Nur wenn Jungtiere unmittelbar bedroht werden und kein Rückzugsweg vorhanden ist, kämpft er länger.",
+      "tables": [],
+      "source": {
+        "line_start": 118,
+        "line_end": 127
+      }
+    },
+    {
+      "title": "Taktik für den Game Master",
+      "id": "taktik-fuer-den-game-master",
+      "markdown": "Kornwühler sollen als hektische Kleingegner gespielt werden, nicht als zähe Frontkämpfer.\n\n- **Eröffnung:** Wenn möglich beginnen sie nahe Kisten, Regalen oder Wandspalten und suchen zuerst Schutz oder einen offenen Fluchtweg.\n- **Zielwahl:** Sie greifen bevorzugt die nächstgelegene Kreatur an, die ihren Rückzug blockiert.\n- **Abstand:** Sie bleiben im Nahbereich nur so lange, wie nötig ist, um einen Weg freizubeißen.\n- **Gelände:** Enge Vorratsräume, niedrige Regale, Säcke und Kisten sind ihr größter Vorteil.\n- **Gruppenverhalten:** Mehrere Kornwühler greifen unabhängig an; sie erhalten **keinen kostenlosen Rudelbonus**.\n- **Niedrige LP:** Unter etwa 25 % LP nutzen sie nach Möglichkeit Spaltenhuschen und verlassen die Begegnung.\n- **Kampfende:** Öffnet sich ein glaubwürdiger Fluchtweg, kann die Begegnung enden, ohne dass alle Tiere getötet werden.",
+      "tables": [],
+      "source": {
+        "line_start": 128,
+        "line_end": 139
+      }
+    },
+    {
+      "title": "Mechanische Grundidentität",
+      "id": "mechanische-grundidentitaet",
+      "markdown": "**LP-Hauptattribut:** Stärke (ST) – nicht wegen großer Körpermasse, sondern weil kräftige Hals-, Kiefer- und Rumpfmuskulatur die körperliche Belastbarkeit des kleinen Tieres bestimmt.  \n**LP-Sekundärattribut:** Willenskraft (WI) – sie bildet den kurzen Überlebens- und Fluchtwillen eines in die Enge getriebenen Tieres ab.  \n**Bonusprofil:** Beweglichkeit, Geschicklichkeit, Wahrnehmung und Intuition sind die wichtigsten Werte. Stärke bleibt für die Größe ordentlich; Intelligenz, Kreativität und Charisma sind niedrig.  \n**Offensivprofil:** Einfacher Nahkämpfer. Der Nagebiss liegt je nach Stufe ungefähr um `0,47–0,53 GE` pro Aktion. Der Fersenzupfer tauscht einen Teil des Schadens gegen eine kleine, kurzzeitige Bewegungsbehinderung.  \n**Defensivprofil:** **Fragil.** Lebenspunkte und feste Verteidigungswerte bleiben niedrig. Der Kornwühler überlebt nicht durch Panzerung, sondern durch Bewegung, Deckung und das Verlassen einer ungünstigen Begegnung.  \n**Bewegungsprofil:** Land 10 m, Klettern 4 m. Die Kletterbewegung gilt nur an rauem Holz, Regalen, Kisten, Mauerwerk oder vergleichbaren griffigen Flächen.  \n**Elementprofil:** Keine feste Elementprägung und keine angeborene elementare Resistenz oder Verwundbarkeit.  \n**Aktionsanzahl:** 3 unterschiedliche Kampfoptionen.  \n**Phasenprofil:** Kein Phasenwechsel.",
+      "tables": [],
+      "source": {
+        "line_start": 140,
+        "line_end": 151
+      }
+    },
+    {
+      "title": "Aktionsübersicht",
+      "id": "aktionsuebersicht",
+      "markdown": "| Nr. | Aktion | Typ | Grundfunktion |\n|---:|---|---|---|\n| 1 | Nagebiss | Angriff | Zuverlässiger Nahkampfangriff und normale Standardoption. |\n| 2 | Fersenzupfer | Angriff / Kontrolle | Geringerer Schaden; kann die Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m senken. |\n| 3 | Spaltenhuschen | Defensive Bewegungsaktion | Kurze Bewegung in Deckung; danach +2 auf den nächsten Ausweichwurf, solange der Kornwühler an der Deckung bleibt. |\n\n---",
+      "tables": [
+        {
+          "headers": [
+            "Nr.",
+            "Aktion",
+            "Typ",
+            "Grundfunktion"
+          ],
+          "rows": [
+            {
+              "Nr.": "1",
+              "Aktion": "Nagebiss",
+              "Typ": "Angriff",
+              "Grundfunktion": "Zuverlässiger Nahkampfangriff und normale Standardoption."
+            },
+            {
+              "Nr.": "2",
+              "Aktion": "Fersenzupfer",
+              "Typ": "Angriff / Kontrolle",
+              "Grundfunktion": "Geringerer Schaden; kann die Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m senken."
+            },
+            {
+              "Nr.": "3",
+              "Aktion": "Spaltenhuschen",
+              "Typ": "Defensive Bewegungsaktion",
+              "Grundfunktion": "Kurze Bewegung in Deckung; danach +2 auf den nächsten Ausweichwurf, solange der Kornwühler an der Deckung bleibt."
+            }
+          ],
+          "raw_markdown": "| Nr. | Aktion | Typ | Grundfunktion |\n|---:|---|---|---|\n| 1 | Nagebiss | Angriff | Zuverlässiger Nahkampfangriff und normale Standardoption. |\n| 2 | Fersenzupfer | Angriff / Kontrolle | Geringerer Schaden; kann die Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m senken. |\n| 3 | Spaltenhuschen | Defensive Bewegungsaktion | Kurze Bewegung in Deckung; danach +2 auf den nächsten Ausweichwurf, solange der Kornwühler an der Deckung bleibt. |"
+        }
+      ],
+      "source": {
+        "line_start": 152,
+        "line_end": 161
+      }
+    }
+  ],
+  "levels": [
+    {
+      "level": 1,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 4,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "4",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+1"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "115",
+          "physische_verteidigung": "6",
+          "magieverteidigung": "5",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m; Klettern 4 m",
+          "fersenzupfer_sg": "12"
+        },
+        "raw_fields": {
+          "Maximale LP": "115",
+          "Physische Verteidigung": "6",
+          "Magieverteidigung": "5",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m; Klettern 4 m",
+          "Fersenzupfer-SG": "12"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+1) + ST-Bonus (+0)) × 10) + ((WI-Modifikator (-1) + WI-Bonus (+0)) × 5) + (1 × 10) = 115 LP",
+        "markdown": "`100 + ((ST-Modifikator (+1) + ST-Bonus (+0)) × 10) + ((WI-Modifikator (-1) + WI-Bonus (+0)) × 5) + (1 × 10) = 115 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Nagebiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+3)",
+            "range_area": "Nah",
+            "damage_effect": "5W8 + ST-Modifikator (+1) + ST-Bonus (+0)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "23.5",
+            "avg_hit_damage": "15.7",
+            "avg_expected_effect": "10.8",
+            "ge_share": "0.48",
+            "notes": null,
+            "avg_raw_damage_value": 23.5,
+            "avg_hit_damage_value": 15.7,
+            "ge_share_value": 0.48,
+            "id": "kornwuehler-l01-a01-nagebiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Nagebiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+3)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "5W8 + ST-Modifikator (+1) + ST-Bonus (+0)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "23.5",
+              "Ø Treffer-Endschaden": "15.7",
+              "Ø Erwartungswirkung": "10.8",
+              "GE-Anteil": "0.48",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Fersenzupfer",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+3); danach SG 12",
+            "range_area": "Nah",
+            "damage_effect": "4W8 + ST-Modifikator (+1) + ST-Bonus (+0); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "19.0",
+            "avg_hit_damage": "11.2",
+            "avg_expected_effect": "7.7 Schaden + Kontrolle",
+            "ge_share": "0.40 gesamt",
+            "notes": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels.",
+            "avg_raw_damage_value": 19.0,
+            "avg_hit_damage_value": 11.2,
+            "id": "kornwuehler-l01-a02-fersenzupfer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Fersenzupfer",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+3); danach SG 12",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "4W8 + ST-Modifikator (+1) + ST-Bonus (+0); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "19.0",
+              "Ø Treffer-Endschaden": "11.2",
+              "Ø Erwartungswirkung": "7.7 Schaden + Kontrolle",
+              "GE-Anteil": "0.40 gesamt",
+              "Zusatz": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Spaltenhuschen",
+            "cost": "1 Aktion",
+            "type": "defensive Bewegungsaktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst / bis 3 m Bewegung",
+            "damage_effect": "Bewegt sich bis zu 3 m; endet die Bewegung unmittelbar an geeigneter Deckung, +2 auf den nächsten Ausweichwurf",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Die Bewegung folgt den normalen Regeln und schützt nicht vor Reaktionen.",
+            "id": "kornwuehler-l01-a03-spaltenhuschen",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Spaltenhuschen",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Bewegungsaktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst / bis 3 m Bewegung",
+              "Schaden / Wirkung": "Bewegt sich bis zu 3 m; endet die Bewegung unmittelbar an geeigneter Deckung, +2 auf den nächsten Ausweichwurf",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Die Bewegung folgt den normalen Regeln und schützt nicht vor Reaktionen."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "kornwuehler-l01-nagebiss",
+          "name": "Nagebiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+3)`",
+          "damage": "`5W8 + ST-Modifikator (+1) + ST-Bonus (+0)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Kornwühler schnellt mit dem breiten Kopf vor und schlägt seine harten Schneidezähne in das nächstgelegene erreichbare Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er besitzt **keinen automatischen Folgetreffer, keine kostenlose Bewegung und keine zusätzliche Kontrollwirkung**.",
+          "stacking": "Mehrere Kornwühler können dasselbe Ziel mit Nagebiss angreifen; jeder Angriff wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+3)`",
+            "Schaden": "`5W8 + ST-Modifikator (+1) + ST-Bonus (+0)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Kornwühler schnellt mit dem breiten Kopf vor und schlägt seine harten Schneidezähne in das nächstgelegene erreichbare Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er besitzt **keinen automatischen Folgetreffer, keine kostenlose Bewegung und keine zusätzliche Kontrollwirkung**.",
+            "Stapelung": "Mehrere Kornwühler können dasselbe Ziel mit Nagebiss angreifen; jeder Angriff wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 204,
+            "line_end": 215
+          }
+        },
+        {
+          "id": "kornwuehler-l01-fersenzupfer",
+          "name": "Fersenzupfer",
+          "type": "Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+3)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 12** nach einem Treffer",
+          "damage": "`4W8 + ST-Modifikator (+1) + ST-Bonus (+0)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer schnappt der Kornwühler nach Fuß, Knöchel oder einer anderen bodennahen Gliedmaße und zieht sofort wieder zurück. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen.",
+          "stacking": "Mehrere Fersenzupfer desselben oder verschiedener Kornwühler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+          "end_condition": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+3)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 12** nach einem Treffer",
+            "Schaden": "`4W8 + ST-Modifikator (+1) + ST-Bonus (+0)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer schnappt der Kornwühler nach Fuß, Knöchel oder einer anderen bodennahen Gliedmaße und zieht sofort wieder zurück. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen.",
+            "Stapelung": "Mehrere Fersenzupfer desselben oder verschiedener Kornwühler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+            "Ende der Wirkung": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 216,
+            "line_end": 229
+          }
+        },
+        {
+          "id": "kornwuehler-l01-spaltenhuschen",
+          "name": "Spaltenhuschen",
+          "type": "Defensive Bewegungsaktion",
+          "cost": "1 Aktion",
+          "requirement": "Innerhalb von 3 m befindet sich eine Kiste, ein Regal, ein Sackstapel, eine Wandkante, ein Möbelstück, eine niedrige Öffnung oder eine vergleichbare Umgebung, die den kleinen Körper des Kornwühlers teilweise verdecken kann.",
+          "target": "Selbst",
+          "rule_effect": "Der Kornwühler bewegt sich bis zu **3 m** in Richtung einer geeigneten Deckung. Diese Bewegung verwendet die normalen Bewegungsregeln und verhindert keine Reaktionen. Endet die Bewegung unmittelbar an der gewählten Deckung, erhält der Kornwühler **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Der Bonus gilt nur, solange der Kornwühler in unmittelbarer Nähe dieser Deckung bleibt.",
+          "stacking": "Spaltenhuschen stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt die bestehende Wirkung.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, sobald der Kornwühler die Deckung verlässt oder spätestens zu Beginn seines nächsten eigenen Zuges.",
+          "extra_fields": {
+            "Bewegung": "Bis zu 3 m",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis der Kornwühler die Deckung verlässt"
+          },
+          "raw_fields": {
+            "Typ": "Defensive Bewegungsaktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Innerhalb von 3 m befindet sich eine Kiste, ein Regal, ein Sackstapel, eine Wandkante, ein Möbelstück, eine niedrige Öffnung oder eine vergleichbare Umgebung, die den kleinen Körper des Kornwühlers teilweise verdecken kann.",
+            "Ziel": "Selbst",
+            "Bewegung": "Bis zu 3 m",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis der Kornwühler die Deckung verlässt",
+            "Regelwirkung": "Der Kornwühler bewegt sich bis zu **3 m** in Richtung einer geeigneten Deckung. Diese Bewegung verwendet die normalen Bewegungsregeln und verhindert keine Reaktionen. Endet die Bewegung unmittelbar an der gewählten Deckung, erhält der Kornwühler **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Der Bonus gilt nur, solange der Kornwühler in unmittelbarer Nähe dieser Deckung bleibt.",
+            "Stapelung": "Spaltenhuschen stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt die bestehende Wirkung.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, sobald der Kornwühler die Deckung verlässt oder spätestens zu Beginn seines nächsten eigenen Zuges."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 230,
+            "line_end": 241
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 162,
+        "line_end": 249
+      }
+    },
+    {
+      "level": 5,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 4,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "4",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "170",
+          "physische_verteidigung": "8",
+          "magieverteidigung": "7",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m; Klettern 4 m",
+          "fersenzupfer_sg": "13"
+        },
+        "raw_fields": {
+          "Maximale LP": "170",
+          "Physische Verteidigung": "8",
+          "Magieverteidigung": "7",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m; Klettern 4 m",
+          "Fersenzupfer-SG": "13"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+2) + ST-Bonus (+0)) × 10) + ((WI-Modifikator (+0) + WI-Bonus (+0)) × 5) + (5 × 10) = 170 LP",
+        "markdown": "`100 + ((ST-Modifikator (+2) + ST-Bonus (+0)) × 10) + ((WI-Modifikator (+0) + WI-Bonus (+0)) × 5) + (5 × 10) = 170 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Nagebiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+            "range_area": "Nah",
+            "damage_effect": "6W8 + ST-Modifikator (+2) + ST-Bonus (+0)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "29.0",
+            "avg_hit_damage": "20.3",
+            "avg_expected_effect": "13.9",
+            "ge_share": "0.51",
+            "notes": null,
+            "avg_raw_damage_value": 29.0,
+            "avg_hit_damage_value": 20.3,
+            "ge_share_value": 0.51,
+            "id": "kornwuehler-l05-a01-nagebiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Nagebiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "6W8 + ST-Modifikator (+2) + ST-Bonus (+0)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "29.0",
+              "Ø Treffer-Endschaden": "20.3",
+              "Ø Erwartungswirkung": "13.9",
+              "GE-Anteil": "0.51",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Fersenzupfer",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4); danach SG 13",
+            "range_area": "Nah",
+            "damage_effect": "4W10 + ST-Modifikator (+2) + ST-Bonus (+0); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "24.0",
+            "avg_hit_damage": "15.2",
+            "avg_expected_effect": "10.5 Schaden + Kontrolle",
+            "ge_share": "0.44 gesamt",
+            "notes": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels.",
+            "avg_raw_damage_value": 24.0,
+            "avg_hit_damage_value": 15.2,
+            "id": "kornwuehler-l05-a02-fersenzupfer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Fersenzupfer",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4); danach SG 13",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "4W10 + ST-Modifikator (+2) + ST-Bonus (+0); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "24.0",
+              "Ø Treffer-Endschaden": "15.2",
+              "Ø Erwartungswirkung": "10.5 Schaden + Kontrolle",
+              "GE-Anteil": "0.44 gesamt",
+              "Zusatz": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Spaltenhuschen",
+            "cost": "1 Aktion",
+            "type": "defensive Bewegungsaktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst / bis 3 m Bewegung",
+            "damage_effect": "Bewegt sich bis zu 3 m; endet die Bewegung unmittelbar an geeigneter Deckung, +2 auf den nächsten Ausweichwurf",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Die Bewegung folgt den normalen Regeln und schützt nicht vor Reaktionen.",
+            "id": "kornwuehler-l05-a03-spaltenhuschen",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Spaltenhuschen",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Bewegungsaktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst / bis 3 m Bewegung",
+              "Schaden / Wirkung": "Bewegt sich bis zu 3 m; endet die Bewegung unmittelbar an geeigneter Deckung, +2 auf den nächsten Ausweichwurf",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Die Bewegung folgt den normalen Regeln und schützt nicht vor Reaktionen."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "kornwuehler-l05-nagebiss",
+          "name": "Nagebiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+          "damage": "`6W8 + ST-Modifikator (+2) + ST-Bonus (+0)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Kornwühler schnellt mit dem breiten Kopf vor und schlägt seine harten Schneidezähne in das nächstgelegene erreichbare Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er besitzt **keinen automatischen Folgetreffer, keine kostenlose Bewegung und keine zusätzliche Kontrollwirkung**.",
+          "stacking": "Mehrere Kornwühler können dasselbe Ziel mit Nagebiss angreifen; jeder Angriff wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+            "Schaden": "`6W8 + ST-Modifikator (+2) + ST-Bonus (+0)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Kornwühler schnellt mit dem breiten Kopf vor und schlägt seine harten Schneidezähne in das nächstgelegene erreichbare Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er besitzt **keinen automatischen Folgetreffer, keine kostenlose Bewegung und keine zusätzliche Kontrollwirkung**.",
+            "Stapelung": "Mehrere Kornwühler können dasselbe Ziel mit Nagebiss angreifen; jeder Angriff wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 292,
+            "line_end": 303
+          }
+        },
+        {
+          "id": "kornwuehler-l05-fersenzupfer",
+          "name": "Fersenzupfer",
+          "type": "Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 13** nach einem Treffer",
+          "damage": "`4W10 + ST-Modifikator (+2) + ST-Bonus (+0)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer schnappt der Kornwühler nach Fuß, Knöchel oder einer anderen bodennahen Gliedmaße und zieht sofort wieder zurück. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen.",
+          "stacking": "Mehrere Fersenzupfer desselben oder verschiedener Kornwühler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+          "end_condition": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 13** nach einem Treffer",
+            "Schaden": "`4W10 + ST-Modifikator (+2) + ST-Bonus (+0)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer schnappt der Kornwühler nach Fuß, Knöchel oder einer anderen bodennahen Gliedmaße und zieht sofort wieder zurück. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen.",
+            "Stapelung": "Mehrere Fersenzupfer desselben oder verschiedener Kornwühler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+            "Ende der Wirkung": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 304,
+            "line_end": 317
+          }
+        },
+        {
+          "id": "kornwuehler-l05-spaltenhuschen",
+          "name": "Spaltenhuschen",
+          "type": "Defensive Bewegungsaktion",
+          "cost": "1 Aktion",
+          "requirement": "Innerhalb von 3 m befindet sich eine Kiste, ein Regal, ein Sackstapel, eine Wandkante, ein Möbelstück, eine niedrige Öffnung oder eine vergleichbare Umgebung, die den kleinen Körper des Kornwühlers teilweise verdecken kann.",
+          "target": "Selbst",
+          "rule_effect": "Der Kornwühler bewegt sich bis zu **3 m** in Richtung einer geeigneten Deckung. Diese Bewegung verwendet die normalen Bewegungsregeln und verhindert keine Reaktionen. Endet die Bewegung unmittelbar an der gewählten Deckung, erhält der Kornwühler **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Der Bonus gilt nur, solange der Kornwühler in unmittelbarer Nähe dieser Deckung bleibt.",
+          "stacking": "Spaltenhuschen stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt die bestehende Wirkung.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, sobald der Kornwühler die Deckung verlässt oder spätestens zu Beginn seines nächsten eigenen Zuges.",
+          "extra_fields": {
+            "Bewegung": "Bis zu 3 m",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis der Kornwühler die Deckung verlässt"
+          },
+          "raw_fields": {
+            "Typ": "Defensive Bewegungsaktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Innerhalb von 3 m befindet sich eine Kiste, ein Regal, ein Sackstapel, eine Wandkante, ein Möbelstück, eine niedrige Öffnung oder eine vergleichbare Umgebung, die den kleinen Körper des Kornwühlers teilweise verdecken kann.",
+            "Ziel": "Selbst",
+            "Bewegung": "Bis zu 3 m",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis der Kornwühler die Deckung verlässt",
+            "Regelwirkung": "Der Kornwühler bewegt sich bis zu **3 m** in Richtung einer geeigneten Deckung. Diese Bewegung verwendet die normalen Bewegungsregeln und verhindert keine Reaktionen. Endet die Bewegung unmittelbar an der gewählten Deckung, erhält der Kornwühler **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Der Bonus gilt nur, solange der Kornwühler in unmittelbarer Nähe dieser Deckung bleibt.",
+            "Stapelung": "Spaltenhuschen stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt die bestehende Wirkung.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, sobald der Kornwühler die Deckung verlässt oder spätestens zu Beginn seines nächsten eigenen Zuges."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 318,
+            "line_end": 329
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 250,
+        "line_end": 337
+      }
+    },
+    {
+      "level": 10,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 11,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "11",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "230",
+          "physische_verteidigung": "10",
+          "magieverteidigung": "9",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m; Klettern 4 m",
+          "fersenzupfer_sg": "13"
+        },
+        "raw_fields": {
+          "Maximale LP": "230",
+          "Physische Verteidigung": "10",
+          "Magieverteidigung": "9",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m; Klettern 4 m",
+          "Fersenzupfer-SG": "13"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+2) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+0) + WI-Bonus (+0)) × 5) + (10 × 10) = 230 LP",
+        "markdown": "`100 + ((ST-Modifikator (+2) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+0) + WI-Bonus (+0)) × 5) + (10 × 10) = 230 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Nagebiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+            "range_area": "Nah",
+            "damage_effect": "7W8 + ST-Modifikator (+2) + ST-Bonus (+1)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "34.5",
+            "avg_hit_damage": "23.8",
+            "avg_expected_effect": "16.4",
+            "ge_share": "0.49",
+            "notes": null,
+            "avg_raw_damage_value": 34.5,
+            "avg_hit_damage_value": 23.8,
+            "ge_share_value": 0.49,
+            "id": "kornwuehler-l10-a01-nagebiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Nagebiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "7W8 + ST-Modifikator (+2) + ST-Bonus (+1)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "34.5",
+              "Ø Treffer-Endschaden": "23.8",
+              "Ø Erwartungswirkung": "16.4",
+              "GE-Anteil": "0.49",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Fersenzupfer",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4); danach SG 13",
+            "range_area": "Nah",
+            "damage_effect": "6W8 + ST-Modifikator (+2) + ST-Bonus (+1); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "30.0",
+            "avg_hit_damage": "19.3",
+            "avg_expected_effect": "13.3 Schaden + Kontrolle",
+            "ge_share": "0.45 gesamt",
+            "notes": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels.",
+            "avg_raw_damage_value": 30.0,
+            "avg_hit_damage_value": 19.3,
+            "id": "kornwuehler-l10-a02-fersenzupfer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Fersenzupfer",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4); danach SG 13",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "6W8 + ST-Modifikator (+2) + ST-Bonus (+1); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "30.0",
+              "Ø Treffer-Endschaden": "19.3",
+              "Ø Erwartungswirkung": "13.3 Schaden + Kontrolle",
+              "GE-Anteil": "0.45 gesamt",
+              "Zusatz": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Spaltenhuschen",
+            "cost": "1 Aktion",
+            "type": "defensive Bewegungsaktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst / bis 3 m Bewegung",
+            "damage_effect": "Bewegt sich bis zu 3 m; endet die Bewegung unmittelbar an geeigneter Deckung, +2 auf den nächsten Ausweichwurf",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Die Bewegung folgt den normalen Regeln und schützt nicht vor Reaktionen.",
+            "id": "kornwuehler-l10-a03-spaltenhuschen",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Spaltenhuschen",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Bewegungsaktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst / bis 3 m Bewegung",
+              "Schaden / Wirkung": "Bewegt sich bis zu 3 m; endet die Bewegung unmittelbar an geeigneter Deckung, +2 auf den nächsten Ausweichwurf",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Die Bewegung folgt den normalen Regeln und schützt nicht vor Reaktionen."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "kornwuehler-l10-nagebiss",
+          "name": "Nagebiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+          "damage": "`7W8 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Kornwühler schnellt mit dem breiten Kopf vor und schlägt seine harten Schneidezähne in das nächstgelegene erreichbare Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er besitzt **keinen automatischen Folgetreffer, keine kostenlose Bewegung und keine zusätzliche Kontrollwirkung**.",
+          "stacking": "Mehrere Kornwühler können dasselbe Ziel mit Nagebiss angreifen; jeder Angriff wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+            "Schaden": "`7W8 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Kornwühler schnellt mit dem breiten Kopf vor und schlägt seine harten Schneidezähne in das nächstgelegene erreichbare Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er besitzt **keinen automatischen Folgetreffer, keine kostenlose Bewegung und keine zusätzliche Kontrollwirkung**.",
+            "Stapelung": "Mehrere Kornwühler können dasselbe Ziel mit Nagebiss angreifen; jeder Angriff wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 380,
+            "line_end": 391
+          }
+        },
+        {
+          "id": "kornwuehler-l10-fersenzupfer",
+          "name": "Fersenzupfer",
+          "type": "Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 13** nach einem Treffer",
+          "damage": "`6W8 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer schnappt der Kornwühler nach Fuß, Knöchel oder einer anderen bodennahen Gliedmaße und zieht sofort wieder zurück. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen.",
+          "stacking": "Mehrere Fersenzupfer desselben oder verschiedener Kornwühler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+          "end_condition": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 13** nach einem Treffer",
+            "Schaden": "`6W8 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer schnappt der Kornwühler nach Fuß, Knöchel oder einer anderen bodennahen Gliedmaße und zieht sofort wieder zurück. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen.",
+            "Stapelung": "Mehrere Fersenzupfer desselben oder verschiedener Kornwühler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+            "Ende der Wirkung": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 392,
+            "line_end": 405
+          }
+        },
+        {
+          "id": "kornwuehler-l10-spaltenhuschen",
+          "name": "Spaltenhuschen",
+          "type": "Defensive Bewegungsaktion",
+          "cost": "1 Aktion",
+          "requirement": "Innerhalb von 3 m befindet sich eine Kiste, ein Regal, ein Sackstapel, eine Wandkante, ein Möbelstück, eine niedrige Öffnung oder eine vergleichbare Umgebung, die den kleinen Körper des Kornwühlers teilweise verdecken kann.",
+          "target": "Selbst",
+          "rule_effect": "Der Kornwühler bewegt sich bis zu **3 m** in Richtung einer geeigneten Deckung. Diese Bewegung verwendet die normalen Bewegungsregeln und verhindert keine Reaktionen. Endet die Bewegung unmittelbar an der gewählten Deckung, erhält der Kornwühler **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Der Bonus gilt nur, solange der Kornwühler in unmittelbarer Nähe dieser Deckung bleibt.",
+          "stacking": "Spaltenhuschen stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt die bestehende Wirkung.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, sobald der Kornwühler die Deckung verlässt oder spätestens zu Beginn seines nächsten eigenen Zuges.",
+          "extra_fields": {
+            "Bewegung": "Bis zu 3 m",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis der Kornwühler die Deckung verlässt"
+          },
+          "raw_fields": {
+            "Typ": "Defensive Bewegungsaktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Innerhalb von 3 m befindet sich eine Kiste, ein Regal, ein Sackstapel, eine Wandkante, ein Möbelstück, eine niedrige Öffnung oder eine vergleichbare Umgebung, die den kleinen Körper des Kornwühlers teilweise verdecken kann.",
+            "Ziel": "Selbst",
+            "Bewegung": "Bis zu 3 m",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis der Kornwühler die Deckung verlässt",
+            "Regelwirkung": "Der Kornwühler bewegt sich bis zu **3 m** in Richtung einer geeigneten Deckung. Diese Bewegung verwendet die normalen Bewegungsregeln und verhindert keine Reaktionen. Endet die Bewegung unmittelbar an der gewählten Deckung, erhält der Kornwühler **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Der Bonus gilt nur, solange der Kornwühler in unmittelbarer Nähe dieser Deckung bleibt.",
+            "Stapelung": "Spaltenhuschen stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt die bestehende Wirkung.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, sobald der Kornwühler die Deckung verlässt oder spätestens zu Beginn seines nächsten eigenen Zuges."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 406,
+            "line_end": 417
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 338,
+        "line_end": 425
+      }
+    },
+    {
+      "level": 15,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+2"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "295",
+          "physische_verteidigung": "12",
+          "magieverteidigung": "11",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m; Klettern 4 m",
+          "fersenzupfer_sg": "14"
+        },
+        "raw_fields": {
+          "Maximale LP": "295",
+          "Physische Verteidigung": "12",
+          "Magieverteidigung": "11",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m; Klettern 4 m",
+          "Fersenzupfer-SG": "14"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+3) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+1) + WI-Bonus (+0)) × 5) + (15 × 10) = 295 LP",
+        "markdown": "`100 + ((ST-Modifikator (+3) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+1) + WI-Bonus (+0)) × 5) + (15 × 10) = 295 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Nagebiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+4)",
+            "range_area": "Nah",
+            "damage_effect": "8W8 + ST-Modifikator (+3) + ST-Bonus (+1)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "40.0",
+            "avg_hit_damage": "27.4",
+            "avg_expected_effect": "18.8",
+            "ge_share": "0.47",
+            "notes": null,
+            "avg_raw_damage_value": 40.0,
+            "avg_hit_damage_value": 27.4,
+            "ge_share_value": 0.47,
+            "id": "kornwuehler-l15-a01-nagebiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Nagebiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "8W8 + ST-Modifikator (+3) + ST-Bonus (+1)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "40.0",
+              "Ø Treffer-Endschaden": "27.4",
+              "Ø Erwartungswirkung": "18.8",
+              "GE-Anteil": "0.47",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Fersenzupfer",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+4); danach SG 14",
+            "range_area": "Nah",
+            "damage_effect": "7W8 + ST-Modifikator (+3) + ST-Bonus (+1); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "35.5",
+            "avg_hit_damage": "22.9",
+            "avg_expected_effect": "15.7 Schaden + Kontrolle",
+            "ge_share": "0.45 gesamt",
+            "notes": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels.",
+            "avg_raw_damage_value": 35.5,
+            "avg_hit_damage_value": 22.9,
+            "id": "kornwuehler-l15-a02-fersenzupfer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Fersenzupfer",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+4); danach SG 14",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "7W8 + ST-Modifikator (+3) + ST-Bonus (+1); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "35.5",
+              "Ø Treffer-Endschaden": "22.9",
+              "Ø Erwartungswirkung": "15.7 Schaden + Kontrolle",
+              "GE-Anteil": "0.45 gesamt",
+              "Zusatz": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Spaltenhuschen",
+            "cost": "1 Aktion",
+            "type": "defensive Bewegungsaktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst / bis 3 m Bewegung",
+            "damage_effect": "Bewegt sich bis zu 3 m; endet die Bewegung unmittelbar an geeigneter Deckung, +2 auf den nächsten Ausweichwurf",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Die Bewegung folgt den normalen Regeln und schützt nicht vor Reaktionen.",
+            "id": "kornwuehler-l15-a03-spaltenhuschen",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Spaltenhuschen",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Bewegungsaktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst / bis 3 m Bewegung",
+              "Schaden / Wirkung": "Bewegt sich bis zu 3 m; endet die Bewegung unmittelbar an geeigneter Deckung, +2 auf den nächsten Ausweichwurf",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Die Bewegung folgt den normalen Regeln und schützt nicht vor Reaktionen."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "kornwuehler-l15-nagebiss",
+          "name": "Nagebiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+4)`",
+          "damage": "`8W8 + ST-Modifikator (+3) + ST-Bonus (+1)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Kornwühler schnellt mit dem breiten Kopf vor und schlägt seine harten Schneidezähne in das nächstgelegene erreichbare Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er besitzt **keinen automatischen Folgetreffer, keine kostenlose Bewegung und keine zusätzliche Kontrollwirkung**.",
+          "stacking": "Mehrere Kornwühler können dasselbe Ziel mit Nagebiss angreifen; jeder Angriff wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+4)`",
+            "Schaden": "`8W8 + ST-Modifikator (+3) + ST-Bonus (+1)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Kornwühler schnellt mit dem breiten Kopf vor und schlägt seine harten Schneidezähne in das nächstgelegene erreichbare Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er besitzt **keinen automatischen Folgetreffer, keine kostenlose Bewegung und keine zusätzliche Kontrollwirkung**.",
+            "Stapelung": "Mehrere Kornwühler können dasselbe Ziel mit Nagebiss angreifen; jeder Angriff wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 468,
+            "line_end": 479
+          }
+        },
+        {
+          "id": "kornwuehler-l15-fersenzupfer",
+          "name": "Fersenzupfer",
+          "type": "Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+4)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 14** nach einem Treffer",
+          "damage": "`7W8 + ST-Modifikator (+3) + ST-Bonus (+1)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer schnappt der Kornwühler nach Fuß, Knöchel oder einer anderen bodennahen Gliedmaße und zieht sofort wieder zurück. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen.",
+          "stacking": "Mehrere Fersenzupfer desselben oder verschiedener Kornwühler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+          "end_condition": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+4)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 14** nach einem Treffer",
+            "Schaden": "`7W8 + ST-Modifikator (+3) + ST-Bonus (+1)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer schnappt der Kornwühler nach Fuß, Knöchel oder einer anderen bodennahen Gliedmaße und zieht sofort wieder zurück. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen.",
+            "Stapelung": "Mehrere Fersenzupfer desselben oder verschiedener Kornwühler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+            "Ende der Wirkung": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 480,
+            "line_end": 493
+          }
+        },
+        {
+          "id": "kornwuehler-l15-spaltenhuschen",
+          "name": "Spaltenhuschen",
+          "type": "Defensive Bewegungsaktion",
+          "cost": "1 Aktion",
+          "requirement": "Innerhalb von 3 m befindet sich eine Kiste, ein Regal, ein Sackstapel, eine Wandkante, ein Möbelstück, eine niedrige Öffnung oder eine vergleichbare Umgebung, die den kleinen Körper des Kornwühlers teilweise verdecken kann.",
+          "target": "Selbst",
+          "rule_effect": "Der Kornwühler bewegt sich bis zu **3 m** in Richtung einer geeigneten Deckung. Diese Bewegung verwendet die normalen Bewegungsregeln und verhindert keine Reaktionen. Endet die Bewegung unmittelbar an der gewählten Deckung, erhält der Kornwühler **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Der Bonus gilt nur, solange der Kornwühler in unmittelbarer Nähe dieser Deckung bleibt.",
+          "stacking": "Spaltenhuschen stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt die bestehende Wirkung.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, sobald der Kornwühler die Deckung verlässt oder spätestens zu Beginn seines nächsten eigenen Zuges.",
+          "extra_fields": {
+            "Bewegung": "Bis zu 3 m",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis der Kornwühler die Deckung verlässt"
+          },
+          "raw_fields": {
+            "Typ": "Defensive Bewegungsaktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Innerhalb von 3 m befindet sich eine Kiste, ein Regal, ein Sackstapel, eine Wandkante, ein Möbelstück, eine niedrige Öffnung oder eine vergleichbare Umgebung, die den kleinen Körper des Kornwühlers teilweise verdecken kann.",
+            "Ziel": "Selbst",
+            "Bewegung": "Bis zu 3 m",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis der Kornwühler die Deckung verlässt",
+            "Regelwirkung": "Der Kornwühler bewegt sich bis zu **3 m** in Richtung einer geeigneten Deckung. Diese Bewegung verwendet die normalen Bewegungsregeln und verhindert keine Reaktionen. Endet die Bewegung unmittelbar an der gewählten Deckung, erhält der Kornwühler **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Der Bonus gilt nur, solange der Kornwühler in unmittelbarer Nähe dieser Deckung bleibt.",
+            "Stapelung": "Spaltenhuschen stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt die bestehende Wirkung.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, sobald der Kornwühler die Deckung verlässt oder spätestens zu Beginn seines nächsten eigenen Zuges."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 494,
+            "line_end": 505
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 426,
+        "line_end": 513
+      }
+    },
+    {
+      "level": 20,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+2"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "360",
+          "physische_verteidigung": "14",
+          "magieverteidigung": "13",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m; Klettern 4 m",
+          "fersenzupfer_sg": "15"
+        },
+        "raw_fields": {
+          "Maximale LP": "360",
+          "Physische Verteidigung": "14",
+          "Magieverteidigung": "13",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m; Klettern 4 m",
+          "Fersenzupfer-SG": "15"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+3) + ST-Bonus (+2)) × 10) + ((WI-Modifikator (+1) + WI-Bonus (+1)) × 5) + (20 × 10) = 360 LP",
+        "markdown": "`100 + ((ST-Modifikator (+3) + ST-Bonus (+2)) × 10) + ((WI-Modifikator (+1) + WI-Bonus (+1)) × 5) + (20 × 10) = 360 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Nagebiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range_area": "Nah",
+            "damage_effect": "10W8 + ST-Modifikator (+3) + ST-Bonus (+2)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "50.0",
+            "avg_hit_damage": "35.5",
+            "avg_expected_effect": "24.4",
+            "ge_share": "0.53",
+            "notes": null,
+            "avg_raw_damage_value": 50.0,
+            "avg_hit_damage_value": 35.5,
+            "ge_share_value": 0.53,
+            "id": "kornwuehler-l20-a01-nagebiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Nagebiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "10W8 + ST-Modifikator (+3) + ST-Bonus (+2)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "50.0",
+              "Ø Treffer-Endschaden": "35.5",
+              "Ø Erwartungswirkung": "24.4",
+              "GE-Anteil": "0.53",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Fersenzupfer",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5); danach SG 15",
+            "range_area": "Nah",
+            "damage_effect": "8W8 + ST-Modifikator (+3) + ST-Bonus (+2); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "41.0",
+            "avg_hit_damage": "26.4",
+            "avg_expected_effect": "18.2 Schaden + Kontrolle",
+            "ge_share": "0.45 gesamt",
+            "notes": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels.",
+            "avg_raw_damage_value": 41.0,
+            "avg_hit_damage_value": 26.4,
+            "id": "kornwuehler-l20-a02-fersenzupfer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Fersenzupfer",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5); danach SG 15",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "8W8 + ST-Modifikator (+3) + ST-Bonus (+2); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "41.0",
+              "Ø Treffer-Endschaden": "26.4",
+              "Ø Erwartungswirkung": "18.2 Schaden + Kontrolle",
+              "GE-Anteil": "0.45 gesamt",
+              "Zusatz": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Spaltenhuschen",
+            "cost": "1 Aktion",
+            "type": "defensive Bewegungsaktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst / bis 3 m Bewegung",
+            "damage_effect": "Bewegt sich bis zu 3 m; endet die Bewegung unmittelbar an geeigneter Deckung, +2 auf den nächsten Ausweichwurf",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Die Bewegung folgt den normalen Regeln und schützt nicht vor Reaktionen.",
+            "id": "kornwuehler-l20-a03-spaltenhuschen",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Spaltenhuschen",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Bewegungsaktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst / bis 3 m Bewegung",
+              "Schaden / Wirkung": "Bewegt sich bis zu 3 m; endet die Bewegung unmittelbar an geeigneter Deckung, +2 auf den nächsten Ausweichwurf",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Die Bewegung folgt den normalen Regeln und schützt nicht vor Reaktionen."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "kornwuehler-l20-nagebiss",
+          "name": "Nagebiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+          "damage": "`10W8 + ST-Modifikator (+3) + ST-Bonus (+2)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Kornwühler schnellt mit dem breiten Kopf vor und schlägt seine harten Schneidezähne in das nächstgelegene erreichbare Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er besitzt **keinen automatischen Folgetreffer, keine kostenlose Bewegung und keine zusätzliche Kontrollwirkung**.",
+          "stacking": "Mehrere Kornwühler können dasselbe Ziel mit Nagebiss angreifen; jeder Angriff wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+            "Schaden": "`10W8 + ST-Modifikator (+3) + ST-Bonus (+2)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Kornwühler schnellt mit dem breiten Kopf vor und schlägt seine harten Schneidezähne in das nächstgelegene erreichbare Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er besitzt **keinen automatischen Folgetreffer, keine kostenlose Bewegung und keine zusätzliche Kontrollwirkung**.",
+            "Stapelung": "Mehrere Kornwühler können dasselbe Ziel mit Nagebiss angreifen; jeder Angriff wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 556,
+            "line_end": 567
+          }
+        },
+        {
+          "id": "kornwuehler-l20-fersenzupfer",
+          "name": "Fersenzupfer",
+          "type": "Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 15** nach einem Treffer",
+          "damage": "`8W8 + ST-Modifikator (+3) + ST-Bonus (+2)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer schnappt der Kornwühler nach Fuß, Knöchel oder einer anderen bodennahen Gliedmaße und zieht sofort wieder zurück. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen.",
+          "stacking": "Mehrere Fersenzupfer desselben oder verschiedener Kornwühler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+          "end_condition": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 15** nach einem Treffer",
+            "Schaden": "`8W8 + ST-Modifikator (+3) + ST-Bonus (+2)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer schnappt der Kornwühler nach Fuß, Knöchel oder einer anderen bodennahen Gliedmaße und zieht sofort wieder zurück. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen.",
+            "Stapelung": "Mehrere Fersenzupfer desselben oder verschiedener Kornwühler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+            "Ende der Wirkung": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 568,
+            "line_end": 581
+          }
+        },
+        {
+          "id": "kornwuehler-l20-spaltenhuschen",
+          "name": "Spaltenhuschen",
+          "type": "Defensive Bewegungsaktion",
+          "cost": "1 Aktion",
+          "requirement": "Innerhalb von 3 m befindet sich eine Kiste, ein Regal, ein Sackstapel, eine Wandkante, ein Möbelstück, eine niedrige Öffnung oder eine vergleichbare Umgebung, die den kleinen Körper des Kornwühlers teilweise verdecken kann.",
+          "target": "Selbst",
+          "rule_effect": "Der Kornwühler bewegt sich bis zu **3 m** in Richtung einer geeigneten Deckung. Diese Bewegung verwendet die normalen Bewegungsregeln und verhindert keine Reaktionen. Endet die Bewegung unmittelbar an der gewählten Deckung, erhält der Kornwühler **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Der Bonus gilt nur, solange der Kornwühler in unmittelbarer Nähe dieser Deckung bleibt.",
+          "stacking": "Spaltenhuschen stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt die bestehende Wirkung.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, sobald der Kornwühler die Deckung verlässt oder spätestens zu Beginn seines nächsten eigenen Zuges.",
+          "extra_fields": {
+            "Bewegung": "Bis zu 3 m",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis der Kornwühler die Deckung verlässt"
+          },
+          "raw_fields": {
+            "Typ": "Defensive Bewegungsaktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Innerhalb von 3 m befindet sich eine Kiste, ein Regal, ein Sackstapel, eine Wandkante, ein Möbelstück, eine niedrige Öffnung oder eine vergleichbare Umgebung, die den kleinen Körper des Kornwühlers teilweise verdecken kann.",
+            "Ziel": "Selbst",
+            "Bewegung": "Bis zu 3 m",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis der Kornwühler die Deckung verlässt",
+            "Regelwirkung": "Der Kornwühler bewegt sich bis zu **3 m** in Richtung einer geeigneten Deckung. Diese Bewegung verwendet die normalen Bewegungsregeln und verhindert keine Reaktionen. Endet die Bewegung unmittelbar an der gewählten Deckung, erhält der Kornwühler **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Der Bonus gilt nur, solange der Kornwühler in unmittelbarer Nähe dieser Deckung bleibt.",
+            "Stapelung": "Spaltenhuschen stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt die bestehende Wirkung.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, sobald der Kornwühler die Deckung verlässt oder spätestens zu Beginn seines nächsten eigenen Zuges."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 582,
+            "line_end": 593
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 514,
+        "line_end": 601
+      }
+    },
+    {
+      "level": 25,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "425",
+          "physische_verteidigung": "16",
+          "magieverteidigung": "15",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m; Klettern 4 m",
+          "fersenzupfer_sg": "16"
+        },
+        "raw_fields": {
+          "Maximale LP": "425",
+          "Physische Verteidigung": "16",
+          "Magieverteidigung": "15",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m; Klettern 4 m",
+          "Fersenzupfer-SG": "16"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+4) + ST-Bonus (+2)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+1)) × 5) + (25 × 10) = 425 LP",
+        "markdown": "`100 + ((ST-Modifikator (+4) + ST-Bonus (+2)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+1)) × 5) + (25 × 10) = 425 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Nagebiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range_area": "Nah",
+            "damage_effect": "11W8 + ST-Modifikator (+4) + ST-Bonus (+2)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "55.5",
+            "avg_hit_damage": "39.1",
+            "avg_expected_effect": "26.9",
+            "ge_share": "0.51",
+            "notes": null,
+            "avg_raw_damage_value": 55.5,
+            "avg_hit_damage_value": 39.1,
+            "ge_share_value": 0.51,
+            "id": "kornwuehler-l25-a01-nagebiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Nagebiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "11W8 + ST-Modifikator (+4) + ST-Bonus (+2)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "55.5",
+              "Ø Treffer-Endschaden": "39.1",
+              "Ø Erwartungswirkung": "26.9",
+              "GE-Anteil": "0.51",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Fersenzupfer",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5); danach SG 16",
+            "range_area": "Nah",
+            "damage_effect": "9W8 + ST-Modifikator (+4) + ST-Bonus (+2); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "46.5",
+            "avg_hit_damage": "30.0",
+            "avg_expected_effect": "20.6 Schaden + Kontrolle",
+            "ge_share": "0.45 gesamt",
+            "notes": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels.",
+            "avg_raw_damage_value": 46.5,
+            "avg_hit_damage_value": 30.0,
+            "id": "kornwuehler-l25-a02-fersenzupfer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Fersenzupfer",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5); danach SG 16",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "9W8 + ST-Modifikator (+4) + ST-Bonus (+2); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "46.5",
+              "Ø Treffer-Endschaden": "30.0",
+              "Ø Erwartungswirkung": "20.6 Schaden + Kontrolle",
+              "GE-Anteil": "0.45 gesamt",
+              "Zusatz": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Spaltenhuschen",
+            "cost": "1 Aktion",
+            "type": "defensive Bewegungsaktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst / bis 3 m Bewegung",
+            "damage_effect": "Bewegt sich bis zu 3 m; endet die Bewegung unmittelbar an geeigneter Deckung, +2 auf den nächsten Ausweichwurf",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Die Bewegung folgt den normalen Regeln und schützt nicht vor Reaktionen.",
+            "id": "kornwuehler-l25-a03-spaltenhuschen",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Spaltenhuschen",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Bewegungsaktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst / bis 3 m Bewegung",
+              "Schaden / Wirkung": "Bewegt sich bis zu 3 m; endet die Bewegung unmittelbar an geeigneter Deckung, +2 auf den nächsten Ausweichwurf",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Die Bewegung folgt den normalen Regeln und schützt nicht vor Reaktionen."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "kornwuehler-l25-nagebiss",
+          "name": "Nagebiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+          "damage": "`11W8 + ST-Modifikator (+4) + ST-Bonus (+2)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Kornwühler schnellt mit dem breiten Kopf vor und schlägt seine harten Schneidezähne in das nächstgelegene erreichbare Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er besitzt **keinen automatischen Folgetreffer, keine kostenlose Bewegung und keine zusätzliche Kontrollwirkung**.",
+          "stacking": "Mehrere Kornwühler können dasselbe Ziel mit Nagebiss angreifen; jeder Angriff wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+            "Schaden": "`11W8 + ST-Modifikator (+4) + ST-Bonus (+2)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Kornwühler schnellt mit dem breiten Kopf vor und schlägt seine harten Schneidezähne in das nächstgelegene erreichbare Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er besitzt **keinen automatischen Folgetreffer, keine kostenlose Bewegung und keine zusätzliche Kontrollwirkung**.",
+            "Stapelung": "Mehrere Kornwühler können dasselbe Ziel mit Nagebiss angreifen; jeder Angriff wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 644,
+            "line_end": 655
+          }
+        },
+        {
+          "id": "kornwuehler-l25-fersenzupfer",
+          "name": "Fersenzupfer",
+          "type": "Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 16** nach einem Treffer",
+          "damage": "`9W8 + ST-Modifikator (+4) + ST-Bonus (+2)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer schnappt der Kornwühler nach Fuß, Knöchel oder einer anderen bodennahen Gliedmaße und zieht sofort wieder zurück. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen.",
+          "stacking": "Mehrere Fersenzupfer desselben oder verschiedener Kornwühler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+          "end_condition": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 16** nach einem Treffer",
+            "Schaden": "`9W8 + ST-Modifikator (+4) + ST-Bonus (+2)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer schnappt der Kornwühler nach Fuß, Knöchel oder einer anderen bodennahen Gliedmaße und zieht sofort wieder zurück. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen.",
+            "Stapelung": "Mehrere Fersenzupfer desselben oder verschiedener Kornwühler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+            "Ende der Wirkung": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 656,
+            "line_end": 669
+          }
+        },
+        {
+          "id": "kornwuehler-l25-spaltenhuschen",
+          "name": "Spaltenhuschen",
+          "type": "Defensive Bewegungsaktion",
+          "cost": "1 Aktion",
+          "requirement": "Innerhalb von 3 m befindet sich eine Kiste, ein Regal, ein Sackstapel, eine Wandkante, ein Möbelstück, eine niedrige Öffnung oder eine vergleichbare Umgebung, die den kleinen Körper des Kornwühlers teilweise verdecken kann.",
+          "target": "Selbst",
+          "rule_effect": "Der Kornwühler bewegt sich bis zu **3 m** in Richtung einer geeigneten Deckung. Diese Bewegung verwendet die normalen Bewegungsregeln und verhindert keine Reaktionen. Endet die Bewegung unmittelbar an der gewählten Deckung, erhält der Kornwühler **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Der Bonus gilt nur, solange der Kornwühler in unmittelbarer Nähe dieser Deckung bleibt.",
+          "stacking": "Spaltenhuschen stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt die bestehende Wirkung.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, sobald der Kornwühler die Deckung verlässt oder spätestens zu Beginn seines nächsten eigenen Zuges.",
+          "extra_fields": {
+            "Bewegung": "Bis zu 3 m",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis der Kornwühler die Deckung verlässt"
+          },
+          "raw_fields": {
+            "Typ": "Defensive Bewegungsaktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Innerhalb von 3 m befindet sich eine Kiste, ein Regal, ein Sackstapel, eine Wandkante, ein Möbelstück, eine niedrige Öffnung oder eine vergleichbare Umgebung, die den kleinen Körper des Kornwühlers teilweise verdecken kann.",
+            "Ziel": "Selbst",
+            "Bewegung": "Bis zu 3 m",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis der Kornwühler die Deckung verlässt",
+            "Regelwirkung": "Der Kornwühler bewegt sich bis zu **3 m** in Richtung einer geeigneten Deckung. Diese Bewegung verwendet die normalen Bewegungsregeln und verhindert keine Reaktionen. Endet die Bewegung unmittelbar an der gewählten Deckung, erhält der Kornwühler **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Der Bonus gilt nur, solange der Kornwühler in unmittelbarer Nähe dieser Deckung bleibt.",
+            "Stapelung": "Spaltenhuschen stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt die bestehende Wirkung.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, sobald der Kornwühler die Deckung verlässt oder spätestens zu Beginn seines nächsten eigenen Zuges."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 670,
+            "line_end": 681
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 602,
+        "line_end": 689
+      }
+    },
+    {
+      "level": 30,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 11,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "11",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "485",
+          "physische_verteidigung": "18",
+          "magieverteidigung": "17",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m; Klettern 4 m",
+          "fersenzupfer_sg": "17"
+        },
+        "raw_fields": {
+          "Maximale LP": "485",
+          "Physische Verteidigung": "18",
+          "Magieverteidigung": "17",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m; Klettern 4 m",
+          "Fersenzupfer-SG": "17"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+4) + ST-Bonus (+3)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+1)) × 5) + (30 × 10) = 485 LP",
+        "markdown": "`100 + ((ST-Modifikator (+4) + ST-Bonus (+3)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+1)) × 5) + (30 × 10) = 485 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Nagebiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+            "range_area": "Nah",
+            "damage_effect": "12W8 + ST-Modifikator (+4) + ST-Bonus (+3)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "61.0",
+            "avg_hit_damage": "42.6",
+            "avg_expected_effect": "29.3",
+            "ge_share": "0.50",
+            "notes": null,
+            "avg_raw_damage_value": 61.0,
+            "avg_hit_damage_value": 42.6,
+            "ge_share_value": 0.5,
+            "id": "kornwuehler-l30-a01-nagebiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Nagebiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "12W8 + ST-Modifikator (+4) + ST-Bonus (+3)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "61.0",
+              "Ø Treffer-Endschaden": "42.6",
+              "Ø Erwartungswirkung": "29.3",
+              "GE-Anteil": "0.50",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Fersenzupfer",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+5); danach SG 17",
+            "range_area": "Nah",
+            "damage_effect": "10W8 + ST-Modifikator (+4) + ST-Bonus (+3); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "52.0",
+            "avg_hit_damage": "33.5",
+            "avg_expected_effect": "23.0 Schaden + Kontrolle",
+            "ge_share": "0.45 gesamt",
+            "notes": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels.",
+            "avg_raw_damage_value": 52.0,
+            "avg_hit_damage_value": 33.5,
+            "id": "kornwuehler-l30-a02-fersenzupfer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Fersenzupfer",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+5); danach SG 17",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "10W8 + ST-Modifikator (+4) + ST-Bonus (+3); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "52.0",
+              "Ø Treffer-Endschaden": "33.5",
+              "Ø Erwartungswirkung": "23.0 Schaden + Kontrolle",
+              "GE-Anteil": "0.45 gesamt",
+              "Zusatz": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Spaltenhuschen",
+            "cost": "1 Aktion",
+            "type": "defensive Bewegungsaktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst / bis 3 m Bewegung",
+            "damage_effect": "Bewegt sich bis zu 3 m; endet die Bewegung unmittelbar an geeigneter Deckung, +2 auf den nächsten Ausweichwurf",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Die Bewegung folgt den normalen Regeln und schützt nicht vor Reaktionen.",
+            "id": "kornwuehler-l30-a03-spaltenhuschen",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Spaltenhuschen",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Bewegungsaktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst / bis 3 m Bewegung",
+              "Schaden / Wirkung": "Bewegt sich bis zu 3 m; endet die Bewegung unmittelbar an geeigneter Deckung, +2 auf den nächsten Ausweichwurf",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Die Bewegung folgt den normalen Regeln und schützt nicht vor Reaktionen."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "kornwuehler-l30-nagebiss",
+          "name": "Nagebiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+5)`",
+          "damage": "`12W8 + ST-Modifikator (+4) + ST-Bonus (+3)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Kornwühler schnellt mit dem breiten Kopf vor und schlägt seine harten Schneidezähne in das nächstgelegene erreichbare Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er besitzt **keinen automatischen Folgetreffer, keine kostenlose Bewegung und keine zusätzliche Kontrollwirkung**.",
+          "stacking": "Mehrere Kornwühler können dasselbe Ziel mit Nagebiss angreifen; jeder Angriff wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+5)`",
+            "Schaden": "`12W8 + ST-Modifikator (+4) + ST-Bonus (+3)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Kornwühler schnellt mit dem breiten Kopf vor und schlägt seine harten Schneidezähne in das nächstgelegene erreichbare Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er besitzt **keinen automatischen Folgetreffer, keine kostenlose Bewegung und keine zusätzliche Kontrollwirkung**.",
+            "Stapelung": "Mehrere Kornwühler können dasselbe Ziel mit Nagebiss angreifen; jeder Angriff wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 732,
+            "line_end": 743
+          }
+        },
+        {
+          "id": "kornwuehler-l30-fersenzupfer",
+          "name": "Fersenzupfer",
+          "type": "Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+5)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 17** nach einem Treffer",
+          "damage": "`10W8 + ST-Modifikator (+4) + ST-Bonus (+3)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer schnappt der Kornwühler nach Fuß, Knöchel oder einer anderen bodennahen Gliedmaße und zieht sofort wieder zurück. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen.",
+          "stacking": "Mehrere Fersenzupfer desselben oder verschiedener Kornwühler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+          "end_condition": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+5)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 17** nach einem Treffer",
+            "Schaden": "`10W8 + ST-Modifikator (+4) + ST-Bonus (+3)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer schnappt der Kornwühler nach Fuß, Knöchel oder einer anderen bodennahen Gliedmaße und zieht sofort wieder zurück. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen.",
+            "Stapelung": "Mehrere Fersenzupfer desselben oder verschiedener Kornwühler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+            "Ende der Wirkung": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 744,
+            "line_end": 757
+          }
+        },
+        {
+          "id": "kornwuehler-l30-spaltenhuschen",
+          "name": "Spaltenhuschen",
+          "type": "Defensive Bewegungsaktion",
+          "cost": "1 Aktion",
+          "requirement": "Innerhalb von 3 m befindet sich eine Kiste, ein Regal, ein Sackstapel, eine Wandkante, ein Möbelstück, eine niedrige Öffnung oder eine vergleichbare Umgebung, die den kleinen Körper des Kornwühlers teilweise verdecken kann.",
+          "target": "Selbst",
+          "rule_effect": "Der Kornwühler bewegt sich bis zu **3 m** in Richtung einer geeigneten Deckung. Diese Bewegung verwendet die normalen Bewegungsregeln und verhindert keine Reaktionen. Endet die Bewegung unmittelbar an der gewählten Deckung, erhält der Kornwühler **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Der Bonus gilt nur, solange der Kornwühler in unmittelbarer Nähe dieser Deckung bleibt.",
+          "stacking": "Spaltenhuschen stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt die bestehende Wirkung.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, sobald der Kornwühler die Deckung verlässt oder spätestens zu Beginn seines nächsten eigenen Zuges.",
+          "extra_fields": {
+            "Bewegung": "Bis zu 3 m",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis der Kornwühler die Deckung verlässt"
+          },
+          "raw_fields": {
+            "Typ": "Defensive Bewegungsaktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Innerhalb von 3 m befindet sich eine Kiste, ein Regal, ein Sackstapel, eine Wandkante, ein Möbelstück, eine niedrige Öffnung oder eine vergleichbare Umgebung, die den kleinen Körper des Kornwühlers teilweise verdecken kann.",
+            "Ziel": "Selbst",
+            "Bewegung": "Bis zu 3 m",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis der Kornwühler die Deckung verlässt",
+            "Regelwirkung": "Der Kornwühler bewegt sich bis zu **3 m** in Richtung einer geeigneten Deckung. Diese Bewegung verwendet die normalen Bewegungsregeln und verhindert keine Reaktionen. Endet die Bewegung unmittelbar an der gewählten Deckung, erhält der Kornwühler **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Der Bonus gilt nur, solange der Kornwühler in unmittelbarer Nähe dieser Deckung bleibt.",
+            "Stapelung": "Spaltenhuschen stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt die bestehende Wirkung.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, sobald der Kornwühler die Deckung verlässt oder spätestens zu Beginn seines nächsten eigenen Zuges."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 758,
+            "line_end": 769
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 690,
+        "line_end": 777
+      }
+    },
+    {
+      "level": 35,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 25,
+          "modifier": 7,
+          "bonus": 6,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "25",
+            "Modifikator": "+7",
+            "Bonus": "+6"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 11,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "11",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+3"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "555",
+          "physische_verteidigung": "20",
+          "magieverteidigung": "19",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m; Klettern 4 m",
+          "fersenzupfer_sg": "18"
+        },
+        "raw_fields": {
+          "Maximale LP": "555",
+          "Physische Verteidigung": "20",
+          "Magieverteidigung": "19",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m; Klettern 4 m",
+          "Fersenzupfer-SG": "18"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+5) + ST-Bonus (+3)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+2)) × 5) + (35 × 10) = 555 LP",
+        "markdown": "`100 + ((ST-Modifikator (+5) + ST-Bonus (+3)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+2)) × 5) + (35 × 10) = 555 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Nagebiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+            "range_area": "Nah",
+            "damage_effect": "13W8 + ST-Modifikator (+5) + ST-Bonus (+3)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "66.5",
+            "avg_hit_damage": "46.2",
+            "avg_expected_effect": "31.7",
+            "ge_share": "0.49",
+            "notes": null,
+            "avg_raw_damage_value": 66.5,
+            "avg_hit_damage_value": 46.2,
+            "ge_share_value": 0.49,
+            "id": "kornwuehler-l35-a01-nagebiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Nagebiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "13W8 + ST-Modifikator (+5) + ST-Bonus (+3)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "66.5",
+              "Ø Treffer-Endschaden": "46.2",
+              "Ø Erwartungswirkung": "31.7",
+              "GE-Anteil": "0.49",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Fersenzupfer",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+6); danach SG 18",
+            "range_area": "Nah",
+            "damage_effect": "11W8 + ST-Modifikator (+5) + ST-Bonus (+3); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "57.5",
+            "avg_hit_damage": "37.1",
+            "avg_expected_effect": "25.5 Schaden + Kontrolle",
+            "ge_share": "0.45 gesamt",
+            "notes": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels.",
+            "avg_raw_damage_value": 57.5,
+            "avg_hit_damage_value": 37.1,
+            "id": "kornwuehler-l35-a02-fersenzupfer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Fersenzupfer",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+6); danach SG 18",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "11W8 + ST-Modifikator (+5) + ST-Bonus (+3); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "57.5",
+              "Ø Treffer-Endschaden": "37.1",
+              "Ø Erwartungswirkung": "25.5 Schaden + Kontrolle",
+              "GE-Anteil": "0.45 gesamt",
+              "Zusatz": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Spaltenhuschen",
+            "cost": "1 Aktion",
+            "type": "defensive Bewegungsaktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst / bis 3 m Bewegung",
+            "damage_effect": "Bewegt sich bis zu 3 m; endet die Bewegung unmittelbar an geeigneter Deckung, +2 auf den nächsten Ausweichwurf",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Die Bewegung folgt den normalen Regeln und schützt nicht vor Reaktionen.",
+            "id": "kornwuehler-l35-a03-spaltenhuschen",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Spaltenhuschen",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Bewegungsaktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst / bis 3 m Bewegung",
+              "Schaden / Wirkung": "Bewegt sich bis zu 3 m; endet die Bewegung unmittelbar an geeigneter Deckung, +2 auf den nächsten Ausweichwurf",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Die Bewegung folgt den normalen Regeln und schützt nicht vor Reaktionen."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "kornwuehler-l35-nagebiss",
+          "name": "Nagebiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+6)`",
+          "damage": "`13W8 + ST-Modifikator (+5) + ST-Bonus (+3)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Kornwühler schnellt mit dem breiten Kopf vor und schlägt seine harten Schneidezähne in das nächstgelegene erreichbare Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er besitzt **keinen automatischen Folgetreffer, keine kostenlose Bewegung und keine zusätzliche Kontrollwirkung**.",
+          "stacking": "Mehrere Kornwühler können dasselbe Ziel mit Nagebiss angreifen; jeder Angriff wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+6)`",
+            "Schaden": "`13W8 + ST-Modifikator (+5) + ST-Bonus (+3)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Kornwühler schnellt mit dem breiten Kopf vor und schlägt seine harten Schneidezähne in das nächstgelegene erreichbare Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er besitzt **keinen automatischen Folgetreffer, keine kostenlose Bewegung und keine zusätzliche Kontrollwirkung**.",
+            "Stapelung": "Mehrere Kornwühler können dasselbe Ziel mit Nagebiss angreifen; jeder Angriff wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 820,
+            "line_end": 831
+          }
+        },
+        {
+          "id": "kornwuehler-l35-fersenzupfer",
+          "name": "Fersenzupfer",
+          "type": "Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+6)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 18** nach einem Treffer",
+          "damage": "`11W8 + ST-Modifikator (+5) + ST-Bonus (+3)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer schnappt der Kornwühler nach Fuß, Knöchel oder einer anderen bodennahen Gliedmaße und zieht sofort wieder zurück. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen.",
+          "stacking": "Mehrere Fersenzupfer desselben oder verschiedener Kornwühler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+          "end_condition": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+6)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 18** nach einem Treffer",
+            "Schaden": "`11W8 + ST-Modifikator (+5) + ST-Bonus (+3)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer schnappt der Kornwühler nach Fuß, Knöchel oder einer anderen bodennahen Gliedmaße und zieht sofort wieder zurück. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen.",
+            "Stapelung": "Mehrere Fersenzupfer desselben oder verschiedener Kornwühler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+            "Ende der Wirkung": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 832,
+            "line_end": 845
+          }
+        },
+        {
+          "id": "kornwuehler-l35-spaltenhuschen",
+          "name": "Spaltenhuschen",
+          "type": "Defensive Bewegungsaktion",
+          "cost": "1 Aktion",
+          "requirement": "Innerhalb von 3 m befindet sich eine Kiste, ein Regal, ein Sackstapel, eine Wandkante, ein Möbelstück, eine niedrige Öffnung oder eine vergleichbare Umgebung, die den kleinen Körper des Kornwühlers teilweise verdecken kann.",
+          "target": "Selbst",
+          "rule_effect": "Der Kornwühler bewegt sich bis zu **3 m** in Richtung einer geeigneten Deckung. Diese Bewegung verwendet die normalen Bewegungsregeln und verhindert keine Reaktionen. Endet die Bewegung unmittelbar an der gewählten Deckung, erhält der Kornwühler **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Der Bonus gilt nur, solange der Kornwühler in unmittelbarer Nähe dieser Deckung bleibt.",
+          "stacking": "Spaltenhuschen stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt die bestehende Wirkung.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, sobald der Kornwühler die Deckung verlässt oder spätestens zu Beginn seines nächsten eigenen Zuges.",
+          "extra_fields": {
+            "Bewegung": "Bis zu 3 m",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis der Kornwühler die Deckung verlässt"
+          },
+          "raw_fields": {
+            "Typ": "Defensive Bewegungsaktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Innerhalb von 3 m befindet sich eine Kiste, ein Regal, ein Sackstapel, eine Wandkante, ein Möbelstück, eine niedrige Öffnung oder eine vergleichbare Umgebung, die den kleinen Körper des Kornwühlers teilweise verdecken kann.",
+            "Ziel": "Selbst",
+            "Bewegung": "Bis zu 3 m",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis der Kornwühler die Deckung verlässt",
+            "Regelwirkung": "Der Kornwühler bewegt sich bis zu **3 m** in Richtung einer geeigneten Deckung. Diese Bewegung verwendet die normalen Bewegungsregeln und verhindert keine Reaktionen. Endet die Bewegung unmittelbar an der gewählten Deckung, erhält der Kornwühler **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Der Bonus gilt nur, solange der Kornwühler in unmittelbarer Nähe dieser Deckung bleibt.",
+            "Stapelung": "Spaltenhuschen stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt die bestehende Wirkung.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, sobald der Kornwühler die Deckung verlässt oder spätestens zu Beginn seines nächsten eigenen Zuges."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 846,
+            "line_end": 857
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 778,
+        "line_end": 865
+      }
+    },
+    {
+      "level": 40,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 26,
+          "modifier": 8,
+          "bonus": 6,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "26",
+            "Modifikator": "+8",
+            "Bonus": "+6"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 25,
+          "modifier": 7,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "25",
+            "Modifikator": "+7",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 11,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "11",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+3"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "605",
+          "physische_verteidigung": "22",
+          "magieverteidigung": "21",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m; Klettern 4 m",
+          "fersenzupfer_sg": "19"
+        },
+        "raw_fields": {
+          "Maximale LP": "605",
+          "Physische Verteidigung": "22",
+          "Magieverteidigung": "21",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m; Klettern 4 m",
+          "Fersenzupfer-SG": "19"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+5) + ST-Bonus (+3)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+2)) × 5) + (40 × 10) = 605 LP",
+        "markdown": "`100 + ((ST-Modifikator (+5) + ST-Bonus (+3)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+2)) × 5) + (40 × 10) = 605 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Nagebiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+            "range_area": "Nah",
+            "damage_effect": "15W8 + ST-Modifikator (+5) + ST-Bonus (+3)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "75.5",
+            "avg_hit_damage": "53.3",
+            "avg_expected_effect": "36.6",
+            "ge_share": "0.51",
+            "notes": null,
+            "avg_raw_damage_value": 75.5,
+            "avg_hit_damage_value": 53.3,
+            "ge_share_value": 0.51,
+            "id": "kornwuehler-l40-a01-nagebiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Nagebiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "15W8 + ST-Modifikator (+5) + ST-Bonus (+3)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "75.5",
+              "Ø Treffer-Endschaden": "53.3",
+              "Ø Erwartungswirkung": "36.6",
+              "GE-Anteil": "0.51",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Fersenzupfer",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+8) + BW-Bonus (+6); danach SG 19",
+            "range_area": "Nah",
+            "damage_effect": "12W8 + ST-Modifikator (+5) + ST-Bonus (+3); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "62.0",
+            "avg_hit_damage": "39.6",
+            "avg_expected_effect": "27.2 Schaden + Kontrolle",
+            "ge_share": "0.44 gesamt",
+            "notes": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels.",
+            "avg_raw_damage_value": 62.0,
+            "avg_hit_damage_value": 39.6,
+            "id": "kornwuehler-l40-a02-fersenzupfer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Fersenzupfer",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+8) + BW-Bonus (+6); danach SG 19",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "12W8 + ST-Modifikator (+5) + ST-Bonus (+3); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "62.0",
+              "Ø Treffer-Endschaden": "39.6",
+              "Ø Erwartungswirkung": "27.2 Schaden + Kontrolle",
+              "GE-Anteil": "0.44 gesamt",
+              "Zusatz": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Spaltenhuschen",
+            "cost": "1 Aktion",
+            "type": "defensive Bewegungsaktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst / bis 3 m Bewegung",
+            "damage_effect": "Bewegt sich bis zu 3 m; endet die Bewegung unmittelbar an geeigneter Deckung, +2 auf den nächsten Ausweichwurf",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Die Bewegung folgt den normalen Regeln und schützt nicht vor Reaktionen.",
+            "id": "kornwuehler-l40-a03-spaltenhuschen",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Spaltenhuschen",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Bewegungsaktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst / bis 3 m Bewegung",
+              "Schaden / Wirkung": "Bewegt sich bis zu 3 m; endet die Bewegung unmittelbar an geeigneter Deckung, +2 auf den nächsten Ausweichwurf",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Die Bewegung folgt den normalen Regeln und schützt nicht vor Reaktionen."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "kornwuehler-l40-nagebiss",
+          "name": "Nagebiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+8) + BW-Bonus (+6)`",
+          "damage": "`15W8 + ST-Modifikator (+5) + ST-Bonus (+3)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Kornwühler schnellt mit dem breiten Kopf vor und schlägt seine harten Schneidezähne in das nächstgelegene erreichbare Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er besitzt **keinen automatischen Folgetreffer, keine kostenlose Bewegung und keine zusätzliche Kontrollwirkung**.",
+          "stacking": "Mehrere Kornwühler können dasselbe Ziel mit Nagebiss angreifen; jeder Angriff wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+8) + BW-Bonus (+6)`",
+            "Schaden": "`15W8 + ST-Modifikator (+5) + ST-Bonus (+3)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Kornwühler schnellt mit dem breiten Kopf vor und schlägt seine harten Schneidezähne in das nächstgelegene erreichbare Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er besitzt **keinen automatischen Folgetreffer, keine kostenlose Bewegung und keine zusätzliche Kontrollwirkung**.",
+            "Stapelung": "Mehrere Kornwühler können dasselbe Ziel mit Nagebiss angreifen; jeder Angriff wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 908,
+            "line_end": 919
+          }
+        },
+        {
+          "id": "kornwuehler-l40-fersenzupfer",
+          "name": "Fersenzupfer",
+          "type": "Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+8) + BW-Bonus (+6)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 19** nach einem Treffer",
+          "damage": "`12W8 + ST-Modifikator (+5) + ST-Bonus (+3)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer schnappt der Kornwühler nach Fuß, Knöchel oder einer anderen bodennahen Gliedmaße und zieht sofort wieder zurück. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen.",
+          "stacking": "Mehrere Fersenzupfer desselben oder verschiedener Kornwühler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+          "end_condition": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+8) + BW-Bonus (+6)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 19** nach einem Treffer",
+            "Schaden": "`12W8 + ST-Modifikator (+5) + ST-Bonus (+3)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer schnappt der Kornwühler nach Fuß, Knöchel oder einer anderen bodennahen Gliedmaße und zieht sofort wieder zurück. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen.",
+            "Stapelung": "Mehrere Fersenzupfer desselben oder verschiedener Kornwühler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+            "Ende der Wirkung": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 920,
+            "line_end": 933
+          }
+        },
+        {
+          "id": "kornwuehler-l40-spaltenhuschen",
+          "name": "Spaltenhuschen",
+          "type": "Defensive Bewegungsaktion",
+          "cost": "1 Aktion",
+          "requirement": "Innerhalb von 3 m befindet sich eine Kiste, ein Regal, ein Sackstapel, eine Wandkante, ein Möbelstück, eine niedrige Öffnung oder eine vergleichbare Umgebung, die den kleinen Körper des Kornwühlers teilweise verdecken kann.",
+          "target": "Selbst",
+          "rule_effect": "Der Kornwühler bewegt sich bis zu **3 m** in Richtung einer geeigneten Deckung. Diese Bewegung verwendet die normalen Bewegungsregeln und verhindert keine Reaktionen. Endet die Bewegung unmittelbar an der gewählten Deckung, erhält der Kornwühler **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Der Bonus gilt nur, solange der Kornwühler in unmittelbarer Nähe dieser Deckung bleibt.",
+          "stacking": "Spaltenhuschen stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt die bestehende Wirkung.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, sobald der Kornwühler die Deckung verlässt oder spätestens zu Beginn seines nächsten eigenen Zuges.",
+          "extra_fields": {
+            "Bewegung": "Bis zu 3 m",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis der Kornwühler die Deckung verlässt"
+          },
+          "raw_fields": {
+            "Typ": "Defensive Bewegungsaktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Innerhalb von 3 m befindet sich eine Kiste, ein Regal, ein Sackstapel, eine Wandkante, ein Möbelstück, eine niedrige Öffnung oder eine vergleichbare Umgebung, die den kleinen Körper des Kornwühlers teilweise verdecken kann.",
+            "Ziel": "Selbst",
+            "Bewegung": "Bis zu 3 m",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung des Bonus oder bis der Kornwühler die Deckung verlässt",
+            "Regelwirkung": "Der Kornwühler bewegt sich bis zu **3 m** in Richtung einer geeigneten Deckung. Diese Bewegung verwendet die normalen Bewegungsregeln und verhindert keine Reaktionen. Endet die Bewegung unmittelbar an der gewählten Deckung, erhält der Kornwühler **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Der Bonus gilt nur, solange der Kornwühler in unmittelbarer Nähe dieser Deckung bleibt.",
+            "Stapelung": "Spaltenhuschen stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt die bestehende Wirkung.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, sobald der Kornwühler die Deckung verlässt oder spätestens zu Beginn seines nächsten eigenen Zuges."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 934,
+            "line_end": 945
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 866,
+        "line_end": 953
+      }
+    }
+  ],
+  "post_sections": [],
+  "statistics": {
+    "level_count": 9,
+    "action_count_by_level": {
+      "1": 3,
+      "5": 3,
+      "10": 3,
+      "15": 3,
+      "20": 3,
+      "25": 3,
+      "30": 3,
+      "35": 3,
+      "40": 3
+    },
+    "shared_action_detail_count": 0
+  },
+  "source": {
+    "line_start": 16,
+    "line_end": 953
+  }
+}

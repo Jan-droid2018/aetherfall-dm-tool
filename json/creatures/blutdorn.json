@@ -1,0 +1,4613 @@
+{
+  "schema_version": "aetherfall.creatures.v1",
+  "id": "blutdorn",
+  "name": "Blutdorn",
+  "source_file": "Kreaturen - Blutdorn.md",
+  "core": {
+    "creature_type": "Pflanzenwesen",
+    "classification": "Weltkreatur",
+    "origin": "Sylvarra – Blütenwildnis",
+    "occurrence": "Vor allem in warmen, feuchten Teilen der Blütenwildnis: an überwachsenen Waldwegen, Lichtungsrändern, Wildwechseln, Bachufern, Ruinen mit starkem Pflanzenwuchs und zwischen natürlichen Dorngebüschen. Vereinzelte Bestände können sich auch in anderen feuchten Regionen Sylvarras halten, wenn ausreichend große Beutetiere vorbeiziehen.",
+    "challenge_rating": {
+      "raw": "4 – Sehr schwache / einfache Bedrohung, oberes Ende des HG-1–4-Bands",
+      "value": 4,
+      "label": "Sehr schwache / einfache Bedrohung, oberes Ende des HG-1–4-Bands"
+    },
+    "encounter_rank": "Standard",
+    "archetype": "Standard",
+    "elemental_affinity": "Keine feste Elementprägung",
+    "size": "Mittelgroßes bis großes Pflanzenwesen; meist 1,2–1,8 m hoch und mit ausgebreiteten Ranken ungefähr 2–3 m breit",
+    "intelligence": "Sehr niedrig bis tierisch; reizgesteuert, geduldig und stark auf Wärme, Erschütterung sowie frisches Blut ausgerichtet",
+    "extra_fields": {},
+    "raw_fields": {
+      "Kreaturenart": "Pflanzenwesen",
+      "Einordnung": "Weltkreatur",
+      "Ursprüngliche Herkunft": "Sylvarra – Blütenwildnis",
+      "Bekanntes Vorkommen": "Vor allem in warmen, feuchten Teilen der Blütenwildnis: an überwachsenen Waldwegen, Lichtungsrändern, Wildwechseln, Bachufern, Ruinen mit starkem Pflanzenwuchs und zwischen natürlichen Dorngebüschen. Vereinzelte Bestände können sich auch in anderen feuchten Regionen Sylvarras halten, wenn ausreichend große Beutetiere vorbeiziehen.",
+      "Herausforderungsgrad": "**4 – Sehr schwache / einfache Bedrohung, oberes Ende des HG-1–4-Bands**",
+      "Begegnungsrang": "Standard",
+      "Archetyp": "Standard",
+      "Elementare Eigenschaft": "Keine feste Elementprägung",
+      "Größenordnung": "Mittelgroßes bis großes Pflanzenwesen; meist 1,2–1,8 m hoch und mit ausgebreiteten Ranken ungefähr 2–3 m breit",
+      "Intelligenzniveau": "Sehr niedrig bis tierisch; reizgesteuert, geduldig und stark auf Wärme, Erschütterung sowie frisches Blut ausgerichtet"
+    },
+    "raw_table_markdown": "| Kerndaten | Angabe |\n|---|---|\n| Kreaturenart | Pflanzenwesen |\n| Einordnung | Weltkreatur |\n| Ursprüngliche Herkunft | Sylvarra – Blütenwildnis |\n| Bekanntes Vorkommen | Vor allem in warmen, feuchten Teilen der Blütenwildnis: an überwachsenen Waldwegen, Lichtungsrändern, Wildwechseln, Bachufern, Ruinen mit starkem Pflanzenwuchs und zwischen natürlichen Dorngebüschen. Vereinzelte Bestände können sich auch in anderen feuchten Regionen Sylvarras halten, wenn ausreichend große Beutetiere vorbeiziehen. |\n| Herausforderungsgrad | **4 – Sehr schwache / einfache Bedrohung, oberes Ende des HG-1–4-Bands** |\n| Begegnungsrang | Standard |\n| Archetyp | Standard |\n| Elementare Eigenschaft | Keine feste Elementprägung |\n| Größenordnung | Mittelgroßes bis großes Pflanzenwesen; meist 1,2–1,8 m hoch und mit ausgebreiteten Ranken ungefähr 2–3 m breit |\n| Intelligenzniveau | Sehr niedrig bis tierisch; reizgesteuert, geduldig und stark auf Wärme, Erschütterung sowie frisches Blut ausgerichtet |"
+  },
+  "action_overview": {
+    "headers": [
+      "Nr.",
+      "Aktion",
+      "Typ",
+      "Grundfunktion"
+    ],
+    "actions": [
+      {
+        "number": 1,
+        "name": "Blutdornschlag",
+        "type": "Angriff",
+        "base_function": "Zuverlässiger Rankenangriff mit langen Widerhaken.",
+        "id": "blutdorn-overview-a01-blutdornschlag",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "1",
+          "Aktion": "Blutdornschlag",
+          "Typ": "Angriff",
+          "Grundfunktion": "Zuverlässiger Rankenangriff mit langen Widerhaken."
+        }
+      },
+      {
+        "number": 2,
+        "name": "Fangranke",
+        "type": "Angriff / Kontrolle",
+        "base_function": "Geringerer Schaden; kann ein Ziel bei misslungenem Rettungswurf bis zu 2 m zum Blutdorn ziehen.",
+        "id": "blutdorn-overview-a02-fangranke",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "2",
+          "Aktion": "Fangranke",
+          "Typ": "Angriff / Kontrolle",
+          "Grundfunktion": "Geringerer Schaden; kann ein Ziel bei misslungenem Rettungswurf bis zu 2 m zum Blutdorn ziehen."
+        }
+      },
+      {
+        "number": 3,
+        "name": "Blutwitterung",
+        "type": "Reaktion / Zielerfassung",
+        "base_function": "Wenn ein lebendes Ziel in der Nähe LP verliert, erhält der nächste Angriff gegen dieses Ziel +2 auf den Angriffswurf.",
+        "id": "blutdorn-overview-a03-blutwitterung",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "3",
+          "Aktion": "Blutwitterung",
+          "Typ": "Reaktion / Zielerfassung",
+          "Grundfunktion": "Wenn ein lebendes Ziel in der Nähe LP verliert, erhält der nächste Angriff gegen dieses Ziel +2 auf den Angriffswurf."
+        }
+      }
+    ]
+  },
+  "shared_action_details": [],
+  "lore_and_rules": [
+    {
+      "title": "Überblick",
+      "id": "ueberblick",
+      "markdown": "Der **Blutdorn** ist eine fleischfressende Pflanze der sylvarrischen Blütenwildnis, die im Ruhezustand wie ein gewöhnlicher dichter Dornenbusch erscheint. Seine Äste tragen dunkle Blätter, matte rote Knospen und unzählige kurze Widerhaken. Erst wenn sich ein warmes Lebewesen nähert, verändert sich die Pflanze sichtbar: einzelne Ranken richten sich auf, Dornen drehen ihre Spitzen zum Ziel und der gesamte Busch scheint sich langsam nach Bewegung auszurichten.\n\nAnders als der kleinere Dornling ist der Blutdorn kein beweglicher Revierverteidiger. Er ist ein **Lauerjäger**, der lange an derselben Stelle verbleibt und auf Wildwechsel, Wasserstellen oder schmale Pfade angewiesen ist. Seine Wurzeln können sich zwar lösen und den Hauptkörper langsam versetzen, doch im Kampf verlässt er sich fast vollständig auf die Reichweite seiner Fangranken.\n\nSeinen Namen verdankt das Wesen einem feinen Kapillarsystem innerhalb der Dornen. Dringen die Widerhaken in Fleisch ein, nehmen sie kleine Mengen warmer Flüssigkeit auf. Dies dient weniger einer sofortigen Ernährung als der Ortung: frisches Blut und Körperwärme verstärken die Reaktion der Pflanze und lassen ihre Ranken präziser auf bereits verletzte Beute ausrichten.\n\nFür unerfahrene Gruppen ist ein Blutdorn deshalb gefährlicher als ein gewöhnlicher beweglicher Dornenstrauch. Er kann einen schmalen Weg blockieren, Beute aus sicher geglaubter Entfernung erreichen und verletzte Ziele besonders zuverlässig verfolgen, ohne selbst schnell laufen zu müssen.",
+      "tables": [],
+      "source": {
+        "line_start": 18,
+        "line_end": 27
+      }
+    },
+    {
+      "title": "Erscheinungsbild und Anatomie",
+      "id": "erscheinungsbild-und-anatomie",
+      "markdown": "Ein ruhender Blutdorn bildet einen breiten, unregelmäßigen Busch aus verholzten Ästen, lederartigen Blättern und mehreren Schichten ineinander verschlungener Ranken. Die äußeren Zweige wirken häufig alt, trocken und unscheinbar. Im Inneren liegen dagegen jüngere, dunkelrote Triebe, die deutlich elastischer und kräftiger sind.\n\nDie Dornen sind gebogen und besitzen mikroskopisch feine Rinnen. Diese führen zu dünnen Leitbahnen im Inneren der Ranke. Gelangt Blut oder andere warme Körperflüssigkeit an einen Dorn, breitet sich der chemische Reiz entlang der Ranke bis zum zentralen Wurzelknoten aus. Dadurch kann die Pflanze die Richtung einer verletzten Beute besser bestimmen.\n\nIm Zentrum sitzt ein dichter, teilweise im Boden verborgener **Wurzelstock**. Er speichert Wasser, Zucker und aufgenommene Nährstoffe. Zwischen den Wurzelsträngen liegen weiche Verdauungsflächen, auf denen festgehaltene kleine Tiere oder organische Reste langsam zersetzt werden. Der Blutdorn besitzt kein Maul und verschlingt seine Beute nicht als Ganzes.\n\nMehrere dicke Hauptwurzeln können sich aus weichem Boden lösen. Dadurch ist die Pflanze grundsätzlich beweglich, aber nur langsam. Ein Blutdorn wechselt seinen Standort meist über Stunden oder während längerer Ruhephasen. Im offenen Kampf ist diese Fortbewegung kaum mit der Geschwindigkeit seiner peitschenden Ranken vergleichbar.\n\nDie Blätter sind dunkelgrün bis rötlich schwarz. Ihre Unterseiten tragen kleine wärmeempfindliche Flächen. Zusammen mit erschütterungsempfindlichen Wurzelhaaren kann die Pflanze unterscheiden, ob sich ein Tier, fallendes Holz oder bloß Wind durch das Gebüsch bewegt.",
+      "tables": [],
+      "source": {
+        "line_start": 28,
+        "line_end": 39
+      }
+    },
+    {
+      "title": "Herkunft und Entstehung",
+      "id": "herkunft-und-entstehung",
+      "markdown": "Blutdorne gelten als natürlicher Bestandteil der **Blütenwildnis Sylvarras**. Die Region ist warm, feucht und von dichter, teilweise fleischfressender Vegetation geprägt. Für einen Lauerjäger, der zwischen gewaltigen Pflanzen, wechselnden Pfaden und dichten Hecken verborgen bleibt, bietet sie ideale Bedingungen.\n\nPflanzenkundige nehmen an, dass Blutdorne aus größeren fleischfressenden Strauchformen hervorgingen, die zunächst nur kleine Tiere und Insekten festhielten. Mit der Zeit entwickelten einige Bestände stärkere Ranken und ein empfindlicheres Reaktionssystem auf Wärme und Blut. Dadurch konnten sie größere Beutetiere verletzen und an derselben Stelle über längere Zeit von organischen Resten profitieren.\n\nEs gibt keine Hinweise darauf, dass der Blutdorn von Eidryth erschaffen wurde oder eine künstliche Züchtung darstellt. Er ist eine gefährliche, aber natürliche Weltkreatur Sylvarras.",
+      "tables": [],
+      "source": {
+        "line_start": 40,
+        "line_end": 47
+      }
+    },
+    {
+      "title": "Vorkommen und Lebensraum",
+      "id": "vorkommen-und-lebensraum",
+      "markdown": "Blutdorne bevorzugen Orte, an denen regelmäßig größere Tiere vorbeikommen und der Boden feucht genug für ihren schweren Wurzelstock bleibt. Typische Standorte sind:\n\n- überwachsene Wildwechsel und schmale Waldpfade,\n- Lichtungsränder mit dichtem Unterholz,\n- Bach- und Teichufer,\n- Bereiche unter großen Blütenpflanzen,\n- verlassene Ruinen und überwachsene Mauern,\n- natürliche Dornhecken,\n- feuchte Senken mit nährstoffreichem Boden,\n- Stellen, an denen Tierherden regelmäßig trinken oder rasten.\n\nEin Blutdorn steht selten mitten auf einer offenen Fläche. Er bevorzugt Übergänge zwischen freiem Weg und dichter Vegetation. Dort kann er wie gewöhnlicher Bewuchs wirken, während seine Fangranken beide Seiten eines Pfades erreichen.\n\nMehrere Blutdorne wachsen nur selten direkt nebeneinander, weil sie um dieselbe Beute konkurrieren. An besonders reichen Wildwechseln können jedoch lockere Gruppen entstehen, zwischen denen noch mehrere Meter Abstand liegen.",
+      "tables": [],
+      "source": {
+        "line_start": 48,
+        "line_end": 64
+      }
+    },
+    {
+      "title": "Verhalten und Lebensweise",
+      "id": "verhalten-und-lebensweise",
+      "markdown": "Blutdorne besitzen kein Bewusstsein im humanoiden Sinn. Ihr Verhalten entsteht aus Reaktionen auf Wärme, Bodenerschütterung, Berührung, Feuchtigkeit und chemische Spuren.\n\nSolange keine geeignete Beute in der Nähe ist, bleiben die Ranken locker im Busch verteilt. Kleine Tiere können sich dabei sogar zwischen den äußeren Zweigen bewegen, ohne sofort angegriffen zu werden. Erst eine Kombination aus ausreichender Körperwärme, Bewegung und Gewicht löst den Jagdreflex aus.\n\nWird ein Ziel verletzt, verändert sich das Verhalten deutlich. Die Ranken richten sich stärker auf die Quelle frischen Blutes aus. Der Blutdorn versucht nun nicht, wahllos jedes Lebewesen zu treffen, sondern folgt bevorzugt dem bereits verwundeten Ziel, solange es sich in Reichweite befindet.\n\nDie Pflanze verfolgt fliehende Beute nicht über längere Strecken. Entfernt sich ein Ziel aus dem Wirkungsbereich der Ranken, beruhigt sich der Blutdorn nach kurzer Zeit wieder. Ein Standortwechsel erfolgt erst später und nur, wenn über längere Zeit keine Nahrung verfügbar ist.",
+      "tables": [],
+      "source": {
+        "line_start": 65,
+        "line_end": 74
+      }
+    },
+    {
+      "title": "Nahrung und ökologische Rolle",
+      "id": "nahrung-und-oekologische-rolle",
+      "markdown": "Blutdorne beziehen einen Teil ihrer Energie wie gewöhnliche Pflanzen aus Licht, Wasser und dem Boden. Für schnelles Wachstum und die Bildung neuer Fangranken benötigen sie jedoch zusätzliche Nährstoffe.\n\nKleine Tiere, Aas und organische Reste werden zwischen den inneren Wurzeln zersetzt. Größere Beute wird normalerweise nicht vollständig getötet und aufgenommen; häufig reichen Blut, Gewebestücke oder zurückgelassene Kadaverreste aus, um den Wurzelstock über längere Zeit zu versorgen.\n\nDadurch übernehmen Blutdorne zugleich die Rolle eines Lauerjägers und eines Aasverwerters. Ihre Standorte können Wildwechsel verändern, weil größere Tiere Wege mit mehreren alten Blutdornen nach einiger Zeit meiden.",
+      "tables": [],
+      "source": {
+        "line_start": 75,
+        "line_end": 82
+      }
+    },
+    {
+      "title": "Spuren und Vorzeichen",
+      "id": "spuren-und-vorzeichen",
+      "markdown": "Typische Hinweise auf einen Blutdorn sind:\n\n- Dornen, deren Spitzen ungewöhnlich gleichmäßig zu einem Pfad zeigen,\n- kleine dunkelrote Flecken auf ansonsten grünen oder schwarzen Ranken,\n- Knochen, Fell oder Federn unter einem scheinbar normalen Busch,\n- schmale Schleifspuren, wo Ranken wiederholt über Erde oder Stein schnellen,\n- ungewöhnlich nährstoffreicher, dunkler Boden direkt unter dem Wurzelstock,\n- abgerissene Stofffasern oder Haare an gebogenen Widerhaken,\n- Wildpfade, die kurz vor einem bestimmten Gebüsch plötzlich einen Bogen machen,\n- ein langsames gemeinsames Drehen mehrerer Ranken in Richtung einer offenen Wunde.",
+      "tables": [],
+      "source": {
+        "line_start": 83,
+        "line_end": 95
+      }
+    },
+    {
+      "title": "Beziehung zu Bewohnern und Kulturen",
+      "id": "beziehung-zu-bewohnern-und-kulturen",
+      "markdown": "Die Bewohner der Blütenwildnis kennen zahlreiche Pflanzen, die auf Bewegung, Geruch oder Wärme reagieren. Blutdorne gelten deshalb nicht als unbegreifliches Monster, sondern als eine besonders unangenehme Form natürlicher Vegetation.\n\nErfahrene Reisende prüfen dichte Dornbüsche entlang schmaler Wege nicht mit der bloßen Hand. Stattdessen werfen sie Äste, erzeugen Erschütterungen aus sicherer Entfernung oder beobachten, ob sich mehrere Dornen gleichzeitig nach einer Bewegung ausrichten.\n\nDie in der Blütenwildnis lebenden Tabaxi bevorzugen erhöhte Stege und leichte Wege nicht nur wegen des dichten Pflanzenwuchses. Solche Routen vermeiden auch viele bodengebundene Lauerpflanzen. Blutdornbestände nahe häufig genutzter Pfade werden markiert, zurückgeschnitten oder vollständig ausgegraben.\n\nAbgetrennte Dornen verlieren ihren Jagdreflex rasch. Pflanzenkundige sammeln sie dennoch vorsichtig, da die Hakenstruktur für bestimmte Werkzeuge, Fallen oder Untersuchungen interessant sein kann.",
+      "tables": [],
+      "source": {
+        "line_start": 96,
+        "line_end": 105
+      }
+    },
+    {
+      "title": "Kampfverhalten",
+      "id": "kampfverhalten",
+      "markdown": "Ein Blutdorn beginnt einen Kampf selten durch Verfolgung. Er wartet, bis ein Ziel in Reichweite seiner Ranken kommt, und schlägt dann mit einem **Blutdornschlag** zu.\n\nMit der **Fangranke** versucht er, ein Ziel aus günstiger Position näher an seinen Wurzelstock zu ziehen. Der Angriff verursacht etwas weniger direkten Schaden, kann aber eine misslungene Rettung nutzen, um das Ziel bis zu 2 m in gerader Linie zum Blutdorn zu bewegen.\n\nDie charakteristische **Blutwitterung** ist eine Reaktion. Verliert ein lebendes Wesen in der Nähe LP, richten sich Wärme- und Blutrezeptoren auf dieses Ziel aus. Der nächste Angriff des Blutdorns gegen genau dieses Ziel erhält dadurch einen kleinen Präzisionsvorteil.\n\nDer Blutdorn besitzt keinen Fluchtinstinkt wie ein Tier. Wird er schwer verletzt, zieht er seine Ranken näher an den Wurzelstock und verteidigt den Standort weiter. Erst wenn der Wurzelstock zerstört ist, endet die Kampfreaktion vollständig.",
+      "tables": [],
+      "source": {
+        "line_start": 106,
+        "line_end": 115
+      }
+    },
+    {
+      "title": "Taktik für den Game Master",
+      "id": "taktik-fuer-den-game-master",
+      "markdown": "- **Eröffnung:** Der Blutdorn sollte zunächst wie gewöhnlicher Bewuchs wirken und erst reagieren, wenn ein Ziel nahe genug kommt oder die Pflanze aktiv untersucht wird.\n- **Zielwahl:** Nach frischem LP-Verlust bevorzugt er das durch Blutwitterung markierte Ziel, sofern dieses erreichbar bleibt.\n- **Positionierung:** Die Pflanze versucht mit Fangranke, Beute näher an ihren Standort und weg von günstigem Rückzug zu ziehen.\n- **Bewegung:** Der Blutdorn ist langsam. Er soll nicht über das Schlachtfeld jagen, sondern einen Bereich kontrollieren.\n- **Gruppen:** Mehrere Blutdorne handeln unabhängig voneinander. Blutwitterung jedes Exemplars muss separat ausgelöst werden; es entstehen keine kostenlosen Gruppenboni.\n- **Umgehung:** Spieler dürfen einen erkannten Blutdorn umgehen, aus der Distanz bekämpfen oder den Kampfplatz verändern. Seine niedrige Fortbewegung ist eine bewusste Schwäche.",
+      "tables": [],
+      "source": {
+        "line_start": 116,
+        "line_end": 124
+      }
+    },
+    {
+      "title": "Mechanische Grundidentität",
+      "id": "mechanische-grundidentitaet",
+      "markdown": "**LP-Hauptattribut:** Stärke (ST) – der dicke Wurzelstock, die verholzten Triebe und die kräftigen Zugranken bestimmen die körperliche Belastbarkeit.  \n**LP-Sekundärattribut:** Willenskraft (WI) – bildet die schwer zu unterbrechende, reizgesteuerte Lebensfunktion des Wurzelstocks ab.  \n**Bonusprofil:** Beweglichkeit beschreibt die Geschwindigkeit der Ranken, nicht die Laufgeschwindigkeit des gesamten Wesens. Wahrnehmung und Intuition stehen für Wärme-, Blut- und Erschütterungsreize. Ausweichen bleibt niedrig, weil der Hauptkörper kaum ausweicht.  \n**Offensivprofil:** Blutdornschlag ist die zuverlässige Schadensoption. Fangranke tauscht einen Teil des direkten Schadens gegen geringe erzwungene Bewegung. Blutwitterung erhöht situativ die Präzision, erzeugt aber keinen zusätzlichen Angriff.  \n**Defensivprofil:** **Standard.** Der Blutdorn besitzt mäßige feste Verteidigung und normale LP, kann aber durch seine geringe Beweglichkeit leicht auf ungünstigem Gelände festgesetzt oder umgangen werden.  \n**Bewegungsprofil:** Land 4 m. Diese Bewegung stellt langsames Lösen und Neuverankern der Hauptwurzeln dar.  \n**Elementprofil:** Keine feste Elementprägung. **10 % Resistenz gegen Wasser**, **10 % Resistenz gegen Erde** und **20 % Verwundbarkeit gegen Feuer** sind rein physiologische Eigenschaften der Pflanze.  \n**Aktionsanzahl:** 3 unterschiedliche Kampfoptionen.  \n**Phasenprofil:** Kein Phasenwechsel.",
+      "tables": [],
+      "source": {
+        "line_start": 125,
+        "line_end": 136
+      }
+    },
+    {
+      "title": "Elementare Besonderheiten",
+      "id": "elementare-besonderheiten",
+      "markdown": "- **Wasser – 10 % Resistenz:** Der feuchtigkeitsreiche Wurzelstock und wasserleitende Gewebe verteilen elementaren Wasserdruck besser als tierisches Weichgewebe. Wasserschaden wird nach den normalen Regeln um **10 % reduziert**.\n- **Erde – 10 % Resistenz:** Tiefe Wurzeln und ein flexibler, bodennaher Körper dämpfen Erschütterungen, Steinfragmente und mineralische Einwirkungen. Erdschaden wird um **10 % reduziert**.\n- **Feuer – 20 % Verwundbarkeit:** Harze, trockene äußere Rinde und die große Oberfläche der Ranken können durch elementare Hitze schnell austrocknen und entzündet werden. Der Blutdorn erleidet **20 % zusätzlichen Feuerschaden**.\n\nDiese Werte stellen **keine elementare Prägung** dar. Der Blutdorn bleibt ein natürliches Pflanzenwesen.",
+      "tables": [],
+      "source": {
+        "line_start": 137,
+        "line_end": 144
+      }
+    },
+    {
+      "title": "Aktionsübersicht",
+      "id": "aktionsuebersicht",
+      "markdown": "| Nr. | Aktion | Typ | Grundfunktion |\n|---:|---|---|---|\n| 1 | Blutdornschlag | Angriff | Zuverlässiger Rankenangriff mit langen Widerhaken. |\n| 2 | Fangranke | Angriff / Kontrolle | Geringerer Schaden; kann ein Ziel bei misslungenem Rettungswurf bis zu 2 m zum Blutdorn ziehen. |\n| 3 | Blutwitterung | Reaktion / Zielerfassung | Wenn ein lebendes Ziel in der Nähe LP verliert, erhält der nächste Angriff gegen dieses Ziel +2 auf den Angriffswurf. |\n\n---",
+      "tables": [
+        {
+          "headers": [
+            "Nr.",
+            "Aktion",
+            "Typ",
+            "Grundfunktion"
+          ],
+          "rows": [
+            {
+              "Nr.": "1",
+              "Aktion": "Blutdornschlag",
+              "Typ": "Angriff",
+              "Grundfunktion": "Zuverlässiger Rankenangriff mit langen Widerhaken."
+            },
+            {
+              "Nr.": "2",
+              "Aktion": "Fangranke",
+              "Typ": "Angriff / Kontrolle",
+              "Grundfunktion": "Geringerer Schaden; kann ein Ziel bei misslungenem Rettungswurf bis zu 2 m zum Blutdorn ziehen."
+            },
+            {
+              "Nr.": "3",
+              "Aktion": "Blutwitterung",
+              "Typ": "Reaktion / Zielerfassung",
+              "Grundfunktion": "Wenn ein lebendes Ziel in der Nähe LP verliert, erhält der nächste Angriff gegen dieses Ziel +2 auf den Angriffswurf."
+            }
+          ],
+          "raw_markdown": "| Nr. | Aktion | Typ | Grundfunktion |\n|---:|---|---|---|\n| 1 | Blutdornschlag | Angriff | Zuverlässiger Rankenangriff mit langen Widerhaken. |\n| 2 | Fangranke | Angriff / Kontrolle | Geringerer Schaden; kann ein Ziel bei misslungenem Rettungswurf bis zu 2 m zum Blutdorn ziehen. |\n| 3 | Blutwitterung | Reaktion / Zielerfassung | Wenn ein lebendes Ziel in der Nähe LP verliert, erhält der nächste Angriff gegen dieses Ziel +2 auf den Angriffswurf. |"
+        }
+      ],
+      "source": {
+        "line_start": 145,
+        "line_end": 153
+      }
+    }
+  ],
+  "levels": [
+    {
+      "level": 1,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 3,
+          "modifier": -4,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "3",
+            "Modifikator": "-4",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 4,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "4",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "135",
+          "physische_verteidigung": "7",
+          "magieverteidigung": "7",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 4 m",
+          "fangranke_sg": "12",
+          "blutwitterung": "+2 auf den nächsten Angriff gegen das ausgelöste Ziel; höchstens einmal pro Runde"
+        },
+        "raw_fields": {
+          "Maximale LP": "135",
+          "Physische Verteidigung": "7",
+          "Magieverteidigung": "7",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 4 m",
+          "Fangranke-SG": "12",
+          "Blutwitterung": "+2 auf den nächsten Angriff gegen das ausgelöste Ziel; höchstens einmal pro Runde"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+2) + ST-Bonus (+0)) × 10) + ((WI-Modifikator (+1) + WI-Bonus (+0)) × 5) + (1 × 10) = 135 LP",
+        "markdown": "`100 + ((ST-Modifikator (+2) + ST-Bonus (+0)) × 10) + ((WI-Modifikator (+1) + WI-Bonus (+0)) × 5) + (1 × 10) = 135 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Blutdornschlag",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+4) + BW-Bonus (+4)",
+            "range_area": "Bis 3 m",
+            "damage_effect": "5W8 + ST-Mod. (+2) + ST-Bonus (+0)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "24,5",
+            "avg_hit_damage": "16,7",
+            "avg_expected_effect": "11,5",
+            "ge_share": "0,51",
+            "notes": null,
+            "avg_raw_damage_value": 24.5,
+            "avg_hit_damage_value": 16.7,
+            "ge_share_value": 0.51,
+            "id": "blutdorn-l01-a01-blutdornschlag",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Blutdornschlag",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+4) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Bis 3 m",
+              "Schaden / Wirkung": "5W8 + ST-Mod. (+2) + ST-Bonus (+0)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "24,5",
+              "Ø Treffer-Endschaden": "16,7",
+              "Ø Erwartungswirkung": "11,5",
+              "GE-Anteil": "0,51",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Fangranke",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+4) + BW-Bonus (+4); danach SG 12",
+            "range_area": "Bis 5 m",
+            "damage_effect": "4W8 + ST-Mod. (+2) + ST-Bonus (+0); danach ST- oder BW-RW",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "20,0",
+            "avg_hit_damage": "12,1",
+            "avg_expected_effect": "8,3 Schaden + Kontrolle",
+            "ge_share": "0,42 gesamt",
+            "notes": "Bei Fehlschlag bis zu 2 m geradlinig zum Blutdorn gezogen.",
+            "avg_raw_damage_value": 20.0,
+            "avg_hit_damage_value": 12.1,
+            "id": "blutdorn-l01-a02-fangranke",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Fangranke",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+4) + BW-Bonus (+4); danach SG 12",
+              "Reichweite / Fläche": "Bis 5 m",
+              "Schaden / Wirkung": "4W8 + ST-Mod. (+2) + ST-Bonus (+0); danach ST- oder BW-RW",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "20,0",
+              "Ø Treffer-Endschaden": "12,1",
+              "Ø Erwartungswirkung": "8,3 Schaden + Kontrolle",
+              "GE-Anteil": "0,42 gesamt",
+              "Zusatz": "Bei Fehlschlag bis zu 2 m geradlinig zum Blutdorn gezogen."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Blutwitterung",
+            "cost": "1 Reaktion",
+            "type": "Reaktion / Zielerfassung",
+            "attribute": null,
+            "attack_or_dc": "Auslöser: lebendes Ziel innerhalb 6 m verliert LP",
+            "range_area": "Bis 6 m",
+            "damage_effect": "+2 auf den nächsten Angriffswurf des Blutdorns gegen dieses Ziel",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "taktisch",
+            "notes": "Höchstens einmal pro Runde; kein zusätzlicher Angriff.",
+            "id": "blutdorn-l01-a03-blutwitterung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Blutwitterung",
+              "Kosten": "1 Reaktion",
+              "Typ": "Reaktion / Zielerfassung",
+              "Attribut": null,
+              "Angriff / SG": "Auslöser: lebendes Ziel innerhalb 6 m verliert LP",
+              "Reichweite / Fläche": "Bis 6 m",
+              "Schaden / Wirkung": "+2 auf den nächsten Angriffswurf des Blutdorns gegen dieses Ziel",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "taktisch",
+              "Zusatz": "Höchstens einmal pro Runde; kein zusätzlicher Angriff."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "blutdorn-l01-blutdornschlag",
+          "name": "Blutdornschlag",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Bis zu 3 m",
+          "attack_roll": "`W20 + BW-Mod. (+4) + BW-Bonus (+4)`",
+          "damage": "`5W8 + ST-Mod. (+2) + ST-Bonus (+0)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Eine schwere, mit langen Widerhaken besetzte Ranke schnellt aus dem scheinbar reglosen Busch und schlägt nach dem Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er zieht das Ziel nicht automatisch heran und erzeugt keine zusätzliche freie Bewegung.",
+          "stacking": "Mehrere Blutdorne führen ihre Angriffe unabhängig voneinander aus.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Bis zu 3 m",
+            "Angriffswurf": "`W20 + BW-Mod. (+4) + BW-Bonus (+4)`",
+            "Schaden": "`5W8 + ST-Mod. (+2) + ST-Bonus (+0)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Eine schwere, mit langen Widerhaken besetzte Ranke schnellt aus dem scheinbar reglosen Busch und schlägt nach dem Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er zieht das Ziel nicht automatisch heran und erzeugt keine zusätzliche freie Bewegung.",
+            "Stapelung": "Mehrere Blutdorne führen ihre Angriffe unabhängig voneinander aus."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 197,
+            "line_end": 208
+          }
+        },
+        {
+          "id": "blutdorn-l01-fangranke",
+          "name": "Fangranke",
+          "type": "Körperlicher Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Bis zu 5 m",
+          "attack_roll": "`W20 + BW-Mod. (+4) + BW-Bonus (+4)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 12** nach einem Treffer",
+          "damage": "`4W8 + ST-Mod. (+2) + ST-Bonus (+0)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer verhaken sich mehrere rückwärts gerichtete Dornen in Kleidung, Fell, Rüstungsspalten oder Haut. Misslingt der anschließende Rettungswurf, zieht der Blutdorn das Ziel **bis zu 2 m in gerader Linie zu seinem eigenen Standort**. Das Ziel muss in einem freien, betretbaren Feld enden und kann durch diese Bewegung nicht durch feste Hindernisse gezogen werden. Ist weniger als 2 m Platz vorhanden, endet die Bewegung am frühestmöglichen freien Punkt.",
+          "stacking": "Mehrere Fangranken werden getrennt abgehandelt. Eine einzelne Anwendung zieht höchstens 2 m.",
+          "end_condition": "Die erzwungene Bewegung ist sofort abgeschlossen; danach besteht keine fortdauernde Fesselung.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Bis zu 5 m",
+            "Angriffswurf": "`W20 + BW-Mod. (+4) + BW-Bonus (+4)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 12** nach einem Treffer",
+            "Schaden": "`4W8 + ST-Mod. (+2) + ST-Bonus (+0)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer verhaken sich mehrere rückwärts gerichtete Dornen in Kleidung, Fell, Rüstungsspalten oder Haut. Misslingt der anschließende Rettungswurf, zieht der Blutdorn das Ziel **bis zu 2 m in gerader Linie zu seinem eigenen Standort**. Das Ziel muss in einem freien, betretbaren Feld enden und kann durch diese Bewegung nicht durch feste Hindernisse gezogen werden. Ist weniger als 2 m Platz vorhanden, endet die Bewegung am frühestmöglichen freien Punkt.",
+            "Stapelung": "Mehrere Fangranken werden getrennt abgehandelt. Eine einzelne Anwendung zieht höchstens 2 m.",
+            "Ende der Wirkung": "Die erzwungene Bewegung ist sofort abgeschlossen; danach besteht keine fortdauernde Fesselung."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 209,
+            "line_end": 222
+          }
+        },
+        {
+          "id": "blutdorn-l01-blutwitterung",
+          "name": "Blutwitterung",
+          "type": "Reaktion / Zielerfassung",
+          "cost": "1 Reaktion",
+          "trigger": "Ein lebendes Wesen innerhalb von 6 m, das der Blutdorn wahrnehmen kann, verliert mindestens 1 LP.",
+          "range": "Bis zu 6 m",
+          "target": "Das auslösende Wesen",
+          "rule_effect": "Wärme- und Blutrezeptoren in den Dornen richten die Ranken auf die Quelle der Verletzung aus. Der Blutdorn erhält **+2 auf seinen nächsten Angriffswurf gegen genau das auslösende Ziel**. Der Effekt gewährt **keinen zusätzlichen Angriff** und verändert den Schaden nicht.",
+          "usage_limit": "Höchstens einmal pro Runde.",
+          "stacking": "Blutwitterung stapelt nicht mit sich selbst. Ein neuer zulässiger Auslöser ersetzt eine noch bestehende Markierung.",
+          "end_condition": "Nach dem ersten Angriff gegen das markierte Ziel, am Ende des nächsten eigenen Zuges oder sobald das Ziel nicht mehr wahrgenommen werden kann.",
+          "extra_fields": {
+            "Dauer": "Bis zum Ende des nächsten eigenen Zuges des Blutdorns oder bis der Bonus verbraucht wurde"
+          },
+          "raw_fields": {
+            "Typ": "Reaktion / Zielerfassung",
+            "Kosten": "1 Reaktion",
+            "Auslöser": "Ein lebendes Wesen innerhalb von 6 m, das der Blutdorn wahrnehmen kann, verliert mindestens 1 LP.",
+            "Reichweite": "Bis zu 6 m",
+            "Ziel": "Das auslösende Wesen",
+            "Dauer": "Bis zum Ende des nächsten eigenen Zuges des Blutdorns oder bis der Bonus verbraucht wurde",
+            "Regelwirkung": "Wärme- und Blutrezeptoren in den Dornen richten die Ranken auf die Quelle der Verletzung aus. Der Blutdorn erhält **+2 auf seinen nächsten Angriffswurf gegen genau das auslösende Ziel**. Der Effekt gewährt **keinen zusätzlichen Angriff** und verändert den Schaden nicht.",
+            "Einsatzlimit": "Höchstens einmal pro Runde.",
+            "Stapelung": "Blutwitterung stapelt nicht mit sich selbst. Ein neuer zulässiger Auslöser ersetzt eine noch bestehende Markierung.",
+            "Ende der Wirkung": "Nach dem ersten Angriff gegen das markierte Ziel, am Ende des nächsten eigenen Zuges oder sobald das Ziel nicht mehr wahrgenommen werden kann."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 223,
+            "line_end": 235
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "20 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 20
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**20 % Verwundbarkeit**",
+            "**10 % Resistenz**",
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 154,
+        "line_end": 243
+      }
+    },
+    {
+      "level": 5,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 3,
+          "modifier": -4,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "3",
+            "Modifikator": "-4",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 4,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "4",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 11,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "11",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "190",
+          "physische_verteidigung": "9",
+          "magieverteidigung": "9",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 4 m",
+          "fangranke_sg": "13",
+          "blutwitterung": "+2 auf den nächsten Angriff gegen das ausgelöste Ziel; höchstens einmal pro Runde"
+        },
+        "raw_fields": {
+          "Maximale LP": "190",
+          "Physische Verteidigung": "9",
+          "Magieverteidigung": "9",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 4 m",
+          "Fangranke-SG": "13",
+          "Blutwitterung": "+2 auf den nächsten Angriff gegen das ausgelöste Ziel; höchstens einmal pro Runde"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+2) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+1) + WI-Bonus (+1)) × 5) + (5 × 10) = 190 LP",
+        "markdown": "`100 + ((ST-Modifikator (+2) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+1) + WI-Bonus (+1)) × 5) + (5 × 10) = 190 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Blutdornschlag",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+4) + BW-Bonus (+5)",
+            "range_area": "Bis 3 m",
+            "damage_effect": "6W8 + ST-Mod. (+2) + ST-Bonus (+1)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "30,0",
+            "avg_hit_damage": "21,2",
+            "avg_expected_effect": "14,6",
+            "ge_share": "0,53",
+            "notes": null,
+            "avg_raw_damage_value": 30.0,
+            "avg_hit_damage_value": 21.2,
+            "ge_share_value": 0.53,
+            "id": "blutdorn-l05-a01-blutdornschlag",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Blutdornschlag",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+4) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Bis 3 m",
+              "Schaden / Wirkung": "6W8 + ST-Mod. (+2) + ST-Bonus (+1)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "30,0",
+              "Ø Treffer-Endschaden": "21,2",
+              "Ø Erwartungswirkung": "14,6",
+              "GE-Anteil": "0,53",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Fangranke",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+4) + BW-Bonus (+5); danach SG 13",
+            "range_area": "Bis 5 m",
+            "damage_effect": "5W8 + ST-Mod. (+2) + ST-Bonus (+1); danach ST- oder BW-RW",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "25,5",
+            "avg_hit_damage": "16,7",
+            "avg_expected_effect": "11,5 Schaden + Kontrolle",
+            "ge_share": "0,47 gesamt",
+            "notes": "Bei Fehlschlag bis zu 2 m geradlinig zum Blutdorn gezogen.",
+            "avg_raw_damage_value": 25.5,
+            "avg_hit_damage_value": 16.7,
+            "id": "blutdorn-l05-a02-fangranke",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Fangranke",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+4) + BW-Bonus (+5); danach SG 13",
+              "Reichweite / Fläche": "Bis 5 m",
+              "Schaden / Wirkung": "5W8 + ST-Mod. (+2) + ST-Bonus (+1); danach ST- oder BW-RW",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "25,5",
+              "Ø Treffer-Endschaden": "16,7",
+              "Ø Erwartungswirkung": "11,5 Schaden + Kontrolle",
+              "GE-Anteil": "0,47 gesamt",
+              "Zusatz": "Bei Fehlschlag bis zu 2 m geradlinig zum Blutdorn gezogen."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Blutwitterung",
+            "cost": "1 Reaktion",
+            "type": "Reaktion / Zielerfassung",
+            "attribute": null,
+            "attack_or_dc": "Auslöser: lebendes Ziel innerhalb 6 m verliert LP",
+            "range_area": "Bis 6 m",
+            "damage_effect": "+2 auf den nächsten Angriffswurf des Blutdorns gegen dieses Ziel",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "taktisch",
+            "notes": "Höchstens einmal pro Runde; kein zusätzlicher Angriff.",
+            "id": "blutdorn-l05-a03-blutwitterung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Blutwitterung",
+              "Kosten": "1 Reaktion",
+              "Typ": "Reaktion / Zielerfassung",
+              "Attribut": null,
+              "Angriff / SG": "Auslöser: lebendes Ziel innerhalb 6 m verliert LP",
+              "Reichweite / Fläche": "Bis 6 m",
+              "Schaden / Wirkung": "+2 auf den nächsten Angriffswurf des Blutdorns gegen dieses Ziel",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "taktisch",
+              "Zusatz": "Höchstens einmal pro Runde; kein zusätzlicher Angriff."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "blutdorn-l05-blutdornschlag",
+          "name": "Blutdornschlag",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Bis zu 3 m",
+          "attack_roll": "`W20 + BW-Mod. (+4) + BW-Bonus (+5)`",
+          "damage": "`6W8 + ST-Mod. (+2) + ST-Bonus (+1)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Eine schwere, mit langen Widerhaken besetzte Ranke schnellt aus dem scheinbar reglosen Busch und schlägt nach dem Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er zieht das Ziel nicht automatisch heran und erzeugt keine zusätzliche freie Bewegung.",
+          "stacking": "Mehrere Blutdorne führen ihre Angriffe unabhängig voneinander aus.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Bis zu 3 m",
+            "Angriffswurf": "`W20 + BW-Mod. (+4) + BW-Bonus (+5)`",
+            "Schaden": "`6W8 + ST-Mod. (+2) + ST-Bonus (+1)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Eine schwere, mit langen Widerhaken besetzte Ranke schnellt aus dem scheinbar reglosen Busch und schlägt nach dem Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er zieht das Ziel nicht automatisch heran und erzeugt keine zusätzliche freie Bewegung.",
+            "Stapelung": "Mehrere Blutdorne führen ihre Angriffe unabhängig voneinander aus."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 287,
+            "line_end": 298
+          }
+        },
+        {
+          "id": "blutdorn-l05-fangranke",
+          "name": "Fangranke",
+          "type": "Körperlicher Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Bis zu 5 m",
+          "attack_roll": "`W20 + BW-Mod. (+4) + BW-Bonus (+5)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 13** nach einem Treffer",
+          "damage": "`5W8 + ST-Mod. (+2) + ST-Bonus (+1)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer verhaken sich mehrere rückwärts gerichtete Dornen in Kleidung, Fell, Rüstungsspalten oder Haut. Misslingt der anschließende Rettungswurf, zieht der Blutdorn das Ziel **bis zu 2 m in gerader Linie zu seinem eigenen Standort**. Das Ziel muss in einem freien, betretbaren Feld enden und kann durch diese Bewegung nicht durch feste Hindernisse gezogen werden. Ist weniger als 2 m Platz vorhanden, endet die Bewegung am frühestmöglichen freien Punkt.",
+          "stacking": "Mehrere Fangranken werden getrennt abgehandelt. Eine einzelne Anwendung zieht höchstens 2 m.",
+          "end_condition": "Die erzwungene Bewegung ist sofort abgeschlossen; danach besteht keine fortdauernde Fesselung.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Bis zu 5 m",
+            "Angriffswurf": "`W20 + BW-Mod. (+4) + BW-Bonus (+5)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 13** nach einem Treffer",
+            "Schaden": "`5W8 + ST-Mod. (+2) + ST-Bonus (+1)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer verhaken sich mehrere rückwärts gerichtete Dornen in Kleidung, Fell, Rüstungsspalten oder Haut. Misslingt der anschließende Rettungswurf, zieht der Blutdorn das Ziel **bis zu 2 m in gerader Linie zu seinem eigenen Standort**. Das Ziel muss in einem freien, betretbaren Feld enden und kann durch diese Bewegung nicht durch feste Hindernisse gezogen werden. Ist weniger als 2 m Platz vorhanden, endet die Bewegung am frühestmöglichen freien Punkt.",
+            "Stapelung": "Mehrere Fangranken werden getrennt abgehandelt. Eine einzelne Anwendung zieht höchstens 2 m.",
+            "Ende der Wirkung": "Die erzwungene Bewegung ist sofort abgeschlossen; danach besteht keine fortdauernde Fesselung."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 299,
+            "line_end": 312
+          }
+        },
+        {
+          "id": "blutdorn-l05-blutwitterung",
+          "name": "Blutwitterung",
+          "type": "Reaktion / Zielerfassung",
+          "cost": "1 Reaktion",
+          "trigger": "Ein lebendes Wesen innerhalb von 6 m, das der Blutdorn wahrnehmen kann, verliert mindestens 1 LP.",
+          "range": "Bis zu 6 m",
+          "target": "Das auslösende Wesen",
+          "rule_effect": "Wärme- und Blutrezeptoren in den Dornen richten die Ranken auf die Quelle der Verletzung aus. Der Blutdorn erhält **+2 auf seinen nächsten Angriffswurf gegen genau das auslösende Ziel**. Der Effekt gewährt **keinen zusätzlichen Angriff** und verändert den Schaden nicht.",
+          "usage_limit": "Höchstens einmal pro Runde.",
+          "stacking": "Blutwitterung stapelt nicht mit sich selbst. Ein neuer zulässiger Auslöser ersetzt eine noch bestehende Markierung.",
+          "end_condition": "Nach dem ersten Angriff gegen das markierte Ziel, am Ende des nächsten eigenen Zuges oder sobald das Ziel nicht mehr wahrgenommen werden kann.",
+          "extra_fields": {
+            "Dauer": "Bis zum Ende des nächsten eigenen Zuges des Blutdorns oder bis der Bonus verbraucht wurde"
+          },
+          "raw_fields": {
+            "Typ": "Reaktion / Zielerfassung",
+            "Kosten": "1 Reaktion",
+            "Auslöser": "Ein lebendes Wesen innerhalb von 6 m, das der Blutdorn wahrnehmen kann, verliert mindestens 1 LP.",
+            "Reichweite": "Bis zu 6 m",
+            "Ziel": "Das auslösende Wesen",
+            "Dauer": "Bis zum Ende des nächsten eigenen Zuges des Blutdorns oder bis der Bonus verbraucht wurde",
+            "Regelwirkung": "Wärme- und Blutrezeptoren in den Dornen richten die Ranken auf die Quelle der Verletzung aus. Der Blutdorn erhält **+2 auf seinen nächsten Angriffswurf gegen genau das auslösende Ziel**. Der Effekt gewährt **keinen zusätzlichen Angriff** und verändert den Schaden nicht.",
+            "Einsatzlimit": "Höchstens einmal pro Runde.",
+            "Stapelung": "Blutwitterung stapelt nicht mit sich selbst. Ein neuer zulässiger Auslöser ersetzt eine noch bestehende Markierung.",
+            "Ende der Wirkung": "Nach dem ersten Angriff gegen das markierte Ziel, am Ende des nächsten eigenen Zuges oder sobald das Ziel nicht mehr wahrgenommen werden kann."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 313,
+            "line_end": 325
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "20 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 20
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**20 % Verwundbarkeit**",
+            "**10 % Resistenz**",
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 244,
+        "line_end": 333
+      }
+    },
+    {
+      "level": 10,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 4,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "4",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "265",
+          "physische_verteidigung": "11",
+          "magieverteidigung": "11",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 4 m",
+          "fangranke_sg": "13",
+          "blutwitterung": "+2 auf den nächsten Angriff gegen das ausgelöste Ziel; höchstens einmal pro Runde"
+        },
+        "raw_fields": {
+          "Maximale LP": "265",
+          "Physische Verteidigung": "11",
+          "Magieverteidigung": "11",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 4 m",
+          "Fangranke-SG": "13",
+          "Blutwitterung": "+2 auf den nächsten Angriff gegen das ausgelöste Ziel; höchstens einmal pro Runde"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+3) + ST-Bonus (+2)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+1)) × 5) + (10 × 10) = 265 LP",
+        "markdown": "`100 + ((ST-Modifikator (+3) + ST-Bonus (+2)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+1)) × 5) + (10 × 10) = 265 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Blutdornschlag",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+            "range_area": "Bis 3 m",
+            "damage_effect": "7W8 + ST-Mod. (+3) + ST-Bonus (+2)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "36,5",
+            "avg_hit_damage": "25,8",
+            "avg_expected_effect": "17,7",
+            "ge_share": "0,52",
+            "notes": null,
+            "avg_raw_damage_value": 36.5,
+            "avg_hit_damage_value": 25.8,
+            "ge_share_value": 0.52,
+            "id": "blutdorn-l10-a01-blutdornschlag",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Blutdornschlag",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Bis 3 m",
+              "Schaden / Wirkung": "7W8 + ST-Mod. (+3) + ST-Bonus (+2)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "36,5",
+              "Ø Treffer-Endschaden": "25,8",
+              "Ø Erwartungswirkung": "17,7",
+              "GE-Anteil": "0,52",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Fangranke",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4); danach SG 13",
+            "range_area": "Bis 5 m",
+            "damage_effect": "6W8 + ST-Mod. (+3) + ST-Bonus (+2); danach ST- oder BW-RW",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "32,0",
+            "avg_hit_damage": "21,2",
+            "avg_expected_effect": "14,6 Schaden + Kontrolle",
+            "ge_share": "0,48 gesamt",
+            "notes": "Bei Fehlschlag bis zu 2 m geradlinig zum Blutdorn gezogen.",
+            "avg_raw_damage_value": 32.0,
+            "avg_hit_damage_value": 21.2,
+            "id": "blutdorn-l10-a02-fangranke",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Fangranke",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4); danach SG 13",
+              "Reichweite / Fläche": "Bis 5 m",
+              "Schaden / Wirkung": "6W8 + ST-Mod. (+3) + ST-Bonus (+2); danach ST- oder BW-RW",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "32,0",
+              "Ø Treffer-Endschaden": "21,2",
+              "Ø Erwartungswirkung": "14,6 Schaden + Kontrolle",
+              "GE-Anteil": "0,48 gesamt",
+              "Zusatz": "Bei Fehlschlag bis zu 2 m geradlinig zum Blutdorn gezogen."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Blutwitterung",
+            "cost": "1 Reaktion",
+            "type": "Reaktion / Zielerfassung",
+            "attribute": null,
+            "attack_or_dc": "Auslöser: lebendes Ziel innerhalb 6 m verliert LP",
+            "range_area": "Bis 6 m",
+            "damage_effect": "+2 auf den nächsten Angriffswurf des Blutdorns gegen dieses Ziel",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "taktisch",
+            "notes": "Höchstens einmal pro Runde; kein zusätzlicher Angriff.",
+            "id": "blutdorn-l10-a03-blutwitterung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Blutwitterung",
+              "Kosten": "1 Reaktion",
+              "Typ": "Reaktion / Zielerfassung",
+              "Attribut": null,
+              "Angriff / SG": "Auslöser: lebendes Ziel innerhalb 6 m verliert LP",
+              "Reichweite / Fläche": "Bis 6 m",
+              "Schaden / Wirkung": "+2 auf den nächsten Angriffswurf des Blutdorns gegen dieses Ziel",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "taktisch",
+              "Zusatz": "Höchstens einmal pro Runde; kein zusätzlicher Angriff."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "blutdorn-l10-blutdornschlag",
+          "name": "Blutdornschlag",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Bis zu 3 m",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+          "damage": "`7W8 + ST-Mod. (+3) + ST-Bonus (+2)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Eine schwere, mit langen Widerhaken besetzte Ranke schnellt aus dem scheinbar reglosen Busch und schlägt nach dem Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er zieht das Ziel nicht automatisch heran und erzeugt keine zusätzliche freie Bewegung.",
+          "stacking": "Mehrere Blutdorne führen ihre Angriffe unabhängig voneinander aus.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Bis zu 3 m",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+            "Schaden": "`7W8 + ST-Mod. (+3) + ST-Bonus (+2)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Eine schwere, mit langen Widerhaken besetzte Ranke schnellt aus dem scheinbar reglosen Busch und schlägt nach dem Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er zieht das Ziel nicht automatisch heran und erzeugt keine zusätzliche freie Bewegung.",
+            "Stapelung": "Mehrere Blutdorne führen ihre Angriffe unabhängig voneinander aus."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 377,
+            "line_end": 388
+          }
+        },
+        {
+          "id": "blutdorn-l10-fangranke",
+          "name": "Fangranke",
+          "type": "Körperlicher Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Bis zu 5 m",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 13** nach einem Treffer",
+          "damage": "`6W8 + ST-Mod. (+3) + ST-Bonus (+2)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer verhaken sich mehrere rückwärts gerichtete Dornen in Kleidung, Fell, Rüstungsspalten oder Haut. Misslingt der anschließende Rettungswurf, zieht der Blutdorn das Ziel **bis zu 2 m in gerader Linie zu seinem eigenen Standort**. Das Ziel muss in einem freien, betretbaren Feld enden und kann durch diese Bewegung nicht durch feste Hindernisse gezogen werden. Ist weniger als 2 m Platz vorhanden, endet die Bewegung am frühestmöglichen freien Punkt.",
+          "stacking": "Mehrere Fangranken werden getrennt abgehandelt. Eine einzelne Anwendung zieht höchstens 2 m.",
+          "end_condition": "Die erzwungene Bewegung ist sofort abgeschlossen; danach besteht keine fortdauernde Fesselung.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Bis zu 5 m",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 13** nach einem Treffer",
+            "Schaden": "`6W8 + ST-Mod. (+3) + ST-Bonus (+2)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer verhaken sich mehrere rückwärts gerichtete Dornen in Kleidung, Fell, Rüstungsspalten oder Haut. Misslingt der anschließende Rettungswurf, zieht der Blutdorn das Ziel **bis zu 2 m in gerader Linie zu seinem eigenen Standort**. Das Ziel muss in einem freien, betretbaren Feld enden und kann durch diese Bewegung nicht durch feste Hindernisse gezogen werden. Ist weniger als 2 m Platz vorhanden, endet die Bewegung am frühestmöglichen freien Punkt.",
+            "Stapelung": "Mehrere Fangranken werden getrennt abgehandelt. Eine einzelne Anwendung zieht höchstens 2 m.",
+            "Ende der Wirkung": "Die erzwungene Bewegung ist sofort abgeschlossen; danach besteht keine fortdauernde Fesselung."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 389,
+            "line_end": 402
+          }
+        },
+        {
+          "id": "blutdorn-l10-blutwitterung",
+          "name": "Blutwitterung",
+          "type": "Reaktion / Zielerfassung",
+          "cost": "1 Reaktion",
+          "trigger": "Ein lebendes Wesen innerhalb von 6 m, das der Blutdorn wahrnehmen kann, verliert mindestens 1 LP.",
+          "range": "Bis zu 6 m",
+          "target": "Das auslösende Wesen",
+          "rule_effect": "Wärme- und Blutrezeptoren in den Dornen richten die Ranken auf die Quelle der Verletzung aus. Der Blutdorn erhält **+2 auf seinen nächsten Angriffswurf gegen genau das auslösende Ziel**. Der Effekt gewährt **keinen zusätzlichen Angriff** und verändert den Schaden nicht.",
+          "usage_limit": "Höchstens einmal pro Runde.",
+          "stacking": "Blutwitterung stapelt nicht mit sich selbst. Ein neuer zulässiger Auslöser ersetzt eine noch bestehende Markierung.",
+          "end_condition": "Nach dem ersten Angriff gegen das markierte Ziel, am Ende des nächsten eigenen Zuges oder sobald das Ziel nicht mehr wahrgenommen werden kann.",
+          "extra_fields": {
+            "Dauer": "Bis zum Ende des nächsten eigenen Zuges des Blutdorns oder bis der Bonus verbraucht wurde"
+          },
+          "raw_fields": {
+            "Typ": "Reaktion / Zielerfassung",
+            "Kosten": "1 Reaktion",
+            "Auslöser": "Ein lebendes Wesen innerhalb von 6 m, das der Blutdorn wahrnehmen kann, verliert mindestens 1 LP.",
+            "Reichweite": "Bis zu 6 m",
+            "Ziel": "Das auslösende Wesen",
+            "Dauer": "Bis zum Ende des nächsten eigenen Zuges des Blutdorns oder bis der Bonus verbraucht wurde",
+            "Regelwirkung": "Wärme- und Blutrezeptoren in den Dornen richten die Ranken auf die Quelle der Verletzung aus. Der Blutdorn erhält **+2 auf seinen nächsten Angriffswurf gegen genau das auslösende Ziel**. Der Effekt gewährt **keinen zusätzlichen Angriff** und verändert den Schaden nicht.",
+            "Einsatzlimit": "Höchstens einmal pro Runde.",
+            "Stapelung": "Blutwitterung stapelt nicht mit sich selbst. Ein neuer zulässiger Auslöser ersetzt eine noch bestehende Markierung.",
+            "Ende der Wirkung": "Nach dem ersten Angriff gegen das markierte Ziel, am Ende des nächsten eigenen Zuges oder sobald das Ziel nicht mehr wahrgenommen werden kann."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 403,
+            "line_end": 415
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "20 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 20
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**20 % Verwundbarkeit**",
+            "**10 % Resistenz**",
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 334,
+        "line_end": 423
+      }
+    },
+    {
+      "level": 15,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 4,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "4",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "330",
+          "physische_verteidigung": "13",
+          "magieverteidigung": "13",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 4 m",
+          "fangranke_sg": "14",
+          "blutwitterung": "+2 auf den nächsten Angriff gegen das ausgelöste Ziel; höchstens einmal pro Runde"
+        },
+        "raw_fields": {
+          "Maximale LP": "330",
+          "Physische Verteidigung": "13",
+          "Magieverteidigung": "13",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 4 m",
+          "Fangranke-SG": "14",
+          "Blutwitterung": "+2 auf den nächsten Angriff gegen das ausgelöste Ziel; höchstens einmal pro Runde"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+3) + ST-Bonus (+3)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+2)) × 5) + (15 × 10) = 330 LP",
+        "markdown": "`100 + ((ST-Modifikator (+3) + ST-Bonus (+3)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+2)) × 5) + (15 × 10) = 330 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Blutdornschlag",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+5)",
+            "range_area": "Bis 3 m",
+            "damage_effect": "8W8 + ST-Mod. (+3) + ST-Bonus (+3)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "42,0",
+            "avg_hit_damage": "29,3",
+            "avg_expected_effect": "20,1",
+            "ge_share": "0,50",
+            "notes": null,
+            "avg_raw_damage_value": 42.0,
+            "avg_hit_damage_value": 29.3,
+            "ge_share_value": 0.5,
+            "id": "blutdorn-l15-a01-blutdornschlag",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Blutdornschlag",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Bis 3 m",
+              "Schaden / Wirkung": "8W8 + ST-Mod. (+3) + ST-Bonus (+3)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "42,0",
+              "Ø Treffer-Endschaden": "29,3",
+              "Ø Erwartungswirkung": "20,1",
+              "GE-Anteil": "0,50",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Fangranke",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+5); danach SG 14",
+            "range_area": "Bis 5 m",
+            "damage_effect": "7W8 + ST-Mod. (+3) + ST-Bonus (+3); danach ST- oder BW-RW",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "37,5",
+            "avg_hit_damage": "24,7",
+            "avg_expected_effect": "17,0 Schaden + Kontrolle",
+            "ge_share": "0,48 gesamt",
+            "notes": "Bei Fehlschlag bis zu 2 m geradlinig zum Blutdorn gezogen.",
+            "avg_raw_damage_value": 37.5,
+            "avg_hit_damage_value": 24.7,
+            "id": "blutdorn-l15-a02-fangranke",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Fangranke",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+5); danach SG 14",
+              "Reichweite / Fläche": "Bis 5 m",
+              "Schaden / Wirkung": "7W8 + ST-Mod. (+3) + ST-Bonus (+3); danach ST- oder BW-RW",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "37,5",
+              "Ø Treffer-Endschaden": "24,7",
+              "Ø Erwartungswirkung": "17,0 Schaden + Kontrolle",
+              "GE-Anteil": "0,48 gesamt",
+              "Zusatz": "Bei Fehlschlag bis zu 2 m geradlinig zum Blutdorn gezogen."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Blutwitterung",
+            "cost": "1 Reaktion",
+            "type": "Reaktion / Zielerfassung",
+            "attribute": null,
+            "attack_or_dc": "Auslöser: lebendes Ziel innerhalb 6 m verliert LP",
+            "range_area": "Bis 6 m",
+            "damage_effect": "+2 auf den nächsten Angriffswurf des Blutdorns gegen dieses Ziel",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "taktisch",
+            "notes": "Höchstens einmal pro Runde; kein zusätzlicher Angriff.",
+            "id": "blutdorn-l15-a03-blutwitterung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Blutwitterung",
+              "Kosten": "1 Reaktion",
+              "Typ": "Reaktion / Zielerfassung",
+              "Attribut": null,
+              "Angriff / SG": "Auslöser: lebendes Ziel innerhalb 6 m verliert LP",
+              "Reichweite / Fläche": "Bis 6 m",
+              "Schaden / Wirkung": "+2 auf den nächsten Angriffswurf des Blutdorns gegen dieses Ziel",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "taktisch",
+              "Zusatz": "Höchstens einmal pro Runde; kein zusätzlicher Angriff."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "blutdorn-l15-blutdornschlag",
+          "name": "Blutdornschlag",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Bis zu 3 m",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+5)`",
+          "damage": "`8W8 + ST-Mod. (+3) + ST-Bonus (+3)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Eine schwere, mit langen Widerhaken besetzte Ranke schnellt aus dem scheinbar reglosen Busch und schlägt nach dem Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er zieht das Ziel nicht automatisch heran und erzeugt keine zusätzliche freie Bewegung.",
+          "stacking": "Mehrere Blutdorne führen ihre Angriffe unabhängig voneinander aus.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Bis zu 3 m",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+5)`",
+            "Schaden": "`8W8 + ST-Mod. (+3) + ST-Bonus (+3)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Eine schwere, mit langen Widerhaken besetzte Ranke schnellt aus dem scheinbar reglosen Busch und schlägt nach dem Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er zieht das Ziel nicht automatisch heran und erzeugt keine zusätzliche freie Bewegung.",
+            "Stapelung": "Mehrere Blutdorne führen ihre Angriffe unabhängig voneinander aus."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 467,
+            "line_end": 478
+          }
+        },
+        {
+          "id": "blutdorn-l15-fangranke",
+          "name": "Fangranke",
+          "type": "Körperlicher Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Bis zu 5 m",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+5)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 14** nach einem Treffer",
+          "damage": "`7W8 + ST-Mod. (+3) + ST-Bonus (+3)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer verhaken sich mehrere rückwärts gerichtete Dornen in Kleidung, Fell, Rüstungsspalten oder Haut. Misslingt der anschließende Rettungswurf, zieht der Blutdorn das Ziel **bis zu 2 m in gerader Linie zu seinem eigenen Standort**. Das Ziel muss in einem freien, betretbaren Feld enden und kann durch diese Bewegung nicht durch feste Hindernisse gezogen werden. Ist weniger als 2 m Platz vorhanden, endet die Bewegung am frühestmöglichen freien Punkt.",
+          "stacking": "Mehrere Fangranken werden getrennt abgehandelt. Eine einzelne Anwendung zieht höchstens 2 m.",
+          "end_condition": "Die erzwungene Bewegung ist sofort abgeschlossen; danach besteht keine fortdauernde Fesselung.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Bis zu 5 m",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+5)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 14** nach einem Treffer",
+            "Schaden": "`7W8 + ST-Mod. (+3) + ST-Bonus (+3)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer verhaken sich mehrere rückwärts gerichtete Dornen in Kleidung, Fell, Rüstungsspalten oder Haut. Misslingt der anschließende Rettungswurf, zieht der Blutdorn das Ziel **bis zu 2 m in gerader Linie zu seinem eigenen Standort**. Das Ziel muss in einem freien, betretbaren Feld enden und kann durch diese Bewegung nicht durch feste Hindernisse gezogen werden. Ist weniger als 2 m Platz vorhanden, endet die Bewegung am frühestmöglichen freien Punkt.",
+            "Stapelung": "Mehrere Fangranken werden getrennt abgehandelt. Eine einzelne Anwendung zieht höchstens 2 m.",
+            "Ende der Wirkung": "Die erzwungene Bewegung ist sofort abgeschlossen; danach besteht keine fortdauernde Fesselung."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 479,
+            "line_end": 492
+          }
+        },
+        {
+          "id": "blutdorn-l15-blutwitterung",
+          "name": "Blutwitterung",
+          "type": "Reaktion / Zielerfassung",
+          "cost": "1 Reaktion",
+          "trigger": "Ein lebendes Wesen innerhalb von 6 m, das der Blutdorn wahrnehmen kann, verliert mindestens 1 LP.",
+          "range": "Bis zu 6 m",
+          "target": "Das auslösende Wesen",
+          "rule_effect": "Wärme- und Blutrezeptoren in den Dornen richten die Ranken auf die Quelle der Verletzung aus. Der Blutdorn erhält **+2 auf seinen nächsten Angriffswurf gegen genau das auslösende Ziel**. Der Effekt gewährt **keinen zusätzlichen Angriff** und verändert den Schaden nicht.",
+          "usage_limit": "Höchstens einmal pro Runde.",
+          "stacking": "Blutwitterung stapelt nicht mit sich selbst. Ein neuer zulässiger Auslöser ersetzt eine noch bestehende Markierung.",
+          "end_condition": "Nach dem ersten Angriff gegen das markierte Ziel, am Ende des nächsten eigenen Zuges oder sobald das Ziel nicht mehr wahrgenommen werden kann.",
+          "extra_fields": {
+            "Dauer": "Bis zum Ende des nächsten eigenen Zuges des Blutdorns oder bis der Bonus verbraucht wurde"
+          },
+          "raw_fields": {
+            "Typ": "Reaktion / Zielerfassung",
+            "Kosten": "1 Reaktion",
+            "Auslöser": "Ein lebendes Wesen innerhalb von 6 m, das der Blutdorn wahrnehmen kann, verliert mindestens 1 LP.",
+            "Reichweite": "Bis zu 6 m",
+            "Ziel": "Das auslösende Wesen",
+            "Dauer": "Bis zum Ende des nächsten eigenen Zuges des Blutdorns oder bis der Bonus verbraucht wurde",
+            "Regelwirkung": "Wärme- und Blutrezeptoren in den Dornen richten die Ranken auf die Quelle der Verletzung aus. Der Blutdorn erhält **+2 auf seinen nächsten Angriffswurf gegen genau das auslösende Ziel**. Der Effekt gewährt **keinen zusätzlichen Angriff** und verändert den Schaden nicht.",
+            "Einsatzlimit": "Höchstens einmal pro Runde.",
+            "Stapelung": "Blutwitterung stapelt nicht mit sich selbst. Ein neuer zulässiger Auslöser ersetzt eine noch bestehende Markierung.",
+            "Ende der Wirkung": "Nach dem ersten Angriff gegen das markierte Ziel, am Ende des nächsten eigenen Zuges oder sobald das Ziel nicht mehr wahrgenommen werden kann."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 493,
+            "line_end": 505
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "20 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 20
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**20 % Verwundbarkeit**",
+            "**10 % Resistenz**",
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 424,
+        "line_end": 513
+      }
+    },
+    {
+      "level": 20,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "405",
+          "physische_verteidigung": "15",
+          "magieverteidigung": "15",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 4 m",
+          "fangranke_sg": "15",
+          "blutwitterung": "+2 auf den nächsten Angriff gegen das ausgelöste Ziel; höchstens einmal pro Runde"
+        },
+        "raw_fields": {
+          "Maximale LP": "405",
+          "Physische Verteidigung": "15",
+          "Magieverteidigung": "15",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 4 m",
+          "Fangranke-SG": "15",
+          "Blutwitterung": "+2 auf den nächsten Angriff gegen das ausgelöste Ziel; höchstens einmal pro Runde"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+4) + ST-Bonus (+4)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+2)) × 5) + (20 × 10) = 405 LP",
+        "markdown": "`100 + ((ST-Modifikator (+4) + ST-Bonus (+4)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+2)) × 5) + (20 × 10) = 405 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Blutdornschlag",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range_area": "Bis 3 m",
+            "damage_effect": "9W8 + ST-Mod. (+4) + ST-Bonus (+4)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "48,5",
+            "avg_hit_damage": "33,8",
+            "avg_expected_effect": "23,3",
+            "ge_share": "0,50",
+            "notes": null,
+            "avg_raw_damage_value": 48.5,
+            "avg_hit_damage_value": 33.8,
+            "ge_share_value": 0.5,
+            "id": "blutdorn-l20-a01-blutdornschlag",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Blutdornschlag",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Bis 3 m",
+              "Schaden / Wirkung": "9W8 + ST-Mod. (+4) + ST-Bonus (+4)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "48,5",
+              "Ø Treffer-Endschaden": "33,8",
+              "Ø Erwartungswirkung": "23,3",
+              "GE-Anteil": "0,50",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Fangranke",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5); danach SG 15",
+            "range_area": "Bis 5 m",
+            "damage_effect": "8W8 + ST-Mod. (+4) + ST-Bonus (+4); danach ST- oder BW-RW",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "44,0",
+            "avg_hit_damage": "29,3",
+            "avg_expected_effect": "20,1 Schaden + Kontrolle",
+            "ge_share": "0,49 gesamt",
+            "notes": "Bei Fehlschlag bis zu 2 m geradlinig zum Blutdorn gezogen.",
+            "avg_raw_damage_value": 44.0,
+            "avg_hit_damage_value": 29.3,
+            "id": "blutdorn-l20-a02-fangranke",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Fangranke",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5); danach SG 15",
+              "Reichweite / Fläche": "Bis 5 m",
+              "Schaden / Wirkung": "8W8 + ST-Mod. (+4) + ST-Bonus (+4); danach ST- oder BW-RW",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "44,0",
+              "Ø Treffer-Endschaden": "29,3",
+              "Ø Erwartungswirkung": "20,1 Schaden + Kontrolle",
+              "GE-Anteil": "0,49 gesamt",
+              "Zusatz": "Bei Fehlschlag bis zu 2 m geradlinig zum Blutdorn gezogen."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Blutwitterung",
+            "cost": "1 Reaktion",
+            "type": "Reaktion / Zielerfassung",
+            "attribute": null,
+            "attack_or_dc": "Auslöser: lebendes Ziel innerhalb 6 m verliert LP",
+            "range_area": "Bis 6 m",
+            "damage_effect": "+2 auf den nächsten Angriffswurf des Blutdorns gegen dieses Ziel",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "taktisch",
+            "notes": "Höchstens einmal pro Runde; kein zusätzlicher Angriff.",
+            "id": "blutdorn-l20-a03-blutwitterung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Blutwitterung",
+              "Kosten": "1 Reaktion",
+              "Typ": "Reaktion / Zielerfassung",
+              "Attribut": null,
+              "Angriff / SG": "Auslöser: lebendes Ziel innerhalb 6 m verliert LP",
+              "Reichweite / Fläche": "Bis 6 m",
+              "Schaden / Wirkung": "+2 auf den nächsten Angriffswurf des Blutdorns gegen dieses Ziel",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "taktisch",
+              "Zusatz": "Höchstens einmal pro Runde; kein zusätzlicher Angriff."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "blutdorn-l20-blutdornschlag",
+          "name": "Blutdornschlag",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Bis zu 3 m",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+          "damage": "`9W8 + ST-Mod. (+4) + ST-Bonus (+4)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Eine schwere, mit langen Widerhaken besetzte Ranke schnellt aus dem scheinbar reglosen Busch und schlägt nach dem Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er zieht das Ziel nicht automatisch heran und erzeugt keine zusätzliche freie Bewegung.",
+          "stacking": "Mehrere Blutdorne führen ihre Angriffe unabhängig voneinander aus.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Bis zu 3 m",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+            "Schaden": "`9W8 + ST-Mod. (+4) + ST-Bonus (+4)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Eine schwere, mit langen Widerhaken besetzte Ranke schnellt aus dem scheinbar reglosen Busch und schlägt nach dem Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er zieht das Ziel nicht automatisch heran und erzeugt keine zusätzliche freie Bewegung.",
+            "Stapelung": "Mehrere Blutdorne führen ihre Angriffe unabhängig voneinander aus."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 557,
+            "line_end": 568
+          }
+        },
+        {
+          "id": "blutdorn-l20-fangranke",
+          "name": "Fangranke",
+          "type": "Körperlicher Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Bis zu 5 m",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 15** nach einem Treffer",
+          "damage": "`8W8 + ST-Mod. (+4) + ST-Bonus (+4)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer verhaken sich mehrere rückwärts gerichtete Dornen in Kleidung, Fell, Rüstungsspalten oder Haut. Misslingt der anschließende Rettungswurf, zieht der Blutdorn das Ziel **bis zu 2 m in gerader Linie zu seinem eigenen Standort**. Das Ziel muss in einem freien, betretbaren Feld enden und kann durch diese Bewegung nicht durch feste Hindernisse gezogen werden. Ist weniger als 2 m Platz vorhanden, endet die Bewegung am frühestmöglichen freien Punkt.",
+          "stacking": "Mehrere Fangranken werden getrennt abgehandelt. Eine einzelne Anwendung zieht höchstens 2 m.",
+          "end_condition": "Die erzwungene Bewegung ist sofort abgeschlossen; danach besteht keine fortdauernde Fesselung.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Bis zu 5 m",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 15** nach einem Treffer",
+            "Schaden": "`8W8 + ST-Mod. (+4) + ST-Bonus (+4)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer verhaken sich mehrere rückwärts gerichtete Dornen in Kleidung, Fell, Rüstungsspalten oder Haut. Misslingt der anschließende Rettungswurf, zieht der Blutdorn das Ziel **bis zu 2 m in gerader Linie zu seinem eigenen Standort**. Das Ziel muss in einem freien, betretbaren Feld enden und kann durch diese Bewegung nicht durch feste Hindernisse gezogen werden. Ist weniger als 2 m Platz vorhanden, endet die Bewegung am frühestmöglichen freien Punkt.",
+            "Stapelung": "Mehrere Fangranken werden getrennt abgehandelt. Eine einzelne Anwendung zieht höchstens 2 m.",
+            "Ende der Wirkung": "Die erzwungene Bewegung ist sofort abgeschlossen; danach besteht keine fortdauernde Fesselung."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 569,
+            "line_end": 582
+          }
+        },
+        {
+          "id": "blutdorn-l20-blutwitterung",
+          "name": "Blutwitterung",
+          "type": "Reaktion / Zielerfassung",
+          "cost": "1 Reaktion",
+          "trigger": "Ein lebendes Wesen innerhalb von 6 m, das der Blutdorn wahrnehmen kann, verliert mindestens 1 LP.",
+          "range": "Bis zu 6 m",
+          "target": "Das auslösende Wesen",
+          "rule_effect": "Wärme- und Blutrezeptoren in den Dornen richten die Ranken auf die Quelle der Verletzung aus. Der Blutdorn erhält **+2 auf seinen nächsten Angriffswurf gegen genau das auslösende Ziel**. Der Effekt gewährt **keinen zusätzlichen Angriff** und verändert den Schaden nicht.",
+          "usage_limit": "Höchstens einmal pro Runde.",
+          "stacking": "Blutwitterung stapelt nicht mit sich selbst. Ein neuer zulässiger Auslöser ersetzt eine noch bestehende Markierung.",
+          "end_condition": "Nach dem ersten Angriff gegen das markierte Ziel, am Ende des nächsten eigenen Zuges oder sobald das Ziel nicht mehr wahrgenommen werden kann.",
+          "extra_fields": {
+            "Dauer": "Bis zum Ende des nächsten eigenen Zuges des Blutdorns oder bis der Bonus verbraucht wurde"
+          },
+          "raw_fields": {
+            "Typ": "Reaktion / Zielerfassung",
+            "Kosten": "1 Reaktion",
+            "Auslöser": "Ein lebendes Wesen innerhalb von 6 m, das der Blutdorn wahrnehmen kann, verliert mindestens 1 LP.",
+            "Reichweite": "Bis zu 6 m",
+            "Ziel": "Das auslösende Wesen",
+            "Dauer": "Bis zum Ende des nächsten eigenen Zuges des Blutdorns oder bis der Bonus verbraucht wurde",
+            "Regelwirkung": "Wärme- und Blutrezeptoren in den Dornen richten die Ranken auf die Quelle der Verletzung aus. Der Blutdorn erhält **+2 auf seinen nächsten Angriffswurf gegen genau das auslösende Ziel**. Der Effekt gewährt **keinen zusätzlichen Angriff** und verändert den Schaden nicht.",
+            "Einsatzlimit": "Höchstens einmal pro Runde.",
+            "Stapelung": "Blutwitterung stapelt nicht mit sich selbst. Ein neuer zulässiger Auslöser ersetzt eine noch bestehende Markierung.",
+            "Ende der Wirkung": "Nach dem ersten Angriff gegen das markierte Ziel, am Ende des nächsten eigenen Zuges oder sobald das Ziel nicht mehr wahrgenommen werden kann."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 583,
+            "line_end": 595
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "20 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 20
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**20 % Verwundbarkeit**",
+            "**10 % Resistenz**",
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 514,
+        "line_end": 603
+      }
+    },
+    {
+      "level": 25,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "470",
+          "physische_verteidigung": "17",
+          "magieverteidigung": "17",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 4 m",
+          "fangranke_sg": "15",
+          "blutwitterung": "+2 auf den nächsten Angriff gegen das ausgelöste Ziel; höchstens einmal pro Runde"
+        },
+        "raw_fields": {
+          "Maximale LP": "470",
+          "Physische Verteidigung": "17",
+          "Magieverteidigung": "17",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 4 m",
+          "Fangranke-SG": "15",
+          "Blutwitterung": "+2 auf den nächsten Angriff gegen das ausgelöste Ziel; höchstens einmal pro Runde"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+4) + ST-Bonus (+5)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+3)) × 5) + (25 × 10) = 470 LP",
+        "markdown": "`100 + ((ST-Modifikator (+4) + ST-Bonus (+5)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+3)) × 5) + (25 × 10) = 470 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Blutdornschlag",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range_area": "Bis 3 m",
+            "damage_effect": "10W8 + ST-Mod. (+4) + ST-Bonus (+5)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "54,0",
+            "avg_hit_damage": "37,4",
+            "avg_expected_effect": "25,7",
+            "ge_share": "0,49",
+            "notes": null,
+            "avg_raw_damage_value": 54.0,
+            "avg_hit_damage_value": 37.4,
+            "ge_share_value": 0.49,
+            "id": "blutdorn-l25-a01-blutdornschlag",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Blutdornschlag",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Bis 3 m",
+              "Schaden / Wirkung": "10W8 + ST-Mod. (+4) + ST-Bonus (+5)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "54,0",
+              "Ø Treffer-Endschaden": "37,4",
+              "Ø Erwartungswirkung": "25,7",
+              "GE-Anteil": "0,49",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Fangranke",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5); danach SG 15",
+            "range_area": "Bis 5 m",
+            "damage_effect": "9W8 + ST-Mod. (+4) + ST-Bonus (+5); danach ST- oder BW-RW",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "49,5",
+            "avg_hit_damage": "32,8",
+            "avg_expected_effect": "22,6 Schaden + Kontrolle",
+            "ge_share": "0,48 gesamt",
+            "notes": "Bei Fehlschlag bis zu 2 m geradlinig zum Blutdorn gezogen.",
+            "avg_raw_damage_value": 49.5,
+            "avg_hit_damage_value": 32.8,
+            "id": "blutdorn-l25-a02-fangranke",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Fangranke",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5); danach SG 15",
+              "Reichweite / Fläche": "Bis 5 m",
+              "Schaden / Wirkung": "9W8 + ST-Mod. (+4) + ST-Bonus (+5); danach ST- oder BW-RW",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "49,5",
+              "Ø Treffer-Endschaden": "32,8",
+              "Ø Erwartungswirkung": "22,6 Schaden + Kontrolle",
+              "GE-Anteil": "0,48 gesamt",
+              "Zusatz": "Bei Fehlschlag bis zu 2 m geradlinig zum Blutdorn gezogen."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Blutwitterung",
+            "cost": "1 Reaktion",
+            "type": "Reaktion / Zielerfassung",
+            "attribute": null,
+            "attack_or_dc": "Auslöser: lebendes Ziel innerhalb 6 m verliert LP",
+            "range_area": "Bis 6 m",
+            "damage_effect": "+2 auf den nächsten Angriffswurf des Blutdorns gegen dieses Ziel",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "taktisch",
+            "notes": "Höchstens einmal pro Runde; kein zusätzlicher Angriff.",
+            "id": "blutdorn-l25-a03-blutwitterung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Blutwitterung",
+              "Kosten": "1 Reaktion",
+              "Typ": "Reaktion / Zielerfassung",
+              "Attribut": null,
+              "Angriff / SG": "Auslöser: lebendes Ziel innerhalb 6 m verliert LP",
+              "Reichweite / Fläche": "Bis 6 m",
+              "Schaden / Wirkung": "+2 auf den nächsten Angriffswurf des Blutdorns gegen dieses Ziel",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "taktisch",
+              "Zusatz": "Höchstens einmal pro Runde; kein zusätzlicher Angriff."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "blutdorn-l25-blutdornschlag",
+          "name": "Blutdornschlag",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Bis zu 3 m",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+          "damage": "`10W8 + ST-Mod. (+4) + ST-Bonus (+5)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Eine schwere, mit langen Widerhaken besetzte Ranke schnellt aus dem scheinbar reglosen Busch und schlägt nach dem Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er zieht das Ziel nicht automatisch heran und erzeugt keine zusätzliche freie Bewegung.",
+          "stacking": "Mehrere Blutdorne führen ihre Angriffe unabhängig voneinander aus.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Bis zu 3 m",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+            "Schaden": "`10W8 + ST-Mod. (+4) + ST-Bonus (+5)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Eine schwere, mit langen Widerhaken besetzte Ranke schnellt aus dem scheinbar reglosen Busch und schlägt nach dem Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er zieht das Ziel nicht automatisch heran und erzeugt keine zusätzliche freie Bewegung.",
+            "Stapelung": "Mehrere Blutdorne führen ihre Angriffe unabhängig voneinander aus."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 647,
+            "line_end": 658
+          }
+        },
+        {
+          "id": "blutdorn-l25-fangranke",
+          "name": "Fangranke",
+          "type": "Körperlicher Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Bis zu 5 m",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 15** nach einem Treffer",
+          "damage": "`9W8 + ST-Mod. (+4) + ST-Bonus (+5)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer verhaken sich mehrere rückwärts gerichtete Dornen in Kleidung, Fell, Rüstungsspalten oder Haut. Misslingt der anschließende Rettungswurf, zieht der Blutdorn das Ziel **bis zu 2 m in gerader Linie zu seinem eigenen Standort**. Das Ziel muss in einem freien, betretbaren Feld enden und kann durch diese Bewegung nicht durch feste Hindernisse gezogen werden. Ist weniger als 2 m Platz vorhanden, endet die Bewegung am frühestmöglichen freien Punkt.",
+          "stacking": "Mehrere Fangranken werden getrennt abgehandelt. Eine einzelne Anwendung zieht höchstens 2 m.",
+          "end_condition": "Die erzwungene Bewegung ist sofort abgeschlossen; danach besteht keine fortdauernde Fesselung.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Bis zu 5 m",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 15** nach einem Treffer",
+            "Schaden": "`9W8 + ST-Mod. (+4) + ST-Bonus (+5)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer verhaken sich mehrere rückwärts gerichtete Dornen in Kleidung, Fell, Rüstungsspalten oder Haut. Misslingt der anschließende Rettungswurf, zieht der Blutdorn das Ziel **bis zu 2 m in gerader Linie zu seinem eigenen Standort**. Das Ziel muss in einem freien, betretbaren Feld enden und kann durch diese Bewegung nicht durch feste Hindernisse gezogen werden. Ist weniger als 2 m Platz vorhanden, endet die Bewegung am frühestmöglichen freien Punkt.",
+            "Stapelung": "Mehrere Fangranken werden getrennt abgehandelt. Eine einzelne Anwendung zieht höchstens 2 m.",
+            "Ende der Wirkung": "Die erzwungene Bewegung ist sofort abgeschlossen; danach besteht keine fortdauernde Fesselung."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 659,
+            "line_end": 672
+          }
+        },
+        {
+          "id": "blutdorn-l25-blutwitterung",
+          "name": "Blutwitterung",
+          "type": "Reaktion / Zielerfassung",
+          "cost": "1 Reaktion",
+          "trigger": "Ein lebendes Wesen innerhalb von 6 m, das der Blutdorn wahrnehmen kann, verliert mindestens 1 LP.",
+          "range": "Bis zu 6 m",
+          "target": "Das auslösende Wesen",
+          "rule_effect": "Wärme- und Blutrezeptoren in den Dornen richten die Ranken auf die Quelle der Verletzung aus. Der Blutdorn erhält **+2 auf seinen nächsten Angriffswurf gegen genau das auslösende Ziel**. Der Effekt gewährt **keinen zusätzlichen Angriff** und verändert den Schaden nicht.",
+          "usage_limit": "Höchstens einmal pro Runde.",
+          "stacking": "Blutwitterung stapelt nicht mit sich selbst. Ein neuer zulässiger Auslöser ersetzt eine noch bestehende Markierung.",
+          "end_condition": "Nach dem ersten Angriff gegen das markierte Ziel, am Ende des nächsten eigenen Zuges oder sobald das Ziel nicht mehr wahrgenommen werden kann.",
+          "extra_fields": {
+            "Dauer": "Bis zum Ende des nächsten eigenen Zuges des Blutdorns oder bis der Bonus verbraucht wurde"
+          },
+          "raw_fields": {
+            "Typ": "Reaktion / Zielerfassung",
+            "Kosten": "1 Reaktion",
+            "Auslöser": "Ein lebendes Wesen innerhalb von 6 m, das der Blutdorn wahrnehmen kann, verliert mindestens 1 LP.",
+            "Reichweite": "Bis zu 6 m",
+            "Ziel": "Das auslösende Wesen",
+            "Dauer": "Bis zum Ende des nächsten eigenen Zuges des Blutdorns oder bis der Bonus verbraucht wurde",
+            "Regelwirkung": "Wärme- und Blutrezeptoren in den Dornen richten die Ranken auf die Quelle der Verletzung aus. Der Blutdorn erhält **+2 auf seinen nächsten Angriffswurf gegen genau das auslösende Ziel**. Der Effekt gewährt **keinen zusätzlichen Angriff** und verändert den Schaden nicht.",
+            "Einsatzlimit": "Höchstens einmal pro Runde.",
+            "Stapelung": "Blutwitterung stapelt nicht mit sich selbst. Ein neuer zulässiger Auslöser ersetzt eine noch bestehende Markierung.",
+            "Ende der Wirkung": "Nach dem ersten Angriff gegen das markierte Ziel, am Ende des nächsten eigenen Zuges oder sobald das Ziel nicht mehr wahrgenommen werden kann."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 673,
+            "line_end": 685
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "20 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 20
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**20 % Verwundbarkeit**",
+            "**10 % Resistenz**",
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 604,
+        "line_end": 693
+      }
+    },
+    {
+      "level": 30,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 6,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+6"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "540",
+          "physische_verteidigung": "19",
+          "magieverteidigung": "19",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 4 m",
+          "fangranke_sg": "16",
+          "blutwitterung": "+2 auf den nächsten Angriff gegen das ausgelöste Ziel; höchstens einmal pro Runde"
+        },
+        "raw_fields": {
+          "Maximale LP": "540",
+          "Physische Verteidigung": "19",
+          "Magieverteidigung": "19",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 4 m",
+          "Fangranke-SG": "16",
+          "Blutwitterung": "+2 auf den nächsten Angriff gegen das ausgelöste Ziel; höchstens einmal pro Runde"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+5) + ST-Bonus (+6)) × 10) + ((WI-Modifikator (+4) + WI-Bonus (+2)) × 5) + (30 × 10) = 540 LP",
+        "markdown": "`100 + ((ST-Modifikator (+5) + ST-Bonus (+6)) × 10) + ((WI-Modifikator (+4) + WI-Bonus (+2)) × 5) + (30 × 10) = 540 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Blutdornschlag",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+            "range_area": "Bis 3 m",
+            "damage_effect": "11W8 + ST-Mod. (+5) + ST-Bonus (+6)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "60,5",
+            "avg_hit_damage": "41,9",
+            "avg_expected_effect": "28,8",
+            "ge_share": "0,49",
+            "notes": null,
+            "avg_raw_damage_value": 60.5,
+            "avg_hit_damage_value": 41.9,
+            "ge_share_value": 0.49,
+            "id": "blutdorn-l30-a01-blutdornschlag",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Blutdornschlag",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Bis 3 m",
+              "Schaden / Wirkung": "11W8 + ST-Mod. (+5) + ST-Bonus (+6)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "60,5",
+              "Ø Treffer-Endschaden": "41,9",
+              "Ø Erwartungswirkung": "28,8",
+              "GE-Anteil": "0,49",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Fangranke",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+5); danach SG 16",
+            "range_area": "Bis 5 m",
+            "damage_effect": "10W8 + ST-Mod. (+5) + ST-Bonus (+6); danach ST- oder BW-RW",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "56,0",
+            "avg_hit_damage": "37,4",
+            "avg_expected_effect": "25,7 Schaden + Kontrolle",
+            "ge_share": "0,49 gesamt",
+            "notes": "Bei Fehlschlag bis zu 2 m geradlinig zum Blutdorn gezogen.",
+            "avg_raw_damage_value": 56.0,
+            "avg_hit_damage_value": 37.4,
+            "id": "blutdorn-l30-a02-fangranke",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Fangranke",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+5); danach SG 16",
+              "Reichweite / Fläche": "Bis 5 m",
+              "Schaden / Wirkung": "10W8 + ST-Mod. (+5) + ST-Bonus (+6); danach ST- oder BW-RW",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "56,0",
+              "Ø Treffer-Endschaden": "37,4",
+              "Ø Erwartungswirkung": "25,7 Schaden + Kontrolle",
+              "GE-Anteil": "0,49 gesamt",
+              "Zusatz": "Bei Fehlschlag bis zu 2 m geradlinig zum Blutdorn gezogen."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Blutwitterung",
+            "cost": "1 Reaktion",
+            "type": "Reaktion / Zielerfassung",
+            "attribute": null,
+            "attack_or_dc": "Auslöser: lebendes Ziel innerhalb 6 m verliert LP",
+            "range_area": "Bis 6 m",
+            "damage_effect": "+2 auf den nächsten Angriffswurf des Blutdorns gegen dieses Ziel",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "taktisch",
+            "notes": "Höchstens einmal pro Runde; kein zusätzlicher Angriff.",
+            "id": "blutdorn-l30-a03-blutwitterung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Blutwitterung",
+              "Kosten": "1 Reaktion",
+              "Typ": "Reaktion / Zielerfassung",
+              "Attribut": null,
+              "Angriff / SG": "Auslöser: lebendes Ziel innerhalb 6 m verliert LP",
+              "Reichweite / Fläche": "Bis 6 m",
+              "Schaden / Wirkung": "+2 auf den nächsten Angriffswurf des Blutdorns gegen dieses Ziel",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "taktisch",
+              "Zusatz": "Höchstens einmal pro Runde; kein zusätzlicher Angriff."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "blutdorn-l30-blutdornschlag",
+          "name": "Blutdornschlag",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Bis zu 3 m",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+5)`",
+          "damage": "`11W8 + ST-Mod. (+5) + ST-Bonus (+6)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Eine schwere, mit langen Widerhaken besetzte Ranke schnellt aus dem scheinbar reglosen Busch und schlägt nach dem Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er zieht das Ziel nicht automatisch heran und erzeugt keine zusätzliche freie Bewegung.",
+          "stacking": "Mehrere Blutdorne führen ihre Angriffe unabhängig voneinander aus.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Bis zu 3 m",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+5)`",
+            "Schaden": "`11W8 + ST-Mod. (+5) + ST-Bonus (+6)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Eine schwere, mit langen Widerhaken besetzte Ranke schnellt aus dem scheinbar reglosen Busch und schlägt nach dem Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er zieht das Ziel nicht automatisch heran und erzeugt keine zusätzliche freie Bewegung.",
+            "Stapelung": "Mehrere Blutdorne führen ihre Angriffe unabhängig voneinander aus."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 737,
+            "line_end": 748
+          }
+        },
+        {
+          "id": "blutdorn-l30-fangranke",
+          "name": "Fangranke",
+          "type": "Körperlicher Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Bis zu 5 m",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+5)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 16** nach einem Treffer",
+          "damage": "`10W8 + ST-Mod. (+5) + ST-Bonus (+6)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer verhaken sich mehrere rückwärts gerichtete Dornen in Kleidung, Fell, Rüstungsspalten oder Haut. Misslingt der anschließende Rettungswurf, zieht der Blutdorn das Ziel **bis zu 2 m in gerader Linie zu seinem eigenen Standort**. Das Ziel muss in einem freien, betretbaren Feld enden und kann durch diese Bewegung nicht durch feste Hindernisse gezogen werden. Ist weniger als 2 m Platz vorhanden, endet die Bewegung am frühestmöglichen freien Punkt.",
+          "stacking": "Mehrere Fangranken werden getrennt abgehandelt. Eine einzelne Anwendung zieht höchstens 2 m.",
+          "end_condition": "Die erzwungene Bewegung ist sofort abgeschlossen; danach besteht keine fortdauernde Fesselung.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Bis zu 5 m",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+5)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 16** nach einem Treffer",
+            "Schaden": "`10W8 + ST-Mod. (+5) + ST-Bonus (+6)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer verhaken sich mehrere rückwärts gerichtete Dornen in Kleidung, Fell, Rüstungsspalten oder Haut. Misslingt der anschließende Rettungswurf, zieht der Blutdorn das Ziel **bis zu 2 m in gerader Linie zu seinem eigenen Standort**. Das Ziel muss in einem freien, betretbaren Feld enden und kann durch diese Bewegung nicht durch feste Hindernisse gezogen werden. Ist weniger als 2 m Platz vorhanden, endet die Bewegung am frühestmöglichen freien Punkt.",
+            "Stapelung": "Mehrere Fangranken werden getrennt abgehandelt. Eine einzelne Anwendung zieht höchstens 2 m.",
+            "Ende der Wirkung": "Die erzwungene Bewegung ist sofort abgeschlossen; danach besteht keine fortdauernde Fesselung."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 749,
+            "line_end": 762
+          }
+        },
+        {
+          "id": "blutdorn-l30-blutwitterung",
+          "name": "Blutwitterung",
+          "type": "Reaktion / Zielerfassung",
+          "cost": "1 Reaktion",
+          "trigger": "Ein lebendes Wesen innerhalb von 6 m, das der Blutdorn wahrnehmen kann, verliert mindestens 1 LP.",
+          "range": "Bis zu 6 m",
+          "target": "Das auslösende Wesen",
+          "rule_effect": "Wärme- und Blutrezeptoren in den Dornen richten die Ranken auf die Quelle der Verletzung aus. Der Blutdorn erhält **+2 auf seinen nächsten Angriffswurf gegen genau das auslösende Ziel**. Der Effekt gewährt **keinen zusätzlichen Angriff** und verändert den Schaden nicht.",
+          "usage_limit": "Höchstens einmal pro Runde.",
+          "stacking": "Blutwitterung stapelt nicht mit sich selbst. Ein neuer zulässiger Auslöser ersetzt eine noch bestehende Markierung.",
+          "end_condition": "Nach dem ersten Angriff gegen das markierte Ziel, am Ende des nächsten eigenen Zuges oder sobald das Ziel nicht mehr wahrgenommen werden kann.",
+          "extra_fields": {
+            "Dauer": "Bis zum Ende des nächsten eigenen Zuges des Blutdorns oder bis der Bonus verbraucht wurde"
+          },
+          "raw_fields": {
+            "Typ": "Reaktion / Zielerfassung",
+            "Kosten": "1 Reaktion",
+            "Auslöser": "Ein lebendes Wesen innerhalb von 6 m, das der Blutdorn wahrnehmen kann, verliert mindestens 1 LP.",
+            "Reichweite": "Bis zu 6 m",
+            "Ziel": "Das auslösende Wesen",
+            "Dauer": "Bis zum Ende des nächsten eigenen Zuges des Blutdorns oder bis der Bonus verbraucht wurde",
+            "Regelwirkung": "Wärme- und Blutrezeptoren in den Dornen richten die Ranken auf die Quelle der Verletzung aus. Der Blutdorn erhält **+2 auf seinen nächsten Angriffswurf gegen genau das auslösende Ziel**. Der Effekt gewährt **keinen zusätzlichen Angriff** und verändert den Schaden nicht.",
+            "Einsatzlimit": "Höchstens einmal pro Runde.",
+            "Stapelung": "Blutwitterung stapelt nicht mit sich selbst. Ein neuer zulässiger Auslöser ersetzt eine noch bestehende Markierung.",
+            "Ende der Wirkung": "Nach dem ersten Angriff gegen das markierte Ziel, am Ende des nächsten eigenen Zuges oder sobald das Ziel nicht mehr wahrgenommen werden kann."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 763,
+            "line_end": 775
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "20 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 20
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**20 % Verwundbarkeit**",
+            "**10 % Resistenz**",
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 694,
+        "line_end": 783
+      }
+    },
+    {
+      "level": 35,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 7,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+7"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 25,
+          "modifier": 7,
+          "bonus": 6,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "25",
+            "Modifikator": "+7",
+            "Bonus": "+6"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 25,
+          "modifier": 7,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "25",
+            "Modifikator": "+7",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "610",
+          "physische_verteidigung": "21",
+          "magieverteidigung": "21",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 4 m",
+          "fangranke_sg": "17",
+          "blutwitterung": "+2 auf den nächsten Angriff gegen das ausgelöste Ziel; höchstens einmal pro Runde"
+        },
+        "raw_fields": {
+          "Maximale LP": "610",
+          "Physische Verteidigung": "21",
+          "Magieverteidigung": "21",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 4 m",
+          "Fangranke-SG": "17",
+          "Blutwitterung": "+2 auf den nächsten Angriff gegen das ausgelöste Ziel; höchstens einmal pro Runde"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+5) + ST-Bonus (+7)) × 10) + ((WI-Modifikator (+4) + WI-Bonus (+4)) × 5) + (35 × 10) = 610 LP",
+        "markdown": "`100 + ((ST-Modifikator (+5) + ST-Bonus (+7)) × 10) + ((WI-Modifikator (+4) + WI-Bonus (+4)) × 5) + (35 × 10) = 610 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Blutdornschlag",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+            "range_area": "Bis 3 m",
+            "damage_effect": "12W8 + ST-Mod. (+5) + ST-Bonus (+7)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "66,0",
+            "avg_hit_damage": "45,5",
+            "avg_expected_effect": "31,2",
+            "ge_share": "0,48",
+            "notes": null,
+            "avg_raw_damage_value": 66.0,
+            "avg_hit_damage_value": 45.5,
+            "ge_share_value": 0.48,
+            "id": "blutdorn-l35-a01-blutdornschlag",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Blutdornschlag",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+              "Reichweite / Fläche": "Bis 3 m",
+              "Schaden / Wirkung": "12W8 + ST-Mod. (+5) + ST-Bonus (+7)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "66,0",
+              "Ø Treffer-Endschaden": "45,5",
+              "Ø Erwartungswirkung": "31,2",
+              "GE-Anteil": "0,48",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Fangranke",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+6); danach SG 17",
+            "range_area": "Bis 5 m",
+            "damage_effect": "11W8 + ST-Mod. (+5) + ST-Bonus (+7); danach ST- oder BW-RW",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "61,5",
+            "avg_hit_damage": "40,9",
+            "avg_expected_effect": "28,1 Schaden + Kontrolle",
+            "ge_share": "0,48 gesamt",
+            "notes": "Bei Fehlschlag bis zu 2 m geradlinig zum Blutdorn gezogen.",
+            "avg_raw_damage_value": 61.5,
+            "avg_hit_damage_value": 40.9,
+            "id": "blutdorn-l35-a02-fangranke",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Fangranke",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+6); danach SG 17",
+              "Reichweite / Fläche": "Bis 5 m",
+              "Schaden / Wirkung": "11W8 + ST-Mod. (+5) + ST-Bonus (+7); danach ST- oder BW-RW",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "61,5",
+              "Ø Treffer-Endschaden": "40,9",
+              "Ø Erwartungswirkung": "28,1 Schaden + Kontrolle",
+              "GE-Anteil": "0,48 gesamt",
+              "Zusatz": "Bei Fehlschlag bis zu 2 m geradlinig zum Blutdorn gezogen."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Blutwitterung",
+            "cost": "1 Reaktion",
+            "type": "Reaktion / Zielerfassung",
+            "attribute": null,
+            "attack_or_dc": "Auslöser: lebendes Ziel innerhalb 6 m verliert LP",
+            "range_area": "Bis 6 m",
+            "damage_effect": "+2 auf den nächsten Angriffswurf des Blutdorns gegen dieses Ziel",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "taktisch",
+            "notes": "Höchstens einmal pro Runde; kein zusätzlicher Angriff.",
+            "id": "blutdorn-l35-a03-blutwitterung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Blutwitterung",
+              "Kosten": "1 Reaktion",
+              "Typ": "Reaktion / Zielerfassung",
+              "Attribut": null,
+              "Angriff / SG": "Auslöser: lebendes Ziel innerhalb 6 m verliert LP",
+              "Reichweite / Fläche": "Bis 6 m",
+              "Schaden / Wirkung": "+2 auf den nächsten Angriffswurf des Blutdorns gegen dieses Ziel",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "taktisch",
+              "Zusatz": "Höchstens einmal pro Runde; kein zusätzlicher Angriff."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "blutdorn-l35-blutdornschlag",
+          "name": "Blutdornschlag",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Bis zu 3 m",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+6)`",
+          "damage": "`12W8 + ST-Mod. (+5) + ST-Bonus (+7)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Eine schwere, mit langen Widerhaken besetzte Ranke schnellt aus dem scheinbar reglosen Busch und schlägt nach dem Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er zieht das Ziel nicht automatisch heran und erzeugt keine zusätzliche freie Bewegung.",
+          "stacking": "Mehrere Blutdorne führen ihre Angriffe unabhängig voneinander aus.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Bis zu 3 m",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+6)`",
+            "Schaden": "`12W8 + ST-Mod. (+5) + ST-Bonus (+7)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Eine schwere, mit langen Widerhaken besetzte Ranke schnellt aus dem scheinbar reglosen Busch und schlägt nach dem Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er zieht das Ziel nicht automatisch heran und erzeugt keine zusätzliche freie Bewegung.",
+            "Stapelung": "Mehrere Blutdorne führen ihre Angriffe unabhängig voneinander aus."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 827,
+            "line_end": 838
+          }
+        },
+        {
+          "id": "blutdorn-l35-fangranke",
+          "name": "Fangranke",
+          "type": "Körperlicher Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Bis zu 5 m",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+6)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 17** nach einem Treffer",
+          "damage": "`11W8 + ST-Mod. (+5) + ST-Bonus (+7)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer verhaken sich mehrere rückwärts gerichtete Dornen in Kleidung, Fell, Rüstungsspalten oder Haut. Misslingt der anschließende Rettungswurf, zieht der Blutdorn das Ziel **bis zu 2 m in gerader Linie zu seinem eigenen Standort**. Das Ziel muss in einem freien, betretbaren Feld enden und kann durch diese Bewegung nicht durch feste Hindernisse gezogen werden. Ist weniger als 2 m Platz vorhanden, endet die Bewegung am frühestmöglichen freien Punkt.",
+          "stacking": "Mehrere Fangranken werden getrennt abgehandelt. Eine einzelne Anwendung zieht höchstens 2 m.",
+          "end_condition": "Die erzwungene Bewegung ist sofort abgeschlossen; danach besteht keine fortdauernde Fesselung.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Bis zu 5 m",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+6)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 17** nach einem Treffer",
+            "Schaden": "`11W8 + ST-Mod. (+5) + ST-Bonus (+7)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer verhaken sich mehrere rückwärts gerichtete Dornen in Kleidung, Fell, Rüstungsspalten oder Haut. Misslingt der anschließende Rettungswurf, zieht der Blutdorn das Ziel **bis zu 2 m in gerader Linie zu seinem eigenen Standort**. Das Ziel muss in einem freien, betretbaren Feld enden und kann durch diese Bewegung nicht durch feste Hindernisse gezogen werden. Ist weniger als 2 m Platz vorhanden, endet die Bewegung am frühestmöglichen freien Punkt.",
+            "Stapelung": "Mehrere Fangranken werden getrennt abgehandelt. Eine einzelne Anwendung zieht höchstens 2 m.",
+            "Ende der Wirkung": "Die erzwungene Bewegung ist sofort abgeschlossen; danach besteht keine fortdauernde Fesselung."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 839,
+            "line_end": 852
+          }
+        },
+        {
+          "id": "blutdorn-l35-blutwitterung",
+          "name": "Blutwitterung",
+          "type": "Reaktion / Zielerfassung",
+          "cost": "1 Reaktion",
+          "trigger": "Ein lebendes Wesen innerhalb von 6 m, das der Blutdorn wahrnehmen kann, verliert mindestens 1 LP.",
+          "range": "Bis zu 6 m",
+          "target": "Das auslösende Wesen",
+          "rule_effect": "Wärme- und Blutrezeptoren in den Dornen richten die Ranken auf die Quelle der Verletzung aus. Der Blutdorn erhält **+2 auf seinen nächsten Angriffswurf gegen genau das auslösende Ziel**. Der Effekt gewährt **keinen zusätzlichen Angriff** und verändert den Schaden nicht.",
+          "usage_limit": "Höchstens einmal pro Runde.",
+          "stacking": "Blutwitterung stapelt nicht mit sich selbst. Ein neuer zulässiger Auslöser ersetzt eine noch bestehende Markierung.",
+          "end_condition": "Nach dem ersten Angriff gegen das markierte Ziel, am Ende des nächsten eigenen Zuges oder sobald das Ziel nicht mehr wahrgenommen werden kann.",
+          "extra_fields": {
+            "Dauer": "Bis zum Ende des nächsten eigenen Zuges des Blutdorns oder bis der Bonus verbraucht wurde"
+          },
+          "raw_fields": {
+            "Typ": "Reaktion / Zielerfassung",
+            "Kosten": "1 Reaktion",
+            "Auslöser": "Ein lebendes Wesen innerhalb von 6 m, das der Blutdorn wahrnehmen kann, verliert mindestens 1 LP.",
+            "Reichweite": "Bis zu 6 m",
+            "Ziel": "Das auslösende Wesen",
+            "Dauer": "Bis zum Ende des nächsten eigenen Zuges des Blutdorns oder bis der Bonus verbraucht wurde",
+            "Regelwirkung": "Wärme- und Blutrezeptoren in den Dornen richten die Ranken auf die Quelle der Verletzung aus. Der Blutdorn erhält **+2 auf seinen nächsten Angriffswurf gegen genau das auslösende Ziel**. Der Effekt gewährt **keinen zusätzlichen Angriff** und verändert den Schaden nicht.",
+            "Einsatzlimit": "Höchstens einmal pro Runde.",
+            "Stapelung": "Blutwitterung stapelt nicht mit sich selbst. Ein neuer zulässiger Auslöser ersetzt eine noch bestehende Markierung.",
+            "Ende der Wirkung": "Nach dem ersten Angriff gegen das markierte Ziel, am Ende des nächsten eigenen Zuges oder sobald das Ziel nicht mehr wahrgenommen werden kann."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 853,
+            "line_end": 865
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "20 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 20
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**20 % Verwundbarkeit**",
+            "**10 % Resistenz**",
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 784,
+        "line_end": 873
+      }
+    },
+    {
+      "level": 40,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 8,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+8"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 26,
+          "modifier": 8,
+          "bonus": 6,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "26",
+            "Modifikator": "+8",
+            "Bonus": "+6"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 26,
+          "modifier": 8,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "26",
+            "Modifikator": "+8",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 11,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "11",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 25,
+          "modifier": 7,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "25",
+            "Modifikator": "+7",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "685",
+          "physische_verteidigung": "23",
+          "magieverteidigung": "23",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 4 m",
+          "fangranke_sg": "18",
+          "blutwitterung": "+2 auf den nächsten Angriff gegen das ausgelöste Ziel; höchstens einmal pro Runde"
+        },
+        "raw_fields": {
+          "Maximale LP": "685",
+          "Physische Verteidigung": "23",
+          "Magieverteidigung": "23",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 4 m",
+          "Fangranke-SG": "18",
+          "Blutwitterung": "+2 auf den nächsten Angriff gegen das ausgelöste Ziel; höchstens einmal pro Runde"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+6) + ST-Bonus (+8)) × 10) + ((WI-Modifikator (+5) + WI-Bonus (+4)) × 5) + (40 × 10) = 685 LP",
+        "markdown": "`100 + ((ST-Modifikator (+6) + ST-Bonus (+8)) × 10) + ((WI-Modifikator (+5) + WI-Bonus (+4)) × 5) + (40 × 10) = 685 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Blutdornschlag",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+            "range_area": "Bis 3 m",
+            "damage_effect": "13W8 + ST-Mod. (+6) + ST-Bonus (+8)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "72,5",
+            "avg_hit_damage": "50,0",
+            "avg_expected_effect": "34,4",
+            "ge_share": "0,48",
+            "notes": null,
+            "avg_raw_damage_value": 72.5,
+            "avg_hit_damage_value": 50.0,
+            "ge_share_value": 0.48,
+            "id": "blutdorn-l40-a01-blutdornschlag",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Blutdornschlag",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+              "Reichweite / Fläche": "Bis 3 m",
+              "Schaden / Wirkung": "13W8 + ST-Mod. (+6) + ST-Bonus (+8)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "72,5",
+              "Ø Treffer-Endschaden": "50,0",
+              "Ø Erwartungswirkung": "34,4",
+              "GE-Anteil": "0,48",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Fangranke",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+8) + BW-Bonus (+6); danach SG 18",
+            "range_area": "Bis 5 m",
+            "damage_effect": "12W8 + ST-Mod. (+6) + ST-Bonus (+8); danach ST- oder BW-RW",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "68,0",
+            "avg_hit_damage": "45,5",
+            "avg_expected_effect": "31,2 Schaden + Kontrolle",
+            "ge_share": "0,49 gesamt",
+            "notes": "Bei Fehlschlag bis zu 2 m geradlinig zum Blutdorn gezogen.",
+            "avg_raw_damage_value": 68.0,
+            "avg_hit_damage_value": 45.5,
+            "id": "blutdorn-l40-a02-fangranke",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Fangranke",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+8) + BW-Bonus (+6); danach SG 18",
+              "Reichweite / Fläche": "Bis 5 m",
+              "Schaden / Wirkung": "12W8 + ST-Mod. (+6) + ST-Bonus (+8); danach ST- oder BW-RW",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "68,0",
+              "Ø Treffer-Endschaden": "45,5",
+              "Ø Erwartungswirkung": "31,2 Schaden + Kontrolle",
+              "GE-Anteil": "0,49 gesamt",
+              "Zusatz": "Bei Fehlschlag bis zu 2 m geradlinig zum Blutdorn gezogen."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Blutwitterung",
+            "cost": "1 Reaktion",
+            "type": "Reaktion / Zielerfassung",
+            "attribute": null,
+            "attack_or_dc": "Auslöser: lebendes Ziel innerhalb 6 m verliert LP",
+            "range_area": "Bis 6 m",
+            "damage_effect": "+2 auf den nächsten Angriffswurf des Blutdorns gegen dieses Ziel",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "taktisch",
+            "notes": "Höchstens einmal pro Runde; kein zusätzlicher Angriff.",
+            "id": "blutdorn-l40-a03-blutwitterung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Blutwitterung",
+              "Kosten": "1 Reaktion",
+              "Typ": "Reaktion / Zielerfassung",
+              "Attribut": null,
+              "Angriff / SG": "Auslöser: lebendes Ziel innerhalb 6 m verliert LP",
+              "Reichweite / Fläche": "Bis 6 m",
+              "Schaden / Wirkung": "+2 auf den nächsten Angriffswurf des Blutdorns gegen dieses Ziel",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "taktisch",
+              "Zusatz": "Höchstens einmal pro Runde; kein zusätzlicher Angriff."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "blutdorn-l40-blutdornschlag",
+          "name": "Blutdornschlag",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Bis zu 3 m",
+          "attack_roll": "`W20 + BW-Mod. (+8) + BW-Bonus (+6)`",
+          "damage": "`13W8 + ST-Mod. (+6) + ST-Bonus (+8)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Eine schwere, mit langen Widerhaken besetzte Ranke schnellt aus dem scheinbar reglosen Busch und schlägt nach dem Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er zieht das Ziel nicht automatisch heran und erzeugt keine zusätzliche freie Bewegung.",
+          "stacking": "Mehrere Blutdorne führen ihre Angriffe unabhängig voneinander aus.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Bis zu 3 m",
+            "Angriffswurf": "`W20 + BW-Mod. (+8) + BW-Bonus (+6)`",
+            "Schaden": "`13W8 + ST-Mod. (+6) + ST-Bonus (+8)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Eine schwere, mit langen Widerhaken besetzte Ranke schnellt aus dem scheinbar reglosen Busch und schlägt nach dem Ziel. Der Angriff verursacht ausschließlich den angegebenen Stichschaden. Er zieht das Ziel nicht automatisch heran und erzeugt keine zusätzliche freie Bewegung.",
+            "Stapelung": "Mehrere Blutdorne führen ihre Angriffe unabhängig voneinander aus."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 917,
+            "line_end": 928
+          }
+        },
+        {
+          "id": "blutdorn-l40-fangranke",
+          "name": "Fangranke",
+          "type": "Körperlicher Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Bis zu 5 m",
+          "attack_roll": "`W20 + BW-Mod. (+8) + BW-Bonus (+6)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 18** nach einem Treffer",
+          "damage": "`12W8 + ST-Mod. (+6) + ST-Bonus (+8)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer verhaken sich mehrere rückwärts gerichtete Dornen in Kleidung, Fell, Rüstungsspalten oder Haut. Misslingt der anschließende Rettungswurf, zieht der Blutdorn das Ziel **bis zu 2 m in gerader Linie zu seinem eigenen Standort**. Das Ziel muss in einem freien, betretbaren Feld enden und kann durch diese Bewegung nicht durch feste Hindernisse gezogen werden. Ist weniger als 2 m Platz vorhanden, endet die Bewegung am frühestmöglichen freien Punkt.",
+          "stacking": "Mehrere Fangranken werden getrennt abgehandelt. Eine einzelne Anwendung zieht höchstens 2 m.",
+          "end_condition": "Die erzwungene Bewegung ist sofort abgeschlossen; danach besteht keine fortdauernde Fesselung.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Bis zu 5 m",
+            "Angriffswurf": "`W20 + BW-Mod. (+8) + BW-Bonus (+6)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 18** nach einem Treffer",
+            "Schaden": "`12W8 + ST-Mod. (+6) + ST-Bonus (+8)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer verhaken sich mehrere rückwärts gerichtete Dornen in Kleidung, Fell, Rüstungsspalten oder Haut. Misslingt der anschließende Rettungswurf, zieht der Blutdorn das Ziel **bis zu 2 m in gerader Linie zu seinem eigenen Standort**. Das Ziel muss in einem freien, betretbaren Feld enden und kann durch diese Bewegung nicht durch feste Hindernisse gezogen werden. Ist weniger als 2 m Platz vorhanden, endet die Bewegung am frühestmöglichen freien Punkt.",
+            "Stapelung": "Mehrere Fangranken werden getrennt abgehandelt. Eine einzelne Anwendung zieht höchstens 2 m.",
+            "Ende der Wirkung": "Die erzwungene Bewegung ist sofort abgeschlossen; danach besteht keine fortdauernde Fesselung."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 929,
+            "line_end": 942
+          }
+        },
+        {
+          "id": "blutdorn-l40-blutwitterung",
+          "name": "Blutwitterung",
+          "type": "Reaktion / Zielerfassung",
+          "cost": "1 Reaktion",
+          "trigger": "Ein lebendes Wesen innerhalb von 6 m, das der Blutdorn wahrnehmen kann, verliert mindestens 1 LP.",
+          "range": "Bis zu 6 m",
+          "target": "Das auslösende Wesen",
+          "rule_effect": "Wärme- und Blutrezeptoren in den Dornen richten die Ranken auf die Quelle der Verletzung aus. Der Blutdorn erhält **+2 auf seinen nächsten Angriffswurf gegen genau das auslösende Ziel**. Der Effekt gewährt **keinen zusätzlichen Angriff** und verändert den Schaden nicht.",
+          "usage_limit": "Höchstens einmal pro Runde.",
+          "stacking": "Blutwitterung stapelt nicht mit sich selbst. Ein neuer zulässiger Auslöser ersetzt eine noch bestehende Markierung.",
+          "end_condition": "Nach dem ersten Angriff gegen das markierte Ziel, am Ende des nächsten eigenen Zuges oder sobald das Ziel nicht mehr wahrgenommen werden kann.",
+          "extra_fields": {
+            "Dauer": "Bis zum Ende des nächsten eigenen Zuges des Blutdorns oder bis der Bonus verbraucht wurde"
+          },
+          "raw_fields": {
+            "Typ": "Reaktion / Zielerfassung",
+            "Kosten": "1 Reaktion",
+            "Auslöser": "Ein lebendes Wesen innerhalb von 6 m, das der Blutdorn wahrnehmen kann, verliert mindestens 1 LP.",
+            "Reichweite": "Bis zu 6 m",
+            "Ziel": "Das auslösende Wesen",
+            "Dauer": "Bis zum Ende des nächsten eigenen Zuges des Blutdorns oder bis der Bonus verbraucht wurde",
+            "Regelwirkung": "Wärme- und Blutrezeptoren in den Dornen richten die Ranken auf die Quelle der Verletzung aus. Der Blutdorn erhält **+2 auf seinen nächsten Angriffswurf gegen genau das auslösende Ziel**. Der Effekt gewährt **keinen zusätzlichen Angriff** und verändert den Schaden nicht.",
+            "Einsatzlimit": "Höchstens einmal pro Runde.",
+            "Stapelung": "Blutwitterung stapelt nicht mit sich selbst. Ein neuer zulässiger Auslöser ersetzt eine noch bestehende Markierung.",
+            "Ende der Wirkung": "Nach dem ersten Angriff gegen das markierte Ziel, am Ende des nächsten eigenen Zuges oder sobald das Ziel nicht mehr wahrgenommen werden kann."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 943,
+            "line_end": 955
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "20 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 20
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**20 % Verwundbarkeit**",
+            "**10 % Resistenz**",
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 874,
+        "line_end": 962
+      }
+    }
+  ],
+  "post_sections": [
+    {
+      "title": "Einsatz im Spiel",
+      "id": "einsatz-im-spiel",
+      "markdown": "Der Blutdorn eignet sich besonders für frühe Begegnungen in der Blütenwildnis, an überwachsenen Wegen, zwischen Ruinen oder an Wasserstellen. Seine Gefahr entsteht aus **Bereichskontrolle statt Verfolgung**: Er kann mit langen Ranken einen schmalen Pfad abdecken, Ziele leicht zu sich heranziehen und nach sichtbarem LP-Verlust präziser auf verwundete Beute reagieren.\n\nEin einzelner Blutdorn sollte für aufmerksame Spieler umgehbar sein. Seine Spuren – Knochenreste, ausgerichtete Dornen, Haare oder Stofffasern – erlauben es, die Gefahr vor dem ersten Angriff zu erkennen. Wird er aus großer Entfernung bekämpft oder auf offenem Gelände umgangen, verliert er einen wesentlichen Teil seiner Stärke.\n\nMehrere Blutdorne sollten nicht dicht nebeneinander stehen, außer eine Begegnung soll bewusst einen gefährlichen Engpass darstellen. Jeder Blutdorn besitzt seine eigene Reaktion und seine eigene Zielerfassung; **Blutwitterung erzeugt niemals kostenlose Angriffe oder einen gemeinsamen Rudelbonus**.\n\nDie Elementarinteraktion soll ebenfalls spielbar bleiben: Wasser und Erde sind leicht gedämpft, während Feuer deutlich wirksamer ist. Dadurch besitzt die Pflanze eine erkennbare Verwundbarkeit, ohne dass Spieler ohne Feuerzugang gegen eine übermäßig harte Resistenzwand kämpfen müssen.",
+      "tables": [],
+      "source": {
+        "line_start": 963,
+        "line_end": 971
+      }
+    }
+  ],
+  "statistics": {
+    "level_count": 9,
+    "action_count_by_level": {
+      "1": 3,
+      "5": 3,
+      "10": 3,
+      "15": 3,
+      "20": 3,
+      "25": 3,
+      "30": 3,
+      "35": 3,
+      "40": 3
+    },
+    "shared_action_detail_count": 0
+  },
+  "source": {
+    "line_start": 1,
+    "line_end": 971
+  }
+}

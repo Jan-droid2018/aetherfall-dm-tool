@@ -1,0 +1,4555 @@
+{
+  "schema_version": "aetherfall.creatures.v1",
+  "id": "glutfalter",
+  "name": "Glutfalter",
+  "source_file": "Kreaturen - Glutfalter.md",
+  "core": {
+    "creature_type": "Bestie / elementar geprägtes Insektenwesen",
+    "classification": "Weltkreatur",
+    "origin": "Ashkarim – Aschenmark",
+    "occurrence": "Vor allem in der Aschenmark, in warmen Höhlen, erkalteten Lavagängen, alten Ruinen, verlassenen Stollen und trockenen unterirdischen Hallen; durch Handel und Schiffsverkehr wurden einzelne Populationen auch in andere warme Ruinengebiete verschleppt.",
+    "challenge_rating": {
+      "raw": "3 – Niedrige, aber deutlich spürbare Bedrohung",
+      "value": 3,
+      "label": "Niedrige, aber deutlich spürbare Bedrohung"
+    },
+    "encounter_rank": "Standard",
+    "archetype": "Ausweichend",
+    "elemental_affinity": "Feuer",
+    "size": "Mittelgroßes Insektenwesen; etwa 0,8–1,1 m Körperlänge und 1,8–2,5 m Flügelspannweite",
+    "intelligence": "Tierisch; licht-, wärme- und schwarmorientiert, mit ausgeprägtem Flucht- und Revierverhalten",
+    "extra_fields": {},
+    "raw_fields": {
+      "Kreaturenart": "Bestie / elementar geprägtes Insektenwesen",
+      "Einordnung": "Weltkreatur",
+      "Ursprüngliche Herkunft": "Ashkarim – Aschenmark",
+      "Bekanntes Vorkommen": "Vor allem in der Aschenmark, in warmen Höhlen, erkalteten Lavagängen, alten Ruinen, verlassenen Stollen und trockenen unterirdischen Hallen; durch Handel und Schiffsverkehr wurden einzelne Populationen auch in andere warme Ruinengebiete verschleppt.",
+      "Herausforderungsgrad": "**3 – Niedrige, aber deutlich spürbare Bedrohung**",
+      "Begegnungsrang": "Standard",
+      "Archetyp": "Ausweichend",
+      "Elementare Eigenschaft": "**Feuer**",
+      "Größenordnung": "Mittelgroßes Insektenwesen; etwa 0,8–1,1 m Körperlänge und 1,8–2,5 m Flügelspannweite",
+      "Intelligenzniveau": "Tierisch; licht-, wärme- und schwarmorientiert, mit ausgeprägtem Flucht- und Revierverhalten"
+    },
+    "raw_table_markdown": "| Kerndaten | Angabe |\n|---|---|\n| Kreaturenart | Bestie / elementar geprägtes Insektenwesen |\n| Einordnung | Weltkreatur |\n| Ursprüngliche Herkunft | Ashkarim – Aschenmark |\n| Bekanntes Vorkommen | Vor allem in der Aschenmark, in warmen Höhlen, erkalteten Lavagängen, alten Ruinen, verlassenen Stollen und trockenen unterirdischen Hallen; durch Handel und Schiffsverkehr wurden einzelne Populationen auch in andere warme Ruinengebiete verschleppt. |\n| Herausforderungsgrad | **3 – Niedrige, aber deutlich spürbare Bedrohung** |\n| Begegnungsrang | Standard |\n| Archetyp | Ausweichend |\n| Elementare Eigenschaft | **Feuer** |\n| Größenordnung | Mittelgroßes Insektenwesen; etwa 0,8–1,1 m Körperlänge und 1,8–2,5 m Flügelspannweite |\n| Intelligenzniveau | Tierisch; licht-, wärme- und schwarmorientiert, mit ausgeprägtem Flucht- und Revierverhalten |"
+  },
+  "action_overview": {
+    "headers": [
+      "Nr.",
+      "Aktion",
+      "Typ",
+      "Grundfunktion"
+    ],
+    "actions": [
+      {
+        "number": 1,
+        "name": "Glutstreifer",
+        "type": "Angriff",
+        "base_function": "Zuverlässiger Feuerangriff gegen ein einzelnes Ziel.",
+        "id": "glutfalter-overview-a01-glutstreifer",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "1",
+          "Aktion": "Glutstreifer",
+          "Typ": "Angriff",
+          "Grundfunktion": "Zuverlässiger Feuerangriff gegen ein einzelnes Ziel."
+        }
+      },
+      {
+        "number": 2,
+        "name": "Glutstaubfächer",
+        "type": "Flächenangriff",
+        "base_function": "Kurzer Feuerkegel; Beweglichkeits-Rettungswurf, halber Schaden bei Erfolg.",
+        "id": "glutfalter-overview-a02-glutstaubfaecher",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "2",
+          "Aktion": "Glutstaubfächer",
+          "Typ": "Flächenangriff",
+          "Grundfunktion": "Kurzer Feuerkegel; Beweglichkeits-Rettungswurf, halber Schaden bei Erfolg."
+        }
+      },
+      {
+        "number": 3,
+        "name": "Flimmerflug",
+        "type": "Reaktion / Verteidigung",
+        "base_function": "Einmal pro Runde +2 auf den Ausweichwurf gegen einen Angriff; verfehlt dieser, kurze Ausweichbewegung.",
+        "id": "glutfalter-overview-a03-flimmerflug",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "3",
+          "Aktion": "Flimmerflug",
+          "Typ": "Reaktion / Verteidigung",
+          "Grundfunktion": "Einmal pro Runde +2 auf den Ausweichwurf gegen einen Angriff; verfehlt dieser, kurze Ausweichbewegung."
+        }
+      }
+    ]
+  },
+  "shared_action_details": [],
+  "lore_and_rules": [
+    {
+      "title": "Überblick",
+      "id": "ueberblick",
+      "markdown": "Der **Glutfalter** ist ein großer nachtaktiver Falter, dessen Flügelschuppen einen feinen, orange bis goldrot glimmenden Staub absondern. Ein einzelnes Tier ist für bewaffnete Reisende überschaubar, doch mehrere Glutfalter können dunkle Ruinen, Höhlen und enge unterirdische Anlagen schnell gefährlich machen.\n\nDie Tiere sind nicht aus offenem Feuer aufgebaut. Ihre Feuerprägung sitzt vor allem in den Flügelschuppen und in mehreren wärmespeichernden Drüsen entlang des Brustsegments. Beim Fliegen lösen sich winzige Schuppen, die einige Augenblicke glimmen und in trockener Luft wie schwebende Funken aussehen.\n\nGlutfalter jagen keine Menschen. Sie ernähren sich von Pilzsäften, mineralhaltigen Ablagerungen, kleinen Insekten und wärmegebundenen Ätherresten. Aggressiv werden sie vor allem, wenn ein Ruheplatz, ein Gelege oder ein dichter Schwarm gestört wird. Dann reagieren mehrere Tiere gleichzeitig auf Bewegung, Licht und Wärme.\n\nIhre größte Gefahr liegt in der **Menge glühender Schuppen**. Ein einzelner Glutstaubfächer ist unangenehm. Zwei oder drei Falter, die denselben engen Gang mit Staub füllen, zwingen eine Gruppe dagegen schnell dazu, sich zu verteilen oder Deckung zu suchen.",
+      "tables": [],
+      "source": {
+        "line_start": 32,
+        "line_end": 41
+      }
+    },
+    {
+      "title": "Erscheinungsbild und Anatomie",
+      "id": "erscheinungsbild-und-anatomie",
+      "markdown": "Der Körper eines Glutfalters ist kräftiger als der eines gewöhnlichen Falters und besteht aus mehreren dunkelbraunen bis schwarzen Segmenten. Über den Brustbereich ziehen sich feine rötliche Linien, die bei erhöhter Aktivität schwach aufglimmen.\n\nDie vier Flügel sind breit und leicht gezackt. Ihre Grundfarbe reicht von rußigem Grau bis zu tiefem Braun. Darauf liegen dichte Felder aus kupferfarbenen, orangefarbenen und goldenen Schuppen. Diese Schuppen speichern Wärme und geben sie langsam wieder ab.\n\nIn völliger Dunkelheit ist ein ruhender Glutfalter nicht vollständig unsichtbar. Entlang der Flügeladern sind einzelne glimmende Punkte zu erkennen. Beim Abflug lösen sich deutlich mehr Schuppen, sodass der erste Flügelschlag häufig wie eine kurze Wolke aus Funken wirkt.\n\nDer Kopf besitzt zwei große dunkle Facettenaugen. Sie reagieren empfindlich auf Bewegung und starke Helligkeitswechsel. Zwei gefiederte Fühler nehmen Luftströmungen, Wärmeunterschiede und Duftstoffe wahr.\n\nDer Saugrüssel dient hauptsächlich zur Nahrungsaufnahme. Im Kampf verwendet der Glutfalter ihn kaum. Seine eigentliche Bedrohung entsteht aus den Flügeln, dem erhitzten Schuppenstaub und schnellen Vorbeiflügen.\n\nDie Beine sind schlank und für längeren Bodenkampf ungeeignet. Ein Glutfalter kann an Wänden, Decken, Säulen und rauem Stein hängen, bewegt sich am Boden jedoch nur langsam.",
+      "tables": [],
+      "source": {
+        "line_start": 42,
+        "line_end": 55
+      }
+    },
+    {
+      "title": "Herkunft und Entstehung",
+      "id": "herkunft-und-entstehung",
+      "markdown": "Die ältesten verbreiteten Beschreibungen stammen aus der **Aschenmark Ashkarims**. Dort verbinden sich trockene Ruinen, erkaltete Lavaströme, warme Felsspalten und große Temperaturunterschiede zwischen Tag und Nacht zu einem geeigneten Lebensraum.\n\nGlutfalter gelten als natürliche Tierart mit einer schwachen, aber stabilen **Feuerprägung**. Diese Prägung entwickelte sich vermutlich in Umgebungen, in denen Wärme über lange Zeit in Gestein, Asche und vulkanischen Hohlräumen gespeichert wird.\n\nDie wärmespeichernden Flügelschuppen erfüllen mehrere Aufgaben gleichzeitig. Sie helfen dem Falter, in kühlen Nächten aktiv zu bleiben, dienen der Kommunikation innerhalb eines Schwarms und können bei Gefahr als reizender Glutstaub abgestoßen werden.\n\nEs gibt keine Hinweise darauf, dass Glutfalter künstlich erschaffen wurden. Ebenso besteht keine notwendige Verbindung zu Eidryth. Sie sind ein eigenständiger Bestandteil der ashkarischen Tierwelt.",
+      "tables": [],
+      "source": {
+        "line_start": 56,
+        "line_end": 65
+      }
+    },
+    {
+      "title": "Vorkommen und Lebensraum",
+      "id": "vorkommen-und-lebensraum",
+      "markdown": "Glutfalter bevorzugen trockene, geschützte und zumindest zeitweise warme Orte. Besonders häufig findet man sie:\n\n- in Höhlen mit warmen Gesteinsadern,\n- in erkalteten Lavagängen,\n- in Ruinen der Aschenmark,\n- in verlassenen Stollen und Bergwerkskammern,\n- unter steinernen Brücken oder Gewölben,\n- in trockenen Tempel- und Kelleranlagen,\n- in großen Hallen mit offenen Rissen zur Außenluft,\n- an Orten mit starkem Pilz- oder Insektenvorkommen.\n\nTagsüber hängen die Tiere häufig an Decken, hohen Wänden oder geschützten Felsvorsprüngen. Ihre dunklen Flügel liegen dann eng am Körper.\n\nMit Einbruch der Dunkelheit werden sie aktiv. Besonders warme Nächte führen dazu, dass ganze Gruppen gleichzeitig aus ihren Ruheplätzen aufsteigen.\n\nFeuchte Höhlen und dauerhaft nasse Ruinen werden gemieden. Wasser verklebt die feinen Flügelschuppen, kühlt die Wärmedrüsen und erschwert den Flug.",
+      "tables": [],
+      "source": {
+        "line_start": 66,
+        "line_end": 84
+      }
+    },
+    {
+      "title": "Verhalten und Lebensweise",
+      "id": "verhalten-und-lebensweise",
+      "markdown": "Glutfalter leben meist in kleinen Gruppen von **zwei bis sechs Tieren**. Große Ansammlungen sind möglich, wenn eine Ruine viele geschützte Deckenbereiche und ausreichend Nahrung bietet.\n\nEin Schwarm besitzt keine komplexe Rangordnung. Die Tiere reagieren jedoch stark aufeinander. Steigt ein Falter plötzlich auf, lösen die Flügelschläge und freigesetzten Duftstoffe häufig auch bei benachbarten Tieren Flucht- oder Abwehrverhalten aus.\n\nDie Nahrung besteht vor allem aus weichen Höhlenpilzen, austretenden Pflanzensäften, mineralischen Salzfilmen und kleinen nachtaktiven Insekten. In vulkanischen Regionen lecken Glutfalter außerdem dünne mineralische Ablagerungen von warmem Gestein.\n\nSie werden von Wärmequellen angezogen, verwechseln offenes Feuer jedoch nicht automatisch mit Nahrung. Ein Lagerfeuer kann neugierige Tiere anlocken, doch starke Flammen werden meist gemieden.\n\nBei Gefahr versuchen Glutfalter zunächst, Höhe zu gewinnen. Ist der Fluchtweg blockiert oder befindet sich ein Gelege in der Nähe, fliegen sie wiederholt dicht am Gegner vorbei und stoßen dabei Glutstaub ab.",
+      "tables": [],
+      "source": {
+        "line_start": 85,
+        "line_end": 96
+      }
+    },
+    {
+      "title": "Spuren und Vorzeichen",
+      "id": "spuren-und-vorzeichen",
+      "markdown": "Typische Hinweise auf Glutfalter sind:\n\n- feiner kupferfarbener Staub auf dunklem Stein,\n- einzelne glimmende Schuppen in Spalten oder auf dem Boden,\n- schmale, dunkle Kokonreste an Decken,\n- halbkreisförmige Ruheplätze an warmen Wänden,\n- kleine ausgefressene Stellen an Pilzen,\n- ein trockener Geruch nach warmer Asche und mineralischem Staub,\n- schwaches orangefarbenes Flimmern hoch über dem Boden,\n- leises raschelndes Flügelschlagen in ansonsten stillen Höhlen.\n\nWird eine ruhende Gruppe plötzlich gestört, fällt häufig zuerst eine dünne Schicht glimmender Schuppen von der Decke, bevor die Tiere selbst sichtbar werden.",
+      "tables": [],
+      "source": {
+        "line_start": 97,
+        "line_end": 111
+      }
+    },
+    {
+      "title": "Beziehung zu Bewohnern und Kulturen",
+      "id": "beziehung-zu-bewohnern-und-kulturen",
+      "markdown": "In der Aschenmark gelten Glutfalter als lästige, aber gewöhnliche Höhlen- und Ruinenbewohner. Bergleute und Ruinensucher erkennen ihre Spuren schnell und prüfen Decken und Felsnischen, bevor sie offene Lampen oder große Feuer entzünden.\n\nKleine Schwärme werden oft nur vertrieben. Das Töten einzelner Tiere kann einen ganzen Ruheplatz aufscheuchen und dadurch mehr Gefahr erzeugen als ein langsamer Rückzug.\n\nDie glimmenden Schuppen werden gelegentlich gesammelt und als kurzlebender Markierungsstaub verwendet. Außerhalb des Körpers verlieren sie ihre Wärme jedoch rasch und besitzen ohne weitere Verarbeitung keine dauerhafte magische Wirkung.\n\nReisende lernen häufig dieselbe einfache Regel: **Wo ein Glutfalter sichtbar ist, können mehrere im Dunkeln hängen.**",
+      "tables": [],
+      "source": {
+        "line_start": 112,
+        "line_end": 121
+      }
+    },
+    {
+      "title": "Kampfverhalten",
+      "id": "kampfverhalten",
+      "markdown": "Glutfalter kämpfen bevorzugt aus der Luft und vermeiden längeren direkten Kontakt.\n\nMit **Glutstreifer** schießt ein Falter an einem Ziel vorbei und lässt die heißesten Flügelschuppen über dessen Körper ziehen. Der Angriff ist seine zuverlässigste Einzelzieloption.\n\nDer **Glutstaubfächer** ist gefährlicher, wenn mehrere Gegner dicht beieinanderstehen. Der Falter schlägt beide Flügel kräftig nach vorn und schleudert eine kurze Wolke aus glühenden Schuppen in einen kegelförmigen Bereich.\n\nMit **Flimmerflug** reagiert der Falter auf einen unmittelbar bevorstehenden Angriff. Ein abruptes Seitwärtskippen und ein Schwall leuchtender Schuppen brechen seine Silhouette für einen Augenblick auf und erschweren den Treffer.\n\nEin einzelner Glutfalter wechselt meist zwischen Glutstreifer und Rückzug. Mehrere Tiere verteilen sich dagegen im Raum und versuchen, Glutstaubfächer aus unterschiedlichen Winkeln einzusetzen.\n\nSinkt ein Glutfalter unter ungefähr ein Viertel seiner maximalen LP und ist kein Gelege unmittelbar bedroht, versucht er zu fliehen.",
+      "tables": [],
+      "source": {
+        "line_start": 122,
+        "line_end": 135
+      }
+    },
+    {
+      "title": "Taktik für den Game Master",
+      "id": "taktik-fuer-den-game-master",
+      "markdown": "Glutfalter sollen bewegliche niedrige Bedrohungen sein, keine fliegenden Schadensschwämme.\n\n- **Eröffnung:** Beginnen sie an Decken oder erhöhten Wänden, steigen sie zunächst auf und suchen einen freien Flugweg.\n- **Einzelziel:** Gegen verteilte Gegner verwenden sie bevorzugt Glutstreifer.\n- **Gruppendruck:** Stehen mindestens zwei Gegner eng zusammen, wird Glutstaubfächer attraktiver.\n- **Reaktion:** Flimmerflug wird gegen einen gefährlichen Angriff aufgehoben und nicht wahllos gegen jeden kleinen Treffer eingesetzt.\n- **Gelände:** Niedrige Decken, Säulen, Felsbögen und enge Gänge machen die Begegnung interessanter als eine vollständig offene Fläche.\n- **Wasser:** Wird die Wasserverwundbarkeit ausgenutzt, dürfen die Spieler deutlich spüren, dass der Glutfalter seine bevorzugte Umgebung verliert.\n- **Flucht:** Unter etwa 25 % LP zieht sich ein Tier zurück, sofern sein Gelege nicht unmittelbar bedroht ist.",
+      "tables": [],
+      "source": {
+        "line_start": 136,
+        "line_end": 147
+      }
+    },
+    {
+      "title": "Mechanische Grundidentität",
+      "id": "mechanische-grundidentitaet",
+      "markdown": "**LP-Hauptattribut:** Willenskraft (WI) – die Feuerprägung und der starke Fluchtinstinkt stabilisieren den ansonsten leichten Körper.  \n**LP-Sekundärattribut:** Stärke (ST) – der Chitinleib ist nicht massiv; körperliche Zähigkeit spielt deshalb nur eine Nebenrolle.  \n**Bonusprofil:** Beweglichkeit, Wahrnehmung, Geschicklichkeit, Intuition und Ausweichen sind die wichtigsten Werte.  \n**Offensivprofil:** Beweglicher Feuerschädiger. Glutstreifer liegt je nach Stufe ungefähr bei `0,48–0,53 GE` Erwartungswirkung pro Aktion. Glutstaubfächer verursacht pro Ziel weniger Schaden, wird aber bei mehreren getroffenen Zielen deutlich wertvoller.  \n**Defensivprofil:** **Ausweichend.** LP und feste Verteidigungswerte liegen unter einem robusten Standardprofil. Haltbarkeit entsteht aus Flugbewegung, erhöhtem Ausweichen, Flimmerflug und zwei begrenzten Elementresistenzen.  \n**Bewegungsprofil:** Flug 12 m, Klettern 4 m, Land 4 m. Klettern ist nur an rauen Wänden, Decken und vergleichbaren Oberflächen möglich.  \n**Elementprofil:** Feuerprägung; **20 % Feuerresistenz**, **10 % Luftresistenz**, **15 % Wasserverwundbarkeit**. Die Feuerresistenz stammt aus wärmespeichernden Schuppen und Drüsen. Die Luftresistenz bildet die flexible Flügelstruktur und Anpassung an Druck- und Strömungswechsel ab. Wasser verklebt die Schuppen, kühlt die Wärmedrüsen und stört den Flugapparat.  \n**Aktionsanzahl:** 3 unterschiedliche Kampfoptionen.  \n**Phasenprofil:** Kein Phasenwechsel.",
+      "tables": [],
+      "source": {
+        "line_start": 148,
+        "line_end": 159
+      }
+    },
+    {
+      "title": "Aktionsübersicht",
+      "id": "aktionsuebersicht",
+      "markdown": "| Nr. | Aktion | Typ | Grundfunktion |\n|---:|---|---|---|\n| 1 | Glutstreifer | Angriff | Zuverlässiger Feuerangriff gegen ein einzelnes Ziel. |\n| 2 | Glutstaubfächer | Flächenangriff | Kurzer Feuerkegel; Beweglichkeits-Rettungswurf, halber Schaden bei Erfolg. |\n| 3 | Flimmerflug | Reaktion / Verteidigung | Einmal pro Runde +2 auf den Ausweichwurf gegen einen Angriff; verfehlt dieser, kurze Ausweichbewegung. |\n\n---",
+      "tables": [
+        {
+          "headers": [
+            "Nr.",
+            "Aktion",
+            "Typ",
+            "Grundfunktion"
+          ],
+          "rows": [
+            {
+              "Nr.": "1",
+              "Aktion": "Glutstreifer",
+              "Typ": "Angriff",
+              "Grundfunktion": "Zuverlässiger Feuerangriff gegen ein einzelnes Ziel."
+            },
+            {
+              "Nr.": "2",
+              "Aktion": "Glutstaubfächer",
+              "Typ": "Flächenangriff",
+              "Grundfunktion": "Kurzer Feuerkegel; Beweglichkeits-Rettungswurf, halber Schaden bei Erfolg."
+            },
+            {
+              "Nr.": "3",
+              "Aktion": "Flimmerflug",
+              "Typ": "Reaktion / Verteidigung",
+              "Grundfunktion": "Einmal pro Runde +2 auf den Ausweichwurf gegen einen Angriff; verfehlt dieser, kurze Ausweichbewegung."
+            }
+          ],
+          "raw_markdown": "| Nr. | Aktion | Typ | Grundfunktion |\n|---:|---|---|---|\n| 1 | Glutstreifer | Angriff | Zuverlässiger Feuerangriff gegen ein einzelnes Ziel. |\n| 2 | Glutstaubfächer | Flächenangriff | Kurzer Feuerkegel; Beweglichkeits-Rettungswurf, halber Schaden bei Erfolg. |\n| 3 | Flimmerflug | Reaktion / Verteidigung | Einmal pro Runde +2 auf den Ausweichwurf gegen einen Angriff; verfehlt dieser, kurze Ausweichbewegung. |"
+        }
+      ],
+      "source": {
+        "line_start": 160,
+        "line_end": 170
+      }
+    }
+  ],
+  "levels": [
+    {
+      "level": 1,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 4,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "4",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "135",
+          "physische_verteidigung": "6",
+          "magieverteidigung": "5",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Flug 12 m; Klettern 4 m; Land 4 m",
+          "glutstaubfaecher_sg": "13"
+        },
+        "raw_fields": {
+          "Maximale LP": "135",
+          "Physische Verteidigung": "6",
+          "Magieverteidigung": "5",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Flug 12 m; Klettern 4 m; Land 4 m",
+          "Glutstaubfächer-SG": "13"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+1) + WI-Bonus (+2)) × 10) + ((ST-Modifikator (-1) + ST-Bonus (+0)) × 5) + (1 × 10) = 135 LP",
+        "markdown": "`100 + ((WI-Modifikator (+1) + WI-Bonus (+2)) × 10) + ((ST-Modifikator (-1) + ST-Bonus (+0)) × 5) + (1 × 10) = 135 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Glutstreifer",
+            "cost": "1 Aktion",
+            "type": "magischer Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+3)",
+            "range_area": "Nah / im Flug",
+            "damage_effect": "4W6 + WA-Modifikator (+4) + WA-Bonus (+1)",
+            "damage_type": "Feuer",
+            "defense_save": "Magieverteidigung",
+            "avg_raw_damage": "19",
+            "avg_hit_damage": "17.17",
+            "avg_expected_effect": "11.8",
+            "ge_share": "0.52",
+            "notes": "Feuerangriff; Kritwerte sind im Durchschnitt eingerechnet.",
+            "avg_raw_damage_value": 19.0,
+            "avg_hit_damage_value": 17.17,
+            "ge_share_value": 0.52,
+            "id": "glutfalter-l01-a01-glutstreifer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Glutstreifer",
+              "Kosten": "1 Aktion",
+              "Typ": "magischer Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+3)",
+              "Reichweite / Fläche": "Nah / im Flug",
+              "Schaden / Wirkung": "4W6 + WA-Modifikator (+4) + WA-Bonus (+1)",
+              "Schadensart": "Feuer",
+              "Verteidigung / Rettung": "Magieverteidigung",
+              "Ø Rohschaden": "19",
+              "Ø Treffer-Endschaden": "17.17",
+              "Ø Erwartungswirkung": "11.8",
+              "GE-Anteil": "0.52",
+              "Zusatz": "Feuerangriff; Kritwerte sind im Durchschnitt eingerechnet."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Glutstaubfächer",
+            "cost": "1 Aktion",
+            "type": "Flächenangriff",
+            "attribute": null,
+            "attack_or_dc": "BW-Rettungswurf gegen SG 13",
+            "range_area": "3-m-Kegel",
+            "damage_effect": "3W6 + 2; bei erfolgreichem RW halber Schaden",
+            "damage_type": "Feuer",
+            "defense_save": "Magieverteidigung; BW-Rettung",
+            "avg_raw_damage": "12.5",
+            "avg_hit_damage": "10.5 bei misslungenem RW",
+            "avg_expected_effect": "7.61 pro Ziel",
+            "ge_share": "0.34 pro Ziel",
+            "notes": "Erwartungsrechnung mit 45 % Fehlschlagchance des Referenzprofils.",
+            "avg_raw_damage_value": 12.5,
+            "id": "glutfalter-l01-a02-glutstaubfaecher",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Glutstaubfächer",
+              "Kosten": "1 Aktion",
+              "Typ": "Flächenangriff",
+              "Attribut": null,
+              "Angriff / SG": "BW-Rettungswurf gegen SG 13",
+              "Reichweite / Fläche": "3-m-Kegel",
+              "Schaden / Wirkung": "3W6 + 2; bei erfolgreichem RW halber Schaden",
+              "Schadensart": "Feuer",
+              "Verteidigung / Rettung": "Magieverteidigung; BW-Rettung",
+              "Ø Rohschaden": "12.5",
+              "Ø Treffer-Endschaden": "10.5 bei misslungenem RW",
+              "Ø Erwartungswirkung": "7.61 pro Ziel",
+              "GE-Anteil": "0.34 pro Ziel",
+              "Zusatz": "Erwartungsrechnung mit 45 % Fehlschlagchance des Referenzprofils."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Flimmerflug",
+            "cost": "1 Reaktion; maximal 1× pro Runde",
+            "type": "defensive Reaktion",
+            "attribute": "AU",
+            "attack_or_dc": null,
+            "range_area": "Selbst; anschließend bis 2 m",
+            "damage_effect": "+2 auf den Ausweichwurf gegen den auslösenden Angriff; bei Fehlschlag des Angriffs anschließend bis 2 m Bewegung",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Die Bewegung verhindert keine anderen Reaktionen und muss auf einer legalen Flugbahn enden.",
+            "id": "glutfalter-l01-a03-flimmerflug",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Flimmerflug",
+              "Kosten": "1 Reaktion; maximal 1× pro Runde",
+              "Typ": "defensive Reaktion",
+              "Attribut": "AU",
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst; anschließend bis 2 m",
+              "Schaden / Wirkung": "+2 auf den Ausweichwurf gegen den auslösenden Angriff; bei Fehlschlag des Angriffs anschließend bis 2 m Bewegung",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Die Bewegung verhindert keine anderen Reaktionen und muss auf einer legalen Flugbahn enden."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "glutfalter-l01-glutstreifer",
+          "name": "Glutstreifer",
+          "type": "Magischer Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah; der Glutfalter muss das Ziel während seines Fluges erreichen können",
+          "attack_roll": "`W20 + BW-Modifikator (+5) + BW-Bonus (+3)`",
+          "damage": "`4W6 + WA-Modifikator (+4) + WA-Bonus (+1)`",
+          "damage_type": "Feuer",
+          "defense": "Magieverteidigung",
+          "rule_effect": "Der Glutfalter kippt einen Flügel nach unten, schießt knapp am Ziel vorbei und streift es mit einer dichten Schicht stark erhitzter Flügelschuppen. Der Angriff verursacht ausschließlich den angegebenen Feuerschaden. Er gewährt keine kostenlose Zusatzbewegung und verschiebt das Ziel nicht.",
+          "stacking": "Mehrere Glutfalter können dasselbe Ziel unabhängig mit Glutstreifer angreifen; jeder Angriff wird separat abgehandelt.",
+          "extra_fields": {
+            "Kritische Treffer": "Da Glutstreifer einen Angriffswurf verwendet, gelten die angegebenen Kritwerte des Glutfalters."
+          },
+          "raw_fields": {
+            "Typ": "Magischer Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah; der Glutfalter muss das Ziel während seines Fluges erreichen können",
+            "Angriffswurf": "`W20 + BW-Modifikator (+5) + BW-Bonus (+3)`",
+            "Schaden": "`4W6 + WA-Modifikator (+4) + WA-Bonus (+1)`",
+            "Schadensart": "Feuer",
+            "Verteidigung": "Magieverteidigung",
+            "Regelwirkung": "Der Glutfalter kippt einen Flügel nach unten, schießt knapp am Ziel vorbei und streift es mit einer dichten Schicht stark erhitzter Flügelschuppen. Der Angriff verursacht ausschließlich den angegebenen Feuerschaden. Er gewährt keine kostenlose Zusatzbewegung und verschiebt das Ziel nicht.",
+            "Kritische Treffer": "Da Glutstreifer einen Angriffswurf verwendet, gelten die angegebenen Kritwerte des Glutfalters.",
+            "Stapelung": "Mehrere Glutfalter können dasselbe Ziel unabhängig mit Glutstreifer angreifen; jeder Angriff wird separat abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 213,
+            "line_end": 225
+          }
+        },
+        {
+          "id": "glutfalter-l01-glutstaubfaecher",
+          "name": "Glutstaubfächer",
+          "type": "Flächenangriff",
+          "cost": "1 Aktion",
+          "area": "3-m-Kegel vor dem Glutfalter",
+          "saving_throw": "Beweglichkeit gegen **SG 13**",
+          "damage": "`3W6 + 2` Feuerschaden bei misslungenem Rettungswurf; bei Erfolg wird der Schaden halbiert.",
+          "defense": "Magieverteidigung wird nach der elementaren Schadensanpassung normal angewendet.",
+          "rule_effect": "Der Glutfalter schlägt beide Flügel schlagartig nach vorn und stößt eine dichte Wolke glühender Schuppen aus. Jede Kreatur im Kegel führt ihren eigenen Rettungswurf aus.",
+          "stacking": "Mehrere Glutstaubfächer verursachen getrennten Schaden. Es entsteht kein zusätzlicher globaler Brennzustand und keine dauerhafte Schadenszone.",
+          "end_condition": "Nach der unmittelbaren Schadensauflösung endet die Wirkung vollständig.",
+          "extra_fields": {
+            "Kritische Treffer": "Glutstaubfächer verwendet keinen Angriffswurf und kann daher nicht kritisch treffen."
+          },
+          "raw_fields": {
+            "Typ": "Flächenangriff",
+            "Kosten": "1 Aktion",
+            "Fläche": "3-m-Kegel vor dem Glutfalter",
+            "Rettungswurf": "Beweglichkeit gegen **SG 13**",
+            "Schaden": "`3W6 + 2` Feuerschaden bei misslungenem Rettungswurf; bei Erfolg wird der Schaden halbiert.",
+            "Verteidigung": "Magieverteidigung wird nach der elementaren Schadensanpassung normal angewendet.",
+            "Regelwirkung": "Der Glutfalter schlägt beide Flügel schlagartig nach vorn und stößt eine dichte Wolke glühender Schuppen aus. Jede Kreatur im Kegel führt ihren eigenen Rettungswurf aus.",
+            "Kritische Treffer": "Glutstaubfächer verwendet keinen Angriffswurf und kann daher nicht kritisch treffen.",
+            "Stapelung": "Mehrere Glutstaubfächer verursachen getrennten Schaden. Es entsteht kein zusätzlicher globaler Brennzustand und keine dauerhafte Schadenszone.",
+            "Ende der Wirkung": "Nach der unmittelbaren Schadensauflösung endet die Wirkung vollständig."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 226,
+            "line_end": 238
+          }
+        },
+        {
+          "id": "glutfalter-l01-flimmerflug",
+          "name": "Flimmerflug",
+          "type": "Defensive Reaktion",
+          "cost": "1 Reaktion",
+          "usage_limit": "Maximal einmal pro Runde",
+          "trigger": "Der Glutfalter wird von einem Angriff als Ziel gewählt und kann den Angreifer oder den entstehenden Angriff wahrnehmen.",
+          "target": "Selbst",
+          "rule_effect": "Bevor der Ausweichwurf gegen den auslösenden Angriff abgeschlossen wird, erhält der Glutfalter **+2 auf genau diesen Ausweichwurf**. Verfehlt der Angriff anschließend, darf sich der Glutfalter unmittelbar bis zu **2 m fliegend** bewegen.",
+          "stacking": "Flimmerflug stapelt nicht mit sich selbst. Der Bonus gilt nur für den auslösenden Angriff.",
+          "end_condition": "Unmittelbar nach der Abwicklung des auslösenden Angriffs und gegebenenfalls der anschließenden 2-m-Bewegung.",
+          "extra_fields": {
+            "Bewegungsregel": "Diese Bewegung ist keine Teleportation. Sie muss auf einer legalen Flugbahn erfolgen, kann nicht durch feste Hindernisse führen und verhindert keine Reaktionen, die durch Bewegung normalerweise ausgelöst werden."
+          },
+          "raw_fields": {
+            "Typ": "Defensive Reaktion",
+            "Kosten": "1 Reaktion",
+            "Einsatzlimit": "Maximal einmal pro Runde",
+            "Auslöser": "Der Glutfalter wird von einem Angriff als Ziel gewählt und kann den Angreifer oder den entstehenden Angriff wahrnehmen.",
+            "Ziel": "Selbst",
+            "Regelwirkung": "Bevor der Ausweichwurf gegen den auslösenden Angriff abgeschlossen wird, erhält der Glutfalter **+2 auf genau diesen Ausweichwurf**. Verfehlt der Angriff anschließend, darf sich der Glutfalter unmittelbar bis zu **2 m fliegend** bewegen.",
+            "Bewegungsregel": "Diese Bewegung ist keine Teleportation. Sie muss auf einer legalen Flugbahn erfolgen, kann nicht durch feste Hindernisse führen und verhindert keine Reaktionen, die durch Bewegung normalerweise ausgelöst werden.",
+            "Stapelung": "Flimmerflug stapelt nicht mit sich selbst. Der Bonus gilt nur für den auslösenden Angriff.",
+            "Ende der Wirkung": "Unmittelbar nach der Abwicklung des auslösenden Angriffs und gegebenenfalls der anschließenden 2-m-Bewegung."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 239,
+            "line_end": 250
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "20 % Resistenz",
+            "type": "resistance",
+            "percent": 20
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "15 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 15
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**20 % Resistenz**",
+            "**15 % Verwundbarkeit**",
+            "–",
+            "**10 % Resistenz**",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 171,
+        "line_end": 260
+      }
+    },
+    {
+      "level": 5,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 4,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "4",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "190",
+          "physische_verteidigung": "8",
+          "magieverteidigung": "7",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Flug 12 m; Klettern 4 m; Land 4 m",
+          "glutstaubfaecher_sg": "14"
+        },
+        "raw_fields": {
+          "Maximale LP": "190",
+          "Physische Verteidigung": "8",
+          "Magieverteidigung": "7",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Flug 12 m; Klettern 4 m; Land 4 m",
+          "Glutstaubfächer-SG": "14"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+2) + WI-Bonus (+2)) × 10) + ((ST-Modifikator (+0) + ST-Bonus (+0)) × 5) + (5 × 10) = 190 LP",
+        "markdown": "`100 + ((WI-Modifikator (+2) + WI-Bonus (+2)) × 10) + ((ST-Modifikator (+0) + ST-Bonus (+0)) × 5) + (5 × 10) = 190 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Glutstreifer",
+            "cost": "1 Aktion",
+            "type": "magischer Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+            "range_area": "Nah / im Flug",
+            "damage_effect": "4W8 + WA-Modifikator (+4) + WA-Bonus (+1)",
+            "damage_type": "Feuer",
+            "defense_save": "Magieverteidigung",
+            "avg_raw_damage": "23",
+            "avg_hit_damage": "19.19",
+            "avg_expected_effect": "13.19",
+            "ge_share": "0.48",
+            "notes": "Feuerangriff; Kritwerte sind im Durchschnitt eingerechnet.",
+            "avg_raw_damage_value": 23.0,
+            "avg_hit_damage_value": 19.19,
+            "ge_share_value": 0.48,
+            "id": "glutfalter-l05-a01-glutstreifer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Glutstreifer",
+              "Kosten": "1 Aktion",
+              "Typ": "magischer Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Nah / im Flug",
+              "Schaden / Wirkung": "4W8 + WA-Modifikator (+4) + WA-Bonus (+1)",
+              "Schadensart": "Feuer",
+              "Verteidigung / Rettung": "Magieverteidigung",
+              "Ø Rohschaden": "23",
+              "Ø Treffer-Endschaden": "19.19",
+              "Ø Erwartungswirkung": "13.19",
+              "GE-Anteil": "0.48",
+              "Zusatz": "Feuerangriff; Kritwerte sind im Durchschnitt eingerechnet."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Glutstaubfächer",
+            "cost": "1 Aktion",
+            "type": "Flächenangriff",
+            "attribute": null,
+            "attack_or_dc": "BW-Rettungswurf gegen SG 14",
+            "range_area": "3-m-Kegel",
+            "damage_effect": "4W6 + 2; bei erfolgreichem RW halber Schaden",
+            "damage_type": "Feuer",
+            "defense_save": "Magieverteidigung; BW-Rettung",
+            "avg_raw_damage": "16",
+            "avg_hit_damage": "12 bei misslungenem RW",
+            "avg_expected_effect": "8.7 pro Ziel",
+            "ge_share": "0.32 pro Ziel",
+            "notes": "Erwartungsrechnung mit 45 % Fehlschlagchance des Referenzprofils.",
+            "avg_raw_damage_value": 16.0,
+            "id": "glutfalter-l05-a02-glutstaubfaecher",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Glutstaubfächer",
+              "Kosten": "1 Aktion",
+              "Typ": "Flächenangriff",
+              "Attribut": null,
+              "Angriff / SG": "BW-Rettungswurf gegen SG 14",
+              "Reichweite / Fläche": "3-m-Kegel",
+              "Schaden / Wirkung": "4W6 + 2; bei erfolgreichem RW halber Schaden",
+              "Schadensart": "Feuer",
+              "Verteidigung / Rettung": "Magieverteidigung; BW-Rettung",
+              "Ø Rohschaden": "16",
+              "Ø Treffer-Endschaden": "12 bei misslungenem RW",
+              "Ø Erwartungswirkung": "8.7 pro Ziel",
+              "GE-Anteil": "0.32 pro Ziel",
+              "Zusatz": "Erwartungsrechnung mit 45 % Fehlschlagchance des Referenzprofils."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Flimmerflug",
+            "cost": "1 Reaktion; maximal 1× pro Runde",
+            "type": "defensive Reaktion",
+            "attribute": "AU",
+            "attack_or_dc": null,
+            "range_area": "Selbst; anschließend bis 2 m",
+            "damage_effect": "+2 auf den Ausweichwurf gegen den auslösenden Angriff; bei Fehlschlag des Angriffs anschließend bis 2 m Bewegung",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Die Bewegung verhindert keine anderen Reaktionen und muss auf einer legalen Flugbahn enden.",
+            "id": "glutfalter-l05-a03-flimmerflug",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Flimmerflug",
+              "Kosten": "1 Reaktion; maximal 1× pro Runde",
+              "Typ": "defensive Reaktion",
+              "Attribut": "AU",
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst; anschließend bis 2 m",
+              "Schaden / Wirkung": "+2 auf den Ausweichwurf gegen den auslösenden Angriff; bei Fehlschlag des Angriffs anschließend bis 2 m Bewegung",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Die Bewegung verhindert keine anderen Reaktionen und muss auf einer legalen Flugbahn enden."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "glutfalter-l05-glutstreifer",
+          "name": "Glutstreifer",
+          "type": "Magischer Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah; der Glutfalter muss das Ziel während seines Fluges erreichen können",
+          "attack_roll": "`W20 + BW-Modifikator (+5) + BW-Bonus (+4)`",
+          "damage": "`4W8 + WA-Modifikator (+4) + WA-Bonus (+1)`",
+          "damage_type": "Feuer",
+          "defense": "Magieverteidigung",
+          "rule_effect": "Der Glutfalter kippt einen Flügel nach unten, schießt knapp am Ziel vorbei und streift es mit einer dichten Schicht stark erhitzter Flügelschuppen. Der Angriff verursacht ausschließlich den angegebenen Feuerschaden. Er gewährt keine kostenlose Zusatzbewegung und verschiebt das Ziel nicht.",
+          "stacking": "Mehrere Glutfalter können dasselbe Ziel unabhängig mit Glutstreifer angreifen; jeder Angriff wird separat abgehandelt.",
+          "extra_fields": {
+            "Kritische Treffer": "Da Glutstreifer einen Angriffswurf verwendet, gelten die angegebenen Kritwerte des Glutfalters."
+          },
+          "raw_fields": {
+            "Typ": "Magischer Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah; der Glutfalter muss das Ziel während seines Fluges erreichen können",
+            "Angriffswurf": "`W20 + BW-Modifikator (+5) + BW-Bonus (+4)`",
+            "Schaden": "`4W8 + WA-Modifikator (+4) + WA-Bonus (+1)`",
+            "Schadensart": "Feuer",
+            "Verteidigung": "Magieverteidigung",
+            "Regelwirkung": "Der Glutfalter kippt einen Flügel nach unten, schießt knapp am Ziel vorbei und streift es mit einer dichten Schicht stark erhitzter Flügelschuppen. Der Angriff verursacht ausschließlich den angegebenen Feuerschaden. Er gewährt keine kostenlose Zusatzbewegung und verschiebt das Ziel nicht.",
+            "Kritische Treffer": "Da Glutstreifer einen Angriffswurf verwendet, gelten die angegebenen Kritwerte des Glutfalters.",
+            "Stapelung": "Mehrere Glutfalter können dasselbe Ziel unabhängig mit Glutstreifer angreifen; jeder Angriff wird separat abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 303,
+            "line_end": 315
+          }
+        },
+        {
+          "id": "glutfalter-l05-glutstaubfaecher",
+          "name": "Glutstaubfächer",
+          "type": "Flächenangriff",
+          "cost": "1 Aktion",
+          "area": "3-m-Kegel vor dem Glutfalter",
+          "saving_throw": "Beweglichkeit gegen **SG 14**",
+          "damage": "`4W6 + 2` Feuerschaden bei misslungenem Rettungswurf; bei Erfolg wird der Schaden halbiert.",
+          "defense": "Magieverteidigung wird nach der elementaren Schadensanpassung normal angewendet.",
+          "rule_effect": "Der Glutfalter schlägt beide Flügel schlagartig nach vorn und stößt eine dichte Wolke glühender Schuppen aus. Jede Kreatur im Kegel führt ihren eigenen Rettungswurf aus.",
+          "stacking": "Mehrere Glutstaubfächer verursachen getrennten Schaden. Es entsteht kein zusätzlicher globaler Brennzustand und keine dauerhafte Schadenszone.",
+          "end_condition": "Nach der unmittelbaren Schadensauflösung endet die Wirkung vollständig.",
+          "extra_fields": {
+            "Kritische Treffer": "Glutstaubfächer verwendet keinen Angriffswurf und kann daher nicht kritisch treffen."
+          },
+          "raw_fields": {
+            "Typ": "Flächenangriff",
+            "Kosten": "1 Aktion",
+            "Fläche": "3-m-Kegel vor dem Glutfalter",
+            "Rettungswurf": "Beweglichkeit gegen **SG 14**",
+            "Schaden": "`4W6 + 2` Feuerschaden bei misslungenem Rettungswurf; bei Erfolg wird der Schaden halbiert.",
+            "Verteidigung": "Magieverteidigung wird nach der elementaren Schadensanpassung normal angewendet.",
+            "Regelwirkung": "Der Glutfalter schlägt beide Flügel schlagartig nach vorn und stößt eine dichte Wolke glühender Schuppen aus. Jede Kreatur im Kegel führt ihren eigenen Rettungswurf aus.",
+            "Kritische Treffer": "Glutstaubfächer verwendet keinen Angriffswurf und kann daher nicht kritisch treffen.",
+            "Stapelung": "Mehrere Glutstaubfächer verursachen getrennten Schaden. Es entsteht kein zusätzlicher globaler Brennzustand und keine dauerhafte Schadenszone.",
+            "Ende der Wirkung": "Nach der unmittelbaren Schadensauflösung endet die Wirkung vollständig."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 316,
+            "line_end": 328
+          }
+        },
+        {
+          "id": "glutfalter-l05-flimmerflug",
+          "name": "Flimmerflug",
+          "type": "Defensive Reaktion",
+          "cost": "1 Reaktion",
+          "usage_limit": "Maximal einmal pro Runde",
+          "trigger": "Der Glutfalter wird von einem Angriff als Ziel gewählt und kann den Angreifer oder den entstehenden Angriff wahrnehmen.",
+          "target": "Selbst",
+          "rule_effect": "Bevor der Ausweichwurf gegen den auslösenden Angriff abgeschlossen wird, erhält der Glutfalter **+2 auf genau diesen Ausweichwurf**. Verfehlt der Angriff anschließend, darf sich der Glutfalter unmittelbar bis zu **2 m fliegend** bewegen.",
+          "stacking": "Flimmerflug stapelt nicht mit sich selbst. Der Bonus gilt nur für den auslösenden Angriff.",
+          "end_condition": "Unmittelbar nach der Abwicklung des auslösenden Angriffs und gegebenenfalls der anschließenden 2-m-Bewegung.",
+          "extra_fields": {
+            "Bewegungsregel": "Diese Bewegung ist keine Teleportation. Sie muss auf einer legalen Flugbahn erfolgen, kann nicht durch feste Hindernisse führen und verhindert keine Reaktionen, die durch Bewegung normalerweise ausgelöst werden."
+          },
+          "raw_fields": {
+            "Typ": "Defensive Reaktion",
+            "Kosten": "1 Reaktion",
+            "Einsatzlimit": "Maximal einmal pro Runde",
+            "Auslöser": "Der Glutfalter wird von einem Angriff als Ziel gewählt und kann den Angreifer oder den entstehenden Angriff wahrnehmen.",
+            "Ziel": "Selbst",
+            "Regelwirkung": "Bevor der Ausweichwurf gegen den auslösenden Angriff abgeschlossen wird, erhält der Glutfalter **+2 auf genau diesen Ausweichwurf**. Verfehlt der Angriff anschließend, darf sich der Glutfalter unmittelbar bis zu **2 m fliegend** bewegen.",
+            "Bewegungsregel": "Diese Bewegung ist keine Teleportation. Sie muss auf einer legalen Flugbahn erfolgen, kann nicht durch feste Hindernisse führen und verhindert keine Reaktionen, die durch Bewegung normalerweise ausgelöst werden.",
+            "Stapelung": "Flimmerflug stapelt nicht mit sich selbst. Der Bonus gilt nur für den auslösenden Angriff.",
+            "Ende der Wirkung": "Unmittelbar nach der Abwicklung des auslösenden Angriffs und gegebenenfalls der anschließenden 2-m-Bewegung."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 329,
+            "line_end": 340
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "20 % Resistenz",
+            "type": "resistance",
+            "percent": 20
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "15 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 15
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**20 % Resistenz**",
+            "**15 % Verwundbarkeit**",
+            "–",
+            "**10 % Resistenz**",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 261,
+        "line_end": 350
+      }
+    },
+    {
+      "level": 10,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 11,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "11",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "240",
+          "physische_verteidigung": "10",
+          "magieverteidigung": "9",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Flug 12 m; Klettern 4 m; Land 4 m",
+          "glutstaubfaecher_sg": "15"
+        },
+        "raw_fields": {
+          "Maximale LP": "240",
+          "Physische Verteidigung": "10",
+          "Magieverteidigung": "9",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Flug 12 m; Klettern 4 m; Land 4 m",
+          "Glutstaubfächer-SG": "15"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+2) + WI-Bonus (+2)) × 10) + ((ST-Modifikator (+0) + ST-Bonus (+0)) × 5) + (10 × 10) = 240 LP",
+        "markdown": "`100 + ((WI-Modifikator (+2) + WI-Bonus (+2)) × 10) + ((ST-Modifikator (+0) + ST-Bonus (+0)) × 5) + (10 × 10) = 240 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Glutstreifer",
+            "cost": "1 Aktion",
+            "type": "magischer Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+            "range_area": "Nah / im Flug",
+            "damage_effect": "7W6 + WA-Modifikator (+5) + WA-Bonus (+1)",
+            "damage_type": "Feuer",
+            "defense_save": "Magieverteidigung",
+            "avg_raw_damage": "30.5",
+            "avg_hit_damage": "24.75",
+            "avg_expected_effect": "17.01",
+            "ge_share": "0.50",
+            "notes": "Feuerangriff; Kritwerte sind im Durchschnitt eingerechnet.",
+            "avg_raw_damage_value": 30.5,
+            "avg_hit_damage_value": 24.75,
+            "ge_share_value": 0.5,
+            "id": "glutfalter-l10-a01-glutstreifer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Glutstreifer",
+              "Kosten": "1 Aktion",
+              "Typ": "magischer Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Nah / im Flug",
+              "Schaden / Wirkung": "7W6 + WA-Modifikator (+5) + WA-Bonus (+1)",
+              "Schadensart": "Feuer",
+              "Verteidigung / Rettung": "Magieverteidigung",
+              "Ø Rohschaden": "30.5",
+              "Ø Treffer-Endschaden": "24.75",
+              "Ø Erwartungswirkung": "17.01",
+              "GE-Anteil": "0.50",
+              "Zusatz": "Feuerangriff; Kritwerte sind im Durchschnitt eingerechnet."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Glutstaubfächer",
+            "cost": "1 Aktion",
+            "type": "Flächenangriff",
+            "attribute": null,
+            "attack_or_dc": "BW-Rettungswurf gegen SG 15",
+            "range_area": "3-m-Kegel",
+            "damage_effect": "4W8 + 2; bei erfolgreichem RW halber Schaden",
+            "damage_type": "Feuer",
+            "defense_save": "Magieverteidigung; BW-Rettung",
+            "avg_raw_damage": "20",
+            "avg_hit_damage": "14 bei misslungenem RW",
+            "avg_expected_effect": "10.5 pro Ziel",
+            "ge_share": "0.31 pro Ziel",
+            "notes": "Erwartungsrechnung mit 50 % Fehlschlagchance des Referenzprofils.",
+            "avg_raw_damage_value": 20.0,
+            "id": "glutfalter-l10-a02-glutstaubfaecher",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Glutstaubfächer",
+              "Kosten": "1 Aktion",
+              "Typ": "Flächenangriff",
+              "Attribut": null,
+              "Angriff / SG": "BW-Rettungswurf gegen SG 15",
+              "Reichweite / Fläche": "3-m-Kegel",
+              "Schaden / Wirkung": "4W8 + 2; bei erfolgreichem RW halber Schaden",
+              "Schadensart": "Feuer",
+              "Verteidigung / Rettung": "Magieverteidigung; BW-Rettung",
+              "Ø Rohschaden": "20",
+              "Ø Treffer-Endschaden": "14 bei misslungenem RW",
+              "Ø Erwartungswirkung": "10.5 pro Ziel",
+              "GE-Anteil": "0.31 pro Ziel",
+              "Zusatz": "Erwartungsrechnung mit 50 % Fehlschlagchance des Referenzprofils."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Flimmerflug",
+            "cost": "1 Reaktion; maximal 1× pro Runde",
+            "type": "defensive Reaktion",
+            "attribute": "AU",
+            "attack_or_dc": null,
+            "range_area": "Selbst; anschließend bis 2 m",
+            "damage_effect": "+2 auf den Ausweichwurf gegen den auslösenden Angriff; bei Fehlschlag des Angriffs anschließend bis 2 m Bewegung",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Die Bewegung verhindert keine anderen Reaktionen und muss auf einer legalen Flugbahn enden.",
+            "id": "glutfalter-l10-a03-flimmerflug",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Flimmerflug",
+              "Kosten": "1 Reaktion; maximal 1× pro Runde",
+              "Typ": "defensive Reaktion",
+              "Attribut": "AU",
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst; anschließend bis 2 m",
+              "Schaden / Wirkung": "+2 auf den Ausweichwurf gegen den auslösenden Angriff; bei Fehlschlag des Angriffs anschließend bis 2 m Bewegung",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Die Bewegung verhindert keine anderen Reaktionen und muss auf einer legalen Flugbahn enden."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "glutfalter-l10-glutstreifer",
+          "name": "Glutstreifer",
+          "type": "Magischer Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah; der Glutfalter muss das Ziel während seines Fluges erreichen können",
+          "attack_roll": "`W20 + BW-Modifikator (+5) + BW-Bonus (+4)`",
+          "damage": "`7W6 + WA-Modifikator (+5) + WA-Bonus (+1)`",
+          "damage_type": "Feuer",
+          "defense": "Magieverteidigung",
+          "rule_effect": "Der Glutfalter kippt einen Flügel nach unten, schießt knapp am Ziel vorbei und streift es mit einer dichten Schicht stark erhitzter Flügelschuppen. Der Angriff verursacht ausschließlich den angegebenen Feuerschaden. Er gewährt keine kostenlose Zusatzbewegung und verschiebt das Ziel nicht.",
+          "stacking": "Mehrere Glutfalter können dasselbe Ziel unabhängig mit Glutstreifer angreifen; jeder Angriff wird separat abgehandelt.",
+          "extra_fields": {
+            "Kritische Treffer": "Da Glutstreifer einen Angriffswurf verwendet, gelten die angegebenen Kritwerte des Glutfalters."
+          },
+          "raw_fields": {
+            "Typ": "Magischer Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah; der Glutfalter muss das Ziel während seines Fluges erreichen können",
+            "Angriffswurf": "`W20 + BW-Modifikator (+5) + BW-Bonus (+4)`",
+            "Schaden": "`7W6 + WA-Modifikator (+5) + WA-Bonus (+1)`",
+            "Schadensart": "Feuer",
+            "Verteidigung": "Magieverteidigung",
+            "Regelwirkung": "Der Glutfalter kippt einen Flügel nach unten, schießt knapp am Ziel vorbei und streift es mit einer dichten Schicht stark erhitzter Flügelschuppen. Der Angriff verursacht ausschließlich den angegebenen Feuerschaden. Er gewährt keine kostenlose Zusatzbewegung und verschiebt das Ziel nicht.",
+            "Kritische Treffer": "Da Glutstreifer einen Angriffswurf verwendet, gelten die angegebenen Kritwerte des Glutfalters.",
+            "Stapelung": "Mehrere Glutfalter können dasselbe Ziel unabhängig mit Glutstreifer angreifen; jeder Angriff wird separat abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 393,
+            "line_end": 405
+          }
+        },
+        {
+          "id": "glutfalter-l10-glutstaubfaecher",
+          "name": "Glutstaubfächer",
+          "type": "Flächenangriff",
+          "cost": "1 Aktion",
+          "area": "3-m-Kegel vor dem Glutfalter",
+          "saving_throw": "Beweglichkeit gegen **SG 15**",
+          "damage": "`4W8 + 2` Feuerschaden bei misslungenem Rettungswurf; bei Erfolg wird der Schaden halbiert.",
+          "defense": "Magieverteidigung wird nach der elementaren Schadensanpassung normal angewendet.",
+          "rule_effect": "Der Glutfalter schlägt beide Flügel schlagartig nach vorn und stößt eine dichte Wolke glühender Schuppen aus. Jede Kreatur im Kegel führt ihren eigenen Rettungswurf aus.",
+          "stacking": "Mehrere Glutstaubfächer verursachen getrennten Schaden. Es entsteht kein zusätzlicher globaler Brennzustand und keine dauerhafte Schadenszone.",
+          "end_condition": "Nach der unmittelbaren Schadensauflösung endet die Wirkung vollständig.",
+          "extra_fields": {
+            "Kritische Treffer": "Glutstaubfächer verwendet keinen Angriffswurf und kann daher nicht kritisch treffen."
+          },
+          "raw_fields": {
+            "Typ": "Flächenangriff",
+            "Kosten": "1 Aktion",
+            "Fläche": "3-m-Kegel vor dem Glutfalter",
+            "Rettungswurf": "Beweglichkeit gegen **SG 15**",
+            "Schaden": "`4W8 + 2` Feuerschaden bei misslungenem Rettungswurf; bei Erfolg wird der Schaden halbiert.",
+            "Verteidigung": "Magieverteidigung wird nach der elementaren Schadensanpassung normal angewendet.",
+            "Regelwirkung": "Der Glutfalter schlägt beide Flügel schlagartig nach vorn und stößt eine dichte Wolke glühender Schuppen aus. Jede Kreatur im Kegel führt ihren eigenen Rettungswurf aus.",
+            "Kritische Treffer": "Glutstaubfächer verwendet keinen Angriffswurf und kann daher nicht kritisch treffen.",
+            "Stapelung": "Mehrere Glutstaubfächer verursachen getrennten Schaden. Es entsteht kein zusätzlicher globaler Brennzustand und keine dauerhafte Schadenszone.",
+            "Ende der Wirkung": "Nach der unmittelbaren Schadensauflösung endet die Wirkung vollständig."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 406,
+            "line_end": 418
+          }
+        },
+        {
+          "id": "glutfalter-l10-flimmerflug",
+          "name": "Flimmerflug",
+          "type": "Defensive Reaktion",
+          "cost": "1 Reaktion",
+          "usage_limit": "Maximal einmal pro Runde",
+          "trigger": "Der Glutfalter wird von einem Angriff als Ziel gewählt und kann den Angreifer oder den entstehenden Angriff wahrnehmen.",
+          "target": "Selbst",
+          "rule_effect": "Bevor der Ausweichwurf gegen den auslösenden Angriff abgeschlossen wird, erhält der Glutfalter **+2 auf genau diesen Ausweichwurf**. Verfehlt der Angriff anschließend, darf sich der Glutfalter unmittelbar bis zu **2 m fliegend** bewegen.",
+          "stacking": "Flimmerflug stapelt nicht mit sich selbst. Der Bonus gilt nur für den auslösenden Angriff.",
+          "end_condition": "Unmittelbar nach der Abwicklung des auslösenden Angriffs und gegebenenfalls der anschließenden 2-m-Bewegung.",
+          "extra_fields": {
+            "Bewegungsregel": "Diese Bewegung ist keine Teleportation. Sie muss auf einer legalen Flugbahn erfolgen, kann nicht durch feste Hindernisse führen und verhindert keine Reaktionen, die durch Bewegung normalerweise ausgelöst werden."
+          },
+          "raw_fields": {
+            "Typ": "Defensive Reaktion",
+            "Kosten": "1 Reaktion",
+            "Einsatzlimit": "Maximal einmal pro Runde",
+            "Auslöser": "Der Glutfalter wird von einem Angriff als Ziel gewählt und kann den Angreifer oder den entstehenden Angriff wahrnehmen.",
+            "Ziel": "Selbst",
+            "Regelwirkung": "Bevor der Ausweichwurf gegen den auslösenden Angriff abgeschlossen wird, erhält der Glutfalter **+2 auf genau diesen Ausweichwurf**. Verfehlt der Angriff anschließend, darf sich der Glutfalter unmittelbar bis zu **2 m fliegend** bewegen.",
+            "Bewegungsregel": "Diese Bewegung ist keine Teleportation. Sie muss auf einer legalen Flugbahn erfolgen, kann nicht durch feste Hindernisse führen und verhindert keine Reaktionen, die durch Bewegung normalerweise ausgelöst werden.",
+            "Stapelung": "Flimmerflug stapelt nicht mit sich selbst. Der Bonus gilt nur für den auslösenden Angriff.",
+            "Ende der Wirkung": "Unmittelbar nach der Abwicklung des auslösenden Angriffs und gegebenenfalls der anschließenden 2-m-Bewegung."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 419,
+            "line_end": 430
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "20 % Resistenz",
+            "type": "resistance",
+            "percent": 20
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "15 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 15
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**20 % Resistenz**",
+            "**15 % Verwundbarkeit**",
+            "–",
+            "**10 % Resistenz**",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 351,
+        "line_end": 440
+      }
+    },
+    {
+      "level": 15,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "315",
+          "physische_verteidigung": "12",
+          "magieverteidigung": "11",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Flug 12 m; Klettern 4 m; Land 4 m",
+          "glutstaubfaecher_sg": "15"
+        },
+        "raw_fields": {
+          "Maximale LP": "315",
+          "Physische Verteidigung": "12",
+          "Magieverteidigung": "11",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Flug 12 m; Klettern 4 m; Land 4 m",
+          "Glutstaubfächer-SG": "15"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+3) + WI-Bonus (+3)) × 10) + ((ST-Modifikator (+1) + ST-Bonus (+0)) × 5) + (15 × 10) = 315 LP",
+        "markdown": "`100 + ((WI-Modifikator (+3) + WI-Bonus (+3)) × 10) + ((ST-Modifikator (+1) + ST-Bonus (+0)) × 5) + (15 × 10) = 315 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Glutstreifer",
+            "cost": "1 Aktion",
+            "type": "magischer Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+4)",
+            "range_area": "Nah / im Flug",
+            "damage_effect": "7W8 + WA-Modifikator (+5) + WA-Bonus (+2)",
+            "damage_type": "Feuer",
+            "defense_save": "Magieverteidigung",
+            "avg_raw_damage": "38.5",
+            "avg_hit_damage": "30.8",
+            "avg_expected_effect": "21.18",
+            "ge_share": "0.53",
+            "notes": "Feuerangriff; Kritwerte sind im Durchschnitt eingerechnet.",
+            "avg_raw_damage_value": 38.5,
+            "avg_hit_damage_value": 30.8,
+            "ge_share_value": 0.53,
+            "id": "glutfalter-l15-a01-glutstreifer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Glutstreifer",
+              "Kosten": "1 Aktion",
+              "Typ": "magischer Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Nah / im Flug",
+              "Schaden / Wirkung": "7W8 + WA-Modifikator (+5) + WA-Bonus (+2)",
+              "Schadensart": "Feuer",
+              "Verteidigung / Rettung": "Magieverteidigung",
+              "Ø Rohschaden": "38.5",
+              "Ø Treffer-Endschaden": "30.8",
+              "Ø Erwartungswirkung": "21.18",
+              "GE-Anteil": "0.53",
+              "Zusatz": "Feuerangriff; Kritwerte sind im Durchschnitt eingerechnet."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Glutstaubfächer",
+            "cost": "1 Aktion",
+            "type": "Flächenangriff",
+            "attribute": null,
+            "attack_or_dc": "BW-Rettungswurf gegen SG 15",
+            "range_area": "3-m-Kegel",
+            "damage_effect": "5W8 + 4; bei erfolgreichem RW halber Schaden",
+            "damage_type": "Feuer",
+            "defense_save": "Magieverteidigung; BW-Rettung",
+            "avg_raw_damage": "26.5",
+            "avg_hit_damage": "18.5 bei misslungenem RW",
+            "avg_expected_effect": "13.41 pro Ziel",
+            "ge_share": "0.34 pro Ziel",
+            "notes": "Erwartungsrechnung mit 45 % Fehlschlagchance des Referenzprofils.",
+            "avg_raw_damage_value": 26.5,
+            "id": "glutfalter-l15-a02-glutstaubfaecher",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Glutstaubfächer",
+              "Kosten": "1 Aktion",
+              "Typ": "Flächenangriff",
+              "Attribut": null,
+              "Angriff / SG": "BW-Rettungswurf gegen SG 15",
+              "Reichweite / Fläche": "3-m-Kegel",
+              "Schaden / Wirkung": "5W8 + 4; bei erfolgreichem RW halber Schaden",
+              "Schadensart": "Feuer",
+              "Verteidigung / Rettung": "Magieverteidigung; BW-Rettung",
+              "Ø Rohschaden": "26.5",
+              "Ø Treffer-Endschaden": "18.5 bei misslungenem RW",
+              "Ø Erwartungswirkung": "13.41 pro Ziel",
+              "GE-Anteil": "0.34 pro Ziel",
+              "Zusatz": "Erwartungsrechnung mit 45 % Fehlschlagchance des Referenzprofils."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Flimmerflug",
+            "cost": "1 Reaktion; maximal 1× pro Runde",
+            "type": "defensive Reaktion",
+            "attribute": "AU",
+            "attack_or_dc": null,
+            "range_area": "Selbst; anschließend bis 2 m",
+            "damage_effect": "+2 auf den Ausweichwurf gegen den auslösenden Angriff; bei Fehlschlag des Angriffs anschließend bis 2 m Bewegung",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Die Bewegung verhindert keine anderen Reaktionen und muss auf einer legalen Flugbahn enden.",
+            "id": "glutfalter-l15-a03-flimmerflug",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Flimmerflug",
+              "Kosten": "1 Reaktion; maximal 1× pro Runde",
+              "Typ": "defensive Reaktion",
+              "Attribut": "AU",
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst; anschließend bis 2 m",
+              "Schaden / Wirkung": "+2 auf den Ausweichwurf gegen den auslösenden Angriff; bei Fehlschlag des Angriffs anschließend bis 2 m Bewegung",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Die Bewegung verhindert keine anderen Reaktionen und muss auf einer legalen Flugbahn enden."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "glutfalter-l15-glutstreifer",
+          "name": "Glutstreifer",
+          "type": "Magischer Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah; der Glutfalter muss das Ziel während seines Fluges erreichen können",
+          "attack_roll": "`W20 + BW-Modifikator (+6) + BW-Bonus (+4)`",
+          "damage": "`7W8 + WA-Modifikator (+5) + WA-Bonus (+2)`",
+          "damage_type": "Feuer",
+          "defense": "Magieverteidigung",
+          "rule_effect": "Der Glutfalter kippt einen Flügel nach unten, schießt knapp am Ziel vorbei und streift es mit einer dichten Schicht stark erhitzter Flügelschuppen. Der Angriff verursacht ausschließlich den angegebenen Feuerschaden. Er gewährt keine kostenlose Zusatzbewegung und verschiebt das Ziel nicht.",
+          "stacking": "Mehrere Glutfalter können dasselbe Ziel unabhängig mit Glutstreifer angreifen; jeder Angriff wird separat abgehandelt.",
+          "extra_fields": {
+            "Kritische Treffer": "Da Glutstreifer einen Angriffswurf verwendet, gelten die angegebenen Kritwerte des Glutfalters."
+          },
+          "raw_fields": {
+            "Typ": "Magischer Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah; der Glutfalter muss das Ziel während seines Fluges erreichen können",
+            "Angriffswurf": "`W20 + BW-Modifikator (+6) + BW-Bonus (+4)`",
+            "Schaden": "`7W8 + WA-Modifikator (+5) + WA-Bonus (+2)`",
+            "Schadensart": "Feuer",
+            "Verteidigung": "Magieverteidigung",
+            "Regelwirkung": "Der Glutfalter kippt einen Flügel nach unten, schießt knapp am Ziel vorbei und streift es mit einer dichten Schicht stark erhitzter Flügelschuppen. Der Angriff verursacht ausschließlich den angegebenen Feuerschaden. Er gewährt keine kostenlose Zusatzbewegung und verschiebt das Ziel nicht.",
+            "Kritische Treffer": "Da Glutstreifer einen Angriffswurf verwendet, gelten die angegebenen Kritwerte des Glutfalters.",
+            "Stapelung": "Mehrere Glutfalter können dasselbe Ziel unabhängig mit Glutstreifer angreifen; jeder Angriff wird separat abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 483,
+            "line_end": 495
+          }
+        },
+        {
+          "id": "glutfalter-l15-glutstaubfaecher",
+          "name": "Glutstaubfächer",
+          "type": "Flächenangriff",
+          "cost": "1 Aktion",
+          "area": "3-m-Kegel vor dem Glutfalter",
+          "saving_throw": "Beweglichkeit gegen **SG 15**",
+          "damage": "`5W8 + 4` Feuerschaden bei misslungenem Rettungswurf; bei Erfolg wird der Schaden halbiert.",
+          "defense": "Magieverteidigung wird nach der elementaren Schadensanpassung normal angewendet.",
+          "rule_effect": "Der Glutfalter schlägt beide Flügel schlagartig nach vorn und stößt eine dichte Wolke glühender Schuppen aus. Jede Kreatur im Kegel führt ihren eigenen Rettungswurf aus.",
+          "stacking": "Mehrere Glutstaubfächer verursachen getrennten Schaden. Es entsteht kein zusätzlicher globaler Brennzustand und keine dauerhafte Schadenszone.",
+          "end_condition": "Nach der unmittelbaren Schadensauflösung endet die Wirkung vollständig.",
+          "extra_fields": {
+            "Kritische Treffer": "Glutstaubfächer verwendet keinen Angriffswurf und kann daher nicht kritisch treffen."
+          },
+          "raw_fields": {
+            "Typ": "Flächenangriff",
+            "Kosten": "1 Aktion",
+            "Fläche": "3-m-Kegel vor dem Glutfalter",
+            "Rettungswurf": "Beweglichkeit gegen **SG 15**",
+            "Schaden": "`5W8 + 4` Feuerschaden bei misslungenem Rettungswurf; bei Erfolg wird der Schaden halbiert.",
+            "Verteidigung": "Magieverteidigung wird nach der elementaren Schadensanpassung normal angewendet.",
+            "Regelwirkung": "Der Glutfalter schlägt beide Flügel schlagartig nach vorn und stößt eine dichte Wolke glühender Schuppen aus. Jede Kreatur im Kegel führt ihren eigenen Rettungswurf aus.",
+            "Kritische Treffer": "Glutstaubfächer verwendet keinen Angriffswurf und kann daher nicht kritisch treffen.",
+            "Stapelung": "Mehrere Glutstaubfächer verursachen getrennten Schaden. Es entsteht kein zusätzlicher globaler Brennzustand und keine dauerhafte Schadenszone.",
+            "Ende der Wirkung": "Nach der unmittelbaren Schadensauflösung endet die Wirkung vollständig."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 496,
+            "line_end": 508
+          }
+        },
+        {
+          "id": "glutfalter-l15-flimmerflug",
+          "name": "Flimmerflug",
+          "type": "Defensive Reaktion",
+          "cost": "1 Reaktion",
+          "usage_limit": "Maximal einmal pro Runde",
+          "trigger": "Der Glutfalter wird von einem Angriff als Ziel gewählt und kann den Angreifer oder den entstehenden Angriff wahrnehmen.",
+          "target": "Selbst",
+          "rule_effect": "Bevor der Ausweichwurf gegen den auslösenden Angriff abgeschlossen wird, erhält der Glutfalter **+2 auf genau diesen Ausweichwurf**. Verfehlt der Angriff anschließend, darf sich der Glutfalter unmittelbar bis zu **2 m fliegend** bewegen.",
+          "stacking": "Flimmerflug stapelt nicht mit sich selbst. Der Bonus gilt nur für den auslösenden Angriff.",
+          "end_condition": "Unmittelbar nach der Abwicklung des auslösenden Angriffs und gegebenenfalls der anschließenden 2-m-Bewegung.",
+          "extra_fields": {
+            "Bewegungsregel": "Diese Bewegung ist keine Teleportation. Sie muss auf einer legalen Flugbahn erfolgen, kann nicht durch feste Hindernisse führen und verhindert keine Reaktionen, die durch Bewegung normalerweise ausgelöst werden."
+          },
+          "raw_fields": {
+            "Typ": "Defensive Reaktion",
+            "Kosten": "1 Reaktion",
+            "Einsatzlimit": "Maximal einmal pro Runde",
+            "Auslöser": "Der Glutfalter wird von einem Angriff als Ziel gewählt und kann den Angreifer oder den entstehenden Angriff wahrnehmen.",
+            "Ziel": "Selbst",
+            "Regelwirkung": "Bevor der Ausweichwurf gegen den auslösenden Angriff abgeschlossen wird, erhält der Glutfalter **+2 auf genau diesen Ausweichwurf**. Verfehlt der Angriff anschließend, darf sich der Glutfalter unmittelbar bis zu **2 m fliegend** bewegen.",
+            "Bewegungsregel": "Diese Bewegung ist keine Teleportation. Sie muss auf einer legalen Flugbahn erfolgen, kann nicht durch feste Hindernisse führen und verhindert keine Reaktionen, die durch Bewegung normalerweise ausgelöst werden.",
+            "Stapelung": "Flimmerflug stapelt nicht mit sich selbst. Der Bonus gilt nur für den auslösenden Angriff.",
+            "Ende der Wirkung": "Unmittelbar nach der Abwicklung des auslösenden Angriffs und gegebenenfalls der anschließenden 2-m-Bewegung."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 509,
+            "line_end": 520
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "20 % Resistenz",
+            "type": "resistance",
+            "percent": 20
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "15 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 15
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**20 % Resistenz**",
+            "**15 % Verwundbarkeit**",
+            "–",
+            "**10 % Resistenz**",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 441,
+        "line_end": 530
+      }
+    },
+    {
+      "level": 20,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+3"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "370",
+          "physische_verteidigung": "14",
+          "magieverteidigung": "13",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Flug 12 m; Klettern 4 m; Land 4 m",
+          "glutstaubfaecher_sg": "16"
+        },
+        "raw_fields": {
+          "Maximale LP": "370",
+          "Physische Verteidigung": "14",
+          "Magieverteidigung": "13",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Flug 12 m; Klettern 4 m; Land 4 m",
+          "Glutstaubfächer-SG": "16"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+3) + WI-Bonus (+3)) × 10) + ((ST-Modifikator (+1) + ST-Bonus (+1)) × 5) + (20 × 10) = 370 LP",
+        "markdown": "`100 + ((WI-Modifikator (+3) + WI-Bonus (+3)) × 10) + ((ST-Modifikator (+1) + ST-Bonus (+1)) × 5) + (20 × 10) = 370 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Glutstreifer",
+            "cost": "1 Aktion",
+            "type": "magischer Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range_area": "Nah / im Flug",
+            "damage_effect": "8W8 + WA-Modifikator (+6) + WA-Bonus (+2)",
+            "damage_type": "Feuer",
+            "defense_save": "Magieverteidigung",
+            "avg_raw_damage": "44",
+            "avg_hit_damage": "34.34",
+            "avg_expected_effect": "23.61",
+            "ge_share": "0.51",
+            "notes": "Feuerangriff; Kritwerte sind im Durchschnitt eingerechnet.",
+            "avg_raw_damage_value": 44.0,
+            "avg_hit_damage_value": 34.34,
+            "ge_share_value": 0.51,
+            "id": "glutfalter-l20-a01-glutstreifer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Glutstreifer",
+              "Kosten": "1 Aktion",
+              "Typ": "magischer Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah / im Flug",
+              "Schaden / Wirkung": "8W8 + WA-Modifikator (+6) + WA-Bonus (+2)",
+              "Schadensart": "Feuer",
+              "Verteidigung / Rettung": "Magieverteidigung",
+              "Ø Rohschaden": "44",
+              "Ø Treffer-Endschaden": "34.34",
+              "Ø Erwartungswirkung": "23.61",
+              "GE-Anteil": "0.51",
+              "Zusatz": "Feuerangriff; Kritwerte sind im Durchschnitt eingerechnet."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Glutstaubfächer",
+            "cost": "1 Aktion",
+            "type": "Flächenangriff",
+            "attribute": null,
+            "attack_or_dc": "BW-Rettungswurf gegen SG 16",
+            "range_area": "3-m-Kegel",
+            "damage_effect": "6W8 + 3; bei erfolgreichem RW halber Schaden",
+            "damage_type": "Feuer",
+            "defense_save": "Magieverteidigung; BW-Rettung",
+            "avg_raw_damage": "30",
+            "avg_hit_damage": "20 bei misslungenem RW",
+            "avg_expected_effect": "15 pro Ziel",
+            "ge_share": "0.32 pro Ziel",
+            "notes": "Erwartungsrechnung mit 50 % Fehlschlagchance des Referenzprofils.",
+            "avg_raw_damage_value": 30.0,
+            "id": "glutfalter-l20-a02-glutstaubfaecher",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Glutstaubfächer",
+              "Kosten": "1 Aktion",
+              "Typ": "Flächenangriff",
+              "Attribut": null,
+              "Angriff / SG": "BW-Rettungswurf gegen SG 16",
+              "Reichweite / Fläche": "3-m-Kegel",
+              "Schaden / Wirkung": "6W8 + 3; bei erfolgreichem RW halber Schaden",
+              "Schadensart": "Feuer",
+              "Verteidigung / Rettung": "Magieverteidigung; BW-Rettung",
+              "Ø Rohschaden": "30",
+              "Ø Treffer-Endschaden": "20 bei misslungenem RW",
+              "Ø Erwartungswirkung": "15 pro Ziel",
+              "GE-Anteil": "0.32 pro Ziel",
+              "Zusatz": "Erwartungsrechnung mit 50 % Fehlschlagchance des Referenzprofils."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Flimmerflug",
+            "cost": "1 Reaktion; maximal 1× pro Runde",
+            "type": "defensive Reaktion",
+            "attribute": "AU",
+            "attack_or_dc": null,
+            "range_area": "Selbst; anschließend bis 2 m",
+            "damage_effect": "+2 auf den Ausweichwurf gegen den auslösenden Angriff; bei Fehlschlag des Angriffs anschließend bis 2 m Bewegung",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Die Bewegung verhindert keine anderen Reaktionen und muss auf einer legalen Flugbahn enden.",
+            "id": "glutfalter-l20-a03-flimmerflug",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Flimmerflug",
+              "Kosten": "1 Reaktion; maximal 1× pro Runde",
+              "Typ": "defensive Reaktion",
+              "Attribut": "AU",
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst; anschließend bis 2 m",
+              "Schaden / Wirkung": "+2 auf den Ausweichwurf gegen den auslösenden Angriff; bei Fehlschlag des Angriffs anschließend bis 2 m Bewegung",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Die Bewegung verhindert keine anderen Reaktionen und muss auf einer legalen Flugbahn enden."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "glutfalter-l20-glutstreifer",
+          "name": "Glutstreifer",
+          "type": "Magischer Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah; der Glutfalter muss das Ziel während seines Fluges erreichen können",
+          "attack_roll": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5)`",
+          "damage": "`8W8 + WA-Modifikator (+6) + WA-Bonus (+2)`",
+          "damage_type": "Feuer",
+          "defense": "Magieverteidigung",
+          "rule_effect": "Der Glutfalter kippt einen Flügel nach unten, schießt knapp am Ziel vorbei und streift es mit einer dichten Schicht stark erhitzter Flügelschuppen. Der Angriff verursacht ausschließlich den angegebenen Feuerschaden. Er gewährt keine kostenlose Zusatzbewegung und verschiebt das Ziel nicht.",
+          "stacking": "Mehrere Glutfalter können dasselbe Ziel unabhängig mit Glutstreifer angreifen; jeder Angriff wird separat abgehandelt.",
+          "extra_fields": {
+            "Kritische Treffer": "Da Glutstreifer einen Angriffswurf verwendet, gelten die angegebenen Kritwerte des Glutfalters."
+          },
+          "raw_fields": {
+            "Typ": "Magischer Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah; der Glutfalter muss das Ziel während seines Fluges erreichen können",
+            "Angriffswurf": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5)`",
+            "Schaden": "`8W8 + WA-Modifikator (+6) + WA-Bonus (+2)`",
+            "Schadensart": "Feuer",
+            "Verteidigung": "Magieverteidigung",
+            "Regelwirkung": "Der Glutfalter kippt einen Flügel nach unten, schießt knapp am Ziel vorbei und streift es mit einer dichten Schicht stark erhitzter Flügelschuppen. Der Angriff verursacht ausschließlich den angegebenen Feuerschaden. Er gewährt keine kostenlose Zusatzbewegung und verschiebt das Ziel nicht.",
+            "Kritische Treffer": "Da Glutstreifer einen Angriffswurf verwendet, gelten die angegebenen Kritwerte des Glutfalters.",
+            "Stapelung": "Mehrere Glutfalter können dasselbe Ziel unabhängig mit Glutstreifer angreifen; jeder Angriff wird separat abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 573,
+            "line_end": 585
+          }
+        },
+        {
+          "id": "glutfalter-l20-glutstaubfaecher",
+          "name": "Glutstaubfächer",
+          "type": "Flächenangriff",
+          "cost": "1 Aktion",
+          "area": "3-m-Kegel vor dem Glutfalter",
+          "saving_throw": "Beweglichkeit gegen **SG 16**",
+          "damage": "`6W8 + 3` Feuerschaden bei misslungenem Rettungswurf; bei Erfolg wird der Schaden halbiert.",
+          "defense": "Magieverteidigung wird nach der elementaren Schadensanpassung normal angewendet.",
+          "rule_effect": "Der Glutfalter schlägt beide Flügel schlagartig nach vorn und stößt eine dichte Wolke glühender Schuppen aus. Jede Kreatur im Kegel führt ihren eigenen Rettungswurf aus.",
+          "stacking": "Mehrere Glutstaubfächer verursachen getrennten Schaden. Es entsteht kein zusätzlicher globaler Brennzustand und keine dauerhafte Schadenszone.",
+          "end_condition": "Nach der unmittelbaren Schadensauflösung endet die Wirkung vollständig.",
+          "extra_fields": {
+            "Kritische Treffer": "Glutstaubfächer verwendet keinen Angriffswurf und kann daher nicht kritisch treffen."
+          },
+          "raw_fields": {
+            "Typ": "Flächenangriff",
+            "Kosten": "1 Aktion",
+            "Fläche": "3-m-Kegel vor dem Glutfalter",
+            "Rettungswurf": "Beweglichkeit gegen **SG 16**",
+            "Schaden": "`6W8 + 3` Feuerschaden bei misslungenem Rettungswurf; bei Erfolg wird der Schaden halbiert.",
+            "Verteidigung": "Magieverteidigung wird nach der elementaren Schadensanpassung normal angewendet.",
+            "Regelwirkung": "Der Glutfalter schlägt beide Flügel schlagartig nach vorn und stößt eine dichte Wolke glühender Schuppen aus. Jede Kreatur im Kegel führt ihren eigenen Rettungswurf aus.",
+            "Kritische Treffer": "Glutstaubfächer verwendet keinen Angriffswurf und kann daher nicht kritisch treffen.",
+            "Stapelung": "Mehrere Glutstaubfächer verursachen getrennten Schaden. Es entsteht kein zusätzlicher globaler Brennzustand und keine dauerhafte Schadenszone.",
+            "Ende der Wirkung": "Nach der unmittelbaren Schadensauflösung endet die Wirkung vollständig."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 586,
+            "line_end": 598
+          }
+        },
+        {
+          "id": "glutfalter-l20-flimmerflug",
+          "name": "Flimmerflug",
+          "type": "Defensive Reaktion",
+          "cost": "1 Reaktion",
+          "usage_limit": "Maximal einmal pro Runde",
+          "trigger": "Der Glutfalter wird von einem Angriff als Ziel gewählt und kann den Angreifer oder den entstehenden Angriff wahrnehmen.",
+          "target": "Selbst",
+          "rule_effect": "Bevor der Ausweichwurf gegen den auslösenden Angriff abgeschlossen wird, erhält der Glutfalter **+2 auf genau diesen Ausweichwurf**. Verfehlt der Angriff anschließend, darf sich der Glutfalter unmittelbar bis zu **2 m fliegend** bewegen.",
+          "stacking": "Flimmerflug stapelt nicht mit sich selbst. Der Bonus gilt nur für den auslösenden Angriff.",
+          "end_condition": "Unmittelbar nach der Abwicklung des auslösenden Angriffs und gegebenenfalls der anschließenden 2-m-Bewegung.",
+          "extra_fields": {
+            "Bewegungsregel": "Diese Bewegung ist keine Teleportation. Sie muss auf einer legalen Flugbahn erfolgen, kann nicht durch feste Hindernisse führen und verhindert keine Reaktionen, die durch Bewegung normalerweise ausgelöst werden."
+          },
+          "raw_fields": {
+            "Typ": "Defensive Reaktion",
+            "Kosten": "1 Reaktion",
+            "Einsatzlimit": "Maximal einmal pro Runde",
+            "Auslöser": "Der Glutfalter wird von einem Angriff als Ziel gewählt und kann den Angreifer oder den entstehenden Angriff wahrnehmen.",
+            "Ziel": "Selbst",
+            "Regelwirkung": "Bevor der Ausweichwurf gegen den auslösenden Angriff abgeschlossen wird, erhält der Glutfalter **+2 auf genau diesen Ausweichwurf**. Verfehlt der Angriff anschließend, darf sich der Glutfalter unmittelbar bis zu **2 m fliegend** bewegen.",
+            "Bewegungsregel": "Diese Bewegung ist keine Teleportation. Sie muss auf einer legalen Flugbahn erfolgen, kann nicht durch feste Hindernisse führen und verhindert keine Reaktionen, die durch Bewegung normalerweise ausgelöst werden.",
+            "Stapelung": "Flimmerflug stapelt nicht mit sich selbst. Der Bonus gilt nur für den auslösenden Angriff.",
+            "Ende der Wirkung": "Unmittelbar nach der Abwicklung des auslösenden Angriffs und gegebenenfalls der anschließenden 2-m-Bewegung."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 599,
+            "line_end": 610
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "20 % Resistenz",
+            "type": "resistance",
+            "percent": 20
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "15 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 15
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**20 % Resistenz**",
+            "**15 % Verwundbarkeit**",
+            "–",
+            "**10 % Resistenz**",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 531,
+        "line_end": 620
+      }
+    },
+    {
+      "level": 25,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "435",
+          "physische_verteidigung": "16",
+          "magieverteidigung": "15",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Flug 12 m; Klettern 4 m; Land 4 m",
+          "glutstaubfaecher_sg": "16"
+        },
+        "raw_fields": {
+          "Maximale LP": "435",
+          "Physische Verteidigung": "16",
+          "Magieverteidigung": "15",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Flug 12 m; Klettern 4 m; Land 4 m",
+          "Glutstaubfächer-SG": "16"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+4) + WI-Bonus (+3)) × 10) + ((ST-Modifikator (+2) + ST-Bonus (+1)) × 5) + (25 × 10) = 435 LP",
+        "markdown": "`100 + ((WI-Modifikator (+4) + WI-Bonus (+3)) × 10) + ((ST-Modifikator (+2) + ST-Bonus (+1)) × 5) + (25 × 10) = 435 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Glutstreifer",
+            "cost": "1 Aktion",
+            "type": "magischer Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range_area": "Nah / im Flug",
+            "damage_effect": "12W6 + WA-Modifikator (+6) + WA-Bonus (+2)",
+            "damage_type": "Feuer",
+            "defense_save": "Magieverteidigung",
+            "avg_raw_damage": "50",
+            "avg_hit_damage": "38.38",
+            "avg_expected_effect": "26.39",
+            "ge_share": "0.50",
+            "notes": "Feuerangriff; Kritwerte sind im Durchschnitt eingerechnet.",
+            "avg_raw_damage_value": 50.0,
+            "avg_hit_damage_value": 38.38,
+            "ge_share_value": 0.5,
+            "id": "glutfalter-l25-a01-glutstreifer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Glutstreifer",
+              "Kosten": "1 Aktion",
+              "Typ": "magischer Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah / im Flug",
+              "Schaden / Wirkung": "12W6 + WA-Modifikator (+6) + WA-Bonus (+2)",
+              "Schadensart": "Feuer",
+              "Verteidigung / Rettung": "Magieverteidigung",
+              "Ø Rohschaden": "50",
+              "Ø Treffer-Endschaden": "38.38",
+              "Ø Erwartungswirkung": "26.39",
+              "GE-Anteil": "0.50",
+              "Zusatz": "Feuerangriff; Kritwerte sind im Durchschnitt eingerechnet."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Glutstaubfächer",
+            "cost": "1 Aktion",
+            "type": "Flächenangriff",
+            "attribute": null,
+            "attack_or_dc": "BW-Rettungswurf gegen SG 16",
+            "range_area": "3-m-Kegel",
+            "damage_effect": "7W8 + 4; bei erfolgreichem RW halber Schaden",
+            "damage_type": "Feuer",
+            "defense_save": "Magieverteidigung; BW-Rettung",
+            "avg_raw_damage": "35.5",
+            "avg_hit_damage": "23.5 bei misslungenem RW",
+            "avg_expected_effect": "17.04 pro Ziel",
+            "ge_share": "0.32 pro Ziel",
+            "notes": "Erwartungsrechnung mit 45 % Fehlschlagchance des Referenzprofils.",
+            "avg_raw_damage_value": 35.5,
+            "id": "glutfalter-l25-a02-glutstaubfaecher",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Glutstaubfächer",
+              "Kosten": "1 Aktion",
+              "Typ": "Flächenangriff",
+              "Attribut": null,
+              "Angriff / SG": "BW-Rettungswurf gegen SG 16",
+              "Reichweite / Fläche": "3-m-Kegel",
+              "Schaden / Wirkung": "7W8 + 4; bei erfolgreichem RW halber Schaden",
+              "Schadensart": "Feuer",
+              "Verteidigung / Rettung": "Magieverteidigung; BW-Rettung",
+              "Ø Rohschaden": "35.5",
+              "Ø Treffer-Endschaden": "23.5 bei misslungenem RW",
+              "Ø Erwartungswirkung": "17.04 pro Ziel",
+              "GE-Anteil": "0.32 pro Ziel",
+              "Zusatz": "Erwartungsrechnung mit 45 % Fehlschlagchance des Referenzprofils."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Flimmerflug",
+            "cost": "1 Reaktion; maximal 1× pro Runde",
+            "type": "defensive Reaktion",
+            "attribute": "AU",
+            "attack_or_dc": null,
+            "range_area": "Selbst; anschließend bis 2 m",
+            "damage_effect": "+2 auf den Ausweichwurf gegen den auslösenden Angriff; bei Fehlschlag des Angriffs anschließend bis 2 m Bewegung",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Die Bewegung verhindert keine anderen Reaktionen und muss auf einer legalen Flugbahn enden.",
+            "id": "glutfalter-l25-a03-flimmerflug",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Flimmerflug",
+              "Kosten": "1 Reaktion; maximal 1× pro Runde",
+              "Typ": "defensive Reaktion",
+              "Attribut": "AU",
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst; anschließend bis 2 m",
+              "Schaden / Wirkung": "+2 auf den Ausweichwurf gegen den auslösenden Angriff; bei Fehlschlag des Angriffs anschließend bis 2 m Bewegung",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Die Bewegung verhindert keine anderen Reaktionen und muss auf einer legalen Flugbahn enden."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "glutfalter-l25-glutstreifer",
+          "name": "Glutstreifer",
+          "type": "Magischer Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah; der Glutfalter muss das Ziel während seines Fluges erreichen können",
+          "attack_roll": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5)`",
+          "damage": "`12W6 + WA-Modifikator (+6) + WA-Bonus (+2)`",
+          "damage_type": "Feuer",
+          "defense": "Magieverteidigung",
+          "rule_effect": "Der Glutfalter kippt einen Flügel nach unten, schießt knapp am Ziel vorbei und streift es mit einer dichten Schicht stark erhitzter Flügelschuppen. Der Angriff verursacht ausschließlich den angegebenen Feuerschaden. Er gewährt keine kostenlose Zusatzbewegung und verschiebt das Ziel nicht.",
+          "stacking": "Mehrere Glutfalter können dasselbe Ziel unabhängig mit Glutstreifer angreifen; jeder Angriff wird separat abgehandelt.",
+          "extra_fields": {
+            "Kritische Treffer": "Da Glutstreifer einen Angriffswurf verwendet, gelten die angegebenen Kritwerte des Glutfalters."
+          },
+          "raw_fields": {
+            "Typ": "Magischer Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah; der Glutfalter muss das Ziel während seines Fluges erreichen können",
+            "Angriffswurf": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5)`",
+            "Schaden": "`12W6 + WA-Modifikator (+6) + WA-Bonus (+2)`",
+            "Schadensart": "Feuer",
+            "Verteidigung": "Magieverteidigung",
+            "Regelwirkung": "Der Glutfalter kippt einen Flügel nach unten, schießt knapp am Ziel vorbei und streift es mit einer dichten Schicht stark erhitzter Flügelschuppen. Der Angriff verursacht ausschließlich den angegebenen Feuerschaden. Er gewährt keine kostenlose Zusatzbewegung und verschiebt das Ziel nicht.",
+            "Kritische Treffer": "Da Glutstreifer einen Angriffswurf verwendet, gelten die angegebenen Kritwerte des Glutfalters.",
+            "Stapelung": "Mehrere Glutfalter können dasselbe Ziel unabhängig mit Glutstreifer angreifen; jeder Angriff wird separat abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 663,
+            "line_end": 675
+          }
+        },
+        {
+          "id": "glutfalter-l25-glutstaubfaecher",
+          "name": "Glutstaubfächer",
+          "type": "Flächenangriff",
+          "cost": "1 Aktion",
+          "area": "3-m-Kegel vor dem Glutfalter",
+          "saving_throw": "Beweglichkeit gegen **SG 16**",
+          "damage": "`7W8 + 4` Feuerschaden bei misslungenem Rettungswurf; bei Erfolg wird der Schaden halbiert.",
+          "defense": "Magieverteidigung wird nach der elementaren Schadensanpassung normal angewendet.",
+          "rule_effect": "Der Glutfalter schlägt beide Flügel schlagartig nach vorn und stößt eine dichte Wolke glühender Schuppen aus. Jede Kreatur im Kegel führt ihren eigenen Rettungswurf aus.",
+          "stacking": "Mehrere Glutstaubfächer verursachen getrennten Schaden. Es entsteht kein zusätzlicher globaler Brennzustand und keine dauerhafte Schadenszone.",
+          "end_condition": "Nach der unmittelbaren Schadensauflösung endet die Wirkung vollständig.",
+          "extra_fields": {
+            "Kritische Treffer": "Glutstaubfächer verwendet keinen Angriffswurf und kann daher nicht kritisch treffen."
+          },
+          "raw_fields": {
+            "Typ": "Flächenangriff",
+            "Kosten": "1 Aktion",
+            "Fläche": "3-m-Kegel vor dem Glutfalter",
+            "Rettungswurf": "Beweglichkeit gegen **SG 16**",
+            "Schaden": "`7W8 + 4` Feuerschaden bei misslungenem Rettungswurf; bei Erfolg wird der Schaden halbiert.",
+            "Verteidigung": "Magieverteidigung wird nach der elementaren Schadensanpassung normal angewendet.",
+            "Regelwirkung": "Der Glutfalter schlägt beide Flügel schlagartig nach vorn und stößt eine dichte Wolke glühender Schuppen aus. Jede Kreatur im Kegel führt ihren eigenen Rettungswurf aus.",
+            "Kritische Treffer": "Glutstaubfächer verwendet keinen Angriffswurf und kann daher nicht kritisch treffen.",
+            "Stapelung": "Mehrere Glutstaubfächer verursachen getrennten Schaden. Es entsteht kein zusätzlicher globaler Brennzustand und keine dauerhafte Schadenszone.",
+            "Ende der Wirkung": "Nach der unmittelbaren Schadensauflösung endet die Wirkung vollständig."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 676,
+            "line_end": 688
+          }
+        },
+        {
+          "id": "glutfalter-l25-flimmerflug",
+          "name": "Flimmerflug",
+          "type": "Defensive Reaktion",
+          "cost": "1 Reaktion",
+          "usage_limit": "Maximal einmal pro Runde",
+          "trigger": "Der Glutfalter wird von einem Angriff als Ziel gewählt und kann den Angreifer oder den entstehenden Angriff wahrnehmen.",
+          "target": "Selbst",
+          "rule_effect": "Bevor der Ausweichwurf gegen den auslösenden Angriff abgeschlossen wird, erhält der Glutfalter **+2 auf genau diesen Ausweichwurf**. Verfehlt der Angriff anschließend, darf sich der Glutfalter unmittelbar bis zu **2 m fliegend** bewegen.",
+          "stacking": "Flimmerflug stapelt nicht mit sich selbst. Der Bonus gilt nur für den auslösenden Angriff.",
+          "end_condition": "Unmittelbar nach der Abwicklung des auslösenden Angriffs und gegebenenfalls der anschließenden 2-m-Bewegung.",
+          "extra_fields": {
+            "Bewegungsregel": "Diese Bewegung ist keine Teleportation. Sie muss auf einer legalen Flugbahn erfolgen, kann nicht durch feste Hindernisse führen und verhindert keine Reaktionen, die durch Bewegung normalerweise ausgelöst werden."
+          },
+          "raw_fields": {
+            "Typ": "Defensive Reaktion",
+            "Kosten": "1 Reaktion",
+            "Einsatzlimit": "Maximal einmal pro Runde",
+            "Auslöser": "Der Glutfalter wird von einem Angriff als Ziel gewählt und kann den Angreifer oder den entstehenden Angriff wahrnehmen.",
+            "Ziel": "Selbst",
+            "Regelwirkung": "Bevor der Ausweichwurf gegen den auslösenden Angriff abgeschlossen wird, erhält der Glutfalter **+2 auf genau diesen Ausweichwurf**. Verfehlt der Angriff anschließend, darf sich der Glutfalter unmittelbar bis zu **2 m fliegend** bewegen.",
+            "Bewegungsregel": "Diese Bewegung ist keine Teleportation. Sie muss auf einer legalen Flugbahn erfolgen, kann nicht durch feste Hindernisse führen und verhindert keine Reaktionen, die durch Bewegung normalerweise ausgelöst werden.",
+            "Stapelung": "Flimmerflug stapelt nicht mit sich selbst. Der Bonus gilt nur für den auslösenden Angriff.",
+            "Ende der Wirkung": "Unmittelbar nach der Abwicklung des auslösenden Angriffs und gegebenenfalls der anschließenden 2-m-Bewegung."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 689,
+            "line_end": 700
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "20 % Resistenz",
+            "type": "resistance",
+            "percent": 20
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "15 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 15
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**20 % Resistenz**",
+            "**15 % Verwundbarkeit**",
+            "–",
+            "**10 % Resistenz**",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 621,
+        "line_end": 710
+      }
+    },
+    {
+      "level": 30,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "495",
+          "physische_verteidigung": "18",
+          "magieverteidigung": "17",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Flug 12 m; Klettern 4 m; Land 4 m",
+          "glutstaubfaecher_sg": "17"
+        },
+        "raw_fields": {
+          "Maximale LP": "495",
+          "Physische Verteidigung": "18",
+          "Magieverteidigung": "17",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Flug 12 m; Klettern 4 m; Land 4 m",
+          "Glutstaubfächer-SG": "17"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+4) + WI-Bonus (+4)) × 10) + ((ST-Modifikator (+2) + ST-Bonus (+1)) × 5) + (30 × 10) = 495 LP",
+        "markdown": "`100 + ((WI-Modifikator (+4) + WI-Bonus (+4)) × 10) + ((ST-Modifikator (+2) + ST-Bonus (+1)) × 5) + (30 × 10) = 495 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Glutstreifer",
+            "cost": "1 Aktion",
+            "type": "magischer Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+            "range_area": "Nah / im Flug",
+            "damage_effect": "10W8 + WA-Modifikator (+7) + WA-Bonus (+3)",
+            "damage_type": "Feuer",
+            "defense_save": "Magieverteidigung",
+            "avg_raw_damage": "55",
+            "avg_hit_damage": "41.41",
+            "avg_expected_effect": "28.47",
+            "ge_share": "0.48",
+            "notes": "Feuerangriff; Kritwerte sind im Durchschnitt eingerechnet.",
+            "avg_raw_damage_value": 55.0,
+            "avg_hit_damage_value": 41.41,
+            "ge_share_value": 0.48,
+            "id": "glutfalter-l30-a01-glutstreifer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Glutstreifer",
+              "Kosten": "1 Aktion",
+              "Typ": "magischer Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah / im Flug",
+              "Schaden / Wirkung": "10W8 + WA-Modifikator (+7) + WA-Bonus (+3)",
+              "Schadensart": "Feuer",
+              "Verteidigung / Rettung": "Magieverteidigung",
+              "Ø Rohschaden": "55",
+              "Ø Treffer-Endschaden": "41.41",
+              "Ø Erwartungswirkung": "28.47",
+              "GE-Anteil": "0.48",
+              "Zusatz": "Feuerangriff; Kritwerte sind im Durchschnitt eingerechnet."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Glutstaubfächer",
+            "cost": "1 Aktion",
+            "type": "Flächenangriff",
+            "attribute": null,
+            "attack_or_dc": "BW-Rettungswurf gegen SG 17",
+            "range_area": "3-m-Kegel",
+            "damage_effect": "8W8 + 4; bei erfolgreichem RW halber Schaden",
+            "damage_type": "Feuer",
+            "defense_save": "Magieverteidigung; BW-Rettung",
+            "avg_raw_damage": "40",
+            "avg_hit_damage": "26 bei misslungenem RW",
+            "avg_expected_effect": "19.5 pro Ziel",
+            "ge_share": "0.33 pro Ziel",
+            "notes": "Erwartungsrechnung mit 50 % Fehlschlagchance des Referenzprofils.",
+            "avg_raw_damage_value": 40.0,
+            "id": "glutfalter-l30-a02-glutstaubfaecher",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Glutstaubfächer",
+              "Kosten": "1 Aktion",
+              "Typ": "Flächenangriff",
+              "Attribut": null,
+              "Angriff / SG": "BW-Rettungswurf gegen SG 17",
+              "Reichweite / Fläche": "3-m-Kegel",
+              "Schaden / Wirkung": "8W8 + 4; bei erfolgreichem RW halber Schaden",
+              "Schadensart": "Feuer",
+              "Verteidigung / Rettung": "Magieverteidigung; BW-Rettung",
+              "Ø Rohschaden": "40",
+              "Ø Treffer-Endschaden": "26 bei misslungenem RW",
+              "Ø Erwartungswirkung": "19.5 pro Ziel",
+              "GE-Anteil": "0.33 pro Ziel",
+              "Zusatz": "Erwartungsrechnung mit 50 % Fehlschlagchance des Referenzprofils."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Flimmerflug",
+            "cost": "1 Reaktion; maximal 1× pro Runde",
+            "type": "defensive Reaktion",
+            "attribute": "AU",
+            "attack_or_dc": null,
+            "range_area": "Selbst; anschließend bis 2 m",
+            "damage_effect": "+2 auf den Ausweichwurf gegen den auslösenden Angriff; bei Fehlschlag des Angriffs anschließend bis 2 m Bewegung",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Die Bewegung verhindert keine anderen Reaktionen und muss auf einer legalen Flugbahn enden.",
+            "id": "glutfalter-l30-a03-flimmerflug",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Flimmerflug",
+              "Kosten": "1 Reaktion; maximal 1× pro Runde",
+              "Typ": "defensive Reaktion",
+              "Attribut": "AU",
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst; anschließend bis 2 m",
+              "Schaden / Wirkung": "+2 auf den Ausweichwurf gegen den auslösenden Angriff; bei Fehlschlag des Angriffs anschließend bis 2 m Bewegung",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Die Bewegung verhindert keine anderen Reaktionen und muss auf einer legalen Flugbahn enden."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "glutfalter-l30-glutstreifer",
+          "name": "Glutstreifer",
+          "type": "Magischer Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah; der Glutfalter muss das Ziel während seines Fluges erreichen können",
+          "attack_roll": "`W20 + BW-Modifikator (+7) + BW-Bonus (+5)`",
+          "damage": "`10W8 + WA-Modifikator (+7) + WA-Bonus (+3)`",
+          "damage_type": "Feuer",
+          "defense": "Magieverteidigung",
+          "rule_effect": "Der Glutfalter kippt einen Flügel nach unten, schießt knapp am Ziel vorbei und streift es mit einer dichten Schicht stark erhitzter Flügelschuppen. Der Angriff verursacht ausschließlich den angegebenen Feuerschaden. Er gewährt keine kostenlose Zusatzbewegung und verschiebt das Ziel nicht.",
+          "stacking": "Mehrere Glutfalter können dasselbe Ziel unabhängig mit Glutstreifer angreifen; jeder Angriff wird separat abgehandelt.",
+          "extra_fields": {
+            "Kritische Treffer": "Da Glutstreifer einen Angriffswurf verwendet, gelten die angegebenen Kritwerte des Glutfalters."
+          },
+          "raw_fields": {
+            "Typ": "Magischer Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah; der Glutfalter muss das Ziel während seines Fluges erreichen können",
+            "Angriffswurf": "`W20 + BW-Modifikator (+7) + BW-Bonus (+5)`",
+            "Schaden": "`10W8 + WA-Modifikator (+7) + WA-Bonus (+3)`",
+            "Schadensart": "Feuer",
+            "Verteidigung": "Magieverteidigung",
+            "Regelwirkung": "Der Glutfalter kippt einen Flügel nach unten, schießt knapp am Ziel vorbei und streift es mit einer dichten Schicht stark erhitzter Flügelschuppen. Der Angriff verursacht ausschließlich den angegebenen Feuerschaden. Er gewährt keine kostenlose Zusatzbewegung und verschiebt das Ziel nicht.",
+            "Kritische Treffer": "Da Glutstreifer einen Angriffswurf verwendet, gelten die angegebenen Kritwerte des Glutfalters.",
+            "Stapelung": "Mehrere Glutfalter können dasselbe Ziel unabhängig mit Glutstreifer angreifen; jeder Angriff wird separat abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 753,
+            "line_end": 765
+          }
+        },
+        {
+          "id": "glutfalter-l30-glutstaubfaecher",
+          "name": "Glutstaubfächer",
+          "type": "Flächenangriff",
+          "cost": "1 Aktion",
+          "area": "3-m-Kegel vor dem Glutfalter",
+          "saving_throw": "Beweglichkeit gegen **SG 17**",
+          "damage": "`8W8 + 4` Feuerschaden bei misslungenem Rettungswurf; bei Erfolg wird der Schaden halbiert.",
+          "defense": "Magieverteidigung wird nach der elementaren Schadensanpassung normal angewendet.",
+          "rule_effect": "Der Glutfalter schlägt beide Flügel schlagartig nach vorn und stößt eine dichte Wolke glühender Schuppen aus. Jede Kreatur im Kegel führt ihren eigenen Rettungswurf aus.",
+          "stacking": "Mehrere Glutstaubfächer verursachen getrennten Schaden. Es entsteht kein zusätzlicher globaler Brennzustand und keine dauerhafte Schadenszone.",
+          "end_condition": "Nach der unmittelbaren Schadensauflösung endet die Wirkung vollständig.",
+          "extra_fields": {
+            "Kritische Treffer": "Glutstaubfächer verwendet keinen Angriffswurf und kann daher nicht kritisch treffen."
+          },
+          "raw_fields": {
+            "Typ": "Flächenangriff",
+            "Kosten": "1 Aktion",
+            "Fläche": "3-m-Kegel vor dem Glutfalter",
+            "Rettungswurf": "Beweglichkeit gegen **SG 17**",
+            "Schaden": "`8W8 + 4` Feuerschaden bei misslungenem Rettungswurf; bei Erfolg wird der Schaden halbiert.",
+            "Verteidigung": "Magieverteidigung wird nach der elementaren Schadensanpassung normal angewendet.",
+            "Regelwirkung": "Der Glutfalter schlägt beide Flügel schlagartig nach vorn und stößt eine dichte Wolke glühender Schuppen aus. Jede Kreatur im Kegel führt ihren eigenen Rettungswurf aus.",
+            "Kritische Treffer": "Glutstaubfächer verwendet keinen Angriffswurf und kann daher nicht kritisch treffen.",
+            "Stapelung": "Mehrere Glutstaubfächer verursachen getrennten Schaden. Es entsteht kein zusätzlicher globaler Brennzustand und keine dauerhafte Schadenszone.",
+            "Ende der Wirkung": "Nach der unmittelbaren Schadensauflösung endet die Wirkung vollständig."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 766,
+            "line_end": 778
+          }
+        },
+        {
+          "id": "glutfalter-l30-flimmerflug",
+          "name": "Flimmerflug",
+          "type": "Defensive Reaktion",
+          "cost": "1 Reaktion",
+          "usage_limit": "Maximal einmal pro Runde",
+          "trigger": "Der Glutfalter wird von einem Angriff als Ziel gewählt und kann den Angreifer oder den entstehenden Angriff wahrnehmen.",
+          "target": "Selbst",
+          "rule_effect": "Bevor der Ausweichwurf gegen den auslösenden Angriff abgeschlossen wird, erhält der Glutfalter **+2 auf genau diesen Ausweichwurf**. Verfehlt der Angriff anschließend, darf sich der Glutfalter unmittelbar bis zu **2 m fliegend** bewegen.",
+          "stacking": "Flimmerflug stapelt nicht mit sich selbst. Der Bonus gilt nur für den auslösenden Angriff.",
+          "end_condition": "Unmittelbar nach der Abwicklung des auslösenden Angriffs und gegebenenfalls der anschließenden 2-m-Bewegung.",
+          "extra_fields": {
+            "Bewegungsregel": "Diese Bewegung ist keine Teleportation. Sie muss auf einer legalen Flugbahn erfolgen, kann nicht durch feste Hindernisse führen und verhindert keine Reaktionen, die durch Bewegung normalerweise ausgelöst werden."
+          },
+          "raw_fields": {
+            "Typ": "Defensive Reaktion",
+            "Kosten": "1 Reaktion",
+            "Einsatzlimit": "Maximal einmal pro Runde",
+            "Auslöser": "Der Glutfalter wird von einem Angriff als Ziel gewählt und kann den Angreifer oder den entstehenden Angriff wahrnehmen.",
+            "Ziel": "Selbst",
+            "Regelwirkung": "Bevor der Ausweichwurf gegen den auslösenden Angriff abgeschlossen wird, erhält der Glutfalter **+2 auf genau diesen Ausweichwurf**. Verfehlt der Angriff anschließend, darf sich der Glutfalter unmittelbar bis zu **2 m fliegend** bewegen.",
+            "Bewegungsregel": "Diese Bewegung ist keine Teleportation. Sie muss auf einer legalen Flugbahn erfolgen, kann nicht durch feste Hindernisse führen und verhindert keine Reaktionen, die durch Bewegung normalerweise ausgelöst werden.",
+            "Stapelung": "Flimmerflug stapelt nicht mit sich selbst. Der Bonus gilt nur für den auslösenden Angriff.",
+            "Ende der Wirkung": "Unmittelbar nach der Abwicklung des auslösenden Angriffs und gegebenenfalls der anschließenden 2-m-Bewegung."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 779,
+            "line_end": 790
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "20 % Resistenz",
+            "type": "resistance",
+            "percent": 20
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "15 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 15
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**20 % Resistenz**",
+            "**15 % Verwundbarkeit**",
+            "–",
+            "**10 % Resistenz**",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 711,
+        "line_end": 800
+      }
+    },
+    {
+      "level": 35,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 25,
+          "modifier": 7,
+          "bonus": 6,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "25",
+            "Modifikator": "+7",
+            "Bonus": "+6"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 25,
+          "modifier": 7,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "25",
+            "Modifikator": "+7",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+4"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "560",
+          "physische_verteidigung": "20",
+          "magieverteidigung": "19",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Flug 12 m; Klettern 4 m; Land 4 m",
+          "glutstaubfaecher_sg": "18"
+        },
+        "raw_fields": {
+          "Maximale LP": "560",
+          "Physische Verteidigung": "20",
+          "Magieverteidigung": "19",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Flug 12 m; Klettern 4 m; Land 4 m",
+          "Glutstaubfächer-SG": "18"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+5) + WI-Bonus (+4)) × 10) + ((ST-Modifikator (+3) + ST-Bonus (+1)) × 5) + (35 × 10) = 560 LP",
+        "markdown": "`100 + ((WI-Modifikator (+5) + WI-Bonus (+4)) × 10) + ((ST-Modifikator (+3) + ST-Bonus (+1)) × 5) + (35 × 10) = 560 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Glutstreifer",
+            "cost": "1 Aktion",
+            "type": "magischer Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+            "range_area": "Nah / im Flug",
+            "damage_effect": "12W8 + WA-Modifikator (+7) + WA-Bonus (+3)",
+            "damage_type": "Feuer",
+            "defense_save": "Magieverteidigung",
+            "avg_raw_damage": "64",
+            "avg_hit_damage": "48.48",
+            "avg_expected_effect": "33.33",
+            "ge_share": "0.51",
+            "notes": "Feuerangriff; Kritwerte sind im Durchschnitt eingerechnet.",
+            "avg_raw_damage_value": 64.0,
+            "avg_hit_damage_value": 48.48,
+            "ge_share_value": 0.51,
+            "id": "glutfalter-l35-a01-glutstreifer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Glutstreifer",
+              "Kosten": "1 Aktion",
+              "Typ": "magischer Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+              "Reichweite / Fläche": "Nah / im Flug",
+              "Schaden / Wirkung": "12W8 + WA-Modifikator (+7) + WA-Bonus (+3)",
+              "Schadensart": "Feuer",
+              "Verteidigung / Rettung": "Magieverteidigung",
+              "Ø Rohschaden": "64",
+              "Ø Treffer-Endschaden": "48.48",
+              "Ø Erwartungswirkung": "33.33",
+              "GE-Anteil": "0.51",
+              "Zusatz": "Feuerangriff; Kritwerte sind im Durchschnitt eingerechnet."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Glutstaubfächer",
+            "cost": "1 Aktion",
+            "type": "Flächenangriff",
+            "attribute": null,
+            "attack_or_dc": "BW-Rettungswurf gegen SG 18",
+            "range_area": "3-m-Kegel",
+            "damage_effect": "9W8 + 4; bei erfolgreichem RW halber Schaden",
+            "damage_type": "Feuer",
+            "defense_save": "Magieverteidigung; BW-Rettung",
+            "avg_raw_damage": "44.5",
+            "avg_hit_damage": "28.5 bei misslungenem RW",
+            "avg_expected_effect": "21.38 pro Ziel",
+            "ge_share": "0.33 pro Ziel",
+            "notes": "Erwartungsrechnung mit 50 % Fehlschlagchance des Referenzprofils.",
+            "avg_raw_damage_value": 44.5,
+            "id": "glutfalter-l35-a02-glutstaubfaecher",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Glutstaubfächer",
+              "Kosten": "1 Aktion",
+              "Typ": "Flächenangriff",
+              "Attribut": null,
+              "Angriff / SG": "BW-Rettungswurf gegen SG 18",
+              "Reichweite / Fläche": "3-m-Kegel",
+              "Schaden / Wirkung": "9W8 + 4; bei erfolgreichem RW halber Schaden",
+              "Schadensart": "Feuer",
+              "Verteidigung / Rettung": "Magieverteidigung; BW-Rettung",
+              "Ø Rohschaden": "44.5",
+              "Ø Treffer-Endschaden": "28.5 bei misslungenem RW",
+              "Ø Erwartungswirkung": "21.38 pro Ziel",
+              "GE-Anteil": "0.33 pro Ziel",
+              "Zusatz": "Erwartungsrechnung mit 50 % Fehlschlagchance des Referenzprofils."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Flimmerflug",
+            "cost": "1 Reaktion; maximal 1× pro Runde",
+            "type": "defensive Reaktion",
+            "attribute": "AU",
+            "attack_or_dc": null,
+            "range_area": "Selbst; anschließend bis 2 m",
+            "damage_effect": "+2 auf den Ausweichwurf gegen den auslösenden Angriff; bei Fehlschlag des Angriffs anschließend bis 2 m Bewegung",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Die Bewegung verhindert keine anderen Reaktionen und muss auf einer legalen Flugbahn enden.",
+            "id": "glutfalter-l35-a03-flimmerflug",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Flimmerflug",
+              "Kosten": "1 Reaktion; maximal 1× pro Runde",
+              "Typ": "defensive Reaktion",
+              "Attribut": "AU",
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst; anschließend bis 2 m",
+              "Schaden / Wirkung": "+2 auf den Ausweichwurf gegen den auslösenden Angriff; bei Fehlschlag des Angriffs anschließend bis 2 m Bewegung",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Die Bewegung verhindert keine anderen Reaktionen und muss auf einer legalen Flugbahn enden."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "glutfalter-l35-glutstreifer",
+          "name": "Glutstreifer",
+          "type": "Magischer Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah; der Glutfalter muss das Ziel während seines Fluges erreichen können",
+          "attack_roll": "`W20 + BW-Modifikator (+7) + BW-Bonus (+6)`",
+          "damage": "`12W8 + WA-Modifikator (+7) + WA-Bonus (+3)`",
+          "damage_type": "Feuer",
+          "defense": "Magieverteidigung",
+          "rule_effect": "Der Glutfalter kippt einen Flügel nach unten, schießt knapp am Ziel vorbei und streift es mit einer dichten Schicht stark erhitzter Flügelschuppen. Der Angriff verursacht ausschließlich den angegebenen Feuerschaden. Er gewährt keine kostenlose Zusatzbewegung und verschiebt das Ziel nicht.",
+          "stacking": "Mehrere Glutfalter können dasselbe Ziel unabhängig mit Glutstreifer angreifen; jeder Angriff wird separat abgehandelt.",
+          "extra_fields": {
+            "Kritische Treffer": "Da Glutstreifer einen Angriffswurf verwendet, gelten die angegebenen Kritwerte des Glutfalters."
+          },
+          "raw_fields": {
+            "Typ": "Magischer Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah; der Glutfalter muss das Ziel während seines Fluges erreichen können",
+            "Angriffswurf": "`W20 + BW-Modifikator (+7) + BW-Bonus (+6)`",
+            "Schaden": "`12W8 + WA-Modifikator (+7) + WA-Bonus (+3)`",
+            "Schadensart": "Feuer",
+            "Verteidigung": "Magieverteidigung",
+            "Regelwirkung": "Der Glutfalter kippt einen Flügel nach unten, schießt knapp am Ziel vorbei und streift es mit einer dichten Schicht stark erhitzter Flügelschuppen. Der Angriff verursacht ausschließlich den angegebenen Feuerschaden. Er gewährt keine kostenlose Zusatzbewegung und verschiebt das Ziel nicht.",
+            "Kritische Treffer": "Da Glutstreifer einen Angriffswurf verwendet, gelten die angegebenen Kritwerte des Glutfalters.",
+            "Stapelung": "Mehrere Glutfalter können dasselbe Ziel unabhängig mit Glutstreifer angreifen; jeder Angriff wird separat abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 843,
+            "line_end": 855
+          }
+        },
+        {
+          "id": "glutfalter-l35-glutstaubfaecher",
+          "name": "Glutstaubfächer",
+          "type": "Flächenangriff",
+          "cost": "1 Aktion",
+          "area": "3-m-Kegel vor dem Glutfalter",
+          "saving_throw": "Beweglichkeit gegen **SG 18**",
+          "damage": "`9W8 + 4` Feuerschaden bei misslungenem Rettungswurf; bei Erfolg wird der Schaden halbiert.",
+          "defense": "Magieverteidigung wird nach der elementaren Schadensanpassung normal angewendet.",
+          "rule_effect": "Der Glutfalter schlägt beide Flügel schlagartig nach vorn und stößt eine dichte Wolke glühender Schuppen aus. Jede Kreatur im Kegel führt ihren eigenen Rettungswurf aus.",
+          "stacking": "Mehrere Glutstaubfächer verursachen getrennten Schaden. Es entsteht kein zusätzlicher globaler Brennzustand und keine dauerhafte Schadenszone.",
+          "end_condition": "Nach der unmittelbaren Schadensauflösung endet die Wirkung vollständig.",
+          "extra_fields": {
+            "Kritische Treffer": "Glutstaubfächer verwendet keinen Angriffswurf und kann daher nicht kritisch treffen."
+          },
+          "raw_fields": {
+            "Typ": "Flächenangriff",
+            "Kosten": "1 Aktion",
+            "Fläche": "3-m-Kegel vor dem Glutfalter",
+            "Rettungswurf": "Beweglichkeit gegen **SG 18**",
+            "Schaden": "`9W8 + 4` Feuerschaden bei misslungenem Rettungswurf; bei Erfolg wird der Schaden halbiert.",
+            "Verteidigung": "Magieverteidigung wird nach der elementaren Schadensanpassung normal angewendet.",
+            "Regelwirkung": "Der Glutfalter schlägt beide Flügel schlagartig nach vorn und stößt eine dichte Wolke glühender Schuppen aus. Jede Kreatur im Kegel führt ihren eigenen Rettungswurf aus.",
+            "Kritische Treffer": "Glutstaubfächer verwendet keinen Angriffswurf und kann daher nicht kritisch treffen.",
+            "Stapelung": "Mehrere Glutstaubfächer verursachen getrennten Schaden. Es entsteht kein zusätzlicher globaler Brennzustand und keine dauerhafte Schadenszone.",
+            "Ende der Wirkung": "Nach der unmittelbaren Schadensauflösung endet die Wirkung vollständig."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 856,
+            "line_end": 868
+          }
+        },
+        {
+          "id": "glutfalter-l35-flimmerflug",
+          "name": "Flimmerflug",
+          "type": "Defensive Reaktion",
+          "cost": "1 Reaktion",
+          "usage_limit": "Maximal einmal pro Runde",
+          "trigger": "Der Glutfalter wird von einem Angriff als Ziel gewählt und kann den Angreifer oder den entstehenden Angriff wahrnehmen.",
+          "target": "Selbst",
+          "rule_effect": "Bevor der Ausweichwurf gegen den auslösenden Angriff abgeschlossen wird, erhält der Glutfalter **+2 auf genau diesen Ausweichwurf**. Verfehlt der Angriff anschließend, darf sich der Glutfalter unmittelbar bis zu **2 m fliegend** bewegen.",
+          "stacking": "Flimmerflug stapelt nicht mit sich selbst. Der Bonus gilt nur für den auslösenden Angriff.",
+          "end_condition": "Unmittelbar nach der Abwicklung des auslösenden Angriffs und gegebenenfalls der anschließenden 2-m-Bewegung.",
+          "extra_fields": {
+            "Bewegungsregel": "Diese Bewegung ist keine Teleportation. Sie muss auf einer legalen Flugbahn erfolgen, kann nicht durch feste Hindernisse führen und verhindert keine Reaktionen, die durch Bewegung normalerweise ausgelöst werden."
+          },
+          "raw_fields": {
+            "Typ": "Defensive Reaktion",
+            "Kosten": "1 Reaktion",
+            "Einsatzlimit": "Maximal einmal pro Runde",
+            "Auslöser": "Der Glutfalter wird von einem Angriff als Ziel gewählt und kann den Angreifer oder den entstehenden Angriff wahrnehmen.",
+            "Ziel": "Selbst",
+            "Regelwirkung": "Bevor der Ausweichwurf gegen den auslösenden Angriff abgeschlossen wird, erhält der Glutfalter **+2 auf genau diesen Ausweichwurf**. Verfehlt der Angriff anschließend, darf sich der Glutfalter unmittelbar bis zu **2 m fliegend** bewegen.",
+            "Bewegungsregel": "Diese Bewegung ist keine Teleportation. Sie muss auf einer legalen Flugbahn erfolgen, kann nicht durch feste Hindernisse führen und verhindert keine Reaktionen, die durch Bewegung normalerweise ausgelöst werden.",
+            "Stapelung": "Flimmerflug stapelt nicht mit sich selbst. Der Bonus gilt nur für den auslösenden Angriff.",
+            "Ende der Wirkung": "Unmittelbar nach der Abwicklung des auslösenden Angriffs und gegebenenfalls der anschließenden 2-m-Bewegung."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 869,
+            "line_end": 880
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "20 % Resistenz",
+            "type": "resistance",
+            "percent": 20
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "15 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 15
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**20 % Resistenz**",
+            "**15 % Verwundbarkeit**",
+            "–",
+            "**10 % Resistenz**",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 801,
+        "line_end": 890
+      }
+    },
+    {
+      "level": 40,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 25,
+          "modifier": 7,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "25",
+            "Modifikator": "+7",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 26,
+          "modifier": 8,
+          "bonus": 6,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "26",
+            "Modifikator": "+8",
+            "Bonus": "+6"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 26,
+          "modifier": 8,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "26",
+            "Modifikator": "+8",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 11,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "11",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+4"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "620",
+          "physische_verteidigung": "22",
+          "magieverteidigung": "21",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Flug 12 m; Klettern 4 m; Land 4 m",
+          "glutstaubfaecher_sg": "18"
+        },
+        "raw_fields": {
+          "Maximale LP": "620",
+          "Physische Verteidigung": "22",
+          "Magieverteidigung": "21",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Flug 12 m; Klettern 4 m; Land 4 m",
+          "Glutstaubfächer-SG": "18"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+5) + WI-Bonus (+5)) × 10) + ((ST-Modifikator (+3) + ST-Bonus (+1)) × 5) + (40 × 10) = 620 LP",
+        "markdown": "`100 + ((WI-Modifikator (+5) + WI-Bonus (+5)) × 10) + ((ST-Modifikator (+3) + ST-Bonus (+1)) × 5) + (40 × 10) = 620 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Glutstreifer",
+            "cost": "1 Aktion",
+            "type": "magischer Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+            "range_area": "Nah / im Flug",
+            "damage_effect": "13W8 + WA-Modifikator (+8) + WA-Bonus (+3)",
+            "damage_type": "Feuer",
+            "defense_save": "Magieverteidigung",
+            "avg_raw_damage": "69.5",
+            "avg_hit_damage": "52.02",
+            "avg_expected_effect": "35.76",
+            "ge_share": "0.50",
+            "notes": "Feuerangriff; Kritwerte sind im Durchschnitt eingerechnet.",
+            "avg_raw_damage_value": 69.5,
+            "avg_hit_damage_value": 52.02,
+            "ge_share_value": 0.5,
+            "id": "glutfalter-l40-a01-glutstreifer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Glutstreifer",
+              "Kosten": "1 Aktion",
+              "Typ": "magischer Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+              "Reichweite / Fläche": "Nah / im Flug",
+              "Schaden / Wirkung": "13W8 + WA-Modifikator (+8) + WA-Bonus (+3)",
+              "Schadensart": "Feuer",
+              "Verteidigung / Rettung": "Magieverteidigung",
+              "Ø Rohschaden": "69.5",
+              "Ø Treffer-Endschaden": "52.02",
+              "Ø Erwartungswirkung": "35.76",
+              "GE-Anteil": "0.50",
+              "Zusatz": "Feuerangriff; Kritwerte sind im Durchschnitt eingerechnet."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Glutstaubfächer",
+            "cost": "1 Aktion",
+            "type": "Flächenangriff",
+            "attribute": null,
+            "attack_or_dc": "BW-Rettungswurf gegen SG 18",
+            "range_area": "3-m-Kegel",
+            "damage_effect": "10W8 + 4; bei erfolgreichem RW halber Schaden",
+            "damage_type": "Feuer",
+            "defense_save": "Magieverteidigung; BW-Rettung",
+            "avg_raw_damage": "49",
+            "avg_hit_damage": "31 bei misslungenem RW",
+            "avg_expected_effect": "23.25 pro Ziel",
+            "ge_share": "0.33 pro Ziel",
+            "notes": "Erwartungsrechnung mit 50 % Fehlschlagchance des Referenzprofils.",
+            "avg_raw_damage_value": 49.0,
+            "id": "glutfalter-l40-a02-glutstaubfaecher",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Glutstaubfächer",
+              "Kosten": "1 Aktion",
+              "Typ": "Flächenangriff",
+              "Attribut": null,
+              "Angriff / SG": "BW-Rettungswurf gegen SG 18",
+              "Reichweite / Fläche": "3-m-Kegel",
+              "Schaden / Wirkung": "10W8 + 4; bei erfolgreichem RW halber Schaden",
+              "Schadensart": "Feuer",
+              "Verteidigung / Rettung": "Magieverteidigung; BW-Rettung",
+              "Ø Rohschaden": "49",
+              "Ø Treffer-Endschaden": "31 bei misslungenem RW",
+              "Ø Erwartungswirkung": "23.25 pro Ziel",
+              "GE-Anteil": "0.33 pro Ziel",
+              "Zusatz": "Erwartungsrechnung mit 50 % Fehlschlagchance des Referenzprofils."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Flimmerflug",
+            "cost": "1 Reaktion; maximal 1× pro Runde",
+            "type": "defensive Reaktion",
+            "attribute": "AU",
+            "attack_or_dc": null,
+            "range_area": "Selbst; anschließend bis 2 m",
+            "damage_effect": "+2 auf den Ausweichwurf gegen den auslösenden Angriff; bei Fehlschlag des Angriffs anschließend bis 2 m Bewegung",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Die Bewegung verhindert keine anderen Reaktionen und muss auf einer legalen Flugbahn enden.",
+            "id": "glutfalter-l40-a03-flimmerflug",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Flimmerflug",
+              "Kosten": "1 Reaktion; maximal 1× pro Runde",
+              "Typ": "defensive Reaktion",
+              "Attribut": "AU",
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst; anschließend bis 2 m",
+              "Schaden / Wirkung": "+2 auf den Ausweichwurf gegen den auslösenden Angriff; bei Fehlschlag des Angriffs anschließend bis 2 m Bewegung",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Die Bewegung verhindert keine anderen Reaktionen und muss auf einer legalen Flugbahn enden."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "glutfalter-l40-glutstreifer",
+          "name": "Glutstreifer",
+          "type": "Magischer Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah; der Glutfalter muss das Ziel während seines Fluges erreichen können",
+          "attack_roll": "`W20 + BW-Modifikator (+8) + BW-Bonus (+6)`",
+          "damage": "`13W8 + WA-Modifikator (+8) + WA-Bonus (+3)`",
+          "damage_type": "Feuer",
+          "defense": "Magieverteidigung",
+          "rule_effect": "Der Glutfalter kippt einen Flügel nach unten, schießt knapp am Ziel vorbei und streift es mit einer dichten Schicht stark erhitzter Flügelschuppen. Der Angriff verursacht ausschließlich den angegebenen Feuerschaden. Er gewährt keine kostenlose Zusatzbewegung und verschiebt das Ziel nicht.",
+          "stacking": "Mehrere Glutfalter können dasselbe Ziel unabhängig mit Glutstreifer angreifen; jeder Angriff wird separat abgehandelt.",
+          "extra_fields": {
+            "Kritische Treffer": "Da Glutstreifer einen Angriffswurf verwendet, gelten die angegebenen Kritwerte des Glutfalters."
+          },
+          "raw_fields": {
+            "Typ": "Magischer Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah; der Glutfalter muss das Ziel während seines Fluges erreichen können",
+            "Angriffswurf": "`W20 + BW-Modifikator (+8) + BW-Bonus (+6)`",
+            "Schaden": "`13W8 + WA-Modifikator (+8) + WA-Bonus (+3)`",
+            "Schadensart": "Feuer",
+            "Verteidigung": "Magieverteidigung",
+            "Regelwirkung": "Der Glutfalter kippt einen Flügel nach unten, schießt knapp am Ziel vorbei und streift es mit einer dichten Schicht stark erhitzter Flügelschuppen. Der Angriff verursacht ausschließlich den angegebenen Feuerschaden. Er gewährt keine kostenlose Zusatzbewegung und verschiebt das Ziel nicht.",
+            "Kritische Treffer": "Da Glutstreifer einen Angriffswurf verwendet, gelten die angegebenen Kritwerte des Glutfalters.",
+            "Stapelung": "Mehrere Glutfalter können dasselbe Ziel unabhängig mit Glutstreifer angreifen; jeder Angriff wird separat abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 933,
+            "line_end": 945
+          }
+        },
+        {
+          "id": "glutfalter-l40-glutstaubfaecher",
+          "name": "Glutstaubfächer",
+          "type": "Flächenangriff",
+          "cost": "1 Aktion",
+          "area": "3-m-Kegel vor dem Glutfalter",
+          "saving_throw": "Beweglichkeit gegen **SG 18**",
+          "damage": "`10W8 + 4` Feuerschaden bei misslungenem Rettungswurf; bei Erfolg wird der Schaden halbiert.",
+          "defense": "Magieverteidigung wird nach der elementaren Schadensanpassung normal angewendet.",
+          "rule_effect": "Der Glutfalter schlägt beide Flügel schlagartig nach vorn und stößt eine dichte Wolke glühender Schuppen aus. Jede Kreatur im Kegel führt ihren eigenen Rettungswurf aus.",
+          "stacking": "Mehrere Glutstaubfächer verursachen getrennten Schaden. Es entsteht kein zusätzlicher globaler Brennzustand und keine dauerhafte Schadenszone.",
+          "end_condition": "Nach der unmittelbaren Schadensauflösung endet die Wirkung vollständig.",
+          "extra_fields": {
+            "Kritische Treffer": "Glutstaubfächer verwendet keinen Angriffswurf und kann daher nicht kritisch treffen."
+          },
+          "raw_fields": {
+            "Typ": "Flächenangriff",
+            "Kosten": "1 Aktion",
+            "Fläche": "3-m-Kegel vor dem Glutfalter",
+            "Rettungswurf": "Beweglichkeit gegen **SG 18**",
+            "Schaden": "`10W8 + 4` Feuerschaden bei misslungenem Rettungswurf; bei Erfolg wird der Schaden halbiert.",
+            "Verteidigung": "Magieverteidigung wird nach der elementaren Schadensanpassung normal angewendet.",
+            "Regelwirkung": "Der Glutfalter schlägt beide Flügel schlagartig nach vorn und stößt eine dichte Wolke glühender Schuppen aus. Jede Kreatur im Kegel führt ihren eigenen Rettungswurf aus.",
+            "Kritische Treffer": "Glutstaubfächer verwendet keinen Angriffswurf und kann daher nicht kritisch treffen.",
+            "Stapelung": "Mehrere Glutstaubfächer verursachen getrennten Schaden. Es entsteht kein zusätzlicher globaler Brennzustand und keine dauerhafte Schadenszone.",
+            "Ende der Wirkung": "Nach der unmittelbaren Schadensauflösung endet die Wirkung vollständig."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 946,
+            "line_end": 958
+          }
+        },
+        {
+          "id": "glutfalter-l40-flimmerflug",
+          "name": "Flimmerflug",
+          "type": "Defensive Reaktion",
+          "cost": "1 Reaktion",
+          "usage_limit": "Maximal einmal pro Runde",
+          "trigger": "Der Glutfalter wird von einem Angriff als Ziel gewählt und kann den Angreifer oder den entstehenden Angriff wahrnehmen.",
+          "target": "Selbst",
+          "rule_effect": "Bevor der Ausweichwurf gegen den auslösenden Angriff abgeschlossen wird, erhält der Glutfalter **+2 auf genau diesen Ausweichwurf**. Verfehlt der Angriff anschließend, darf sich der Glutfalter unmittelbar bis zu **2 m fliegend** bewegen.",
+          "stacking": "Flimmerflug stapelt nicht mit sich selbst. Der Bonus gilt nur für den auslösenden Angriff.",
+          "end_condition": "Unmittelbar nach der Abwicklung des auslösenden Angriffs und gegebenenfalls der anschließenden 2-m-Bewegung.",
+          "extra_fields": {
+            "Bewegungsregel": "Diese Bewegung ist keine Teleportation. Sie muss auf einer legalen Flugbahn erfolgen, kann nicht durch feste Hindernisse führen und verhindert keine Reaktionen, die durch Bewegung normalerweise ausgelöst werden."
+          },
+          "raw_fields": {
+            "Typ": "Defensive Reaktion",
+            "Kosten": "1 Reaktion",
+            "Einsatzlimit": "Maximal einmal pro Runde",
+            "Auslöser": "Der Glutfalter wird von einem Angriff als Ziel gewählt und kann den Angreifer oder den entstehenden Angriff wahrnehmen.",
+            "Ziel": "Selbst",
+            "Regelwirkung": "Bevor der Ausweichwurf gegen den auslösenden Angriff abgeschlossen wird, erhält der Glutfalter **+2 auf genau diesen Ausweichwurf**. Verfehlt der Angriff anschließend, darf sich der Glutfalter unmittelbar bis zu **2 m fliegend** bewegen.",
+            "Bewegungsregel": "Diese Bewegung ist keine Teleportation. Sie muss auf einer legalen Flugbahn erfolgen, kann nicht durch feste Hindernisse führen und verhindert keine Reaktionen, die durch Bewegung normalerweise ausgelöst werden.",
+            "Stapelung": "Flimmerflug stapelt nicht mit sich selbst. Der Bonus gilt nur für den auslösenden Angriff.",
+            "Ende der Wirkung": "Unmittelbar nach der Abwicklung des auslösenden Angriffs und gegebenenfalls der anschließenden 2-m-Bewegung."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 959,
+            "line_end": 970
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "20 % Resistenz",
+            "type": "resistance",
+            "percent": 20
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": "15 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 15
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**20 % Resistenz**",
+            "**15 % Verwundbarkeit**",
+            "–",
+            "**10 % Resistenz**",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 891,
+        "line_end": 980
+      }
+    }
+  ],
+  "post_sections": [],
+  "statistics": {
+    "level_count": 9,
+    "action_count_by_level": {
+      "1": 3,
+      "5": 3,
+      "10": 3,
+      "15": 3,
+      "20": 3,
+      "25": 3,
+      "30": 3,
+      "35": 3,
+      "40": 3
+    },
+    "shared_action_detail_count": 0
+  },
+  "source": {
+    "line_start": 15,
+    "line_end": 980
+  }
+}

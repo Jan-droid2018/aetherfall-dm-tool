@@ -1,0 +1,955 @@
+{
+  "schema_version": "aetherfall.creatures.v1",
+  "generated_from": [
+    "Index - Kreaturen.md",
+    "Index - Kreaturen HG 1.md",
+    "Kreaturen - Kornwühler.md",
+    "Kreaturen - Mooskrabbler.md",
+    "Kreaturen - Scharrzahn.md",
+    "Kreaturen - Dämmergreif.md",
+    "Index - Kreaturen HG 10.md",
+    "Kreaturen - Mimik.md",
+    "Kreaturen - Ruinenkoloss.md",
+    "Index - Kreaturen HG 11.md",
+    "Kreaturen - Irrlicht.md",
+    "Kreaturen - Dornling.md",
+    "Kreaturen - Goblin.md",
+    "Index - Kreaturen HG 2.md",
+    "Kreaturen - Schrottplünderer.md",
+    "Kreaturen - Flirrklaue.md",
+    "Kreaturen - Glutfalter.md",
+    "Index - Kreaturen HG 3.md",
+    "Kreaturen - Nebelkriecher.md",
+    "Kreaturen - Blutdorn.md",
+    "Kreaturen - Felsenschnapper.md",
+    "Index - Kreaturen HG 4.md",
+    "Kreaturen - Schattenlurch.md",
+    "Kreaturen - Grabhund.md",
+    "Index - Kreaturen HG 5.md",
+    "Kreaturen - Knochenwacht.md",
+    "Kreaturen - Stromschnapper.md",
+    "Kreaturen - Aschenpirscher.md",
+    "Index - Kreaturen HG 6.md",
+    "Kreaturen - Klappersoldat.md",
+    "Kreaturen - Runenwächter.md",
+    "Kreaturen - Donnerkeiler.md",
+    "Kreaturen - Hohlritter.md",
+    "Index - Kreaturen HG 7.md",
+    "Index - Kreaturen HG 8.md",
+    "Kreaturen - Scherbengeist.md",
+    "Kreaturen - Wurzelbrecher.md",
+    "Kreaturen - Frostmaul.md",
+    "Index - Kreaturen HG 9.md",
+    "Kreaturen - Äthermantis.md"
+  ],
+  "creature_count": 40,
+  "creatures": [
+    {
+      "id": "kornwuehler",
+      "name": "Kornwühler",
+      "source_file": "Kreaturen - Kornwühler.md",
+      "json_file": "kornwuehler.json",
+      "challenge_rating": 1,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 3,
+        "5": 3,
+        "10": 3,
+        "15": 3,
+        "20": 3,
+        "25": 3,
+        "30": 3,
+        "35": 3,
+        "40": 3
+      }
+    },
+    {
+      "id": "mooskrabbler",
+      "name": "Mooskrabbler",
+      "source_file": "Kreaturen - Mooskrabbler.md",
+      "json_file": "mooskrabbler.json",
+      "challenge_rating": 1,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 3,
+        "5": 3,
+        "10": 3,
+        "15": 3,
+        "20": 3,
+        "25": 3,
+        "30": 3,
+        "35": 3,
+        "40": 3
+      }
+    },
+    {
+      "id": "scharrzahn",
+      "name": "Scharrzahn",
+      "source_file": "Kreaturen - Scharrzahn.md",
+      "json_file": "scharrzahn.json",
+      "challenge_rating": 1,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 3,
+        "5": 3,
+        "10": 3,
+        "15": 3,
+        "20": 3,
+        "25": 3,
+        "30": 3,
+        "35": 3,
+        "40": 3
+      }
+    },
+    {
+      "id": "daemmergreif",
+      "name": "Dämmergreif",
+      "source_file": "Kreaturen - Dämmergreif.md",
+      "json_file": "daemmergreif.json",
+      "challenge_rating": 10,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 4,
+        "5": 4,
+        "10": 4,
+        "15": 4,
+        "20": 4,
+        "25": 4,
+        "30": 4,
+        "35": 4,
+        "40": 4
+      }
+    },
+    {
+      "id": "mimik",
+      "name": "Mimik",
+      "source_file": "Kreaturen - Mimik.md",
+      "json_file": "mimik.json",
+      "challenge_rating": 10,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 4,
+        "5": 4,
+        "10": 4,
+        "15": 4,
+        "20": 4,
+        "25": 4,
+        "30": 4,
+        "35": 4,
+        "40": 4
+      }
+    },
+    {
+      "id": "ruinenkoloss",
+      "name": "Ruinenkoloss",
+      "source_file": "Kreaturen - Ruinenkoloss.md",
+      "json_file": "ruinenkoloss.json",
+      "challenge_rating": 10,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 4,
+        "5": 4,
+        "10": 4,
+        "15": 4,
+        "20": 4,
+        "25": 4,
+        "30": 4,
+        "35": 4,
+        "40": 4
+      }
+    },
+    {
+      "id": "irrlicht",
+      "name": "Irrlicht",
+      "source_file": "Kreaturen - Irrlicht.md",
+      "json_file": "irrlicht.json",
+      "challenge_rating": 11,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 4,
+        "5": 4,
+        "10": 4,
+        "15": 4,
+        "20": 4,
+        "25": 4,
+        "30": 4,
+        "35": 4,
+        "40": 4
+      }
+    },
+    {
+      "id": "dornling",
+      "name": "Dornling",
+      "source_file": "Kreaturen - Dornling.md",
+      "json_file": "dornling.json",
+      "challenge_rating": 2,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 3,
+        "5": 3,
+        "10": 3,
+        "15": 3,
+        "20": 3,
+        "25": 3,
+        "30": 3,
+        "35": 3,
+        "40": 3
+      }
+    },
+    {
+      "id": "goblin",
+      "name": "Goblin",
+      "source_file": "Kreaturen - Goblin.md",
+      "json_file": "goblin.json",
+      "challenge_rating": 2,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 3,
+        "5": 3,
+        "10": 3,
+        "15": 3,
+        "20": 3,
+        "25": 3,
+        "30": 3,
+        "35": 3,
+        "40": 3
+      }
+    },
+    {
+      "id": "schrottpluenderer",
+      "name": "Schrottplünderer",
+      "source_file": "Kreaturen - Schrottplünderer.md",
+      "json_file": "schrottpluenderer.json",
+      "challenge_rating": 2,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 3,
+        "5": 3,
+        "10": 3,
+        "15": 3,
+        "20": 3,
+        "25": 3,
+        "30": 3,
+        "35": 3,
+        "40": 3
+      }
+    },
+    {
+      "id": "flirrklaue",
+      "name": "Flirrklaue",
+      "source_file": "Kreaturen - Flirrklaue.md",
+      "json_file": "flirrklaue.json",
+      "challenge_rating": 3,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 5,
+        "5": 5,
+        "10": 5,
+        "15": 5,
+        "20": 5,
+        "25": 5,
+        "30": 5,
+        "35": 5,
+        "40": 5
+      }
+    },
+    {
+      "id": "glutfalter",
+      "name": "Glutfalter",
+      "source_file": "Kreaturen - Glutfalter.md",
+      "json_file": "glutfalter.json",
+      "challenge_rating": 3,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 3,
+        "5": 3,
+        "10": 3,
+        "15": 3,
+        "20": 3,
+        "25": 3,
+        "30": 3,
+        "35": 3,
+        "40": 3
+      }
+    },
+    {
+      "id": "einsatz-in-begegnungen",
+      "name": "Einsatz in Begegnungen",
+      "source_file": "Kreaturen - Glutfalter.md",
+      "json_file": "einsatz-in-begegnungen.json",
+      "challenge_rating": null,
+      "level_count": 0,
+      "actions_by_level": {}
+    },
+    {
+      "id": "kurzzusammenfassung-fuer-den-game-master",
+      "name": "Kurzzusammenfassung für den Game Master",
+      "source_file": "Kreaturen - Glutfalter.md",
+      "json_file": "kurzzusammenfassung-fuer-den-game-master.json",
+      "challenge_rating": null,
+      "level_count": 0,
+      "actions_by_level": {}
+    },
+    {
+      "id": "nebelkriecher",
+      "name": "Nebelkriecher",
+      "source_file": "Kreaturen - Nebelkriecher.md",
+      "json_file": "nebelkriecher.json",
+      "challenge_rating": 3,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 3,
+        "5": 3,
+        "10": 3,
+        "15": 3,
+        "20": 3,
+        "25": 3,
+        "30": 3,
+        "35": 3,
+        "40": 3
+      }
+    },
+    {
+      "id": "blutdorn",
+      "name": "Blutdorn",
+      "source_file": "Kreaturen - Blutdorn.md",
+      "json_file": "blutdorn.json",
+      "challenge_rating": 4,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 3,
+        "5": 3,
+        "10": 3,
+        "15": 3,
+        "20": 3,
+        "25": 3,
+        "30": 3,
+        "35": 3,
+        "40": 3
+      }
+    },
+    {
+      "id": "felsenschnapper",
+      "name": "Felsenschnapper",
+      "source_file": "Kreaturen - Felsenschnapper.md",
+      "json_file": "felsenschnapper.json",
+      "challenge_rating": 4,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 3,
+        "5": 3,
+        "10": 3,
+        "15": 3,
+        "20": 3,
+        "25": 3,
+        "30": 3,
+        "35": 3,
+        "40": 3
+      }
+    },
+    {
+      "id": "schattenlurch",
+      "name": "Schattenlurch",
+      "source_file": "Kreaturen - Schattenlurch.md",
+      "json_file": "schattenlurch.json",
+      "challenge_rating": 4,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 3,
+        "5": 3,
+        "10": 3,
+        "15": 3,
+        "20": 3,
+        "25": 3,
+        "30": 3,
+        "35": 3,
+        "40": 3
+      }
+    },
+    {
+      "id": "einsatz-als-sondergegner",
+      "name": "Einsatz als Sondergegner",
+      "source_file": "Kreaturen - Schattenlurch.md",
+      "json_file": "einsatz-als-sondergegner.json",
+      "challenge_rating": null,
+      "level_count": 0,
+      "actions_by_level": {}
+    },
+    {
+      "id": "kanontreue-des-kampfsets",
+      "name": "Kanontreue des Kampfsets",
+      "source_file": "Kreaturen - Schattenlurch.md",
+      "json_file": "kanontreue-des-kampfsets.json",
+      "challenge_rating": null,
+      "level_count": 0,
+      "actions_by_level": {}
+    },
+    {
+      "id": "grabhund",
+      "name": "Grabhund",
+      "source_file": "Kreaturen - Grabhund.md",
+      "json_file": "grabhund.json",
+      "challenge_rating": 5,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 4,
+        "5": 4,
+        "10": 4,
+        "15": 4,
+        "20": 4,
+        "25": 4,
+        "30": 4,
+        "35": 4,
+        "40": 4
+      }
+    },
+    {
+      "id": "knochenwacht",
+      "name": "Knochenwacht",
+      "source_file": "Kreaturen - Knochenwacht.md",
+      "json_file": "knochenwacht.json",
+      "challenge_rating": 5,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 4,
+        "5": 4,
+        "10": 4,
+        "15": 4,
+        "20": 4,
+        "25": 4,
+        "30": 4,
+        "35": 4,
+        "40": 4
+      }
+    },
+    {
+      "id": "stromschnapper",
+      "name": "Stromschnapper",
+      "source_file": "Kreaturen - Stromschnapper.md",
+      "json_file": "stromschnapper.json",
+      "challenge_rating": 5,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 4,
+        "5": 4,
+        "10": 4,
+        "15": 4,
+        "20": 4,
+        "25": 4,
+        "30": 4,
+        "35": 4,
+        "40": 4
+      }
+    },
+    {
+      "id": "abschlussnotiz",
+      "name": "Abschlussnotiz",
+      "source_file": "Kreaturen - Stromschnapper.md",
+      "json_file": "abschlussnotiz.json",
+      "challenge_rating": null,
+      "level_count": 0,
+      "actions_by_level": {}
+    },
+    {
+      "id": "aschenpirscher",
+      "name": "Aschenpirscher",
+      "source_file": "Kreaturen - Aschenpirscher.md",
+      "json_file": "aschenpirscher.json",
+      "challenge_rating": 6,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 4,
+        "5": 4,
+        "10": 4,
+        "15": 4,
+        "20": 4,
+        "25": 4,
+        "30": 4,
+        "35": 4,
+        "40": 4
+      }
+    },
+    {
+      "id": "klappersoldat",
+      "name": "Klappersoldat",
+      "source_file": "Kreaturen - Klappersoldat.md",
+      "json_file": "klappersoldat.json",
+      "challenge_rating": 6,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 4,
+        "5": 4,
+        "10": 4,
+        "15": 4,
+        "20": 4,
+        "25": 4,
+        "30": 4,
+        "35": 4,
+        "40": 4
+      }
+    },
+    {
+      "id": "einsatz-als-sondergegner",
+      "name": "Einsatz als Sondergegner",
+      "source_file": "Kreaturen - Klappersoldat.md",
+      "json_file": "einsatz-als-sondergegner--kreaturen-klappersoldat.json",
+      "challenge_rating": null,
+      "level_count": 0,
+      "actions_by_level": {}
+    },
+    {
+      "id": "kanontreue-des-kampfsets",
+      "name": "Kanontreue des Kampfsets",
+      "source_file": "Kreaturen - Klappersoldat.md",
+      "json_file": "kanontreue-des-kampfsets--kreaturen-klappersoldat.json",
+      "challenge_rating": null,
+      "level_count": 0,
+      "actions_by_level": {}
+    },
+    {
+      "id": "kurzfassung-fuer-den-game-master",
+      "name": "Kurzfassung für den Game Master",
+      "source_file": "Kreaturen - Klappersoldat.md",
+      "json_file": "kurzfassung-fuer-den-game-master.json",
+      "challenge_rating": null,
+      "level_count": 0,
+      "actions_by_level": {}
+    },
+    {
+      "id": "runenwaechter",
+      "name": "Runenwächter",
+      "source_file": "Kreaturen - Runenwächter.md",
+      "json_file": "runenwaechter.json",
+      "challenge_rating": 6,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 4,
+        "5": 4,
+        "10": 4,
+        "15": 4,
+        "20": 4,
+        "25": 4,
+        "30": 4,
+        "35": 4,
+        "40": 4
+      }
+    },
+    {
+      "id": "donnerkeiler",
+      "name": "Donnerkeiler",
+      "source_file": "Kreaturen - Donnerkeiler.md",
+      "json_file": "donnerkeiler.json",
+      "challenge_rating": 7,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 4,
+        "5": 4,
+        "10": 4,
+        "15": 4,
+        "20": 4,
+        "25": 4,
+        "30": 4,
+        "35": 4,
+        "40": 4
+      }
+    },
+    {
+      "id": "abschlussnotiz",
+      "name": "Abschlussnotiz",
+      "source_file": "Kreaturen - Donnerkeiler.md",
+      "json_file": "abschlussnotiz--kreaturen-donnerkeiler.json",
+      "challenge_rating": null,
+      "level_count": 0,
+      "actions_by_level": {}
+    },
+    {
+      "id": "hohlritter",
+      "name": "Hohlritter",
+      "source_file": "Kreaturen - Hohlritter.md",
+      "json_file": "hohlritter.json",
+      "challenge_rating": 7,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 4,
+        "5": 4,
+        "10": 4,
+        "15": 4,
+        "20": 4,
+        "25": 4,
+        "30": 4,
+        "35": 4,
+        "40": 4
+      }
+    },
+    {
+      "id": "scherbengeist",
+      "name": "Scherbengeist",
+      "source_file": "Kreaturen - Scherbengeist.md",
+      "json_file": "scherbengeist.json",
+      "challenge_rating": 8,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 4,
+        "5": 4,
+        "10": 4,
+        "15": 4,
+        "20": 4,
+        "25": 4,
+        "30": 4,
+        "35": 4,
+        "40": 4
+      }
+    },
+    {
+      "id": "spielleitungsnotizen",
+      "name": "Spielleitungsnotizen",
+      "source_file": "Kreaturen - Scherbengeist.md",
+      "json_file": "spielleitungsnotizen.json",
+      "challenge_rating": null,
+      "level_count": 0,
+      "actions_by_level": {}
+    },
+    {
+      "id": "balancekurzpruefung",
+      "name": "Balancekurzprüfung",
+      "source_file": "Kreaturen - Scherbengeist.md",
+      "json_file": "balancekurzpruefung.json",
+      "challenge_rating": null,
+      "level_count": 0,
+      "actions_by_level": {}
+    },
+    {
+      "id": "abschlussnotiz",
+      "name": "Abschlussnotiz",
+      "source_file": "Kreaturen - Scherbengeist.md",
+      "json_file": "abschlussnotiz--kreaturen-scherbengeist.json",
+      "challenge_rating": null,
+      "level_count": 0,
+      "actions_by_level": {}
+    },
+    {
+      "id": "wurzelbrecher",
+      "name": "Wurzelbrecher",
+      "source_file": "Kreaturen - Wurzelbrecher.md",
+      "json_file": "wurzelbrecher.json",
+      "challenge_rating": 8,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 4,
+        "5": 4,
+        "10": 4,
+        "15": 4,
+        "20": 4,
+        "25": 4,
+        "30": 4,
+        "35": 4,
+        "40": 4
+      }
+    },
+    {
+      "id": "frostmaul",
+      "name": "Frostmaul",
+      "source_file": "Kreaturen - Frostmaul.md",
+      "json_file": "frostmaul.json",
+      "challenge_rating": 9,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 4,
+        "5": 4,
+        "10": 4,
+        "15": 4,
+        "20": 4,
+        "25": 4,
+        "30": 4,
+        "35": 4,
+        "40": 4
+      }
+    },
+    {
+      "id": "aethermantis",
+      "name": "Äthermantis",
+      "source_file": "Kreaturen - Äthermantis.md",
+      "json_file": "aethermantis.json",
+      "challenge_rating": 9,
+      "level_count": 9,
+      "actions_by_level": {
+        "1": 4,
+        "5": 4,
+        "10": 4,
+        "15": 4,
+        "20": 4,
+        "25": 4,
+        "30": 4,
+        "35": 4,
+        "40": 4
+      }
+    }
+  ],
+  "warning_count": 48,
+  "warnings": [
+    {
+      "source_file": "Index - Kreaturen.md",
+      "message": "Keine Kreaturen-H1-Überschrift gefunden."
+    },
+    {
+      "source_file": "Index - Kreaturen HG 1.md",
+      "message": "Keine Kreaturen-H1-Überschrift gefunden."
+    },
+    {
+      "source_file": "Index - Kreaturen HG 10.md",
+      "message": "Keine Kreaturen-H1-Überschrift gefunden."
+    },
+    {
+      "source_file": "Index - Kreaturen HG 11.md",
+      "message": "Keine Kreaturen-H1-Überschrift gefunden."
+    },
+    {
+      "source_file": "Index - Kreaturen HG 2.md",
+      "message": "Keine Kreaturen-H1-Überschrift gefunden."
+    },
+    {
+      "source_file": "Kreaturen - Glutfalter.md",
+      "message": "Keine Kerndaten-Tabelle vor den Loreabschnitten gefunden.",
+      "line": 981,
+      "creature_name": "Einsatz in Begegnungen"
+    },
+    {
+      "source_file": "Kreaturen - Glutfalter.md",
+      "message": "Keine Stufenblöcke gefunden.",
+      "line": 981,
+      "creature_name": "Einsatz in Begegnungen"
+    },
+    {
+      "source_file": "Kreaturen - Glutfalter.md",
+      "message": "Stufen entsprechen nicht exakt [1, 5, 10, 15, 20, 25, 30, 35, 40]. Gefunden: []",
+      "line": 981,
+      "creature_name": "Einsatz in Begegnungen"
+    },
+    {
+      "source_file": "Kreaturen - Glutfalter.md",
+      "message": "Keine Kerndaten-Tabelle vor den Loreabschnitten gefunden.",
+      "line": 995,
+      "creature_name": "Kurzzusammenfassung für den Game Master"
+    },
+    {
+      "source_file": "Kreaturen - Glutfalter.md",
+      "message": "Keine Stufenblöcke gefunden.",
+      "line": 995,
+      "creature_name": "Kurzzusammenfassung für den Game Master"
+    },
+    {
+      "source_file": "Kreaturen - Glutfalter.md",
+      "message": "Stufen entsprechen nicht exakt [1, 5, 10, 15, 20, 25, 30, 35, 40]. Gefunden: []",
+      "line": 995,
+      "creature_name": "Kurzzusammenfassung für den Game Master"
+    },
+    {
+      "source_file": "Index - Kreaturen HG 3.md",
+      "message": "Keine Kreaturen-H1-Überschrift gefunden."
+    },
+    {
+      "source_file": "Index - Kreaturen HG 4.md",
+      "message": "Keine Kreaturen-H1-Überschrift gefunden."
+    },
+    {
+      "source_file": "Kreaturen - Schattenlurch.md",
+      "message": "Keine Kerndaten-Tabelle vor den Loreabschnitten gefunden.",
+      "line": 987,
+      "creature_name": "Einsatz als Sondergegner"
+    },
+    {
+      "source_file": "Kreaturen - Schattenlurch.md",
+      "message": "Keine Stufenblöcke gefunden.",
+      "line": 987,
+      "creature_name": "Einsatz als Sondergegner"
+    },
+    {
+      "source_file": "Kreaturen - Schattenlurch.md",
+      "message": "Stufen entsprechen nicht exakt [1, 5, 10, 15, 20, 25, 30, 35, 40]. Gefunden: []",
+      "line": 987,
+      "creature_name": "Einsatz als Sondergegner"
+    },
+    {
+      "source_file": "Kreaturen - Schattenlurch.md",
+      "message": "Keine Kerndaten-Tabelle vor den Loreabschnitten gefunden.",
+      "line": 995,
+      "creature_name": "Kanontreue des Kampfsets"
+    },
+    {
+      "source_file": "Kreaturen - Schattenlurch.md",
+      "message": "Keine Stufenblöcke gefunden.",
+      "line": 995,
+      "creature_name": "Kanontreue des Kampfsets"
+    },
+    {
+      "source_file": "Kreaturen - Schattenlurch.md",
+      "message": "Stufen entsprechen nicht exakt [1, 5, 10, 15, 20, 25, 30, 35, 40]. Gefunden: []",
+      "line": 995,
+      "creature_name": "Kanontreue des Kampfsets"
+    },
+    {
+      "source_file": "Index - Kreaturen HG 5.md",
+      "message": "Keine Kreaturen-H1-Überschrift gefunden."
+    },
+    {
+      "source_file": "Kreaturen - Stromschnapper.md",
+      "message": "Keine Kerndaten-Tabelle vor den Loreabschnitten gefunden.",
+      "line": 1110,
+      "creature_name": "Abschlussnotiz"
+    },
+    {
+      "source_file": "Kreaturen - Stromschnapper.md",
+      "message": "Keine Stufenblöcke gefunden.",
+      "line": 1110,
+      "creature_name": "Abschlussnotiz"
+    },
+    {
+      "source_file": "Kreaturen - Stromschnapper.md",
+      "message": "Stufen entsprechen nicht exakt [1, 5, 10, 15, 20, 25, 30, 35, 40]. Gefunden: []",
+      "line": 1110,
+      "creature_name": "Abschlussnotiz"
+    },
+    {
+      "source_file": "Index - Kreaturen HG 6.md",
+      "message": "Keine Kreaturen-H1-Überschrift gefunden."
+    },
+    {
+      "source_file": "Kreaturen - Klappersoldat.md",
+      "message": "Keine Kerndaten-Tabelle vor den Loreabschnitten gefunden.",
+      "line": 1166,
+      "creature_name": "Einsatz als Sondergegner"
+    },
+    {
+      "source_file": "Kreaturen - Klappersoldat.md",
+      "message": "Keine Stufenblöcke gefunden.",
+      "line": 1166,
+      "creature_name": "Einsatz als Sondergegner"
+    },
+    {
+      "source_file": "Kreaturen - Klappersoldat.md",
+      "message": "Stufen entsprechen nicht exakt [1, 5, 10, 15, 20, 25, 30, 35, 40]. Gefunden: []",
+      "line": 1166,
+      "creature_name": "Einsatz als Sondergegner"
+    },
+    {
+      "source_file": "Kreaturen - Klappersoldat.md",
+      "message": "Keine Kerndaten-Tabelle vor den Loreabschnitten gefunden.",
+      "line": 1183,
+      "creature_name": "Kanontreue des Kampfsets"
+    },
+    {
+      "source_file": "Kreaturen - Klappersoldat.md",
+      "message": "Keine Stufenblöcke gefunden.",
+      "line": 1183,
+      "creature_name": "Kanontreue des Kampfsets"
+    },
+    {
+      "source_file": "Kreaturen - Klappersoldat.md",
+      "message": "Stufen entsprechen nicht exakt [1, 5, 10, 15, 20, 25, 30, 35, 40]. Gefunden: []",
+      "line": 1183,
+      "creature_name": "Kanontreue des Kampfsets"
+    },
+    {
+      "source_file": "Kreaturen - Klappersoldat.md",
+      "message": "Keine Kerndaten-Tabelle vor den Loreabschnitten gefunden.",
+      "line": 1199,
+      "creature_name": "Kurzfassung für den Game Master"
+    },
+    {
+      "source_file": "Kreaturen - Klappersoldat.md",
+      "message": "Keine Stufenblöcke gefunden.",
+      "line": 1199,
+      "creature_name": "Kurzfassung für den Game Master"
+    },
+    {
+      "source_file": "Kreaturen - Klappersoldat.md",
+      "message": "Stufen entsprechen nicht exakt [1, 5, 10, 15, 20, 25, 30, 35, 40]. Gefunden: []",
+      "line": 1199,
+      "creature_name": "Kurzfassung für den Game Master"
+    },
+    {
+      "source_file": "Kreaturen - Donnerkeiler.md",
+      "message": "Keine Kerndaten-Tabelle vor den Loreabschnitten gefunden.",
+      "line": 1081,
+      "creature_name": "Abschlussnotiz"
+    },
+    {
+      "source_file": "Kreaturen - Donnerkeiler.md",
+      "message": "Keine Stufenblöcke gefunden.",
+      "line": 1081,
+      "creature_name": "Abschlussnotiz"
+    },
+    {
+      "source_file": "Kreaturen - Donnerkeiler.md",
+      "message": "Stufen entsprechen nicht exakt [1, 5, 10, 15, 20, 25, 30, 35, 40]. Gefunden: []",
+      "line": 1081,
+      "creature_name": "Abschlussnotiz"
+    },
+    {
+      "source_file": "Index - Kreaturen HG 7.md",
+      "message": "Keine Kreaturen-H1-Überschrift gefunden."
+    },
+    {
+      "source_file": "Index - Kreaturen HG 8.md",
+      "message": "Keine Kreaturen-H1-Überschrift gefunden."
+    },
+    {
+      "source_file": "Kreaturen - Scherbengeist.md",
+      "message": "Keine Kerndaten-Tabelle vor den Loreabschnitten gefunden.",
+      "line": 1062,
+      "creature_name": "Spielleitungsnotizen"
+    },
+    {
+      "source_file": "Kreaturen - Scherbengeist.md",
+      "message": "Keine Stufenblöcke gefunden.",
+      "line": 1062,
+      "creature_name": "Spielleitungsnotizen"
+    },
+    {
+      "source_file": "Kreaturen - Scherbengeist.md",
+      "message": "Stufen entsprechen nicht exakt [1, 5, 10, 15, 20, 25, 30, 35, 40]. Gefunden: []",
+      "line": 1062,
+      "creature_name": "Spielleitungsnotizen"
+    },
+    {
+      "source_file": "Kreaturen - Scherbengeist.md",
+      "message": "Keine Kerndaten-Tabelle vor den Loreabschnitten gefunden.",
+      "line": 1075,
+      "creature_name": "Balancekurzprüfung"
+    },
+    {
+      "source_file": "Kreaturen - Scherbengeist.md",
+      "message": "Keine Stufenblöcke gefunden.",
+      "line": 1075,
+      "creature_name": "Balancekurzprüfung"
+    },
+    {
+      "source_file": "Kreaturen - Scherbengeist.md",
+      "message": "Stufen entsprechen nicht exakt [1, 5, 10, 15, 20, 25, 30, 35, 40]. Gefunden: []",
+      "line": 1075,
+      "creature_name": "Balancekurzprüfung"
+    },
+    {
+      "source_file": "Kreaturen - Scherbengeist.md",
+      "message": "Keine Kerndaten-Tabelle vor den Loreabschnitten gefunden.",
+      "line": 1089,
+      "creature_name": "Abschlussnotiz"
+    },
+    {
+      "source_file": "Kreaturen - Scherbengeist.md",
+      "message": "Keine Stufenblöcke gefunden.",
+      "line": 1089,
+      "creature_name": "Abschlussnotiz"
+    },
+    {
+      "source_file": "Kreaturen - Scherbengeist.md",
+      "message": "Stufen entsprechen nicht exakt [1, 5, 10, 15, 20, 25, 30, 35, 40]. Gefunden: []",
+      "line": 1089,
+      "creature_name": "Abschlussnotiz"
+    },
+    {
+      "source_file": "Index - Kreaturen HG 9.md",
+      "message": "Keine Kreaturen-H1-Überschrift gefunden."
+    }
+  ]
+}

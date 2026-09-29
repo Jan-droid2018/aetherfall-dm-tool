@@ -1,0 +1,4636 @@
+{
+  "schema_version": "aetherfall.creatures.v1",
+  "id": "schattenlurch",
+  "name": "Schattenlurch",
+  "source_file": "Kreaturen - Schattenlurch.md",
+  "core": {
+    "creature_type": "Reinblütiger Herzloser",
+    "classification": "Sondergegner / Crossover-Fremdwesen",
+    "origin": "Kingdom-Hearts-Kosmologie; aus der Dunkelheit in Herzen hervorgehender Reinblütiger Herzloser",
+    "occurrence": "In Kingdom Hearts in vielen Welten; in Ätherfall nur als bewusst eingesetzte Sonder- oder Crossover-Begegnung, nicht als reguläre Weltpopulation",
+    "challenge_rating": {
+      "raw": "4 – sehr schwache / einfache Bedrohung mit besonderer Gegenmechanik",
+      "value": 4,
+      "label": "sehr schwache / einfache Bedrohung mit besonderer Gegenmechanik"
+    },
+    "encounter_rank": "Standard",
+    "archetype": "Ausweichend",
+    "elemental_affinity": "Dunkelheit",
+    "size": "Klein; ungefähr kindgroße, gebückte humanoide Silhouette",
+    "intelligence": "Sehr niedrig; instinktgetrieben, ohne erkennbare Sprache oder eigenständige Planung",
+    "extra_fields": {},
+    "raw_fields": {
+      "Kreaturenart": "Reinblütiger Herzloser",
+      "Einordnung": "Sondergegner / Crossover-Fremdwesen",
+      "Ursprüngliche Herkunft": "Kingdom-Hearts-Kosmologie; aus der Dunkelheit in Herzen hervorgehender Reinblütiger Herzloser",
+      "Bekanntes Vorkommen": "In Kingdom Hearts in vielen Welten; in Ätherfall nur als bewusst eingesetzte Sonder- oder Crossover-Begegnung, nicht als reguläre Weltpopulation",
+      "Herausforderungsgrad": "**4 – sehr schwache / einfache Bedrohung mit besonderer Gegenmechanik**",
+      "Begegnungsrang": "Standard",
+      "Archetyp": "Ausweichend",
+      "Elementare Eigenschaft": "**Dunkelheit**",
+      "Größenordnung": "Klein; ungefähr kindgroße, gebückte humanoide Silhouette",
+      "Intelligenzniveau": "Sehr niedrig; instinktgetrieben, ohne erkennbare Sprache oder eigenständige Planung"
+    },
+    "raw_table_markdown": "| Kerndaten | Angabe |\n|---|---|\n| Kreaturenart | Reinblütiger Herzloser |\n| Einordnung | Sondergegner / Crossover-Fremdwesen |\n| Ursprüngliche Herkunft | Kingdom-Hearts-Kosmologie; aus der Dunkelheit in Herzen hervorgehender Reinblütiger Herzloser |\n| Bekanntes Vorkommen | In Kingdom Hearts in vielen Welten; in Ätherfall nur als bewusst eingesetzte Sonder- oder Crossover-Begegnung, nicht als reguläre Weltpopulation |\n| Herausforderungsgrad | **4 – sehr schwache / einfache Bedrohung mit besonderer Gegenmechanik** |\n| Begegnungsrang | Standard |\n| Archetyp | Ausweichend |\n| Elementare Eigenschaft | **Dunkelheit** |\n| Größenordnung | Klein; ungefähr kindgroße, gebückte humanoide Silhouette |\n| Intelligenzniveau | Sehr niedrig; instinktgetrieben, ohne erkennbare Sprache oder eigenständige Planung |"
+  },
+  "action_overview": {
+    "headers": [
+      "Nr.",
+      "Aktion",
+      "Typ",
+      "Grundfunktion"
+    ],
+    "actions": [
+      {
+        "number": 1,
+        "name": "Krallenhieb",
+        "type": "Angriff",
+        "base_function": "Schneller rechter Krallenangriff; zuverlässige Standardoption im Nahkampf.",
+        "id": "schattenlurch-overview-a01-krallenhieb",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "1",
+          "Aktion": "Krallenhieb",
+          "Typ": "Angriff",
+          "Grundfunktion": "Schneller rechter Krallenangriff; zuverlässige Standardoption im Nahkampf."
+        }
+      },
+      {
+        "number": 2,
+        "name": "Stoßklaue",
+        "type": "Angriff",
+        "base_function": "Gerader linker Klauenstoß; gleiche Grundgefährlichkeit, aber Stichschaden statt Hiebschaden.",
+        "id": "schattenlurch-overview-a02-stossklaue",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "2",
+          "Aktion": "Stoßklaue",
+          "Typ": "Angriff",
+          "Grundfunktion": "Gerader linker Klauenstoß; gleiche Grundgefährlichkeit, aber Stichschaden statt Hiebschaden."
+        }
+      },
+      {
+        "number": 3,
+        "name": "Sprungangriff",
+        "type": "Angriff / Bewegung",
+        "base_function": "Springt aus kurzer Distanz auf ein Ziel zu und kratzt im Sprung; stärker, aber nur mit ausreichendem Abstand einsetzbar.",
+        "id": "schattenlurch-overview-a03-sprungangriff",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "3",
+          "Aktion": "Sprungangriff",
+          "Typ": "Angriff / Bewegung",
+          "Grundfunktion": "Springt aus kurzer Distanz auf ein Ziel zu und kratzt im Sprung; stärker, aber nur mit ausreichendem Abstand einsetzbar."
+        }
+      }
+    ]
+  },
+  "shared_action_details": [],
+  "lore_and_rules": [
+    {
+      "title": "Überblick",
+      "id": "ueberblick",
+      "markdown": "Der **Schattenlurch** ist die schlichteste und unmittelbarste Erscheinungsform eines reinblütigen Herzlosen. Er wirkt nicht wie ein gewöhnlicher Organismus mit Haut, Fell oder sichtbarer Muskulatur, sondern wie ein Stück tiefer Finsternis, das sich aus einer Fläche gelöst und einen dreidimensionalen Körper angenommen hat. Seine Gestalt bleibt klein, gebeugt und auf den ersten Blick beinahe unbeholfen. Gerade diese geringe Größe täuscht jedoch über seine gefährlichste Eigenschaft hinweg: Der Schattenlurch kann seinen Körper vollständig in eine flache Schattenform überführen und über feste Oberflächen gleiten.\n\nEr ist kein regulärer Bestandteil der Ätherfall-Weltökologie. Dieser Eintrag behandelt ihn ausdrücklich als **Sondergegner aus Kingdom Hearts**, der nur dann in Aetheryn auftaucht, wenn die Spielleitung eine entsprechende Crossover-Begegnung zulässt. Dadurch werden keine neuen Regionen, Völker oder kosmologischen Regeln Ätherfalls als Kanon vorausgesetzt.\n\nSein Kampfstil bleibt absichtlich einfach. Er besitzt keine Schattenbolzen, keine Beschwörungen, keine Flächenmagie und keine erfundenen Dunkelheitszauber. Seine drei Angriffe entsprechen den grundlegenden Angriffsmustern des Schattenlurchs: **Krallenhieb**, **Stoßklaue** und **Sprungangriff**. Seine Schattenform ist keine zusätzliche Angriffsaktion, sondern seine besondere Fortbewegungsweise.",
+      "tables": [],
+      "source": {
+        "line_start": 34,
+        "line_end": 41
+      }
+    },
+    {
+      "title": "Erscheinungsbild und Anatomie",
+      "id": "erscheinungsbild-und-anatomie",
+      "markdown": "Ein Schattenlurch besitzt eine kleine, humanoide Grundform mit deutlich überzeichneten Proportionen. Der Rumpf ist schmal und nach vorn gebeugt, während Arme und Beine lang und dünn wirken. Seine gesamte Oberfläche erscheint pechschwarz. Wo bei einem normalen Wesen Haut, Kleidung oder Panzerung zu unterscheiden wären, existiert bei ihm nur eine einheitliche, lichtschluckende Masse. An den Rändern wirkt die Silhouette weich und beinahe flüssig, als könne sie ihre Kontur jederzeit verlieren.\n\nSein Kopf ist rundlich und vollständig gesichtslos. Es gibt keinen sichtbaren Mund, keine Nase und keine Ohren. Die einzigen klaren Merkmale sind zwei große, kreisrunde **gelbe Augen**, die wie eigenständige Lichtpunkte aus der schwarzen Gestalt hervorleuchten. Ihr Ausdruck verändert sich kaum; der Schattenlurch vermittelt dadurch weniger Wut oder Hass als eine unpersönliche, leere Aufmerksamkeit.\n\nAus dem Kopf wachsen zwei lange, biegsame Fühler. Sie schwanken, knicken und zucken bei jeder Bewegung und geben dem Wesen eine eigentümlich insektenartige Silhouette. Seine Hände enden in drei langen, spitzen Klauenfingern. Auch die Füße laufen scharf aus und wirken eher wie zugespitzte Schattenformen als wie echte Zehen.\n\nDer Körper besitzt keine erkennbare Rüstung. Seine Überlebensfähigkeit entsteht stattdessen durch Beweglichkeit, geringe Körperfläche und die Fähigkeit, in den Boden einzutauchen. Wird ein Schattenlurch endgültig vernichtet, bleibt kein normaler Leichnam zurück. Seine schwarze Gestalt zerfällt und löst sich in Dunkelheit auf.",
+      "tables": [],
+      "source": {
+        "line_start": 42,
+        "line_end": 51
+      }
+    },
+    {
+      "title": "Herkunft und Entstehung",
+      "id": "herkunft-und-entstehung",
+      "markdown": "Schattenlurche gehören zu den **reinblütigen Herzlosen**. Sie werden nicht künstlich mit einem Emblem erzeugt, sondern stehen für die natürliche Form eines Herzlosen, die aus der Dunkelheit in Herzen hervorgehen kann. Sie tragen deshalb kein Herzlosen-Emblem auf dem Körper.\n\nAnders als emblematische Herzlose hinterlassen reinblütige Herzlose bei ihrer Vernichtung kein freigesetztes Herz. Beim Schattenlurch verschwindet stattdessen die körperliche Manifestation der Dunkelheit selbst. Für diesen Ätherfall-Sondereintrag bedeutet das: Nach einer regelkonformen endgültigen Vernichtung bleibt kein Herz als Beute, Ressource oder gesondertes Ziel zurück.\n\nDa der Schattenlurch nicht als reguläre Ätherfall-Kreatur gedacht ist, wird seine Herkunft nicht nachträglich auf Eidryth, Ätherströmungen oder einen erfundenen Ort Aetheryns umgeschrieben. Seine Fremdartigkeit ist Teil dieser speziellen Begegnung.",
+      "tables": [],
+      "source": {
+        "line_start": 52,
+        "line_end": 59
+      }
+    },
+    {
+      "title": "Vorkommen und Lebensraum",
+      "id": "vorkommen-und-lebensraum",
+      "markdown": "In seiner ursprünglichen Kingdom-Hearts-Umgebung taucht der Schattenlurch in sehr unterschiedlichen Welten auf und ist besonders als häufiger, in Gruppen auftretender Herzloser bekannt. Er benötigt kein Nest, keine Nahrungsvorräte und kein klassisches Revier. Wo Dunkelheit und erreichbare Herzen vorhanden sind, kann er als Jäger auftreten.\n\nFür Ätherfall gilt bewusst eine engere Aussage: **Es existiert kein reguläres natürliches Verbreitungsgebiet.** Die Spielleitung platziert Schattenlurche nur in Szenen, in denen das Crossover ausdrücklich gewünscht ist. Dadurch erhält keine bestehende Region automatisch eine neue Herzlosenpopulation.\n\nAls Kampfumgebung bevorzugt der Schattenlurch Flächen, über die seine Schattenform sinnvoll gleiten kann: Böden, Straßen, Steinplatten, Ruinenböden oder andere zusammenhängende feste Oberflächen. Die Fähigkeit erlaubt ihm jedoch nicht, durch geschlossene Wände, massive Hindernisse oder freie Luft zu reisen.",
+      "tables": [],
+      "source": {
+        "line_start": 60,
+        "line_end": 67
+      }
+    },
+    {
+      "title": "Verhalten und Lebensweise",
+      "id": "verhalten-und-lebensweise",
+      "markdown": "Der Schattenlurch handelt fast vollständig instinktiv. Er führt keine Gespräche, stellt keine Forderungen und zeigt keine nachvollziehbare langfristige Planung. Sein Verhalten richtet sich auf das Aufspüren und Angreifen von Lebewesen beziehungsweise deren Herzen. In Gruppen entsteht dadurch der Eindruck eines Schwarms kleiner Jäger, obwohl keine sichtbare Befehlskette besteht.\n\nAußerhalb unmittelbarer Angriffe wirkt seine Bewegung hektisch und unruhig. Er läuft gebückt, richtet sich plötzlich auf, springt, duckt sich wieder und ändert ohne sichtbare Vorwarnung die Richtung. Die langen Fühler verstärken diesen Eindruck, weil sie jeder Bewegung verzögert folgen und ständig nachschwingen.\n\nSobald er sich einem Ziel nähert, nutzt er bevorzugt seine Schattenform. Dabei verliert sein Körper seine räumliche Tiefe und wird zu einem flachen schwarzen Fleck auf der Oberfläche. In diesem Zustand gleitet er schnell an sein Ziel heran. Erst für einen Angriff hebt sich die Silhouette wieder aus der Fläche, nimmt ihre humanoide Form an und schlägt mit den Klauen zu.\n\nSchattenlurche kennen keine erkennbare Selbstfürsorge im tierischen Sinn. Ein schwer verwundetes Exemplar bettelt nicht, ergibt sich nicht und versucht nicht, eine Wunde zu versorgen. Seine Bewegungen bleiben instinktiv auf Angriff, Annäherung und erneutes Eintauchen ausgerichtet.",
+      "tables": [],
+      "source": {
+        "line_start": 68,
+        "line_end": 77
+      }
+    },
+    {
+      "title": "Spuren und Vorzeichen",
+      "id": "spuren-und-vorzeichen",
+      "markdown": "Ein Schattenlurch hinterlässt nur wenige klassische Spuren. Es gibt normalerweise keine Fellreste, Blutspuren, Ausscheidungen, Fraßreste oder dauerhaft sichtbare Fußabdrücke.\n\nTypische Vorzeichen sind stattdessen:\n\n- ein schwarzer Fleck, der sich entgegen einer normalen Lichtquelle über einen Boden bewegt,\n- zwei gelbe Augen, die für einen Moment in einer dunklen Ecke sichtbar werden,\n- mehrere kleine Silhouetten, die gleichzeitig in eine Oberfläche eintauchen,\n- plötzlich aus dem Boden auftauchende gebückte Gestalten,\n- hektische, kurze Bewegungen unmittelbar vor einem Angriff,\n- das vollständige Fehlen eines zurückbleibenden Körpers nach endgültiger Vernichtung.\n\nDiese Zeichen eignen sich für den Game Master besonders gut, um eine Begegnung anzukündigen, ohne den Gegner sofort vollständig zu zeigen.",
+      "tables": [],
+      "source": {
+        "line_start": 78,
+        "line_end": 92
+      }
+    },
+    {
+      "title": "Beziehung zu Bewohnern und Kulturen",
+      "id": "beziehung-zu-bewohnern-und-kulturen",
+      "markdown": "Da der Schattenlurch in diesem Regelwerk ausdrücklich ein **Crossover-Sondergegner** ist, besitzt er keine fest etablierte Beziehung zu den Kulturen Aetheryns. Es wird nicht vorausgesetzt, dass Bewohner Caldrias, Veyrgards, Sylvarras, Ashkarims oder Memorías bereits wissen, was ein Herzloser ist.\n\nIn einer konkreten Kampagne können Figuren ihn daher zunächst als unbekanntes Schattenwesen wahrnehmen. Die entscheidenden Erkenntnisse können während der Begegnung beobachtet werden: gewöhnliche Angriffe können ihn zwar schwächen, reichen aber nicht zur endgültigen Vernichtung; Licht ist besonders wirksam; in seiner flachen Schattenform ist er vollständig unangreifbar.\n\nEine Kampagne, die Kingdom-Hearts-Wissen ausdrücklich voraussetzt, kann natürlich Figuren besitzen, die einen Schattenlurch und ein Schlüsselschwert bereits kennen. Dieser Eintrag erfindet dafür jedoch keine neue Ätherfall-Fraktion und keine nachträgliche Weltgeschichte.",
+      "tables": [],
+      "source": {
+        "line_start": 93,
+        "line_end": 100
+      }
+    },
+    {
+      "title": "Kampfverhalten",
+      "id": "kampfverhalten",
+      "markdown": "Der Schattenlurch versucht, offene Annäherungen zu vermeiden. Zu Beginn seines eigenen Zuges nutzt er nach Möglichkeit die **Schattenform**, gleitet über den Boden in eine günstige Position und taucht unmittelbar vor seinem Angriff wieder auf. Während dieser flachen Bewegung kann er nicht verletzt werden.\n\nNach dem Auftauchen greift er ausschließlich mit einem seiner drei bekannten körperlichen Muster an:\n\n1. ein schneller **Krallenhieb** mit der rechten Hand,\n2. eine gerade **Stoßklaue** mit der linken Hand,\n3. ein **Sprungangriff**, bei dem er sich auf ein etwas entferntes Ziel wirft und im Sprung kratzt.\n\nDer Sprungangriff ist seine stärkste Einzeloption, benötigt aber Abstand für den Anlauf beziehungsweise Sprung. Steht der Schattenlurch bereits direkt am Ziel, verwendet er gewöhnlich Krallenhieb oder Stoßklaue.\n\nNach dem Angriff bleibt er bis zum Beginn seines nächsten Zuges körperlich manifestiert. Dieses Zeitfenster ist die wichtigste Gelegenheit der Gruppe, ihn zu treffen. Die Begegnung belohnt daher Aufmerksamkeit für Initiative, Positionierung und das Bereithalten eines Schlüsselschwert- oder Lichtangriffs.",
+      "tables": [],
+      "source": {
+        "line_start": 101,
+        "line_end": 114
+      }
+    },
+    {
+      "title": "Sonderregeln",
+      "id": "sonderregeln",
+      "markdown": "### Schattenform\n\nDie Schattenform ist **keine vierte Kampfaktion**, sondern eine besondere Form der Bewegung.\n\n- Zu Beginn seiner eigenen Bewegung kann der Schattenlurch ohne zusätzliche Aktion in die Schattenform eintauchen.\n- In Schattenform wird er zu einer flachen schwarzen Silhouette und darf sich bis zu **12 m** über eine zusammenhängende feste Oberfläche bewegen.\n- Während dieser Bewegung ist er **vollständig immun gegen Angriffe, Schaden, Magie und andere gegen ihn gerichtete Effekte**. Dies gilt ausdrücklich auch für **Schlüsselschwerter und Lichtmagie**.\n- Er kann in Schattenform nicht angreifen, keine Gegenstände bedienen und keine anderen Kreaturen körperlich festhalten.\n- Er kann nicht durch geschlossene Wände, massive Hindernisse oder freie Lücken ohne tragende Oberfläche gleiten.\n- Bevor seine Bewegung endet, muss er wieder auftauchen.\n- Nach dem Auftauchen bleibt er bis zum Beginn seines nächsten Zuges körperlich und normal angreifbar.\n\nDamit entsteht kein permanenter Immunitätszustand: Der Schattenlurch erhält seine Unverwundbarkeit nur während seiner eigenen gleitenden Bewegung und öffnet anschließend ein klares Gegenfenster.\n\n### Nur durch Schlüsselschwert oder Licht endgültig vernichtbar\n\nDer Schattenlurch kann durch andere Schadensquellen verletzt und auf **1 LP** reduziert werden, aber nicht endgültig besiegt werden.\n\n- Würde Schaden, der **weder von einem Schlüsselschwert noch vom Element Licht** stammt, den Schattenlurch auf 0 LP oder darunter reduzieren, verbleibt er stattdessen bei **1 LP**.\n- Solange er 1 LP besitzt, können solche Quellen seine LP nicht weiter senken.\n- Ein erfolgreicher Treffer mit einem ausdrücklich als **Schlüsselschwert** definierten Gegenstand kann ihn auf 0 LP reduzieren, unabhängig davon, welches Element dieser Angriff besitzt.\n- **Lichtschaden und Lichtmagie** können ihn ebenfalls auf 0 LP reduzieren.\n- Der gültige vernichtende Treffer muss nach allen normalen Schadens-, Resistenz- und Verteidigungsregeln mindestens **1 tatsächlichen LP-Verlust** verursachen.\n- Befindet sich der Schattenlurch gerade in Schattenform, schützt ihn deren vollständige Immunität auch vor einem solchen vernichtenden Treffer.\n\n> **GM-Hinweis:** Der HG 4 setzt voraus, dass die Gruppe grundsätzlich Zugang zu mindestens einer Möglichkeit für einen gültigen finalen Treffer besitzt. Ohne Schlüsselschwert oder Lichtquelle ist die Begegnung absichtlich nicht endgültig lösbar und kann nicht sinnvoll allein über den HG bewertet werden.\n\n### Reinblütiger Herzloser\n\nWird der Schattenlurch endgültig vernichtet, löst er sich in Dunkelheit auf. Er hinterlässt **kein freigesetztes Herz**.",
+      "tables": [],
+      "source": {
+        "line_start": 115,
+        "line_end": 147
+      }
+    },
+    {
+      "title": "Mechanische Grundidentität",
+      "id": "mechanische-grundidentitaet",
+      "markdown": "**LP-Hauptattribut:** Willenskraft (WI) – regeltechnisch beschreibt sie hier die übernatürliche Kohäsion seiner Dunkelheitsgestalt, nicht einen ausgeprägten freien Willen.  \n**LP-Sekundärattribut:** Intuition (IT) – seine Existenz und sein Überleben sind stärker instinktiv als bewusst gesteuert.  \n**Bonusprofil:** Beweglichkeit und Ausweichen sind die klaren Spitzenwerte. Wahrnehmung und Intuition sind solide; Intelligenz, Charisma und Empathie bleiben sehr niedrig.  \n**Offensivprofil:** Ausschließlich körperliche Nahkampfangriffe aus dem bekannten Shadow-Angriffsmuster. Keine zusätzlichen Dunkelheitszauber. Krallenhieb und Stoßklaue sind Routineangriffe; der Sprungangriff ist stärker, aber positionsgebunden.  \n**Defensivprofil:** Ausweichend. Niedrige feste physische und magische Verteidigung, dafür erhöhtes Ausweichen und eine nur während der eigenen Bewegung aktive vollständige Immunität durch Schattenform.  \n**Bewegungsprofil:** Land 10 m; Schattenform bis 12 m über zusammenhängende feste Oberflächen.  \n**Elementprofil:** Feste Dunkelheitsprägung. **25 % Verwundbarkeit gegen Licht**, **50 % Resistenz gegen Dunkelheit**, übrige Elemente neutral. Die zusätzliche Vernichtungsregel ist davon getrennt.  \n**Aktionsanzahl:** **3** unterschiedliche Kampfoptionen.  \n**Phasenprofil:** Kein Phasenwechsel.",
+      "tables": [],
+      "source": {
+        "line_start": 148,
+        "line_end": 159
+      }
+    },
+    {
+      "title": "Aktionsübersicht",
+      "id": "aktionsuebersicht",
+      "markdown": "| Nr. | Aktion | Typ | Grundfunktion |\n|---:|---|---|---|\n| 1 | Krallenhieb | Angriff | Schneller rechter Krallenangriff; zuverlässige Standardoption im Nahkampf. |\n| 2 | Stoßklaue | Angriff | Gerader linker Klauenstoß; gleiche Grundgefährlichkeit, aber Stichschaden statt Hiebschaden. |\n| 3 | Sprungangriff | Angriff / Bewegung | Springt aus kurzer Distanz auf ein Ziel zu und kratzt im Sprung; stärker, aber nur mit ausreichendem Abstand einsetzbar. |",
+      "tables": [
+        {
+          "headers": [
+            "Nr.",
+            "Aktion",
+            "Typ",
+            "Grundfunktion"
+          ],
+          "rows": [
+            {
+              "Nr.": "1",
+              "Aktion": "Krallenhieb",
+              "Typ": "Angriff",
+              "Grundfunktion": "Schneller rechter Krallenangriff; zuverlässige Standardoption im Nahkampf."
+            },
+            {
+              "Nr.": "2",
+              "Aktion": "Stoßklaue",
+              "Typ": "Angriff",
+              "Grundfunktion": "Gerader linker Klauenstoß; gleiche Grundgefährlichkeit, aber Stichschaden statt Hiebschaden."
+            },
+            {
+              "Nr.": "3",
+              "Aktion": "Sprungangriff",
+              "Typ": "Angriff / Bewegung",
+              "Grundfunktion": "Springt aus kurzer Distanz auf ein Ziel zu und kratzt im Sprung; stärker, aber nur mit ausreichendem Abstand einsetzbar."
+            }
+          ],
+          "raw_markdown": "| Nr. | Aktion | Typ | Grundfunktion |\n|---:|---|---|---|\n| 1 | Krallenhieb | Angriff | Schneller rechter Krallenangriff; zuverlässige Standardoption im Nahkampf. |\n| 2 | Stoßklaue | Angriff | Gerader linker Klauenstoß; gleiche Grundgefährlichkeit, aber Stichschaden statt Hiebschaden. |\n| 3 | Sprungangriff | Angriff / Bewegung | Springt aus kurzer Distanz auf ein Ziel zu und kratzt im Sprung; stärker, aber nur mit ausreichendem Abstand einsetzbar. |"
+        }
+      ],
+      "source": {
+        "line_start": 160,
+        "line_end": 168
+      }
+    }
+  ],
+  "levels": [
+    {
+      "level": 1,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 4,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "4",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 4,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "4",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "130",
+          "physische_verteidigung": "6",
+          "magieverteidigung": "5",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m; Schattenform bis 12 m während der eigenen Bewegung"
+        },
+        "raw_fields": {
+          "Maximale LP": "130",
+          "Physische Verteidigung": "6",
+          "Magieverteidigung": "5",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m; Schattenform bis 12 m während der eigenen Bewegung"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+1) + WI-Bonus (+0)) × 10) + ((IT-Modifikator (+2) + IT-Bonus (+0)) × 5) + (1 × 10) = 130 LP",
+        "markdown": "`100 + ((WI-Modifikator (+1) + WI-Bonus (+0)) × 10) + ((IT-Modifikator (+2) + IT-Bonus (+0)) × 5) + (1 × 10) = 130 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Krallenhieb",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+3)",
+            "range_area": "Nah",
+            "damage_effect": "5W8 + ST-Modifikator (+2) + ST-Bonus (+0)",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "24.5",
+            "avg_hit_damage": "16.7",
+            "avg_expected_effect": "11.5",
+            "ge_share": "0.51",
+            "notes": "Rechter Krallenhieb; keine Zusatzkontrolle.",
+            "avg_raw_damage_value": 24.5,
+            "avg_hit_damage_value": 16.7,
+            "ge_share_value": 0.51,
+            "id": "schattenlurch-l01-a01-krallenhieb",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Krallenhieb",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+3)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "5W8 + ST-Modifikator (+2) + ST-Bonus (+0)",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "24.5",
+              "Ø Treffer-Endschaden": "16.7",
+              "Ø Erwartungswirkung": "11.5",
+              "GE-Anteil": "0.51",
+              "Zusatz": "Rechter Krallenhieb; keine Zusatzkontrolle."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Stoßklaue",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+3)",
+            "range_area": "Nah",
+            "damage_effect": "5W8 + ST-Modifikator (+2) + ST-Bonus (+0)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "24.5",
+            "avg_hit_damage": "16.7",
+            "avg_expected_effect": "11.5",
+            "ge_share": "0.51",
+            "notes": "Linker gerader Klauenstoß; keine Zusatzkontrolle.",
+            "avg_raw_damage_value": 24.5,
+            "avg_hit_damage_value": 16.7,
+            "ge_share_value": 0.51,
+            "id": "schattenlurch-l01-a02-stossklaue",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Stoßklaue",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+3)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "5W8 + ST-Modifikator (+2) + ST-Bonus (+0)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "24.5",
+              "Ø Treffer-Endschaden": "16.7",
+              "Ø Erwartungswirkung": "11.5",
+              "GE-Anteil": "0.51",
+              "Zusatz": "Linker gerader Klauenstoß; keine Zusatzkontrolle."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Sprungangriff",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Bewegung",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+3)",
+            "range_area": "Ziel zu Beginn 2–5 m entfernt; Sprung bis 3 m als Teil der Aktion",
+            "damage_effect": "5W8 + 1W6 + ST-Modifikator (+2) + ST-Bonus (+0)",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "28.0",
+            "avg_hit_damage": "20.3",
+            "avg_expected_effect": "13.9",
+            "ge_share": "0.62",
+            "notes": "Nur einsetzbar, wenn das Ziel zu Beginn der Aktion mindestens 2 m entfernt ist und ein direkter Sprungweg besteht.",
+            "avg_raw_damage_value": 28.0,
+            "avg_hit_damage_value": 20.3,
+            "ge_share_value": 0.62,
+            "id": "schattenlurch-l01-a03-sprungangriff",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Sprungangriff",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Bewegung",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+3)",
+              "Reichweite / Fläche": "Ziel zu Beginn 2–5 m entfernt; Sprung bis 3 m als Teil der Aktion",
+              "Schaden / Wirkung": "5W8 + 1W6 + ST-Modifikator (+2) + ST-Bonus (+0)",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "28.0",
+              "Ø Treffer-Endschaden": "20.3",
+              "Ø Erwartungswirkung": "13.9",
+              "GE-Anteil": "0.62",
+              "Zusatz": "Nur einsetzbar, wenn das Ziel zu Beginn der Aktion mindestens 2 m entfernt ist und ein direkter Sprungweg besteht."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "schattenlurch-l01-krallenhieb",
+          "name": "Krallenhieb",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+3)`",
+          "damage": "`5W8 + ST-Modifikator (+2) + ST-Bonus (+0)`",
+          "damage_type": "Hieb",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch schlägt mit der rechten dreifingrigen Klaue nach dem Ziel. Bei einem Treffer verursacht er ausschließlich den angegebenen Hiebschaden. Der Angriff erzeugt keinen zusätzlichen Zustand, keine erzwungene Bewegung und keinen kostenlosen Folgeangriff.",
+          "stacking": "Mehrere Schattenlurche können dasselbe Ziel unabhängig voneinander angreifen; jeder Angriff wird separat abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+3)`",
+            "Schaden": "`5W8 + ST-Modifikator (+2) + ST-Bonus (+0)`",
+            "Schadensart": "Hieb",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch schlägt mit der rechten dreifingrigen Klaue nach dem Ziel. Bei einem Treffer verursacht er ausschließlich den angegebenen Hiebschaden. Der Angriff erzeugt keinen zusätzlichen Zustand, keine erzwungene Bewegung und keinen kostenlosen Folgeangriff.",
+            "Stapelung": "Mehrere Schattenlurche können dasselbe Ziel unabhängig voneinander angreifen; jeder Angriff wird separat abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 210,
+            "line_end": 221
+          }
+        },
+        {
+          "id": "schattenlurch-l01-stossklaue",
+          "name": "Stoßklaue",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+3)`",
+          "damage": "`5W8 + ST-Modifikator (+2) + ST-Bonus (+0)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch stößt die linke Klaue geradlinig nach vorn. Bei einem Treffer verursacht er ausschließlich den angegebenen Stichschaden. Diese Aktion besitzt bewusst keine zusätzliche Kontroll- oder Dunkelheitswirkung; sie bildet den zweiten einfachen Grundangriff des Vorbilds ab.",
+          "stacking": "Mehrere Stoßklauen werden jeweils als eigenständige Angriffe gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+3)`",
+            "Schaden": "`5W8 + ST-Modifikator (+2) + ST-Bonus (+0)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch stößt die linke Klaue geradlinig nach vorn. Bei einem Treffer verursacht er ausschließlich den angegebenen Stichschaden. Diese Aktion besitzt bewusst keine zusätzliche Kontroll- oder Dunkelheitswirkung; sie bildet den zweiten einfachen Grundangriff des Vorbilds ab.",
+            "Stapelung": "Mehrere Stoßklauen werden jeweils als eigenständige Angriffe gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 222,
+            "line_end": 233
+          }
+        },
+        {
+          "id": "schattenlurch-l01-sprungangriff",
+          "name": "Sprungangriff",
+          "type": "Angriff / Bewegung",
+          "cost": "1 Aktion",
+          "requirement": "Das Ziel befindet sich zu Beginn der Aktion mindestens 2 m und höchstens 5 m entfernt; zwischen Schattenlurch und Ziel besteht ein direkter Sprungweg.",
+          "range": "Der Schattenlurch springt bis zu 3 m als Teil dieser Aktion und führt anschließend den Angriff aus.",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+3)`",
+          "damage": "`5W8 + 1W6 + ST-Modifikator (+2) + ST-Bonus (+0)`",
+          "damage_type": "Hieb",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch wirft sich nach vorn und kratzt das Ziel im Sprung. Der Sprung ist Teil derselben Aktion und gewährt keine zusätzliche freie Bewegung danach. Verfehlt der Angriff, endet der Sprung dennoch an einer regelkonform erreichbaren Position entlang des gewählten direkten Weges.",
+          "stacking": "Jeder Sprungangriff wird separat abgehandelt; er erzeugt keinen automatischen Folgeangriff.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Bewegung",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Das Ziel befindet sich zu Beginn der Aktion mindestens 2 m und höchstens 5 m entfernt; zwischen Schattenlurch und Ziel besteht ein direkter Sprungweg.",
+            "Reichweite": "Der Schattenlurch springt bis zu 3 m als Teil dieser Aktion und führt anschließend den Angriff aus.",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+3)`",
+            "Schaden": "`5W8 + 1W6 + ST-Modifikator (+2) + ST-Bonus (+0)`",
+            "Schadensart": "Hieb",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch wirft sich nach vorn und kratzt das Ziel im Sprung. Der Sprung ist Teil derselben Aktion und gewährt keine zusätzliche freie Bewegung danach. Verfehlt der Angriff, endet der Sprung dennoch an einer regelkonform erreichbaren Position entlang des gewählten direkten Weges.",
+            "Stapelung": "Jeder Sprungangriff wird separat abgehandelt; er erzeugt keinen automatischen Folgeangriff."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 234,
+            "line_end": 246
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "25 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 25
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "50 % Resistenz",
+            "type": "resistance",
+            "percent": 50
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "**25 % Verwundbarkeit**",
+            "**50 % Resistenz**"
+          ]
+        ]
+      },
+      "extra_sections": [
+        {
+          "title": "Besondere Widerstände und Vernichtungsregel",
+          "id": "besondere-widerstaende-und-vernichtungsregel",
+          "markdown": "- **Schattenform:** Während der gleitenden Schattenbewegung vollständige Immunität gegen Angriffe, Schaden, Magie und andere gegen ihn gerichtete Effekte.\n- **Endgültige Vernichtung:** Nicht-Schlüsselschwert- und Nicht-Licht-Schaden kann den Schattenlurch höchstens auf **1 LP** reduzieren.\n- **Gültiger Finisher:** Schlüsselschwert oder Lichtschaden/Lichtmagie kann ihn bei mindestens 1 tatsächlichem LP-Verlust auf **0 LP** reduzieren.",
+          "tables": [],
+          "source": {
+            "line_start": 253,
+            "line_end": 259
+          }
+        }
+      ],
+      "source": {
+        "line_start": 169,
+        "line_end": 259
+      }
+    },
+    {
+      "level": 5,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 4,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "4",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 4,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "4",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "185",
+          "physische_verteidigung": "8",
+          "magieverteidigung": "7",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m; Schattenform bis 12 m während der eigenen Bewegung"
+        },
+        "raw_fields": {
+          "Maximale LP": "185",
+          "Physische Verteidigung": "8",
+          "Magieverteidigung": "7",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m; Schattenform bis 12 m während der eigenen Bewegung"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+1) + WI-Bonus (+1)) × 10) + ((IT-Modifikator (+2) + IT-Bonus (+1)) × 5) + (5 × 10) = 185 LP",
+        "markdown": "`100 + ((WI-Modifikator (+1) + WI-Bonus (+1)) × 10) + ((IT-Modifikator (+2) + IT-Bonus (+1)) × 5) + (5 × 10) = 185 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Krallenhieb",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+            "range_area": "Nah",
+            "damage_effect": "6W8 + ST-Modifikator (+2) + ST-Bonus (+1)",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "30.0",
+            "avg_hit_damage": "21.3",
+            "avg_expected_effect": "14.6",
+            "ge_share": "0.53",
+            "notes": "Rechter Krallenhieb; keine Zusatzkontrolle.",
+            "avg_raw_damage_value": 30.0,
+            "avg_hit_damage_value": 21.3,
+            "ge_share_value": 0.53,
+            "id": "schattenlurch-l05-a01-krallenhieb",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Krallenhieb",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "6W8 + ST-Modifikator (+2) + ST-Bonus (+1)",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "30.0",
+              "Ø Treffer-Endschaden": "21.3",
+              "Ø Erwartungswirkung": "14.6",
+              "GE-Anteil": "0.53",
+              "Zusatz": "Rechter Krallenhieb; keine Zusatzkontrolle."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Stoßklaue",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+            "range_area": "Nah",
+            "damage_effect": "6W8 + ST-Modifikator (+2) + ST-Bonus (+1)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "30.0",
+            "avg_hit_damage": "21.3",
+            "avg_expected_effect": "14.6",
+            "ge_share": "0.53",
+            "notes": "Linker gerader Klauenstoß; keine Zusatzkontrolle.",
+            "avg_raw_damage_value": 30.0,
+            "avg_hit_damage_value": 21.3,
+            "ge_share_value": 0.53,
+            "id": "schattenlurch-l05-a02-stossklaue",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Stoßklaue",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "6W8 + ST-Modifikator (+2) + ST-Bonus (+1)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "30.0",
+              "Ø Treffer-Endschaden": "21.3",
+              "Ø Erwartungswirkung": "14.6",
+              "GE-Anteil": "0.53",
+              "Zusatz": "Linker gerader Klauenstoß; keine Zusatzkontrolle."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Sprungangriff",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Bewegung",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+            "range_area": "Ziel zu Beginn 2–5 m entfernt; Sprung bis 3 m als Teil der Aktion",
+            "damage_effect": "6W8 + 1W6 + ST-Modifikator (+2) + ST-Bonus (+1)",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "33.5",
+            "avg_hit_damage": "24.8",
+            "avg_expected_effect": "17.1",
+            "ge_share": "0.62",
+            "notes": "Nur einsetzbar, wenn das Ziel zu Beginn der Aktion mindestens 2 m entfernt ist und ein direkter Sprungweg besteht.",
+            "avg_raw_damage_value": 33.5,
+            "avg_hit_damage_value": 24.8,
+            "ge_share_value": 0.62,
+            "id": "schattenlurch-l05-a03-sprungangriff",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Sprungangriff",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Bewegung",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Ziel zu Beginn 2–5 m entfernt; Sprung bis 3 m als Teil der Aktion",
+              "Schaden / Wirkung": "6W8 + 1W6 + ST-Modifikator (+2) + ST-Bonus (+1)",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "33.5",
+              "Ø Treffer-Endschaden": "24.8",
+              "Ø Erwartungswirkung": "17.1",
+              "GE-Anteil": "0.62",
+              "Zusatz": "Nur einsetzbar, wenn das Ziel zu Beginn der Aktion mindestens 2 m entfernt ist und ein direkter Sprungweg besteht."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "schattenlurch-l05-krallenhieb",
+          "name": "Krallenhieb",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+          "damage": "`6W8 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+          "damage_type": "Hieb",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch schlägt mit der rechten dreifingrigen Klaue nach dem Ziel. Bei einem Treffer verursacht er ausschließlich den angegebenen Hiebschaden. Der Angriff erzeugt keinen zusätzlichen Zustand, keine erzwungene Bewegung und keinen kostenlosen Folgeangriff.",
+          "stacking": "Mehrere Schattenlurche können dasselbe Ziel unabhängig voneinander angreifen; jeder Angriff wird separat abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+            "Schaden": "`6W8 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+            "Schadensart": "Hieb",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch schlägt mit der rechten dreifingrigen Klaue nach dem Ziel. Bei einem Treffer verursacht er ausschließlich den angegebenen Hiebschaden. Der Angriff erzeugt keinen zusätzlichen Zustand, keine erzwungene Bewegung und keinen kostenlosen Folgeangriff.",
+            "Stapelung": "Mehrere Schattenlurche können dasselbe Ziel unabhängig voneinander angreifen; jeder Angriff wird separat abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 301,
+            "line_end": 312
+          }
+        },
+        {
+          "id": "schattenlurch-l05-stossklaue",
+          "name": "Stoßklaue",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+          "damage": "`6W8 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch stößt die linke Klaue geradlinig nach vorn. Bei einem Treffer verursacht er ausschließlich den angegebenen Stichschaden. Diese Aktion besitzt bewusst keine zusätzliche Kontroll- oder Dunkelheitswirkung; sie bildet den zweiten einfachen Grundangriff des Vorbilds ab.",
+          "stacking": "Mehrere Stoßklauen werden jeweils als eigenständige Angriffe gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+            "Schaden": "`6W8 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch stößt die linke Klaue geradlinig nach vorn. Bei einem Treffer verursacht er ausschließlich den angegebenen Stichschaden. Diese Aktion besitzt bewusst keine zusätzliche Kontroll- oder Dunkelheitswirkung; sie bildet den zweiten einfachen Grundangriff des Vorbilds ab.",
+            "Stapelung": "Mehrere Stoßklauen werden jeweils als eigenständige Angriffe gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 313,
+            "line_end": 324
+          }
+        },
+        {
+          "id": "schattenlurch-l05-sprungangriff",
+          "name": "Sprungangriff",
+          "type": "Angriff / Bewegung",
+          "cost": "1 Aktion",
+          "requirement": "Das Ziel befindet sich zu Beginn der Aktion mindestens 2 m und höchstens 5 m entfernt; zwischen Schattenlurch und Ziel besteht ein direkter Sprungweg.",
+          "range": "Der Schattenlurch springt bis zu 3 m als Teil dieser Aktion und führt anschließend den Angriff aus.",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+          "damage": "`6W8 + 1W6 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+          "damage_type": "Hieb",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch wirft sich nach vorn und kratzt das Ziel im Sprung. Der Sprung ist Teil derselben Aktion und gewährt keine zusätzliche freie Bewegung danach. Verfehlt der Angriff, endet der Sprung dennoch an einer regelkonform erreichbaren Position entlang des gewählten direkten Weges.",
+          "stacking": "Jeder Sprungangriff wird separat abgehandelt; er erzeugt keinen automatischen Folgeangriff.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Bewegung",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Das Ziel befindet sich zu Beginn der Aktion mindestens 2 m und höchstens 5 m entfernt; zwischen Schattenlurch und Ziel besteht ein direkter Sprungweg.",
+            "Reichweite": "Der Schattenlurch springt bis zu 3 m als Teil dieser Aktion und führt anschließend den Angriff aus.",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+            "Schaden": "`6W8 + 1W6 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+            "Schadensart": "Hieb",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch wirft sich nach vorn und kratzt das Ziel im Sprung. Der Sprung ist Teil derselben Aktion und gewährt keine zusätzliche freie Bewegung danach. Verfehlt der Angriff, endet der Sprung dennoch an einer regelkonform erreichbaren Position entlang des gewählten direkten Weges.",
+            "Stapelung": "Jeder Sprungangriff wird separat abgehandelt; er erzeugt keinen automatischen Folgeangriff."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 325,
+            "line_end": 337
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "25 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 25
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "50 % Resistenz",
+            "type": "resistance",
+            "percent": 50
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "**25 % Verwundbarkeit**",
+            "**50 % Resistenz**"
+          ]
+        ]
+      },
+      "extra_sections": [
+        {
+          "title": "Besondere Widerstände und Vernichtungsregel",
+          "id": "besondere-widerstaende-und-vernichtungsregel",
+          "markdown": "- **Schattenform:** Während der gleitenden Schattenbewegung vollständige Immunität gegen Angriffe, Schaden, Magie und andere gegen ihn gerichtete Effekte.\n- **Endgültige Vernichtung:** Nicht-Schlüsselschwert- und Nicht-Licht-Schaden kann den Schattenlurch höchstens auf **1 LP** reduzieren.\n- **Gültiger Finisher:** Schlüsselschwert oder Lichtschaden/Lichtmagie kann ihn bei mindestens 1 tatsächlichem LP-Verlust auf **0 LP** reduzieren.",
+          "tables": [],
+          "source": {
+            "line_start": 344,
+            "line_end": 350
+          }
+        }
+      ],
+      "source": {
+        "line_start": 260,
+        "line_end": 350
+      }
+    },
+    {
+      "level": 10,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "250",
+          "physische_verteidigung": "10",
+          "magieverteidigung": "9",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m; Schattenform bis 12 m während der eigenen Bewegung"
+        },
+        "raw_fields": {
+          "Maximale LP": "250",
+          "Physische Verteidigung": "10",
+          "Magieverteidigung": "9",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m; Schattenform bis 12 m während der eigenen Bewegung"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+2) + WI-Bonus (+1)) × 10) + ((IT-Modifikator (+3) + IT-Bonus (+1)) × 5) + (10 × 10) = 250 LP",
+        "markdown": "`100 + ((WI-Modifikator (+2) + WI-Bonus (+1)) × 10) + ((IT-Modifikator (+3) + IT-Bonus (+1)) × 5) + (10 × 10) = 250 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Krallenhieb",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+            "range_area": "Nah",
+            "damage_effect": "7W8 + ST-Modifikator (+4) + ST-Bonus (+1)",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "36.5",
+            "avg_hit_damage": "25.9",
+            "avg_expected_effect": "17.8",
+            "ge_share": "0.53",
+            "notes": "Rechter Krallenhieb; keine Zusatzkontrolle.",
+            "avg_raw_damage_value": 36.5,
+            "avg_hit_damage_value": 25.9,
+            "ge_share_value": 0.53,
+            "id": "schattenlurch-l10-a01-krallenhieb",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Krallenhieb",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "7W8 + ST-Modifikator (+4) + ST-Bonus (+1)",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "36.5",
+              "Ø Treffer-Endschaden": "25.9",
+              "Ø Erwartungswirkung": "17.8",
+              "GE-Anteil": "0.53",
+              "Zusatz": "Rechter Krallenhieb; keine Zusatzkontrolle."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Stoßklaue",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+            "range_area": "Nah",
+            "damage_effect": "7W8 + ST-Modifikator (+4) + ST-Bonus (+1)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "36.5",
+            "avg_hit_damage": "25.9",
+            "avg_expected_effect": "17.8",
+            "ge_share": "0.53",
+            "notes": "Linker gerader Klauenstoß; keine Zusatzkontrolle.",
+            "avg_raw_damage_value": 36.5,
+            "avg_hit_damage_value": 25.9,
+            "ge_share_value": 0.53,
+            "id": "schattenlurch-l10-a02-stossklaue",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Stoßklaue",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "7W8 + ST-Modifikator (+4) + ST-Bonus (+1)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "36.5",
+              "Ø Treffer-Endschaden": "25.9",
+              "Ø Erwartungswirkung": "17.8",
+              "GE-Anteil": "0.53",
+              "Zusatz": "Linker gerader Klauenstoß; keine Zusatzkontrolle."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Sprungangriff",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Bewegung",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+            "range_area": "Ziel zu Beginn 2–5 m entfernt; Sprung bis 3 m als Teil der Aktion",
+            "damage_effect": "7W8 + 1W6 + ST-Modifikator (+4) + ST-Bonus (+1)",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "40.0",
+            "avg_hit_damage": "29.4",
+            "avg_expected_effect": "20.2",
+            "ge_share": "0.60",
+            "notes": "Nur einsetzbar, wenn das Ziel zu Beginn der Aktion mindestens 2 m entfernt ist und ein direkter Sprungweg besteht.",
+            "avg_raw_damage_value": 40.0,
+            "avg_hit_damage_value": 29.4,
+            "ge_share_value": 0.6,
+            "id": "schattenlurch-l10-a03-sprungangriff",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Sprungangriff",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Bewegung",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Ziel zu Beginn 2–5 m entfernt; Sprung bis 3 m als Teil der Aktion",
+              "Schaden / Wirkung": "7W8 + 1W6 + ST-Modifikator (+4) + ST-Bonus (+1)",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "40.0",
+              "Ø Treffer-Endschaden": "29.4",
+              "Ø Erwartungswirkung": "20.2",
+              "GE-Anteil": "0.60",
+              "Zusatz": "Nur einsetzbar, wenn das Ziel zu Beginn der Aktion mindestens 2 m entfernt ist und ein direkter Sprungweg besteht."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "schattenlurch-l10-krallenhieb",
+          "name": "Krallenhieb",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+          "damage": "`7W8 + ST-Modifikator (+4) + ST-Bonus (+1)`",
+          "damage_type": "Hieb",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch schlägt mit der rechten dreifingrigen Klaue nach dem Ziel. Bei einem Treffer verursacht er ausschließlich den angegebenen Hiebschaden. Der Angriff erzeugt keinen zusätzlichen Zustand, keine erzwungene Bewegung und keinen kostenlosen Folgeangriff.",
+          "stacking": "Mehrere Schattenlurche können dasselbe Ziel unabhängig voneinander angreifen; jeder Angriff wird separat abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+            "Schaden": "`7W8 + ST-Modifikator (+4) + ST-Bonus (+1)`",
+            "Schadensart": "Hieb",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch schlägt mit der rechten dreifingrigen Klaue nach dem Ziel. Bei einem Treffer verursacht er ausschließlich den angegebenen Hiebschaden. Der Angriff erzeugt keinen zusätzlichen Zustand, keine erzwungene Bewegung und keinen kostenlosen Folgeangriff.",
+            "Stapelung": "Mehrere Schattenlurche können dasselbe Ziel unabhängig voneinander angreifen; jeder Angriff wird separat abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 392,
+            "line_end": 403
+          }
+        },
+        {
+          "id": "schattenlurch-l10-stossklaue",
+          "name": "Stoßklaue",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+          "damage": "`7W8 + ST-Modifikator (+4) + ST-Bonus (+1)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch stößt die linke Klaue geradlinig nach vorn. Bei einem Treffer verursacht er ausschließlich den angegebenen Stichschaden. Diese Aktion besitzt bewusst keine zusätzliche Kontroll- oder Dunkelheitswirkung; sie bildet den zweiten einfachen Grundangriff des Vorbilds ab.",
+          "stacking": "Mehrere Stoßklauen werden jeweils als eigenständige Angriffe gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+            "Schaden": "`7W8 + ST-Modifikator (+4) + ST-Bonus (+1)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch stößt die linke Klaue geradlinig nach vorn. Bei einem Treffer verursacht er ausschließlich den angegebenen Stichschaden. Diese Aktion besitzt bewusst keine zusätzliche Kontroll- oder Dunkelheitswirkung; sie bildet den zweiten einfachen Grundangriff des Vorbilds ab.",
+            "Stapelung": "Mehrere Stoßklauen werden jeweils als eigenständige Angriffe gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 404,
+            "line_end": 415
+          }
+        },
+        {
+          "id": "schattenlurch-l10-sprungangriff",
+          "name": "Sprungangriff",
+          "type": "Angriff / Bewegung",
+          "cost": "1 Aktion",
+          "requirement": "Das Ziel befindet sich zu Beginn der Aktion mindestens 2 m und höchstens 5 m entfernt; zwischen Schattenlurch und Ziel besteht ein direkter Sprungweg.",
+          "range": "Der Schattenlurch springt bis zu 3 m als Teil dieser Aktion und führt anschließend den Angriff aus.",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+          "damage": "`7W8 + 1W6 + ST-Modifikator (+4) + ST-Bonus (+1)`",
+          "damage_type": "Hieb",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch wirft sich nach vorn und kratzt das Ziel im Sprung. Der Sprung ist Teil derselben Aktion und gewährt keine zusätzliche freie Bewegung danach. Verfehlt der Angriff, endet der Sprung dennoch an einer regelkonform erreichbaren Position entlang des gewählten direkten Weges.",
+          "stacking": "Jeder Sprungangriff wird separat abgehandelt; er erzeugt keinen automatischen Folgeangriff.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Bewegung",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Das Ziel befindet sich zu Beginn der Aktion mindestens 2 m und höchstens 5 m entfernt; zwischen Schattenlurch und Ziel besteht ein direkter Sprungweg.",
+            "Reichweite": "Der Schattenlurch springt bis zu 3 m als Teil dieser Aktion und führt anschließend den Angriff aus.",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+            "Schaden": "`7W8 + 1W6 + ST-Modifikator (+4) + ST-Bonus (+1)`",
+            "Schadensart": "Hieb",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch wirft sich nach vorn und kratzt das Ziel im Sprung. Der Sprung ist Teil derselben Aktion und gewährt keine zusätzliche freie Bewegung danach. Verfehlt der Angriff, endet der Sprung dennoch an einer regelkonform erreichbaren Position entlang des gewählten direkten Weges.",
+            "Stapelung": "Jeder Sprungangriff wird separat abgehandelt; er erzeugt keinen automatischen Folgeangriff."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 416,
+            "line_end": 428
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "25 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 25
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "50 % Resistenz",
+            "type": "resistance",
+            "percent": 50
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "**25 % Verwundbarkeit**",
+            "**50 % Resistenz**"
+          ]
+        ]
+      },
+      "extra_sections": [
+        {
+          "title": "Besondere Widerstände und Vernichtungsregel",
+          "id": "besondere-widerstaende-und-vernichtungsregel",
+          "markdown": "- **Schattenform:** Während der gleitenden Schattenbewegung vollständige Immunität gegen Angriffe, Schaden, Magie und andere gegen ihn gerichtete Effekte.\n- **Endgültige Vernichtung:** Nicht-Schlüsselschwert- und Nicht-Licht-Schaden kann den Schattenlurch höchstens auf **1 LP** reduzieren.\n- **Gültiger Finisher:** Schlüsselschwert oder Lichtschaden/Lichtmagie kann ihn bei mindestens 1 tatsächlichem LP-Verlust auf **0 LP** reduzieren.",
+          "tables": [],
+          "source": {
+            "line_start": 435,
+            "line_end": 441
+          }
+        }
+      ],
+      "source": {
+        "line_start": 351,
+        "line_end": 441
+      }
+    },
+    {
+      "level": 15,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "310",
+          "physische_verteidigung": "12",
+          "magieverteidigung": "11",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m; Schattenform bis 12 m während der eigenen Bewegung"
+        },
+        "raw_fields": {
+          "Maximale LP": "310",
+          "Physische Verteidigung": "12",
+          "Magieverteidigung": "11",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m; Schattenform bis 12 m während der eigenen Bewegung"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+3) + WI-Bonus (+1)) × 10) + ((IT-Modifikator (+3) + IT-Bonus (+1)) × 5) + (15 × 10) = 310 LP",
+        "markdown": "`100 + ((WI-Modifikator (+3) + WI-Bonus (+1)) × 10) + ((IT-Modifikator (+3) + IT-Bonus (+1)) × 5) + (15 × 10) = 310 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Krallenhieb",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+4)",
+            "range_area": "Nah",
+            "damage_effect": "8W8 + ST-Modifikator (+4) + ST-Bonus (+2)",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "42.0",
+            "avg_hit_damage": "29.4",
+            "avg_expected_effect": "20.2",
+            "ge_share": "0.51",
+            "notes": "Rechter Krallenhieb; keine Zusatzkontrolle.",
+            "avg_raw_damage_value": 42.0,
+            "avg_hit_damage_value": 29.4,
+            "ge_share_value": 0.51,
+            "id": "schattenlurch-l15-a01-krallenhieb",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Krallenhieb",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "8W8 + ST-Modifikator (+4) + ST-Bonus (+2)",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "42.0",
+              "Ø Treffer-Endschaden": "29.4",
+              "Ø Erwartungswirkung": "20.2",
+              "GE-Anteil": "0.51",
+              "Zusatz": "Rechter Krallenhieb; keine Zusatzkontrolle."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Stoßklaue",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+4)",
+            "range_area": "Nah",
+            "damage_effect": "8W8 + ST-Modifikator (+4) + ST-Bonus (+2)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "42.0",
+            "avg_hit_damage": "29.4",
+            "avg_expected_effect": "20.2",
+            "ge_share": "0.51",
+            "notes": "Linker gerader Klauenstoß; keine Zusatzkontrolle.",
+            "avg_raw_damage_value": 42.0,
+            "avg_hit_damage_value": 29.4,
+            "ge_share_value": 0.51,
+            "id": "schattenlurch-l15-a02-stossklaue",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Stoßklaue",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "8W8 + ST-Modifikator (+4) + ST-Bonus (+2)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "42.0",
+              "Ø Treffer-Endschaden": "29.4",
+              "Ø Erwartungswirkung": "20.2",
+              "GE-Anteil": "0.51",
+              "Zusatz": "Linker gerader Klauenstoß; keine Zusatzkontrolle."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Sprungangriff",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Bewegung",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+4)",
+            "range_area": "Ziel zu Beginn 2–5 m entfernt; Sprung bis 3 m als Teil der Aktion",
+            "damage_effect": "8W8 + 1W6 + ST-Modifikator (+4) + ST-Bonus (+2)",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "45.5",
+            "avg_hit_damage": "33.0",
+            "avg_expected_effect": "22.7",
+            "ge_share": "0.57",
+            "notes": "Nur einsetzbar, wenn das Ziel zu Beginn der Aktion mindestens 2 m entfernt ist und ein direkter Sprungweg besteht.",
+            "avg_raw_damage_value": 45.5,
+            "avg_hit_damage_value": 33.0,
+            "ge_share_value": 0.57,
+            "id": "schattenlurch-l15-a03-sprungangriff",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Sprungangriff",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Bewegung",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Ziel zu Beginn 2–5 m entfernt; Sprung bis 3 m als Teil der Aktion",
+              "Schaden / Wirkung": "8W8 + 1W6 + ST-Modifikator (+4) + ST-Bonus (+2)",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "45.5",
+              "Ø Treffer-Endschaden": "33.0",
+              "Ø Erwartungswirkung": "22.7",
+              "GE-Anteil": "0.57",
+              "Zusatz": "Nur einsetzbar, wenn das Ziel zu Beginn der Aktion mindestens 2 m entfernt ist und ein direkter Sprungweg besteht."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "schattenlurch-l15-krallenhieb",
+          "name": "Krallenhieb",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+4)`",
+          "damage": "`8W8 + ST-Modifikator (+4) + ST-Bonus (+2)`",
+          "damage_type": "Hieb",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch schlägt mit der rechten dreifingrigen Klaue nach dem Ziel. Bei einem Treffer verursacht er ausschließlich den angegebenen Hiebschaden. Der Angriff erzeugt keinen zusätzlichen Zustand, keine erzwungene Bewegung und keinen kostenlosen Folgeangriff.",
+          "stacking": "Mehrere Schattenlurche können dasselbe Ziel unabhängig voneinander angreifen; jeder Angriff wird separat abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+4)`",
+            "Schaden": "`8W8 + ST-Modifikator (+4) + ST-Bonus (+2)`",
+            "Schadensart": "Hieb",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch schlägt mit der rechten dreifingrigen Klaue nach dem Ziel. Bei einem Treffer verursacht er ausschließlich den angegebenen Hiebschaden. Der Angriff erzeugt keinen zusätzlichen Zustand, keine erzwungene Bewegung und keinen kostenlosen Folgeangriff.",
+            "Stapelung": "Mehrere Schattenlurche können dasselbe Ziel unabhängig voneinander angreifen; jeder Angriff wird separat abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 483,
+            "line_end": 494
+          }
+        },
+        {
+          "id": "schattenlurch-l15-stossklaue",
+          "name": "Stoßklaue",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+4)`",
+          "damage": "`8W8 + ST-Modifikator (+4) + ST-Bonus (+2)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch stößt die linke Klaue geradlinig nach vorn. Bei einem Treffer verursacht er ausschließlich den angegebenen Stichschaden. Diese Aktion besitzt bewusst keine zusätzliche Kontroll- oder Dunkelheitswirkung; sie bildet den zweiten einfachen Grundangriff des Vorbilds ab.",
+          "stacking": "Mehrere Stoßklauen werden jeweils als eigenständige Angriffe gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+4)`",
+            "Schaden": "`8W8 + ST-Modifikator (+4) + ST-Bonus (+2)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch stößt die linke Klaue geradlinig nach vorn. Bei einem Treffer verursacht er ausschließlich den angegebenen Stichschaden. Diese Aktion besitzt bewusst keine zusätzliche Kontroll- oder Dunkelheitswirkung; sie bildet den zweiten einfachen Grundangriff des Vorbilds ab.",
+            "Stapelung": "Mehrere Stoßklauen werden jeweils als eigenständige Angriffe gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 495,
+            "line_end": 506
+          }
+        },
+        {
+          "id": "schattenlurch-l15-sprungangriff",
+          "name": "Sprungangriff",
+          "type": "Angriff / Bewegung",
+          "cost": "1 Aktion",
+          "requirement": "Das Ziel befindet sich zu Beginn der Aktion mindestens 2 m und höchstens 5 m entfernt; zwischen Schattenlurch und Ziel besteht ein direkter Sprungweg.",
+          "range": "Der Schattenlurch springt bis zu 3 m als Teil dieser Aktion und führt anschließend den Angriff aus.",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+4)`",
+          "damage": "`8W8 + 1W6 + ST-Modifikator (+4) + ST-Bonus (+2)`",
+          "damage_type": "Hieb",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch wirft sich nach vorn und kratzt das Ziel im Sprung. Der Sprung ist Teil derselben Aktion und gewährt keine zusätzliche freie Bewegung danach. Verfehlt der Angriff, endet der Sprung dennoch an einer regelkonform erreichbaren Position entlang des gewählten direkten Weges.",
+          "stacking": "Jeder Sprungangriff wird separat abgehandelt; er erzeugt keinen automatischen Folgeangriff.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Bewegung",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Das Ziel befindet sich zu Beginn der Aktion mindestens 2 m und höchstens 5 m entfernt; zwischen Schattenlurch und Ziel besteht ein direkter Sprungweg.",
+            "Reichweite": "Der Schattenlurch springt bis zu 3 m als Teil dieser Aktion und führt anschließend den Angriff aus.",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+4)`",
+            "Schaden": "`8W8 + 1W6 + ST-Modifikator (+4) + ST-Bonus (+2)`",
+            "Schadensart": "Hieb",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch wirft sich nach vorn und kratzt das Ziel im Sprung. Der Sprung ist Teil derselben Aktion und gewährt keine zusätzliche freie Bewegung danach. Verfehlt der Angriff, endet der Sprung dennoch an einer regelkonform erreichbaren Position entlang des gewählten direkten Weges.",
+            "Stapelung": "Jeder Sprungangriff wird separat abgehandelt; er erzeugt keinen automatischen Folgeangriff."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 507,
+            "line_end": 519
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "25 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 25
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "50 % Resistenz",
+            "type": "resistance",
+            "percent": 50
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "**25 % Verwundbarkeit**",
+            "**50 % Resistenz**"
+          ]
+        ]
+      },
+      "extra_sections": [
+        {
+          "title": "Besondere Widerstände und Vernichtungsregel",
+          "id": "besondere-widerstaende-und-vernichtungsregel",
+          "markdown": "- **Schattenform:** Während der gleitenden Schattenbewegung vollständige Immunität gegen Angriffe, Schaden, Magie und andere gegen ihn gerichtete Effekte.\n- **Endgültige Vernichtung:** Nicht-Schlüsselschwert- und Nicht-Licht-Schaden kann den Schattenlurch höchstens auf **1 LP** reduzieren.\n- **Gültiger Finisher:** Schlüsselschwert oder Lichtschaden/Lichtmagie kann ihn bei mindestens 1 tatsächlichem LP-Verlust auf **0 LP** reduzieren.",
+          "tables": [],
+          "source": {
+            "line_start": 526,
+            "line_end": 532
+          }
+        }
+      ],
+      "source": {
+        "line_start": 442,
+        "line_end": 532
+      }
+    },
+    {
+      "level": 20,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+3"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "380",
+          "physische_verteidigung": "14",
+          "magieverteidigung": "13",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m; Schattenform bis 12 m während der eigenen Bewegung"
+        },
+        "raw_fields": {
+          "Maximale LP": "380",
+          "Physische Verteidigung": "14",
+          "Magieverteidigung": "13",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m; Schattenform bis 12 m während der eigenen Bewegung"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+3) + WI-Bonus (+2)) × 10) + ((IT-Modifikator (+4) + IT-Bonus (+2)) × 5) + (20 × 10) = 380 LP",
+        "markdown": "`100 + ((WI-Modifikator (+3) + WI-Bonus (+2)) × 10) + ((IT-Modifikator (+4) + IT-Bonus (+2)) × 5) + (20 × 10) = 380 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Krallenhieb",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range_area": "Nah",
+            "damage_effect": "9W8 + ST-Modifikator (+5) + ST-Bonus (+3)",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "48.5",
+            "avg_hit_damage": "34.0",
+            "avg_expected_effect": "23.4",
+            "ge_share": "0.51",
+            "notes": "Rechter Krallenhieb; keine Zusatzkontrolle.",
+            "avg_raw_damage_value": 48.5,
+            "avg_hit_damage_value": 34.0,
+            "ge_share_value": 0.51,
+            "id": "schattenlurch-l20-a01-krallenhieb",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Krallenhieb",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "9W8 + ST-Modifikator (+5) + ST-Bonus (+3)",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "48.5",
+              "Ø Treffer-Endschaden": "34.0",
+              "Ø Erwartungswirkung": "23.4",
+              "GE-Anteil": "0.51",
+              "Zusatz": "Rechter Krallenhieb; keine Zusatzkontrolle."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Stoßklaue",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range_area": "Nah",
+            "damage_effect": "9W8 + ST-Modifikator (+5) + ST-Bonus (+3)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "48.5",
+            "avg_hit_damage": "34.0",
+            "avg_expected_effect": "23.4",
+            "ge_share": "0.51",
+            "notes": "Linker gerader Klauenstoß; keine Zusatzkontrolle.",
+            "avg_raw_damage_value": 48.5,
+            "avg_hit_damage_value": 34.0,
+            "ge_share_value": 0.51,
+            "id": "schattenlurch-l20-a02-stossklaue",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Stoßklaue",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "9W8 + ST-Modifikator (+5) + ST-Bonus (+3)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "48.5",
+              "Ø Treffer-Endschaden": "34.0",
+              "Ø Erwartungswirkung": "23.4",
+              "GE-Anteil": "0.51",
+              "Zusatz": "Linker gerader Klauenstoß; keine Zusatzkontrolle."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Sprungangriff",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Bewegung",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range_area": "Ziel zu Beginn 2–5 m entfernt; Sprung bis 3 m als Teil der Aktion",
+            "damage_effect": "9W8 + 1W6 + ST-Modifikator (+5) + ST-Bonus (+3)",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "52.0",
+            "avg_hit_damage": "37.5",
+            "avg_expected_effect": "25.8",
+            "ge_share": "0.56",
+            "notes": "Nur einsetzbar, wenn das Ziel zu Beginn der Aktion mindestens 2 m entfernt ist und ein direkter Sprungweg besteht.",
+            "avg_raw_damage_value": 52.0,
+            "avg_hit_damage_value": 37.5,
+            "ge_share_value": 0.56,
+            "id": "schattenlurch-l20-a03-sprungangriff",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Sprungangriff",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Bewegung",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Ziel zu Beginn 2–5 m entfernt; Sprung bis 3 m als Teil der Aktion",
+              "Schaden / Wirkung": "9W8 + 1W6 + ST-Modifikator (+5) + ST-Bonus (+3)",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "52.0",
+              "Ø Treffer-Endschaden": "37.5",
+              "Ø Erwartungswirkung": "25.8",
+              "GE-Anteil": "0.56",
+              "Zusatz": "Nur einsetzbar, wenn das Ziel zu Beginn der Aktion mindestens 2 m entfernt ist und ein direkter Sprungweg besteht."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "schattenlurch-l20-krallenhieb",
+          "name": "Krallenhieb",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+          "damage": "`9W8 + ST-Modifikator (+5) + ST-Bonus (+3)`",
+          "damage_type": "Hieb",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch schlägt mit der rechten dreifingrigen Klaue nach dem Ziel. Bei einem Treffer verursacht er ausschließlich den angegebenen Hiebschaden. Der Angriff erzeugt keinen zusätzlichen Zustand, keine erzwungene Bewegung und keinen kostenlosen Folgeangriff.",
+          "stacking": "Mehrere Schattenlurche können dasselbe Ziel unabhängig voneinander angreifen; jeder Angriff wird separat abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+            "Schaden": "`9W8 + ST-Modifikator (+5) + ST-Bonus (+3)`",
+            "Schadensart": "Hieb",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch schlägt mit der rechten dreifingrigen Klaue nach dem Ziel. Bei einem Treffer verursacht er ausschließlich den angegebenen Hiebschaden. Der Angriff erzeugt keinen zusätzlichen Zustand, keine erzwungene Bewegung und keinen kostenlosen Folgeangriff.",
+            "Stapelung": "Mehrere Schattenlurche können dasselbe Ziel unabhängig voneinander angreifen; jeder Angriff wird separat abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 574,
+            "line_end": 585
+          }
+        },
+        {
+          "id": "schattenlurch-l20-stossklaue",
+          "name": "Stoßklaue",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+          "damage": "`9W8 + ST-Modifikator (+5) + ST-Bonus (+3)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch stößt die linke Klaue geradlinig nach vorn. Bei einem Treffer verursacht er ausschließlich den angegebenen Stichschaden. Diese Aktion besitzt bewusst keine zusätzliche Kontroll- oder Dunkelheitswirkung; sie bildet den zweiten einfachen Grundangriff des Vorbilds ab.",
+          "stacking": "Mehrere Stoßklauen werden jeweils als eigenständige Angriffe gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+            "Schaden": "`9W8 + ST-Modifikator (+5) + ST-Bonus (+3)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch stößt die linke Klaue geradlinig nach vorn. Bei einem Treffer verursacht er ausschließlich den angegebenen Stichschaden. Diese Aktion besitzt bewusst keine zusätzliche Kontroll- oder Dunkelheitswirkung; sie bildet den zweiten einfachen Grundangriff des Vorbilds ab.",
+            "Stapelung": "Mehrere Stoßklauen werden jeweils als eigenständige Angriffe gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 586,
+            "line_end": 597
+          }
+        },
+        {
+          "id": "schattenlurch-l20-sprungangriff",
+          "name": "Sprungangriff",
+          "type": "Angriff / Bewegung",
+          "cost": "1 Aktion",
+          "requirement": "Das Ziel befindet sich zu Beginn der Aktion mindestens 2 m und höchstens 5 m entfernt; zwischen Schattenlurch und Ziel besteht ein direkter Sprungweg.",
+          "range": "Der Schattenlurch springt bis zu 3 m als Teil dieser Aktion und führt anschließend den Angriff aus.",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+          "damage": "`9W8 + 1W6 + ST-Modifikator (+5) + ST-Bonus (+3)`",
+          "damage_type": "Hieb",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch wirft sich nach vorn und kratzt das Ziel im Sprung. Der Sprung ist Teil derselben Aktion und gewährt keine zusätzliche freie Bewegung danach. Verfehlt der Angriff, endet der Sprung dennoch an einer regelkonform erreichbaren Position entlang des gewählten direkten Weges.",
+          "stacking": "Jeder Sprungangriff wird separat abgehandelt; er erzeugt keinen automatischen Folgeangriff.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Bewegung",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Das Ziel befindet sich zu Beginn der Aktion mindestens 2 m und höchstens 5 m entfernt; zwischen Schattenlurch und Ziel besteht ein direkter Sprungweg.",
+            "Reichweite": "Der Schattenlurch springt bis zu 3 m als Teil dieser Aktion und führt anschließend den Angriff aus.",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+            "Schaden": "`9W8 + 1W6 + ST-Modifikator (+5) + ST-Bonus (+3)`",
+            "Schadensart": "Hieb",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch wirft sich nach vorn und kratzt das Ziel im Sprung. Der Sprung ist Teil derselben Aktion und gewährt keine zusätzliche freie Bewegung danach. Verfehlt der Angriff, endet der Sprung dennoch an einer regelkonform erreichbaren Position entlang des gewählten direkten Weges.",
+            "Stapelung": "Jeder Sprungangriff wird separat abgehandelt; er erzeugt keinen automatischen Folgeangriff."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 598,
+            "line_end": 610
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "25 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 25
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "50 % Resistenz",
+            "type": "resistance",
+            "percent": 50
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "**25 % Verwundbarkeit**",
+            "**50 % Resistenz**"
+          ]
+        ]
+      },
+      "extra_sections": [
+        {
+          "title": "Besondere Widerstände und Vernichtungsregel",
+          "id": "besondere-widerstaende-und-vernichtungsregel",
+          "markdown": "- **Schattenform:** Während der gleitenden Schattenbewegung vollständige Immunität gegen Angriffe, Schaden, Magie und andere gegen ihn gerichtete Effekte.\n- **Endgültige Vernichtung:** Nicht-Schlüsselschwert- und Nicht-Licht-Schaden kann den Schattenlurch höchstens auf **1 LP** reduzieren.\n- **Gültiger Finisher:** Schlüsselschwert oder Lichtschaden/Lichtmagie kann ihn bei mindestens 1 tatsächlichem LP-Verlust auf **0 LP** reduzieren.",
+          "tables": [],
+          "source": {
+            "line_start": 617,
+            "line_end": 623
+          }
+        }
+      ],
+      "source": {
+        "line_start": 533,
+        "line_end": 623
+      }
+    },
+    {
+      "level": 25,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+3"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "440",
+          "physische_verteidigung": "16",
+          "magieverteidigung": "15",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m; Schattenform bis 12 m während der eigenen Bewegung"
+        },
+        "raw_fields": {
+          "Maximale LP": "440",
+          "Physische Verteidigung": "16",
+          "Magieverteidigung": "15",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m; Schattenform bis 12 m während der eigenen Bewegung"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+4) + WI-Bonus (+2)) × 10) + ((IT-Modifikator (+4) + IT-Bonus (+2)) × 5) + (25 × 10) = 440 LP",
+        "markdown": "`100 + ((WI-Modifikator (+4) + WI-Bonus (+2)) × 10) + ((IT-Modifikator (+4) + IT-Bonus (+2)) × 5) + (25 × 10) = 440 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Krallenhieb",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range_area": "Nah",
+            "damage_effect": "10W8 + ST-Modifikator (+6) + ST-Bonus (+3)",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "54.0",
+            "avg_hit_damage": "37.5",
+            "avg_expected_effect": "25.8",
+            "ge_share": "0.49",
+            "notes": "Rechter Krallenhieb; keine Zusatzkontrolle.",
+            "avg_raw_damage_value": 54.0,
+            "avg_hit_damage_value": 37.5,
+            "ge_share_value": 0.49,
+            "id": "schattenlurch-l25-a01-krallenhieb",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Krallenhieb",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "10W8 + ST-Modifikator (+6) + ST-Bonus (+3)",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "54.0",
+              "Ø Treffer-Endschaden": "37.5",
+              "Ø Erwartungswirkung": "25.8",
+              "GE-Anteil": "0.49",
+              "Zusatz": "Rechter Krallenhieb; keine Zusatzkontrolle."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Stoßklaue",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range_area": "Nah",
+            "damage_effect": "10W8 + ST-Modifikator (+6) + ST-Bonus (+3)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "54.0",
+            "avg_hit_damage": "37.5",
+            "avg_expected_effect": "25.8",
+            "ge_share": "0.49",
+            "notes": "Linker gerader Klauenstoß; keine Zusatzkontrolle.",
+            "avg_raw_damage_value": 54.0,
+            "avg_hit_damage_value": 37.5,
+            "ge_share_value": 0.49,
+            "id": "schattenlurch-l25-a02-stossklaue",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Stoßklaue",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "10W8 + ST-Modifikator (+6) + ST-Bonus (+3)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "54.0",
+              "Ø Treffer-Endschaden": "37.5",
+              "Ø Erwartungswirkung": "25.8",
+              "GE-Anteil": "0.49",
+              "Zusatz": "Linker gerader Klauenstoß; keine Zusatzkontrolle."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Sprungangriff",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Bewegung",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range_area": "Ziel zu Beginn 2–5 m entfernt; Sprung bis 3 m als Teil der Aktion",
+            "damage_effect": "10W8 + 1W6 + ST-Modifikator (+6) + ST-Bonus (+3)",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "57.5",
+            "avg_hit_damage": "41.1",
+            "avg_expected_effect": "28.2",
+            "ge_share": "0.54",
+            "notes": "Nur einsetzbar, wenn das Ziel zu Beginn der Aktion mindestens 2 m entfernt ist und ein direkter Sprungweg besteht.",
+            "avg_raw_damage_value": 57.5,
+            "avg_hit_damage_value": 41.1,
+            "ge_share_value": 0.54,
+            "id": "schattenlurch-l25-a03-sprungangriff",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Sprungangriff",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Bewegung",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Ziel zu Beginn 2–5 m entfernt; Sprung bis 3 m als Teil der Aktion",
+              "Schaden / Wirkung": "10W8 + 1W6 + ST-Modifikator (+6) + ST-Bonus (+3)",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "57.5",
+              "Ø Treffer-Endschaden": "41.1",
+              "Ø Erwartungswirkung": "28.2",
+              "GE-Anteil": "0.54",
+              "Zusatz": "Nur einsetzbar, wenn das Ziel zu Beginn der Aktion mindestens 2 m entfernt ist und ein direkter Sprungweg besteht."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "schattenlurch-l25-krallenhieb",
+          "name": "Krallenhieb",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+          "damage": "`10W8 + ST-Modifikator (+6) + ST-Bonus (+3)`",
+          "damage_type": "Hieb",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch schlägt mit der rechten dreifingrigen Klaue nach dem Ziel. Bei einem Treffer verursacht er ausschließlich den angegebenen Hiebschaden. Der Angriff erzeugt keinen zusätzlichen Zustand, keine erzwungene Bewegung und keinen kostenlosen Folgeangriff.",
+          "stacking": "Mehrere Schattenlurche können dasselbe Ziel unabhängig voneinander angreifen; jeder Angriff wird separat abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+            "Schaden": "`10W8 + ST-Modifikator (+6) + ST-Bonus (+3)`",
+            "Schadensart": "Hieb",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch schlägt mit der rechten dreifingrigen Klaue nach dem Ziel. Bei einem Treffer verursacht er ausschließlich den angegebenen Hiebschaden. Der Angriff erzeugt keinen zusätzlichen Zustand, keine erzwungene Bewegung und keinen kostenlosen Folgeangriff.",
+            "Stapelung": "Mehrere Schattenlurche können dasselbe Ziel unabhängig voneinander angreifen; jeder Angriff wird separat abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 665,
+            "line_end": 676
+          }
+        },
+        {
+          "id": "schattenlurch-l25-stossklaue",
+          "name": "Stoßklaue",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+          "damage": "`10W8 + ST-Modifikator (+6) + ST-Bonus (+3)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch stößt die linke Klaue geradlinig nach vorn. Bei einem Treffer verursacht er ausschließlich den angegebenen Stichschaden. Diese Aktion besitzt bewusst keine zusätzliche Kontroll- oder Dunkelheitswirkung; sie bildet den zweiten einfachen Grundangriff des Vorbilds ab.",
+          "stacking": "Mehrere Stoßklauen werden jeweils als eigenständige Angriffe gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+            "Schaden": "`10W8 + ST-Modifikator (+6) + ST-Bonus (+3)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch stößt die linke Klaue geradlinig nach vorn. Bei einem Treffer verursacht er ausschließlich den angegebenen Stichschaden. Diese Aktion besitzt bewusst keine zusätzliche Kontroll- oder Dunkelheitswirkung; sie bildet den zweiten einfachen Grundangriff des Vorbilds ab.",
+            "Stapelung": "Mehrere Stoßklauen werden jeweils als eigenständige Angriffe gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 677,
+            "line_end": 688
+          }
+        },
+        {
+          "id": "schattenlurch-l25-sprungangriff",
+          "name": "Sprungangriff",
+          "type": "Angriff / Bewegung",
+          "cost": "1 Aktion",
+          "requirement": "Das Ziel befindet sich zu Beginn der Aktion mindestens 2 m und höchstens 5 m entfernt; zwischen Schattenlurch und Ziel besteht ein direkter Sprungweg.",
+          "range": "Der Schattenlurch springt bis zu 3 m als Teil dieser Aktion und führt anschließend den Angriff aus.",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+          "damage": "`10W8 + 1W6 + ST-Modifikator (+6) + ST-Bonus (+3)`",
+          "damage_type": "Hieb",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch wirft sich nach vorn und kratzt das Ziel im Sprung. Der Sprung ist Teil derselben Aktion und gewährt keine zusätzliche freie Bewegung danach. Verfehlt der Angriff, endet der Sprung dennoch an einer regelkonform erreichbaren Position entlang des gewählten direkten Weges.",
+          "stacking": "Jeder Sprungangriff wird separat abgehandelt; er erzeugt keinen automatischen Folgeangriff.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Bewegung",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Das Ziel befindet sich zu Beginn der Aktion mindestens 2 m und höchstens 5 m entfernt; zwischen Schattenlurch und Ziel besteht ein direkter Sprungweg.",
+            "Reichweite": "Der Schattenlurch springt bis zu 3 m als Teil dieser Aktion und führt anschließend den Angriff aus.",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+            "Schaden": "`10W8 + 1W6 + ST-Modifikator (+6) + ST-Bonus (+3)`",
+            "Schadensart": "Hieb",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch wirft sich nach vorn und kratzt das Ziel im Sprung. Der Sprung ist Teil derselben Aktion und gewährt keine zusätzliche freie Bewegung danach. Verfehlt der Angriff, endet der Sprung dennoch an einer regelkonform erreichbaren Position entlang des gewählten direkten Weges.",
+            "Stapelung": "Jeder Sprungangriff wird separat abgehandelt; er erzeugt keinen automatischen Folgeangriff."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 689,
+            "line_end": 701
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "25 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 25
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "50 % Resistenz",
+            "type": "resistance",
+            "percent": 50
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "**25 % Verwundbarkeit**",
+            "**50 % Resistenz**"
+          ]
+        ]
+      },
+      "extra_sections": [
+        {
+          "title": "Besondere Widerstände und Vernichtungsregel",
+          "id": "besondere-widerstaende-und-vernichtungsregel",
+          "markdown": "- **Schattenform:** Während der gleitenden Schattenbewegung vollständige Immunität gegen Angriffe, Schaden, Magie und andere gegen ihn gerichtete Effekte.\n- **Endgültige Vernichtung:** Nicht-Schlüsselschwert- und Nicht-Licht-Schaden kann den Schattenlurch höchstens auf **1 LP** reduzieren.\n- **Gültiger Finisher:** Schlüsselschwert oder Lichtschaden/Lichtmagie kann ihn bei mindestens 1 tatsächlichem LP-Verlust auf **0 LP** reduzieren.",
+          "tables": [],
+          "source": {
+            "line_start": 708,
+            "line_end": 714
+          }
+        }
+      ],
+      "source": {
+        "line_start": 624,
+        "line_end": 714
+      }
+    },
+    {
+      "level": 30,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "505",
+          "physische_verteidigung": "18",
+          "magieverteidigung": "17",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m; Schattenform bis 12 m während der eigenen Bewegung"
+        },
+        "raw_fields": {
+          "Maximale LP": "505",
+          "Physische Verteidigung": "18",
+          "Magieverteidigung": "17",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m; Schattenform bis 12 m während der eigenen Bewegung"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+4) + WI-Bonus (+3)) × 10) + ((IT-Modifikator (+5) + IT-Bonus (+2)) × 5) + (30 × 10) = 505 LP",
+        "markdown": "`100 + ((WI-Modifikator (+4) + WI-Bonus (+3)) × 10) + ((IT-Modifikator (+5) + IT-Bonus (+2)) × 5) + (30 × 10) = 505 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Krallenhieb",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+            "range_area": "Nah",
+            "damage_effect": "12W8 + ST-Modifikator (+6) + ST-Bonus (+4)",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "64.0",
+            "avg_hit_damage": "45.6",
+            "avg_expected_effect": "31.4",
+            "ge_share": "0.53",
+            "notes": "Rechter Krallenhieb; keine Zusatzkontrolle.",
+            "avg_raw_damage_value": 64.0,
+            "avg_hit_damage_value": 45.6,
+            "ge_share_value": 0.53,
+            "id": "schattenlurch-l30-a01-krallenhieb",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Krallenhieb",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "12W8 + ST-Modifikator (+6) + ST-Bonus (+4)",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "64.0",
+              "Ø Treffer-Endschaden": "45.6",
+              "Ø Erwartungswirkung": "31.4",
+              "GE-Anteil": "0.53",
+              "Zusatz": "Rechter Krallenhieb; keine Zusatzkontrolle."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Stoßklaue",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+            "range_area": "Nah",
+            "damage_effect": "12W8 + ST-Modifikator (+6) + ST-Bonus (+4)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "64.0",
+            "avg_hit_damage": "45.6",
+            "avg_expected_effect": "31.4",
+            "ge_share": "0.53",
+            "notes": "Linker gerader Klauenstoß; keine Zusatzkontrolle.",
+            "avg_raw_damage_value": 64.0,
+            "avg_hit_damage_value": 45.6,
+            "ge_share_value": 0.53,
+            "id": "schattenlurch-l30-a02-stossklaue",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Stoßklaue",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "12W8 + ST-Modifikator (+6) + ST-Bonus (+4)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "64.0",
+              "Ø Treffer-Endschaden": "45.6",
+              "Ø Erwartungswirkung": "31.4",
+              "GE-Anteil": "0.53",
+              "Zusatz": "Linker gerader Klauenstoß; keine Zusatzkontrolle."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Sprungangriff",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Bewegung",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+            "range_area": "Ziel zu Beginn 2–5 m entfernt; Sprung bis 3 m als Teil der Aktion",
+            "damage_effect": "12W8 + 1W6 + ST-Modifikator (+6) + ST-Bonus (+4)",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "67.5",
+            "avg_hit_damage": "49.2",
+            "avg_expected_effect": "33.8",
+            "ge_share": "0.58",
+            "notes": "Nur einsetzbar, wenn das Ziel zu Beginn der Aktion mindestens 2 m entfernt ist und ein direkter Sprungweg besteht.",
+            "avg_raw_damage_value": 67.5,
+            "avg_hit_damage_value": 49.2,
+            "ge_share_value": 0.58,
+            "id": "schattenlurch-l30-a03-sprungangriff",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Sprungangriff",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Bewegung",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Ziel zu Beginn 2–5 m entfernt; Sprung bis 3 m als Teil der Aktion",
+              "Schaden / Wirkung": "12W8 + 1W6 + ST-Modifikator (+6) + ST-Bonus (+4)",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "67.5",
+              "Ø Treffer-Endschaden": "49.2",
+              "Ø Erwartungswirkung": "33.8",
+              "GE-Anteil": "0.58",
+              "Zusatz": "Nur einsetzbar, wenn das Ziel zu Beginn der Aktion mindestens 2 m entfernt ist und ein direkter Sprungweg besteht."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "schattenlurch-l30-krallenhieb",
+          "name": "Krallenhieb",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+5)`",
+          "damage": "`12W8 + ST-Modifikator (+6) + ST-Bonus (+4)`",
+          "damage_type": "Hieb",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch schlägt mit der rechten dreifingrigen Klaue nach dem Ziel. Bei einem Treffer verursacht er ausschließlich den angegebenen Hiebschaden. Der Angriff erzeugt keinen zusätzlichen Zustand, keine erzwungene Bewegung und keinen kostenlosen Folgeangriff.",
+          "stacking": "Mehrere Schattenlurche können dasselbe Ziel unabhängig voneinander angreifen; jeder Angriff wird separat abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+5)`",
+            "Schaden": "`12W8 + ST-Modifikator (+6) + ST-Bonus (+4)`",
+            "Schadensart": "Hieb",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch schlägt mit der rechten dreifingrigen Klaue nach dem Ziel. Bei einem Treffer verursacht er ausschließlich den angegebenen Hiebschaden. Der Angriff erzeugt keinen zusätzlichen Zustand, keine erzwungene Bewegung und keinen kostenlosen Folgeangriff.",
+            "Stapelung": "Mehrere Schattenlurche können dasselbe Ziel unabhängig voneinander angreifen; jeder Angriff wird separat abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 756,
+            "line_end": 767
+          }
+        },
+        {
+          "id": "schattenlurch-l30-stossklaue",
+          "name": "Stoßklaue",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+5)`",
+          "damage": "`12W8 + ST-Modifikator (+6) + ST-Bonus (+4)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch stößt die linke Klaue geradlinig nach vorn. Bei einem Treffer verursacht er ausschließlich den angegebenen Stichschaden. Diese Aktion besitzt bewusst keine zusätzliche Kontroll- oder Dunkelheitswirkung; sie bildet den zweiten einfachen Grundangriff des Vorbilds ab.",
+          "stacking": "Mehrere Stoßklauen werden jeweils als eigenständige Angriffe gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+5)`",
+            "Schaden": "`12W8 + ST-Modifikator (+6) + ST-Bonus (+4)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch stößt die linke Klaue geradlinig nach vorn. Bei einem Treffer verursacht er ausschließlich den angegebenen Stichschaden. Diese Aktion besitzt bewusst keine zusätzliche Kontroll- oder Dunkelheitswirkung; sie bildet den zweiten einfachen Grundangriff des Vorbilds ab.",
+            "Stapelung": "Mehrere Stoßklauen werden jeweils als eigenständige Angriffe gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 768,
+            "line_end": 779
+          }
+        },
+        {
+          "id": "schattenlurch-l30-sprungangriff",
+          "name": "Sprungangriff",
+          "type": "Angriff / Bewegung",
+          "cost": "1 Aktion",
+          "requirement": "Das Ziel befindet sich zu Beginn der Aktion mindestens 2 m und höchstens 5 m entfernt; zwischen Schattenlurch und Ziel besteht ein direkter Sprungweg.",
+          "range": "Der Schattenlurch springt bis zu 3 m als Teil dieser Aktion und führt anschließend den Angriff aus.",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+5)`",
+          "damage": "`12W8 + 1W6 + ST-Modifikator (+6) + ST-Bonus (+4)`",
+          "damage_type": "Hieb",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch wirft sich nach vorn und kratzt das Ziel im Sprung. Der Sprung ist Teil derselben Aktion und gewährt keine zusätzliche freie Bewegung danach. Verfehlt der Angriff, endet der Sprung dennoch an einer regelkonform erreichbaren Position entlang des gewählten direkten Weges.",
+          "stacking": "Jeder Sprungangriff wird separat abgehandelt; er erzeugt keinen automatischen Folgeangriff.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Bewegung",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Das Ziel befindet sich zu Beginn der Aktion mindestens 2 m und höchstens 5 m entfernt; zwischen Schattenlurch und Ziel besteht ein direkter Sprungweg.",
+            "Reichweite": "Der Schattenlurch springt bis zu 3 m als Teil dieser Aktion und führt anschließend den Angriff aus.",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+5)`",
+            "Schaden": "`12W8 + 1W6 + ST-Modifikator (+6) + ST-Bonus (+4)`",
+            "Schadensart": "Hieb",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch wirft sich nach vorn und kratzt das Ziel im Sprung. Der Sprung ist Teil derselben Aktion und gewährt keine zusätzliche freie Bewegung danach. Verfehlt der Angriff, endet der Sprung dennoch an einer regelkonform erreichbaren Position entlang des gewählten direkten Weges.",
+            "Stapelung": "Jeder Sprungangriff wird separat abgehandelt; er erzeugt keinen automatischen Folgeangriff."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 780,
+            "line_end": 792
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "25 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 25
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "50 % Resistenz",
+            "type": "resistance",
+            "percent": 50
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "**25 % Verwundbarkeit**",
+            "**50 % Resistenz**"
+          ]
+        ]
+      },
+      "extra_sections": [
+        {
+          "title": "Besondere Widerstände und Vernichtungsregel",
+          "id": "besondere-widerstaende-und-vernichtungsregel",
+          "markdown": "- **Schattenform:** Während der gleitenden Schattenbewegung vollständige Immunität gegen Angriffe, Schaden, Magie und andere gegen ihn gerichtete Effekte.\n- **Endgültige Vernichtung:** Nicht-Schlüsselschwert- und Nicht-Licht-Schaden kann den Schattenlurch höchstens auf **1 LP** reduzieren.\n- **Gültiger Finisher:** Schlüsselschwert oder Lichtschaden/Lichtmagie kann ihn bei mindestens 1 tatsächlichem LP-Verlust auf **0 LP** reduzieren.",
+          "tables": [],
+          "source": {
+            "line_start": 799,
+            "line_end": 805
+          }
+        }
+      ],
+      "source": {
+        "line_start": 715,
+        "line_end": 805
+      }
+    },
+    {
+      "level": 35,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 25,
+          "modifier": 7,
+          "bonus": 6,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "25",
+            "Modifikator": "+7",
+            "Bonus": "+6"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "570",
+          "physische_verteidigung": "20",
+          "magieverteidigung": "19",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m; Schattenform bis 12 m während der eigenen Bewegung"
+        },
+        "raw_fields": {
+          "Maximale LP": "570",
+          "Physische Verteidigung": "20",
+          "Magieverteidigung": "19",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m; Schattenform bis 12 m während der eigenen Bewegung"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+5) + WI-Bonus (+3)) × 10) + ((IT-Modifikator (+5) + IT-Bonus (+3)) × 5) + (35 × 10) = 570 LP",
+        "markdown": "`100 + ((WI-Modifikator (+5) + WI-Bonus (+3)) × 10) + ((IT-Modifikator (+5) + IT-Bonus (+3)) × 5) + (35 × 10) = 570 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Krallenhieb",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+            "range_area": "Nah",
+            "damage_effect": "13W8 + ST-Modifikator (+7) + ST-Bonus (+4)",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "69.5",
+            "avg_hit_damage": "49.2",
+            "avg_expected_effect": "33.8",
+            "ge_share": "0.52",
+            "notes": "Rechter Krallenhieb; keine Zusatzkontrolle.",
+            "avg_raw_damage_value": 69.5,
+            "avg_hit_damage_value": 49.2,
+            "ge_share_value": 0.52,
+            "id": "schattenlurch-l35-a01-krallenhieb",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Krallenhieb",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "13W8 + ST-Modifikator (+7) + ST-Bonus (+4)",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "69.5",
+              "Ø Treffer-Endschaden": "49.2",
+              "Ø Erwartungswirkung": "33.8",
+              "GE-Anteil": "0.52",
+              "Zusatz": "Rechter Krallenhieb; keine Zusatzkontrolle."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Stoßklaue",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+            "range_area": "Nah",
+            "damage_effect": "13W8 + ST-Modifikator (+7) + ST-Bonus (+4)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "69.5",
+            "avg_hit_damage": "49.2",
+            "avg_expected_effect": "33.8",
+            "ge_share": "0.52",
+            "notes": "Linker gerader Klauenstoß; keine Zusatzkontrolle.",
+            "avg_raw_damage_value": 69.5,
+            "avg_hit_damage_value": 49.2,
+            "ge_share_value": 0.52,
+            "id": "schattenlurch-l35-a02-stossklaue",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Stoßklaue",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "13W8 + ST-Modifikator (+7) + ST-Bonus (+4)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "69.5",
+              "Ø Treffer-Endschaden": "49.2",
+              "Ø Erwartungswirkung": "33.8",
+              "GE-Anteil": "0.52",
+              "Zusatz": "Linker gerader Klauenstoß; keine Zusatzkontrolle."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Sprungangriff",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Bewegung",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+            "range_area": "Ziel zu Beginn 2–5 m entfernt; Sprung bis 3 m als Teil der Aktion",
+            "damage_effect": "13W8 + 1W6 + ST-Modifikator (+7) + ST-Bonus (+4)",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "73.0",
+            "avg_hit_damage": "52.7",
+            "avg_expected_effect": "36.3",
+            "ge_share": "0.56",
+            "notes": "Nur einsetzbar, wenn das Ziel zu Beginn der Aktion mindestens 2 m entfernt ist und ein direkter Sprungweg besteht.",
+            "avg_raw_damage_value": 73.0,
+            "avg_hit_damage_value": 52.7,
+            "ge_share_value": 0.56,
+            "id": "schattenlurch-l35-a03-sprungangriff",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Sprungangriff",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Bewegung",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+              "Reichweite / Fläche": "Ziel zu Beginn 2–5 m entfernt; Sprung bis 3 m als Teil der Aktion",
+              "Schaden / Wirkung": "13W8 + 1W6 + ST-Modifikator (+7) + ST-Bonus (+4)",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "73.0",
+              "Ø Treffer-Endschaden": "52.7",
+              "Ø Erwartungswirkung": "36.3",
+              "GE-Anteil": "0.56",
+              "Zusatz": "Nur einsetzbar, wenn das Ziel zu Beginn der Aktion mindestens 2 m entfernt ist und ein direkter Sprungweg besteht."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "schattenlurch-l35-krallenhieb",
+          "name": "Krallenhieb",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+6)`",
+          "damage": "`13W8 + ST-Modifikator (+7) + ST-Bonus (+4)`",
+          "damage_type": "Hieb",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch schlägt mit der rechten dreifingrigen Klaue nach dem Ziel. Bei einem Treffer verursacht er ausschließlich den angegebenen Hiebschaden. Der Angriff erzeugt keinen zusätzlichen Zustand, keine erzwungene Bewegung und keinen kostenlosen Folgeangriff.",
+          "stacking": "Mehrere Schattenlurche können dasselbe Ziel unabhängig voneinander angreifen; jeder Angriff wird separat abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+6)`",
+            "Schaden": "`13W8 + ST-Modifikator (+7) + ST-Bonus (+4)`",
+            "Schadensart": "Hieb",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch schlägt mit der rechten dreifingrigen Klaue nach dem Ziel. Bei einem Treffer verursacht er ausschließlich den angegebenen Hiebschaden. Der Angriff erzeugt keinen zusätzlichen Zustand, keine erzwungene Bewegung und keinen kostenlosen Folgeangriff.",
+            "Stapelung": "Mehrere Schattenlurche können dasselbe Ziel unabhängig voneinander angreifen; jeder Angriff wird separat abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 847,
+            "line_end": 858
+          }
+        },
+        {
+          "id": "schattenlurch-l35-stossklaue",
+          "name": "Stoßklaue",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+6)`",
+          "damage": "`13W8 + ST-Modifikator (+7) + ST-Bonus (+4)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch stößt die linke Klaue geradlinig nach vorn. Bei einem Treffer verursacht er ausschließlich den angegebenen Stichschaden. Diese Aktion besitzt bewusst keine zusätzliche Kontroll- oder Dunkelheitswirkung; sie bildet den zweiten einfachen Grundangriff des Vorbilds ab.",
+          "stacking": "Mehrere Stoßklauen werden jeweils als eigenständige Angriffe gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+6)`",
+            "Schaden": "`13W8 + ST-Modifikator (+7) + ST-Bonus (+4)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch stößt die linke Klaue geradlinig nach vorn. Bei einem Treffer verursacht er ausschließlich den angegebenen Stichschaden. Diese Aktion besitzt bewusst keine zusätzliche Kontroll- oder Dunkelheitswirkung; sie bildet den zweiten einfachen Grundangriff des Vorbilds ab.",
+            "Stapelung": "Mehrere Stoßklauen werden jeweils als eigenständige Angriffe gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 859,
+            "line_end": 870
+          }
+        },
+        {
+          "id": "schattenlurch-l35-sprungangriff",
+          "name": "Sprungangriff",
+          "type": "Angriff / Bewegung",
+          "cost": "1 Aktion",
+          "requirement": "Das Ziel befindet sich zu Beginn der Aktion mindestens 2 m und höchstens 5 m entfernt; zwischen Schattenlurch und Ziel besteht ein direkter Sprungweg.",
+          "range": "Der Schattenlurch springt bis zu 3 m als Teil dieser Aktion und führt anschließend den Angriff aus.",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+6)`",
+          "damage": "`13W8 + 1W6 + ST-Modifikator (+7) + ST-Bonus (+4)`",
+          "damage_type": "Hieb",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch wirft sich nach vorn und kratzt das Ziel im Sprung. Der Sprung ist Teil derselben Aktion und gewährt keine zusätzliche freie Bewegung danach. Verfehlt der Angriff, endet der Sprung dennoch an einer regelkonform erreichbaren Position entlang des gewählten direkten Weges.",
+          "stacking": "Jeder Sprungangriff wird separat abgehandelt; er erzeugt keinen automatischen Folgeangriff.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Bewegung",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Das Ziel befindet sich zu Beginn der Aktion mindestens 2 m und höchstens 5 m entfernt; zwischen Schattenlurch und Ziel besteht ein direkter Sprungweg.",
+            "Reichweite": "Der Schattenlurch springt bis zu 3 m als Teil dieser Aktion und führt anschließend den Angriff aus.",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+6)`",
+            "Schaden": "`13W8 + 1W6 + ST-Modifikator (+7) + ST-Bonus (+4)`",
+            "Schadensart": "Hieb",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch wirft sich nach vorn und kratzt das Ziel im Sprung. Der Sprung ist Teil derselben Aktion und gewährt keine zusätzliche freie Bewegung danach. Verfehlt der Angriff, endet der Sprung dennoch an einer regelkonform erreichbaren Position entlang des gewählten direkten Weges.",
+            "Stapelung": "Jeder Sprungangriff wird separat abgehandelt; er erzeugt keinen automatischen Folgeangriff."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 871,
+            "line_end": 883
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "25 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 25
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "50 % Resistenz",
+            "type": "resistance",
+            "percent": 50
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "**25 % Verwundbarkeit**",
+            "**50 % Resistenz**"
+          ]
+        ]
+      },
+      "extra_sections": [
+        {
+          "title": "Besondere Widerstände und Vernichtungsregel",
+          "id": "besondere-widerstaende-und-vernichtungsregel",
+          "markdown": "- **Schattenform:** Während der gleitenden Schattenbewegung vollständige Immunität gegen Angriffe, Schaden, Magie und andere gegen ihn gerichtete Effekte.\n- **Endgültige Vernichtung:** Nicht-Schlüsselschwert- und Nicht-Licht-Schaden kann den Schattenlurch höchstens auf **1 LP** reduzieren.\n- **Gültiger Finisher:** Schlüsselschwert oder Lichtschaden/Lichtmagie kann ihn bei mindestens 1 tatsächlichem LP-Verlust auf **0 LP** reduzieren.",
+          "tables": [],
+          "source": {
+            "line_start": 890,
+            "line_end": 896
+          }
+        }
+      ],
+      "source": {
+        "line_start": 806,
+        "line_end": 896
+      }
+    },
+    {
+      "level": 40,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 26,
+          "modifier": 8,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "26",
+            "Modifikator": "+8",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 26,
+          "modifier": 8,
+          "bonus": 6,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "26",
+            "Modifikator": "+8",
+            "Bonus": "+6"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+5"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "635",
+          "physische_verteidigung": "22",
+          "magieverteidigung": "21",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m; Schattenform bis 12 m während der eigenen Bewegung"
+        },
+        "raw_fields": {
+          "Maximale LP": "635",
+          "Physische Verteidigung": "22",
+          "Magieverteidigung": "21",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m; Schattenform bis 12 m während der eigenen Bewegung"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+5) + WI-Bonus (+4)) × 10) + ((IT-Modifikator (+6) + IT-Bonus (+3)) × 5) + (40 × 10) = 635 LP",
+        "markdown": "`100 + ((WI-Modifikator (+5) + WI-Bonus (+4)) × 10) + ((IT-Modifikator (+6) + IT-Bonus (+3)) × 5) + (40 × 10) = 635 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Krallenhieb",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+            "range_area": "Nah",
+            "damage_effect": "14W8 + ST-Modifikator (+8) + ST-Bonus (+4)",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "75.0",
+            "avg_hit_damage": "52.8",
+            "avg_expected_effect": "36.3",
+            "ge_share": "0.51",
+            "notes": "Rechter Krallenhieb; keine Zusatzkontrolle.",
+            "avg_raw_damage_value": 75.0,
+            "avg_hit_damage_value": 52.8,
+            "ge_share_value": 0.51,
+            "id": "schattenlurch-l40-a01-krallenhieb",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Krallenhieb",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "14W8 + ST-Modifikator (+8) + ST-Bonus (+4)",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "75.0",
+              "Ø Treffer-Endschaden": "52.8",
+              "Ø Erwartungswirkung": "36.3",
+              "GE-Anteil": "0.51",
+              "Zusatz": "Rechter Krallenhieb; keine Zusatzkontrolle."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Stoßklaue",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+            "range_area": "Nah",
+            "damage_effect": "14W8 + ST-Modifikator (+8) + ST-Bonus (+4)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "75.0",
+            "avg_hit_damage": "52.8",
+            "avg_expected_effect": "36.3",
+            "ge_share": "0.51",
+            "notes": "Linker gerader Klauenstoß; keine Zusatzkontrolle.",
+            "avg_raw_damage_value": 75.0,
+            "avg_hit_damage_value": 52.8,
+            "ge_share_value": 0.51,
+            "id": "schattenlurch-l40-a02-stossklaue",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Stoßklaue",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "14W8 + ST-Modifikator (+8) + ST-Bonus (+4)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "75.0",
+              "Ø Treffer-Endschaden": "52.8",
+              "Ø Erwartungswirkung": "36.3",
+              "GE-Anteil": "0.51",
+              "Zusatz": "Linker gerader Klauenstoß; keine Zusatzkontrolle."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Sprungangriff",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Bewegung",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+            "range_area": "Ziel zu Beginn 2–5 m entfernt; Sprung bis 3 m als Teil der Aktion",
+            "damage_effect": "14W8 + 1W6 + ST-Modifikator (+8) + ST-Bonus (+4)",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "78.5",
+            "avg_hit_damage": "56.3",
+            "avg_expected_effect": "38.7",
+            "ge_share": "0.54",
+            "notes": "Nur einsetzbar, wenn das Ziel zu Beginn der Aktion mindestens 2 m entfernt ist und ein direkter Sprungweg besteht.",
+            "avg_raw_damage_value": 78.5,
+            "avg_hit_damage_value": 56.3,
+            "ge_share_value": 0.54,
+            "id": "schattenlurch-l40-a03-sprungangriff",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Sprungangriff",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Bewegung",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+              "Reichweite / Fläche": "Ziel zu Beginn 2–5 m entfernt; Sprung bis 3 m als Teil der Aktion",
+              "Schaden / Wirkung": "14W8 + 1W6 + ST-Modifikator (+8) + ST-Bonus (+4)",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "78.5",
+              "Ø Treffer-Endschaden": "56.3",
+              "Ø Erwartungswirkung": "38.7",
+              "GE-Anteil": "0.54",
+              "Zusatz": "Nur einsetzbar, wenn das Ziel zu Beginn der Aktion mindestens 2 m entfernt ist und ein direkter Sprungweg besteht."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "schattenlurch-l40-krallenhieb",
+          "name": "Krallenhieb",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+8) + BW-Bonus (+6)`",
+          "damage": "`14W8 + ST-Modifikator (+8) + ST-Bonus (+4)`",
+          "damage_type": "Hieb",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch schlägt mit der rechten dreifingrigen Klaue nach dem Ziel. Bei einem Treffer verursacht er ausschließlich den angegebenen Hiebschaden. Der Angriff erzeugt keinen zusätzlichen Zustand, keine erzwungene Bewegung und keinen kostenlosen Folgeangriff.",
+          "stacking": "Mehrere Schattenlurche können dasselbe Ziel unabhängig voneinander angreifen; jeder Angriff wird separat abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+8) + BW-Bonus (+6)`",
+            "Schaden": "`14W8 + ST-Modifikator (+8) + ST-Bonus (+4)`",
+            "Schadensart": "Hieb",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch schlägt mit der rechten dreifingrigen Klaue nach dem Ziel. Bei einem Treffer verursacht er ausschließlich den angegebenen Hiebschaden. Der Angriff erzeugt keinen zusätzlichen Zustand, keine erzwungene Bewegung und keinen kostenlosen Folgeangriff.",
+            "Stapelung": "Mehrere Schattenlurche können dasselbe Ziel unabhängig voneinander angreifen; jeder Angriff wird separat abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 938,
+            "line_end": 949
+          }
+        },
+        {
+          "id": "schattenlurch-l40-stossklaue",
+          "name": "Stoßklaue",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+8) + BW-Bonus (+6)`",
+          "damage": "`14W8 + ST-Modifikator (+8) + ST-Bonus (+4)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch stößt die linke Klaue geradlinig nach vorn. Bei einem Treffer verursacht er ausschließlich den angegebenen Stichschaden. Diese Aktion besitzt bewusst keine zusätzliche Kontroll- oder Dunkelheitswirkung; sie bildet den zweiten einfachen Grundangriff des Vorbilds ab.",
+          "stacking": "Mehrere Stoßklauen werden jeweils als eigenständige Angriffe gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+8) + BW-Bonus (+6)`",
+            "Schaden": "`14W8 + ST-Modifikator (+8) + ST-Bonus (+4)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch stößt die linke Klaue geradlinig nach vorn. Bei einem Treffer verursacht er ausschließlich den angegebenen Stichschaden. Diese Aktion besitzt bewusst keine zusätzliche Kontroll- oder Dunkelheitswirkung; sie bildet den zweiten einfachen Grundangriff des Vorbilds ab.",
+            "Stapelung": "Mehrere Stoßklauen werden jeweils als eigenständige Angriffe gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 950,
+            "line_end": 961
+          }
+        },
+        {
+          "id": "schattenlurch-l40-sprungangriff",
+          "name": "Sprungangriff",
+          "type": "Angriff / Bewegung",
+          "cost": "1 Aktion",
+          "requirement": "Das Ziel befindet sich zu Beginn der Aktion mindestens 2 m und höchstens 5 m entfernt; zwischen Schattenlurch und Ziel besteht ein direkter Sprungweg.",
+          "range": "Der Schattenlurch springt bis zu 3 m als Teil dieser Aktion und führt anschließend den Angriff aus.",
+          "attack_roll": "`W20 + BW-Mod. (+8) + BW-Bonus (+6)`",
+          "damage": "`14W8 + 1W6 + ST-Modifikator (+8) + ST-Bonus (+4)`",
+          "damage_type": "Hieb",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Der Schattenlurch wirft sich nach vorn und kratzt das Ziel im Sprung. Der Sprung ist Teil derselben Aktion und gewährt keine zusätzliche freie Bewegung danach. Verfehlt der Angriff, endet der Sprung dennoch an einer regelkonform erreichbaren Position entlang des gewählten direkten Weges.",
+          "stacking": "Jeder Sprungangriff wird separat abgehandelt; er erzeugt keinen automatischen Folgeangriff.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Bewegung",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Das Ziel befindet sich zu Beginn der Aktion mindestens 2 m und höchstens 5 m entfernt; zwischen Schattenlurch und Ziel besteht ein direkter Sprungweg.",
+            "Reichweite": "Der Schattenlurch springt bis zu 3 m als Teil dieser Aktion und führt anschließend den Angriff aus.",
+            "Angriffswurf": "`W20 + BW-Mod. (+8) + BW-Bonus (+6)`",
+            "Schaden": "`14W8 + 1W6 + ST-Modifikator (+8) + ST-Bonus (+4)`",
+            "Schadensart": "Hieb",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Der Schattenlurch wirft sich nach vorn und kratzt das Ziel im Sprung. Der Sprung ist Teil derselben Aktion und gewährt keine zusätzliche freie Bewegung danach. Verfehlt der Angriff, endet der Sprung dennoch an einer regelkonform erreichbaren Position entlang des gewählten direkten Weges.",
+            "Stapelung": "Jeder Sprungangriff wird separat abgehandelt; er erzeugt keinen automatischen Folgeangriff."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 962,
+            "line_end": 974
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "25 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 25
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "50 % Resistenz",
+            "type": "resistance",
+            "percent": 50
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "**25 % Verwundbarkeit**",
+            "**50 % Resistenz**"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 897,
+        "line_end": 980
+      }
+    }
+  ],
+  "post_sections": [
+    {
+      "title": "Besondere Widerstände und Vernichtungsregel",
+      "id": "besondere-widerstaende-und-vernichtungsregel",
+      "markdown": "- **Schattenform:** Während der gleitenden Schattenbewegung vollständige Immunität gegen Angriffe, Schaden, Magie und andere gegen ihn gerichtete Effekte.\n- **Endgültige Vernichtung:** Nicht-Schlüsselschwert- und Nicht-Licht-Schaden kann den Schattenlurch höchstens auf **1 LP** reduzieren.\n- **Gültiger Finisher:** Schlüsselschwert oder Lichtschaden/Lichtmagie kann ihn bei mindestens 1 tatsächlichem LP-Verlust auf **0 LP** reduzieren.",
+      "tables": [],
+      "source": {
+        "line_start": 981,
+        "line_end": 986
+      }
+    }
+  ],
+  "statistics": {
+    "level_count": 9,
+    "action_count_by_level": {
+      "1": 3,
+      "5": 3,
+      "10": 3,
+      "15": 3,
+      "20": 3,
+      "25": 3,
+      "30": 3,
+      "35": 3,
+      "40": 3
+    },
+    "shared_action_detail_count": 0
+  },
+  "source": {
+    "line_start": 17,
+    "line_end": 986
+  }
+}

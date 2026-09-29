@@ -1,0 +1,156 @@
+{
+  "schema_version": "aetherfall.spells.v1",
+  "generated_from": [
+    "Magie - Dunkelheit - Elementarzauber - Zentralbalance.md",
+    "Magie - Elemente.md",
+    "Magie - Erde - Elementarzauber - Zentralbalance.md",
+    "Magie - Feuer - Elementarzauber - Zentralbalance.md",
+    "Magie - Index.md",
+    "Magie - Licht - Elementarzauber - Zentralbalance.md",
+    "Magie - Luft - Elementarzauber - Zentralbalance.md",
+    "Magie - Wasser - Elementarzauber - Zentralbalance.md"
+  ],
+  "element_count": 6,
+  "spell_count": 600,
+  "elements": [
+    {
+      "id": "dunkelheit",
+      "element": "Dunkelheit",
+      "source_file": "Magie - Dunkelheit - Elementarzauber - Zentralbalance.md",
+      "json_file": "dunkelheit.json",
+      "balance_version": "Ätherfall-Zentralbalance-1.0",
+      "grade_count": 10,
+      "spell_count": 100,
+      "spells_by_grade": {
+        "1": 10,
+        "2": 10,
+        "3": 10,
+        "4": 10,
+        "5": 10,
+        "6": 10,
+        "7": 10,
+        "8": 10,
+        "9": 10,
+        "10": 10
+      }
+    },
+    {
+      "id": "erde",
+      "element": "Erde",
+      "source_file": "Magie - Erde - Elementarzauber - Zentralbalance.md",
+      "json_file": "erde.json",
+      "balance_version": "Ätherfall-Zentralbalance-1.0",
+      "grade_count": 10,
+      "spell_count": 100,
+      "spells_by_grade": {
+        "1": 10,
+        "2": 10,
+        "3": 10,
+        "4": 10,
+        "5": 10,
+        "6": 10,
+        "7": 10,
+        "8": 10,
+        "9": 10,
+        "10": 10
+      }
+    },
+    {
+      "id": "feuer",
+      "element": "Feuer",
+      "source_file": "Magie - Feuer - Elementarzauber - Zentralbalance.md",
+      "json_file": "feuer.json",
+      "balance_version": "Ätherfall-Zentralbalance-1.0",
+      "grade_count": 10,
+      "spell_count": 100,
+      "spells_by_grade": {
+        "1": 10,
+        "2": 10,
+        "3": 10,
+        "4": 10,
+        "5": 10,
+        "6": 10,
+        "7": 10,
+        "8": 10,
+        "9": 10,
+        "10": 10
+      }
+    },
+    {
+      "id": "licht",
+      "element": "Licht",
+      "source_file": "Magie - Licht - Elementarzauber - Zentralbalance.md",
+      "json_file": "licht.json",
+      "balance_version": "Ätherfall-Zentralbalance-1.0",
+      "grade_count": 10,
+      "spell_count": 100,
+      "spells_by_grade": {
+        "1": 10,
+        "2": 10,
+        "3": 10,
+        "4": 10,
+        "5": 10,
+        "6": 10,
+        "7": 10,
+        "8": 10,
+        "9": 10,
+        "10": 10
+      }
+    },
+    {
+      "id": "luft",
+      "element": "Luft",
+      "source_file": "Magie - Luft - Elementarzauber - Zentralbalance.md",
+      "json_file": "luft.json",
+      "balance_version": "Ätherfall-Zentralbalance-1.0",
+      "grade_count": 10,
+      "spell_count": 100,
+      "spells_by_grade": {
+        "1": 10,
+        "2": 10,
+        "3": 10,
+        "4": 10,
+        "5": 10,
+        "6": 10,
+        "7": 10,
+        "8": 10,
+        "9": 10,
+        "10": 10
+      }
+    },
+    {
+      "id": "wasser",
+      "element": "Wasser",
+      "source_file": "Magie - Wasser - Elementarzauber - Zentralbalance.md",
+      "json_file": "wasser.json",
+      "balance_version": "Ätherfall-Zentralbalance-1.0",
+      "grade_count": 10,
+      "spell_count": 100,
+      "spells_by_grade": {
+        "1": 10,
+        "2": 10,
+        "3": 10,
+        "4": 10,
+        "5": 10,
+        "6": 10,
+        "7": 10,
+        "8": 10,
+        "9": 10,
+        "10": 10
+      }
+    }
+  ],
+  "skipped_file_count": 2,
+  "skipped_files": [
+    {
+      "source_file": "Magie - Elemente.md",
+      "reason": "Kein Elementarzauber-Dokument erkannt."
+    },
+    {
+      "source_file": "Magie - Index.md",
+      "reason": "Kein Elementarzauber-Dokument erkannt."
+    }
+  ],
+  "warning_count": 0,
+  "warnings": []
+}

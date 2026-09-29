@@ -1,0 +1,4539 @@
+{
+  "schema_version": "aetherfall.creatures.v1",
+  "id": "mooskrabbler",
+  "name": "Mooskrabbler",
+  "source_file": "Kreaturen - Mooskrabbler.md",
+  "core": {
+    "creature_type": "Bestie",
+    "classification": "Weltkreatur",
+    "origin": "Sylvarra – Lichte Wurzelmarken",
+    "occurrence": "Vor allem Sylvarra: Lichte Wurzelmarken, Blütenwildnis und feuchte Randbereiche der Grünen Stromlande; vereinzelt durch Pflanzen-, Holz- und Wurzeltransporte auch in feuchten Waldgebieten anderer Kontinente",
+    "challenge_rating": {
+      "raw": "1 – Sehr schwache / einfache Bedrohung",
+      "value": 1,
+      "label": "Sehr schwache / einfache Bedrohung"
+    },
+    "encounter_rank": "Standard",
+    "archetype": "Ausweichend",
+    "elemental_affinity": "Keine feste Elementprägung",
+    "size": "Klein; meist 0,6–0,9 m lang, aber nur etwa 0,15–0,25 m hoch",
+    "intelligence": "Tierisch; vorsichtig, nestgebunden und gut an wiederkehrende Störungen lernfähig",
+    "extra_fields": {},
+    "raw_fields": {
+      "Kreaturenart": "Bestie",
+      "Einordnung": "Weltkreatur",
+      "Ursprüngliche Herkunft": "Sylvarra – Lichte Wurzelmarken",
+      "Bekanntes Vorkommen": "Vor allem Sylvarra: Lichte Wurzelmarken, Blütenwildnis und feuchte Randbereiche der Grünen Stromlande; vereinzelt durch Pflanzen-, Holz- und Wurzeltransporte auch in feuchten Waldgebieten anderer Kontinente",
+      "Herausforderungsgrad": "**1 – Sehr schwache / einfache Bedrohung**",
+      "Begegnungsrang": "Standard",
+      "Archetyp": "Ausweichend",
+      "Elementare Eigenschaft": "Keine feste Elementprägung",
+      "Größenordnung": "Klein; meist 0,6–0,9 m lang, aber nur etwa 0,15–0,25 m hoch",
+      "Intelligenzniveau": "Tierisch; vorsichtig, nestgebunden und gut an wiederkehrende Störungen lernfähig"
+    },
+    "raw_table_markdown": "| Kerndaten | Angabe |\n|---|---|\n| Kreaturenart | Bestie |\n| Einordnung | Weltkreatur |\n| Ursprüngliche Herkunft | Sylvarra – Lichte Wurzelmarken |\n| Bekanntes Vorkommen | Vor allem Sylvarra: Lichte Wurzelmarken, Blütenwildnis und feuchte Randbereiche der Grünen Stromlande; vereinzelt durch Pflanzen-, Holz- und Wurzeltransporte auch in feuchten Waldgebieten anderer Kontinente |\n| Herausforderungsgrad | **1 – Sehr schwache / einfache Bedrohung** |\n| Begegnungsrang | Standard |\n| Archetyp | Ausweichend |\n| Elementare Eigenschaft | Keine feste Elementprägung |\n| Größenordnung | Klein; meist 0,6–0,9 m lang, aber nur etwa 0,15–0,25 m hoch |\n| Intelligenzniveau | Tierisch; vorsichtig, nestgebunden und gut an wiederkehrende Störungen lernfähig |"
+  },
+  "action_overview": {
+    "headers": [
+      "Nr.",
+      "Aktion",
+      "Typ",
+      "Grundfunktion"
+    ],
+    "actions": [
+      {
+        "number": 1,
+        "name": "Rindenbiss",
+        "type": "Angriff",
+        "base_function": "Zuverlässiger Nahkampfangriff und normale Standardoption.",
+        "id": "mooskrabbler-overview-a01-rindenbiss",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "1",
+          "Aktion": "Rindenbiss",
+          "Typ": "Angriff",
+          "Grundfunktion": "Zuverlässiger Nahkampfangriff und normale Standardoption."
+        }
+      },
+      {
+        "number": 2,
+        "name": "Wurzelklammer",
+        "type": "Angriff / Kontrolle",
+        "base_function": "Geringerer Schaden; kann die Bewegungsrate des Ziels kurzzeitig um 2 m senken.",
+        "id": "mooskrabbler-overview-a02-wurzelklammer",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "2",
+          "Aktion": "Wurzelklammer",
+          "Typ": "Angriff / Kontrolle",
+          "Grundfunktion": "Geringerer Schaden; kann die Bewegungsrate des Ziels kurzzeitig um 2 m senken."
+        }
+      },
+      {
+        "number": 3,
+        "name": "Moosducken",
+        "type": "Defensive Aktion",
+        "base_function": "Presst sich flach an natürliche Deckung und erhält +2 auf den nächsten Ausweichwurf.",
+        "id": "mooskrabbler-overview-a03-moosducken",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "3",
+          "Aktion": "Moosducken",
+          "Typ": "Defensive Aktion",
+          "Grundfunktion": "Presst sich flach an natürliche Deckung und erhält +2 auf den nächsten Ausweichwurf."
+        }
+      }
+    ]
+  },
+  "shared_action_details": [],
+  "lore_and_rules": [
+    {
+      "title": "Überblick",
+      "id": "ueberblick",
+      "markdown": "Der **Mooskrabbler** ist ein kleines, extrem flach gebautes Waldtier, dessen Rücken im Ruhezustand wie ein gewöhnliches Stück moosbewachsener Waldboden wirkt. Zwischen Wurzeln, feuchtem Laub und niedrigen Farnen bleibt er deshalb oft unbemerkt, selbst wenn Reisende nur wenige Schritte an ihm vorbeigehen.\n\nMooskrabbler sind **keine von Natur aus aggressiven Jäger**. Sie ernähren sich überwiegend von Pilzen, weichen Wurzelauswüchsen, Insekten, Larven, Fallobst und verwesendem Pflanzenmaterial. Menschen, Reisende und größere Tiere werden normalerweise gemieden.\n\nGefährlich werden sie hauptsächlich dann, wenn **ihr Nest gestört wird**. Wird eine Wurzelhöhlung aufgebrochen, ein Moospolster niedergetreten oder ein Gelege freigelegt, verlassen die Tiere ihre Tarnung abrupt und greifen den nächstgelegenen Eindringling an. Dabei versuchen sie weniger, einen Gegner zu töten, als ihn vom Nest wegzudrängen oder seine Bewegung lange genug zu behindern, damit andere Mooskrabbler Eier und Jungtiere tiefer unter die Wurzeln ziehen können.\n\nFür unerfahrene Abenteurer sind sie dadurch ein typischer niedriger Waldgegner: einzeln überschaubar, in einem dicht bewachsenen Nestbereich aber überraschend lästig.",
+      "tables": [],
+      "source": {
+        "line_start": 32,
+        "line_end": 41
+      }
+    },
+    {
+      "title": "Erscheinungsbild und Anatomie",
+      "id": "erscheinungsbild-und-anatomie",
+      "markdown": "Der Körper eines Mooskrabblers ist breit, oval und fast schildförmig. Acht kurze, kräftige Beine sitzen seitlich unter dem Körper und können so eng angezogen werden, dass sie unter dem Rücken kaum sichtbar bleiben. Die vorderen beiden Beinpaare tragen gebogene Haftkrallen, mit denen sich das Tier an Wurzeln, Rinde und unebenem Boden festsetzt.\n\nSein Rücken besteht aus einer flachen, dunkelbraunen Chitinplatte mit unregelmäßigen Vertiefungen. In diesen Vertiefungen wächst eine **lebende Schicht aus Moos, Flechten und feinen Pilzfäden**. Diese Vegetation ist keine bloße Verschmutzung, sondern eine dauerhafte Symbiose. Der Mooskrabbler hält die Schicht feucht und trägt Sporen weiter; das Moos wiederum bricht die Umrisse seines Körpers und speichert Feuchtigkeit.\n\nVon oben sind Kopf und Beine kaum zu erkennen. Der Kopf sitzt tief unter dem vorderen Rand des Panzers. Zwei dunkle Punktaugen reagieren vor allem auf Bewegung und Helligkeitswechsel. Kurze Fühler ertasten Vibrationen im Boden. Unter dem Kopf liegen zwei harte, rindenfarbene Beißplatten, mit denen das Tier Pflanzenfasern, Pilzkörper und bei Gefahr auch Haut oder Leder aufreißen kann.\n\nDie Unterseite ist deutlich weicher als der Rückenpanzer. Mooskrabbler schützen sie, indem sie sich bei Gefahr flach auf den Boden pressen und ihre Beine eng unter den Körper ziehen.",
+      "tables": [],
+      "source": {
+        "line_start": 42,
+        "line_end": 51
+      }
+    },
+    {
+      "title": "Herkunft und Entstehung",
+      "id": "herkunft-und-entstehung",
+      "markdown": "Die ältesten gesicherten Beschreibungen stammen aus den **Lichten Wurzelmarken Sylvarras**. Dort finden Mooskrabbler ideale Bedingungen: feuchte Erde, große lebende Wurzeln, zahlreiche Hohlräume, regelmäßig wechselnde Wege und reichlich Pflanzenmaterial.\n\nDie Art gilt als natürlicher Bestandteil der sylvarrischen Waldökologie. Es gibt keine Hinweise darauf, dass sie gezüchtet, künstlich erschaffen oder durch Eidryth verändert wurde. Ihre Tarnung scheint über lange Zeit aus der engen Symbiose zwischen Panzeroberfläche, Moosen und Pilzen entstanden zu sein.\n\nDurch den Handel mit lebenden Pflanzen, Wurzelstücken, Holz und feuchtem Verpackungsmaterial wurden einzelne Gelege in andere Regionen verschleppt. Dauerhafte Populationen entstehen jedoch nur dort, wo der Boden ausreichend feucht ist und große Wurzeln oder ähnliche Hohlräume sichere Nistplätze bieten.",
+      "tables": [],
+      "source": {
+        "line_start": 52,
+        "line_end": 59
+      }
+    },
+    {
+      "title": "Vorkommen und Lebensraum",
+      "id": "vorkommen-und-lebensraum",
+      "markdown": "Mooskrabbler bevorzugen **feuchte, schattige Waldböden**. Besonders häufig findet man sie:\n\n- unter breiten, oberflächennahen Baumwurzeln,\n- zwischen verwachsenen Wurzelbögen,\n- an moosreichen Böschungen,\n- unter umgestürzten Stämmen,\n- in Farnfeldern und dichtem Unterholz,\n- an schattigen Bachufern,\n- in verlassenen Wurzelkammern oder natürlichen Hohlräumen.\n\nIn den Lichten Wurzelmarken leben sie häufig dort, wo sich lebende Wurzeln langsam heben oder neue Spalten bilden. Ein heute sichtbarer Nestplatz kann nach einigen Wochen teilweise geschlossen oder an eine andere Stelle gedrückt worden sein.\n\nTrockene, offene Flächen werden gemieden. Dort verliert die Moosschicht schnell Feuchtigkeit und die Tiere können ihre Tarnung kaum nutzen.",
+      "tables": [],
+      "source": {
+        "line_start": 60,
+        "line_end": 75
+      }
+    },
+    {
+      "title": "Verhalten und Lebensweise",
+      "id": "verhalten-und-lebensweise",
+      "markdown": "Mooskrabbler sind überwiegend dämmerungs- und nachtaktiv. Tagsüber liegen sie reglos zwischen Wurzeln oder in flachen Mulden. Dabei senken sie den Körper vollständig ab und verlassen sich auf ihre moosbedeckte Rückenfläche.\n\nEin typisches Nest besteht aus einer flachen Wurzelhöhlung, die mit weichem Moos, Rindenfasern und feuchten Blättern ausgekleidet ist. Darin leben meist drei bis zehn erwachsene Tiere sowie Jungtiere oder mehrere kleine Gelege. Die Gruppe besitzt keine komplizierte Rangordnung. Erwachsene Tiere reagieren jedoch gemeinsam auf starke Erschütterungen unmittelbar am Nest.\n\nIhre wichtigste Wahrnehmung ist nicht das Sehen, sondern die **Vibration des Bodens**. Normale Schritte in einiger Entfernung lösen meist nur regloses Abwarten aus. Wird dagegen direkt auf das Nest getreten, eine Wurzel angehoben oder das Moospolster aufgerissen, greifen die nächstgelegenen Tiere an.\n\nAußerhalb einer Nestverteidigung fliehen Mooskrabbler fast immer vor größeren Gegnern. Sie verfolgen Eindringlinge gewöhnlich nur über eine kurze Entfernung. Entfernt sich die Gefahr deutlich vom Nest und greift nicht weiter an, brechen die Tiere die Verfolgung ab und kehren zurück.",
+      "tables": [],
+      "source": {
+        "line_start": 76,
+        "line_end": 85
+      }
+    },
+    {
+      "title": "Spuren und Vorzeichen",
+      "id": "spuren-und-vorzeichen",
+      "markdown": "Typische Hinweise auf Mooskrabbler sind:\n\n- ungewöhnlich gleichmäßige, leicht gewölbte Moospolster zwischen Wurzeln,\n- kleine halbmondförmige Kratzspuren an feuchter Rinde,\n- abgebissene Pilze und zerdrückte Insektenpanzer,\n- feine Rinnen im Laub, die unter eine Wurzel führen,\n- flache Mulden mit besonders dichtem, weichem Moos,\n- kleine braune Chitinstücke nach einer Häutung,\n- ein leises trockenes Schaben, wenn mehrere Tiere gleichzeitig ihre Beine unter den Panzer ziehen.\n\nEin erfahrener Waldläufer erkennt aktive Nester häufig daran, dass das Moos um eine Wurzel dichter und feuchter wirkt als seine Umgebung.",
+      "tables": [],
+      "source": {
+        "line_start": 86,
+        "line_end": 99
+      }
+    },
+    {
+      "title": "Beziehung zu Bewohnern und Kulturen",
+      "id": "beziehung-zu-bewohnern-und-kulturen",
+      "markdown": "In Sylvarra werden Mooskrabbler meist nicht gejagt. Sie fressen zahlreiche Larven, Pilzreste und abgestorbenes Pflanzenmaterial und gelten deshalb eher als nützliche Bodenbewohner.\n\nBewohner der Lichten Wurzelmarken markieren bekannte Nester häufig mit kleinen, locker geflochtenen Zweigen oder auffälligen Bändern an benachbarten Wurzeln. Die Markierung dient nicht dazu, die Tiere einzusperren, sondern Reisende davon abzuhalten, direkt auf das Nest zu treten.\n\nWird ein Nest nahe einer stark genutzten Wurzelstraße problematisch, versucht man eher, den Weg leicht zu verlegen oder das Gelege vorsichtig in eine benachbarte Wurzelmulde umzusetzen. Das vollständige Zerstören eines Nestes gilt als unnötig, solange die Tiere keine unmittelbare Gefahr darstellen.\n\nKinder lernen in vielen Waldsiedlungen früh eine einfache Regel: **Moos, das zu gleichmäßig aussieht, wird nicht mit dem Fuß geprüft.**",
+      "tables": [],
+      "source": {
+        "line_start": 100,
+        "line_end": 109
+      }
+    },
+    {
+      "title": "Kampfverhalten",
+      "id": "kampfverhalten",
+      "markdown": "Ein Mooskrabbler greift normalerweise erst an, wenn sein Nest oder ein unmittelbar benachbartes Tier bedroht wird. Dann löst er sich abrupt aus seiner Tarnhaltung und versucht, den Eindringling möglichst schnell von der Nestöffnung wegzubringen.\n\nDer **Rindenbiss** ist seine direkte Standardaktion. Mit der **Wurzelklammer** greift er nach Füßen, Beinen oder bodennahen Gliedmaßen und erschwert kurzzeitig die Bewegung. Wird der Druck zu groß, nutzt er **Moosducken**, presst sich flach an Boden oder Wurzel und macht seine Silhouette schwerer zu treffen.\n\nMooskrabbler kämpfen nicht lange außerhalb ihres Reviers. Entfernt sich ein Gegner deutlich vom Nest, verfolgt ein gewöhnliches Tier ihn nur kurz. Sinkt ein Mooskrabbler unter ungefähr ein Viertel seiner maximalen LP und ist das Gelege nicht unmittelbar gefährdet, versucht er sich zwischen Wurzeln zurückzuziehen.",
+      "tables": [],
+      "source": {
+        "line_start": 110,
+        "line_end": 117
+      }
+    },
+    {
+      "title": "Mechanische Grundidentität",
+      "id": "mechanische-grundidentitaet",
+      "markdown": "**LP-Hauptattribut:** Stärke (ST) – der breite Panzer und die kräftige, gedrungene Körpermuskulatur bestimmen die körperliche Belastbarkeit.  \n**LP-Sekundärattribut:** Willenskraft (WI) – die ausgeprägte Nestbindung erklärt, warum ein bedrohtes Tier trotz Verletzungen kurzzeitig weiterkämpft.  \n**Bonusprofil:** Beweglichkeit, Wahrnehmung und Ausweichen sind die stärksten aktiven Werte. Stärke bleibt solide; Intelligenz und Charisma sind deutlich niedrig.  \n**Offensivprofil:** Einfacher Nahkämpfer. Der Rindenbiss liegt je nach Stufe ungefähr bei `0,49–0,53 GE` pro Aktion. Die Wurzelklammer tauscht einen Teil des Schadens gegen eine kleine Bewegungsbehinderung.  \n**Defensivprofil:** **Ausweichend.** Die LP und festen Verteidigungswerte liegen unter einer gleichstufigen P50-Standardkreatur. Dafür besitzt der Mooskrabbler überdurchschnittliches Ausweichen und mit Moosducken eine begrenzte defensive Aktion.  \n**Bewegungsprofil:** Land 8 m, Klettern 6 m. Die Kletterbewegung gilt nur an Rinde, Wurzeln, Fels oder vergleichbar rauen Flächen.  \n**Elementprofil:** Keine feste Elementprägung. **10 % Resistenz gegen Luft** durch den extrem niedrigen Körper und die festgreifenden Haftkrallen; **10 % Verwundbarkeit gegen Feuer** durch trockene Pflanzenfasern, Moos und Pilzgewebe auf dem Rücken.  \n**Aktionsanzahl:** 3 unterschiedliche Kampfoptionen.  \n**Phasenprofil:** Kein Phasenwechsel.",
+      "tables": [],
+      "source": {
+        "line_start": 118,
+        "line_end": 129
+      }
+    },
+    {
+      "title": "Elementare Besonderheiten",
+      "id": "elementare-besonderheiten",
+      "markdown": "- **Luft – 10 % Resistenz:** Der Mooskrabbler liegt sehr niedrig und verankert mehrere Beine gleichzeitig an Boden, Rinde oder Wurzeln. Luftschaden wird nach den normalen Regeln um **10 % reduziert**.\n- **Feuer – 10 % Verwundbarkeit:** Die organische Rückenauflage aus Moos, Flechten, Pilzfäden und trockenen Pflanzenfasern kann Hitze festhalten und sich entzünden. Der Mooskrabbler erleidet **10 % zusätzlichen Feuerschaden**.\n\nBeide Eigenschaften sind **physiologische Anpassungen** und verleihen dem Mooskrabbler keine elementare Eigenschaft.",
+      "tables": [],
+      "source": {
+        "line_start": 130,
+        "line_end": 136
+      }
+    },
+    {
+      "title": "Aktionsübersicht",
+      "id": "aktionsuebersicht",
+      "markdown": "| Nr. | Aktion | Typ | Grundfunktion |\n|---:|---|---|---|\n| 1 | Rindenbiss | Angriff | Zuverlässiger Nahkampfangriff und normale Standardoption. |\n| 2 | Wurzelklammer | Angriff / Kontrolle | Geringerer Schaden; kann die Bewegungsrate des Ziels kurzzeitig um 2 m senken. |\n| 3 | Moosducken | Defensive Aktion | Presst sich flach an natürliche Deckung und erhält +2 auf den nächsten Ausweichwurf. |\n\n---",
+      "tables": [
+        {
+          "headers": [
+            "Nr.",
+            "Aktion",
+            "Typ",
+            "Grundfunktion"
+          ],
+          "rows": [
+            {
+              "Nr.": "1",
+              "Aktion": "Rindenbiss",
+              "Typ": "Angriff",
+              "Grundfunktion": "Zuverlässiger Nahkampfangriff und normale Standardoption."
+            },
+            {
+              "Nr.": "2",
+              "Aktion": "Wurzelklammer",
+              "Typ": "Angriff / Kontrolle",
+              "Grundfunktion": "Geringerer Schaden; kann die Bewegungsrate des Ziels kurzzeitig um 2 m senken."
+            },
+            {
+              "Nr.": "3",
+              "Aktion": "Moosducken",
+              "Typ": "Defensive Aktion",
+              "Grundfunktion": "Presst sich flach an natürliche Deckung und erhält +2 auf den nächsten Ausweichwurf."
+            }
+          ],
+          "raw_markdown": "| Nr. | Aktion | Typ | Grundfunktion |\n|---:|---|---|---|\n| 1 | Rindenbiss | Angriff | Zuverlässiger Nahkampfangriff und normale Standardoption. |\n| 2 | Wurzelklammer | Angriff / Kontrolle | Geringerer Schaden; kann die Bewegungsrate des Ziels kurzzeitig um 2 m senken. |\n| 3 | Moosducken | Defensive Aktion | Presst sich flach an natürliche Deckung und erhält +2 auf den nächsten Ausweichwurf. |"
+        }
+      ],
+      "source": {
+        "line_start": 137,
+        "line_end": 146
+      }
+    }
+  ],
+  "levels": [
+    {
+      "level": 1,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 4,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "4",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "125",
+          "physische_verteidigung": "6",
+          "magieverteidigung": "5",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 8 m; Klettern 6 m",
+          "klammer_sg": "12"
+        },
+        "raw_fields": {
+          "Maximale LP": "125",
+          "Physische Verteidigung": "6",
+          "Magieverteidigung": "5",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 8 m; Klettern 6 m",
+          "Klammer-SG": "12"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+2) + ST-Bonus (+0)) × 10) + ((WI-Modifikator (-1) + WI-Bonus (+0)) × 5) + (1 × 10) = 125 LP",
+        "markdown": "`100 + ((ST-Modifikator (+2) + ST-Bonus (+0)) × 10) + ((WI-Modifikator (-1) + WI-Bonus (+0)) × 5) + (1 × 10) = 125 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Rindenbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+3)",
+            "range_area": "Nah",
+            "damage_effect": "5W8 + ST-Modifikator (+2) + ST-Bonus (+0)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "24,5",
+            "avg_hit_damage": "16,7",
+            "avg_expected_effect": "11,5",
+            "ge_share": "0,51",
+            "notes": null,
+            "avg_raw_damage_value": 24.5,
+            "avg_hit_damage_value": 16.7,
+            "ge_share_value": 0.51,
+            "id": "mooskrabbler-l01-a01-rindenbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Rindenbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+3)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "5W8 + ST-Modifikator (+2) + ST-Bonus (+0)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "24,5",
+              "Ø Treffer-Endschaden": "16,7",
+              "Ø Erwartungswirkung": "11,5",
+              "GE-Anteil": "0,51",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Wurzelklammer",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+3); danach SG 12",
+            "range_area": "Nah",
+            "damage_effect": "4W8 + ST-Modifikator (+2) + ST-Bonus (+0); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "20,0",
+            "avg_hit_damage": "12,2",
+            "avg_expected_effect": "8,4 Schaden + Kontrolle",
+            "ge_share": "0,42 gesamt",
+            "notes": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels.",
+            "avg_raw_damage_value": 20.0,
+            "avg_hit_damage_value": 12.2,
+            "id": "mooskrabbler-l01-a02-wurzelklammer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Wurzelklammer",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+3); danach SG 12",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "4W8 + ST-Modifikator (+2) + ST-Bonus (+0); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "20,0",
+              "Ø Treffer-Endschaden": "12,2",
+              "Ø Erwartungswirkung": "8,4 Schaden + Kontrolle",
+              "GE-Anteil": "0,42 gesamt",
+              "Zusatz": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Moosducken",
+            "cost": "1 Aktion",
+            "type": "defensive Aktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst",
+            "damage_effect": "+2 auf den nächsten Ausweichwurf bis zum Beginn des nächsten eigenen Zuges",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Endet nach dem ersten Ausweichwurf oder sobald der Mooskrabbler sich mehr als 2 m bewegt.",
+            "id": "mooskrabbler-l01-a03-moosducken",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Moosducken",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Aktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst",
+              "Schaden / Wirkung": "+2 auf den nächsten Ausweichwurf bis zum Beginn des nächsten eigenen Zuges",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Endet nach dem ersten Ausweichwurf oder sobald der Mooskrabbler sich mehr als 2 m bewegt."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "mooskrabbler-l01-rindenbiss",
+          "name": "Rindenbiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+3)`",
+          "damage": "`5W8 + ST-Modifikator (+2) + ST-Bonus (+0)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer schiebt der Mooskrabbler seinen flachen Kopf unter den Rand seines Rückenpanzers hervor und beißt mit den harten Beißplatten zu. Der Angriff verursacht ausschließlich den angegebenen Stichschaden und besitzt **keine automatische Kontrollwirkung, keinen Folgetreffer und keine kostenlose Bewegung**.",
+          "stacking": "Mehrere Mooskrabbler können dasselbe Ziel angreifen; jeder Rindenbiss wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+3)`",
+            "Schaden": "`5W8 + ST-Modifikator (+2) + ST-Bonus (+0)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer schiebt der Mooskrabbler seinen flachen Kopf unter den Rand seines Rückenpanzers hervor und beißt mit den harten Beißplatten zu. Der Angriff verursacht ausschließlich den angegebenen Stichschaden und besitzt **keine automatische Kontrollwirkung, keinen Folgetreffer und keine kostenlose Bewegung**.",
+            "Stapelung": "Mehrere Mooskrabbler können dasselbe Ziel angreifen; jeder Rindenbiss wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 189,
+            "line_end": 200
+          }
+        },
+        {
+          "id": "mooskrabbler-l01-wurzelklammer",
+          "name": "Wurzelklammer",
+          "type": "Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+3)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 12** nach einem Treffer",
+          "damage": "`4W8 + ST-Modifikator (+2) + ST-Bonus (+0)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer hakt der Mooskrabbler zwei seiner vorderen Haftbeine um Fuß, Bein oder eine andere bodennahe Gliedmaße des Ziels. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen. Die Wurzelklammer verursacht keinen zusätzlichen automatischen Schaden.",
+          "stacking": "Mehrere Wurzelklammern desselben oder verschiedener Mooskrabbler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+          "end_condition": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+3)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 12** nach einem Treffer",
+            "Schaden": "`4W8 + ST-Modifikator (+2) + ST-Bonus (+0)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer hakt der Mooskrabbler zwei seiner vorderen Haftbeine um Fuß, Bein oder eine andere bodennahe Gliedmaße des Ziels. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen. Die Wurzelklammer verursacht keinen zusätzlichen automatischen Schaden.",
+            "Stapelung": "Mehrere Wurzelklammern desselben oder verschiedener Mooskrabbler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+            "Ende der Wirkung": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 201,
+            "line_end": 214
+          }
+        },
+        {
+          "id": "mooskrabbler-l01-moosducken",
+          "name": "Moosducken",
+          "type": "Defensive Aktion",
+          "cost": "1 Aktion",
+          "requirement": "Der Mooskrabbler befindet sich auf natürlichem Boden oder in unmittelbarem Kontakt mit Wurzel, Rinde, Fels, dichtem Laub oder vergleichbarer bodennaher Deckung.",
+          "target": "Selbst",
+          "rule_effect": "Der Mooskrabbler zieht seine Beine eng unter den Körper, presst den Panzer flach an den Untergrund und bricht seine sichtbare Silhouette. Er erhält **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Nach diesem Ausweichwurf endet der Bonus unabhängig davon, ob der Angriff trifft oder verfehlt. Bewegt sich der Mooskrabbler vor der Anwendung des Bonus insgesamt mehr als **2 m**, endet Moosducken ebenfalls.",
+          "stacking": "Moosducken stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt lediglich die bestehende Wirkung.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, bei mehr als 2 m eigener Bewegung oder spätestens zu Beginn des nächsten eigenen Zuges.",
+          "extra_fields": {
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung oder bis die Bewegung die Wirkung beendet"
+          },
+          "raw_fields": {
+            "Typ": "Defensive Aktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Der Mooskrabbler befindet sich auf natürlichem Boden oder in unmittelbarem Kontakt mit Wurzel, Rinde, Fels, dichtem Laub oder vergleichbarer bodennaher Deckung.",
+            "Ziel": "Selbst",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung oder bis die Bewegung die Wirkung beendet",
+            "Regelwirkung": "Der Mooskrabbler zieht seine Beine eng unter den Körper, presst den Panzer flach an den Untergrund und bricht seine sichtbare Silhouette. Er erhält **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Nach diesem Ausweichwurf endet der Bonus unabhängig davon, ob der Angriff trifft oder verfehlt. Bewegt sich der Mooskrabbler vor der Anwendung des Bonus insgesamt mehr als **2 m**, endet Moosducken ebenfalls.",
+            "Stapelung": "Moosducken stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt lediglich die bestehende Wirkung.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, bei mehr als 2 m eigener Bewegung oder spätestens zu Beginn des nächsten eigenen Zuges."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 215,
+            "line_end": 225
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "10 % Verwundbarkeit",
+            "–",
+            "–",
+            "10 % Resistenz",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 147,
+        "line_end": 233
+      }
+    },
+    {
+      "level": 5,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 4,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "4",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+2"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "180",
+          "physische_verteidigung": "8",
+          "magieverteidigung": "7",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 8 m; Klettern 6 m",
+          "klammer_sg": "13"
+        },
+        "raw_fields": {
+          "Maximale LP": "180",
+          "Physische Verteidigung": "8",
+          "Magieverteidigung": "7",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 8 m; Klettern 6 m",
+          "Klammer-SG": "13"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+2) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+0) + WI-Bonus (+0)) × 5) + (5 × 10) = 180 LP",
+        "markdown": "`100 + ((ST-Modifikator (+2) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+0) + WI-Bonus (+0)) × 5) + (5 × 10) = 180 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Rindenbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+            "range_area": "Nah",
+            "damage_effect": "6W8 + ST-Modifikator (+2) + ST-Bonus (+1)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "30,0",
+            "avg_hit_damage": "21,3",
+            "avg_expected_effect": "14,6",
+            "ge_share": "0,53",
+            "notes": null,
+            "avg_raw_damage_value": 30.0,
+            "avg_hit_damage_value": 21.3,
+            "ge_share_value": 0.53,
+            "id": "mooskrabbler-l05-a01-rindenbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Rindenbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "6W8 + ST-Modifikator (+2) + ST-Bonus (+1)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "30,0",
+              "Ø Treffer-Endschaden": "21,3",
+              "Ø Erwartungswirkung": "14,6",
+              "GE-Anteil": "0,53",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Wurzelklammer",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4); danach SG 13",
+            "range_area": "Nah",
+            "damage_effect": "4W10 + ST-Modifikator (+2) + ST-Bonus (+1); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "25,0",
+            "avg_hit_damage": "16,2",
+            "avg_expected_effect": "11,2 Schaden + Kontrolle",
+            "ge_share": "0,46 gesamt",
+            "notes": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels.",
+            "avg_raw_damage_value": 25.0,
+            "avg_hit_damage_value": 16.2,
+            "id": "mooskrabbler-l05-a02-wurzelklammer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Wurzelklammer",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4); danach SG 13",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "4W10 + ST-Modifikator (+2) + ST-Bonus (+1); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "25,0",
+              "Ø Treffer-Endschaden": "16,2",
+              "Ø Erwartungswirkung": "11,2 Schaden + Kontrolle",
+              "GE-Anteil": "0,46 gesamt",
+              "Zusatz": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Moosducken",
+            "cost": "1 Aktion",
+            "type": "defensive Aktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst",
+            "damage_effect": "+2 auf den nächsten Ausweichwurf bis zum Beginn des nächsten eigenen Zuges",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Endet nach dem ersten Ausweichwurf oder sobald der Mooskrabbler sich mehr als 2 m bewegt.",
+            "id": "mooskrabbler-l05-a03-moosducken",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Moosducken",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Aktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst",
+              "Schaden / Wirkung": "+2 auf den nächsten Ausweichwurf bis zum Beginn des nächsten eigenen Zuges",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Endet nach dem ersten Ausweichwurf oder sobald der Mooskrabbler sich mehr als 2 m bewegt."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "mooskrabbler-l05-rindenbiss",
+          "name": "Rindenbiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+          "damage": "`6W8 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer schiebt der Mooskrabbler seinen flachen Kopf unter den Rand seines Rückenpanzers hervor und beißt mit den harten Beißplatten zu. Der Angriff verursacht ausschließlich den angegebenen Stichschaden und besitzt **keine automatische Kontrollwirkung, keinen Folgetreffer und keine kostenlose Bewegung**.",
+          "stacking": "Mehrere Mooskrabbler können dasselbe Ziel angreifen; jeder Rindenbiss wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+            "Schaden": "`6W8 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer schiebt der Mooskrabbler seinen flachen Kopf unter den Rand seines Rückenpanzers hervor und beißt mit den harten Beißplatten zu. Der Angriff verursacht ausschließlich den angegebenen Stichschaden und besitzt **keine automatische Kontrollwirkung, keinen Folgetreffer und keine kostenlose Bewegung**.",
+            "Stapelung": "Mehrere Mooskrabbler können dasselbe Ziel angreifen; jeder Rindenbiss wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 276,
+            "line_end": 287
+          }
+        },
+        {
+          "id": "mooskrabbler-l05-wurzelklammer",
+          "name": "Wurzelklammer",
+          "type": "Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 13** nach einem Treffer",
+          "damage": "`4W10 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer hakt der Mooskrabbler zwei seiner vorderen Haftbeine um Fuß, Bein oder eine andere bodennahe Gliedmaße des Ziels. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen. Die Wurzelklammer verursacht keinen zusätzlichen automatischen Schaden.",
+          "stacking": "Mehrere Wurzelklammern desselben oder verschiedener Mooskrabbler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+          "end_condition": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 13** nach einem Treffer",
+            "Schaden": "`4W10 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer hakt der Mooskrabbler zwei seiner vorderen Haftbeine um Fuß, Bein oder eine andere bodennahe Gliedmaße des Ziels. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen. Die Wurzelklammer verursacht keinen zusätzlichen automatischen Schaden.",
+            "Stapelung": "Mehrere Wurzelklammern desselben oder verschiedener Mooskrabbler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+            "Ende der Wirkung": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 288,
+            "line_end": 301
+          }
+        },
+        {
+          "id": "mooskrabbler-l05-moosducken",
+          "name": "Moosducken",
+          "type": "Defensive Aktion",
+          "cost": "1 Aktion",
+          "requirement": "Der Mooskrabbler befindet sich auf natürlichem Boden oder in unmittelbarem Kontakt mit Wurzel, Rinde, Fels, dichtem Laub oder vergleichbarer bodennaher Deckung.",
+          "target": "Selbst",
+          "rule_effect": "Der Mooskrabbler zieht seine Beine eng unter den Körper, presst den Panzer flach an den Untergrund und bricht seine sichtbare Silhouette. Er erhält **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Nach diesem Ausweichwurf endet der Bonus unabhängig davon, ob der Angriff trifft oder verfehlt. Bewegt sich der Mooskrabbler vor der Anwendung des Bonus insgesamt mehr als **2 m**, endet Moosducken ebenfalls.",
+          "stacking": "Moosducken stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt lediglich die bestehende Wirkung.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, bei mehr als 2 m eigener Bewegung oder spätestens zu Beginn des nächsten eigenen Zuges.",
+          "extra_fields": {
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung oder bis die Bewegung die Wirkung beendet"
+          },
+          "raw_fields": {
+            "Typ": "Defensive Aktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Der Mooskrabbler befindet sich auf natürlichem Boden oder in unmittelbarem Kontakt mit Wurzel, Rinde, Fels, dichtem Laub oder vergleichbarer bodennaher Deckung.",
+            "Ziel": "Selbst",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung oder bis die Bewegung die Wirkung beendet",
+            "Regelwirkung": "Der Mooskrabbler zieht seine Beine eng unter den Körper, presst den Panzer flach an den Untergrund und bricht seine sichtbare Silhouette. Er erhält **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Nach diesem Ausweichwurf endet der Bonus unabhängig davon, ob der Angriff trifft oder verfehlt. Bewegt sich der Mooskrabbler vor der Anwendung des Bonus insgesamt mehr als **2 m**, endet Moosducken ebenfalls.",
+            "Stapelung": "Moosducken stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt lediglich die bestehende Wirkung.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, bei mehr als 2 m eigener Bewegung oder spätestens zu Beginn des nächsten eigenen Zuges."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 302,
+            "line_end": 312
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "10 % Verwundbarkeit",
+            "–",
+            "–",
+            "10 % Resistenz",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 234,
+        "line_end": 320
+      }
+    },
+    {
+      "level": 10,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+2"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "245",
+          "physische_verteidigung": "10",
+          "magieverteidigung": "9",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 8 m; Klettern 6 m",
+          "klammer_sg": "13"
+        },
+        "raw_fields": {
+          "Maximale LP": "245",
+          "Physische Verteidigung": "10",
+          "Magieverteidigung": "9",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 8 m; Klettern 6 m",
+          "Klammer-SG": "13"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+3) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+1) + WI-Bonus (+0)) × 5) + (10 × 10) = 245 LP",
+        "markdown": "`100 + ((ST-Modifikator (+3) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+1) + WI-Bonus (+0)) × 5) + (10 × 10) = 245 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Rindenbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+            "range_area": "Nah",
+            "damage_effect": "7W8 + ST-Modifikator (+3) + ST-Bonus (+1)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "35,5",
+            "avg_hit_damage": "24,9",
+            "avg_expected_effect": "17,1",
+            "ge_share": "0,51",
+            "notes": null,
+            "avg_raw_damage_value": 35.5,
+            "avg_hit_damage_value": 24.9,
+            "ge_share_value": 0.51,
+            "id": "mooskrabbler-l10-a01-rindenbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Rindenbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "7W8 + ST-Modifikator (+3) + ST-Bonus (+1)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "35,5",
+              "Ø Treffer-Endschaden": "24,9",
+              "Ø Erwartungswirkung": "17,1",
+              "GE-Anteil": "0,51",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Wurzelklammer",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4); danach SG 13",
+            "range_area": "Nah",
+            "damage_effect": "6W8 + ST-Modifikator (+3) + ST-Bonus (+1); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "31,0",
+            "avg_hit_damage": "20,3",
+            "avg_expected_effect": "14,0 Schaden + Kontrolle",
+            "ge_share": "0,46 gesamt",
+            "notes": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels.",
+            "avg_raw_damage_value": 31.0,
+            "avg_hit_damage_value": 20.3,
+            "id": "mooskrabbler-l10-a02-wurzelklammer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Wurzelklammer",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4); danach SG 13",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "6W8 + ST-Modifikator (+3) + ST-Bonus (+1); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "31,0",
+              "Ø Treffer-Endschaden": "20,3",
+              "Ø Erwartungswirkung": "14,0 Schaden + Kontrolle",
+              "GE-Anteil": "0,46 gesamt",
+              "Zusatz": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Moosducken",
+            "cost": "1 Aktion",
+            "type": "defensive Aktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst",
+            "damage_effect": "+2 auf den nächsten Ausweichwurf bis zum Beginn des nächsten eigenen Zuges",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Endet nach dem ersten Ausweichwurf oder sobald der Mooskrabbler sich mehr als 2 m bewegt.",
+            "id": "mooskrabbler-l10-a03-moosducken",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Moosducken",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Aktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst",
+              "Schaden / Wirkung": "+2 auf den nächsten Ausweichwurf bis zum Beginn des nächsten eigenen Zuges",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Endet nach dem ersten Ausweichwurf oder sobald der Mooskrabbler sich mehr als 2 m bewegt."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "mooskrabbler-l10-rindenbiss",
+          "name": "Rindenbiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+          "damage": "`7W8 + ST-Modifikator (+3) + ST-Bonus (+1)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer schiebt der Mooskrabbler seinen flachen Kopf unter den Rand seines Rückenpanzers hervor und beißt mit den harten Beißplatten zu. Der Angriff verursacht ausschließlich den angegebenen Stichschaden und besitzt **keine automatische Kontrollwirkung, keinen Folgetreffer und keine kostenlose Bewegung**.",
+          "stacking": "Mehrere Mooskrabbler können dasselbe Ziel angreifen; jeder Rindenbiss wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+            "Schaden": "`7W8 + ST-Modifikator (+3) + ST-Bonus (+1)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer schiebt der Mooskrabbler seinen flachen Kopf unter den Rand seines Rückenpanzers hervor und beißt mit den harten Beißplatten zu. Der Angriff verursacht ausschließlich den angegebenen Stichschaden und besitzt **keine automatische Kontrollwirkung, keinen Folgetreffer und keine kostenlose Bewegung**.",
+            "Stapelung": "Mehrere Mooskrabbler können dasselbe Ziel angreifen; jeder Rindenbiss wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 363,
+            "line_end": 374
+          }
+        },
+        {
+          "id": "mooskrabbler-l10-wurzelklammer",
+          "name": "Wurzelklammer",
+          "type": "Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 13** nach einem Treffer",
+          "damage": "`6W8 + ST-Modifikator (+3) + ST-Bonus (+1)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer hakt der Mooskrabbler zwei seiner vorderen Haftbeine um Fuß, Bein oder eine andere bodennahe Gliedmaße des Ziels. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen. Die Wurzelklammer verursacht keinen zusätzlichen automatischen Schaden.",
+          "stacking": "Mehrere Wurzelklammern desselben oder verschiedener Mooskrabbler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+          "end_condition": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 13** nach einem Treffer",
+            "Schaden": "`6W8 + ST-Modifikator (+3) + ST-Bonus (+1)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer hakt der Mooskrabbler zwei seiner vorderen Haftbeine um Fuß, Bein oder eine andere bodennahe Gliedmaße des Ziels. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen. Die Wurzelklammer verursacht keinen zusätzlichen automatischen Schaden.",
+            "Stapelung": "Mehrere Wurzelklammern desselben oder verschiedener Mooskrabbler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+            "Ende der Wirkung": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 375,
+            "line_end": 388
+          }
+        },
+        {
+          "id": "mooskrabbler-l10-moosducken",
+          "name": "Moosducken",
+          "type": "Defensive Aktion",
+          "cost": "1 Aktion",
+          "requirement": "Der Mooskrabbler befindet sich auf natürlichem Boden oder in unmittelbarem Kontakt mit Wurzel, Rinde, Fels, dichtem Laub oder vergleichbarer bodennaher Deckung.",
+          "target": "Selbst",
+          "rule_effect": "Der Mooskrabbler zieht seine Beine eng unter den Körper, presst den Panzer flach an den Untergrund und bricht seine sichtbare Silhouette. Er erhält **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Nach diesem Ausweichwurf endet der Bonus unabhängig davon, ob der Angriff trifft oder verfehlt. Bewegt sich der Mooskrabbler vor der Anwendung des Bonus insgesamt mehr als **2 m**, endet Moosducken ebenfalls.",
+          "stacking": "Moosducken stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt lediglich die bestehende Wirkung.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, bei mehr als 2 m eigener Bewegung oder spätestens zu Beginn des nächsten eigenen Zuges.",
+          "extra_fields": {
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung oder bis die Bewegung die Wirkung beendet"
+          },
+          "raw_fields": {
+            "Typ": "Defensive Aktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Der Mooskrabbler befindet sich auf natürlichem Boden oder in unmittelbarem Kontakt mit Wurzel, Rinde, Fels, dichtem Laub oder vergleichbarer bodennaher Deckung.",
+            "Ziel": "Selbst",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung oder bis die Bewegung die Wirkung beendet",
+            "Regelwirkung": "Der Mooskrabbler zieht seine Beine eng unter den Körper, presst den Panzer flach an den Untergrund und bricht seine sichtbare Silhouette. Er erhält **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Nach diesem Ausweichwurf endet der Bonus unabhängig davon, ob der Angriff trifft oder verfehlt. Bewegt sich der Mooskrabbler vor der Anwendung des Bonus insgesamt mehr als **2 m**, endet Moosducken ebenfalls.",
+            "Stapelung": "Moosducken stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt lediglich die bestehende Wirkung.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, bei mehr als 2 m eigener Bewegung oder spätestens zu Beginn des nächsten eigenen Zuges."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 389,
+            "line_end": 399
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "10 % Verwundbarkeit",
+            "–",
+            "–",
+            "10 % Resistenz",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 321,
+        "line_end": 407
+      }
+    },
+    {
+      "level": 15,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 11,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "11",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "310",
+          "physische_verteidigung": "12",
+          "magieverteidigung": "11",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 8 m; Klettern 6 m",
+          "klammer_sg": "14"
+        },
+        "raw_fields": {
+          "Maximale LP": "310",
+          "Physische Verteidigung": "12",
+          "Magieverteidigung": "11",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 8 m; Klettern 6 m",
+          "Klammer-SG": "14"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+4) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+1) + WI-Bonus (+1)) × 5) + (15 × 10) = 310 LP",
+        "markdown": "`100 + ((ST-Modifikator (+4) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+1) + WI-Bonus (+1)) × 5) + (15 × 10) = 310 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Rindenbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+4)",
+            "range_area": "Nah",
+            "damage_effect": "8W8 + ST-Modifikator (+4) + ST-Bonus (+1)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "41,0",
+            "avg_hit_damage": "28,4",
+            "avg_expected_effect": "19,5",
+            "ge_share": "0,49",
+            "notes": null,
+            "avg_raw_damage_value": 41.0,
+            "avg_hit_damage_value": 28.4,
+            "ge_share_value": 0.49,
+            "id": "mooskrabbler-l15-a01-rindenbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Rindenbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "8W8 + ST-Modifikator (+4) + ST-Bonus (+1)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "41,0",
+              "Ø Treffer-Endschaden": "28,4",
+              "Ø Erwartungswirkung": "19,5",
+              "GE-Anteil": "0,49",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Wurzelklammer",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+4); danach SG 14",
+            "range_area": "Nah",
+            "damage_effect": "7W8 + ST-Modifikator (+4) + ST-Bonus (+1); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "36,5",
+            "avg_hit_damage": "23,9",
+            "avg_expected_effect": "16,4 Schaden + Kontrolle",
+            "ge_share": "0,46 gesamt",
+            "notes": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels.",
+            "avg_raw_damage_value": 36.5,
+            "avg_hit_damage_value": 23.9,
+            "id": "mooskrabbler-l15-a02-wurzelklammer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Wurzelklammer",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+4); danach SG 14",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "7W8 + ST-Modifikator (+4) + ST-Bonus (+1); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "36,5",
+              "Ø Treffer-Endschaden": "23,9",
+              "Ø Erwartungswirkung": "16,4 Schaden + Kontrolle",
+              "GE-Anteil": "0,46 gesamt",
+              "Zusatz": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Moosducken",
+            "cost": "1 Aktion",
+            "type": "defensive Aktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst",
+            "damage_effect": "+2 auf den nächsten Ausweichwurf bis zum Beginn des nächsten eigenen Zuges",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Endet nach dem ersten Ausweichwurf oder sobald der Mooskrabbler sich mehr als 2 m bewegt.",
+            "id": "mooskrabbler-l15-a03-moosducken",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Moosducken",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Aktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst",
+              "Schaden / Wirkung": "+2 auf den nächsten Ausweichwurf bis zum Beginn des nächsten eigenen Zuges",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Endet nach dem ersten Ausweichwurf oder sobald der Mooskrabbler sich mehr als 2 m bewegt."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "mooskrabbler-l15-rindenbiss",
+          "name": "Rindenbiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+4)`",
+          "damage": "`8W8 + ST-Modifikator (+4) + ST-Bonus (+1)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer schiebt der Mooskrabbler seinen flachen Kopf unter den Rand seines Rückenpanzers hervor und beißt mit den harten Beißplatten zu. Der Angriff verursacht ausschließlich den angegebenen Stichschaden und besitzt **keine automatische Kontrollwirkung, keinen Folgetreffer und keine kostenlose Bewegung**.",
+          "stacking": "Mehrere Mooskrabbler können dasselbe Ziel angreifen; jeder Rindenbiss wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+4)`",
+            "Schaden": "`8W8 + ST-Modifikator (+4) + ST-Bonus (+1)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer schiebt der Mooskrabbler seinen flachen Kopf unter den Rand seines Rückenpanzers hervor und beißt mit den harten Beißplatten zu. Der Angriff verursacht ausschließlich den angegebenen Stichschaden und besitzt **keine automatische Kontrollwirkung, keinen Folgetreffer und keine kostenlose Bewegung**.",
+            "Stapelung": "Mehrere Mooskrabbler können dasselbe Ziel angreifen; jeder Rindenbiss wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 450,
+            "line_end": 461
+          }
+        },
+        {
+          "id": "mooskrabbler-l15-wurzelklammer",
+          "name": "Wurzelklammer",
+          "type": "Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+4)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 14** nach einem Treffer",
+          "damage": "`7W8 + ST-Modifikator (+4) + ST-Bonus (+1)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer hakt der Mooskrabbler zwei seiner vorderen Haftbeine um Fuß, Bein oder eine andere bodennahe Gliedmaße des Ziels. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen. Die Wurzelklammer verursacht keinen zusätzlichen automatischen Schaden.",
+          "stacking": "Mehrere Wurzelklammern desselben oder verschiedener Mooskrabbler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+          "end_condition": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+4)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 14** nach einem Treffer",
+            "Schaden": "`7W8 + ST-Modifikator (+4) + ST-Bonus (+1)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer hakt der Mooskrabbler zwei seiner vorderen Haftbeine um Fuß, Bein oder eine andere bodennahe Gliedmaße des Ziels. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen. Die Wurzelklammer verursacht keinen zusätzlichen automatischen Schaden.",
+            "Stapelung": "Mehrere Wurzelklammern desselben oder verschiedener Mooskrabbler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+            "Ende der Wirkung": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 462,
+            "line_end": 475
+          }
+        },
+        {
+          "id": "mooskrabbler-l15-moosducken",
+          "name": "Moosducken",
+          "type": "Defensive Aktion",
+          "cost": "1 Aktion",
+          "requirement": "Der Mooskrabbler befindet sich auf natürlichem Boden oder in unmittelbarem Kontakt mit Wurzel, Rinde, Fels, dichtem Laub oder vergleichbarer bodennaher Deckung.",
+          "target": "Selbst",
+          "rule_effect": "Der Mooskrabbler zieht seine Beine eng unter den Körper, presst den Panzer flach an den Untergrund und bricht seine sichtbare Silhouette. Er erhält **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Nach diesem Ausweichwurf endet der Bonus unabhängig davon, ob der Angriff trifft oder verfehlt. Bewegt sich der Mooskrabbler vor der Anwendung des Bonus insgesamt mehr als **2 m**, endet Moosducken ebenfalls.",
+          "stacking": "Moosducken stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt lediglich die bestehende Wirkung.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, bei mehr als 2 m eigener Bewegung oder spätestens zu Beginn des nächsten eigenen Zuges.",
+          "extra_fields": {
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung oder bis die Bewegung die Wirkung beendet"
+          },
+          "raw_fields": {
+            "Typ": "Defensive Aktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Der Mooskrabbler befindet sich auf natürlichem Boden oder in unmittelbarem Kontakt mit Wurzel, Rinde, Fels, dichtem Laub oder vergleichbarer bodennaher Deckung.",
+            "Ziel": "Selbst",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung oder bis die Bewegung die Wirkung beendet",
+            "Regelwirkung": "Der Mooskrabbler zieht seine Beine eng unter den Körper, presst den Panzer flach an den Untergrund und bricht seine sichtbare Silhouette. Er erhält **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Nach diesem Ausweichwurf endet der Bonus unabhängig davon, ob der Angriff trifft oder verfehlt. Bewegt sich der Mooskrabbler vor der Anwendung des Bonus insgesamt mehr als **2 m**, endet Moosducken ebenfalls.",
+            "Stapelung": "Moosducken stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt lediglich die bestehende Wirkung.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, bei mehr als 2 m eigener Bewegung oder spätestens zu Beginn des nächsten eigenen Zuges."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 476,
+            "line_end": 486
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "10 % Verwundbarkeit",
+            "–",
+            "–",
+            "10 % Resistenz",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 408,
+        "line_end": 494
+      }
+    },
+    {
+      "level": 20,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 11,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "11",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+3"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "375",
+          "physische_verteidigung": "14",
+          "magieverteidigung": "13",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 8 m; Klettern 6 m",
+          "klammer_sg": "15"
+        },
+        "raw_fields": {
+          "Maximale LP": "375",
+          "Physische Verteidigung": "14",
+          "Magieverteidigung": "13",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 8 m; Klettern 6 m",
+          "Klammer-SG": "15"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+4) + ST-Bonus (+2)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+1)) × 5) + (20 × 10) = 375 LP",
+        "markdown": "`100 + ((ST-Modifikator (+4) + ST-Bonus (+2)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+1)) × 5) + (20 × 10) = 375 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Rindenbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range_area": "Nah",
+            "damage_effect": "9W8 + ST-Modifikator (+4) + ST-Bonus (+2)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "46,5",
+            "avg_hit_damage": "32,0",
+            "avg_expected_effect": "22,0",
+            "ge_share": "0,48",
+            "notes": null,
+            "avg_raw_damage_value": 46.5,
+            "avg_hit_damage_value": 32.0,
+            "ge_share_value": 0.48,
+            "id": "mooskrabbler-l20-a01-rindenbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Rindenbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "9W8 + ST-Modifikator (+4) + ST-Bonus (+2)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "46,5",
+              "Ø Treffer-Endschaden": "32,0",
+              "Ø Erwartungswirkung": "22,0",
+              "GE-Anteil": "0,48",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Wurzelklammer",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5); danach SG 15",
+            "range_area": "Nah",
+            "damage_effect": "8W8 + ST-Modifikator (+4) + ST-Bonus (+2); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "42,0",
+            "avg_hit_damage": "27,4",
+            "avg_expected_effect": "18,9 Schaden + Kontrolle",
+            "ge_share": "0,46 gesamt",
+            "notes": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels.",
+            "avg_raw_damage_value": 42.0,
+            "avg_hit_damage_value": 27.4,
+            "id": "mooskrabbler-l20-a02-wurzelklammer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Wurzelklammer",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5); danach SG 15",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "8W8 + ST-Modifikator (+4) + ST-Bonus (+2); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "42,0",
+              "Ø Treffer-Endschaden": "27,4",
+              "Ø Erwartungswirkung": "18,9 Schaden + Kontrolle",
+              "GE-Anteil": "0,46 gesamt",
+              "Zusatz": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Moosducken",
+            "cost": "1 Aktion",
+            "type": "defensive Aktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst",
+            "damage_effect": "+2 auf den nächsten Ausweichwurf bis zum Beginn des nächsten eigenen Zuges",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Endet nach dem ersten Ausweichwurf oder sobald der Mooskrabbler sich mehr als 2 m bewegt.",
+            "id": "mooskrabbler-l20-a03-moosducken",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Moosducken",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Aktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst",
+              "Schaden / Wirkung": "+2 auf den nächsten Ausweichwurf bis zum Beginn des nächsten eigenen Zuges",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Endet nach dem ersten Ausweichwurf oder sobald der Mooskrabbler sich mehr als 2 m bewegt."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "mooskrabbler-l20-rindenbiss",
+          "name": "Rindenbiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+          "damage": "`9W8 + ST-Modifikator (+4) + ST-Bonus (+2)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer schiebt der Mooskrabbler seinen flachen Kopf unter den Rand seines Rückenpanzers hervor und beißt mit den harten Beißplatten zu. Der Angriff verursacht ausschließlich den angegebenen Stichschaden und besitzt **keine automatische Kontrollwirkung, keinen Folgetreffer und keine kostenlose Bewegung**.",
+          "stacking": "Mehrere Mooskrabbler können dasselbe Ziel angreifen; jeder Rindenbiss wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+            "Schaden": "`9W8 + ST-Modifikator (+4) + ST-Bonus (+2)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer schiebt der Mooskrabbler seinen flachen Kopf unter den Rand seines Rückenpanzers hervor und beißt mit den harten Beißplatten zu. Der Angriff verursacht ausschließlich den angegebenen Stichschaden und besitzt **keine automatische Kontrollwirkung, keinen Folgetreffer und keine kostenlose Bewegung**.",
+            "Stapelung": "Mehrere Mooskrabbler können dasselbe Ziel angreifen; jeder Rindenbiss wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 537,
+            "line_end": 548
+          }
+        },
+        {
+          "id": "mooskrabbler-l20-wurzelklammer",
+          "name": "Wurzelklammer",
+          "type": "Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 15** nach einem Treffer",
+          "damage": "`8W8 + ST-Modifikator (+4) + ST-Bonus (+2)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer hakt der Mooskrabbler zwei seiner vorderen Haftbeine um Fuß, Bein oder eine andere bodennahe Gliedmaße des Ziels. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen. Die Wurzelklammer verursacht keinen zusätzlichen automatischen Schaden.",
+          "stacking": "Mehrere Wurzelklammern desselben oder verschiedener Mooskrabbler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+          "end_condition": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 15** nach einem Treffer",
+            "Schaden": "`8W8 + ST-Modifikator (+4) + ST-Bonus (+2)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer hakt der Mooskrabbler zwei seiner vorderen Haftbeine um Fuß, Bein oder eine andere bodennahe Gliedmaße des Ziels. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen. Die Wurzelklammer verursacht keinen zusätzlichen automatischen Schaden.",
+            "Stapelung": "Mehrere Wurzelklammern desselben oder verschiedener Mooskrabbler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+            "Ende der Wirkung": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 549,
+            "line_end": 562
+          }
+        },
+        {
+          "id": "mooskrabbler-l20-moosducken",
+          "name": "Moosducken",
+          "type": "Defensive Aktion",
+          "cost": "1 Aktion",
+          "requirement": "Der Mooskrabbler befindet sich auf natürlichem Boden oder in unmittelbarem Kontakt mit Wurzel, Rinde, Fels, dichtem Laub oder vergleichbarer bodennaher Deckung.",
+          "target": "Selbst",
+          "rule_effect": "Der Mooskrabbler zieht seine Beine eng unter den Körper, presst den Panzer flach an den Untergrund und bricht seine sichtbare Silhouette. Er erhält **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Nach diesem Ausweichwurf endet der Bonus unabhängig davon, ob der Angriff trifft oder verfehlt. Bewegt sich der Mooskrabbler vor der Anwendung des Bonus insgesamt mehr als **2 m**, endet Moosducken ebenfalls.",
+          "stacking": "Moosducken stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt lediglich die bestehende Wirkung.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, bei mehr als 2 m eigener Bewegung oder spätestens zu Beginn des nächsten eigenen Zuges.",
+          "extra_fields": {
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung oder bis die Bewegung die Wirkung beendet"
+          },
+          "raw_fields": {
+            "Typ": "Defensive Aktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Der Mooskrabbler befindet sich auf natürlichem Boden oder in unmittelbarem Kontakt mit Wurzel, Rinde, Fels, dichtem Laub oder vergleichbarer bodennaher Deckung.",
+            "Ziel": "Selbst",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung oder bis die Bewegung die Wirkung beendet",
+            "Regelwirkung": "Der Mooskrabbler zieht seine Beine eng unter den Körper, presst den Panzer flach an den Untergrund und bricht seine sichtbare Silhouette. Er erhält **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Nach diesem Ausweichwurf endet der Bonus unabhängig davon, ob der Angriff trifft oder verfehlt. Bewegt sich der Mooskrabbler vor der Anwendung des Bonus insgesamt mehr als **2 m**, endet Moosducken ebenfalls.",
+            "Stapelung": "Moosducken stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt lediglich die bestehende Wirkung.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, bei mehr als 2 m eigener Bewegung oder spätestens zu Beginn des nächsten eigenen Zuges."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 563,
+            "line_end": 573
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "10 % Verwundbarkeit",
+            "–",
+            "–",
+            "10 % Resistenz",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 495,
+        "line_end": 581
+      }
+    },
+    {
+      "level": 25,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+3"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "440",
+          "physische_verteidigung": "16",
+          "magieverteidigung": "15",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 8 m; Klettern 6 m",
+          "klammer_sg": "16"
+        },
+        "raw_fields": {
+          "Maximale LP": "440",
+          "Physische Verteidigung": "16",
+          "Magieverteidigung": "15",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 8 m; Klettern 6 m",
+          "Klammer-SG": "16"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+5) + ST-Bonus (+2)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+2)) × 5) + (25 × 10) = 440 LP",
+        "markdown": "`100 + ((ST-Modifikator (+5) + ST-Bonus (+2)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+2)) × 5) + (25 × 10) = 440 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Rindenbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range_area": "Nah",
+            "damage_effect": "11W8 + ST-Modifikator (+5) + ST-Bonus (+2)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "56,5",
+            "avg_hit_damage": "40,1",
+            "avg_expected_effect": "27,5",
+            "ge_share": "0,52",
+            "notes": null,
+            "avg_raw_damage_value": 56.5,
+            "avg_hit_damage_value": 40.1,
+            "ge_share_value": 0.52,
+            "id": "mooskrabbler-l25-a01-rindenbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Rindenbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "11W8 + ST-Modifikator (+5) + ST-Bonus (+2)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "56,5",
+              "Ø Treffer-Endschaden": "40,1",
+              "Ø Erwartungswirkung": "27,5",
+              "GE-Anteil": "0,52",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Wurzelklammer",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5); danach SG 16",
+            "range_area": "Nah",
+            "damage_effect": "9W8 + ST-Modifikator (+5) + ST-Bonus (+2); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "47,5",
+            "avg_hit_damage": "31,0",
+            "avg_expected_effect": "21,3 Schaden + Kontrolle",
+            "ge_share": "0,46 gesamt",
+            "notes": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels.",
+            "avg_raw_damage_value": 47.5,
+            "avg_hit_damage_value": 31.0,
+            "id": "mooskrabbler-l25-a02-wurzelklammer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Wurzelklammer",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5); danach SG 16",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "9W8 + ST-Modifikator (+5) + ST-Bonus (+2); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "47,5",
+              "Ø Treffer-Endschaden": "31,0",
+              "Ø Erwartungswirkung": "21,3 Schaden + Kontrolle",
+              "GE-Anteil": "0,46 gesamt",
+              "Zusatz": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Moosducken",
+            "cost": "1 Aktion",
+            "type": "defensive Aktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst",
+            "damage_effect": "+2 auf den nächsten Ausweichwurf bis zum Beginn des nächsten eigenen Zuges",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Endet nach dem ersten Ausweichwurf oder sobald der Mooskrabbler sich mehr als 2 m bewegt.",
+            "id": "mooskrabbler-l25-a03-moosducken",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Moosducken",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Aktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst",
+              "Schaden / Wirkung": "+2 auf den nächsten Ausweichwurf bis zum Beginn des nächsten eigenen Zuges",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Endet nach dem ersten Ausweichwurf oder sobald der Mooskrabbler sich mehr als 2 m bewegt."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "mooskrabbler-l25-rindenbiss",
+          "name": "Rindenbiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+          "damage": "`11W8 + ST-Modifikator (+5) + ST-Bonus (+2)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer schiebt der Mooskrabbler seinen flachen Kopf unter den Rand seines Rückenpanzers hervor und beißt mit den harten Beißplatten zu. Der Angriff verursacht ausschließlich den angegebenen Stichschaden und besitzt **keine automatische Kontrollwirkung, keinen Folgetreffer und keine kostenlose Bewegung**.",
+          "stacking": "Mehrere Mooskrabbler können dasselbe Ziel angreifen; jeder Rindenbiss wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+            "Schaden": "`11W8 + ST-Modifikator (+5) + ST-Bonus (+2)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer schiebt der Mooskrabbler seinen flachen Kopf unter den Rand seines Rückenpanzers hervor und beißt mit den harten Beißplatten zu. Der Angriff verursacht ausschließlich den angegebenen Stichschaden und besitzt **keine automatische Kontrollwirkung, keinen Folgetreffer und keine kostenlose Bewegung**.",
+            "Stapelung": "Mehrere Mooskrabbler können dasselbe Ziel angreifen; jeder Rindenbiss wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 624,
+            "line_end": 635
+          }
+        },
+        {
+          "id": "mooskrabbler-l25-wurzelklammer",
+          "name": "Wurzelklammer",
+          "type": "Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 16** nach einem Treffer",
+          "damage": "`9W8 + ST-Modifikator (+5) + ST-Bonus (+2)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer hakt der Mooskrabbler zwei seiner vorderen Haftbeine um Fuß, Bein oder eine andere bodennahe Gliedmaße des Ziels. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen. Die Wurzelklammer verursacht keinen zusätzlichen automatischen Schaden.",
+          "stacking": "Mehrere Wurzelklammern desselben oder verschiedener Mooskrabbler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+          "end_condition": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 16** nach einem Treffer",
+            "Schaden": "`9W8 + ST-Modifikator (+5) + ST-Bonus (+2)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer hakt der Mooskrabbler zwei seiner vorderen Haftbeine um Fuß, Bein oder eine andere bodennahe Gliedmaße des Ziels. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen. Die Wurzelklammer verursacht keinen zusätzlichen automatischen Schaden.",
+            "Stapelung": "Mehrere Wurzelklammern desselben oder verschiedener Mooskrabbler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+            "Ende der Wirkung": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 636,
+            "line_end": 649
+          }
+        },
+        {
+          "id": "mooskrabbler-l25-moosducken",
+          "name": "Moosducken",
+          "type": "Defensive Aktion",
+          "cost": "1 Aktion",
+          "requirement": "Der Mooskrabbler befindet sich auf natürlichem Boden oder in unmittelbarem Kontakt mit Wurzel, Rinde, Fels, dichtem Laub oder vergleichbarer bodennaher Deckung.",
+          "target": "Selbst",
+          "rule_effect": "Der Mooskrabbler zieht seine Beine eng unter den Körper, presst den Panzer flach an den Untergrund und bricht seine sichtbare Silhouette. Er erhält **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Nach diesem Ausweichwurf endet der Bonus unabhängig davon, ob der Angriff trifft oder verfehlt. Bewegt sich der Mooskrabbler vor der Anwendung des Bonus insgesamt mehr als **2 m**, endet Moosducken ebenfalls.",
+          "stacking": "Moosducken stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt lediglich die bestehende Wirkung.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, bei mehr als 2 m eigener Bewegung oder spätestens zu Beginn des nächsten eigenen Zuges.",
+          "extra_fields": {
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung oder bis die Bewegung die Wirkung beendet"
+          },
+          "raw_fields": {
+            "Typ": "Defensive Aktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Der Mooskrabbler befindet sich auf natürlichem Boden oder in unmittelbarem Kontakt mit Wurzel, Rinde, Fels, dichtem Laub oder vergleichbarer bodennaher Deckung.",
+            "Ziel": "Selbst",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung oder bis die Bewegung die Wirkung beendet",
+            "Regelwirkung": "Der Mooskrabbler zieht seine Beine eng unter den Körper, presst den Panzer flach an den Untergrund und bricht seine sichtbare Silhouette. Er erhält **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Nach diesem Ausweichwurf endet der Bonus unabhängig davon, ob der Angriff trifft oder verfehlt. Bewegt sich der Mooskrabbler vor der Anwendung des Bonus insgesamt mehr als **2 m**, endet Moosducken ebenfalls.",
+            "Stapelung": "Moosducken stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt lediglich die bestehende Wirkung.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, bei mehr als 2 m eigener Bewegung oder spätestens zu Beginn des nächsten eigenen Zuges."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 650,
+            "line_end": 660
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "10 % Verwundbarkeit",
+            "–",
+            "–",
+            "10 % Resistenz",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 582,
+        "line_end": 668
+      }
+    },
+    {
+      "level": 30,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+4"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "505",
+          "physische_verteidigung": "18",
+          "magieverteidigung": "17",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 8 m; Klettern 6 m",
+          "klammer_sg": "17"
+        },
+        "raw_fields": {
+          "Maximale LP": "505",
+          "Physische Verteidigung": "18",
+          "Magieverteidigung": "17",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 8 m; Klettern 6 m",
+          "Klammer-SG": "17"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+5) + ST-Bonus (+3)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+2)) × 5) + (30 × 10) = 505 LP",
+        "markdown": "`100 + ((ST-Modifikator (+5) + ST-Bonus (+3)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+2)) × 5) + (30 × 10) = 505 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Rindenbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+            "range_area": "Nah",
+            "damage_effect": "12W8 + ST-Modifikator (+5) + ST-Bonus (+3)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "62,0",
+            "avg_hit_damage": "43,6",
+            "avg_expected_effect": "30,0",
+            "ge_share": "0,51",
+            "notes": null,
+            "avg_raw_damage_value": 62.0,
+            "avg_hit_damage_value": 43.6,
+            "ge_share_value": 0.51,
+            "id": "mooskrabbler-l30-a01-rindenbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Rindenbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "12W8 + ST-Modifikator (+5) + ST-Bonus (+3)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "62,0",
+              "Ø Treffer-Endschaden": "43,6",
+              "Ø Erwartungswirkung": "30,0",
+              "GE-Anteil": "0,51",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Wurzelklammer",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+5); danach SG 17",
+            "range_area": "Nah",
+            "damage_effect": "10W8 + ST-Modifikator (+5) + ST-Bonus (+3); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "53,0",
+            "avg_hit_damage": "34,5",
+            "avg_expected_effect": "23,7 Schaden + Kontrolle",
+            "ge_share": "0,45 gesamt",
+            "notes": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels.",
+            "avg_raw_damage_value": 53.0,
+            "avg_hit_damage_value": 34.5,
+            "id": "mooskrabbler-l30-a02-wurzelklammer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Wurzelklammer",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+5); danach SG 17",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "10W8 + ST-Modifikator (+5) + ST-Bonus (+3); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "53,0",
+              "Ø Treffer-Endschaden": "34,5",
+              "Ø Erwartungswirkung": "23,7 Schaden + Kontrolle",
+              "GE-Anteil": "0,45 gesamt",
+              "Zusatz": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Moosducken",
+            "cost": "1 Aktion",
+            "type": "defensive Aktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst",
+            "damage_effect": "+2 auf den nächsten Ausweichwurf bis zum Beginn des nächsten eigenen Zuges",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Endet nach dem ersten Ausweichwurf oder sobald der Mooskrabbler sich mehr als 2 m bewegt.",
+            "id": "mooskrabbler-l30-a03-moosducken",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Moosducken",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Aktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst",
+              "Schaden / Wirkung": "+2 auf den nächsten Ausweichwurf bis zum Beginn des nächsten eigenen Zuges",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Endet nach dem ersten Ausweichwurf oder sobald der Mooskrabbler sich mehr als 2 m bewegt."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "mooskrabbler-l30-rindenbiss",
+          "name": "Rindenbiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+5)`",
+          "damage": "`12W8 + ST-Modifikator (+5) + ST-Bonus (+3)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer schiebt der Mooskrabbler seinen flachen Kopf unter den Rand seines Rückenpanzers hervor und beißt mit den harten Beißplatten zu. Der Angriff verursacht ausschließlich den angegebenen Stichschaden und besitzt **keine automatische Kontrollwirkung, keinen Folgetreffer und keine kostenlose Bewegung**.",
+          "stacking": "Mehrere Mooskrabbler können dasselbe Ziel angreifen; jeder Rindenbiss wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+5)`",
+            "Schaden": "`12W8 + ST-Modifikator (+5) + ST-Bonus (+3)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer schiebt der Mooskrabbler seinen flachen Kopf unter den Rand seines Rückenpanzers hervor und beißt mit den harten Beißplatten zu. Der Angriff verursacht ausschließlich den angegebenen Stichschaden und besitzt **keine automatische Kontrollwirkung, keinen Folgetreffer und keine kostenlose Bewegung**.",
+            "Stapelung": "Mehrere Mooskrabbler können dasselbe Ziel angreifen; jeder Rindenbiss wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 711,
+            "line_end": 722
+          }
+        },
+        {
+          "id": "mooskrabbler-l30-wurzelklammer",
+          "name": "Wurzelklammer",
+          "type": "Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+5)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 17** nach einem Treffer",
+          "damage": "`10W8 + ST-Modifikator (+5) + ST-Bonus (+3)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer hakt der Mooskrabbler zwei seiner vorderen Haftbeine um Fuß, Bein oder eine andere bodennahe Gliedmaße des Ziels. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen. Die Wurzelklammer verursacht keinen zusätzlichen automatischen Schaden.",
+          "stacking": "Mehrere Wurzelklammern desselben oder verschiedener Mooskrabbler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+          "end_condition": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+5)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 17** nach einem Treffer",
+            "Schaden": "`10W8 + ST-Modifikator (+5) + ST-Bonus (+3)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer hakt der Mooskrabbler zwei seiner vorderen Haftbeine um Fuß, Bein oder eine andere bodennahe Gliedmaße des Ziels. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen. Die Wurzelklammer verursacht keinen zusätzlichen automatischen Schaden.",
+            "Stapelung": "Mehrere Wurzelklammern desselben oder verschiedener Mooskrabbler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+            "Ende der Wirkung": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 723,
+            "line_end": 736
+          }
+        },
+        {
+          "id": "mooskrabbler-l30-moosducken",
+          "name": "Moosducken",
+          "type": "Defensive Aktion",
+          "cost": "1 Aktion",
+          "requirement": "Der Mooskrabbler befindet sich auf natürlichem Boden oder in unmittelbarem Kontakt mit Wurzel, Rinde, Fels, dichtem Laub oder vergleichbarer bodennaher Deckung.",
+          "target": "Selbst",
+          "rule_effect": "Der Mooskrabbler zieht seine Beine eng unter den Körper, presst den Panzer flach an den Untergrund und bricht seine sichtbare Silhouette. Er erhält **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Nach diesem Ausweichwurf endet der Bonus unabhängig davon, ob der Angriff trifft oder verfehlt. Bewegt sich der Mooskrabbler vor der Anwendung des Bonus insgesamt mehr als **2 m**, endet Moosducken ebenfalls.",
+          "stacking": "Moosducken stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt lediglich die bestehende Wirkung.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, bei mehr als 2 m eigener Bewegung oder spätestens zu Beginn des nächsten eigenen Zuges.",
+          "extra_fields": {
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung oder bis die Bewegung die Wirkung beendet"
+          },
+          "raw_fields": {
+            "Typ": "Defensive Aktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Der Mooskrabbler befindet sich auf natürlichem Boden oder in unmittelbarem Kontakt mit Wurzel, Rinde, Fels, dichtem Laub oder vergleichbarer bodennaher Deckung.",
+            "Ziel": "Selbst",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung oder bis die Bewegung die Wirkung beendet",
+            "Regelwirkung": "Der Mooskrabbler zieht seine Beine eng unter den Körper, presst den Panzer flach an den Untergrund und bricht seine sichtbare Silhouette. Er erhält **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Nach diesem Ausweichwurf endet der Bonus unabhängig davon, ob der Angriff trifft oder verfehlt. Bewegt sich der Mooskrabbler vor der Anwendung des Bonus insgesamt mehr als **2 m**, endet Moosducken ebenfalls.",
+            "Stapelung": "Moosducken stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt lediglich die bestehende Wirkung.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, bei mehr als 2 m eigener Bewegung oder spätestens zu Beginn des nächsten eigenen Zuges."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 737,
+            "line_end": 747
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "10 % Verwundbarkeit",
+            "–",
+            "–",
+            "10 % Resistenz",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 669,
+        "line_end": 755
+      }
+    },
+    {
+      "level": 35,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 25,
+          "modifier": 7,
+          "bonus": 6,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "25",
+            "Modifikator": "+7",
+            "Bonus": "+6"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "570",
+          "physische_verteidigung": "20",
+          "magieverteidigung": "19",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 8 m; Klettern 6 m",
+          "klammer_sg": "18"
+        },
+        "raw_fields": {
+          "Maximale LP": "570",
+          "Physische Verteidigung": "20",
+          "Magieverteidigung": "19",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 8 m; Klettern 6 m",
+          "Klammer-SG": "18"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+6) + ST-Bonus (+3)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+3)) × 5) + (35 × 10) = 570 LP",
+        "markdown": "`100 + ((ST-Modifikator (+6) + ST-Bonus (+3)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+3)) × 5) + (35 × 10) = 570 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Rindenbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+            "range_area": "Nah",
+            "damage_effect": "13W8 + ST-Modifikator (+6) + ST-Bonus (+3)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "67,5",
+            "avg_hit_damage": "47,2",
+            "avg_expected_effect": "32,4",
+            "ge_share": "0,50",
+            "notes": null,
+            "avg_raw_damage_value": 67.5,
+            "avg_hit_damage_value": 47.2,
+            "ge_share_value": 0.5,
+            "id": "mooskrabbler-l35-a01-rindenbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Rindenbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "13W8 + ST-Modifikator (+6) + ST-Bonus (+3)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "67,5",
+              "Ø Treffer-Endschaden": "47,2",
+              "Ø Erwartungswirkung": "32,4",
+              "GE-Anteil": "0,50",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Wurzelklammer",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+6); danach SG 18",
+            "range_area": "Nah",
+            "damage_effect": "11W8 + ST-Modifikator (+6) + ST-Bonus (+3); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "58,5",
+            "avg_hit_damage": "38,1",
+            "avg_expected_effect": "26,2 Schaden + Kontrolle",
+            "ge_share": "0,45 gesamt",
+            "notes": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels.",
+            "avg_raw_damage_value": 58.5,
+            "avg_hit_damage_value": 38.1,
+            "id": "mooskrabbler-l35-a02-wurzelklammer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Wurzelklammer",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+6); danach SG 18",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "11W8 + ST-Modifikator (+6) + ST-Bonus (+3); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "58,5",
+              "Ø Treffer-Endschaden": "38,1",
+              "Ø Erwartungswirkung": "26,2 Schaden + Kontrolle",
+              "GE-Anteil": "0,45 gesamt",
+              "Zusatz": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Moosducken",
+            "cost": "1 Aktion",
+            "type": "defensive Aktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst",
+            "damage_effect": "+2 auf den nächsten Ausweichwurf bis zum Beginn des nächsten eigenen Zuges",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Endet nach dem ersten Ausweichwurf oder sobald der Mooskrabbler sich mehr als 2 m bewegt.",
+            "id": "mooskrabbler-l35-a03-moosducken",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Moosducken",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Aktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst",
+              "Schaden / Wirkung": "+2 auf den nächsten Ausweichwurf bis zum Beginn des nächsten eigenen Zuges",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Endet nach dem ersten Ausweichwurf oder sobald der Mooskrabbler sich mehr als 2 m bewegt."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "mooskrabbler-l35-rindenbiss",
+          "name": "Rindenbiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+6)`",
+          "damage": "`13W8 + ST-Modifikator (+6) + ST-Bonus (+3)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer schiebt der Mooskrabbler seinen flachen Kopf unter den Rand seines Rückenpanzers hervor und beißt mit den harten Beißplatten zu. Der Angriff verursacht ausschließlich den angegebenen Stichschaden und besitzt **keine automatische Kontrollwirkung, keinen Folgetreffer und keine kostenlose Bewegung**.",
+          "stacking": "Mehrere Mooskrabbler können dasselbe Ziel angreifen; jeder Rindenbiss wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+6)`",
+            "Schaden": "`13W8 + ST-Modifikator (+6) + ST-Bonus (+3)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer schiebt der Mooskrabbler seinen flachen Kopf unter den Rand seines Rückenpanzers hervor und beißt mit den harten Beißplatten zu. Der Angriff verursacht ausschließlich den angegebenen Stichschaden und besitzt **keine automatische Kontrollwirkung, keinen Folgetreffer und keine kostenlose Bewegung**.",
+            "Stapelung": "Mehrere Mooskrabbler können dasselbe Ziel angreifen; jeder Rindenbiss wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 798,
+            "line_end": 809
+          }
+        },
+        {
+          "id": "mooskrabbler-l35-wurzelklammer",
+          "name": "Wurzelklammer",
+          "type": "Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+6)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 18** nach einem Treffer",
+          "damage": "`11W8 + ST-Modifikator (+6) + ST-Bonus (+3)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer hakt der Mooskrabbler zwei seiner vorderen Haftbeine um Fuß, Bein oder eine andere bodennahe Gliedmaße des Ziels. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen. Die Wurzelklammer verursacht keinen zusätzlichen automatischen Schaden.",
+          "stacking": "Mehrere Wurzelklammern desselben oder verschiedener Mooskrabbler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+          "end_condition": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+6)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 18** nach einem Treffer",
+            "Schaden": "`11W8 + ST-Modifikator (+6) + ST-Bonus (+3)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer hakt der Mooskrabbler zwei seiner vorderen Haftbeine um Fuß, Bein oder eine andere bodennahe Gliedmaße des Ziels. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen. Die Wurzelklammer verursacht keinen zusätzlichen automatischen Schaden.",
+            "Stapelung": "Mehrere Wurzelklammern desselben oder verschiedener Mooskrabbler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+            "Ende der Wirkung": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 810,
+            "line_end": 823
+          }
+        },
+        {
+          "id": "mooskrabbler-l35-moosducken",
+          "name": "Moosducken",
+          "type": "Defensive Aktion",
+          "cost": "1 Aktion",
+          "requirement": "Der Mooskrabbler befindet sich auf natürlichem Boden oder in unmittelbarem Kontakt mit Wurzel, Rinde, Fels, dichtem Laub oder vergleichbarer bodennaher Deckung.",
+          "target": "Selbst",
+          "rule_effect": "Der Mooskrabbler zieht seine Beine eng unter den Körper, presst den Panzer flach an den Untergrund und bricht seine sichtbare Silhouette. Er erhält **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Nach diesem Ausweichwurf endet der Bonus unabhängig davon, ob der Angriff trifft oder verfehlt. Bewegt sich der Mooskrabbler vor der Anwendung des Bonus insgesamt mehr als **2 m**, endet Moosducken ebenfalls.",
+          "stacking": "Moosducken stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt lediglich die bestehende Wirkung.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, bei mehr als 2 m eigener Bewegung oder spätestens zu Beginn des nächsten eigenen Zuges.",
+          "extra_fields": {
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung oder bis die Bewegung die Wirkung beendet"
+          },
+          "raw_fields": {
+            "Typ": "Defensive Aktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Der Mooskrabbler befindet sich auf natürlichem Boden oder in unmittelbarem Kontakt mit Wurzel, Rinde, Fels, dichtem Laub oder vergleichbarer bodennaher Deckung.",
+            "Ziel": "Selbst",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung oder bis die Bewegung die Wirkung beendet",
+            "Regelwirkung": "Der Mooskrabbler zieht seine Beine eng unter den Körper, presst den Panzer flach an den Untergrund und bricht seine sichtbare Silhouette. Er erhält **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Nach diesem Ausweichwurf endet der Bonus unabhängig davon, ob der Angriff trifft oder verfehlt. Bewegt sich der Mooskrabbler vor der Anwendung des Bonus insgesamt mehr als **2 m**, endet Moosducken ebenfalls.",
+            "Stapelung": "Moosducken stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt lediglich die bestehende Wirkung.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, bei mehr als 2 m eigener Bewegung oder spätestens zu Beginn des nächsten eigenen Zuges."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 824,
+            "line_end": 834
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "10 % Verwundbarkeit",
+            "–",
+            "–",
+            "10 % Resistenz",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 756,
+        "line_end": 842
+      }
+    },
+    {
+      "level": 40,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 26,
+          "modifier": 8,
+          "bonus": 6,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "26",
+            "Modifikator": "+8",
+            "Bonus": "+6"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 11,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "11",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+5"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "635",
+          "physische_verteidigung": "22",
+          "magieverteidigung": "21",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 8 m; Klettern 6 m",
+          "klammer_sg": "19"
+        },
+        "raw_fields": {
+          "Maximale LP": "635",
+          "Physische Verteidigung": "22",
+          "Magieverteidigung": "21",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 8 m; Klettern 6 m",
+          "Klammer-SG": "19"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+6) + ST-Bonus (+4)) × 10) + ((WI-Modifikator (+4) + WI-Bonus (+3)) × 5) + (40 × 10) = 635 LP",
+        "markdown": "`100 + ((ST-Modifikator (+6) + ST-Bonus (+4)) × 10) + ((WI-Modifikator (+4) + WI-Bonus (+3)) × 5) + (40 × 10) = 635 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Rindenbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+            "range_area": "Nah",
+            "damage_effect": "14W8 + ST-Modifikator (+6) + ST-Bonus (+4)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "73,0",
+            "avg_hit_damage": "50,7",
+            "avg_expected_effect": "34,9",
+            "ge_share": "0,49",
+            "notes": null,
+            "avg_raw_damage_value": 73.0,
+            "avg_hit_damage_value": 50.7,
+            "ge_share_value": 0.49,
+            "id": "mooskrabbler-l40-a01-rindenbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Rindenbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "14W8 + ST-Modifikator (+6) + ST-Bonus (+4)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "73,0",
+              "Ø Treffer-Endschaden": "50,7",
+              "Ø Erwartungswirkung": "34,9",
+              "GE-Anteil": "0,49",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Wurzelklammer",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Kontrolle",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+8) + BW-Bonus (+6); danach SG 19",
+            "range_area": "Nah",
+            "damage_effect": "12W8 + ST-Modifikator (+6) + ST-Bonus (+4); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "64,0",
+            "avg_hit_damage": "41,6",
+            "avg_expected_effect": "28,6 Schaden + Kontrolle",
+            "ge_share": "0,45 gesamt",
+            "notes": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels.",
+            "avg_raw_damage_value": 64.0,
+            "avg_hit_damage_value": 41.6,
+            "id": "mooskrabbler-l40-a02-wurzelklammer",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Wurzelklammer",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Kontrolle",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+8) + BW-Bonus (+6); danach SG 19",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "12W8 + ST-Modifikator (+6) + ST-Bonus (+4); danach ST- oder BW-RW, bei Fehlschlag Bewegungsrate −2 m",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "64,0",
+              "Ø Treffer-Endschaden": "41,6",
+              "Ø Erwartungswirkung": "28,6 Schaden + Kontrolle",
+              "GE-Anteil": "0,45 gesamt",
+              "Zusatz": "Bewegungsreduktion hält bis zum Ende des nächsten Zuges des Ziels."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Moosducken",
+            "cost": "1 Aktion",
+            "type": "defensive Aktion",
+            "attribute": null,
+            "attack_or_dc": null,
+            "range_area": "Selbst",
+            "damage_effect": "+2 auf den nächsten Ausweichwurf bis zum Beginn des nächsten eigenen Zuges",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "avg_hit_damage": null,
+            "avg_expected_effect": null,
+            "ge_share": "– (defensiv)",
+            "notes": "Endet nach dem ersten Ausweichwurf oder sobald der Mooskrabbler sich mehr als 2 m bewegt.",
+            "id": "mooskrabbler-l40-a03-moosducken",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Moosducken",
+              "Kosten": "1 Aktion",
+              "Typ": "defensive Aktion",
+              "Attribut": null,
+              "Angriff / SG": null,
+              "Reichweite / Fläche": "Selbst",
+              "Schaden / Wirkung": "+2 auf den nächsten Ausweichwurf bis zum Beginn des nächsten eigenen Zuges",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Ø Treffer-Endschaden": null,
+              "Ø Erwartungswirkung": null,
+              "GE-Anteil": "– (defensiv)",
+              "Zusatz": "Endet nach dem ersten Ausweichwurf oder sobald der Mooskrabbler sich mehr als 2 m bewegt."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "mooskrabbler-l40-rindenbiss",
+          "name": "Rindenbiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+8) + BW-Bonus (+6)`",
+          "damage": "`14W8 + ST-Modifikator (+6) + ST-Bonus (+4)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer schiebt der Mooskrabbler seinen flachen Kopf unter den Rand seines Rückenpanzers hervor und beißt mit den harten Beißplatten zu. Der Angriff verursacht ausschließlich den angegebenen Stichschaden und besitzt **keine automatische Kontrollwirkung, keinen Folgetreffer und keine kostenlose Bewegung**.",
+          "stacking": "Mehrere Mooskrabbler können dasselbe Ziel angreifen; jeder Rindenbiss wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+8) + BW-Bonus (+6)`",
+            "Schaden": "`14W8 + ST-Modifikator (+6) + ST-Bonus (+4)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer schiebt der Mooskrabbler seinen flachen Kopf unter den Rand seines Rückenpanzers hervor und beißt mit den harten Beißplatten zu. Der Angriff verursacht ausschließlich den angegebenen Stichschaden und besitzt **keine automatische Kontrollwirkung, keinen Folgetreffer und keine kostenlose Bewegung**.",
+            "Stapelung": "Mehrere Mooskrabbler können dasselbe Ziel angreifen; jeder Rindenbiss wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 885,
+            "line_end": 896
+          }
+        },
+        {
+          "id": "mooskrabbler-l40-wurzelklammer",
+          "name": "Wurzelklammer",
+          "type": "Angriff / Kontrolle",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+8) + BW-Bonus (+6)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 19** nach einem Treffer",
+          "damage": "`12W8 + ST-Modifikator (+6) + ST-Bonus (+4)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer hakt der Mooskrabbler zwei seiner vorderen Haftbeine um Fuß, Bein oder eine andere bodennahe Gliedmaße des Ziels. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen. Die Wurzelklammer verursacht keinen zusätzlichen automatischen Schaden.",
+          "stacking": "Mehrere Wurzelklammern desselben oder verschiedener Mooskrabbler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+          "end_condition": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Kontrolle",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+8) + BW-Bonus (+6)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 19** nach einem Treffer",
+            "Schaden": "`12W8 + ST-Modifikator (+6) + ST-Bonus (+4)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer hakt der Mooskrabbler zwei seiner vorderen Haftbeine um Fuß, Bein oder eine andere bodennahe Gliedmaße des Ziels. Misslingt der anschließende Rettungswurf, wird die **Bewegungsrate des Ziels bis zum Ende seines nächsten Zuges um 2 m reduziert**. Die Bewegungsrate kann dadurch nicht unter 0 m fallen. Die Wurzelklammer verursacht keinen zusätzlichen automatischen Schaden.",
+            "Stapelung": "Mehrere Wurzelklammern desselben oder verschiedener Mooskrabbler **stapeln ihre Bewegungsreduktion nicht**; es gilt nur die stärkste aktuell wirkende Reduktion.",
+            "Ende der Wirkung": "Die Reduktion endet automatisch am Ende des nächsten Zuges des betroffenen Ziels."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 897,
+            "line_end": 910
+          }
+        },
+        {
+          "id": "mooskrabbler-l40-moosducken",
+          "name": "Moosducken",
+          "type": "Defensive Aktion",
+          "cost": "1 Aktion",
+          "requirement": "Der Mooskrabbler befindet sich auf natürlichem Boden oder in unmittelbarem Kontakt mit Wurzel, Rinde, Fels, dichtem Laub oder vergleichbarer bodennaher Deckung.",
+          "target": "Selbst",
+          "rule_effect": "Der Mooskrabbler zieht seine Beine eng unter den Körper, presst den Panzer flach an den Untergrund und bricht seine sichtbare Silhouette. Er erhält **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Nach diesem Ausweichwurf endet der Bonus unabhängig davon, ob der Angriff trifft oder verfehlt. Bewegt sich der Mooskrabbler vor der Anwendung des Bonus insgesamt mehr als **2 m**, endet Moosducken ebenfalls.",
+          "stacking": "Moosducken stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt lediglich die bestehende Wirkung.",
+          "end_condition": "Nach dem ersten betroffenen Ausweichwurf, bei mehr als 2 m eigener Bewegung oder spätestens zu Beginn des nächsten eigenen Zuges.",
+          "extra_fields": {
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung oder bis die Bewegung die Wirkung beendet"
+          },
+          "raw_fields": {
+            "Typ": "Defensive Aktion",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Der Mooskrabbler befindet sich auf natürlichem Boden oder in unmittelbarem Kontakt mit Wurzel, Rinde, Fels, dichtem Laub oder vergleichbarer bodennaher Deckung.",
+            "Ziel": "Selbst",
+            "Dauer": "Bis zum Beginn des nächsten eigenen Zuges, bis zur ersten Anwendung oder bis die Bewegung die Wirkung beendet",
+            "Regelwirkung": "Der Mooskrabbler zieht seine Beine eng unter den Körper, presst den Panzer flach an den Untergrund und bricht seine sichtbare Silhouette. Er erhält **+2 auf den nächsten Ausweichwurf gegen genau einen gegen ihn gerichteten Angriff**. Nach diesem Ausweichwurf endet der Bonus unabhängig davon, ob der Angriff trifft oder verfehlt. Bewegt sich der Mooskrabbler vor der Anwendung des Bonus insgesamt mehr als **2 m**, endet Moosducken ebenfalls.",
+            "Stapelung": "Moosducken stapelt nicht mit sich selbst. Eine erneute Anwendung ersetzt lediglich die bestehende Wirkung.",
+            "Ende der Wirkung": "Nach dem ersten betroffenen Ausweichwurf, bei mehr als 2 m eigener Bewegung oder spätestens zu Beginn des nächsten eigenen Zuges."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 911,
+            "line_end": 921
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "10 % Verwundbarkeit",
+            "–",
+            "–",
+            "10 % Resistenz",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 843,
+        "line_end": 929
+      }
+    }
+  ],
+  "post_sections": [
+    {
+      "title": "Einsatz im Spiel",
+      "id": "einsatz-im-spiel",
+      "markdown": "Der Mooskrabbler eignet sich besonders für frühe Waldbegegnungen, in denen die Gruppe lernen soll, dass nicht jede Kreatur aktiv auf Jagd nach Reisenden geht. Eine Begegnung kann vollständig vermieden werden, wenn die Spieler Spuren erkennen, das Nest umgehen oder sich nach einer versehentlichen Störung wieder zurückziehen.\n\nAls Gegner funktioniert er am besten in kleinen Gruppen zwischen Wurzeln, Farnen und unebenem Boden. Dabei sollte seine erhöhte Ausweichfähigkeit spürbar sein, ohne dass er gleichzeitig hohe feste Verteidigung besitzt. Die Tiere verteidigen einen klaren Ort und verfolgen die Gruppe nicht grundlos durch den ganzen Wald.",
+      "tables": [],
+      "source": {
+        "line_start": 930,
+        "line_end": 934
+      }
+    }
+  ],
+  "statistics": {
+    "level_count": 9,
+    "action_count_by_level": {
+      "1": 3,
+      "5": 3,
+      "10": 3,
+      "15": 3,
+      "20": 3,
+      "25": 3,
+      "30": 3,
+      "35": 3,
+      "40": 3
+    },
+    "shared_action_detail_count": 0
+  },
+  "source": {
+    "line_start": 15,
+    "line_end": 934
+  }
+}

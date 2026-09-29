@@ -1,0 +1,4449 @@
+{
+  "schema_version": "aetherfall.creatures.v1",
+  "id": "scharrzahn",
+  "name": "Scharrzahn",
+  "source_file": "Kreaturen - Scharrzahn.md",
+  "core": {
+    "creature_type": "Bestie",
+    "classification": "Weltkreatur",
+    "origin": "Caldria – Sonnenauen; heute weit über Handelswege verbreitet",
+    "occurrence": "Caldria: Sonnenauen und Eichenmark; Ashkarim: Oasenreiche und Ränder der Goldenen Weite; Sylvarra: Grüne Stromlande und besiedelte Randzonen der Nebelauen; Veyrgard: Häfen und geschützte Siedlungsbereiche der Sturmfjorde; außerdem Memorías nahe Lagerhäusern und Hafenanlagen",
+    "challenge_rating": {
+      "raw": "1 – Sehr schwache / einfache Bedrohung",
+      "value": 1,
+      "label": "Sehr schwache / einfache Bedrohung"
+    },
+    "encounter_rank": "Standard",
+    "archetype": "Standard",
+    "elemental_affinity": "Keine feste Elementprägung",
+    "size": "Klein bis mittel; meist 0,8–1,1 m Körperlänge ohne Schwanz",
+    "intelligence": "Tierisch; lernfähig, rudelorientiert und stark futtergetrieben",
+    "extra_fields": {},
+    "raw_fields": {
+      "Kreaturenart": "Bestie",
+      "Einordnung": "Weltkreatur",
+      "Ursprüngliche Herkunft": "Caldria – Sonnenauen; heute weit über Handelswege verbreitet",
+      "Bekanntes Vorkommen": "Caldria: Sonnenauen und Eichenmark; Ashkarim: Oasenreiche und Ränder der Goldenen Weite; Sylvarra: Grüne Stromlande und besiedelte Randzonen der Nebelauen; Veyrgard: Häfen und geschützte Siedlungsbereiche der Sturmfjorde; außerdem Memorías nahe Lagerhäusern und Hafenanlagen",
+      "Herausforderungsgrad": "**1 – Sehr schwache / einfache Bedrohung**",
+      "Begegnungsrang": "Standard",
+      "Archetyp": "Standard",
+      "Elementare Eigenschaft": "Keine feste Elementprägung",
+      "Größenordnung": "Klein bis mittel; meist 0,8–1,1 m Körperlänge ohne Schwanz",
+      "Intelligenzniveau": "Tierisch; lernfähig, rudelorientiert und stark futtergetrieben"
+    },
+    "raw_table_markdown": "| Kerndaten | Angabe |\n|---|---|\n| Kreaturenart | Bestie |\n| Einordnung | Weltkreatur |\n| Ursprüngliche Herkunft | Caldria – Sonnenauen; heute weit über Handelswege verbreitet |\n| Bekanntes Vorkommen | Caldria: Sonnenauen und Eichenmark; Ashkarim: Oasenreiche und Ränder der Goldenen Weite; Sylvarra: Grüne Stromlande und besiedelte Randzonen der Nebelauen; Veyrgard: Häfen und geschützte Siedlungsbereiche der Sturmfjorde; außerdem Memorías nahe Lagerhäusern und Hafenanlagen |\n| Herausforderungsgrad | **1 – Sehr schwache / einfache Bedrohung** |\n| Begegnungsrang | Standard |\n| Archetyp | Standard |\n| Elementare Eigenschaft | Keine feste Elementprägung |\n| Größenordnung | Klein bis mittel; meist 0,8–1,1 m Körperlänge ohne Schwanz |\n| Intelligenzniveau | Tierisch; lernfähig, rudelorientiert und stark futtergetrieben |"
+  },
+  "action_overview": {
+    "headers": [
+      "Nr.",
+      "Aktion",
+      "Typ",
+      "Grundfunktion"
+    ],
+    "actions": [
+      {
+        "number": 1,
+        "name": "Scharrbiss",
+        "type": "Angriff",
+        "base_function": "Zuverlässiger Nahkampfangriff und normale Standardoption.",
+        "id": "scharrzahn-overview-a01-scharrbiss",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "1",
+          "Aktion": "Scharrbiss",
+          "Typ": "Angriff",
+          "Grundfunktion": "Zuverlässiger Nahkampfangriff und normale Standardoption."
+        }
+      },
+      {
+        "number": 2,
+        "name": "Plattenstoß",
+        "type": "Angriff / Position",
+        "base_function": "Etwas weniger Schaden; kann das Ziel bei misslungenem Rettungswurf 1 m wegdrücken.",
+        "id": "scharrzahn-overview-a02-plattenstoss",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "2",
+          "Aktion": "Plattenstoß",
+          "Typ": "Angriff / Position",
+          "Grundfunktion": "Etwas weniger Schaden; kann das Ziel bei misslungenem Rettungswurf 1 m wegdrücken."
+        }
+      },
+      {
+        "number": 3,
+        "name": "Rudelsprung",
+        "type": "Angriff / Rudel",
+        "base_function": "Nur nutzbar, wenn ein anderer Scharrzahn am Ziel steht; erhält +1 auf den Angriffswurf.",
+        "id": "scharrzahn-overview-a03-rudelsprung",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "3",
+          "Aktion": "Rudelsprung",
+          "Typ": "Angriff / Rudel",
+          "Grundfunktion": "Nur nutzbar, wenn ein anderer Scharrzahn am Ziel steht; erhält +1 auf den Angriffswurf."
+        }
+      }
+    ]
+  },
+  "shared_action_details": [],
+  "lore_and_rules": [
+    {
+      "title": "Überblick",
+      "id": "ueberblick",
+      "markdown": "Der **Scharrzahn** ist eine weit verbreitete, sechsbeinige Bestie, die sich besonders gut an die Nähe von Straßen, Karawanen, Häfen und Siedlungen angepasst hat. Ein einzelnes Tier stellt für bewaffnete Reisende nur eine begrenzte Gefahr dar. Kleine Gruppen können jedoch Vorräte plündern, Nutztiere bedrängen oder unerfahrene Abenteurer einkreisen.\n\nScharrzähne eignen sich dadurch als typische frühe Gegner: Ihr Verhalten ist leicht zu verstehen, ihre Angriffe sind direkt und ihre Rudelmechanik belohnt Spieler dafür, auf Positionierung zu achten, ohne bereits komplizierte Zustände oder lange Effektketten einzuführen.\n\nObwohl die Art vermutlich aus den warmen, landwirtschaftlich geprägten **Sonnenauen Caldrias** stammt, hat sie sich über Handelsrouten stark ausgebreitet. Eier und Jungtiere gelangen in Heu, Kisten, Wagenunterbauten und Schiffsladungen in neue Gebiete. Wo genügend Abfälle, Kleintiere und geschützte Schlafplätze vorhanden sind, entstehen schnell dauerhafte Populationen.",
+      "tables": [],
+      "source": {
+        "line_start": 33,
+        "line_end": 40
+      }
+    },
+    {
+      "title": "Erscheinungsbild und Anatomie",
+      "id": "erscheinungsbild-und-anatomie",
+      "markdown": "Ein ausgewachsener Scharrzahn besitzt einen niedrigen, langgezogenen Körper auf **sechs kräftigen Beinen**. Das vordere Beinpaar endet in breiten, leicht gebogenen Grabkrallen, mit denen das Tier Erde, lockeren Stein, Stroh oder Abfall auseinanderzieht. Das mittlere Beinpaar trägt den größten Teil des Gewichts, während die Hinterbeine für kurze Sprünge und schnelle Richtungswechsel ausgelegt sind.\n\nÜber Rücken und Schultern liegen flache, graubraune Hornplatten. In diese Platten lagern sich mit dem Alter feine mineralische Partikel ein. Dadurch wirken ältere Tiere oft, als läge ständig eine dünne Schicht Straßenstaub oder trockener Lehm auf ihnen. Die Platten sind keine echte Steinrüstung, dämpfen aber elementare Erdkräfte geringfügig ab.\n\nZwischen den Rückenplatten wächst eine Reihe kurzer, hohler Borsten. Diese Borsten nehmen körpereigene Öle auf und isolieren gegen Feuchtigkeit und Kälte. Sie entzünden sich jedoch vergleichsweise leicht. Feuer ist deshalb die deutlichste elementare Schwäche der Art.\n\nDer Kopf ist keilförmig. Die vorderen Schneidezähne dienen zum Aufbrechen harter Schalen und Knochen, während seitliche Reißzähne Fleisch greifen. Der Geruchssinn ist hervorragend; die Augen sind dagegen klein und vor allem auf Bewegung ausgelegt.",
+      "tables": [],
+      "source": {
+        "line_start": 41,
+        "line_end": 50
+      }
+    },
+    {
+      "title": "Herkunft und Entstehung",
+      "id": "herkunft-und-entstehung",
+      "markdown": "Die ältesten verbreiteten Berichte über Scharrzähne stammen aus den **Sonnenauen Caldrias**, wo sie zwischen Feldern, Obstgärten, Kornspeichern und stark befahrenen Straßen ideale Nahrung fanden. Ob die Art dort ursprünglich natürlich entstand oder bereits früher aus einer anderen Region eingeschleppt wurde, ist nicht eindeutig geklärt.\n\nIhre heutige Verbreitung ist eng mit Handel verbunden. Scharrzähne folgen Wagenzügen, fressen heruntergefallenes Korn, jagen Mäuse in Lagern und verbergen Jungtiere in trockenem Packmaterial. Dadurch wurden sie über Generationen in andere Regionen verschleppt.\n\nIn Ashkarim bleiben sie bevorzugt nahe Oasen, Straßenstationen und Lagern. In Sylvarra nutzen sie trockene Inseln, Wurzelplattformen und Siedlungsränder. In Veyrgard suchen sie die wärmeren Bereiche von Häfen, Räucherschuppen und Vorratshäusern auf. Diese Populationen unterscheiden sich leicht in Fell- und Plattenfarbe, gelten aber weiterhin als dieselbe Art.",
+      "tables": [],
+      "source": {
+        "line_start": 51,
+        "line_end": 58
+      }
+    },
+    {
+      "title": "Vorkommen und Lebensraum",
+      "id": "vorkommen-und-lebensraum",
+      "markdown": "Scharrzähne benötigen keinen bestimmten Landschaftstyp. Entscheidend sind **Nahrung, trockene Ruheplätze und regelmäßiger Durchgang anderer Lebewesen**. Besonders häufig sind sie an:\n\n- Straßen und Karawanenwegen,\n- Feldrändern und Viehweiden,\n- Scheunen, Speichern und Lagerhäusern,\n- Hafengebieten und Schiffswerften,\n- verlassenen Höfen und Ruinen,\n- Müllplätzen und Schlachtabfällen,\n- trockenen Böschungen oder Hohlräumen unter Gebäuden.\n\nSie graben keine tiefen Tunnelsysteme. Stattdessen scharren sie flache Schlafmulden oder erweitern bereits vorhandene Hohlräume. Dadurch können sie selbst in dicht bebauten Gebieten leben.",
+      "tables": [],
+      "source": {
+        "line_start": 59,
+        "line_end": 72
+      }
+    },
+    {
+      "title": "Verhalten und Lebensweise",
+      "id": "verhalten-und-lebensweise",
+      "markdown": "Scharrzähne sind Allesfresser mit deutlicher Vorliebe für Fleisch, Eier, Aas und fettreiche Vorräte. Wenn diese fehlen, fressen sie auch Früchte, Wurzeln, Getreide und Pilze. Ein Rudel wandert häufig zwischen mehreren bekannten Futterplätzen und kehrt zu Orten zurück, an denen es bereits erfolgreich Nahrung gefunden hat.\n\nDie Tiere leben gewöhnlich in Gruppen von zwei bis acht Exemplaren. Sie besitzen keine ausgeprägte Rangordnung. Stattdessen folgt das Rudel meist dem Tier, das zuerst Nahrung oder Gefahr wahrnimmt. Kurze Klicklaute, Knurren und Kratzen mit den Vorderklauen dienen der Verständigung.\n\nGegen große oder deutlich überlegene Gegner sind Scharrzähne nicht mutig. Wird ein Rudel schnell verwundet oder verliert es mehrere Tiere, versucht es zu fliehen. Bei Hunger, eingekesselten Jungtieren oder leicht erreichbarer Beute kann es jedoch überraschend aggressiv werden.",
+      "tables": [],
+      "source": {
+        "line_start": 73,
+        "line_end": 80
+      }
+    },
+    {
+      "title": "Spuren und Vorzeichen",
+      "id": "spuren-und-vorzeichen",
+      "markdown": "Typische Hinweise auf Scharrzähne sind:\n\n- breite Kratzspuren knapp über dem Boden,\n- aufgerissene Säcke und angenagte Holzkisten,\n- flache Schlafmulden unter Wagen, Treppen oder Wurzeln,\n- graubraune Hornschuppen zwischen Stroh oder Geröll,\n- kleine Knochen, Nussschalen und harte Kerne in denselben Fressplätzen,\n- ein trockener, staubiger Tiergeruch mit leicht öliger Note,\n- mehrere versetzte Pfotenabdrücke, weil sechs Beine dichter aufeinanderfolgende Spuren erzeugen.",
+      "tables": [],
+      "source": {
+        "line_start": 81,
+        "line_end": 92
+      }
+    },
+    {
+      "title": "Beziehung zu Bewohnern und Kulturen",
+      "id": "beziehung-zu-bewohnern-und-kulturen",
+      "markdown": "In landwirtschaftlichen Regionen gelten Scharrzähne vor allem als **Vorratsschädlinge**. Bauern befestigen Speichertüren, stellen Futter erhöht auf und räumen Schlachtabfälle rasch weg. Händler prüfen Wagenunterseiten und Strohladungen, bevor sie längere Reisen antreten.\n\nIn Häfen werden Scharrzähne häufig von Lagerarbeitern mit langen Stangen oder Lärm aus Verstecken getrieben. Manche Schiffe führen einfache Metallgitter an Vorratsräumen, weil eingeschleppte Tiere während einer Reise großen Schaden an Nahrungsvorräten verursachen können.\n\nJäger verfolgen Scharrzähne nur selten gezielt. Fleisch und Hornplatten besitzen wenig Wert. In einigen ländlichen Gebieten werden die kleinen Rückenplatten jedoch als einfache Schaber oder Zierstücke verwendet.",
+      "tables": [],
+      "source": {
+        "line_start": 93,
+        "line_end": 100
+      }
+    },
+    {
+      "title": "Kampfverhalten",
+      "id": "kampfverhalten",
+      "markdown": "Ein Scharrzahn versucht, ein Ziel nicht allein frontal zu überwältigen. Einzelne Tiere schnappen nach Beinen und Händen, während andere seitlich herankommen. Befindet sich bereits ein Artgenosse unmittelbar am Ziel, nutzt der Scharrzahn bevorzugt den **Rudelsprung**.\n\nDer **Scharrbiss** ist sein zuverlässiger Routineangriff. Mit dem **Plattenstoß** wirft das Tier Schulter und Rücken gegen ein Ziel und kann es geringfügig aus der Position drücken. Der **Rudelsprung** ist nur möglich, wenn ein zweiter Scharrzahn das Ziel bereits bindet; er erhöht die Trefferwahrscheinlichkeit leicht, verursacht aber keinen zusätzlichen automatischen Effekt.\n\nScharrzähne kämpfen nicht bis zum Tod, wenn Flucht möglich ist. Sinkt ein Tier unter ungefähr ein Viertel seiner maximalen LP und ist kein Jungtier oder Futterplatz zu verteidigen, zieht es sich gewöhnlich zurück.",
+      "tables": [],
+      "source": {
+        "line_start": 101,
+        "line_end": 108
+      }
+    },
+    {
+      "title": "Mechanische Grundidentität",
+      "id": "mechanische-grundidentitaet",
+      "markdown": "**LP-Hauptattribut:** Stärke (ST)  \n**LP-Sekundärattribut:** Willenskraft (WI)  \n**Bonusprofil:** Beweglichkeit und Wahrnehmung bilden die stärksten aktiven Werte; Stärke trägt Körpermasse und Bisskraft. Intelligenz und Charisma bleiben deutlich niedrig.  \n**Offensivprofil:** Einfacher Nahkämpfer. Der Routinebiss liegt ungefähr bei `0,51–0,53 GE` pro Aktion. Der Plattenstoß tauscht einen Teil des Schadens gegen sehr kleine Positionskontrolle. Der Rudelsprung liegt bei bestehender Rudelvoraussetzung ungefähr bei `0,53–0,56 GE`.  \n**Defensivprofil:** Standardarchetyp mit den für HG 1 vorgesehenen reduzierten LP und einer festen Verteidigung etwa 3 Punkte unter der P50-Kurve. Keine überhöhte Ausweich- oder Regenerationsmechanik.  \n**Bewegungsprofil:** Land 10 m; kurze Sprünge sind Teil der normalen Bewegung und verleihen keine zusätzliche freie Bewegung.  \n**Elementprofil:** Keine feste Elementprägung. **10 % Resistenz gegen Erde** durch mineralisierte Rückenplatten und **10 % Verwundbarkeit gegen Feuer** durch ölhaltige Rückenborsten.  \n**Aktionsanzahl:** 3 unterschiedliche Kampfoptionen.  \n**Phasenprofil:** Kein Phasenwechsel.",
+      "tables": [],
+      "source": {
+        "line_start": 109,
+        "line_end": 120
+      }
+    },
+    {
+      "title": "Elementare Besonderheiten",
+      "id": "elementare-besonderheiten",
+      "markdown": "- **Erde – 10 % Resistenz:** Die mineralisierten Hornplatten verteilen Druck und dämpfen elementare Erdkräfte. Erdschaden wird nach den normalen Regeln um **10 % reduziert**.\n- **Feuer – 10 % Verwundbarkeit:** Die trockenen, ölhaltigen Rückenborsten entzünden sich leicht und leiten Hitze in die darunterliegende Haut. Der Scharrzahn erleidet **10 % zusätzlichen Feuerschaden**.\n\nDie beiden Eigenschaften sind **physiologische Anpassungen**. Der Scharrzahn besitzt dadurch keine feste elementare Eigenschaft.",
+      "tables": [],
+      "source": {
+        "line_start": 121,
+        "line_end": 127
+      }
+    },
+    {
+      "title": "Aktionsübersicht",
+      "id": "aktionsuebersicht",
+      "markdown": "| Nr. | Aktion | Typ | Grundfunktion |\n|---:|---|---|---|\n| 1 | Scharrbiss | Angriff | Zuverlässiger Nahkampfangriff und normale Standardoption. |\n| 2 | Plattenstoß | Angriff / Position | Etwas weniger Schaden; kann das Ziel bei misslungenem Rettungswurf 1 m wegdrücken. |\n| 3 | Rudelsprung | Angriff / Rudel | Nur nutzbar, wenn ein anderer Scharrzahn am Ziel steht; erhält +1 auf den Angriffswurf. |",
+      "tables": [
+        {
+          "headers": [
+            "Nr.",
+            "Aktion",
+            "Typ",
+            "Grundfunktion"
+          ],
+          "rows": [
+            {
+              "Nr.": "1",
+              "Aktion": "Scharrbiss",
+              "Typ": "Angriff",
+              "Grundfunktion": "Zuverlässiger Nahkampfangriff und normale Standardoption."
+            },
+            {
+              "Nr.": "2",
+              "Aktion": "Plattenstoß",
+              "Typ": "Angriff / Position",
+              "Grundfunktion": "Etwas weniger Schaden; kann das Ziel bei misslungenem Rettungswurf 1 m wegdrücken."
+            },
+            {
+              "Nr.": "3",
+              "Aktion": "Rudelsprung",
+              "Typ": "Angriff / Rudel",
+              "Grundfunktion": "Nur nutzbar, wenn ein anderer Scharrzahn am Ziel steht; erhält +1 auf den Angriffswurf."
+            }
+          ],
+          "raw_markdown": "| Nr. | Aktion | Typ | Grundfunktion |\n|---:|---|---|---|\n| 1 | Scharrbiss | Angriff | Zuverlässiger Nahkampfangriff und normale Standardoption. |\n| 2 | Plattenstoß | Angriff / Position | Etwas weniger Schaden; kann das Ziel bei misslungenem Rettungswurf 1 m wegdrücken. |\n| 3 | Rudelsprung | Angriff / Rudel | Nur nutzbar, wenn ein anderer Scharrzahn am Ziel steht; erhält +1 auf den Angriffswurf. |"
+        }
+      ],
+      "source": {
+        "line_start": 128,
+        "line_end": 135
+      }
+    }
+  ],
+  "levels": [
+    {
+      "level": 1,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "130",
+          "physische_verteidigung": "7",
+          "magieverteidigung": "6",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m",
+          "stoss_sg": "12"
+        },
+        "raw_fields": {
+          "Maximale LP": "130",
+          "Physische Verteidigung": "7",
+          "Magieverteidigung": "6",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m",
+          "Stoß-SG": "12"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+2) + ST-Bonus (+0)) × 10) + ((WI-Modifikator (+0) + WI-Bonus (+0)) × 5) + (1 × 10) = 130 LP",
+        "markdown": "`100 + ((ST-Modifikator (+2) + ST-Bonus (+0)) × 10) + ((WI-Modifikator (+0) + WI-Bonus (+0)) × 5) + (1 × 10) = 130 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Scharrbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+3)",
+            "range_area": "Nah",
+            "damage_effect": "5W8 + ST-Modifikator (+2) + ST-Bonus (+0)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "24,5",
+            "avg_hit_damage": "16,7",
+            "avg_expected_effect": "11,5",
+            "ge_share": "0,51",
+            "notes": null,
+            "avg_raw_damage_value": 24.5,
+            "avg_hit_damage_value": 16.7,
+            "ge_share_value": 0.51,
+            "id": "scharrzahn-l01-a01-scharrbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Scharrbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+3)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "5W8 + ST-Modifikator (+2) + ST-Bonus (+0)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "24,5",
+              "Ø Treffer-Endschaden": "16,7",
+              "Ø Erwartungswirkung": "11,5",
+              "GE-Anteil": "0,51",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Plattenstoß",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Position",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+3); danach SG 12",
+            "range_area": "Nah",
+            "damage_effect": "4W8 + ST-Modifikator (+2) + ST-Bonus (+0); danach ST- oder BW-RW, bei Fehlschlag 1 m direkt weg",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "20,0",
+            "avg_hit_damage": "12,2",
+            "avg_expected_effect": "8,4 Schaden + Position",
+            "ge_share": "0,42 gesamt",
+            "notes": "Die erzwungene Bewegung verursacht keinen Zusatzschaden.",
+            "avg_raw_damage_value": 20.0,
+            "avg_hit_damage_value": 12.2,
+            "id": "scharrzahn-l01-a02-plattenstoss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Plattenstoß",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Position",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+3); danach SG 12",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "4W8 + ST-Modifikator (+2) + ST-Bonus (+0); danach ST- oder BW-RW, bei Fehlschlag 1 m direkt weg",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "20,0",
+              "Ø Treffer-Endschaden": "12,2",
+              "Ø Erwartungswirkung": "8,4 Schaden + Position",
+              "GE-Anteil": "0,42 gesamt",
+              "Zusatz": "Die erzwungene Bewegung verursacht keinen Zusatzschaden."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Rudelsprung",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Rudel",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+3) + 1",
+            "range_area": "Nah",
+            "damage_effect": "5W8 + ST-Modifikator (+2) + ST-Bonus (+0)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "24,5",
+            "avg_hit_damage": "16,7",
+            "avg_expected_effect": "12,1",
+            "ge_share": "0,54",
+            "notes": "Nur nutzbar, wenn ein anderer kampffähiger Scharrzahn höchstens 2 m vom Ziel entfernt ist.",
+            "avg_raw_damage_value": 24.5,
+            "avg_hit_damage_value": 16.7,
+            "ge_share_value": 0.54,
+            "id": "scharrzahn-l01-a03-rudelsprung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Rudelsprung",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Rudel",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+3) + 1",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "5W8 + ST-Modifikator (+2) + ST-Bonus (+0)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "24,5",
+              "Ø Treffer-Endschaden": "16,7",
+              "Ø Erwartungswirkung": "12,1",
+              "GE-Anteil": "0,54",
+              "Zusatz": "Nur nutzbar, wenn ein anderer kampffähiger Scharrzahn höchstens 2 m vom Ziel entfernt ist."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "scharrzahn-l01-scharrbiss",
+          "name": "Scharrbiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+3)`",
+          "damage": "`5W8 + ST-Modifikator (+2) + ST-Bonus (+0)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer beißt der Scharrzahn mit seinen kurzen, kräftigen Fangzähnen zu und verursacht den angegebenen Stichschaden. Der Scharrbiss besitzt **keine zusätzliche Kontrollwirkung, keinen automatischen Folgetreffer und keine erzwungene Bewegung**. Er ist die zuverlässige Standardaktion des Scharrzahns, wenn die Voraussetzungen für den Rudelsprung nicht erfüllt sind oder keine Positionskontrolle benötigt wird.",
+          "stacking": "Mehrere Scharrzähne können dasselbe Ziel mit Scharrbissen angreifen; jeder Angriff wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+3)`",
+            "Schaden": "`5W8 + ST-Modifikator (+2) + ST-Bonus (+0)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer beißt der Scharrzahn mit seinen kurzen, kräftigen Fangzähnen zu und verursacht den angegebenen Stichschaden. Der Scharrbiss besitzt **keine zusätzliche Kontrollwirkung, keinen automatischen Folgetreffer und keine erzwungene Bewegung**. Er ist die zuverlässige Standardaktion des Scharrzahns, wenn die Voraussetzungen für den Rudelsprung nicht erfüllt sind oder keine Positionskontrolle benötigt wird.",
+            "Stapelung": "Mehrere Scharrzähne können dasselbe Ziel mit Scharrbissen angreifen; jeder Angriff wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 175,
+            "line_end": 186
+          }
+        },
+        {
+          "id": "scharrzahn-l01-plattenstoss",
+          "name": "Plattenstoß",
+          "type": "Angriff / Position",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+3)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 12** nach einem Treffer",
+          "rule_effect": "Bei einem Treffer verursacht der Scharrzahn den angegebenen Hiebschaden. Misslingt anschließend der Rettungswurf, wird das Ziel **1 m direkt vom Scharrzahn wegbewegt**. Die Bewegung verursacht keinen zusätzlichen Schaden und beendet keine Handlung des Ziels.",
+          "stacking": "Mehrere Scharrzähne können dasselbe Ziel in derselben Runde treffen; jeder Plattenstoß wird einzeln abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Position",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+3)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 12** nach einem Treffer",
+            "Regelwirkung": "Bei einem Treffer verursacht der Scharrzahn den angegebenen Hiebschaden. Misslingt anschließend der Rettungswurf, wird das Ziel **1 m direkt vom Scharrzahn wegbewegt**. Die Bewegung verursacht keinen zusätzlichen Schaden und beendet keine Handlung des Ziels.",
+            "Stapelung": "Mehrere Scharrzähne können dasselbe Ziel in derselben Runde treffen; jeder Plattenstoß wird einzeln abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 187,
+            "line_end": 196
+          }
+        },
+        {
+          "id": "scharrzahn-l01-rudelsprung",
+          "name": "Rudelsprung",
+          "type": "Angriff / Rudel",
+          "cost": "1 Aktion",
+          "requirement": "Ein anderer kampffähiger Scharrzahn befindet sich höchstens **2 m vom Ziel** entfernt.",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+3) + 1`",
+          "rule_effect": "Der Scharrzahn nutzt die Ablenkung durch sein Rudel und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Es entsteht kein zusätzlicher Schaden, kein Vorteil und keine kostenlose Folgeaktion.",
+          "end_condition": "Der Bonus gilt nur für diesen einzelnen Angriff.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Rudel",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Ein anderer kampffähiger Scharrzahn befindet sich höchstens **2 m vom Ziel** entfernt.",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+3) + 1`",
+            "Regelwirkung": "Der Scharrzahn nutzt die Ablenkung durch sein Rudel und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Es entsteht kein zusätzlicher Schaden, kein Vorteil und keine kostenlose Folgeaktion.",
+            "Ende der Wirkung": "Der Bonus gilt nur für diesen einzelnen Angriff."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 197,
+            "line_end": 205
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "10 % Verwundbarkeit",
+            "–",
+            "10 % Resistenz",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 136,
+        "line_end": 213
+      }
+    },
+    {
+      "level": 5,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 11,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "11",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "190",
+          "physische_verteidigung": "9",
+          "magieverteidigung": "8",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m",
+          "stoss_sg": "13"
+        },
+        "raw_fields": {
+          "Maximale LP": "190",
+          "Physische Verteidigung": "9",
+          "Magieverteidigung": "8",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m",
+          "Stoß-SG": "13"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+2) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+1) + WI-Bonus (+1)) × 5) + (5 × 10) = 190 LP",
+        "markdown": "`100 + ((ST-Modifikator (+2) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+1) + WI-Bonus (+1)) × 5) + (5 × 10) = 190 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Scharrbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+            "range_area": "Nah",
+            "damage_effect": "6W8 + ST-Modifikator (+2) + ST-Bonus (+1)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "30,0",
+            "avg_hit_damage": "21,3",
+            "avg_expected_effect": "14,6",
+            "ge_share": "0,53",
+            "notes": null,
+            "avg_raw_damage_value": 30.0,
+            "avg_hit_damage_value": 21.3,
+            "ge_share_value": 0.53,
+            "id": "scharrzahn-l05-a01-scharrbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Scharrbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "6W8 + ST-Modifikator (+2) + ST-Bonus (+1)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "30,0",
+              "Ø Treffer-Endschaden": "21,3",
+              "Ø Erwartungswirkung": "14,6",
+              "GE-Anteil": "0,53",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Plattenstoß",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Position",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4); danach SG 13",
+            "range_area": "Nah",
+            "damage_effect": "4W10 + ST-Modifikator (+2) + ST-Bonus (+1); danach ST- oder BW-RW, bei Fehlschlag 1 m direkt weg",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "25,0",
+            "avg_hit_damage": "16,2",
+            "avg_expected_effect": "11,2 Schaden + Position",
+            "ge_share": "0,46 gesamt",
+            "notes": "Die erzwungene Bewegung verursacht keinen Zusatzschaden.",
+            "avg_raw_damage_value": 25.0,
+            "avg_hit_damage_value": 16.2,
+            "id": "scharrzahn-l05-a02-plattenstoss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Plattenstoß",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Position",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4); danach SG 13",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "4W10 + ST-Modifikator (+2) + ST-Bonus (+1); danach ST- oder BW-RW, bei Fehlschlag 1 m direkt weg",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "25,0",
+              "Ø Treffer-Endschaden": "16,2",
+              "Ø Erwartungswirkung": "11,2 Schaden + Position",
+              "GE-Anteil": "0,46 gesamt",
+              "Zusatz": "Die erzwungene Bewegung verursacht keinen Zusatzschaden."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Rudelsprung",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Rudel",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4) + 1",
+            "range_area": "Nah",
+            "damage_effect": "6W8 + ST-Modifikator (+2) + ST-Bonus (+1)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "30,0",
+            "avg_hit_damage": "21,3",
+            "avg_expected_effect": "15,4",
+            "ge_share": "0,56",
+            "notes": "Nur nutzbar, wenn ein anderer kampffähiger Scharrzahn höchstens 2 m vom Ziel entfernt ist.",
+            "avg_raw_damage_value": 30.0,
+            "avg_hit_damage_value": 21.3,
+            "ge_share_value": 0.56,
+            "id": "scharrzahn-l05-a03-rudelsprung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Rudelsprung",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Rudel",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4) + 1",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "6W8 + ST-Modifikator (+2) + ST-Bonus (+1)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "30,0",
+              "Ø Treffer-Endschaden": "21,3",
+              "Ø Erwartungswirkung": "15,4",
+              "GE-Anteil": "0,56",
+              "Zusatz": "Nur nutzbar, wenn ein anderer kampffähiger Scharrzahn höchstens 2 m vom Ziel entfernt ist."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "scharrzahn-l05-scharrbiss",
+          "name": "Scharrbiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+          "damage": "`6W8 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer beißt der Scharrzahn mit seinen kurzen, kräftigen Fangzähnen zu und verursacht den angegebenen Stichschaden. Der Scharrbiss besitzt **keine zusätzliche Kontrollwirkung, keinen automatischen Folgetreffer und keine erzwungene Bewegung**. Er ist die zuverlässige Standardaktion des Scharrzahns, wenn die Voraussetzungen für den Rudelsprung nicht erfüllt sind oder keine Positionskontrolle benötigt wird.",
+          "stacking": "Mehrere Scharrzähne können dasselbe Ziel mit Scharrbissen angreifen; jeder Angriff wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+            "Schaden": "`6W8 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer beißt der Scharrzahn mit seinen kurzen, kräftigen Fangzähnen zu und verursacht den angegebenen Stichschaden. Der Scharrbiss besitzt **keine zusätzliche Kontrollwirkung, keinen automatischen Folgetreffer und keine erzwungene Bewegung**. Er ist die zuverlässige Standardaktion des Scharrzahns, wenn die Voraussetzungen für den Rudelsprung nicht erfüllt sind oder keine Positionskontrolle benötigt wird.",
+            "Stapelung": "Mehrere Scharrzähne können dasselbe Ziel mit Scharrbissen angreifen; jeder Angriff wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 253,
+            "line_end": 264
+          }
+        },
+        {
+          "id": "scharrzahn-l05-plattenstoss",
+          "name": "Plattenstoß",
+          "type": "Angriff / Position",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 13** nach einem Treffer",
+          "rule_effect": "Bei einem Treffer verursacht der Scharrzahn den angegebenen Hiebschaden. Misslingt anschließend der Rettungswurf, wird das Ziel **1 m direkt vom Scharrzahn wegbewegt**. Die Bewegung verursacht keinen zusätzlichen Schaden und beendet keine Handlung des Ziels.",
+          "stacking": "Mehrere Scharrzähne können dasselbe Ziel in derselben Runde treffen; jeder Plattenstoß wird einzeln abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Position",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 13** nach einem Treffer",
+            "Regelwirkung": "Bei einem Treffer verursacht der Scharrzahn den angegebenen Hiebschaden. Misslingt anschließend der Rettungswurf, wird das Ziel **1 m direkt vom Scharrzahn wegbewegt**. Die Bewegung verursacht keinen zusätzlichen Schaden und beendet keine Handlung des Ziels.",
+            "Stapelung": "Mehrere Scharrzähne können dasselbe Ziel in derselben Runde treffen; jeder Plattenstoß wird einzeln abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 265,
+            "line_end": 274
+          }
+        },
+        {
+          "id": "scharrzahn-l05-rudelsprung",
+          "name": "Rudelsprung",
+          "type": "Angriff / Rudel",
+          "cost": "1 Aktion",
+          "requirement": "Ein anderer kampffähiger Scharrzahn befindet sich höchstens **2 m vom Ziel** entfernt.",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+4) + 1`",
+          "rule_effect": "Der Scharrzahn nutzt die Ablenkung durch sein Rudel und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Es entsteht kein zusätzlicher Schaden, kein Vorteil und keine kostenlose Folgeaktion.",
+          "end_condition": "Der Bonus gilt nur für diesen einzelnen Angriff.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Rudel",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Ein anderer kampffähiger Scharrzahn befindet sich höchstens **2 m vom Ziel** entfernt.",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+4) + 1`",
+            "Regelwirkung": "Der Scharrzahn nutzt die Ablenkung durch sein Rudel und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Es entsteht kein zusätzlicher Schaden, kein Vorteil und keine kostenlose Folgeaktion.",
+            "Ende der Wirkung": "Der Bonus gilt nur für diesen einzelnen Angriff."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 275,
+            "line_end": 283
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "10 % Verwundbarkeit",
+            "–",
+            "10 % Resistenz",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 214,
+        "line_end": 291
+      }
+    },
+    {
+      "level": 10,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "265",
+          "physische_verteidigung": "11",
+          "magieverteidigung": "10",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m",
+          "stoss_sg": "13"
+        },
+        "raw_fields": {
+          "Maximale LP": "265",
+          "Physische Verteidigung": "11",
+          "Magieverteidigung": "10",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m",
+          "Stoß-SG": "13"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+4) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+1)) × 5) + (10 × 10) = 265 LP",
+        "markdown": "`100 + ((ST-Modifikator (+4) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+1)) × 5) + (10 × 10) = 265 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Scharrbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+            "range_area": "Nah",
+            "damage_effect": "7W8 + ST-Modifikator (+4) + ST-Bonus (+1)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "36,5",
+            "avg_hit_damage": "25,9",
+            "avg_expected_effect": "17,8",
+            "ge_share": "0,53",
+            "notes": null,
+            "avg_raw_damage_value": 36.5,
+            "avg_hit_damage_value": 25.9,
+            "ge_share_value": 0.53,
+            "id": "scharrzahn-l10-a01-scharrbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Scharrbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "7W8 + ST-Modifikator (+4) + ST-Bonus (+1)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "36,5",
+              "Ø Treffer-Endschaden": "25,9",
+              "Ø Erwartungswirkung": "17,8",
+              "GE-Anteil": "0,53",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Plattenstoß",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Position",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4); danach SG 13",
+            "range_area": "Nah",
+            "damage_effect": "5W8 + 2 + ST-Modifikator (+4) + ST-Bonus (+1); danach ST- oder BW-RW, bei Fehlschlag 1 m direkt weg",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "29,5",
+            "avg_hit_damage": "18,8",
+            "avg_expected_effect": "12,9 Schaden + Position",
+            "ge_share": "0,43 gesamt",
+            "notes": "Die erzwungene Bewegung verursacht keinen Zusatzschaden.",
+            "avg_raw_damage_value": 29.5,
+            "avg_hit_damage_value": 18.8,
+            "id": "scharrzahn-l10-a02-plattenstoss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Plattenstoß",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Position",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4); danach SG 13",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "5W8 + 2 + ST-Modifikator (+4) + ST-Bonus (+1); danach ST- oder BW-RW, bei Fehlschlag 1 m direkt weg",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "29,5",
+              "Ø Treffer-Endschaden": "18,8",
+              "Ø Erwartungswirkung": "12,9 Schaden + Position",
+              "GE-Anteil": "0,43 gesamt",
+              "Zusatz": "Die erzwungene Bewegung verursacht keinen Zusatzschaden."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Rudelsprung",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Rudel",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+5) + BW-Bonus (+4) + 1",
+            "range_area": "Nah",
+            "damage_effect": "7W8 + ST-Modifikator (+4) + ST-Bonus (+1)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "36,5",
+            "avg_hit_damage": "25,9",
+            "avg_expected_effect": "18,7",
+            "ge_share": "0,55",
+            "notes": "Nur nutzbar, wenn ein anderer kampffähiger Scharrzahn höchstens 2 m vom Ziel entfernt ist.",
+            "avg_raw_damage_value": 36.5,
+            "avg_hit_damage_value": 25.9,
+            "ge_share_value": 0.55,
+            "id": "scharrzahn-l10-a03-rudelsprung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Rudelsprung",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Rudel",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+5) + BW-Bonus (+4) + 1",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "7W8 + ST-Modifikator (+4) + ST-Bonus (+1)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "36,5",
+              "Ø Treffer-Endschaden": "25,9",
+              "Ø Erwartungswirkung": "18,7",
+              "GE-Anteil": "0,55",
+              "Zusatz": "Nur nutzbar, wenn ein anderer kampffähiger Scharrzahn höchstens 2 m vom Ziel entfernt ist."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "scharrzahn-l10-scharrbiss",
+          "name": "Scharrbiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+          "damage": "`7W8 + ST-Modifikator (+4) + ST-Bonus (+1)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer beißt der Scharrzahn mit seinen kurzen, kräftigen Fangzähnen zu und verursacht den angegebenen Stichschaden. Der Scharrbiss besitzt **keine zusätzliche Kontrollwirkung, keinen automatischen Folgetreffer und keine erzwungene Bewegung**. Er ist die zuverlässige Standardaktion des Scharrzahns, wenn die Voraussetzungen für den Rudelsprung nicht erfüllt sind oder keine Positionskontrolle benötigt wird.",
+          "stacking": "Mehrere Scharrzähne können dasselbe Ziel mit Scharrbissen angreifen; jeder Angriff wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+            "Schaden": "`7W8 + ST-Modifikator (+4) + ST-Bonus (+1)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer beißt der Scharrzahn mit seinen kurzen, kräftigen Fangzähnen zu und verursacht den angegebenen Stichschaden. Der Scharrbiss besitzt **keine zusätzliche Kontrollwirkung, keinen automatischen Folgetreffer und keine erzwungene Bewegung**. Er ist die zuverlässige Standardaktion des Scharrzahns, wenn die Voraussetzungen für den Rudelsprung nicht erfüllt sind oder keine Positionskontrolle benötigt wird.",
+            "Stapelung": "Mehrere Scharrzähne können dasselbe Ziel mit Scharrbissen angreifen; jeder Angriff wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 331,
+            "line_end": 342
+          }
+        },
+        {
+          "id": "scharrzahn-l10-plattenstoss",
+          "name": "Plattenstoß",
+          "type": "Angriff / Position",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 13** nach einem Treffer",
+          "rule_effect": "Bei einem Treffer verursacht der Scharrzahn den angegebenen Hiebschaden. Misslingt anschließend der Rettungswurf, wird das Ziel **1 m direkt vom Scharrzahn wegbewegt**. Die Bewegung verursacht keinen zusätzlichen Schaden und beendet keine Handlung des Ziels.",
+          "stacking": "Mehrere Scharrzähne können dasselbe Ziel in derselben Runde treffen; jeder Plattenstoß wird einzeln abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Position",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+4)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 13** nach einem Treffer",
+            "Regelwirkung": "Bei einem Treffer verursacht der Scharrzahn den angegebenen Hiebschaden. Misslingt anschließend der Rettungswurf, wird das Ziel **1 m direkt vom Scharrzahn wegbewegt**. Die Bewegung verursacht keinen zusätzlichen Schaden und beendet keine Handlung des Ziels.",
+            "Stapelung": "Mehrere Scharrzähne können dasselbe Ziel in derselben Runde treffen; jeder Plattenstoß wird einzeln abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 343,
+            "line_end": 352
+          }
+        },
+        {
+          "id": "scharrzahn-l10-rudelsprung",
+          "name": "Rudelsprung",
+          "type": "Angriff / Rudel",
+          "cost": "1 Aktion",
+          "requirement": "Ein anderer kampffähiger Scharrzahn befindet sich höchstens **2 m vom Ziel** entfernt.",
+          "attack_roll": "`W20 + BW-Mod. (+5) + BW-Bonus (+4) + 1`",
+          "rule_effect": "Der Scharrzahn nutzt die Ablenkung durch sein Rudel und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Es entsteht kein zusätzlicher Schaden, kein Vorteil und keine kostenlose Folgeaktion.",
+          "end_condition": "Der Bonus gilt nur für diesen einzelnen Angriff.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Rudel",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Ein anderer kampffähiger Scharrzahn befindet sich höchstens **2 m vom Ziel** entfernt.",
+            "Angriffswurf": "`W20 + BW-Mod. (+5) + BW-Bonus (+4) + 1`",
+            "Regelwirkung": "Der Scharrzahn nutzt die Ablenkung durch sein Rudel und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Es entsteht kein zusätzlicher Schaden, kein Vorteil und keine kostenlose Folgeaktion.",
+            "Ende der Wirkung": "Der Bonus gilt nur für diesen einzelnen Angriff."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 353,
+            "line_end": 361
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "10 % Verwundbarkeit",
+            "–",
+            "10 % Resistenz",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 292,
+        "line_end": 369
+      }
+    },
+    {
+      "level": 15,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "330",
+          "physische_verteidigung": "13",
+          "magieverteidigung": "12",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m",
+          "stoss_sg": "14"
+        },
+        "raw_fields": {
+          "Maximale LP": "330",
+          "Physische Verteidigung": "13",
+          "Magieverteidigung": "12",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m",
+          "Stoß-SG": "14"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+4) + ST-Bonus (+2)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+2)) × 5) + (15 × 10) = 330 LP",
+        "markdown": "`100 + ((ST-Modifikator (+4) + ST-Bonus (+2)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+2)) × 5) + (15 × 10) = 330 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Scharrbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+4)",
+            "range_area": "Nah",
+            "damage_effect": "8W8 + ST-Modifikator (+4) + ST-Bonus (+2)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "42,0",
+            "avg_hit_damage": "29,4",
+            "avg_expected_effect": "20,2",
+            "ge_share": "0,51",
+            "notes": null,
+            "avg_raw_damage_value": 42.0,
+            "avg_hit_damage_value": 29.4,
+            "ge_share_value": 0.51,
+            "id": "scharrzahn-l15-a01-scharrbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Scharrbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+4)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "8W8 + ST-Modifikator (+4) + ST-Bonus (+2)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "42,0",
+              "Ø Treffer-Endschaden": "29,4",
+              "Ø Erwartungswirkung": "20,2",
+              "GE-Anteil": "0,51",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Plattenstoß",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Position",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+4); danach SG 14",
+            "range_area": "Nah",
+            "damage_effect": "6W8 + ST-Modifikator (+4) + ST-Bonus (+2); danach ST- oder BW-RW, bei Fehlschlag 1 m direkt weg",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "33,0",
+            "avg_hit_damage": "20,3",
+            "avg_expected_effect": "14,0 Schaden + Position",
+            "ge_share": "0,40 gesamt",
+            "notes": "Die erzwungene Bewegung verursacht keinen Zusatzschaden.",
+            "avg_raw_damage_value": 33.0,
+            "avg_hit_damage_value": 20.3,
+            "id": "scharrzahn-l15-a02-plattenstoss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Plattenstoß",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Position",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+4); danach SG 14",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "6W8 + ST-Modifikator (+4) + ST-Bonus (+2); danach ST- oder BW-RW, bei Fehlschlag 1 m direkt weg",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "33,0",
+              "Ø Treffer-Endschaden": "20,3",
+              "Ø Erwartungswirkung": "14,0 Schaden + Position",
+              "GE-Anteil": "0,40 gesamt",
+              "Zusatz": "Die erzwungene Bewegung verursacht keinen Zusatzschaden."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Rudelsprung",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Rudel",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+4) + 1",
+            "range_area": "Nah",
+            "damage_effect": "8W8 + ST-Modifikator (+4) + ST-Bonus (+2)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "42,0",
+            "avg_hit_damage": "29,4",
+            "avg_expected_effect": "21,3",
+            "ge_share": "0,53",
+            "notes": "Nur nutzbar, wenn ein anderer kampffähiger Scharrzahn höchstens 2 m vom Ziel entfernt ist.",
+            "avg_raw_damage_value": 42.0,
+            "avg_hit_damage_value": 29.4,
+            "ge_share_value": 0.53,
+            "id": "scharrzahn-l15-a03-rudelsprung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Rudelsprung",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Rudel",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+4) + 1",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "8W8 + ST-Modifikator (+4) + ST-Bonus (+2)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "42,0",
+              "Ø Treffer-Endschaden": "29,4",
+              "Ø Erwartungswirkung": "21,3",
+              "GE-Anteil": "0,53",
+              "Zusatz": "Nur nutzbar, wenn ein anderer kampffähiger Scharrzahn höchstens 2 m vom Ziel entfernt ist."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "scharrzahn-l15-scharrbiss",
+          "name": "Scharrbiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+4)`",
+          "damage": "`8W8 + ST-Modifikator (+4) + ST-Bonus (+2)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer beißt der Scharrzahn mit seinen kurzen, kräftigen Fangzähnen zu und verursacht den angegebenen Stichschaden. Der Scharrbiss besitzt **keine zusätzliche Kontrollwirkung, keinen automatischen Folgetreffer und keine erzwungene Bewegung**. Er ist die zuverlässige Standardaktion des Scharrzahns, wenn die Voraussetzungen für den Rudelsprung nicht erfüllt sind oder keine Positionskontrolle benötigt wird.",
+          "stacking": "Mehrere Scharrzähne können dasselbe Ziel mit Scharrbissen angreifen; jeder Angriff wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+4)`",
+            "Schaden": "`8W8 + ST-Modifikator (+4) + ST-Bonus (+2)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer beißt der Scharrzahn mit seinen kurzen, kräftigen Fangzähnen zu und verursacht den angegebenen Stichschaden. Der Scharrbiss besitzt **keine zusätzliche Kontrollwirkung, keinen automatischen Folgetreffer und keine erzwungene Bewegung**. Er ist die zuverlässige Standardaktion des Scharrzahns, wenn die Voraussetzungen für den Rudelsprung nicht erfüllt sind oder keine Positionskontrolle benötigt wird.",
+            "Stapelung": "Mehrere Scharrzähne können dasselbe Ziel mit Scharrbissen angreifen; jeder Angriff wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 409,
+            "line_end": 420
+          }
+        },
+        {
+          "id": "scharrzahn-l15-plattenstoss",
+          "name": "Plattenstoß",
+          "type": "Angriff / Position",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+4)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 14** nach einem Treffer",
+          "rule_effect": "Bei einem Treffer verursacht der Scharrzahn den angegebenen Hiebschaden. Misslingt anschließend der Rettungswurf, wird das Ziel **1 m direkt vom Scharrzahn wegbewegt**. Die Bewegung verursacht keinen zusätzlichen Schaden und beendet keine Handlung des Ziels.",
+          "stacking": "Mehrere Scharrzähne können dasselbe Ziel in derselben Runde treffen; jeder Plattenstoß wird einzeln abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Position",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+4)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 14** nach einem Treffer",
+            "Regelwirkung": "Bei einem Treffer verursacht der Scharrzahn den angegebenen Hiebschaden. Misslingt anschließend der Rettungswurf, wird das Ziel **1 m direkt vom Scharrzahn wegbewegt**. Die Bewegung verursacht keinen zusätzlichen Schaden und beendet keine Handlung des Ziels.",
+            "Stapelung": "Mehrere Scharrzähne können dasselbe Ziel in derselben Runde treffen; jeder Plattenstoß wird einzeln abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 421,
+            "line_end": 430
+          }
+        },
+        {
+          "id": "scharrzahn-l15-rudelsprung",
+          "name": "Rudelsprung",
+          "type": "Angriff / Rudel",
+          "cost": "1 Aktion",
+          "requirement": "Ein anderer kampffähiger Scharrzahn befindet sich höchstens **2 m vom Ziel** entfernt.",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+4) + 1`",
+          "rule_effect": "Der Scharrzahn nutzt die Ablenkung durch sein Rudel und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Es entsteht kein zusätzlicher Schaden, kein Vorteil und keine kostenlose Folgeaktion.",
+          "end_condition": "Der Bonus gilt nur für diesen einzelnen Angriff.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Rudel",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Ein anderer kampffähiger Scharrzahn befindet sich höchstens **2 m vom Ziel** entfernt.",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+4) + 1`",
+            "Regelwirkung": "Der Scharrzahn nutzt die Ablenkung durch sein Rudel und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Es entsteht kein zusätzlicher Schaden, kein Vorteil und keine kostenlose Folgeaktion.",
+            "Ende der Wirkung": "Der Bonus gilt nur für diesen einzelnen Angriff."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 431,
+            "line_end": 439
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "10 % Verwundbarkeit",
+            "–",
+            "10 % Resistenz",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 370,
+        "line_end": 447
+      }
+    },
+    {
+      "level": 20,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "405",
+          "physische_verteidigung": "15",
+          "magieverteidigung": "14",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m",
+          "stoss_sg": "15"
+        },
+        "raw_fields": {
+          "Maximale LP": "405",
+          "Physische Verteidigung": "15",
+          "Magieverteidigung": "14",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m",
+          "Stoß-SG": "15"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+5) + ST-Bonus (+3)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+2)) × 5) + (20 × 10) = 405 LP",
+        "markdown": "`100 + ((ST-Modifikator (+5) + ST-Bonus (+3)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+2)) × 5) + (20 × 10) = 405 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Scharrbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range_area": "Nah",
+            "damage_effect": "9W8 + ST-Modifikator (+5) + ST-Bonus (+3)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "48,5",
+            "avg_hit_damage": "34,0",
+            "avg_expected_effect": "23,4",
+            "ge_share": "0,51",
+            "notes": null,
+            "avg_raw_damage_value": 48.5,
+            "avg_hit_damage_value": 34.0,
+            "ge_share_value": 0.51,
+            "id": "scharrzahn-l20-a01-scharrbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Scharrbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "9W8 + ST-Modifikator (+5) + ST-Bonus (+3)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "48,5",
+              "Ø Treffer-Endschaden": "34,0",
+              "Ø Erwartungswirkung": "23,4",
+              "GE-Anteil": "0,51",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Plattenstoß",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Position",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5); danach SG 15",
+            "range_area": "Nah",
+            "damage_effect": "7W8 + ST-Modifikator (+5) + ST-Bonus (+3); danach ST- oder BW-RW, bei Fehlschlag 1 m direkt weg",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "39,5",
+            "avg_hit_damage": "24,9",
+            "avg_expected_effect": "17,1 Schaden + Position",
+            "ge_share": "0,42 gesamt",
+            "notes": "Die erzwungene Bewegung verursacht keinen Zusatzschaden.",
+            "avg_raw_damage_value": 39.5,
+            "avg_hit_damage_value": 24.9,
+            "id": "scharrzahn-l20-a02-plattenstoss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Plattenstoß",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Position",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5); danach SG 15",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "7W8 + ST-Modifikator (+5) + ST-Bonus (+3); danach ST- oder BW-RW, bei Fehlschlag 1 m direkt weg",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "39,5",
+              "Ø Treffer-Endschaden": "24,9",
+              "Ø Erwartungswirkung": "17,1 Schaden + Position",
+              "GE-Anteil": "0,42 gesamt",
+              "Zusatz": "Die erzwungene Bewegung verursacht keinen Zusatzschaden."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Rudelsprung",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Rudel",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5) + 1",
+            "range_area": "Nah",
+            "damage_effect": "9W8 + ST-Modifikator (+5) + ST-Bonus (+3)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "48,5",
+            "avg_hit_damage": "34,0",
+            "avg_expected_effect": "24,6",
+            "ge_share": "0,53",
+            "notes": "Nur nutzbar, wenn ein anderer kampffähiger Scharrzahn höchstens 2 m vom Ziel entfernt ist.",
+            "avg_raw_damage_value": 48.5,
+            "avg_hit_damage_value": 34.0,
+            "ge_share_value": 0.53,
+            "id": "scharrzahn-l20-a03-rudelsprung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Rudelsprung",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Rudel",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5) + 1",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "9W8 + ST-Modifikator (+5) + ST-Bonus (+3)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "48,5",
+              "Ø Treffer-Endschaden": "34,0",
+              "Ø Erwartungswirkung": "24,6",
+              "GE-Anteil": "0,53",
+              "Zusatz": "Nur nutzbar, wenn ein anderer kampffähiger Scharrzahn höchstens 2 m vom Ziel entfernt ist."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "scharrzahn-l20-scharrbiss",
+          "name": "Scharrbiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+          "damage": "`9W8 + ST-Modifikator (+5) + ST-Bonus (+3)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer beißt der Scharrzahn mit seinen kurzen, kräftigen Fangzähnen zu und verursacht den angegebenen Stichschaden. Der Scharrbiss besitzt **keine zusätzliche Kontrollwirkung, keinen automatischen Folgetreffer und keine erzwungene Bewegung**. Er ist die zuverlässige Standardaktion des Scharrzahns, wenn die Voraussetzungen für den Rudelsprung nicht erfüllt sind oder keine Positionskontrolle benötigt wird.",
+          "stacking": "Mehrere Scharrzähne können dasselbe Ziel mit Scharrbissen angreifen; jeder Angriff wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+            "Schaden": "`9W8 + ST-Modifikator (+5) + ST-Bonus (+3)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer beißt der Scharrzahn mit seinen kurzen, kräftigen Fangzähnen zu und verursacht den angegebenen Stichschaden. Der Scharrbiss besitzt **keine zusätzliche Kontrollwirkung, keinen automatischen Folgetreffer und keine erzwungene Bewegung**. Er ist die zuverlässige Standardaktion des Scharrzahns, wenn die Voraussetzungen für den Rudelsprung nicht erfüllt sind oder keine Positionskontrolle benötigt wird.",
+            "Stapelung": "Mehrere Scharrzähne können dasselbe Ziel mit Scharrbissen angreifen; jeder Angriff wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 487,
+            "line_end": 498
+          }
+        },
+        {
+          "id": "scharrzahn-l20-plattenstoss",
+          "name": "Plattenstoß",
+          "type": "Angriff / Position",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 15** nach einem Treffer",
+          "rule_effect": "Bei einem Treffer verursacht der Scharrzahn den angegebenen Hiebschaden. Misslingt anschließend der Rettungswurf, wird das Ziel **1 m direkt vom Scharrzahn wegbewegt**. Die Bewegung verursacht keinen zusätzlichen Schaden und beendet keine Handlung des Ziels.",
+          "stacking": "Mehrere Scharrzähne können dasselbe Ziel in derselben Runde treffen; jeder Plattenstoß wird einzeln abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Position",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 15** nach einem Treffer",
+            "Regelwirkung": "Bei einem Treffer verursacht der Scharrzahn den angegebenen Hiebschaden. Misslingt anschließend der Rettungswurf, wird das Ziel **1 m direkt vom Scharrzahn wegbewegt**. Die Bewegung verursacht keinen zusätzlichen Schaden und beendet keine Handlung des Ziels.",
+            "Stapelung": "Mehrere Scharrzähne können dasselbe Ziel in derselben Runde treffen; jeder Plattenstoß wird einzeln abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 499,
+            "line_end": 508
+          }
+        },
+        {
+          "id": "scharrzahn-l20-rudelsprung",
+          "name": "Rudelsprung",
+          "type": "Angriff / Rudel",
+          "cost": "1 Aktion",
+          "requirement": "Ein anderer kampffähiger Scharrzahn befindet sich höchstens **2 m vom Ziel** entfernt.",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5) + 1`",
+          "rule_effect": "Der Scharrzahn nutzt die Ablenkung durch sein Rudel und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Es entsteht kein zusätzlicher Schaden, kein Vorteil und keine kostenlose Folgeaktion.",
+          "end_condition": "Der Bonus gilt nur für diesen einzelnen Angriff.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Rudel",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Ein anderer kampffähiger Scharrzahn befindet sich höchstens **2 m vom Ziel** entfernt.",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5) + 1`",
+            "Regelwirkung": "Der Scharrzahn nutzt die Ablenkung durch sein Rudel und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Es entsteht kein zusätzlicher Schaden, kein Vorteil und keine kostenlose Folgeaktion.",
+            "Ende der Wirkung": "Der Bonus gilt nur für diesen einzelnen Angriff."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 509,
+            "line_end": 517
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "10 % Verwundbarkeit",
+            "–",
+            "10 % Resistenz",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 448,
+        "line_end": 525
+      }
+    },
+    {
+      "level": 25,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "470",
+          "physische_verteidigung": "17",
+          "magieverteidigung": "16",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m",
+          "stoss_sg": "16"
+        },
+        "raw_fields": {
+          "Maximale LP": "470",
+          "Physische Verteidigung": "17",
+          "Magieverteidigung": "16",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m",
+          "Stoß-SG": "16"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+6) + ST-Bonus (+3)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+3)) × 5) + (25 × 10) = 470 LP",
+        "markdown": "`100 + ((ST-Modifikator (+6) + ST-Bonus (+3)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+3)) × 5) + (25 × 10) = 470 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Scharrbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range_area": "Nah",
+            "damage_effect": "10W8 + 2 + ST-Modifikator (+6) + ST-Bonus (+3)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "56,0",
+            "avg_hit_damage": "39,6",
+            "avg_expected_effect": "27,2",
+            "ge_share": "0,52",
+            "notes": null,
+            "avg_raw_damage_value": 56.0,
+            "avg_hit_damage_value": 39.6,
+            "ge_share_value": 0.52,
+            "id": "scharrzahn-l25-a01-scharrbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Scharrbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "10W8 + 2 + ST-Modifikator (+6) + ST-Bonus (+3)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "56,0",
+              "Ø Treffer-Endschaden": "39,6",
+              "Ø Erwartungswirkung": "27,2",
+              "GE-Anteil": "0,52",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Plattenstoß",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Position",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5); danach SG 16",
+            "range_area": "Nah",
+            "damage_effect": "8W8 + ST-Modifikator (+6) + ST-Bonus (+3); danach ST- oder BW-RW, bei Fehlschlag 1 m direkt weg",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "45,0",
+            "avg_hit_damage": "28,5",
+            "avg_expected_effect": "19,6 Schaden + Position",
+            "ge_share": "0,42 gesamt",
+            "notes": "Die erzwungene Bewegung verursacht keinen Zusatzschaden.",
+            "avg_raw_damage_value": 45.0,
+            "avg_hit_damage_value": 28.5,
+            "id": "scharrzahn-l25-a02-plattenstoss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Plattenstoß",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Position",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5); danach SG 16",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "8W8 + ST-Modifikator (+6) + ST-Bonus (+3); danach ST- oder BW-RW, bei Fehlschlag 1 m direkt weg",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "45,0",
+              "Ø Treffer-Endschaden": "28,5",
+              "Ø Erwartungswirkung": "19,6 Schaden + Position",
+              "GE-Anteil": "0,42 gesamt",
+              "Zusatz": "Die erzwungene Bewegung verursacht keinen Zusatzschaden."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Rudelsprung",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Rudel",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+6) + BW-Bonus (+5) + 1",
+            "range_area": "Nah",
+            "damage_effect": "10W8 + 2 + ST-Modifikator (+6) + ST-Bonus (+3)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "56,0",
+            "avg_hit_damage": "39,6",
+            "avg_expected_effect": "28,6",
+            "ge_share": "0,54",
+            "notes": "Nur nutzbar, wenn ein anderer kampffähiger Scharrzahn höchstens 2 m vom Ziel entfernt ist.",
+            "avg_raw_damage_value": 56.0,
+            "avg_hit_damage_value": 39.6,
+            "ge_share_value": 0.54,
+            "id": "scharrzahn-l25-a03-rudelsprung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Rudelsprung",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Rudel",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+6) + BW-Bonus (+5) + 1",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "10W8 + 2 + ST-Modifikator (+6) + ST-Bonus (+3)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "56,0",
+              "Ø Treffer-Endschaden": "39,6",
+              "Ø Erwartungswirkung": "28,6",
+              "GE-Anteil": "0,54",
+              "Zusatz": "Nur nutzbar, wenn ein anderer kampffähiger Scharrzahn höchstens 2 m vom Ziel entfernt ist."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "scharrzahn-l25-scharrbiss",
+          "name": "Scharrbiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+          "damage": "`10W8 + 2 + ST-Modifikator (+6) + ST-Bonus (+3)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer beißt der Scharrzahn mit seinen kurzen, kräftigen Fangzähnen zu und verursacht den angegebenen Stichschaden. Der Scharrbiss besitzt **keine zusätzliche Kontrollwirkung, keinen automatischen Folgetreffer und keine erzwungene Bewegung**. Er ist die zuverlässige Standardaktion des Scharrzahns, wenn die Voraussetzungen für den Rudelsprung nicht erfüllt sind oder keine Positionskontrolle benötigt wird.",
+          "stacking": "Mehrere Scharrzähne können dasselbe Ziel mit Scharrbissen angreifen; jeder Angriff wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+            "Schaden": "`10W8 + 2 + ST-Modifikator (+6) + ST-Bonus (+3)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer beißt der Scharrzahn mit seinen kurzen, kräftigen Fangzähnen zu und verursacht den angegebenen Stichschaden. Der Scharrbiss besitzt **keine zusätzliche Kontrollwirkung, keinen automatischen Folgetreffer und keine erzwungene Bewegung**. Er ist die zuverlässige Standardaktion des Scharrzahns, wenn die Voraussetzungen für den Rudelsprung nicht erfüllt sind oder keine Positionskontrolle benötigt wird.",
+            "Stapelung": "Mehrere Scharrzähne können dasselbe Ziel mit Scharrbissen angreifen; jeder Angriff wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 565,
+            "line_end": 576
+          }
+        },
+        {
+          "id": "scharrzahn-l25-plattenstoss",
+          "name": "Plattenstoß",
+          "type": "Angriff / Position",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 16** nach einem Treffer",
+          "rule_effect": "Bei einem Treffer verursacht der Scharrzahn den angegebenen Hiebschaden. Misslingt anschließend der Rettungswurf, wird das Ziel **1 m direkt vom Scharrzahn wegbewegt**. Die Bewegung verursacht keinen zusätzlichen Schaden und beendet keine Handlung des Ziels.",
+          "stacking": "Mehrere Scharrzähne können dasselbe Ziel in derselben Runde treffen; jeder Plattenstoß wird einzeln abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Position",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 16** nach einem Treffer",
+            "Regelwirkung": "Bei einem Treffer verursacht der Scharrzahn den angegebenen Hiebschaden. Misslingt anschließend der Rettungswurf, wird das Ziel **1 m direkt vom Scharrzahn wegbewegt**. Die Bewegung verursacht keinen zusätzlichen Schaden und beendet keine Handlung des Ziels.",
+            "Stapelung": "Mehrere Scharrzähne können dasselbe Ziel in derselben Runde treffen; jeder Plattenstoß wird einzeln abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 577,
+            "line_end": 586
+          }
+        },
+        {
+          "id": "scharrzahn-l25-rudelsprung",
+          "name": "Rudelsprung",
+          "type": "Angriff / Rudel",
+          "cost": "1 Aktion",
+          "requirement": "Ein anderer kampffähiger Scharrzahn befindet sich höchstens **2 m vom Ziel** entfernt.",
+          "attack_roll": "`W20 + BW-Mod. (+6) + BW-Bonus (+5) + 1`",
+          "rule_effect": "Der Scharrzahn nutzt die Ablenkung durch sein Rudel und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Es entsteht kein zusätzlicher Schaden, kein Vorteil und keine kostenlose Folgeaktion.",
+          "end_condition": "Der Bonus gilt nur für diesen einzelnen Angriff.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Rudel",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Ein anderer kampffähiger Scharrzahn befindet sich höchstens **2 m vom Ziel** entfernt.",
+            "Angriffswurf": "`W20 + BW-Mod. (+6) + BW-Bonus (+5) + 1`",
+            "Regelwirkung": "Der Scharrzahn nutzt die Ablenkung durch sein Rudel und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Es entsteht kein zusätzlicher Schaden, kein Vorteil und keine kostenlose Folgeaktion.",
+            "Ende der Wirkung": "Der Bonus gilt nur für diesen einzelnen Angriff."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 587,
+            "line_end": 595
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "10 % Verwundbarkeit",
+            "–",
+            "10 % Resistenz",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 526,
+        "line_end": 603
+      }
+    },
+    {
+      "level": 30,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "540",
+          "physische_verteidigung": "19",
+          "magieverteidigung": "18",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m",
+          "stoss_sg": "17"
+        },
+        "raw_fields": {
+          "Maximale LP": "540",
+          "Physische Verteidigung": "19",
+          "Magieverteidigung": "18",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m",
+          "Stoß-SG": "17"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+6) + ST-Bonus (+4)) × 10) + ((WI-Modifikator (+4) + WI-Bonus (+4)) × 5) + (30 × 10) = 540 LP",
+        "markdown": "`100 + ((ST-Modifikator (+6) + ST-Bonus (+4)) × 10) + ((WI-Modifikator (+4) + WI-Bonus (+4)) × 5) + (30 × 10) = 540 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Scharrbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+            "range_area": "Nah",
+            "damage_effect": "12W8 + ST-Modifikator (+6) + ST-Bonus (+4)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "64,0",
+            "avg_hit_damage": "45,6",
+            "avg_expected_effect": "31,4",
+            "ge_share": "0,53",
+            "notes": null,
+            "avg_raw_damage_value": 64.0,
+            "avg_hit_damage_value": 45.6,
+            "ge_share_value": 0.53,
+            "id": "scharrzahn-l30-a01-scharrbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Scharrbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "12W8 + ST-Modifikator (+6) + ST-Bonus (+4)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "64,0",
+              "Ø Treffer-Endschaden": "45,6",
+              "Ø Erwartungswirkung": "31,4",
+              "GE-Anteil": "0,53",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Plattenstoß",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Position",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+5); danach SG 17",
+            "range_area": "Nah",
+            "damage_effect": "9W8 + ST-Modifikator (+6) + ST-Bonus (+4); danach ST- oder BW-RW, bei Fehlschlag 1 m direkt weg",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "50,5",
+            "avg_hit_damage": "32,0",
+            "avg_expected_effect": "22,0 Schaden + Position",
+            "ge_share": "0,42 gesamt",
+            "notes": "Die erzwungene Bewegung verursacht keinen Zusatzschaden.",
+            "avg_raw_damage_value": 50.5,
+            "avg_hit_damage_value": 32.0,
+            "id": "scharrzahn-l30-a02-plattenstoss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Plattenstoß",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Position",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+5); danach SG 17",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "9W8 + ST-Modifikator (+6) + ST-Bonus (+4); danach ST- oder BW-RW, bei Fehlschlag 1 m direkt weg",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "50,5",
+              "Ø Treffer-Endschaden": "32,0",
+              "Ø Erwartungswirkung": "22,0 Schaden + Position",
+              "GE-Anteil": "0,42 gesamt",
+              "Zusatz": "Die erzwungene Bewegung verursacht keinen Zusatzschaden."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Rudelsprung",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Rudel",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+5) + 1",
+            "range_area": "Nah",
+            "damage_effect": "12W8 + ST-Modifikator (+6) + ST-Bonus (+4)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "64,0",
+            "avg_hit_damage": "45,6",
+            "avg_expected_effect": "33,0",
+            "ge_share": "0,56",
+            "notes": "Nur nutzbar, wenn ein anderer kampffähiger Scharrzahn höchstens 2 m vom Ziel entfernt ist.",
+            "avg_raw_damage_value": 64.0,
+            "avg_hit_damage_value": 45.6,
+            "ge_share_value": 0.56,
+            "id": "scharrzahn-l30-a03-rudelsprung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Rudelsprung",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Rudel",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+5) + 1",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "12W8 + ST-Modifikator (+6) + ST-Bonus (+4)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "64,0",
+              "Ø Treffer-Endschaden": "45,6",
+              "Ø Erwartungswirkung": "33,0",
+              "GE-Anteil": "0,56",
+              "Zusatz": "Nur nutzbar, wenn ein anderer kampffähiger Scharrzahn höchstens 2 m vom Ziel entfernt ist."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "scharrzahn-l30-scharrbiss",
+          "name": "Scharrbiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+5)`",
+          "damage": "`12W8 + ST-Modifikator (+6) + ST-Bonus (+4)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer beißt der Scharrzahn mit seinen kurzen, kräftigen Fangzähnen zu und verursacht den angegebenen Stichschaden. Der Scharrbiss besitzt **keine zusätzliche Kontrollwirkung, keinen automatischen Folgetreffer und keine erzwungene Bewegung**. Er ist die zuverlässige Standardaktion des Scharrzahns, wenn die Voraussetzungen für den Rudelsprung nicht erfüllt sind oder keine Positionskontrolle benötigt wird.",
+          "stacking": "Mehrere Scharrzähne können dasselbe Ziel mit Scharrbissen angreifen; jeder Angriff wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+5)`",
+            "Schaden": "`12W8 + ST-Modifikator (+6) + ST-Bonus (+4)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer beißt der Scharrzahn mit seinen kurzen, kräftigen Fangzähnen zu und verursacht den angegebenen Stichschaden. Der Scharrbiss besitzt **keine zusätzliche Kontrollwirkung, keinen automatischen Folgetreffer und keine erzwungene Bewegung**. Er ist die zuverlässige Standardaktion des Scharrzahns, wenn die Voraussetzungen für den Rudelsprung nicht erfüllt sind oder keine Positionskontrolle benötigt wird.",
+            "Stapelung": "Mehrere Scharrzähne können dasselbe Ziel mit Scharrbissen angreifen; jeder Angriff wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 643,
+            "line_end": 654
+          }
+        },
+        {
+          "id": "scharrzahn-l30-plattenstoss",
+          "name": "Plattenstoß",
+          "type": "Angriff / Position",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+5)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 17** nach einem Treffer",
+          "rule_effect": "Bei einem Treffer verursacht der Scharrzahn den angegebenen Hiebschaden. Misslingt anschließend der Rettungswurf, wird das Ziel **1 m direkt vom Scharrzahn wegbewegt**. Die Bewegung verursacht keinen zusätzlichen Schaden und beendet keine Handlung des Ziels.",
+          "stacking": "Mehrere Scharrzähne können dasselbe Ziel in derselben Runde treffen; jeder Plattenstoß wird einzeln abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Position",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+5)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 17** nach einem Treffer",
+            "Regelwirkung": "Bei einem Treffer verursacht der Scharrzahn den angegebenen Hiebschaden. Misslingt anschließend der Rettungswurf, wird das Ziel **1 m direkt vom Scharrzahn wegbewegt**. Die Bewegung verursacht keinen zusätzlichen Schaden und beendet keine Handlung des Ziels.",
+            "Stapelung": "Mehrere Scharrzähne können dasselbe Ziel in derselben Runde treffen; jeder Plattenstoß wird einzeln abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 655,
+            "line_end": 664
+          }
+        },
+        {
+          "id": "scharrzahn-l30-rudelsprung",
+          "name": "Rudelsprung",
+          "type": "Angriff / Rudel",
+          "cost": "1 Aktion",
+          "requirement": "Ein anderer kampffähiger Scharrzahn befindet sich höchstens **2 m vom Ziel** entfernt.",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+5) + 1`",
+          "rule_effect": "Der Scharrzahn nutzt die Ablenkung durch sein Rudel und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Es entsteht kein zusätzlicher Schaden, kein Vorteil und keine kostenlose Folgeaktion.",
+          "end_condition": "Der Bonus gilt nur für diesen einzelnen Angriff.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Rudel",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Ein anderer kampffähiger Scharrzahn befindet sich höchstens **2 m vom Ziel** entfernt.",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+5) + 1`",
+            "Regelwirkung": "Der Scharrzahn nutzt die Ablenkung durch sein Rudel und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Es entsteht kein zusätzlicher Schaden, kein Vorteil und keine kostenlose Folgeaktion.",
+            "Ende der Wirkung": "Der Bonus gilt nur für diesen einzelnen Angriff."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 665,
+            "line_end": 673
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "10 % Verwundbarkeit",
+            "–",
+            "10 % Resistenz",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 604,
+        "line_end": 681
+      }
+    },
+    {
+      "level": 35,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 25,
+          "modifier": 7,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "25",
+            "Modifikator": "+7",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 25,
+          "modifier": 7,
+          "bonus": 6,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "25",
+            "Modifikator": "+7",
+            "Bonus": "+6"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "610",
+          "physische_verteidigung": "21",
+          "magieverteidigung": "20",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m",
+          "stoss_sg": "18"
+        },
+        "raw_fields": {
+          "Maximale LP": "610",
+          "Physische Verteidigung": "21",
+          "Magieverteidigung": "20",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m",
+          "Stoß-SG": "18"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+7) + ST-Bonus (+5)) × 10) + ((WI-Modifikator (+4) + WI-Bonus (+4)) × 5) + (35 × 10) = 610 LP",
+        "markdown": "`100 + ((ST-Modifikator (+7) + ST-Bonus (+5)) × 10) + ((WI-Modifikator (+4) + WI-Bonus (+4)) × 5) + (35 × 10) = 610 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Scharrbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+            "range_area": "Nah",
+            "damage_effect": "13W8 + ST-Modifikator (+7) + ST-Bonus (+5)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "70,5",
+            "avg_hit_damage": "50,2",
+            "avg_expected_effect": "34,5",
+            "ge_share": "0,53",
+            "notes": null,
+            "avg_raw_damage_value": 70.5,
+            "avg_hit_damage_value": 50.2,
+            "ge_share_value": 0.53,
+            "id": "scharrzahn-l35-a01-scharrbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Scharrbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "13W8 + ST-Modifikator (+7) + ST-Bonus (+5)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "70,5",
+              "Ø Treffer-Endschaden": "50,2",
+              "Ø Erwartungswirkung": "34,5",
+              "GE-Anteil": "0,53",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Plattenstoß",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Position",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+6); danach SG 18",
+            "range_area": "Nah",
+            "damage_effect": "10W8 + ST-Modifikator (+7) + ST-Bonus (+5); danach ST- oder BW-RW, bei Fehlschlag 1 m direkt weg",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "57,0",
+            "avg_hit_damage": "36,6",
+            "avg_expected_effect": "25,1 Schaden + Position",
+            "ge_share": "0,44 gesamt",
+            "notes": "Die erzwungene Bewegung verursacht keinen Zusatzschaden.",
+            "avg_raw_damage_value": 57.0,
+            "avg_hit_damage_value": 36.6,
+            "id": "scharrzahn-l35-a02-plattenstoss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Plattenstoß",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Position",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+6); danach SG 18",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "10W8 + ST-Modifikator (+7) + ST-Bonus (+5); danach ST- oder BW-RW, bei Fehlschlag 1 m direkt weg",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "57,0",
+              "Ø Treffer-Endschaden": "36,6",
+              "Ø Erwartungswirkung": "25,1 Schaden + Position",
+              "GE-Anteil": "0,44 gesamt",
+              "Zusatz": "Die erzwungene Bewegung verursacht keinen Zusatzschaden."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Rudelsprung",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Rudel",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+7) + BW-Bonus (+6) + 1",
+            "range_area": "Nah",
+            "damage_effect": "13W8 + ST-Modifikator (+7) + ST-Bonus (+5)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "70,5",
+            "avg_hit_damage": "50,2",
+            "avg_expected_effect": "36,3",
+            "ge_share": "0,56",
+            "notes": "Nur nutzbar, wenn ein anderer kampffähiger Scharrzahn höchstens 2 m vom Ziel entfernt ist.",
+            "avg_raw_damage_value": 70.5,
+            "avg_hit_damage_value": 50.2,
+            "ge_share_value": 0.56,
+            "id": "scharrzahn-l35-a03-rudelsprung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Rudelsprung",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Rudel",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+7) + BW-Bonus (+6) + 1",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "13W8 + ST-Modifikator (+7) + ST-Bonus (+5)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "70,5",
+              "Ø Treffer-Endschaden": "50,2",
+              "Ø Erwartungswirkung": "36,3",
+              "GE-Anteil": "0,56",
+              "Zusatz": "Nur nutzbar, wenn ein anderer kampffähiger Scharrzahn höchstens 2 m vom Ziel entfernt ist."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "scharrzahn-l35-scharrbiss",
+          "name": "Scharrbiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+6)`",
+          "damage": "`13W8 + ST-Modifikator (+7) + ST-Bonus (+5)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer beißt der Scharrzahn mit seinen kurzen, kräftigen Fangzähnen zu und verursacht den angegebenen Stichschaden. Der Scharrbiss besitzt **keine zusätzliche Kontrollwirkung, keinen automatischen Folgetreffer und keine erzwungene Bewegung**. Er ist die zuverlässige Standardaktion des Scharrzahns, wenn die Voraussetzungen für den Rudelsprung nicht erfüllt sind oder keine Positionskontrolle benötigt wird.",
+          "stacking": "Mehrere Scharrzähne können dasselbe Ziel mit Scharrbissen angreifen; jeder Angriff wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+6)`",
+            "Schaden": "`13W8 + ST-Modifikator (+7) + ST-Bonus (+5)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer beißt der Scharrzahn mit seinen kurzen, kräftigen Fangzähnen zu und verursacht den angegebenen Stichschaden. Der Scharrbiss besitzt **keine zusätzliche Kontrollwirkung, keinen automatischen Folgetreffer und keine erzwungene Bewegung**. Er ist die zuverlässige Standardaktion des Scharrzahns, wenn die Voraussetzungen für den Rudelsprung nicht erfüllt sind oder keine Positionskontrolle benötigt wird.",
+            "Stapelung": "Mehrere Scharrzähne können dasselbe Ziel mit Scharrbissen angreifen; jeder Angriff wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 721,
+            "line_end": 732
+          }
+        },
+        {
+          "id": "scharrzahn-l35-plattenstoss",
+          "name": "Plattenstoß",
+          "type": "Angriff / Position",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+6)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 18** nach einem Treffer",
+          "rule_effect": "Bei einem Treffer verursacht der Scharrzahn den angegebenen Hiebschaden. Misslingt anschließend der Rettungswurf, wird das Ziel **1 m direkt vom Scharrzahn wegbewegt**. Die Bewegung verursacht keinen zusätzlichen Schaden und beendet keine Handlung des Ziels.",
+          "stacking": "Mehrere Scharrzähne können dasselbe Ziel in derselben Runde treffen; jeder Plattenstoß wird einzeln abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Position",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+6)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 18** nach einem Treffer",
+            "Regelwirkung": "Bei einem Treffer verursacht der Scharrzahn den angegebenen Hiebschaden. Misslingt anschließend der Rettungswurf, wird das Ziel **1 m direkt vom Scharrzahn wegbewegt**. Die Bewegung verursacht keinen zusätzlichen Schaden und beendet keine Handlung des Ziels.",
+            "Stapelung": "Mehrere Scharrzähne können dasselbe Ziel in derselben Runde treffen; jeder Plattenstoß wird einzeln abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 733,
+            "line_end": 742
+          }
+        },
+        {
+          "id": "scharrzahn-l35-rudelsprung",
+          "name": "Rudelsprung",
+          "type": "Angriff / Rudel",
+          "cost": "1 Aktion",
+          "requirement": "Ein anderer kampffähiger Scharrzahn befindet sich höchstens **2 m vom Ziel** entfernt.",
+          "attack_roll": "`W20 + BW-Mod. (+7) + BW-Bonus (+6) + 1`",
+          "rule_effect": "Der Scharrzahn nutzt die Ablenkung durch sein Rudel und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Es entsteht kein zusätzlicher Schaden, kein Vorteil und keine kostenlose Folgeaktion.",
+          "end_condition": "Der Bonus gilt nur für diesen einzelnen Angriff.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Rudel",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Ein anderer kampffähiger Scharrzahn befindet sich höchstens **2 m vom Ziel** entfernt.",
+            "Angriffswurf": "`W20 + BW-Mod. (+7) + BW-Bonus (+6) + 1`",
+            "Regelwirkung": "Der Scharrzahn nutzt die Ablenkung durch sein Rudel und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Es entsteht kein zusätzlicher Schaden, kein Vorteil und keine kostenlose Folgeaktion.",
+            "Ende der Wirkung": "Der Bonus gilt nur für diesen einzelnen Angriff."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 743,
+            "line_end": 751
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "10 % Verwundbarkeit",
+            "–",
+            "10 % Resistenz",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 682,
+        "line_end": 759
+      }
+    },
+    {
+      "level": 40,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 27,
+          "modifier": 8,
+          "bonus": 6,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "27",
+            "Modifikator": "+8",
+            "Bonus": "+6"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 26,
+          "modifier": 8,
+          "bonus": 6,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "26",
+            "Modifikator": "+8",
+            "Bonus": "+6"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 11,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "11",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+3"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "685",
+          "physische_verteidigung": "23",
+          "magieverteidigung": "22",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m",
+          "stoss_sg": "19"
+        },
+        "raw_fields": {
+          "Maximale LP": "685",
+          "Physische Verteidigung": "23",
+          "Magieverteidigung": "22",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m",
+          "Stoß-SG": "19"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+8) + ST-Bonus (+6)) × 10) + ((WI-Modifikator (+5) + WI-Bonus (+4)) × 5) + (40 × 10) = 685 LP",
+        "markdown": "`100 + ((ST-Modifikator (+8) + ST-Bonus (+6)) × 10) + ((WI-Modifikator (+5) + WI-Bonus (+4)) × 5) + (40 × 10) = 685 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Scharrbiss",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+            "range_area": "Nah",
+            "damage_effect": "14W8 + ST-Modifikator (+8) + ST-Bonus (+6)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "77,0",
+            "avg_hit_damage": "54,8",
+            "avg_expected_effect": "37,7",
+            "ge_share": "0,53",
+            "notes": null,
+            "avg_raw_damage_value": 77.0,
+            "avg_hit_damage_value": 54.8,
+            "ge_share_value": 0.53,
+            "id": "scharrzahn-l40-a01-scharrbiss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Scharrbiss",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "14W8 + ST-Modifikator (+8) + ST-Bonus (+6)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "77,0",
+              "Ø Treffer-Endschaden": "54,8",
+              "Ø Erwartungswirkung": "37,7",
+              "GE-Anteil": "0,53",
+              "Zusatz": null
+            }
+          },
+          {
+            "number": 2,
+            "name": "Plattenstoß",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Position",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+8) + BW-Bonus (+6); danach SG 19",
+            "range_area": "Nah",
+            "damage_effect": "11W8 + ST-Modifikator (+8) + ST-Bonus (+6); danach ST- oder BW-RW, bei Fehlschlag 1 m direkt weg",
+            "damage_type": "Hieb",
+            "defense_save": "Physische Verteidigung; ST/BW-Rettung",
+            "avg_raw_damage": "63,5",
+            "avg_hit_damage": "41,1",
+            "avg_expected_effect": "28,3 Schaden + Position",
+            "ge_share": "0,45 gesamt",
+            "notes": "Die erzwungene Bewegung verursacht keinen Zusatzschaden.",
+            "avg_raw_damage_value": 63.5,
+            "avg_hit_damage_value": 41.1,
+            "id": "scharrzahn-l40-a02-plattenstoss",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Plattenstoß",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Position",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+8) + BW-Bonus (+6); danach SG 19",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "11W8 + ST-Modifikator (+8) + ST-Bonus (+6); danach ST- oder BW-RW, bei Fehlschlag 1 m direkt weg",
+              "Schadensart": "Hieb",
+              "Verteidigung / Rettung": "Physische Verteidigung; ST/BW-Rettung",
+              "Ø Rohschaden": "63,5",
+              "Ø Treffer-Endschaden": "41,1",
+              "Ø Erwartungswirkung": "28,3 Schaden + Position",
+              "GE-Anteil": "0,45 gesamt",
+              "Zusatz": "Die erzwungene Bewegung verursacht keinen Zusatzschaden."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Rudelsprung",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Rudel",
+            "attribute": "BW",
+            "attack_or_dc": "W20 + BW-Mod. (+8) + BW-Bonus (+6) + 1",
+            "range_area": "Nah",
+            "damage_effect": "14W8 + ST-Modifikator (+8) + ST-Bonus (+6)",
+            "damage_type": "Stich",
+            "defense_save": "Physische Verteidigung",
+            "avg_raw_damage": "77,0",
+            "avg_hit_damage": "54,8",
+            "avg_expected_effect": "39,6",
+            "ge_share": "0,56",
+            "notes": "Nur nutzbar, wenn ein anderer kampffähiger Scharrzahn höchstens 2 m vom Ziel entfernt ist.",
+            "avg_raw_damage_value": 77.0,
+            "avg_hit_damage_value": 54.8,
+            "ge_share_value": 0.56,
+            "id": "scharrzahn-l40-a03-rudelsprung",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Rudelsprung",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Rudel",
+              "Attribut": "BW",
+              "Angriff / SG": "W20 + BW-Mod. (+8) + BW-Bonus (+6) + 1",
+              "Reichweite / Fläche": "Nah",
+              "Schaden / Wirkung": "14W8 + ST-Modifikator (+8) + ST-Bonus (+6)",
+              "Schadensart": "Stich",
+              "Verteidigung / Rettung": "Physische Verteidigung",
+              "Ø Rohschaden": "77,0",
+              "Ø Treffer-Endschaden": "54,8",
+              "Ø Erwartungswirkung": "39,6",
+              "GE-Anteil": "0,56",
+              "Zusatz": "Nur nutzbar, wenn ein anderer kampffähiger Scharrzahn höchstens 2 m vom Ziel entfernt ist."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "scharrzahn-l40-scharrbiss",
+          "name": "Scharrbiss",
+          "type": "Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+8) + BW-Bonus (+6)`",
+          "damage": "`14W8 + ST-Modifikator (+8) + ST-Bonus (+6)`",
+          "damage_type": "Stich",
+          "defense": "Physische Verteidigung",
+          "rule_effect": "Bei einem Treffer beißt der Scharrzahn mit seinen kurzen, kräftigen Fangzähnen zu und verursacht den angegebenen Stichschaden. Der Scharrbiss besitzt **keine zusätzliche Kontrollwirkung, keinen automatischen Folgetreffer und keine erzwungene Bewegung**. Er ist die zuverlässige Standardaktion des Scharrzahns, wenn die Voraussetzungen für den Rudelsprung nicht erfüllt sind oder keine Positionskontrolle benötigt wird.",
+          "stacking": "Mehrere Scharrzähne können dasselbe Ziel mit Scharrbissen angreifen; jeder Angriff wird separat gewürfelt und abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+8) + BW-Bonus (+6)`",
+            "Schaden": "`14W8 + ST-Modifikator (+8) + ST-Bonus (+6)`",
+            "Schadensart": "Stich",
+            "Verteidigung": "Physische Verteidigung",
+            "Regelwirkung": "Bei einem Treffer beißt der Scharrzahn mit seinen kurzen, kräftigen Fangzähnen zu und verursacht den angegebenen Stichschaden. Der Scharrbiss besitzt **keine zusätzliche Kontrollwirkung, keinen automatischen Folgetreffer und keine erzwungene Bewegung**. Er ist die zuverlässige Standardaktion des Scharrzahns, wenn die Voraussetzungen für den Rudelsprung nicht erfüllt sind oder keine Positionskontrolle benötigt wird.",
+            "Stapelung": "Mehrere Scharrzähne können dasselbe Ziel mit Scharrbissen angreifen; jeder Angriff wird separat gewürfelt und abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 799,
+            "line_end": 810
+          }
+        },
+        {
+          "id": "scharrzahn-l40-plattenstoss",
+          "name": "Plattenstoß",
+          "type": "Angriff / Position",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Mod. (+8) + BW-Bonus (+6)`",
+          "saving_throw": "Stärke oder Beweglichkeit gegen **SG 19** nach einem Treffer",
+          "rule_effect": "Bei einem Treffer verursacht der Scharrzahn den angegebenen Hiebschaden. Misslingt anschließend der Rettungswurf, wird das Ziel **1 m direkt vom Scharrzahn wegbewegt**. Die Bewegung verursacht keinen zusätzlichen Schaden und beendet keine Handlung des Ziels.",
+          "stacking": "Mehrere Scharrzähne können dasselbe Ziel in derselben Runde treffen; jeder Plattenstoß wird einzeln abgehandelt.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Position",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Mod. (+8) + BW-Bonus (+6)`",
+            "Rettungswurf": "Stärke oder Beweglichkeit gegen **SG 19** nach einem Treffer",
+            "Regelwirkung": "Bei einem Treffer verursacht der Scharrzahn den angegebenen Hiebschaden. Misslingt anschließend der Rettungswurf, wird das Ziel **1 m direkt vom Scharrzahn wegbewegt**. Die Bewegung verursacht keinen zusätzlichen Schaden und beendet keine Handlung des Ziels.",
+            "Stapelung": "Mehrere Scharrzähne können dasselbe Ziel in derselben Runde treffen; jeder Plattenstoß wird einzeln abgehandelt."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 811,
+            "line_end": 820
+          }
+        },
+        {
+          "id": "scharrzahn-l40-rudelsprung",
+          "name": "Rudelsprung",
+          "type": "Angriff / Rudel",
+          "cost": "1 Aktion",
+          "requirement": "Ein anderer kampffähiger Scharrzahn befindet sich höchstens **2 m vom Ziel** entfernt.",
+          "attack_roll": "`W20 + BW-Mod. (+8) + BW-Bonus (+6) + 1`",
+          "rule_effect": "Der Scharrzahn nutzt die Ablenkung durch sein Rudel und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Es entsteht kein zusätzlicher Schaden, kein Vorteil und keine kostenlose Folgeaktion.",
+          "end_condition": "Der Bonus gilt nur für diesen einzelnen Angriff.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Angriff / Rudel",
+            "Kosten": "1 Aktion",
+            "Voraussetzung": "Ein anderer kampffähiger Scharrzahn befindet sich höchstens **2 m vom Ziel** entfernt.",
+            "Angriffswurf": "`W20 + BW-Mod. (+8) + BW-Bonus (+6) + 1`",
+            "Regelwirkung": "Der Scharrzahn nutzt die Ablenkung durch sein Rudel und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Es entsteht kein zusätzlicher Schaden, kein Vorteil und keine kostenlose Folgeaktion.",
+            "Ende der Wirkung": "Der Bonus gilt nur für diesen einzelnen Angriff."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 821,
+            "line_end": 829
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "10 % Verwundbarkeit",
+            "–",
+            "10 % Resistenz",
+            "–",
+            "–",
+            "–"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 760,
+        "line_end": 837
+      }
+    }
+  ],
+  "post_sections": [
+    {
+      "title": "Einsatz als Anfänger-Gegner",
+      "id": "einsatz-als-anfaenger-gegner",
+      "markdown": "Der Scharrzahn ist besonders für frühe Begegnungen geeignet, weil seine Regeln drei grundlegende Kampfsituationen zeigen, ohne den Kampf zu überladen:\n\n1. **Direkter Angriff:** Der Scharrbiss zeigt den normalen Ablauf eines körperlichen Angriffs.\n2. **Rettungswurf und Position:** Der Plattenstoß führt eine kleine, leicht verständliche erzwungene Bewegung ein.\n3. **Gegnerpositionierung:** Der Rudelsprung macht deutlich, dass mehrere Gegner gefährlicher werden, wenn sie dasselbe Ziel gemeinsam bedrängen.\n\nFür eine sehr einfache erste Begegnung können **ein oder zwei Scharrzähne** eingesetzt werden. Größere Rudel eignen sich, sobald die Gruppe mit Bewegung, Fokusfeuer und Rettungswürfen vertrauter ist. Die konkrete Begegnungsstärke richtet sich weiterhin nach Gruppenstufe, Gruppengröße und Begegnungsbudget.",
+      "tables": [],
+      "source": {
+        "line_start": 838,
+        "line_end": 846
+      }
+    }
+  ],
+  "statistics": {
+    "level_count": 9,
+    "action_count_by_level": {
+      "1": 3,
+      "5": 3,
+      "10": 3,
+      "15": 3,
+      "20": 3,
+      "25": 3,
+      "30": 3,
+      "35": 3,
+      "40": 3
+    },
+    "shared_action_detail_count": 0
+  },
+  "source": {
+    "line_start": 16,
+    "line_end": 846
+  }
+}

@@ -1,0 +1,4468 @@
+{
+  "schema_version": "aetherfall.creatures.v1",
+  "id": "goblin",
+  "name": "Goblin",
+  "source_file": "Kreaturen - Goblin.md",
+  "core": {
+    "creature_type": "Humanoid – Goblin",
+    "classification": "Weltbewohner / Gegnerprofil",
+    "origin": "Caldria – Ostmarken und Ashkarim – Tiefenbrunnen",
+    "occurrence": "Auf allen vier Kontinenten; besonders Grenzregionen, große Städte, alte Ruinen, aufgegebene Bergwerke und unterirdische Anlagen",
+    "challenge_rating": {
+      "raw": "2 – Sehr schwache / einfache Bedrohung",
+      "value": 2,
+      "label": "Sehr schwache / einfache Bedrohung"
+    },
+    "encounter_rank": "Standard",
+    "archetype": "Ausweichend",
+    "elemental_affinity": "Dunkelheit",
+    "size": "Klein; meist ungefähr brust- bis schulterhoch im Vergleich zu einem erwachsenen Menschen",
+    "intelligence": "Voll intelligent; sprachfähig, lernfähig, improvisationsstark und zu koordinierter Gruppenarbeit fähig",
+    "extra_fields": {},
+    "raw_fields": {
+      "Kreaturenart": "Humanoid – Goblin",
+      "Einordnung": "Weltbewohner / Gegnerprofil",
+      "Ursprüngliche Herkunft": "Caldria – Ostmarken und Ashkarim – Tiefenbrunnen",
+      "Bekanntes Vorkommen": "Auf allen vier Kontinenten; besonders Grenzregionen, große Städte, alte Ruinen, aufgegebene Bergwerke und unterirdische Anlagen",
+      "Herausforderungsgrad": "**2 – Sehr schwache / einfache Bedrohung**",
+      "Begegnungsrang": "Standard",
+      "Archetyp": "Ausweichend",
+      "Elementare Eigenschaft": "**Dunkelheit**",
+      "Größenordnung": "Klein; meist ungefähr brust- bis schulterhoch im Vergleich zu einem erwachsenen Menschen",
+      "Intelligenzniveau": "Voll intelligent; sprachfähig, lernfähig, improvisationsstark und zu koordinierter Gruppenarbeit fähig"
+    },
+    "raw_table_markdown": "| Kerndaten | Angabe |\n|---|---|\n| Kreaturenart | Humanoid – Goblin |\n| Einordnung | Weltbewohner / Gegnerprofil |\n| Ursprüngliche Herkunft | Caldria – Ostmarken und Ashkarim – Tiefenbrunnen |\n| Bekanntes Vorkommen | Auf allen vier Kontinenten; besonders Grenzregionen, große Städte, alte Ruinen, aufgegebene Bergwerke und unterirdische Anlagen |\n| Herausforderungsgrad | **2 – Sehr schwache / einfache Bedrohung** |\n| Begegnungsrang | Standard |\n| Archetyp | Ausweichend |\n| Elementare Eigenschaft | **Dunkelheit** |\n| Größenordnung | Klein; meist ungefähr brust- bis schulterhoch im Vergleich zu einem erwachsenen Menschen |\n| Intelligenzniveau | Voll intelligent; sprachfähig, lernfähig, improvisationsstark und zu koordinierter Gruppenarbeit fähig |"
+  },
+  "action_overview": {
+    "headers": [
+      "Nr.",
+      "Aktion",
+      "Typ",
+      "Grundfunktion"
+    ],
+    "actions": [
+      {
+        "number": 1,
+        "name": "Schrottklinge",
+        "type": "Angriff",
+        "base_function": "Zuverlässiger körperlicher Nahkampfangriff.",
+        "id": "goblin-overview-a01-schrottklinge",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "1",
+          "Aktion": "Schrottklinge",
+          "Typ": "Angriff",
+          "Grundfunktion": "Zuverlässiger körperlicher Nahkampfangriff."
+        }
+      },
+      {
+        "number": 2,
+        "name": "Schattenwurf",
+        "type": "Elementarangriff",
+        "base_function": "Kurzer Dunkelheitsangriff auf Distanz gegen Magieverteidigung.",
+        "id": "goblin-overview-a02-schattenwurf",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "2",
+          "Aktion": "Schattenwurf",
+          "Typ": "Elementarangriff",
+          "Grundfunktion": "Kurzer Dunkelheitsangriff auf Distanz gegen Magieverteidigung."
+        }
+      },
+      {
+        "number": 3,
+        "name": "Lückenstich",
+        "type": "Angriff / Gruppe",
+        "base_function": "Nur nutzbar, wenn ein anderer kampffähiger Goblin das Ziel bindet; erhält +1 auf den Angriffswurf.",
+        "id": "goblin-overview-a03-lueckenstich",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "3",
+          "Aktion": "Lückenstich",
+          "Typ": "Angriff / Gruppe",
+          "Grundfunktion": "Nur nutzbar, wenn ein anderer kampffähiger Goblin das Ziel bindet; erhält +1 auf den Angriffswurf."
+        }
+      }
+    ]
+  },
+  "shared_action_details": [],
+  "lore_and_rules": [
+    {
+      "title": "Überblick",
+      "id": "ueberblick",
+      "markdown": "Der **Goblin** ist ein einfacher, beweglicher Gegner, dessen eigentliche Gefahr selten in einem einzelnen Kämpfer liegt. Allein verlässt er sich auf schnelle Bewegungen, improvisierte Waffen, kurze Distanzangriffe und das Ausnutzen von Deckung. In Gruppen werden Goblins deutlich gefährlicher, weil sie Gegner einkreisen, freie Winkel schaffen und die Aufmerksamkeit eines Ziels zwischen mehreren Angreifern aufteilen.\n\nGoblins sind keine wilden Tiere und keine gedankenlosen Monster. Sie erkennen ungünstige Situationen, ziehen sich zurück, verhandeln, legen Hinterhalte, benutzen Werkzeuge und können sich an die Taktik einer Gruppe anpassen. Ein Goblin, der als Gegner auftritt, besitzt daher gewöhnlich einen konkreten Grund für den Konflikt: Beute, Auftrag, Verteidigung, Fehde, Hunger, politische Interessen oder die Kontrolle über einen wichtigen Ort.\n\nDieses Gegnerprofil trägt eine schwache **Dunkelheitsprägung**, wie sie besonders bei einzelnen Goblins vorkommen kann, die lange in den Tiefenbrunnen, alten Bergwerken, dunklen Ruinen oder anderen stark verschatteten Orten leben. Die Prägung verdunkelt die Konturen des Körpers, verbessert die Orientierung bei schwachem Licht und erlaubt einen einfachen Schattenangriff. Sie macht den Goblin jedoch nicht unsichtbar und ersetzt keine normale Tarnung.",
+      "tables": [],
+      "source": {
+        "line_start": 41,
+        "line_end": 48
+      }
+    },
+    {
+      "title": "Erscheinungsbild und Anatomie",
+      "id": "erscheinungsbild-und-anatomie",
+      "markdown": "Goblins sind klein, leicht und beweglich. Ihre Körper sind schmal und sehnig, die Arme verhältnismäßig lang, Hände und Finger kräftig und geschickt. Große bewegliche Ohren reagieren deutlich auf Geräusche und Stimmung, während die großen Augen auch bei schwachem Licht viele Bewegungen erfassen.\n\nDie Haut kann grün, grau, braun, gelblich oder olivfarben sein. Goblins aus den ashkarischen Tiefenbrunnen besitzen häufiger blasse, gelbliche, sehr dunkle oder beinahe schwarze Hauttöne; metallische Verfärbungen durch Erzstaub, Öl und alte Maschinenumgebungen kommen ebenfalls vor.\n\nBei einem dunkelheitsgeprägten Goblin wirken natürliche Schatten an Armen, Hals, Ohren und Gesicht ungewöhnlich tief. Bewegungen hinterlassen für einen Augenblick eine dunklere Kontur, als würde das Licht dem Körper minimal verzögert folgen. In völliger Ruhe ist dieser Effekt kaum sichtbar. Unter Stress, bei schneller Bewegung oder beim Einsatz des **Schattenwurfs** wird er deutlicher.\n\nDie Prägung besitzt auch einen Nachteil: stark gebündelte Lichtmagie stört diese natürliche Schattenbindung und reizt Augen und Haut. Dadurch entsteht die elementare Lichtverwundbarkeit des Profils.",
+      "tables": [],
+      "source": {
+        "line_start": 49,
+        "line_end": 58
+      }
+    },
+    {
+      "title": "Herkunft und Entstehung",
+      "id": "herkunft-und-entstehung",
+      "markdown": "Die ursprünglichen Heimatregionen der Goblins liegen in den **caldrischen Ostmarken** und den **ashkarischen Tiefenbrunnen**. Von dort verbreiteten sich goblinische Sippen, Händler, Kundschafter, Handwerker und Reisende über alle vier Kontinente.\n\nDie Dunkelheitsprägung dieses Gegnerprofils ist keine eigene Goblin-Unterart. Sie kann bei Goblins entstehen, die über lange Zeit in stark verschatteten oder ätherisch von Dunkelheit beeinflussten Umgebungen leben. Besonders die Tiefenbrunnen bieten mit ihren tiefen Schächten, alten Maschinenhallen, dunklen Seitenkammern und nur punktuell beleuchteten Siedlungsbereichen geeignete Bedingungen.\n\nAuch einzelne Goblins aus alten Ruinen oder aufgegebenen Bergwerken können eine ähnliche Prägung entwickeln. Die Veränderung ist dabei eher eine schwache elementare Anpassung als eine vollständige Verwandlung.",
+      "tables": [],
+      "source": {
+        "line_start": 59,
+        "line_end": 66
+      }
+    },
+    {
+      "title": "Vorkommen und Lebensraum",
+      "id": "vorkommen-und-lebensraum",
+      "markdown": "Goblins kommen auf allen vier Kontinenten vor. Besonders häufig findet man sie in:\n\n- Grenzregionen und wechselnden Herrschaftsgebieten,\n- großen Städten und Handelsorten,\n- alten Ruinen,\n- aufgegebenen Bergwerken,\n- unterirdischen Anlagen,\n- improvisierten Werkstätten,\n- verlassenen Befestigungen,\n- Karawanenlagern und temporären Siedlungen.\n\nEin feindlicher Goblintrupp bevorzugt Orte, an denen er Gelände nutzen kann. Enge Durchgänge, Geröll, Kisten, Werkbänke, Mauern, Brücken und Seitengänge ermöglichen es kleinen Kämpfern, größere Gegner auszumanövrieren.\n\nDunkelheitsgeprägte Goblins wählen häufig schlecht beleuchtete Bereiche, weil ihre Sinne und Schattenprägung dort am angenehmsten funktionieren. Sie benötigen Dunkelheit jedoch nicht zum Überleben und können auch bei Tageslicht kämpfen.",
+      "tables": [],
+      "source": {
+        "line_start": 67,
+        "line_end": 83
+      }
+    },
+    {
+      "title": "Verhalten und Lebensweise",
+      "id": "verhalten-und-lebensweise",
+      "markdown": "Goblins reagieren stark auf praktische Umstände. Ein Gegner, der allein unterlegen ist, wird selten aus Stolz bis zum Tod kämpfen. Er sucht einen Fluchtweg, versucht Zeit zu gewinnen, ruft Verbündete oder bietet Informationen, Gegenstände oder einen Handel an.\n\nIn Gruppen handeln Goblins wesentlich selbstbewusster. Sie wechseln Positionen, greifen dasselbe Ziel aus verschiedenen Winkeln an und versuchen, einzelne Gegner von ihren Gefährten zu trennen. Dabei folgen sie nicht zwingend einer starren militärischen Formation. Ihre Zusammenarbeit wirkt häufig improvisiert, weil jeder Goblin auf die Bewegung der anderen reagiert.\n\nViele Goblins nutzen beschädigte, reparierte oder aus Restmaterial zusammengesetzte Ausrüstung. Eine Schrottklinge kann aus einem abgebrochenen Werkzeug, einem gekürzten Säbel oder einer geschärften Metallplatte bestehen. Wichtig ist nicht, ob eine Waffe elegant aussieht, sondern ob sie zuverlässig funktioniert.",
+      "tables": [],
+      "source": {
+        "line_start": 84,
+        "line_end": 91
+      }
+    },
+    {
+      "title": "Spuren und Vorzeichen",
+      "id": "spuren-und-vorzeichen",
+      "markdown": "Hinweise auf eine feindliche Goblingruppe können sein:\n\n- kleine, leichte Fußspuren mit häufigen Richtungswechseln,\n- verschobene Kisten oder improvisierte Trittstufen,\n- reparierte Fallen oder Mechanismen, die eigentlich unbrauchbar wirkten,\n- Draht, Schnüre, Metallreste und wiederverwendete Nägel,\n- versteckte Beobachtungslöcher in Türen, Wänden oder Barrikaden,\n- kurze Markierungen an Wänden, die nur aus wenigen Strichen bestehen,\n- absichtlich schlecht platzierte Gegenstände, die einen Weg vorgeben sollen,\n- mehrere kleine Lagerstellen statt eines einzigen großen Feuers,\n- ungewöhnlich tiefe Schatten oder kurze dunkle Schlieren bei dunkelheitsgeprägten Goblins.",
+      "tables": [],
+      "source": {
+        "line_start": 92,
+        "line_end": 105
+      }
+    },
+    {
+      "title": "Beziehung zu Bewohnern und Kulturen",
+      "id": "beziehung-zu-bewohnern-und-kulturen",
+      "markdown": "Goblins sind selbst Bewohner und Kulturschaffende Aetheryns. Ein Kampf gegen Goblins bedeutet deshalb nicht automatisch einen Kampf gegen eine „Monsterart“.\n\nFeindliche Gruppen können aus Plünderern, Söldnern, Schmugglern, Ruinenbesetzern, verzweifelten Flüchtlingen, kriminellen Banden oder Verteidigern eines umkämpften Ortes bestehen. Ebenso können Goblins Verbündete, Händler, Auftraggeber, Kundschafter oder Mitglieder derselben Siedlung wie die Spielercharaktere sein.\n\nDie Spielleitung sollte deshalb nach Möglichkeit einen **Konfliktgrund** festlegen. Selbst bei einer einfachen Zufallsbegegnung macht es einen Unterschied, ob die Goblins Beute suchen, einen Auftrag erfüllen, einen Durchgang verteidigen oder lediglich glauben, die Gruppe sei zuerst feindselig.",
+      "tables": [],
+      "source": {
+        "line_start": 106,
+        "line_end": 113
+      }
+    },
+    {
+      "title": "Kampfverhalten",
+      "id": "kampfverhalten",
+      "markdown": "Ein Goblin eröffnet eine Begegnung bevorzugt aus einer günstigen Position. Auf mittlere Distanz nutzt er den **Schattenwurf**, um Gegner zu zwingen, Deckung aufzugeben oder näherzukommen. Wird er im Nahkampf gebunden, verwendet er die **Schrottklinge**.\n\nSobald ein anderer Goblin dasselbe Ziel erreicht, wird der **Lückenstich** zur bevorzugten Option. Diese Aktion verursacht nicht automatisch mehr Schaden als die Schrottklinge, trifft aber durch den gemeinsam erzeugten Druck etwas zuverlässiger.\n\nGoblins konzentrieren sich nur dann längere Zeit auf ein einzelnes Ziel, wenn sie einen klaren Vorteil sehen. Wird ungefähr die Hälfte ihrer Gruppe ausgeschaltet oder fällt ein einzelner Goblin unter etwa ein Viertel seiner maximalen LP, versucht er normalerweise, Deckung, Flucht oder Verhandlung zu nutzen, sofern sein Auftrag keinen Rückzug verhindert.",
+      "tables": [],
+      "source": {
+        "line_start": 114,
+        "line_end": 121
+      }
+    },
+    {
+      "title": "Mechanische Grundidentität",
+      "id": "mechanische-grundidentitaet",
+      "markdown": "**LP-Hauptattribut:** Stärke (ST)  \n**LP-Sekundärattribut:** Willenskraft (WI)  \n**Bonusprofil:** Beweglichkeit, Geschicklichkeit, Kreativität und Ausweichen tragen die goblinische Kampfidentität. Stärke bleibt wegen des kleinen Körperbaus vergleichsweise niedrig.  \n**Offensivprofil:** Einfacher Nah- und Kurzdistanzkämpfer. Die Schrottklinge liegt über die Stufen hinweg ungefähr bei `0,49–0,51 GE`. Der Schattenwurf liegt ungefähr bei `0,45–0,50 GE`. Der gruppengebundene Lückenstich liegt durch seine etwas höhere Trefferchance ungefähr bei `0,51–0,54 GE`.  \n**Defensivprofil:** Ausweichender HG-2-Standardgegner mit unterdurchschnittlichen LP und niedriger fester Verteidigung, dafür erhöhtem Ausweichen. Die 10-%-Dunkelheitsresistenz ist bewusst klein und wird durch die 10-%-Lichtverwundbarkeit gespiegelt.  \n**Bewegungsprofil:** Land 10 m. Goblins sind flink, erhalten aber keine kostenlose Zusatzbewegung.  \n**Elementprofil:** **Dunkelheit.** 10 % Resistenz gegen Dunkelheit und 10 % Verwundbarkeit gegen Licht. Die Prägung erlaubt den Schattenwurf und unterstützt die Orientierung in schwachem Licht, erzeugt jedoch keine Unsichtbarkeit.  \n**Aktionsanzahl:** 3 unterschiedliche Kampfoptionen.  \n**Phasenprofil:** Kein Phasenwechsel.",
+      "tables": [],
+      "source": {
+        "line_start": 122,
+        "line_end": 133
+      }
+    },
+    {
+      "title": "Elementare Besonderheiten",
+      "id": "elementare-besonderheiten",
+      "markdown": "- **Dunkelheit – 10 % Resistenz:** Die elementare Prägung bindet einen Teil eintreffender Dunkelheitsenergie an die eigenen Schatten. Dunkelheitsschaden wird nach den normalen Regeln um **10 % reduziert**.\n- **Licht – 10 % Verwundbarkeit:** Starke Lichtenergie stört die Schattenbindung, reizt die großen Augen und hebt die dunkelheitsgeprägten Konturen schlagartig auf. Der Goblin erleidet **10 % zusätzlichen Lichtschaden**.\n- **Schattenangepasste Wahrnehmung:** Der Goblin kann sich in schwachem Licht und gewöhnlicher Dunkelheit gut orientieren. Diese Eigenschaft verleiht **keine automatische Unsichtbarkeit, keinen pauschalen Vorteil und keinen zusätzlichen Angriff**.",
+      "tables": [],
+      "source": {
+        "line_start": 134,
+        "line_end": 139
+      }
+    },
+    {
+      "title": "Aktionsübersicht",
+      "id": "aktionsuebersicht",
+      "markdown": "| Nr. | Aktion | Typ | Grundfunktion |\n|---:|---|---|---|\n| 1 | Schrottklinge | Angriff | Zuverlässiger körperlicher Nahkampfangriff. |\n| 2 | Schattenwurf | Elementarangriff | Kurzer Dunkelheitsangriff auf Distanz gegen Magieverteidigung. |\n| 3 | Lückenstich | Angriff / Gruppe | Nur nutzbar, wenn ein anderer kampffähiger Goblin das Ziel bindet; erhält +1 auf den Angriffswurf. |\n\n\n---",
+      "tables": [
+        {
+          "headers": [
+            "Nr.",
+            "Aktion",
+            "Typ",
+            "Grundfunktion"
+          ],
+          "rows": [
+            {
+              "Nr.": "1",
+              "Aktion": "Schrottklinge",
+              "Typ": "Angriff",
+              "Grundfunktion": "Zuverlässiger körperlicher Nahkampfangriff."
+            },
+            {
+              "Nr.": "2",
+              "Aktion": "Schattenwurf",
+              "Typ": "Elementarangriff",
+              "Grundfunktion": "Kurzer Dunkelheitsangriff auf Distanz gegen Magieverteidigung."
+            },
+            {
+              "Nr.": "3",
+              "Aktion": "Lückenstich",
+              "Typ": "Angriff / Gruppe",
+              "Grundfunktion": "Nur nutzbar, wenn ein anderer kampffähiger Goblin das Ziel bindet; erhält +1 auf den Angriffswurf."
+            }
+          ],
+          "raw_markdown": "| Nr. | Aktion | Typ | Grundfunktion |\n|---:|---|---|---|\n| 1 | Schrottklinge | Angriff | Zuverlässiger körperlicher Nahkampfangriff. |\n| 2 | Schattenwurf | Elementarangriff | Kurzer Dunkelheitsangriff auf Distanz gegen Magieverteidigung. |\n| 3 | Lückenstich | Angriff / Gruppe | Nur nutzbar, wenn ein anderer kampffähiger Goblin das Ziel bindet; erhält +1 auf den Angriffswurf. |"
+        }
+      ],
+      "source": {
+        "line_start": 140,
+        "line_end": 150
+      }
+    }
+  ],
+  "levels": [
+    {
+      "level": 1,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+0"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "115",
+          "physische_verteidigung": "6",
+          "magieverteidigung": "5",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m"
+        },
+        "raw_fields": {
+          "Maximale LP": "115",
+          "Physische Verteidigung": "6",
+          "Magieverteidigung": "5",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+0) + ST-Bonus (+0)) × 10) + ((WI-Modifikator (+1) + WI-Bonus (+0)) × 5) + (1 × 10) = 115 LP",
+        "markdown": "`100 + ((ST-Modifikator (+0) + ST-Bonus (+0)) × 10) + ((WI-Modifikator (+1) + WI-Bonus (+0)) × 5) + (1 × 10) = 115 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff",
+          "Reichweite",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Schrottklinge",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+4) + BW-Bonus (+4)",
+            "range": "Nah",
+            "damage_effect": "4W10 + 2 + ST-Modifikator (+0) + ST-Bonus (+0)",
+            "damage_type": "Hieb oder Stich",
+            "defense": "Physische Verteidigung",
+            "avg_raw_damage": "24",
+            "avg_hit_damage": "16",
+            "avg_expected_effect": "11",
+            "ge_share": "0.49",
+            "notes": "Schadensart wird beim Ausrüsten der konkreten improvisierten Klinge festgelegt.",
+            "avg_raw_damage_value": 24.0,
+            "avg_hit_damage_value": 16.0,
+            "ge_share_value": 0.49,
+            "id": "goblin-l01-a01-schrottklinge",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Schrottklinge",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+4) + BW-Bonus (+4)",
+              "Reichweite": "Nah",
+              "Schaden / Wirkung": "4W10 + 2 + ST-Modifikator (+0) + ST-Bonus (+0)",
+              "Schadensart": "Hieb oder Stich",
+              "Verteidigung": "Physische Verteidigung",
+              "Ø Rohschaden": "24",
+              "Ø Treffer-Endschaden": "16",
+              "Ø Erwartungswirkung": "11",
+              "GE-Anteil": "0.49",
+              "Zusatz": "Schadensart wird beim Ausrüsten der konkreten improvisierten Klinge festgelegt."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Schattenwurf",
+            "cost": "1 Aktion",
+            "type": "elementarer Angriff",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+4) + BW-Bonus (+4)",
+            "range": "8 m",
+            "damage_effect": "3W6 + BW-Modifikator (+4) + BW-Bonus (+4)",
+            "damage_type": "Dunkelheit",
+            "defense": "Magieverteidigung",
+            "avg_raw_damage": "18,5",
+            "avg_hit_damage": "16,5",
+            "avg_expected_effect": "11,3",
+            "ge_share": "0.50",
+            "notes": "Angeborene Ausprägung der Dunkelheitsprägung; kein Zauber und kein Mana-Kosten.",
+            "avg_raw_damage_value": 18.5,
+            "avg_hit_damage_value": 16.5,
+            "ge_share_value": 0.5,
+            "id": "goblin-l01-a02-schattenwurf",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Schattenwurf",
+              "Kosten": "1 Aktion",
+              "Typ": "elementarer Angriff",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+4) + BW-Bonus (+4)",
+              "Reichweite": "8 m",
+              "Schaden / Wirkung": "3W6 + BW-Modifikator (+4) + BW-Bonus (+4)",
+              "Schadensart": "Dunkelheit",
+              "Verteidigung": "Magieverteidigung",
+              "Ø Rohschaden": "18,5",
+              "Ø Treffer-Endschaden": "16,5",
+              "Ø Erwartungswirkung": "11,3",
+              "GE-Anteil": "0.50",
+              "Zusatz": "Angeborene Ausprägung der Dunkelheitsprägung; kein Zauber und kein Mana-Kosten."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Lückenstich",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Gruppe",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+4) + BW-Bonus (+4) + 1",
+            "range": "Nah",
+            "damage_effect": "4W10 + 2 + ST-Modifikator (+0) + ST-Bonus (+0)",
+            "damage_type": "Stich",
+            "defense": "Physische Verteidigung",
+            "avg_raw_damage": "24",
+            "avg_hit_damage": "16",
+            "avg_expected_effect": "11,6",
+            "ge_share": "0.51",
+            "notes": "Nur nutzbar, wenn ein anderer kampffähiger Goblin höchstens 2 m vom Ziel entfernt ist.",
+            "avg_raw_damage_value": 24.0,
+            "avg_hit_damage_value": 16.0,
+            "ge_share_value": 0.51,
+            "id": "goblin-l01-a03-lueckenstich",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Lückenstich",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Gruppe",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+4) + BW-Bonus (+4) + 1",
+              "Reichweite": "Nah",
+              "Schaden / Wirkung": "4W10 + 2 + ST-Modifikator (+0) + ST-Bonus (+0)",
+              "Schadensart": "Stich",
+              "Verteidigung": "Physische Verteidigung",
+              "Ø Rohschaden": "24",
+              "Ø Treffer-Endschaden": "16",
+              "Ø Erwartungswirkung": "11,6",
+              "GE-Anteil": "0.51",
+              "Zusatz": "Nur nutzbar, wenn ein anderer kampffähiger Goblin höchstens 2 m vom Ziel entfernt ist."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "goblin-l01-schrottklinge",
+          "name": "Schrottklinge",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+4) + BW-Bonus (+4)`",
+          "damage": "`4W10 + 2 + ST-Modifikator (+0) + ST-Bonus (+0)`",
+          "damage_type": "Hieb oder Stich, abhängig von der konkreten improvisierten Waffe.",
+          "rule_effect": "Normaler Nahkampfangriff ohne zusätzlichen Zustand oder kostenlose Folgeaktion.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+4) + BW-Bonus (+4)`",
+            "Schaden": "`4W10 + 2 + ST-Modifikator (+0) + ST-Bonus (+0)`",
+            "Schadensart": "Hieb oder Stich, abhängig von der konkreten improvisierten Waffe.",
+            "Regelwirkung": "Normaler Nahkampfangriff ohne zusätzlichen Zustand oder kostenlose Folgeaktion."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 192,
+            "line_end": 201
+          }
+        },
+        {
+          "id": "goblin-l01-schattenwurf",
+          "name": "Schattenwurf",
+          "type": "Elementarer Angriff",
+          "cost": "1 Aktion",
+          "range": "8 m",
+          "attack_roll": "`W20 + BW-Modifikator (+4) + BW-Bonus (+4)`",
+          "damage": "`3W6 + BW-Modifikator (+4) + BW-Bonus (+4)` Dunkelheitsschaden",
+          "defense": "Magieverteidigung",
+          "rule_effect": "Der Goblin zieht für einen Augenblick Schatten an Hand, Waffe oder einem kleinen geworfenen Gegenstand zusammen und schleudert die verdichtete Dunkelheit auf das Ziel. Der Angriff besitzt keine automatische Blindheit, Furcht oder Sichtblockade.",
+          "element_rule": "Es handelt sich um eine angeborene Wirkung der Dunkelheitsprägung, nicht um einen Zauber. Der Goblin zahlt dafür kein Mana.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Elementarer Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "8 m",
+            "Angriffswurf": "`W20 + BW-Modifikator (+4) + BW-Bonus (+4)`",
+            "Schaden": "`3W6 + BW-Modifikator (+4) + BW-Bonus (+4)` Dunkelheitsschaden",
+            "Verteidigung": "Magieverteidigung",
+            "Regelwirkung": "Der Goblin zieht für einen Augenblick Schatten an Hand, Waffe oder einem kleinen geworfenen Gegenstand zusammen und schleudert die verdichtete Dunkelheit auf das Ziel. Der Angriff besitzt keine automatische Blindheit, Furcht oder Sichtblockade.",
+            "Elementregel": "Es handelt sich um eine angeborene Wirkung der Dunkelheitsprägung, nicht um einen Zauber. Der Goblin zahlt dafür kein Mana."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 202,
+            "line_end": 212
+          }
+        },
+        {
+          "id": "goblin-l01-lueckenstich",
+          "name": "Lückenstich",
+          "type": "Körperlicher Angriff / Gruppe",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "requirement": "Ein anderer kampffähiger Goblin befindet sich höchstens **2 m vom Ziel** entfernt.",
+          "attack_roll": "`W20 + BW-Modifikator (+4) + BW-Bonus (+4) + 1`",
+          "damage": "`4W10 + 2 + ST-Modifikator (+0) + ST-Bonus (+0)` Stichschaden",
+          "rule_effect": "Der Goblin nutzt die Ablenkung durch einen Verbündeten und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Der Bonus verursacht keinen zusätzlichen Schaden und erzeugt keine Folgeaktion.",
+          "stacking": "Mehrere Goblins können den Lückenstich in derselben Runde einsetzen, sofern jeder die Voraussetzung erfüllt. Der Bonus bleibt stets **+1** und steigt nicht mit der Zahl angrenzender Goblins.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Gruppe",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Voraussetzung": "Ein anderer kampffähiger Goblin befindet sich höchstens **2 m vom Ziel** entfernt.",
+            "Angriffswurf": "`W20 + BW-Modifikator (+4) + BW-Bonus (+4) + 1`",
+            "Schaden": "`4W10 + 2 + ST-Modifikator (+0) + ST-Bonus (+0)` Stichschaden",
+            "Regelwirkung": "Der Goblin nutzt die Ablenkung durch einen Verbündeten und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Der Bonus verursacht keinen zusätzlichen Schaden und erzeugt keine Folgeaktion.",
+            "Stapelung": "Mehrere Goblins können den Lückenstich in derselben Runde einsetzen, sofern jeder die Voraussetzung erfüllt. Der Bonus bleibt stets **+1** und steigt nicht mit der Zahl angrenzender Goblins."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 213,
+            "line_end": 223
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "**10 % Verwundbarkeit**",
+            "**10 % Resistenz**"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 151,
+        "line_end": 232
+      }
+    },
+    {
+      "level": 5,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 11,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "11",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 9,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "9",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 11,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "11",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "160",
+          "physische_verteidigung": "8",
+          "magieverteidigung": "7",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m"
+        },
+        "raw_fields": {
+          "Maximale LP": "160",
+          "Physische Verteidigung": "8",
+          "Magieverteidigung": "7",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+0) + ST-Bonus (+0)) × 10) + ((WI-Modifikator (+1) + WI-Bonus (+1)) × 5) + (5 × 10) = 160 LP",
+        "markdown": "`100 + ((ST-Modifikator (+0) + ST-Bonus (+0)) × 10) + ((WI-Modifikator (+1) + WI-Bonus (+1)) × 5) + (5 × 10) = 160 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff",
+          "Reichweite",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Schrottklinge",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+4) + BW-Bonus (+5)",
+            "range": "Nah",
+            "damage_effect": "5W10 + 2 + ST-Modifikator (+0) + ST-Bonus (+0)",
+            "damage_type": "Hieb oder Stich",
+            "defense": "Physische Verteidigung",
+            "avg_raw_damage": "29,5",
+            "avg_hit_damage": "20,5",
+            "avg_expected_effect": "14,1",
+            "ge_share": "0.51",
+            "notes": "Schadensart wird beim Ausrüsten der konkreten improvisierten Klinge festgelegt.",
+            "avg_raw_damage_value": 29.5,
+            "avg_hit_damage_value": 20.5,
+            "ge_share_value": 0.51,
+            "id": "goblin-l05-a01-schrottklinge",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Schrottklinge",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+4) + BW-Bonus (+5)",
+              "Reichweite": "Nah",
+              "Schaden / Wirkung": "5W10 + 2 + ST-Modifikator (+0) + ST-Bonus (+0)",
+              "Schadensart": "Hieb oder Stich",
+              "Verteidigung": "Physische Verteidigung",
+              "Ø Rohschaden": "29,5",
+              "Ø Treffer-Endschaden": "20,5",
+              "Ø Erwartungswirkung": "14,1",
+              "GE-Anteil": "0.51",
+              "Zusatz": "Schadensart wird beim Ausrüsten der konkreten improvisierten Klinge festgelegt."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Schattenwurf",
+            "cost": "1 Aktion",
+            "type": "elementarer Angriff",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+4) + BW-Bonus (+5)",
+            "range": "8 m",
+            "damage_effect": "4W6 + BW-Modifikator (+4) + BW-Bonus (+5)",
+            "damage_type": "Dunkelheit",
+            "defense": "Magieverteidigung",
+            "avg_raw_damage": "23",
+            "avg_hit_damage": "19",
+            "avg_expected_effect": "13,1",
+            "ge_share": "0.47",
+            "notes": "Angeborene Ausprägung der Dunkelheitsprägung; kein Zauber und kein Mana-Kosten.",
+            "avg_raw_damage_value": 23.0,
+            "avg_hit_damage_value": 19.0,
+            "ge_share_value": 0.47,
+            "id": "goblin-l05-a02-schattenwurf",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Schattenwurf",
+              "Kosten": "1 Aktion",
+              "Typ": "elementarer Angriff",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+4) + BW-Bonus (+5)",
+              "Reichweite": "8 m",
+              "Schaden / Wirkung": "4W6 + BW-Modifikator (+4) + BW-Bonus (+5)",
+              "Schadensart": "Dunkelheit",
+              "Verteidigung": "Magieverteidigung",
+              "Ø Rohschaden": "23",
+              "Ø Treffer-Endschaden": "19",
+              "Ø Erwartungswirkung": "13,1",
+              "GE-Anteil": "0.47",
+              "Zusatz": "Angeborene Ausprägung der Dunkelheitsprägung; kein Zauber und kein Mana-Kosten."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Lückenstich",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Gruppe",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+4) + BW-Bonus (+5) + 1",
+            "range": "Nah",
+            "damage_effect": "5W10 + 2 + ST-Modifikator (+0) + ST-Bonus (+0)",
+            "damage_type": "Stich",
+            "defense": "Physische Verteidigung",
+            "avg_raw_damage": "29,5",
+            "avg_hit_damage": "20,5",
+            "avg_expected_effect": "14,8",
+            "ge_share": "0.54",
+            "notes": "Nur nutzbar, wenn ein anderer kampffähiger Goblin höchstens 2 m vom Ziel entfernt ist.",
+            "avg_raw_damage_value": 29.5,
+            "avg_hit_damage_value": 20.5,
+            "ge_share_value": 0.54,
+            "id": "goblin-l05-a03-lueckenstich",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Lückenstich",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Gruppe",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+4) + BW-Bonus (+5) + 1",
+              "Reichweite": "Nah",
+              "Schaden / Wirkung": "5W10 + 2 + ST-Modifikator (+0) + ST-Bonus (+0)",
+              "Schadensart": "Stich",
+              "Verteidigung": "Physische Verteidigung",
+              "Ø Rohschaden": "29,5",
+              "Ø Treffer-Endschaden": "20,5",
+              "Ø Erwartungswirkung": "14,8",
+              "GE-Anteil": "0.54",
+              "Zusatz": "Nur nutzbar, wenn ein anderer kampffähiger Goblin höchstens 2 m vom Ziel entfernt ist."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "goblin-l05-schrottklinge",
+          "name": "Schrottklinge",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+4) + BW-Bonus (+5)`",
+          "damage": "`5W10 + 2 + ST-Modifikator (+0) + ST-Bonus (+0)`",
+          "damage_type": "Hieb oder Stich, abhängig von der konkreten improvisierten Waffe.",
+          "rule_effect": "Normaler Nahkampfangriff ohne zusätzlichen Zustand oder kostenlose Folgeaktion.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+4) + BW-Bonus (+5)`",
+            "Schaden": "`5W10 + 2 + ST-Modifikator (+0) + ST-Bonus (+0)`",
+            "Schadensart": "Hieb oder Stich, abhängig von der konkreten improvisierten Waffe.",
+            "Regelwirkung": "Normaler Nahkampfangriff ohne zusätzlichen Zustand oder kostenlose Folgeaktion."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 274,
+            "line_end": 283
+          }
+        },
+        {
+          "id": "goblin-l05-schattenwurf",
+          "name": "Schattenwurf",
+          "type": "Elementarer Angriff",
+          "cost": "1 Aktion",
+          "range": "8 m",
+          "attack_roll": "`W20 + BW-Modifikator (+4) + BW-Bonus (+5)`",
+          "damage": "`4W6 + BW-Modifikator (+4) + BW-Bonus (+5)` Dunkelheitsschaden",
+          "defense": "Magieverteidigung",
+          "rule_effect": "Der Goblin zieht für einen Augenblick Schatten an Hand, Waffe oder einem kleinen geworfenen Gegenstand zusammen und schleudert die verdichtete Dunkelheit auf das Ziel. Der Angriff besitzt keine automatische Blindheit, Furcht oder Sichtblockade.",
+          "element_rule": "Es handelt sich um eine angeborene Wirkung der Dunkelheitsprägung, nicht um einen Zauber. Der Goblin zahlt dafür kein Mana.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Elementarer Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "8 m",
+            "Angriffswurf": "`W20 + BW-Modifikator (+4) + BW-Bonus (+5)`",
+            "Schaden": "`4W6 + BW-Modifikator (+4) + BW-Bonus (+5)` Dunkelheitsschaden",
+            "Verteidigung": "Magieverteidigung",
+            "Regelwirkung": "Der Goblin zieht für einen Augenblick Schatten an Hand, Waffe oder einem kleinen geworfenen Gegenstand zusammen und schleudert die verdichtete Dunkelheit auf das Ziel. Der Angriff besitzt keine automatische Blindheit, Furcht oder Sichtblockade.",
+            "Elementregel": "Es handelt sich um eine angeborene Wirkung der Dunkelheitsprägung, nicht um einen Zauber. Der Goblin zahlt dafür kein Mana."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 284,
+            "line_end": 294
+          }
+        },
+        {
+          "id": "goblin-l05-lueckenstich",
+          "name": "Lückenstich",
+          "type": "Körperlicher Angriff / Gruppe",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "requirement": "Ein anderer kampffähiger Goblin befindet sich höchstens **2 m vom Ziel** entfernt.",
+          "attack_roll": "`W20 + BW-Modifikator (+4) + BW-Bonus (+5) + 1`",
+          "damage": "`5W10 + 2 + ST-Modifikator (+0) + ST-Bonus (+0)` Stichschaden",
+          "rule_effect": "Der Goblin nutzt die Ablenkung durch einen Verbündeten und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Der Bonus verursacht keinen zusätzlichen Schaden und erzeugt keine Folgeaktion.",
+          "stacking": "Mehrere Goblins können den Lückenstich in derselben Runde einsetzen, sofern jeder die Voraussetzung erfüllt. Der Bonus bleibt stets **+1** und steigt nicht mit der Zahl angrenzender Goblins.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Gruppe",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Voraussetzung": "Ein anderer kampffähiger Goblin befindet sich höchstens **2 m vom Ziel** entfernt.",
+            "Angriffswurf": "`W20 + BW-Modifikator (+4) + BW-Bonus (+5) + 1`",
+            "Schaden": "`5W10 + 2 + ST-Modifikator (+0) + ST-Bonus (+0)` Stichschaden",
+            "Regelwirkung": "Der Goblin nutzt die Ablenkung durch einen Verbündeten und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Der Bonus verursacht keinen zusätzlichen Schaden und erzeugt keine Folgeaktion.",
+            "Stapelung": "Mehrere Goblins können den Lückenstich in derselben Runde einsetzen, sofern jeder die Voraussetzung erfüllt. Der Bonus bleibt stets **+1** und steigt nicht mit der Zahl angrenzender Goblins."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 295,
+            "line_end": 305
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "**10 % Verwundbarkeit**",
+            "**10 % Resistenz**"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 233,
+        "line_end": 314
+      }
+    },
+    {
+      "level": 10,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "225",
+          "physische_verteidigung": "10",
+          "magieverteidigung": "9",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m"
+        },
+        "raw_fields": {
+          "Maximale LP": "225",
+          "Physische Verteidigung": "10",
+          "Magieverteidigung": "9",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+1) + ST-Bonus (+0)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+1)) × 5) + (10 × 10) = 225 LP",
+        "markdown": "`100 + ((ST-Modifikator (+1) + ST-Bonus (+0)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+1)) × 5) + (10 × 10) = 225 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff",
+          "Reichweite",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Schrottklinge",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+            "range": "Nah",
+            "damage_effect": "6W10 + 2 + ST-Modifikator (+1) + ST-Bonus (+0)",
+            "damage_type": "Hieb oder Stich",
+            "defense": "Physische Verteidigung",
+            "avg_raw_damage": "36",
+            "avg_hit_damage": "25",
+            "avg_expected_effect": "17,2",
+            "ge_share": "0.51",
+            "notes": "Schadensart wird beim Ausrüsten der konkreten improvisierten Klinge festgelegt.",
+            "avg_raw_damage_value": 36.0,
+            "avg_hit_damage_value": 25.0,
+            "ge_share_value": 0.51,
+            "id": "goblin-l10-a01-schrottklinge",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Schrottklinge",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+              "Reichweite": "Nah",
+              "Schaden / Wirkung": "6W10 + 2 + ST-Modifikator (+1) + ST-Bonus (+0)",
+              "Schadensart": "Hieb oder Stich",
+              "Verteidigung": "Physische Verteidigung",
+              "Ø Rohschaden": "36",
+              "Ø Treffer-Endschaden": "25",
+              "Ø Erwartungswirkung": "17,2",
+              "GE-Anteil": "0.51",
+              "Zusatz": "Schadensart wird beim Ausrüsten der konkreten improvisierten Klinge festgelegt."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Schattenwurf",
+            "cost": "1 Aktion",
+            "type": "elementarer Angriff",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+            "range": "8 m",
+            "damage_effect": "6W6 + BW-Modifikator (+5) + BW-Bonus (+4)",
+            "damage_type": "Dunkelheit",
+            "defense": "Magieverteidigung",
+            "avg_raw_damage": "30",
+            "avg_hit_damage": "24",
+            "avg_expected_effect": "16,5",
+            "ge_share": "0.49",
+            "notes": "Angeborene Ausprägung der Dunkelheitsprägung; kein Zauber und kein Mana-Kosten.",
+            "avg_raw_damage_value": 30.0,
+            "avg_hit_damage_value": 24.0,
+            "ge_share_value": 0.49,
+            "id": "goblin-l10-a02-schattenwurf",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Schattenwurf",
+              "Kosten": "1 Aktion",
+              "Typ": "elementarer Angriff",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+5) + BW-Bonus (+4)",
+              "Reichweite": "8 m",
+              "Schaden / Wirkung": "6W6 + BW-Modifikator (+5) + BW-Bonus (+4)",
+              "Schadensart": "Dunkelheit",
+              "Verteidigung": "Magieverteidigung",
+              "Ø Rohschaden": "30",
+              "Ø Treffer-Endschaden": "24",
+              "Ø Erwartungswirkung": "16,5",
+              "GE-Anteil": "0.49",
+              "Zusatz": "Angeborene Ausprägung der Dunkelheitsprägung; kein Zauber und kein Mana-Kosten."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Lückenstich",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Gruppe",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+5) + BW-Bonus (+4) + 1",
+            "range": "Nah",
+            "damage_effect": "6W10 + 2 + ST-Modifikator (+1) + ST-Bonus (+0)",
+            "damage_type": "Stich",
+            "defense": "Physische Verteidigung",
+            "avg_raw_damage": "36",
+            "avg_hit_damage": "25",
+            "avg_expected_effect": "18,1",
+            "ge_share": "0.54",
+            "notes": "Nur nutzbar, wenn ein anderer kampffähiger Goblin höchstens 2 m vom Ziel entfernt ist.",
+            "avg_raw_damage_value": 36.0,
+            "avg_hit_damage_value": 25.0,
+            "ge_share_value": 0.54,
+            "id": "goblin-l10-a03-lueckenstich",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Lückenstich",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Gruppe",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+5) + BW-Bonus (+4) + 1",
+              "Reichweite": "Nah",
+              "Schaden / Wirkung": "6W10 + 2 + ST-Modifikator (+1) + ST-Bonus (+0)",
+              "Schadensart": "Stich",
+              "Verteidigung": "Physische Verteidigung",
+              "Ø Rohschaden": "36",
+              "Ø Treffer-Endschaden": "25",
+              "Ø Erwartungswirkung": "18,1",
+              "GE-Anteil": "0.54",
+              "Zusatz": "Nur nutzbar, wenn ein anderer kampffähiger Goblin höchstens 2 m vom Ziel entfernt ist."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "goblin-l10-schrottklinge",
+          "name": "Schrottklinge",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+5) + BW-Bonus (+4)`",
+          "damage": "`6W10 + 2 + ST-Modifikator (+1) + ST-Bonus (+0)`",
+          "damage_type": "Hieb oder Stich, abhängig von der konkreten improvisierten Waffe.",
+          "rule_effect": "Normaler Nahkampfangriff ohne zusätzlichen Zustand oder kostenlose Folgeaktion.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+5) + BW-Bonus (+4)`",
+            "Schaden": "`6W10 + 2 + ST-Modifikator (+1) + ST-Bonus (+0)`",
+            "Schadensart": "Hieb oder Stich, abhängig von der konkreten improvisierten Waffe.",
+            "Regelwirkung": "Normaler Nahkampfangriff ohne zusätzlichen Zustand oder kostenlose Folgeaktion."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 356,
+            "line_end": 365
+          }
+        },
+        {
+          "id": "goblin-l10-schattenwurf",
+          "name": "Schattenwurf",
+          "type": "Elementarer Angriff",
+          "cost": "1 Aktion",
+          "range": "8 m",
+          "attack_roll": "`W20 + BW-Modifikator (+5) + BW-Bonus (+4)`",
+          "damage": "`6W6 + BW-Modifikator (+5) + BW-Bonus (+4)` Dunkelheitsschaden",
+          "defense": "Magieverteidigung",
+          "rule_effect": "Der Goblin zieht für einen Augenblick Schatten an Hand, Waffe oder einem kleinen geworfenen Gegenstand zusammen und schleudert die verdichtete Dunkelheit auf das Ziel. Der Angriff besitzt keine automatische Blindheit, Furcht oder Sichtblockade.",
+          "element_rule": "Es handelt sich um eine angeborene Wirkung der Dunkelheitsprägung, nicht um einen Zauber. Der Goblin zahlt dafür kein Mana.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Elementarer Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "8 m",
+            "Angriffswurf": "`W20 + BW-Modifikator (+5) + BW-Bonus (+4)`",
+            "Schaden": "`6W6 + BW-Modifikator (+5) + BW-Bonus (+4)` Dunkelheitsschaden",
+            "Verteidigung": "Magieverteidigung",
+            "Regelwirkung": "Der Goblin zieht für einen Augenblick Schatten an Hand, Waffe oder einem kleinen geworfenen Gegenstand zusammen und schleudert die verdichtete Dunkelheit auf das Ziel. Der Angriff besitzt keine automatische Blindheit, Furcht oder Sichtblockade.",
+            "Elementregel": "Es handelt sich um eine angeborene Wirkung der Dunkelheitsprägung, nicht um einen Zauber. Der Goblin zahlt dafür kein Mana."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 366,
+            "line_end": 376
+          }
+        },
+        {
+          "id": "goblin-l10-lueckenstich",
+          "name": "Lückenstich",
+          "type": "Körperlicher Angriff / Gruppe",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "requirement": "Ein anderer kampffähiger Goblin befindet sich höchstens **2 m vom Ziel** entfernt.",
+          "attack_roll": "`W20 + BW-Modifikator (+5) + BW-Bonus (+4) + 1`",
+          "damage": "`6W10 + 2 + ST-Modifikator (+1) + ST-Bonus (+0)` Stichschaden",
+          "rule_effect": "Der Goblin nutzt die Ablenkung durch einen Verbündeten und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Der Bonus verursacht keinen zusätzlichen Schaden und erzeugt keine Folgeaktion.",
+          "stacking": "Mehrere Goblins können den Lückenstich in derselben Runde einsetzen, sofern jeder die Voraussetzung erfüllt. Der Bonus bleibt stets **+1** und steigt nicht mit der Zahl angrenzender Goblins.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Gruppe",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Voraussetzung": "Ein anderer kampffähiger Goblin befindet sich höchstens **2 m vom Ziel** entfernt.",
+            "Angriffswurf": "`W20 + BW-Modifikator (+5) + BW-Bonus (+4) + 1`",
+            "Schaden": "`6W10 + 2 + ST-Modifikator (+1) + ST-Bonus (+0)` Stichschaden",
+            "Regelwirkung": "Der Goblin nutzt die Ablenkung durch einen Verbündeten und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Der Bonus verursacht keinen zusätzlichen Schaden und erzeugt keine Folgeaktion.",
+            "Stapelung": "Mehrere Goblins können den Lückenstich in derselben Runde einsetzen, sofern jeder die Voraussetzung erfüllt. Der Bonus bleibt stets **+1** und steigt nicht mit der Zahl angrenzender Goblins."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 377,
+            "line_end": 387
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "**10 % Verwundbarkeit**",
+            "**10 % Resistenz**"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 315,
+        "line_end": 396
+      }
+    },
+    {
+      "level": 15,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 11,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "11",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "290",
+          "physische_verteidigung": "12",
+          "magieverteidigung": "11",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m"
+        },
+        "raw_fields": {
+          "Maximale LP": "290",
+          "Physische Verteidigung": "12",
+          "Magieverteidigung": "11",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+1) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+2)) × 5) + (15 × 10) = 290 LP",
+        "markdown": "`100 + ((ST-Modifikator (+1) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+2) + WI-Bonus (+2)) × 5) + (15 × 10) = 290 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff",
+          "Reichweite",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Schrottklinge",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+5) + BW-Bonus (+5)",
+            "range": "Nah",
+            "damage_effect": "7W10 + 2 + ST-Modifikator (+1) + ST-Bonus (+1)",
+            "damage_type": "Hieb oder Stich",
+            "defense": "Physische Verteidigung",
+            "avg_raw_damage": "42,5",
+            "avg_hit_damage": "29,5",
+            "avg_expected_effect": "20,3",
+            "ge_share": "0.51",
+            "notes": "Schadensart wird beim Ausrüsten der konkreten improvisierten Klinge festgelegt.",
+            "avg_raw_damage_value": 42.5,
+            "avg_hit_damage_value": 29.5,
+            "ge_share_value": 0.51,
+            "id": "goblin-l15-a01-schrottklinge",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Schrottklinge",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+5) + BW-Bonus (+5)",
+              "Reichweite": "Nah",
+              "Schaden / Wirkung": "7W10 + 2 + ST-Modifikator (+1) + ST-Bonus (+1)",
+              "Schadensart": "Hieb oder Stich",
+              "Verteidigung": "Physische Verteidigung",
+              "Ø Rohschaden": "42,5",
+              "Ø Treffer-Endschaden": "29,5",
+              "Ø Erwartungswirkung": "20,3",
+              "GE-Anteil": "0.51",
+              "Zusatz": "Schadensart wird beim Ausrüsten der konkreten improvisierten Klinge festgelegt."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Schattenwurf",
+            "cost": "1 Aktion",
+            "type": "elementarer Angriff",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+5) + BW-Bonus (+5)",
+            "range": "8 m",
+            "damage_effect": "7W6 + BW-Modifikator (+5) + BW-Bonus (+5)",
+            "damage_type": "Dunkelheit",
+            "defense": "Magieverteidigung",
+            "avg_raw_damage": "34,5",
+            "avg_hit_damage": "26,5",
+            "avg_expected_effect": "18,2",
+            "ge_share": "0.46",
+            "notes": "Angeborene Ausprägung der Dunkelheitsprägung; kein Zauber und kein Mana-Kosten.",
+            "avg_raw_damage_value": 34.5,
+            "avg_hit_damage_value": 26.5,
+            "ge_share_value": 0.46,
+            "id": "goblin-l15-a02-schattenwurf",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Schattenwurf",
+              "Kosten": "1 Aktion",
+              "Typ": "elementarer Angriff",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+5) + BW-Bonus (+5)",
+              "Reichweite": "8 m",
+              "Schaden / Wirkung": "7W6 + BW-Modifikator (+5) + BW-Bonus (+5)",
+              "Schadensart": "Dunkelheit",
+              "Verteidigung": "Magieverteidigung",
+              "Ø Rohschaden": "34,5",
+              "Ø Treffer-Endschaden": "26,5",
+              "Ø Erwartungswirkung": "18,2",
+              "GE-Anteil": "0.46",
+              "Zusatz": "Angeborene Ausprägung der Dunkelheitsprägung; kein Zauber und kein Mana-Kosten."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Lückenstich",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Gruppe",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+5) + BW-Bonus (+5) + 1",
+            "range": "Nah",
+            "damage_effect": "7W10 + 2 + ST-Modifikator (+1) + ST-Bonus (+1)",
+            "damage_type": "Stich",
+            "defense": "Physische Verteidigung",
+            "avg_raw_damage": "42,5",
+            "avg_hit_damage": "29,5",
+            "avg_expected_effect": "21,3",
+            "ge_share": "0.53",
+            "notes": "Nur nutzbar, wenn ein anderer kampffähiger Goblin höchstens 2 m vom Ziel entfernt ist.",
+            "avg_raw_damage_value": 42.5,
+            "avg_hit_damage_value": 29.5,
+            "ge_share_value": 0.53,
+            "id": "goblin-l15-a03-lueckenstich",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Lückenstich",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Gruppe",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+5) + BW-Bonus (+5) + 1",
+              "Reichweite": "Nah",
+              "Schaden / Wirkung": "7W10 + 2 + ST-Modifikator (+1) + ST-Bonus (+1)",
+              "Schadensart": "Stich",
+              "Verteidigung": "Physische Verteidigung",
+              "Ø Rohschaden": "42,5",
+              "Ø Treffer-Endschaden": "29,5",
+              "Ø Erwartungswirkung": "21,3",
+              "GE-Anteil": "0.53",
+              "Zusatz": "Nur nutzbar, wenn ein anderer kampffähiger Goblin höchstens 2 m vom Ziel entfernt ist."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "goblin-l15-schrottklinge",
+          "name": "Schrottklinge",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+5) + BW-Bonus (+5)`",
+          "damage": "`7W10 + 2 + ST-Modifikator (+1) + ST-Bonus (+1)`",
+          "damage_type": "Hieb oder Stich, abhängig von der konkreten improvisierten Waffe.",
+          "rule_effect": "Normaler Nahkampfangriff ohne zusätzlichen Zustand oder kostenlose Folgeaktion.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+5) + BW-Bonus (+5)`",
+            "Schaden": "`7W10 + 2 + ST-Modifikator (+1) + ST-Bonus (+1)`",
+            "Schadensart": "Hieb oder Stich, abhängig von der konkreten improvisierten Waffe.",
+            "Regelwirkung": "Normaler Nahkampfangriff ohne zusätzlichen Zustand oder kostenlose Folgeaktion."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 438,
+            "line_end": 447
+          }
+        },
+        {
+          "id": "goblin-l15-schattenwurf",
+          "name": "Schattenwurf",
+          "type": "Elementarer Angriff",
+          "cost": "1 Aktion",
+          "range": "8 m",
+          "attack_roll": "`W20 + BW-Modifikator (+5) + BW-Bonus (+5)`",
+          "damage": "`7W6 + BW-Modifikator (+5) + BW-Bonus (+5)` Dunkelheitsschaden",
+          "defense": "Magieverteidigung",
+          "rule_effect": "Der Goblin zieht für einen Augenblick Schatten an Hand, Waffe oder einem kleinen geworfenen Gegenstand zusammen und schleudert die verdichtete Dunkelheit auf das Ziel. Der Angriff besitzt keine automatische Blindheit, Furcht oder Sichtblockade.",
+          "element_rule": "Es handelt sich um eine angeborene Wirkung der Dunkelheitsprägung, nicht um einen Zauber. Der Goblin zahlt dafür kein Mana.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Elementarer Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "8 m",
+            "Angriffswurf": "`W20 + BW-Modifikator (+5) + BW-Bonus (+5)`",
+            "Schaden": "`7W6 + BW-Modifikator (+5) + BW-Bonus (+5)` Dunkelheitsschaden",
+            "Verteidigung": "Magieverteidigung",
+            "Regelwirkung": "Der Goblin zieht für einen Augenblick Schatten an Hand, Waffe oder einem kleinen geworfenen Gegenstand zusammen und schleudert die verdichtete Dunkelheit auf das Ziel. Der Angriff besitzt keine automatische Blindheit, Furcht oder Sichtblockade.",
+            "Elementregel": "Es handelt sich um eine angeborene Wirkung der Dunkelheitsprägung, nicht um einen Zauber. Der Goblin zahlt dafür kein Mana."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 448,
+            "line_end": 458
+          }
+        },
+        {
+          "id": "goblin-l15-lueckenstich",
+          "name": "Lückenstich",
+          "type": "Körperlicher Angriff / Gruppe",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "requirement": "Ein anderer kampffähiger Goblin befindet sich höchstens **2 m vom Ziel** entfernt.",
+          "attack_roll": "`W20 + BW-Modifikator (+5) + BW-Bonus (+5) + 1`",
+          "damage": "`7W10 + 2 + ST-Modifikator (+1) + ST-Bonus (+1)` Stichschaden",
+          "rule_effect": "Der Goblin nutzt die Ablenkung durch einen Verbündeten und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Der Bonus verursacht keinen zusätzlichen Schaden und erzeugt keine Folgeaktion.",
+          "stacking": "Mehrere Goblins können den Lückenstich in derselben Runde einsetzen, sofern jeder die Voraussetzung erfüllt. Der Bonus bleibt stets **+1** und steigt nicht mit der Zahl angrenzender Goblins.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Gruppe",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Voraussetzung": "Ein anderer kampffähiger Goblin befindet sich höchstens **2 m vom Ziel** entfernt.",
+            "Angriffswurf": "`W20 + BW-Modifikator (+5) + BW-Bonus (+5) + 1`",
+            "Schaden": "`7W10 + 2 + ST-Modifikator (+1) + ST-Bonus (+1)` Stichschaden",
+            "Regelwirkung": "Der Goblin nutzt die Ablenkung durch einen Verbündeten und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Der Bonus verursacht keinen zusätzlichen Schaden und erzeugt keine Folgeaktion.",
+            "Stapelung": "Mehrere Goblins können den Lückenstich in derselben Runde einsetzen, sofern jeder die Voraussetzung erfüllt. Der Bonus bleibt stets **+1** und steigt nicht mit der Zahl angrenzender Goblins."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 459,
+            "line_end": 469
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "**10 % Verwundbarkeit**",
+            "**10 % Resistenz**"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 397,
+        "line_end": 478
+      }
+    },
+    {
+      "level": 20,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "355",
+          "physische_verteidigung": "14",
+          "magieverteidigung": "13",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m"
+        },
+        "raw_fields": {
+          "Maximale LP": "355",
+          "Physische Verteidigung": "14",
+          "Magieverteidigung": "13",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+2) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+2)) × 5) + (20 × 10) = 355 LP",
+        "markdown": "`100 + ((ST-Modifikator (+2) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+2)) × 5) + (20 × 10) = 355 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff",
+          "Reichweite",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Schrottklinge",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range": "Nah",
+            "damage_effect": "8W10 + 2 + ST-Modifikator (+2) + ST-Bonus (+1)",
+            "damage_type": "Hieb oder Stich",
+            "defense": "Physische Verteidigung",
+            "avg_raw_damage": "49",
+            "avg_hit_damage": "34",
+            "avg_expected_effect": "23,4",
+            "ge_share": "0.51",
+            "notes": "Schadensart wird beim Ausrüsten der konkreten improvisierten Klinge festgelegt.",
+            "avg_raw_damage_value": 49.0,
+            "avg_hit_damage_value": 34.0,
+            "ge_share_value": 0.51,
+            "id": "goblin-l20-a01-schrottklinge",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Schrottklinge",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite": "Nah",
+              "Schaden / Wirkung": "8W10 + 2 + ST-Modifikator (+2) + ST-Bonus (+1)",
+              "Schadensart": "Hieb oder Stich",
+              "Verteidigung": "Physische Verteidigung",
+              "Ø Rohschaden": "49",
+              "Ø Treffer-Endschaden": "34",
+              "Ø Erwartungswirkung": "23,4",
+              "GE-Anteil": "0.51",
+              "Zusatz": "Schadensart wird beim Ausrüsten der konkreten improvisierten Klinge festgelegt."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Schattenwurf",
+            "cost": "1 Aktion",
+            "type": "elementarer Angriff",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range": "8 m",
+            "damage_effect": "9W6 + BW-Modifikator (+6) + BW-Bonus (+5)",
+            "damage_type": "Dunkelheit",
+            "defense": "Magieverteidigung",
+            "avg_raw_damage": "42,5",
+            "avg_hit_damage": "32,5",
+            "avg_expected_effect": "22,3",
+            "ge_share": "0.48",
+            "notes": "Angeborene Ausprägung der Dunkelheitsprägung; kein Zauber und kein Mana-Kosten.",
+            "avg_raw_damage_value": 42.5,
+            "avg_hit_damage_value": 32.5,
+            "ge_share_value": 0.48,
+            "id": "goblin-l20-a02-schattenwurf",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Schattenwurf",
+              "Kosten": "1 Aktion",
+              "Typ": "elementarer Angriff",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite": "8 m",
+              "Schaden / Wirkung": "9W6 + BW-Modifikator (+6) + BW-Bonus (+5)",
+              "Schadensart": "Dunkelheit",
+              "Verteidigung": "Magieverteidigung",
+              "Ø Rohschaden": "42,5",
+              "Ø Treffer-Endschaden": "32,5",
+              "Ø Erwartungswirkung": "22,3",
+              "GE-Anteil": "0.48",
+              "Zusatz": "Angeborene Ausprägung der Dunkelheitsprägung; kein Zauber und kein Mana-Kosten."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Lückenstich",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Gruppe",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+6) + BW-Bonus (+5) + 1",
+            "range": "Nah",
+            "damage_effect": "8W10 + 2 + ST-Modifikator (+2) + ST-Bonus (+1)",
+            "damage_type": "Stich",
+            "defense": "Physische Verteidigung",
+            "avg_raw_damage": "49",
+            "avg_hit_damage": "34",
+            "avg_expected_effect": "24,6",
+            "ge_share": "0.53",
+            "notes": "Nur nutzbar, wenn ein anderer kampffähiger Goblin höchstens 2 m vom Ziel entfernt ist.",
+            "avg_raw_damage_value": 49.0,
+            "avg_hit_damage_value": 34.0,
+            "ge_share_value": 0.53,
+            "id": "goblin-l20-a03-lueckenstich",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Lückenstich",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Gruppe",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+6) + BW-Bonus (+5) + 1",
+              "Reichweite": "Nah",
+              "Schaden / Wirkung": "8W10 + 2 + ST-Modifikator (+2) + ST-Bonus (+1)",
+              "Schadensart": "Stich",
+              "Verteidigung": "Physische Verteidigung",
+              "Ø Rohschaden": "49",
+              "Ø Treffer-Endschaden": "34",
+              "Ø Erwartungswirkung": "24,6",
+              "GE-Anteil": "0.53",
+              "Zusatz": "Nur nutzbar, wenn ein anderer kampffähiger Goblin höchstens 2 m vom Ziel entfernt ist."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "goblin-l20-schrottklinge",
+          "name": "Schrottklinge",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5)`",
+          "damage": "`8W10 + 2 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+          "damage_type": "Hieb oder Stich, abhängig von der konkreten improvisierten Waffe.",
+          "rule_effect": "Normaler Nahkampfangriff ohne zusätzlichen Zustand oder kostenlose Folgeaktion.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5)`",
+            "Schaden": "`8W10 + 2 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+            "Schadensart": "Hieb oder Stich, abhängig von der konkreten improvisierten Waffe.",
+            "Regelwirkung": "Normaler Nahkampfangriff ohne zusätzlichen Zustand oder kostenlose Folgeaktion."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 520,
+            "line_end": 529
+          }
+        },
+        {
+          "id": "goblin-l20-schattenwurf",
+          "name": "Schattenwurf",
+          "type": "Elementarer Angriff",
+          "cost": "1 Aktion",
+          "range": "8 m",
+          "attack_roll": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5)`",
+          "damage": "`9W6 + BW-Modifikator (+6) + BW-Bonus (+5)` Dunkelheitsschaden",
+          "defense": "Magieverteidigung",
+          "rule_effect": "Der Goblin zieht für einen Augenblick Schatten an Hand, Waffe oder einem kleinen geworfenen Gegenstand zusammen und schleudert die verdichtete Dunkelheit auf das Ziel. Der Angriff besitzt keine automatische Blindheit, Furcht oder Sichtblockade.",
+          "element_rule": "Es handelt sich um eine angeborene Wirkung der Dunkelheitsprägung, nicht um einen Zauber. Der Goblin zahlt dafür kein Mana.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Elementarer Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "8 m",
+            "Angriffswurf": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5)`",
+            "Schaden": "`9W6 + BW-Modifikator (+6) + BW-Bonus (+5)` Dunkelheitsschaden",
+            "Verteidigung": "Magieverteidigung",
+            "Regelwirkung": "Der Goblin zieht für einen Augenblick Schatten an Hand, Waffe oder einem kleinen geworfenen Gegenstand zusammen und schleudert die verdichtete Dunkelheit auf das Ziel. Der Angriff besitzt keine automatische Blindheit, Furcht oder Sichtblockade.",
+            "Elementregel": "Es handelt sich um eine angeborene Wirkung der Dunkelheitsprägung, nicht um einen Zauber. Der Goblin zahlt dafür kein Mana."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 530,
+            "line_end": 540
+          }
+        },
+        {
+          "id": "goblin-l20-lueckenstich",
+          "name": "Lückenstich",
+          "type": "Körperlicher Angriff / Gruppe",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "requirement": "Ein anderer kampffähiger Goblin befindet sich höchstens **2 m vom Ziel** entfernt.",
+          "attack_roll": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5) + 1`",
+          "damage": "`8W10 + 2 + ST-Modifikator (+2) + ST-Bonus (+1)` Stichschaden",
+          "rule_effect": "Der Goblin nutzt die Ablenkung durch einen Verbündeten und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Der Bonus verursacht keinen zusätzlichen Schaden und erzeugt keine Folgeaktion.",
+          "stacking": "Mehrere Goblins können den Lückenstich in derselben Runde einsetzen, sofern jeder die Voraussetzung erfüllt. Der Bonus bleibt stets **+1** und steigt nicht mit der Zahl angrenzender Goblins.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Gruppe",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Voraussetzung": "Ein anderer kampffähiger Goblin befindet sich höchstens **2 m vom Ziel** entfernt.",
+            "Angriffswurf": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5) + 1`",
+            "Schaden": "`8W10 + 2 + ST-Modifikator (+2) + ST-Bonus (+1)` Stichschaden",
+            "Regelwirkung": "Der Goblin nutzt die Ablenkung durch einen Verbündeten und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Der Bonus verursacht keinen zusätzlichen Schaden und erzeugt keine Folgeaktion.",
+            "Stapelung": "Mehrere Goblins können den Lückenstich in derselben Runde einsetzen, sofern jeder die Voraussetzung erfüllt. Der Bonus bleibt stets **+1** und steigt nicht mit der Zahl angrenzender Goblins."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 541,
+            "line_end": 551
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "**10 % Verwundbarkeit**",
+            "**10 % Resistenz**"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 479,
+        "line_end": 560
+      }
+    },
+    {
+      "level": 25,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "410",
+          "physische_verteidigung": "16",
+          "magieverteidigung": "15",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m"
+        },
+        "raw_fields": {
+          "Maximale LP": "410",
+          "Physische Verteidigung": "16",
+          "Magieverteidigung": "15",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+2) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+3)) × 5) + (25 × 10) = 410 LP",
+        "markdown": "`100 + ((ST-Modifikator (+2) + ST-Bonus (+1)) × 10) + ((WI-Modifikator (+3) + WI-Bonus (+3)) × 5) + (25 × 10) = 410 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff",
+          "Reichweite",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Schrottklinge",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range": "Nah",
+            "damage_effect": "9W10 + 2 + ST-Modifikator (+2) + ST-Bonus (+1)",
+            "damage_type": "Hieb oder Stich",
+            "defense": "Physische Verteidigung",
+            "avg_raw_damage": "54,5",
+            "avg_hit_damage": "37,5",
+            "avg_expected_effect": "25,8",
+            "ge_share": "0.49",
+            "notes": "Schadensart wird beim Ausrüsten der konkreten improvisierten Klinge festgelegt.",
+            "avg_raw_damage_value": 54.5,
+            "avg_hit_damage_value": 37.5,
+            "ge_share_value": 0.49,
+            "id": "goblin-l25-a01-schrottklinge",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Schrottklinge",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite": "Nah",
+              "Schaden / Wirkung": "9W10 + 2 + ST-Modifikator (+2) + ST-Bonus (+1)",
+              "Schadensart": "Hieb oder Stich",
+              "Verteidigung": "Physische Verteidigung",
+              "Ø Rohschaden": "54,5",
+              "Ø Treffer-Endschaden": "37,5",
+              "Ø Erwartungswirkung": "25,8",
+              "GE-Anteil": "0.49",
+              "Zusatz": "Schadensart wird beim Ausrüsten der konkreten improvisierten Klinge festgelegt."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Schattenwurf",
+            "cost": "1 Aktion",
+            "type": "elementarer Angriff",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+            "range": "8 m",
+            "damage_effect": "10W6 + BW-Modifikator (+6) + BW-Bonus (+5)",
+            "damage_type": "Dunkelheit",
+            "defense": "Magieverteidigung",
+            "avg_raw_damage": "46",
+            "avg_hit_damage": "34",
+            "avg_expected_effect": "23,4",
+            "ge_share": "0.45",
+            "notes": "Angeborene Ausprägung der Dunkelheitsprägung; kein Zauber und kein Mana-Kosten.",
+            "avg_raw_damage_value": 46.0,
+            "avg_hit_damage_value": 34.0,
+            "ge_share_value": 0.45,
+            "id": "goblin-l25-a02-schattenwurf",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Schattenwurf",
+              "Kosten": "1 Aktion",
+              "Typ": "elementarer Angriff",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+6) + BW-Bonus (+5)",
+              "Reichweite": "8 m",
+              "Schaden / Wirkung": "10W6 + BW-Modifikator (+6) + BW-Bonus (+5)",
+              "Schadensart": "Dunkelheit",
+              "Verteidigung": "Magieverteidigung",
+              "Ø Rohschaden": "46",
+              "Ø Treffer-Endschaden": "34",
+              "Ø Erwartungswirkung": "23,4",
+              "GE-Anteil": "0.45",
+              "Zusatz": "Angeborene Ausprägung der Dunkelheitsprägung; kein Zauber und kein Mana-Kosten."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Lückenstich",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Gruppe",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+6) + BW-Bonus (+5) + 1",
+            "range": "Nah",
+            "damage_effect": "9W10 + 2 + ST-Modifikator (+2) + ST-Bonus (+1)",
+            "damage_type": "Stich",
+            "defense": "Physische Verteidigung",
+            "avg_raw_damage": "54,5",
+            "avg_hit_damage": "37,5",
+            "avg_expected_effect": "27,1",
+            "ge_share": "0.52",
+            "notes": "Nur nutzbar, wenn ein anderer kampffähiger Goblin höchstens 2 m vom Ziel entfernt ist.",
+            "avg_raw_damage_value": 54.5,
+            "avg_hit_damage_value": 37.5,
+            "ge_share_value": 0.52,
+            "id": "goblin-l25-a03-lueckenstich",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Lückenstich",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Gruppe",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+6) + BW-Bonus (+5) + 1",
+              "Reichweite": "Nah",
+              "Schaden / Wirkung": "9W10 + 2 + ST-Modifikator (+2) + ST-Bonus (+1)",
+              "Schadensart": "Stich",
+              "Verteidigung": "Physische Verteidigung",
+              "Ø Rohschaden": "54,5",
+              "Ø Treffer-Endschaden": "37,5",
+              "Ø Erwartungswirkung": "27,1",
+              "GE-Anteil": "0.52",
+              "Zusatz": "Nur nutzbar, wenn ein anderer kampffähiger Goblin höchstens 2 m vom Ziel entfernt ist."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "goblin-l25-schrottklinge",
+          "name": "Schrottklinge",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5)`",
+          "damage": "`9W10 + 2 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+          "damage_type": "Hieb oder Stich, abhängig von der konkreten improvisierten Waffe.",
+          "rule_effect": "Normaler Nahkampfangriff ohne zusätzlichen Zustand oder kostenlose Folgeaktion.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5)`",
+            "Schaden": "`9W10 + 2 + ST-Modifikator (+2) + ST-Bonus (+1)`",
+            "Schadensart": "Hieb oder Stich, abhängig von der konkreten improvisierten Waffe.",
+            "Regelwirkung": "Normaler Nahkampfangriff ohne zusätzlichen Zustand oder kostenlose Folgeaktion."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 602,
+            "line_end": 611
+          }
+        },
+        {
+          "id": "goblin-l25-schattenwurf",
+          "name": "Schattenwurf",
+          "type": "Elementarer Angriff",
+          "cost": "1 Aktion",
+          "range": "8 m",
+          "attack_roll": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5)`",
+          "damage": "`10W6 + BW-Modifikator (+6) + BW-Bonus (+5)` Dunkelheitsschaden",
+          "defense": "Magieverteidigung",
+          "rule_effect": "Der Goblin zieht für einen Augenblick Schatten an Hand, Waffe oder einem kleinen geworfenen Gegenstand zusammen und schleudert die verdichtete Dunkelheit auf das Ziel. Der Angriff besitzt keine automatische Blindheit, Furcht oder Sichtblockade.",
+          "element_rule": "Es handelt sich um eine angeborene Wirkung der Dunkelheitsprägung, nicht um einen Zauber. Der Goblin zahlt dafür kein Mana.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Elementarer Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "8 m",
+            "Angriffswurf": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5)`",
+            "Schaden": "`10W6 + BW-Modifikator (+6) + BW-Bonus (+5)` Dunkelheitsschaden",
+            "Verteidigung": "Magieverteidigung",
+            "Regelwirkung": "Der Goblin zieht für einen Augenblick Schatten an Hand, Waffe oder einem kleinen geworfenen Gegenstand zusammen und schleudert die verdichtete Dunkelheit auf das Ziel. Der Angriff besitzt keine automatische Blindheit, Furcht oder Sichtblockade.",
+            "Elementregel": "Es handelt sich um eine angeborene Wirkung der Dunkelheitsprägung, nicht um einen Zauber. Der Goblin zahlt dafür kein Mana."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 612,
+            "line_end": 622
+          }
+        },
+        {
+          "id": "goblin-l25-lueckenstich",
+          "name": "Lückenstich",
+          "type": "Körperlicher Angriff / Gruppe",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "requirement": "Ein anderer kampffähiger Goblin befindet sich höchstens **2 m vom Ziel** entfernt.",
+          "attack_roll": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5) + 1`",
+          "damage": "`9W10 + 2 + ST-Modifikator (+2) + ST-Bonus (+1)` Stichschaden",
+          "rule_effect": "Der Goblin nutzt die Ablenkung durch einen Verbündeten und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Der Bonus verursacht keinen zusätzlichen Schaden und erzeugt keine Folgeaktion.",
+          "stacking": "Mehrere Goblins können den Lückenstich in derselben Runde einsetzen, sofern jeder die Voraussetzung erfüllt. Der Bonus bleibt stets **+1** und steigt nicht mit der Zahl angrenzender Goblins.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Gruppe",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Voraussetzung": "Ein anderer kampffähiger Goblin befindet sich höchstens **2 m vom Ziel** entfernt.",
+            "Angriffswurf": "`W20 + BW-Modifikator (+6) + BW-Bonus (+5) + 1`",
+            "Schaden": "`9W10 + 2 + ST-Modifikator (+2) + ST-Bonus (+1)` Stichschaden",
+            "Regelwirkung": "Der Goblin nutzt die Ablenkung durch einen Verbündeten und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Der Bonus verursacht keinen zusätzlichen Schaden und erzeugt keine Folgeaktion.",
+            "Stapelung": "Mehrere Goblins können den Lückenstich in derselben Runde einsetzen, sofern jeder die Voraussetzung erfüllt. Der Bonus bleibt stets **+1** und steigt nicht mit der Zahl angrenzender Goblins."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 623,
+            "line_end": 633
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "**10 % Verwundbarkeit**",
+            "**10 % Resistenz**"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 561,
+        "line_end": 642
+      }
+    },
+    {
+      "level": 30,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+2"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "485",
+          "physische_verteidigung": "18",
+          "magieverteidigung": "17",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m"
+        },
+        "raw_fields": {
+          "Maximale LP": "485",
+          "Physische Verteidigung": "18",
+          "Magieverteidigung": "17",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+3) + ST-Bonus (+2)) × 10) + ((WI-Modifikator (+4) + WI-Bonus (+3)) × 5) + (30 × 10) = 485 LP",
+        "markdown": "`100 + ((ST-Modifikator (+3) + ST-Bonus (+2)) × 10) + ((WI-Modifikator (+4) + WI-Bonus (+3)) × 5) + (30 × 10) = 485 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff",
+          "Reichweite",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Schrottklinge",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+            "range": "Nah",
+            "damage_effect": "10W10 + 2 + ST-Modifikator (+3) + ST-Bonus (+2)",
+            "damage_type": "Hieb oder Stich",
+            "defense": "Physische Verteidigung",
+            "avg_raw_damage": "62",
+            "avg_hit_damage": "43",
+            "avg_expected_effect": "29,6",
+            "ge_share": "0.50",
+            "notes": "Schadensart wird beim Ausrüsten der konkreten improvisierten Klinge festgelegt.",
+            "avg_raw_damage_value": 62.0,
+            "avg_hit_damage_value": 43.0,
+            "ge_share_value": 0.5,
+            "id": "goblin-l30-a01-schrottklinge",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Schrottklinge",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+              "Reichweite": "Nah",
+              "Schaden / Wirkung": "10W10 + 2 + ST-Modifikator (+3) + ST-Bonus (+2)",
+              "Schadensart": "Hieb oder Stich",
+              "Verteidigung": "Physische Verteidigung",
+              "Ø Rohschaden": "62",
+              "Ø Treffer-Endschaden": "43",
+              "Ø Erwartungswirkung": "29,6",
+              "GE-Anteil": "0.50",
+              "Zusatz": "Schadensart wird beim Ausrüsten der konkreten improvisierten Klinge festgelegt."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Schattenwurf",
+            "cost": "1 Aktion",
+            "type": "elementarer Angriff",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+            "range": "8 m",
+            "damage_effect": "12W6 + BW-Modifikator (+7) + BW-Bonus (+5)",
+            "damage_type": "Dunkelheit",
+            "defense": "Magieverteidigung",
+            "avg_raw_damage": "54",
+            "avg_hit_damage": "40",
+            "avg_expected_effect": "27,5",
+            "ge_share": "0.47",
+            "notes": "Angeborene Ausprägung der Dunkelheitsprägung; kein Zauber und kein Mana-Kosten.",
+            "avg_raw_damage_value": 54.0,
+            "avg_hit_damage_value": 40.0,
+            "ge_share_value": 0.47,
+            "id": "goblin-l30-a02-schattenwurf",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Schattenwurf",
+              "Kosten": "1 Aktion",
+              "Typ": "elementarer Angriff",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+7) + BW-Bonus (+5)",
+              "Reichweite": "8 m",
+              "Schaden / Wirkung": "12W6 + BW-Modifikator (+7) + BW-Bonus (+5)",
+              "Schadensart": "Dunkelheit",
+              "Verteidigung": "Magieverteidigung",
+              "Ø Rohschaden": "54",
+              "Ø Treffer-Endschaden": "40",
+              "Ø Erwartungswirkung": "27,5",
+              "GE-Anteil": "0.47",
+              "Zusatz": "Angeborene Ausprägung der Dunkelheitsprägung; kein Zauber und kein Mana-Kosten."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Lückenstich",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Gruppe",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+7) + BW-Bonus (+5) + 1",
+            "range": "Nah",
+            "damage_effect": "10W10 + 2 + ST-Modifikator (+3) + ST-Bonus (+2)",
+            "damage_type": "Stich",
+            "defense": "Physische Verteidigung",
+            "avg_raw_damage": "62",
+            "avg_hit_damage": "43",
+            "avg_expected_effect": "31,1",
+            "ge_share": "0.53",
+            "notes": "Nur nutzbar, wenn ein anderer kampffähiger Goblin höchstens 2 m vom Ziel entfernt ist.",
+            "avg_raw_damage_value": 62.0,
+            "avg_hit_damage_value": 43.0,
+            "ge_share_value": 0.53,
+            "id": "goblin-l30-a03-lueckenstich",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Lückenstich",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Gruppe",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+7) + BW-Bonus (+5) + 1",
+              "Reichweite": "Nah",
+              "Schaden / Wirkung": "10W10 + 2 + ST-Modifikator (+3) + ST-Bonus (+2)",
+              "Schadensart": "Stich",
+              "Verteidigung": "Physische Verteidigung",
+              "Ø Rohschaden": "62",
+              "Ø Treffer-Endschaden": "43",
+              "Ø Erwartungswirkung": "31,1",
+              "GE-Anteil": "0.53",
+              "Zusatz": "Nur nutzbar, wenn ein anderer kampffähiger Goblin höchstens 2 m vom Ziel entfernt ist."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "goblin-l30-schrottklinge",
+          "name": "Schrottklinge",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+7) + BW-Bonus (+5)`",
+          "damage": "`10W10 + 2 + ST-Modifikator (+3) + ST-Bonus (+2)`",
+          "damage_type": "Hieb oder Stich, abhängig von der konkreten improvisierten Waffe.",
+          "rule_effect": "Normaler Nahkampfangriff ohne zusätzlichen Zustand oder kostenlose Folgeaktion.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+7) + BW-Bonus (+5)`",
+            "Schaden": "`10W10 + 2 + ST-Modifikator (+3) + ST-Bonus (+2)`",
+            "Schadensart": "Hieb oder Stich, abhängig von der konkreten improvisierten Waffe.",
+            "Regelwirkung": "Normaler Nahkampfangriff ohne zusätzlichen Zustand oder kostenlose Folgeaktion."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 684,
+            "line_end": 693
+          }
+        },
+        {
+          "id": "goblin-l30-schattenwurf",
+          "name": "Schattenwurf",
+          "type": "Elementarer Angriff",
+          "cost": "1 Aktion",
+          "range": "8 m",
+          "attack_roll": "`W20 + BW-Modifikator (+7) + BW-Bonus (+5)`",
+          "damage": "`12W6 + BW-Modifikator (+7) + BW-Bonus (+5)` Dunkelheitsschaden",
+          "defense": "Magieverteidigung",
+          "rule_effect": "Der Goblin zieht für einen Augenblick Schatten an Hand, Waffe oder einem kleinen geworfenen Gegenstand zusammen und schleudert die verdichtete Dunkelheit auf das Ziel. Der Angriff besitzt keine automatische Blindheit, Furcht oder Sichtblockade.",
+          "element_rule": "Es handelt sich um eine angeborene Wirkung der Dunkelheitsprägung, nicht um einen Zauber. Der Goblin zahlt dafür kein Mana.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Elementarer Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "8 m",
+            "Angriffswurf": "`W20 + BW-Modifikator (+7) + BW-Bonus (+5)`",
+            "Schaden": "`12W6 + BW-Modifikator (+7) + BW-Bonus (+5)` Dunkelheitsschaden",
+            "Verteidigung": "Magieverteidigung",
+            "Regelwirkung": "Der Goblin zieht für einen Augenblick Schatten an Hand, Waffe oder einem kleinen geworfenen Gegenstand zusammen und schleudert die verdichtete Dunkelheit auf das Ziel. Der Angriff besitzt keine automatische Blindheit, Furcht oder Sichtblockade.",
+            "Elementregel": "Es handelt sich um eine angeborene Wirkung der Dunkelheitsprägung, nicht um einen Zauber. Der Goblin zahlt dafür kein Mana."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 694,
+            "line_end": 704
+          }
+        },
+        {
+          "id": "goblin-l30-lueckenstich",
+          "name": "Lückenstich",
+          "type": "Körperlicher Angriff / Gruppe",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "requirement": "Ein anderer kampffähiger Goblin befindet sich höchstens **2 m vom Ziel** entfernt.",
+          "attack_roll": "`W20 + BW-Modifikator (+7) + BW-Bonus (+5) + 1`",
+          "damage": "`10W10 + 2 + ST-Modifikator (+3) + ST-Bonus (+2)` Stichschaden",
+          "rule_effect": "Der Goblin nutzt die Ablenkung durch einen Verbündeten und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Der Bonus verursacht keinen zusätzlichen Schaden und erzeugt keine Folgeaktion.",
+          "stacking": "Mehrere Goblins können den Lückenstich in derselben Runde einsetzen, sofern jeder die Voraussetzung erfüllt. Der Bonus bleibt stets **+1** und steigt nicht mit der Zahl angrenzender Goblins.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Gruppe",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Voraussetzung": "Ein anderer kampffähiger Goblin befindet sich höchstens **2 m vom Ziel** entfernt.",
+            "Angriffswurf": "`W20 + BW-Modifikator (+7) + BW-Bonus (+5) + 1`",
+            "Schaden": "`10W10 + 2 + ST-Modifikator (+3) + ST-Bonus (+2)` Stichschaden",
+            "Regelwirkung": "Der Goblin nutzt die Ablenkung durch einen Verbündeten und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Der Bonus verursacht keinen zusätzlichen Schaden und erzeugt keine Folgeaktion.",
+            "Stapelung": "Mehrere Goblins können den Lückenstich in derselben Runde einsetzen, sofern jeder die Voraussetzung erfüllt. Der Bonus bleibt stets **+1** und steigt nicht mit der Zahl angrenzender Goblins."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 705,
+            "line_end": 715
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "**10 % Verwundbarkeit**",
+            "**10 % Resistenz**"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 643,
+        "line_end": 724
+      }
+    },
+    {
+      "level": 35,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 25,
+          "modifier": 7,
+          "bonus": 6,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "25",
+            "Modifikator": "+7",
+            "Bonus": "+6"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+2"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "540",
+          "physische_verteidigung": "20",
+          "magieverteidigung": "19",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m"
+        },
+        "raw_fields": {
+          "Maximale LP": "540",
+          "Physische Verteidigung": "20",
+          "Magieverteidigung": "19",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+3) + ST-Bonus (+2)) × 10) + ((WI-Modifikator (+4) + WI-Bonus (+4)) × 5) + (35 × 10) = 540 LP",
+        "markdown": "`100 + ((ST-Modifikator (+3) + ST-Bonus (+2)) × 10) + ((WI-Modifikator (+4) + WI-Bonus (+4)) × 5) + (35 × 10) = 540 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff",
+          "Reichweite",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Schrottklinge",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+            "range": "Nah",
+            "damage_effect": "11W10 + 2 + ST-Modifikator (+3) + ST-Bonus (+2)",
+            "damage_type": "Hieb oder Stich",
+            "defense": "Physische Verteidigung",
+            "avg_raw_damage": "67,5",
+            "avg_hit_damage": "46,5",
+            "avg_expected_effect": "32,0",
+            "ge_share": "0.49",
+            "notes": "Schadensart wird beim Ausrüsten der konkreten improvisierten Klinge festgelegt.",
+            "avg_raw_damage_value": 67.5,
+            "avg_hit_damage_value": 46.5,
+            "ge_share_value": 0.49,
+            "id": "goblin-l35-a01-schrottklinge",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Schrottklinge",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+              "Reichweite": "Nah",
+              "Schaden / Wirkung": "11W10 + 2 + ST-Modifikator (+3) + ST-Bonus (+2)",
+              "Schadensart": "Hieb oder Stich",
+              "Verteidigung": "Physische Verteidigung",
+              "Ø Rohschaden": "67,5",
+              "Ø Treffer-Endschaden": "46,5",
+              "Ø Erwartungswirkung": "32,0",
+              "GE-Anteil": "0.49",
+              "Zusatz": "Schadensart wird beim Ausrüsten der konkreten improvisierten Klinge festgelegt."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Schattenwurf",
+            "cost": "1 Aktion",
+            "type": "elementarer Angriff",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+            "range": "8 m",
+            "damage_effect": "13W6 + BW-Modifikator (+7) + BW-Bonus (+6)",
+            "damage_type": "Dunkelheit",
+            "defense": "Magieverteidigung",
+            "avg_raw_damage": "58,5",
+            "avg_hit_damage": "42,5",
+            "avg_expected_effect": "29,2",
+            "ge_share": "0.45",
+            "notes": "Angeborene Ausprägung der Dunkelheitsprägung; kein Zauber und kein Mana-Kosten.",
+            "avg_raw_damage_value": 58.5,
+            "avg_hit_damage_value": 42.5,
+            "ge_share_value": 0.45,
+            "id": "goblin-l35-a02-schattenwurf",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Schattenwurf",
+              "Kosten": "1 Aktion",
+              "Typ": "elementarer Angriff",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+7) + BW-Bonus (+6)",
+              "Reichweite": "8 m",
+              "Schaden / Wirkung": "13W6 + BW-Modifikator (+7) + BW-Bonus (+6)",
+              "Schadensart": "Dunkelheit",
+              "Verteidigung": "Magieverteidigung",
+              "Ø Rohschaden": "58,5",
+              "Ø Treffer-Endschaden": "42,5",
+              "Ø Erwartungswirkung": "29,2",
+              "GE-Anteil": "0.45",
+              "Zusatz": "Angeborene Ausprägung der Dunkelheitsprägung; kein Zauber und kein Mana-Kosten."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Lückenstich",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Gruppe",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+7) + BW-Bonus (+6) + 1",
+            "range": "Nah",
+            "damage_effect": "11W10 + 2 + ST-Modifikator (+3) + ST-Bonus (+2)",
+            "damage_type": "Stich",
+            "defense": "Physische Verteidigung",
+            "avg_raw_damage": "67,5",
+            "avg_hit_damage": "46,5",
+            "avg_expected_effect": "33,6",
+            "ge_share": "0.52",
+            "notes": "Nur nutzbar, wenn ein anderer kampffähiger Goblin höchstens 2 m vom Ziel entfernt ist.",
+            "avg_raw_damage_value": 67.5,
+            "avg_hit_damage_value": 46.5,
+            "ge_share_value": 0.52,
+            "id": "goblin-l35-a03-lueckenstich",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Lückenstich",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Gruppe",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+7) + BW-Bonus (+6) + 1",
+              "Reichweite": "Nah",
+              "Schaden / Wirkung": "11W10 + 2 + ST-Modifikator (+3) + ST-Bonus (+2)",
+              "Schadensart": "Stich",
+              "Verteidigung": "Physische Verteidigung",
+              "Ø Rohschaden": "67,5",
+              "Ø Treffer-Endschaden": "46,5",
+              "Ø Erwartungswirkung": "33,6",
+              "GE-Anteil": "0.52",
+              "Zusatz": "Nur nutzbar, wenn ein anderer kampffähiger Goblin höchstens 2 m vom Ziel entfernt ist."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "goblin-l35-schrottklinge",
+          "name": "Schrottklinge",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+7) + BW-Bonus (+6)`",
+          "damage": "`11W10 + 2 + ST-Modifikator (+3) + ST-Bonus (+2)`",
+          "damage_type": "Hieb oder Stich, abhängig von der konkreten improvisierten Waffe.",
+          "rule_effect": "Normaler Nahkampfangriff ohne zusätzlichen Zustand oder kostenlose Folgeaktion.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+7) + BW-Bonus (+6)`",
+            "Schaden": "`11W10 + 2 + ST-Modifikator (+3) + ST-Bonus (+2)`",
+            "Schadensart": "Hieb oder Stich, abhängig von der konkreten improvisierten Waffe.",
+            "Regelwirkung": "Normaler Nahkampfangriff ohne zusätzlichen Zustand oder kostenlose Folgeaktion."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 766,
+            "line_end": 775
+          }
+        },
+        {
+          "id": "goblin-l35-schattenwurf",
+          "name": "Schattenwurf",
+          "type": "Elementarer Angriff",
+          "cost": "1 Aktion",
+          "range": "8 m",
+          "attack_roll": "`W20 + BW-Modifikator (+7) + BW-Bonus (+6)`",
+          "damage": "`13W6 + BW-Modifikator (+7) + BW-Bonus (+6)` Dunkelheitsschaden",
+          "defense": "Magieverteidigung",
+          "rule_effect": "Der Goblin zieht für einen Augenblick Schatten an Hand, Waffe oder einem kleinen geworfenen Gegenstand zusammen und schleudert die verdichtete Dunkelheit auf das Ziel. Der Angriff besitzt keine automatische Blindheit, Furcht oder Sichtblockade.",
+          "element_rule": "Es handelt sich um eine angeborene Wirkung der Dunkelheitsprägung, nicht um einen Zauber. Der Goblin zahlt dafür kein Mana.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Elementarer Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "8 m",
+            "Angriffswurf": "`W20 + BW-Modifikator (+7) + BW-Bonus (+6)`",
+            "Schaden": "`13W6 + BW-Modifikator (+7) + BW-Bonus (+6)` Dunkelheitsschaden",
+            "Verteidigung": "Magieverteidigung",
+            "Regelwirkung": "Der Goblin zieht für einen Augenblick Schatten an Hand, Waffe oder einem kleinen geworfenen Gegenstand zusammen und schleudert die verdichtete Dunkelheit auf das Ziel. Der Angriff besitzt keine automatische Blindheit, Furcht oder Sichtblockade.",
+            "Elementregel": "Es handelt sich um eine angeborene Wirkung der Dunkelheitsprägung, nicht um einen Zauber. Der Goblin zahlt dafür kein Mana."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 776,
+            "line_end": 786
+          }
+        },
+        {
+          "id": "goblin-l35-lueckenstich",
+          "name": "Lückenstich",
+          "type": "Körperlicher Angriff / Gruppe",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "requirement": "Ein anderer kampffähiger Goblin befindet sich höchstens **2 m vom Ziel** entfernt.",
+          "attack_roll": "`W20 + BW-Modifikator (+7) + BW-Bonus (+6) + 1`",
+          "damage": "`11W10 + 2 + ST-Modifikator (+3) + ST-Bonus (+2)` Stichschaden",
+          "rule_effect": "Der Goblin nutzt die Ablenkung durch einen Verbündeten und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Der Bonus verursacht keinen zusätzlichen Schaden und erzeugt keine Folgeaktion.",
+          "stacking": "Mehrere Goblins können den Lückenstich in derselben Runde einsetzen, sofern jeder die Voraussetzung erfüllt. Der Bonus bleibt stets **+1** und steigt nicht mit der Zahl angrenzender Goblins.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Gruppe",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Voraussetzung": "Ein anderer kampffähiger Goblin befindet sich höchstens **2 m vom Ziel** entfernt.",
+            "Angriffswurf": "`W20 + BW-Modifikator (+7) + BW-Bonus (+6) + 1`",
+            "Schaden": "`11W10 + 2 + ST-Modifikator (+3) + ST-Bonus (+2)` Stichschaden",
+            "Regelwirkung": "Der Goblin nutzt die Ablenkung durch einen Verbündeten und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Der Bonus verursacht keinen zusätzlichen Schaden und erzeugt keine Folgeaktion.",
+            "Stapelung": "Mehrere Goblins können den Lückenstich in derselben Runde einsetzen, sofern jeder die Voraussetzung erfüllt. Der Bonus bleibt stets **+1** und steigt nicht mit der Zahl angrenzender Goblins."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 787,
+            "line_end": 797
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "**10 % Verwundbarkeit**",
+            "**10 % Resistenz**"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 725,
+        "line_end": 806
+      }
+    },
+    {
+      "level": 40,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 26,
+          "modifier": 8,
+          "bonus": 6,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "26",
+            "Modifikator": "+8",
+            "Bonus": "+6"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+3"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "605",
+          "physische_verteidigung": "22",
+          "magieverteidigung": "21",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Land 10 m"
+        },
+        "raw_fields": {
+          "Maximale LP": "605",
+          "Physische Verteidigung": "22",
+          "Magieverteidigung": "21",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Land 10 m"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((ST-Modifikator (+4) + ST-Bonus (+2)) × 10) + ((WI-Modifikator (+5) + WI-Bonus (+4)) × 5) + (40 × 10) = 605 LP",
+        "markdown": "`100 + ((ST-Modifikator (+4) + ST-Bonus (+2)) × 10) + ((WI-Modifikator (+5) + WI-Bonus (+4)) × 5) + (40 × 10) = 605 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff",
+          "Reichweite",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung",
+          "Ø Rohschaden",
+          "Ø Treffer-Endschaden",
+          "Ø Erwartungswirkung",
+          "GE-Anteil",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Schrottklinge",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+            "range": "Nah",
+            "damage_effect": "12W10 + 2 + ST-Modifikator (+4) + ST-Bonus (+2)",
+            "damage_type": "Hieb oder Stich",
+            "defense": "Physische Verteidigung",
+            "avg_raw_damage": "74",
+            "avg_hit_damage": "51",
+            "avg_expected_effect": "35,1",
+            "ge_share": "0.49",
+            "notes": "Schadensart wird beim Ausrüsten der konkreten improvisierten Klinge festgelegt.",
+            "avg_raw_damage_value": 74.0,
+            "avg_hit_damage_value": 51.0,
+            "ge_share_value": 0.49,
+            "id": "goblin-l40-a01-schrottklinge",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Schrottklinge",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+              "Reichweite": "Nah",
+              "Schaden / Wirkung": "12W10 + 2 + ST-Modifikator (+4) + ST-Bonus (+2)",
+              "Schadensart": "Hieb oder Stich",
+              "Verteidigung": "Physische Verteidigung",
+              "Ø Rohschaden": "74",
+              "Ø Treffer-Endschaden": "51",
+              "Ø Erwartungswirkung": "35,1",
+              "GE-Anteil": "0.49",
+              "Zusatz": "Schadensart wird beim Ausrüsten der konkreten improvisierten Klinge festgelegt."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Schattenwurf",
+            "cost": "1 Aktion",
+            "type": "elementarer Angriff",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+            "range": "8 m",
+            "damage_effect": "15W6 + BW-Modifikator (+8) + BW-Bonus (+6)",
+            "damage_type": "Dunkelheit",
+            "defense": "Magieverteidigung",
+            "avg_raw_damage": "66,5",
+            "avg_hit_damage": "48,5",
+            "avg_expected_effect": "33,3",
+            "ge_share": "0.47",
+            "notes": "Angeborene Ausprägung der Dunkelheitsprägung; kein Zauber und kein Mana-Kosten.",
+            "avg_raw_damage_value": 66.5,
+            "avg_hit_damage_value": 48.5,
+            "ge_share_value": 0.47,
+            "id": "goblin-l40-a02-schattenwurf",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Schattenwurf",
+              "Kosten": "1 Aktion",
+              "Typ": "elementarer Angriff",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+8) + BW-Bonus (+6)",
+              "Reichweite": "8 m",
+              "Schaden / Wirkung": "15W6 + BW-Modifikator (+8) + BW-Bonus (+6)",
+              "Schadensart": "Dunkelheit",
+              "Verteidigung": "Magieverteidigung",
+              "Ø Rohschaden": "66,5",
+              "Ø Treffer-Endschaden": "48,5",
+              "Ø Erwartungswirkung": "33,3",
+              "GE-Anteil": "0.47",
+              "Zusatz": "Angeborene Ausprägung der Dunkelheitsprägung; kein Zauber und kein Mana-Kosten."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Lückenstich",
+            "cost": "1 Aktion",
+            "type": "körperlicher Angriff / Gruppe",
+            "attribute": "BW",
+            "attack": "W20 + BW-Mod. (+8) + BW-Bonus (+6) + 1",
+            "range": "Nah",
+            "damage_effect": "12W10 + 2 + ST-Modifikator (+4) + ST-Bonus (+2)",
+            "damage_type": "Stich",
+            "defense": "Physische Verteidigung",
+            "avg_raw_damage": "74",
+            "avg_hit_damage": "51",
+            "avg_expected_effect": "36,8",
+            "ge_share": "0.52",
+            "notes": "Nur nutzbar, wenn ein anderer kampffähiger Goblin höchstens 2 m vom Ziel entfernt ist.",
+            "avg_raw_damage_value": 74.0,
+            "avg_hit_damage_value": 51.0,
+            "ge_share_value": 0.52,
+            "id": "goblin-l40-a03-lueckenstich",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Lückenstich",
+              "Kosten": "1 Aktion",
+              "Typ": "körperlicher Angriff / Gruppe",
+              "Attribut": "BW",
+              "Angriff": "W20 + BW-Mod. (+8) + BW-Bonus (+6) + 1",
+              "Reichweite": "Nah",
+              "Schaden / Wirkung": "12W10 + 2 + ST-Modifikator (+4) + ST-Bonus (+2)",
+              "Schadensart": "Stich",
+              "Verteidigung": "Physische Verteidigung",
+              "Ø Rohschaden": "74",
+              "Ø Treffer-Endschaden": "51",
+              "Ø Erwartungswirkung": "36,8",
+              "GE-Anteil": "0.52",
+              "Zusatz": "Nur nutzbar, wenn ein anderer kampffähiger Goblin höchstens 2 m vom Ziel entfernt ist."
+            }
+          }
+        ]
+      },
+      "action_details": [
+        {
+          "id": "goblin-l40-schrottklinge",
+          "name": "Schrottklinge",
+          "type": "Körperlicher Angriff",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "attack_roll": "`W20 + BW-Modifikator (+8) + BW-Bonus (+6)`",
+          "damage": "`12W10 + 2 + ST-Modifikator (+4) + ST-Bonus (+2)`",
+          "damage_type": "Hieb oder Stich, abhängig von der konkreten improvisierten Waffe.",
+          "rule_effect": "Normaler Nahkampfangriff ohne zusätzlichen Zustand oder kostenlose Folgeaktion.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Angriffswurf": "`W20 + BW-Modifikator (+8) + BW-Bonus (+6)`",
+            "Schaden": "`12W10 + 2 + ST-Modifikator (+4) + ST-Bonus (+2)`",
+            "Schadensart": "Hieb oder Stich, abhängig von der konkreten improvisierten Waffe.",
+            "Regelwirkung": "Normaler Nahkampfangriff ohne zusätzlichen Zustand oder kostenlose Folgeaktion."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 848,
+            "line_end": 857
+          }
+        },
+        {
+          "id": "goblin-l40-schattenwurf",
+          "name": "Schattenwurf",
+          "type": "Elementarer Angriff",
+          "cost": "1 Aktion",
+          "range": "8 m",
+          "attack_roll": "`W20 + BW-Modifikator (+8) + BW-Bonus (+6)`",
+          "damage": "`15W6 + BW-Modifikator (+8) + BW-Bonus (+6)` Dunkelheitsschaden",
+          "defense": "Magieverteidigung",
+          "rule_effect": "Der Goblin zieht für einen Augenblick Schatten an Hand, Waffe oder einem kleinen geworfenen Gegenstand zusammen und schleudert die verdichtete Dunkelheit auf das Ziel. Der Angriff besitzt keine automatische Blindheit, Furcht oder Sichtblockade.",
+          "element_rule": "Es handelt sich um eine angeborene Wirkung der Dunkelheitsprägung, nicht um einen Zauber. Der Goblin zahlt dafür kein Mana.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Elementarer Angriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "8 m",
+            "Angriffswurf": "`W20 + BW-Modifikator (+8) + BW-Bonus (+6)`",
+            "Schaden": "`15W6 + BW-Modifikator (+8) + BW-Bonus (+6)` Dunkelheitsschaden",
+            "Verteidigung": "Magieverteidigung",
+            "Regelwirkung": "Der Goblin zieht für einen Augenblick Schatten an Hand, Waffe oder einem kleinen geworfenen Gegenstand zusammen und schleudert die verdichtete Dunkelheit auf das Ziel. Der Angriff besitzt keine automatische Blindheit, Furcht oder Sichtblockade.",
+            "Elementregel": "Es handelt sich um eine angeborene Wirkung der Dunkelheitsprägung, nicht um einen Zauber. Der Goblin zahlt dafür kein Mana."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 858,
+            "line_end": 868
+          }
+        },
+        {
+          "id": "goblin-l40-lueckenstich",
+          "name": "Lückenstich",
+          "type": "Körperlicher Angriff / Gruppe",
+          "cost": "1 Aktion",
+          "range": "Nah",
+          "requirement": "Ein anderer kampffähiger Goblin befindet sich höchstens **2 m vom Ziel** entfernt.",
+          "attack_roll": "`W20 + BW-Modifikator (+8) + BW-Bonus (+6) + 1`",
+          "damage": "`12W10 + 2 + ST-Modifikator (+4) + ST-Bonus (+2)` Stichschaden",
+          "rule_effect": "Der Goblin nutzt die Ablenkung durch einen Verbündeten und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Der Bonus verursacht keinen zusätzlichen Schaden und erzeugt keine Folgeaktion.",
+          "stacking": "Mehrere Goblins können den Lückenstich in derselben Runde einsetzen, sofern jeder die Voraussetzung erfüllt. Der Bonus bleibt stets **+1** und steigt nicht mit der Zahl angrenzender Goblins.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Körperlicher Angriff / Gruppe",
+            "Kosten": "1 Aktion",
+            "Reichweite": "Nah",
+            "Voraussetzung": "Ein anderer kampffähiger Goblin befindet sich höchstens **2 m vom Ziel** entfernt.",
+            "Angriffswurf": "`W20 + BW-Modifikator (+8) + BW-Bonus (+6) + 1`",
+            "Schaden": "`12W10 + 2 + ST-Modifikator (+4) + ST-Bonus (+2)` Stichschaden",
+            "Regelwirkung": "Der Goblin nutzt die Ablenkung durch einen Verbündeten und erhält ausschließlich für diesen Angriff **+1 auf den Angriffswurf**. Der Bonus verursacht keinen zusätzlichen Schaden und erzeugt keine Folgeaktion.",
+            "Stapelung": "Mehrere Goblins können den Lückenstich in derselben Runde einsetzen, sofern jeder die Voraussetzung erfüllt. Der Bonus bleibt stets **+1** und steigt nicht mit der Zahl angrenzender Goblins."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 869,
+            "line_end": 879
+          }
+        }
+      ],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "10 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 10
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "–",
+            "–",
+            "–",
+            "–",
+            "**10 % Verwundbarkeit**",
+            "**10 % Resistenz**"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 807,
+        "line_end": 888
+      }
+    }
+  ],
+  "post_sections": [
+    {
+      "title": "Spielleitungsnotizen",
+      "id": "spielleitungsnotizen",
+      "markdown": "- Ein einzelner Goblin soll überschaubar bleiben. Seine gefährlichste Eigenschaft ist **nicht hoher Grundschaden**, sondern die bessere Zuverlässigkeit des Lückenstichs, sobald mehrere Goblins dasselbe Ziel erreichen.\n- Nutze Gelände aktiv: Kisten, Mauern, Geröll, Türen, Werkbänke und enge Durchgänge passen sehr gut zu goblinischen Gegnern.\n- Der Schattenwurf verhindert, dass die Gruppe einen Goblin vollständig ignorieren kann, nur weil er nicht unmittelbar im Nahkampf steht.\n- Dunkelheitsprägung bedeutet **nicht Unsichtbarkeit**. Spieler können den Goblin normal sehen, sofern die allgemeinen Sichtregeln dies erlauben.\n- Goblins sind intelligente Personen. Sie können fliehen, sich ergeben, verhandeln, Gefangene nehmen, Informationen tauschen oder einen Kampf abbrechen.\n- Für Begegnungen mit nicht feindlichen Goblins sollte dieser Statblock nicht automatisch als Persönlichkeits- oder Kulturvorlage behandelt werden.\n- Soll ein Goblin eine andere Rolle besitzen, können Ausrüstung und Beschreibung verändert werden, solange die drei Kernaktionen und das Gesamtbudget nicht unkontrolliert verstärkt werden.",
+      "tables": [],
+      "source": {
+        "line_start": 889,
+        "line_end": 898
+      }
+    },
+    {
+      "title": "Balancekurzprüfung",
+      "id": "balancekurzpruefung",
+      "markdown": "- **HG:** 2 → Band HG 1–4, sehr schwache / einfache Bedrohung.\n- **Begegnungsrang:** Standard.\n- **Archetyp:** Ausweichend.\n- **Haltbarkeit:** Bewusst niedrigere LP und feste Verteidigung als die P50-Standardreferenz; dafür erhöhtes Ausweichen und eine kleine 10-%-Dunkelheitsresistenz.\n- **Schrottklinge:** ungefähr `0,49–0,51 GE` erwartete Endwirkung pro Einsatz.\n- **Schattenwurf:** ungefähr `0,45–0,50 GE`; etwas schwächer beziehungsweise vergleichbar mit dem Routineangriff, dafür 8 m Reichweite und Dunkelheitsschaden gegen Magieverteidigung.\n- **Lückenstich:** ungefähr `0,51–0,54 GE`; sein Mehrwert besteht ausschließlich in `+1` Trefferbonus unter einer echten Gruppenbedingung.\n- **Gruppengefahr:** Mehrere Goblins erhöhen vor allem ihre Zuverlässigkeit und Positionskontrolle. Es entstehen keine kostenlosen Zusatzaktionen und kein stapelnder Schadensbonus.\n- **Elementare Prägung:** Dunkelheit.\n- **Elementare Resistenz:** 10 % Dunkelheit.\n- **Elementare Verwundbarkeit:** 10 % Licht.\n- **Phasenwechsel:** keiner.",
+      "tables": [],
+      "source": {
+        "line_start": 899,
+        "line_end": 912
+      }
+    }
+  ],
+  "statistics": {
+    "level_count": 9,
+    "action_count_by_level": {
+      "1": 3,
+      "5": 3,
+      "10": 3,
+      "15": 3,
+      "20": 3,
+      "25": 3,
+      "30": 3,
+      "35": 3,
+      "40": 3
+    },
+    "shared_action_detail_count": 0
+  },
+  "source": {
+    "line_start": 19,
+    "line_end": 912
+  }
+}

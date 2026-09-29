@@ -1,0 +1,4054 @@
+{
+  "schema_version": "aetherfall.creatures.v1",
+  "id": "irrlicht",
+  "name": "Irrlicht",
+  "source_file": "Kreaturen - Irrlicht.md",
+  "core": {
+    "creature_type": "Geistwesen / elementar geprägtes Ätherwesen",
+    "classification": "Weltkreatur",
+    "origin": "Feuchte Wälder, Moore und alte Ruinengebiete Aetheryns; besonders dort, wo sich natürliche Ätherströme über lange Zeit verdichten",
+    "occurrence": "Nebelige Sümpfe, Moorpfade, verlassene Straßen, überwachsene Ruinen, Waldränder, alte Friedhöfe und andere Orte mit langanhaltender Ätheransammlung",
+    "challenge_rating": {
+      "raw": "11 – Mittlere Bedrohung",
+      "value": 11,
+      "label": "Mittlere Bedrohung"
+    },
+    "encounter_rank": "Standard",
+    "archetype": "Ausweichend",
+    "elemental_affinity": "Lichtprägung",
+    "size": "Sehr klein bis klein; sichtbarer Lichtkern meist 15–30 cm, mit flackernder Aura bis etwa 0,8 m",
+    "intelligence": "Niedrig bis instinktiv-listig; erkennt Reaktionen, Wege und wiederkehrende Verhaltensmuster, besitzt aber keine menschliche Planungstiefe",
+    "extra_fields": {
+      "Phasenwechsel": "Keiner"
+    },
+    "raw_fields": {
+      "Kreaturenart": "Geistwesen / elementar geprägtes Ätherwesen",
+      "Einordnung": "Weltkreatur",
+      "Ursprüngliche Herkunft": "Feuchte Wälder, Moore und alte Ruinengebiete Aetheryns; besonders dort, wo sich natürliche Ätherströme über lange Zeit verdichten",
+      "Bekanntes Vorkommen": "Nebelige Sümpfe, Moorpfade, verlassene Straßen, überwachsene Ruinen, Waldränder, alte Friedhöfe und andere Orte mit langanhaltender Ätheransammlung",
+      "Herausforderungsgrad": "**11 – Mittlere Bedrohung**",
+      "Begegnungsrang": "**Standard**",
+      "Archetyp": "**Ausweichend**",
+      "Elementare Eigenschaft": "**Lichtprägung**",
+      "Größenordnung": "Sehr klein bis klein; sichtbarer Lichtkern meist 15–30 cm, mit flackernder Aura bis etwa 0,8 m",
+      "Intelligenzniveau": "Niedrig bis instinktiv-listig; erkennt Reaktionen, Wege und wiederkehrende Verhaltensmuster, besitzt aber keine menschliche Planungstiefe",
+      "Phasenwechsel": "Keiner"
+    },
+    "raw_table_markdown": "| Kerndaten | Angabe |\n|---|---|\n| Kreaturenart | Geistwesen / elementar geprägtes Ätherwesen |\n| Einordnung | Weltkreatur |\n| Ursprüngliche Herkunft | Feuchte Wälder, Moore und alte Ruinengebiete Aetheryns; besonders dort, wo sich natürliche Ätherströme über lange Zeit verdichten |\n| Bekanntes Vorkommen | Nebelige Sümpfe, Moorpfade, verlassene Straßen, überwachsene Ruinen, Waldränder, alte Friedhöfe und andere Orte mit langanhaltender Ätheransammlung |\n| Herausforderungsgrad | **11 – Mittlere Bedrohung** |\n| Begegnungsrang | **Standard** |\n| Archetyp | **Ausweichend** |\n| Elementare Eigenschaft | **Lichtprägung** |\n| Größenordnung | Sehr klein bis klein; sichtbarer Lichtkern meist 15–30 cm, mit flackernder Aura bis etwa 0,8 m |\n| Intelligenzniveau | Niedrig bis instinktiv-listig; erkennt Reaktionen, Wege und wiederkehrende Verhaltensmuster, besitzt aber keine menschliche Planungstiefe |\n| Phasenwechsel | Keiner |"
+  },
+  "action_overview": {
+    "headers": [
+      "Nr.",
+      "Aktion",
+      "Typ",
+      "Grundfunktion"
+    ],
+    "actions": [
+      {
+        "number": 1,
+        "name": "Ätherfunke",
+        "type": "Elementarangriff",
+        "base_function": "Zuverlässiger Licht-Fernangriff gegen ein Ziel.",
+        "id": "irrlicht-overview-a01-aetherfunke",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "1",
+          "Aktion": "Ätherfunke",
+          "Typ": "Elementarangriff",
+          "Grundfunktion": "Zuverlässiger Licht-Fernangriff gegen ein Ziel."
+        }
+      },
+      {
+        "number": 2,
+        "name": "Lockflackern",
+        "type": "Elementarangriff / Position",
+        "base_function": "Weniger Schaden; kann ein Ziel bei misslungenem Rettungswurf 2 m in Richtung des Irrlichts bewegen.",
+        "id": "irrlicht-overview-a02-lockflackern",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "2",
+          "Aktion": "Lockflackern",
+          "Typ": "Elementarangriff / Position",
+          "Grundfunktion": "Weniger Schaden; kann ein Ziel bei misslungenem Rettungswurf 2 m in Richtung des Irrlichts bewegen."
+        }
+      },
+      {
+        "number": 3,
+        "name": "Blendpuls",
+        "type": "Flächenangriff",
+        "base_function": "Lichtausbruch im Nahbereich; gegen mehrere Ziele, mit Rettungswurf und reduziertem Einzelzielwert.",
+        "id": "irrlicht-overview-a03-blendpuls",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "3",
+          "Aktion": "Blendpuls",
+          "Typ": "Flächenangriff",
+          "Grundfunktion": "Lichtausbruch im Nahbereich; gegen mehrere Ziele, mit Rettungswurf und reduziertem Einzelzielwert."
+        }
+      },
+      {
+        "number": 4,
+        "name": "Flimmerflug",
+        "type": "Reaktion / Bewegung",
+        "base_function": "Nach einem verfehlten Angriff 2 m schweben; höchstens einmal pro Runde.",
+        "id": "irrlicht-overview-a04-flimmerflug",
+        "extra_fields": {},
+        "raw_fields": {
+          "Nr.": "4",
+          "Aktion": "Flimmerflug",
+          "Typ": "Reaktion / Bewegung",
+          "Grundfunktion": "Nach einem verfehlten Angriff 2 m schweben; höchstens einmal pro Runde."
+        }
+      }
+    ]
+  },
+  "shared_action_details": [
+    {
+      "id": "irrlicht-shared-aetherfunke",
+      "name": "Ätherfunke",
+      "type": "Elementarangriff",
+      "cost": "1 Aktion",
+      "range": "10 m",
+      "attack_roll": "`W20 + IN-Modifikator + IN-Bonus`",
+      "damage_type": "Licht",
+      "defense": "Magieverteidigung",
+      "rule_effect": "Das Irrlicht verdichtet einen Teil seiner Aura zu einem kurzen, geradlinigen Lichtstoß. Der Angriff besitzt keine zusätzliche Kontrolle, keinen automatischen Folgetreffer und keine Resistenzignorierung.",
+      "extra_fields": {},
+      "raw_fields": {
+        "Typ": "Elementarangriff",
+        "Kosten": "1 Aktion",
+        "Reichweite": "10 m",
+        "Angriffswurf": "`W20 + IN-Modifikator + IN-Bonus`",
+        "Schadensart": "Licht",
+        "Verteidigung": "Magieverteidigung",
+        "Regelwirkung": "Das Irrlicht verdichtet einen Teil seiner Aura zu einem kurzen, geradlinigen Lichtstoß. Der Angriff besitzt keine zusätzliche Kontrolle, keinen automatischen Folgetreffer und keine Resistenzignorierung."
+      },
+      "free_text": null,
+      "source": {
+        "line_start": 125,
+        "line_end": 134
+      }
+    },
+    {
+      "id": "irrlicht-shared-lockflackern",
+      "name": "Lockflackern",
+      "type": "Elementarangriff / Position",
+      "cost": "1 Aktion",
+      "range": "8 m",
+      "attack_roll": "`W20 + IN-Modifikator + IN-Bonus`",
+      "saving_throw": "Willenskraft oder Intuition gegen den stufenabhängigen SG, nachdem der Angriff getroffen hat",
+      "damage_type": "Licht",
+      "defense": "Magieverteidigung",
+      "rule_effect": "Bei einem Treffer wird das Ziel von einem unnatürlich rhythmischen Flackern erfasst. Misslingt der Rettungswurf, bewegt es sich **2 m auf direktem, begehbarem Weg in Richtung des Irrlichts**. Diese Bewegung verursacht keinen zusätzlichen Schaden und kann ein Ziel nicht durch feste Hindernisse bewegen. Ist keine sichere oder regeltechnisch mögliche Bewegung vorhanden, entfällt nur die Bewegung.",
+      "stacking": "Mehrere Lockflackern können jeweils auslösen, erzeugen aber keinen zusätzlichen Malus auf spätere Rettungswürfe.",
+      "extra_fields": {},
+      "raw_fields": {
+        "Typ": "Elementarangriff / Position",
+        "Kosten": "1 Aktion",
+        "Reichweite": "8 m",
+        "Angriffswurf": "`W20 + IN-Modifikator + IN-Bonus`",
+        "Rettungswurf": "Willenskraft oder Intuition gegen den stufenabhängigen SG, nachdem der Angriff getroffen hat",
+        "Schadensart": "Licht",
+        "Verteidigung": "Magieverteidigung",
+        "Regelwirkung": "Bei einem Treffer wird das Ziel von einem unnatürlich rhythmischen Flackern erfasst. Misslingt der Rettungswurf, bewegt es sich **2 m auf direktem, begehbarem Weg in Richtung des Irrlichts**. Diese Bewegung verursacht keinen zusätzlichen Schaden und kann ein Ziel nicht durch feste Hindernisse bewegen. Ist keine sichere oder regeltechnisch mögliche Bewegung vorhanden, entfällt nur die Bewegung.",
+        "Stapelung": "Mehrere Lockflackern können jeweils auslösen, erzeugen aber keinen zusätzlichen Malus auf spätere Rettungswürfe."
+      },
+      "free_text": null,
+      "source": {
+        "line_start": 135,
+        "line_end": 146
+      }
+    },
+    {
+      "id": "irrlicht-shared-blendpuls",
+      "name": "Blendpuls",
+      "type": "Flächenangriff / Elementar",
+      "cost": "2 Aktionen",
+      "area": "Radius 3 m um das Irrlicht",
+      "saving_throw": "Wahrnehmung oder Intuition gegen den stufenabhängigen SG",
+      "damage_type": "Licht",
+      "defense": "Magieverteidigung wird normal angerechnet",
+      "rule_effect": "Das Irrlicht dehnt seine Aura schlagartig aus. Blendpuls verwendet keinen Angriffswurf und kann deshalb nicht kritisch treffen. Er erzeugt keine dauerhafte Blindheit oder zusätzliche Zone.",
+      "extra_fields": {
+        "Erfolg": "Halber Schaden.",
+        "Fehlschlag": "Voller Schaden."
+      },
+      "raw_fields": {
+        "Typ": "Flächenangriff / Elementar",
+        "Kosten": "2 Aktionen",
+        "Fläche": "Radius 3 m um das Irrlicht",
+        "Rettungswurf": "Wahrnehmung oder Intuition gegen den stufenabhängigen SG",
+        "Schadensart": "Licht",
+        "Verteidigung": "Magieverteidigung wird normal angerechnet",
+        "Erfolg": "Halber Schaden.",
+        "Fehlschlag": "Voller Schaden.",
+        "Regelwirkung": "Das Irrlicht dehnt seine Aura schlagartig aus. Blendpuls verwendet keinen Angriffswurf und kann deshalb nicht kritisch treffen. Er erzeugt keine dauerhafte Blindheit oder zusätzliche Zone."
+      },
+      "free_text": null,
+      "source": {
+        "line_start": 147,
+        "line_end": 158
+      }
+    },
+    {
+      "id": "irrlicht-shared-flimmerflug",
+      "name": "Flimmerflug",
+      "type": "Reaktion / Bewegung",
+      "cost": "1 Reaktion",
+      "trigger": "Ein gegen das Irrlicht gerichteter Angriff wurde vollständig abgehandelt und hat verfehlt.",
+      "usage_limit": "Höchstens einmal pro Runde.",
+      "effect": "Das Irrlicht darf sich unmittelbar bis zu **2 m schwebend** in einen freien Bereich bewegen. Die Bewegung verursacht keinen Schaden, negiert keinen bereits getroffenen Angriff und löst keine zusätzliche Attacke aus.",
+      "extra_fields": {
+        "Ende": "Nach der Bewegung ist die Reaktion vollständig abgehandelt."
+      },
+      "raw_fields": {
+        "Typ": "Reaktion / Bewegung",
+        "Kosten": "1 Reaktion",
+        "Auslöser": "Ein gegen das Irrlicht gerichteter Angriff wurde vollständig abgehandelt und hat verfehlt.",
+        "Einsatzlimit": "Höchstens einmal pro Runde.",
+        "Wirkung": "Das Irrlicht darf sich unmittelbar bis zu **2 m schwebend** in einen freien Bereich bewegen. Die Bewegung verursacht keinen Schaden, negiert keinen bereits getroffenen Angriff und löst keine zusätzliche Attacke aus.",
+        "Ende": "Nach der Bewegung ist die Reaktion vollständig abgehandelt."
+      },
+      "free_text": "---",
+      "source": {
+        "line_start": 159,
+        "line_end": 168
+      }
+    }
+  ],
+  "lore_and_rules": [
+    {
+      "title": "Überblick",
+      "id": "ueberblick",
+      "markdown": "Das **Irrlicht** ist ein schwebendes Geistwesen, dessen Körper nicht aus Fleisch, Knochen oder gewöhnlicher Materie besteht. Im Zentrum des Wesens befindet sich ein dichter, blass leuchtender Ätherkern, um den sich flackernde Lichtfäden, feiner Nebel und kurze Funkenbahnen bewegen. Aus einiger Entfernung kann ein Irrlicht wie eine Laterne, ein Lagerfeuer, eine Fackel oder ein einzelner Lichtpunkt zwischen Bäumen wirken.\n\nSeine Gefahr entsteht weniger aus roher Kraft als aus **Täuschung, Bewegung und Fehlpositionierung**. Irrlichter schweben knapp über dem Boden, weichen plötzlich seitlich aus und locken Lebewesen durch wiederholtes Aufblitzen in ungünstige Richtungen. In Sümpfen führen sie Reisende an tiefes Wasser, in Ruinen an Abbruchkanten und in Wäldern weg von bekannten Wegen.\n\nEin Irrlicht ist kein gewöhnlicher Geist eines Verstorbenen. Es besitzt keine verlässliche Erinnerung an ein früheres Leben und spricht normalerweise nicht. Manche Exemplare imitieren jedoch einzelne Laute, Namen oder kurze Wortfetzen, die sie häufig gehört haben. Dieses Verhalten dient nicht echter Kommunikation, sondern zieht Aufmerksamkeit auf den Lichtkern.",
+      "tables": [],
+      "source": {
+        "line_start": 32,
+        "line_end": 39
+      }
+    },
+    {
+      "title": "Erscheinungsbild und Anatomie",
+      "id": "erscheinungsbild-und-anatomie",
+      "markdown": "Der sichtbare Mittelpunkt eines Irrlichts ist ein rundlicher oder tropfenförmiger Lichtkern. Seine Farbe reicht von blassem Weiß über kaltes Gold bis zu leicht grünlichem oder blauem Leuchten. Die konkrete Farbe verändert das Grundelement nicht: mechanisch bleibt das Wesen **lichtgeprägt**.\n\nUm den Kern ziehen sich dünne Fäden aus leuchtendem Äther. Sie bilden keine festen Gliedmaßen, können für Augenblicke aber an flatternde Bänder, Finger oder einen kleinen Schweif erinnern. Bei schneller Bewegung wird die Aura in die Länge gezogen und hinterlässt für einen Moment ein Nachbild.\n\nDas Irrlicht besitzt keine Lunge, kein Blut und keine feste Muskulatur. Seine Bewegung entsteht durch gerichtete Ätherverschiebung. Dadurch kann es über Wasser, Schlamm, Geröll oder niedrige Hindernisse schweben, ohne diese Oberflächen zu berühren. Es kann jedoch nicht beliebig hoch aufsteigen; die meisten Irrlichter halten sich innerhalb weniger Meter über dem Boden.",
+      "tables": [],
+      "source": {
+        "line_start": 40,
+        "line_end": 47
+      }
+    },
+    {
+      "title": "Herkunft und Entstehung",
+      "id": "herkunft-und-entstehung",
+      "markdown": "Irrlichter entstehen dort, wo sich **Lichtäther, Feuchtigkeit, Erinnerungsspuren und natürliche Ätherströmungen** über lange Zeit überlagern. Nicht jeder solcher Ort erzeugt ein Irrlicht. Häufig vergehen Jahre, bevor sich ein stabiler Kern bildet.\n\nSie gelten deshalb weder als klassische Untote noch als künstliche Konstrukte. Ein Irrlicht ist eher eine selbstständig gewordene, elementar geprägte Äthererscheinung. Manche Regionen erklären ihre Entstehung mit den letzten Gedanken Verstorbener, doch diese Deutung ist nicht allgemein bestätigt.",
+      "tables": [],
+      "source": {
+        "line_start": 48,
+        "line_end": 53
+      }
+    },
+    {
+      "title": "Lebensraum und Verhalten",
+      "id": "lebensraum-und-verhalten",
+      "markdown": "Irrlichter bevorzugen Orte mit schlechter Sicht und vielen natürlichen oder baulichen Gefahren. Nebel, hohes Gras, Wasserflächen, Wurzeln, eingestürzte Mauern und enge Pfade begünstigen ihr Verhalten.\n\nTagsüber verstecken sie sich häufig in dunklen Spalten, unter Wurzeln, in hohlen Steinen oder tiefem Nebel. In der Dämmerung und Nacht werden sie aktiver. Sie ernähren sich nicht im biologischen Sinn. Stattdessen ziehen sie geringe Mengen frei vorhandenen Äthers aus ihrer Umgebung. Starke Emotionen, hektische Bewegung und konzentrierte Magie scheinen sie zusätzlich anzulocken.\n\nEin einzelnes Irrlicht beobachtet Reisende oft zunächst aus Distanz. Reagiert jemand auf das Licht, beginnt es langsam zurückzuweichen und versucht, das Ziel von der Gruppe zu trennen. Wird es ignoriert oder direkt angegriffen, wechselt es zu schnellen Lichtstößen und kurzen seitlichen Fluchtbewegungen.",
+      "tables": [],
+      "source": {
+        "line_start": 54,
+        "line_end": 61
+      }
+    },
+    {
+      "title": "Spuren und Vorzeichen",
+      "id": "spuren-und-vorzeichen",
+      "markdown": "Typische Hinweise auf ein Irrlicht sind:\n\n- einzelne Lichtpunkte, die sich unabhängig von Wind oder Trägern bewegen,\n- kurze Lichtreflexe ohne erkennbare Quelle,\n- flackernde Nachbilder zwischen Bäumen oder Ruinen,\n- Tiere, die bestimmte Pfade in der Dämmerung meiden,\n- schwache ätherische Restladung an Steinen, Wasser oder Pflanzen,\n- wiederholte, schwer lokalisierbare Geräusche oder einzelne nachgeahmte Worte,\n- Fußspuren von Reisenden, die einen sicheren Weg verlassen und scheinbar grundlos in gefährliches Gelände führen.",
+      "tables": [],
+      "source": {
+        "line_start": 62,
+        "line_end": 73
+      }
+    },
+    {
+      "title": "Beziehung zu Bewohnern",
+      "id": "beziehung-zu-bewohnern",
+      "markdown": "In vielen Regionen gelten Irrlichter als Warnzeichen für unsichere Wege. Moorführer, Jäger und Ruinensucher lernen, Lichtquellen nie nur anhand ihrer Helligkeit zu beurteilen. Eine echte Laterne reagiert auf Bewegung, Wind und den Träger. Ein Irrlicht kann dagegen vollkommen still in der Luft stehen und sich erst bewegen, wenn jemand ihm folgt.\n\nEinige Bewohner stellen an gefährlichen Pfaden feste, gut erkennbare Laternen auf, damit Reisende echte Wegmarkierungen von Irrlichtern unterscheiden können. Andere verwenden Glocken, Seile oder markierte Steine, weil visuelle Orientierung allein in bekannten Irrlichtgebieten als unsicher gilt.",
+      "tables": [],
+      "source": {
+        "line_start": 74,
+        "line_end": 79
+      }
+    },
+    {
+      "title": "Kampfverhalten",
+      "id": "kampfverhalten",
+      "markdown": "Das Irrlicht vermeidet langen Nahkampf. Es hält Abstand, nutzt **Ätherfunke** als zuverlässigen Lichtangriff und setzt **Lockflackern** ein, um Gegner aus sicherer Position zu ziehen. Wenn mehrere Ziele nahe beieinander stehen, kann es mit **Blendpuls** einen kurzen Lichtausbruch erzeugen. **Flimmerflug** erlaubt ihm, nach einem verfehlten Angriff die Position geringfügig zu verändern.\n\nEs kämpft nicht bis zur Vernichtung, wenn ein glaubwürdiger Fluchtweg offensteht. Sinkt es unter ungefähr 25 % seiner maximalen LP und ist es nicht an einen Ort gebunden, versucht es sich in Nebel, Dunkelheit, Vegetation oder Ruinen zurückzuziehen.",
+      "tables": [],
+      "source": {
+        "line_start": 80,
+        "line_end": 85
+      }
+    },
+    {
+      "title": "Taktik für den Game Master",
+      "id": "taktik-fuer-den-game-master",
+      "markdown": "- **Eröffnung:** Abstand halten und mit Ätherfunke testen, welches Ziel leicht erreichbar ist.\n- **Positionierung:** Lockflackern bevorzugt gegen Figuren einsetzen, die an Kanten, Wasser, Engstellen oder abseits der Gruppe stehen.\n- **Mehrere Ziele:** Blendpuls lohnt sich erst, wenn realistisch mehrere Kreaturen getroffen werden können.\n- **Defensive:** Flimmerflug nicht als kostenlose Teleportation behandeln; es ist nur eine kleine Reaktionsbewegung nach einem Fehlschlag des Gegners.\n- **Rückzug:** Ein schwer beschädigtes Irrlicht sucht Sichtschutz und entfernt sich von der Gruppe.\n- **Intelligenz:** Es nutzt Gelände instinktiv geschickt, führt aber keine perfekte militärische Fokusfeuer-Taktik aus.",
+      "tables": [],
+      "source": {
+        "line_start": 86,
+        "line_end": 94
+      }
+    },
+    {
+      "title": "Mechanische Grundidentität",
+      "id": "mechanische-grundidentitaet",
+      "markdown": "**LP-Hauptattribut:** Willenskraft (WI) – der Ätherkern bleibt durch innere Stabilität zusammengehalten.  \n**LP-Sekundärattribut:** Beweglichkeit (BW) – ein Teil seiner Haltbarkeit entsteht daraus, dass der Körper ständig in Bewegung und nur teilweise materiell gebunden ist.  \n**Offensivprofil:** Magischer Fernkämpfer mit leichter Positionskontrolle.  \n**Defensivprofil:** Ausweichend; vergleichsweise geringe physische Verteidigung, gute Magieverteidigung und erhöhtes Ausweichen.  \n**Bewegungsprofil:** Schweben; ignoriert normalen schwierigen Boden durch Schlamm, flaches Wasser, Geröll und niedrige Hindernisse, solange kein Effekt ausdrücklich die Bewegung im Raum blockiert.  \n**Elementprofil:** **Lichtprägung**, **15 % Lichtresistenz**, **10 % Feuerresistenz**, **15 % Dunkelheitsverwundbarkeit**.  \n**Aktionsanzahl:** **4 unterschiedliche Kampfoptionen** – 3 aktive Aktionen und 1 Reaktion.  \n**Phasenprofil:** Kein Phasenwechsel.",
+      "tables": [],
+      "source": {
+        "line_start": 95,
+        "line_end": 105
+      }
+    },
+    {
+      "title": "Elementare Besonderheiten",
+      "id": "elementare-besonderheiten",
+      "markdown": "- **Licht – 15 % Resistenz:** Der Kern besteht bereits aus verdichtetem Lichtäther und kann einen Teil ähnlicher Energie aufnehmen oder zerstreuen.\n- **Feuer – 10 % Resistenz:** Hitze und gewöhnliche Flammen finden am körperlosen Ätherkern nur begrenzte Angriffsfläche. Dies ist keine Feuerprägung.\n- **Dunkelheit – 15 % Verwundbarkeit:** Verdichtete Dunkelheitsenergie stört die Lichtbindung des Kerns und lässt die äußeren Ätherfäden kurzzeitig zusammenbrechen.\n\nDie Elementwerte verändern nur den entsprechenden Schaden. Sie verleihen keine automatische Immunität gegen Blendung, Sichtbehinderung, Furcht oder andere Effekte.",
+      "tables": [],
+      "source": {
+        "line_start": 106,
+        "line_end": 113
+      }
+    },
+    {
+      "title": "Aktionsübersicht",
+      "id": "aktionsuebersicht",
+      "markdown": "| Nr. | Aktion | Typ | Grundfunktion |\n|---:|---|---|---|\n| 1 | Ätherfunke | Elementarangriff | Zuverlässiger Licht-Fernangriff gegen ein Ziel. |\n| 2 | Lockflackern | Elementarangriff / Position | Weniger Schaden; kann ein Ziel bei misslungenem Rettungswurf 2 m in Richtung des Irrlichts bewegen. |\n| 3 | Blendpuls | Flächenangriff | Lichtausbruch im Nahbereich; gegen mehrere Ziele, mit Rettungswurf und reduziertem Einzelzielwert. |\n| 4 | Flimmerflug | Reaktion / Bewegung | Nach einem verfehlten Angriff 2 m schweben; höchstens einmal pro Runde. |",
+      "tables": [
+        {
+          "headers": [
+            "Nr.",
+            "Aktion",
+            "Typ",
+            "Grundfunktion"
+          ],
+          "rows": [
+            {
+              "Nr.": "1",
+              "Aktion": "Ätherfunke",
+              "Typ": "Elementarangriff",
+              "Grundfunktion": "Zuverlässiger Licht-Fernangriff gegen ein Ziel."
+            },
+            {
+              "Nr.": "2",
+              "Aktion": "Lockflackern",
+              "Typ": "Elementarangriff / Position",
+              "Grundfunktion": "Weniger Schaden; kann ein Ziel bei misslungenem Rettungswurf 2 m in Richtung des Irrlichts bewegen."
+            },
+            {
+              "Nr.": "3",
+              "Aktion": "Blendpuls",
+              "Typ": "Flächenangriff",
+              "Grundfunktion": "Lichtausbruch im Nahbereich; gegen mehrere Ziele, mit Rettungswurf und reduziertem Einzelzielwert."
+            },
+            {
+              "Nr.": "4",
+              "Aktion": "Flimmerflug",
+              "Typ": "Reaktion / Bewegung",
+              "Grundfunktion": "Nach einem verfehlten Angriff 2 m schweben; höchstens einmal pro Runde."
+            }
+          ],
+          "raw_markdown": "| Nr. | Aktion | Typ | Grundfunktion |\n|---:|---|---|---|\n| 1 | Ätherfunke | Elementarangriff | Zuverlässiger Licht-Fernangriff gegen ein Ziel. |\n| 2 | Lockflackern | Elementarangriff / Position | Weniger Schaden; kann ein Ziel bei misslungenem Rettungswurf 2 m in Richtung des Irrlichts bewegen. |\n| 3 | Blendpuls | Flächenangriff | Lichtausbruch im Nahbereich; gegen mehrere Ziele, mit Rettungswurf und reduziertem Einzelzielwert. |\n| 4 | Flimmerflug | Reaktion / Bewegung | Nach einem verfehlten Angriff 2 m schweben; höchstens einmal pro Runde. |"
+        }
+      ],
+      "source": {
+        "line_start": 114,
+        "line_end": 122
+      }
+    },
+    {
+      "title": "Allgemeine Aktionsregeln",
+      "id": "allgemeine-aktionsregeln",
+      "markdown": "### Ätherfunke\n\n**Typ:** Elementarangriff  \n**Kosten:** 1 Aktion  \n**Reichweite:** 10 m  \n**Angriffswurf:** `W20 + IN-Modifikator + IN-Bonus`  \n**Schadensart:** Licht  \n**Verteidigung:** Magieverteidigung  \n**Regelwirkung:** Das Irrlicht verdichtet einen Teil seiner Aura zu einem kurzen, geradlinigen Lichtstoß. Der Angriff besitzt keine zusätzliche Kontrolle, keinen automatischen Folgetreffer und keine Resistenzignorierung.\n\n### Lockflackern\n\n**Typ:** Elementarangriff / Position  \n**Kosten:** 1 Aktion  \n**Reichweite:** 8 m  \n**Angriffswurf:** `W20 + IN-Modifikator + IN-Bonus`  \n**Rettungswurf:** Willenskraft oder Intuition gegen den stufenabhängigen SG, nachdem der Angriff getroffen hat  \n**Schadensart:** Licht  \n**Verteidigung:** Magieverteidigung  \n**Regelwirkung:** Bei einem Treffer wird das Ziel von einem unnatürlich rhythmischen Flackern erfasst. Misslingt der Rettungswurf, bewegt es sich **2 m auf direktem, begehbarem Weg in Richtung des Irrlichts**. Diese Bewegung verursacht keinen zusätzlichen Schaden und kann ein Ziel nicht durch feste Hindernisse bewegen. Ist keine sichere oder regeltechnisch mögliche Bewegung vorhanden, entfällt nur die Bewegung.  \n**Stapelung:** Mehrere Lockflackern können jeweils auslösen, erzeugen aber keinen zusätzlichen Malus auf spätere Rettungswürfe.\n\n### Blendpuls\n\n**Typ:** Flächenangriff / Elementar  \n**Kosten:** 2 Aktionen  \n**Fläche:** Radius 3 m um das Irrlicht  \n**Rettungswurf:** Wahrnehmung oder Intuition gegen den stufenabhängigen SG  \n**Schadensart:** Licht  \n**Verteidigung:** Magieverteidigung wird normal angerechnet  \n**Erfolg:** Halber Schaden.  \n**Fehlschlag:** Voller Schaden.  \n**Regelwirkung:** Das Irrlicht dehnt seine Aura schlagartig aus. Blendpuls verwendet keinen Angriffswurf und kann deshalb nicht kritisch treffen. Er erzeugt keine dauerhafte Blindheit oder zusätzliche Zone.\n\n### Flimmerflug\n\n**Typ:** Reaktion / Bewegung  \n**Kosten:** 1 Reaktion  \n**Auslöser:** Ein gegen das Irrlicht gerichteter Angriff wurde vollständig abgehandelt und hat verfehlt.  \n**Einsatzlimit:** Höchstens einmal pro Runde.  \n**Wirkung:** Das Irrlicht darf sich unmittelbar bis zu **2 m schwebend** in einen freien Bereich bewegen. Die Bewegung verursacht keinen Schaden, negiert keinen bereits getroffenen Angriff und löst keine zusätzliche Attacke aus.  \n**Ende:** Nach der Bewegung ist die Reaktion vollständig abgehandelt.\n\n---",
+      "tables": [],
+      "source": {
+        "line_start": 123,
+        "line_end": 168
+      },
+      "action_details": [
+        {
+          "id": "irrlicht-shared-aetherfunke",
+          "name": "Ätherfunke",
+          "type": "Elementarangriff",
+          "cost": "1 Aktion",
+          "range": "10 m",
+          "attack_roll": "`W20 + IN-Modifikator + IN-Bonus`",
+          "damage_type": "Licht",
+          "defense": "Magieverteidigung",
+          "rule_effect": "Das Irrlicht verdichtet einen Teil seiner Aura zu einem kurzen, geradlinigen Lichtstoß. Der Angriff besitzt keine zusätzliche Kontrolle, keinen automatischen Folgetreffer und keine Resistenzignorierung.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Elementarangriff",
+            "Kosten": "1 Aktion",
+            "Reichweite": "10 m",
+            "Angriffswurf": "`W20 + IN-Modifikator + IN-Bonus`",
+            "Schadensart": "Licht",
+            "Verteidigung": "Magieverteidigung",
+            "Regelwirkung": "Das Irrlicht verdichtet einen Teil seiner Aura zu einem kurzen, geradlinigen Lichtstoß. Der Angriff besitzt keine zusätzliche Kontrolle, keinen automatischen Folgetreffer und keine Resistenzignorierung."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 125,
+            "line_end": 134
+          }
+        },
+        {
+          "id": "irrlicht-shared-lockflackern",
+          "name": "Lockflackern",
+          "type": "Elementarangriff / Position",
+          "cost": "1 Aktion",
+          "range": "8 m",
+          "attack_roll": "`W20 + IN-Modifikator + IN-Bonus`",
+          "saving_throw": "Willenskraft oder Intuition gegen den stufenabhängigen SG, nachdem der Angriff getroffen hat",
+          "damage_type": "Licht",
+          "defense": "Magieverteidigung",
+          "rule_effect": "Bei einem Treffer wird das Ziel von einem unnatürlich rhythmischen Flackern erfasst. Misslingt der Rettungswurf, bewegt es sich **2 m auf direktem, begehbarem Weg in Richtung des Irrlichts**. Diese Bewegung verursacht keinen zusätzlichen Schaden und kann ein Ziel nicht durch feste Hindernisse bewegen. Ist keine sichere oder regeltechnisch mögliche Bewegung vorhanden, entfällt nur die Bewegung.",
+          "stacking": "Mehrere Lockflackern können jeweils auslösen, erzeugen aber keinen zusätzlichen Malus auf spätere Rettungswürfe.",
+          "extra_fields": {},
+          "raw_fields": {
+            "Typ": "Elementarangriff / Position",
+            "Kosten": "1 Aktion",
+            "Reichweite": "8 m",
+            "Angriffswurf": "`W20 + IN-Modifikator + IN-Bonus`",
+            "Rettungswurf": "Willenskraft oder Intuition gegen den stufenabhängigen SG, nachdem der Angriff getroffen hat",
+            "Schadensart": "Licht",
+            "Verteidigung": "Magieverteidigung",
+            "Regelwirkung": "Bei einem Treffer wird das Ziel von einem unnatürlich rhythmischen Flackern erfasst. Misslingt der Rettungswurf, bewegt es sich **2 m auf direktem, begehbarem Weg in Richtung des Irrlichts**. Diese Bewegung verursacht keinen zusätzlichen Schaden und kann ein Ziel nicht durch feste Hindernisse bewegen. Ist keine sichere oder regeltechnisch mögliche Bewegung vorhanden, entfällt nur die Bewegung.",
+            "Stapelung": "Mehrere Lockflackern können jeweils auslösen, erzeugen aber keinen zusätzlichen Malus auf spätere Rettungswürfe."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 135,
+            "line_end": 146
+          }
+        },
+        {
+          "id": "irrlicht-shared-blendpuls",
+          "name": "Blendpuls",
+          "type": "Flächenangriff / Elementar",
+          "cost": "2 Aktionen",
+          "area": "Radius 3 m um das Irrlicht",
+          "saving_throw": "Wahrnehmung oder Intuition gegen den stufenabhängigen SG",
+          "damage_type": "Licht",
+          "defense": "Magieverteidigung wird normal angerechnet",
+          "rule_effect": "Das Irrlicht dehnt seine Aura schlagartig aus. Blendpuls verwendet keinen Angriffswurf und kann deshalb nicht kritisch treffen. Er erzeugt keine dauerhafte Blindheit oder zusätzliche Zone.",
+          "extra_fields": {
+            "Erfolg": "Halber Schaden.",
+            "Fehlschlag": "Voller Schaden."
+          },
+          "raw_fields": {
+            "Typ": "Flächenangriff / Elementar",
+            "Kosten": "2 Aktionen",
+            "Fläche": "Radius 3 m um das Irrlicht",
+            "Rettungswurf": "Wahrnehmung oder Intuition gegen den stufenabhängigen SG",
+            "Schadensart": "Licht",
+            "Verteidigung": "Magieverteidigung wird normal angerechnet",
+            "Erfolg": "Halber Schaden.",
+            "Fehlschlag": "Voller Schaden.",
+            "Regelwirkung": "Das Irrlicht dehnt seine Aura schlagartig aus. Blendpuls verwendet keinen Angriffswurf und kann deshalb nicht kritisch treffen. Er erzeugt keine dauerhafte Blindheit oder zusätzliche Zone."
+          },
+          "free_text": null,
+          "source": {
+            "line_start": 147,
+            "line_end": 158
+          }
+        },
+        {
+          "id": "irrlicht-shared-flimmerflug",
+          "name": "Flimmerflug",
+          "type": "Reaktion / Bewegung",
+          "cost": "1 Reaktion",
+          "trigger": "Ein gegen das Irrlicht gerichteter Angriff wurde vollständig abgehandelt und hat verfehlt.",
+          "usage_limit": "Höchstens einmal pro Runde.",
+          "effect": "Das Irrlicht darf sich unmittelbar bis zu **2 m schwebend** in einen freien Bereich bewegen. Die Bewegung verursacht keinen Schaden, negiert keinen bereits getroffenen Angriff und löst keine zusätzliche Attacke aus.",
+          "extra_fields": {
+            "Ende": "Nach der Bewegung ist die Reaktion vollständig abgehandelt."
+          },
+          "raw_fields": {
+            "Typ": "Reaktion / Bewegung",
+            "Kosten": "1 Reaktion",
+            "Auslöser": "Ein gegen das Irrlicht gerichteter Angriff wurde vollständig abgehandelt und hat verfehlt.",
+            "Einsatzlimit": "Höchstens einmal pro Runde.",
+            "Wirkung": "Das Irrlicht darf sich unmittelbar bis zu **2 m schwebend** in einen freien Bereich bewegen. Die Bewegung verursacht keinen Schaden, negiert keinen bereits getroffenen Angriff und löst keine zusätzliche Attacke aus.",
+            "Ende": "Nach der Bewegung ist die Reaktion vollständig abgehandelt."
+          },
+          "free_text": "---",
+          "source": {
+            "line_start": 159,
+            "line_end": 168
+          }
+        }
+      ]
+    }
+  ],
+  "levels": [
+    {
+      "level": 1,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 4,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "4",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "130",
+          "physische_verteidigung": "7",
+          "magieverteidigung": "9",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Schweben 10 m",
+          "lockflackern_sg": "12",
+          "blendpuls_sg": "12"
+        },
+        "raw_fields": {
+          "Maximale LP": "130",
+          "Physische Verteidigung": "7",
+          "Magieverteidigung": "9",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Schweben 10 m",
+          "Lockflackern-SG": "12",
+          "Blendpuls-SG": "12"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+1) + WI-Bonus (+0)) × 10) + ((BW-Modifikator (+2) + BW-Bonus (+0)) × 5) + (1 × 10) = 130 LP",
+        "markdown": "`100 + ((WI-Modifikator (+1) + WI-Bonus (+0)) × 10) + ((BW-Modifikator (+2) + BW-Bonus (+0)) × 5) + (1 × 10) = 130 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Ätherfunke",
+            "cost": "1 Aktion",
+            "type": "Elementarangriff",
+            "attribute": "IN",
+            "attack_or_dc": "W20 + +5",
+            "range_area": "10 m",
+            "damage_effect": "4W6 + 5",
+            "damage_type": "Licht",
+            "defense_save": "Magieverteidigung",
+            "avg_raw_damage": "19",
+            "notes": "Keine Zusatzwirkung.",
+            "avg_raw_damage_value": 19.0,
+            "id": "irrlicht-l01-a01-aetherfunke",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Ätherfunke",
+              "Kosten": "1 Aktion",
+              "Typ": "Elementarangriff",
+              "Attribut": "IN",
+              "Angriff / SG": "`W20 + +5`",
+              "Reichweite / Fläche": "10 m",
+              "Schaden / Wirkung": "`4W6 + 5`",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "Magieverteidigung",
+              "Ø Rohschaden": "19",
+              "Zusatz": "Keine Zusatzwirkung."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Lockflackern",
+            "cost": "1 Aktion",
+            "type": "Elementarangriff / Position",
+            "attribute": "IN",
+            "attack_or_dc": "`W20 + +5`; danach SG 12",
+            "range_area": "8 m",
+            "damage_effect": "`3W6 + 5`; bei misslungenem WI-/IT-RW 2 m zum Irrlicht",
+            "damage_type": "Licht",
+            "defense_save": "Magieverteidigung; WI/IT-Rettung",
+            "avg_raw_damage": "15,5",
+            "notes": "Positionskontrolle statt vollem Standardschaden.",
+            "avg_raw_damage_value": 15.5,
+            "id": "irrlicht-l01-a02-lockflackern",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Lockflackern",
+              "Kosten": "1 Aktion",
+              "Typ": "Elementarangriff / Position",
+              "Attribut": "IN",
+              "Angriff / SG": "`W20 + +5`; danach SG 12",
+              "Reichweite / Fläche": "8 m",
+              "Schaden / Wirkung": "`3W6 + 5`; bei misslungenem WI-/IT-RW 2 m zum Irrlicht",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "Magieverteidigung; WI/IT-Rettung",
+              "Ø Rohschaden": "15,5",
+              "Zusatz": "Positionskontrolle statt vollem Standardschaden."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Blendpuls",
+            "cost": "2 Aktionen",
+            "type": "Flächenangriff",
+            "attribute": null,
+            "attack_or_dc": "SG 12",
+            "range_area": "Radius 3 m",
+            "damage_effect": "`4W6 + 5`; Erfolg halber Schaden",
+            "damage_type": "Licht",
+            "defense_save": "WA/IT-Rettung; Magieverteidigung",
+            "avg_raw_damage": "19",
+            "notes": "Kein Angriffswurf, kein Krit.",
+            "avg_raw_damage_value": 19.0,
+            "id": "irrlicht-l01-a03-blendpuls",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Blendpuls",
+              "Kosten": "2 Aktionen",
+              "Typ": "Flächenangriff",
+              "Attribut": null,
+              "Angriff / SG": "SG 12",
+              "Reichweite / Fläche": "Radius 3 m",
+              "Schaden / Wirkung": "`4W6 + 5`; Erfolg halber Schaden",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "WA/IT-Rettung; Magieverteidigung",
+              "Ø Rohschaden": "19",
+              "Zusatz": "Kein Angriffswurf, kein Krit."
+            }
+          },
+          {
+            "number": 4,
+            "name": "Flimmerflug",
+            "cost": "1 Reaktion",
+            "type": "Bewegung",
+            "attribute": null,
+            "attack_or_dc": "Auslöser: Angriff verfehlt",
+            "range_area": "Selbst / 2 m",
+            "damage_effect": "Bis zu 2 m schweben",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "notes": "Höchstens 1× pro Runde.",
+            "id": "irrlicht-l01-a04-flimmerflug",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "4",
+              "Aktion": "Flimmerflug",
+              "Kosten": "1 Reaktion",
+              "Typ": "Bewegung",
+              "Attribut": null,
+              "Angriff / SG": "Auslöser: Angriff verfehlt",
+              "Reichweite / Fläche": "Selbst / 2 m",
+              "Schaden / Wirkung": "Bis zu 2 m schweben",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Zusatz": "Höchstens 1× pro Runde."
+            }
+          }
+        ]
+      },
+      "action_details": [],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "15 % Resistenz",
+            "type": "resistance",
+            "percent": 15
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "15 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 15
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–",
+            "**15 % Resistenz**",
+            "**15 % Verwundbarkeit**"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 169,
+        "line_end": 219
+      }
+    },
+    {
+      "level": 5,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 4,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "4",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 10,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "10",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "185",
+          "physische_verteidigung": "9",
+          "magieverteidigung": "11",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Schweben 10 m",
+          "lockflackern_sg": "13",
+          "blendpuls_sg": "13"
+        },
+        "raw_fields": {
+          "Maximale LP": "185",
+          "Physische Verteidigung": "9",
+          "Magieverteidigung": "11",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Schweben 10 m",
+          "Lockflackern-SG": "13",
+          "Blendpuls-SG": "13"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+1) + WI-Bonus (+1)) × 10) + ((BW-Modifikator (+2) + BW-Bonus (+1)) × 5) + (5 × 10) = 185 LP",
+        "markdown": "`100 + ((WI-Modifikator (+1) + WI-Bonus (+1)) × 10) + ((BW-Modifikator (+2) + BW-Bonus (+1)) × 5) + (5 × 10) = 185 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Ätherfunke",
+            "cost": "1 Aktion",
+            "type": "Elementarangriff",
+            "attribute": "IN",
+            "attack_or_dc": "W20 + +6",
+            "range_area": "10 m",
+            "damage_effect": "5W6 + 6",
+            "damage_type": "Licht",
+            "defense_save": "Magieverteidigung",
+            "avg_raw_damage": "23,5",
+            "notes": "Keine Zusatzwirkung.",
+            "avg_raw_damage_value": 23.5,
+            "id": "irrlicht-l05-a01-aetherfunke",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Ätherfunke",
+              "Kosten": "1 Aktion",
+              "Typ": "Elementarangriff",
+              "Attribut": "IN",
+              "Angriff / SG": "`W20 + +6`",
+              "Reichweite / Fläche": "10 m",
+              "Schaden / Wirkung": "`5W6 + 6`",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "Magieverteidigung",
+              "Ø Rohschaden": "23,5",
+              "Zusatz": "Keine Zusatzwirkung."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Lockflackern",
+            "cost": "1 Aktion",
+            "type": "Elementarangriff / Position",
+            "attribute": "IN",
+            "attack_or_dc": "`W20 + +6`; danach SG 13",
+            "range_area": "8 m",
+            "damage_effect": "`4W6 + 6`; bei misslungenem WI-/IT-RW 2 m zum Irrlicht",
+            "damage_type": "Licht",
+            "defense_save": "Magieverteidigung; WI/IT-Rettung",
+            "avg_raw_damage": "20",
+            "notes": "Positionskontrolle statt vollem Standardschaden.",
+            "avg_raw_damage_value": 20.0,
+            "id": "irrlicht-l05-a02-lockflackern",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Lockflackern",
+              "Kosten": "1 Aktion",
+              "Typ": "Elementarangriff / Position",
+              "Attribut": "IN",
+              "Angriff / SG": "`W20 + +6`; danach SG 13",
+              "Reichweite / Fläche": "8 m",
+              "Schaden / Wirkung": "`4W6 + 6`; bei misslungenem WI-/IT-RW 2 m zum Irrlicht",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "Magieverteidigung; WI/IT-Rettung",
+              "Ø Rohschaden": "20",
+              "Zusatz": "Positionskontrolle statt vollem Standardschaden."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Blendpuls",
+            "cost": "2 Aktionen",
+            "type": "Flächenangriff",
+            "attribute": null,
+            "attack_or_dc": "SG 13",
+            "range_area": "Radius 3 m",
+            "damage_effect": "`5W6 + 6`; Erfolg halber Schaden",
+            "damage_type": "Licht",
+            "defense_save": "WA/IT-Rettung; Magieverteidigung",
+            "avg_raw_damage": "23,5",
+            "notes": "Kein Angriffswurf, kein Krit.",
+            "avg_raw_damage_value": 23.5,
+            "id": "irrlicht-l05-a03-blendpuls",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Blendpuls",
+              "Kosten": "2 Aktionen",
+              "Typ": "Flächenangriff",
+              "Attribut": null,
+              "Angriff / SG": "SG 13",
+              "Reichweite / Fläche": "Radius 3 m",
+              "Schaden / Wirkung": "`5W6 + 6`; Erfolg halber Schaden",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "WA/IT-Rettung; Magieverteidigung",
+              "Ø Rohschaden": "23,5",
+              "Zusatz": "Kein Angriffswurf, kein Krit."
+            }
+          },
+          {
+            "number": 4,
+            "name": "Flimmerflug",
+            "cost": "1 Reaktion",
+            "type": "Bewegung",
+            "attribute": null,
+            "attack_or_dc": "Auslöser: Angriff verfehlt",
+            "range_area": "Selbst / 2 m",
+            "damage_effect": "Bis zu 2 m schweben",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "notes": "Höchstens 1× pro Runde.",
+            "id": "irrlicht-l05-a04-flimmerflug",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "4",
+              "Aktion": "Flimmerflug",
+              "Kosten": "1 Reaktion",
+              "Typ": "Bewegung",
+              "Attribut": null,
+              "Angriff / SG": "Auslöser: Angriff verfehlt",
+              "Reichweite / Fläche": "Selbst / 2 m",
+              "Schaden / Wirkung": "Bis zu 2 m schweben",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Zusatz": "Höchstens 1× pro Runde."
+            }
+          }
+        ]
+      },
+      "action_details": [],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "15 % Resistenz",
+            "type": "resistance",
+            "percent": 15
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "15 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 15
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–",
+            "**15 % Resistenz**",
+            "**15 % Verwundbarkeit**"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 220,
+        "line_end": 270
+      }
+    },
+    {
+      "level": 10,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 11,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "11",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "250",
+          "physische_verteidigung": "11",
+          "magieverteidigung": "13",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Schweben 10 m",
+          "lockflackern_sg": "14",
+          "blendpuls_sg": "14"
+        },
+        "raw_fields": {
+          "Maximale LP": "250",
+          "Physische Verteidigung": "11",
+          "Magieverteidigung": "13",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Schweben 10 m",
+          "Lockflackern-SG": "14",
+          "Blendpuls-SG": "14"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+2) + WI-Bonus (+1)) × 10) + ((BW-Modifikator (+3) + BW-Bonus (+1)) × 5) + (10 × 10) = 250 LP",
+        "markdown": "`100 + ((WI-Modifikator (+2) + WI-Bonus (+1)) × 10) + ((BW-Modifikator (+3) + BW-Bonus (+1)) × 5) + (10 × 10) = 250 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Ätherfunke",
+            "cost": "1 Aktion",
+            "type": "Elementarangriff",
+            "attribute": "IN",
+            "attack_or_dc": "W20 + +7",
+            "range_area": "10 m",
+            "damage_effect": "6W6 + 7",
+            "damage_type": "Licht",
+            "defense_save": "Magieverteidigung",
+            "avg_raw_damage": "28",
+            "notes": "Keine Zusatzwirkung.",
+            "avg_raw_damage_value": 28.0,
+            "id": "irrlicht-l10-a01-aetherfunke",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Ätherfunke",
+              "Kosten": "1 Aktion",
+              "Typ": "Elementarangriff",
+              "Attribut": "IN",
+              "Angriff / SG": "`W20 + +7`",
+              "Reichweite / Fläche": "10 m",
+              "Schaden / Wirkung": "`6W6 + 7`",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "Magieverteidigung",
+              "Ø Rohschaden": "28",
+              "Zusatz": "Keine Zusatzwirkung."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Lockflackern",
+            "cost": "1 Aktion",
+            "type": "Elementarangriff / Position",
+            "attribute": "IN",
+            "attack_or_dc": "`W20 + +7`; danach SG 14",
+            "range_area": "8 m",
+            "damage_effect": "`5W6 + 7`; bei misslungenem WI-/IT-RW 2 m zum Irrlicht",
+            "damage_type": "Licht",
+            "defense_save": "Magieverteidigung; WI/IT-Rettung",
+            "avg_raw_damage": "24,5",
+            "notes": "Positionskontrolle statt vollem Standardschaden.",
+            "avg_raw_damage_value": 24.5,
+            "id": "irrlicht-l10-a02-lockflackern",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Lockflackern",
+              "Kosten": "1 Aktion",
+              "Typ": "Elementarangriff / Position",
+              "Attribut": "IN",
+              "Angriff / SG": "`W20 + +7`; danach SG 14",
+              "Reichweite / Fläche": "8 m",
+              "Schaden / Wirkung": "`5W6 + 7`; bei misslungenem WI-/IT-RW 2 m zum Irrlicht",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "Magieverteidigung; WI/IT-Rettung",
+              "Ø Rohschaden": "24,5",
+              "Zusatz": "Positionskontrolle statt vollem Standardschaden."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Blendpuls",
+            "cost": "2 Aktionen",
+            "type": "Flächenangriff",
+            "attribute": null,
+            "attack_or_dc": "SG 14",
+            "range_area": "Radius 3 m",
+            "damage_effect": "`6W6 + 7`; Erfolg halber Schaden",
+            "damage_type": "Licht",
+            "defense_save": "WA/IT-Rettung; Magieverteidigung",
+            "avg_raw_damage": "28",
+            "notes": "Kein Angriffswurf, kein Krit.",
+            "avg_raw_damage_value": 28.0,
+            "id": "irrlicht-l10-a03-blendpuls",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Blendpuls",
+              "Kosten": "2 Aktionen",
+              "Typ": "Flächenangriff",
+              "Attribut": null,
+              "Angriff / SG": "SG 14",
+              "Reichweite / Fläche": "Radius 3 m",
+              "Schaden / Wirkung": "`6W6 + 7`; Erfolg halber Schaden",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "WA/IT-Rettung; Magieverteidigung",
+              "Ø Rohschaden": "28",
+              "Zusatz": "Kein Angriffswurf, kein Krit."
+            }
+          },
+          {
+            "number": 4,
+            "name": "Flimmerflug",
+            "cost": "1 Reaktion",
+            "type": "Bewegung",
+            "attribute": null,
+            "attack_or_dc": "Auslöser: Angriff verfehlt",
+            "range_area": "Selbst / 2 m",
+            "damage_effect": "Bis zu 2 m schweben",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "notes": "Höchstens 1× pro Runde.",
+            "id": "irrlicht-l10-a04-flimmerflug",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "4",
+              "Aktion": "Flimmerflug",
+              "Kosten": "1 Reaktion",
+              "Typ": "Bewegung",
+              "Attribut": null,
+              "Angriff / SG": "Auslöser: Angriff verfehlt",
+              "Reichweite / Fläche": "Selbst / 2 m",
+              "Schaden / Wirkung": "Bis zu 2 m schweben",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Zusatz": "Höchstens 1× pro Runde."
+            }
+          }
+        ]
+      },
+      "action_details": [],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "15 % Resistenz",
+            "type": "resistance",
+            "percent": 15
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "15 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 15
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–",
+            "**15 % Resistenz**",
+            "**15 % Verwundbarkeit**"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 271,
+        "line_end": 321
+      }
+    },
+    {
+      "level": 15,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 5,
+          "modifier": -3,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "5",
+            "Modifikator": "-3",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 17,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "17",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 11,
+          "modifier": 0,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "11",
+            "Modifikator": "+0",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "315",
+          "physische_verteidigung": "13",
+          "magieverteidigung": "15",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Schweben 10 m",
+          "lockflackern_sg": "15",
+          "blendpuls_sg": "15"
+        },
+        "raw_fields": {
+          "Maximale LP": "315",
+          "Physische Verteidigung": "13",
+          "Magieverteidigung": "15",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Schweben 10 m",
+          "Lockflackern-SG": "15",
+          "Blendpuls-SG": "15"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+2) + WI-Bonus (+2)) × 10) + ((BW-Modifikator (+3) + BW-Bonus (+2)) × 5) + (15 × 10) = 315 LP",
+        "markdown": "`100 + ((WI-Modifikator (+2) + WI-Bonus (+2)) × 10) + ((BW-Modifikator (+3) + BW-Bonus (+2)) × 5) + (15 × 10) = 315 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Ätherfunke",
+            "cost": "1 Aktion",
+            "type": "Elementarangriff",
+            "attribute": "IN",
+            "attack_or_dc": "W20 + +8",
+            "range_area": "10 m",
+            "damage_effect": "6W8 + 8",
+            "damage_type": "Licht",
+            "defense_save": "Magieverteidigung",
+            "avg_raw_damage": "35",
+            "notes": "Keine Zusatzwirkung.",
+            "avg_raw_damage_value": 35.0,
+            "id": "irrlicht-l15-a01-aetherfunke",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Ätherfunke",
+              "Kosten": "1 Aktion",
+              "Typ": "Elementarangriff",
+              "Attribut": "IN",
+              "Angriff / SG": "`W20 + +8`",
+              "Reichweite / Fläche": "10 m",
+              "Schaden / Wirkung": "`6W8 + 8`",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "Magieverteidigung",
+              "Ø Rohschaden": "35",
+              "Zusatz": "Keine Zusatzwirkung."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Lockflackern",
+            "cost": "1 Aktion",
+            "type": "Elementarangriff / Position",
+            "attribute": "IN",
+            "attack_or_dc": "`W20 + +8`; danach SG 15",
+            "range_area": "8 m",
+            "damage_effect": "`5W8 + 8`; bei misslungenem WI-/IT-RW 2 m zum Irrlicht",
+            "damage_type": "Licht",
+            "defense_save": "Magieverteidigung; WI/IT-Rettung",
+            "avg_raw_damage": "30,5",
+            "notes": "Positionskontrolle statt vollem Standardschaden.",
+            "avg_raw_damage_value": 30.5,
+            "id": "irrlicht-l15-a02-lockflackern",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Lockflackern",
+              "Kosten": "1 Aktion",
+              "Typ": "Elementarangriff / Position",
+              "Attribut": "IN",
+              "Angriff / SG": "`W20 + +8`; danach SG 15",
+              "Reichweite / Fläche": "8 m",
+              "Schaden / Wirkung": "`5W8 + 8`; bei misslungenem WI-/IT-RW 2 m zum Irrlicht",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "Magieverteidigung; WI/IT-Rettung",
+              "Ø Rohschaden": "30,5",
+              "Zusatz": "Positionskontrolle statt vollem Standardschaden."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Blendpuls",
+            "cost": "2 Aktionen",
+            "type": "Flächenangriff",
+            "attribute": null,
+            "attack_or_dc": "SG 15",
+            "range_area": "Radius 3 m",
+            "damage_effect": "`6W8 + 8`; Erfolg halber Schaden",
+            "damage_type": "Licht",
+            "defense_save": "WA/IT-Rettung; Magieverteidigung",
+            "avg_raw_damage": "35",
+            "notes": "Kein Angriffswurf, kein Krit.",
+            "avg_raw_damage_value": 35.0,
+            "id": "irrlicht-l15-a03-blendpuls",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Blendpuls",
+              "Kosten": "2 Aktionen",
+              "Typ": "Flächenangriff",
+              "Attribut": null,
+              "Angriff / SG": "SG 15",
+              "Reichweite / Fläche": "Radius 3 m",
+              "Schaden / Wirkung": "`6W8 + 8`; Erfolg halber Schaden",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "WA/IT-Rettung; Magieverteidigung",
+              "Ø Rohschaden": "35",
+              "Zusatz": "Kein Angriffswurf, kein Krit."
+            }
+          },
+          {
+            "number": 4,
+            "name": "Flimmerflug",
+            "cost": "1 Reaktion",
+            "type": "Bewegung",
+            "attribute": null,
+            "attack_or_dc": "Auslöser: Angriff verfehlt",
+            "range_area": "Selbst / 2 m",
+            "damage_effect": "Bis zu 2 m schweben",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "notes": "Höchstens 1× pro Runde.",
+            "id": "irrlicht-l15-a04-flimmerflug",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "4",
+              "Aktion": "Flimmerflug",
+              "Kosten": "1 Reaktion",
+              "Typ": "Bewegung",
+              "Attribut": null,
+              "Angriff / SG": "Auslöser: Angriff verfehlt",
+              "Reichweite / Fläche": "Selbst / 2 m",
+              "Schaden / Wirkung": "Bis zu 2 m schweben",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Zusatz": "Höchstens 1× pro Runde."
+            }
+          }
+        ]
+      },
+      "action_details": [],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "15 % Resistenz",
+            "type": "resistance",
+            "percent": 15
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "15 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 15
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–",
+            "**15 % Resistenz**",
+            "**15 % Verwundbarkeit**"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 322,
+        "line_end": 372
+      }
+    },
+    {
+      "level": 20,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "380",
+          "physische_verteidigung": "15",
+          "magieverteidigung": "17",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Schweben 11 m",
+          "lockflackern_sg": "16",
+          "blendpuls_sg": "16"
+        },
+        "raw_fields": {
+          "Maximale LP": "380",
+          "Physische Verteidigung": "15",
+          "Magieverteidigung": "17",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Schweben 11 m",
+          "Lockflackern-SG": "16",
+          "Blendpuls-SG": "16"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+3) + WI-Bonus (+2)) × 10) + ((BW-Modifikator (+4) + BW-Bonus (+2)) × 5) + (20 × 10) = 380 LP",
+        "markdown": "`100 + ((WI-Modifikator (+3) + WI-Bonus (+2)) × 10) + ((BW-Modifikator (+4) + BW-Bonus (+2)) × 5) + (20 × 10) = 380 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Ätherfunke",
+            "cost": "1 Aktion",
+            "type": "Elementarangriff",
+            "attribute": "IN",
+            "attack_or_dc": "W20 + +9",
+            "range_area": "10 m",
+            "damage_effect": "7W8 + 9",
+            "damage_type": "Licht",
+            "defense_save": "Magieverteidigung",
+            "avg_raw_damage": "40,5",
+            "notes": "Keine Zusatzwirkung.",
+            "avg_raw_damage_value": 40.5,
+            "id": "irrlicht-l20-a01-aetherfunke",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Ätherfunke",
+              "Kosten": "1 Aktion",
+              "Typ": "Elementarangriff",
+              "Attribut": "IN",
+              "Angriff / SG": "`W20 + +9`",
+              "Reichweite / Fläche": "10 m",
+              "Schaden / Wirkung": "`7W8 + 9`",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "Magieverteidigung",
+              "Ø Rohschaden": "40,5",
+              "Zusatz": "Keine Zusatzwirkung."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Lockflackern",
+            "cost": "1 Aktion",
+            "type": "Elementarangriff / Position",
+            "attribute": "IN",
+            "attack_or_dc": "`W20 + +9`; danach SG 16",
+            "range_area": "8 m",
+            "damage_effect": "`6W8 + 9`; bei misslungenem WI-/IT-RW 2 m zum Irrlicht",
+            "damage_type": "Licht",
+            "defense_save": "Magieverteidigung; WI/IT-Rettung",
+            "avg_raw_damage": "36",
+            "notes": "Positionskontrolle statt vollem Standardschaden.",
+            "avg_raw_damage_value": 36.0,
+            "id": "irrlicht-l20-a02-lockflackern",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Lockflackern",
+              "Kosten": "1 Aktion",
+              "Typ": "Elementarangriff / Position",
+              "Attribut": "IN",
+              "Angriff / SG": "`W20 + +9`; danach SG 16",
+              "Reichweite / Fläche": "8 m",
+              "Schaden / Wirkung": "`6W8 + 9`; bei misslungenem WI-/IT-RW 2 m zum Irrlicht",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "Magieverteidigung; WI/IT-Rettung",
+              "Ø Rohschaden": "36",
+              "Zusatz": "Positionskontrolle statt vollem Standardschaden."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Blendpuls",
+            "cost": "2 Aktionen",
+            "type": "Flächenangriff",
+            "attribute": null,
+            "attack_or_dc": "SG 16",
+            "range_area": "Radius 3 m",
+            "damage_effect": "`7W8 + 9`; Erfolg halber Schaden",
+            "damage_type": "Licht",
+            "defense_save": "WA/IT-Rettung; Magieverteidigung",
+            "avg_raw_damage": "40,5",
+            "notes": "Kein Angriffswurf, kein Krit.",
+            "avg_raw_damage_value": 40.5,
+            "id": "irrlicht-l20-a03-blendpuls",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Blendpuls",
+              "Kosten": "2 Aktionen",
+              "Typ": "Flächenangriff",
+              "Attribut": null,
+              "Angriff / SG": "SG 16",
+              "Reichweite / Fläche": "Radius 3 m",
+              "Schaden / Wirkung": "`7W8 + 9`; Erfolg halber Schaden",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "WA/IT-Rettung; Magieverteidigung",
+              "Ø Rohschaden": "40,5",
+              "Zusatz": "Kein Angriffswurf, kein Krit."
+            }
+          },
+          {
+            "number": 4,
+            "name": "Flimmerflug",
+            "cost": "1 Reaktion",
+            "type": "Bewegung",
+            "attribute": null,
+            "attack_or_dc": "Auslöser: Angriff verfehlt",
+            "range_area": "Selbst / 2 m",
+            "damage_effect": "Bis zu 2 m schweben",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "notes": "Höchstens 1× pro Runde.",
+            "id": "irrlicht-l20-a04-flimmerflug",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "4",
+              "Aktion": "Flimmerflug",
+              "Kosten": "1 Reaktion",
+              "Typ": "Bewegung",
+              "Attribut": null,
+              "Angriff / SG": "Auslöser: Angriff verfehlt",
+              "Reichweite / Fläche": "Selbst / 2 m",
+              "Schaden / Wirkung": "Bis zu 2 m schweben",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Zusatz": "Höchstens 1× pro Runde."
+            }
+          }
+        ]
+      },
+      "action_details": [],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "15 % Resistenz",
+            "type": "resistance",
+            "percent": 15
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "15 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 15
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–",
+            "**15 % Resistenz**",
+            "**15 % Verwundbarkeit**"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 373,
+        "line_end": 423
+      }
+    },
+    {
+      "level": 25,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 6,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "6",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 12,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "12",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 18,
+          "modifier": 4,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "18",
+            "Modifikator": "+4",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "455",
+          "physische_verteidigung": "17",
+          "magieverteidigung": "19",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Schweben 11 m",
+          "lockflackern_sg": "17",
+          "blendpuls_sg": "17"
+        },
+        "raw_fields": {
+          "Maximale LP": "455",
+          "Physische Verteidigung": "17",
+          "Magieverteidigung": "19",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Schweben 11 m",
+          "Lockflackern-SG": "17",
+          "Blendpuls-SG": "17"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+4) + WI-Bonus (+3)) × 10) + ((BW-Modifikator (+4) + BW-Bonus (+3)) × 5) + (25 × 10) = 455 LP",
+        "markdown": "`100 + ((WI-Modifikator (+4) + WI-Bonus (+3)) × 10) + ((BW-Modifikator (+4) + BW-Bonus (+3)) × 5) + (25 × 10) = 455 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Ätherfunke",
+            "cost": "1 Aktion",
+            "type": "Elementarangriff",
+            "attribute": "IN",
+            "attack_or_dc": "W20 + +10",
+            "range_area": "10 m",
+            "damage_effect": "8W8 + 10",
+            "damage_type": "Licht",
+            "defense_save": "Magieverteidigung",
+            "avg_raw_damage": "46",
+            "notes": "Keine Zusatzwirkung.",
+            "avg_raw_damage_value": 46.0,
+            "id": "irrlicht-l25-a01-aetherfunke",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Ätherfunke",
+              "Kosten": "1 Aktion",
+              "Typ": "Elementarangriff",
+              "Attribut": "IN",
+              "Angriff / SG": "`W20 + +10`",
+              "Reichweite / Fläche": "10 m",
+              "Schaden / Wirkung": "`8W8 + 10`",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "Magieverteidigung",
+              "Ø Rohschaden": "46",
+              "Zusatz": "Keine Zusatzwirkung."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Lockflackern",
+            "cost": "1 Aktion",
+            "type": "Elementarangriff / Position",
+            "attribute": "IN",
+            "attack_or_dc": "`W20 + +10`; danach SG 17",
+            "range_area": "8 m",
+            "damage_effect": "`7W8 + 10`; bei misslungenem WI-/IT-RW 2 m zum Irrlicht",
+            "damage_type": "Licht",
+            "defense_save": "Magieverteidigung; WI/IT-Rettung",
+            "avg_raw_damage": "41,5",
+            "notes": "Positionskontrolle statt vollem Standardschaden.",
+            "avg_raw_damage_value": 41.5,
+            "id": "irrlicht-l25-a02-lockflackern",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Lockflackern",
+              "Kosten": "1 Aktion",
+              "Typ": "Elementarangriff / Position",
+              "Attribut": "IN",
+              "Angriff / SG": "`W20 + +10`; danach SG 17",
+              "Reichweite / Fläche": "8 m",
+              "Schaden / Wirkung": "`7W8 + 10`; bei misslungenem WI-/IT-RW 2 m zum Irrlicht",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "Magieverteidigung; WI/IT-Rettung",
+              "Ø Rohschaden": "41,5",
+              "Zusatz": "Positionskontrolle statt vollem Standardschaden."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Blendpuls",
+            "cost": "2 Aktionen",
+            "type": "Flächenangriff",
+            "attribute": null,
+            "attack_or_dc": "SG 17",
+            "range_area": "Radius 3 m",
+            "damage_effect": "`8W8 + 10`; Erfolg halber Schaden",
+            "damage_type": "Licht",
+            "defense_save": "WA/IT-Rettung; Magieverteidigung",
+            "avg_raw_damage": "46",
+            "notes": "Kein Angriffswurf, kein Krit.",
+            "avg_raw_damage_value": 46.0,
+            "id": "irrlicht-l25-a03-blendpuls",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Blendpuls",
+              "Kosten": "2 Aktionen",
+              "Typ": "Flächenangriff",
+              "Attribut": null,
+              "Angriff / SG": "SG 17",
+              "Reichweite / Fläche": "Radius 3 m",
+              "Schaden / Wirkung": "`8W8 + 10`; Erfolg halber Schaden",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "WA/IT-Rettung; Magieverteidigung",
+              "Ø Rohschaden": "46",
+              "Zusatz": "Kein Angriffswurf, kein Krit."
+            }
+          },
+          {
+            "number": 4,
+            "name": "Flimmerflug",
+            "cost": "1 Reaktion",
+            "type": "Bewegung",
+            "attribute": null,
+            "attack_or_dc": "Auslöser: Angriff verfehlt",
+            "range_area": "Selbst / 2 m",
+            "damage_effect": "Bis zu 2 m schweben",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "notes": "Höchstens 1× pro Runde.",
+            "id": "irrlicht-l25-a04-flimmerflug",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "4",
+              "Aktion": "Flimmerflug",
+              "Kosten": "1 Reaktion",
+              "Typ": "Bewegung",
+              "Attribut": null,
+              "Angriff / SG": "Auslöser: Angriff verfehlt",
+              "Reichweite / Fläche": "Selbst / 2 m",
+              "Schaden / Wirkung": "Bis zu 2 m schweben",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Zusatz": "Höchstens 1× pro Runde."
+            }
+          }
+        ]
+      },
+      "action_details": [],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "15 % Resistenz",
+            "type": "resistance",
+            "percent": 15
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "15 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 15
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–",
+            "**15 % Resistenz**",
+            "**15 % Verwundbarkeit**"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 424,
+        "line_end": 474
+      }
+    },
+    {
+      "level": 30,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 2,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+2"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 19,
+          "modifier": 4,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "19",
+            "Modifikator": "+4",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+4"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "510",
+          "physische_verteidigung": "19",
+          "magieverteidigung": "21",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Schweben 11 m",
+          "lockflackern_sg": "18",
+          "blendpuls_sg": "18"
+        },
+        "raw_fields": {
+          "Maximale LP": "510",
+          "Physische Verteidigung": "19",
+          "Magieverteidigung": "21",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Schweben 11 m",
+          "Lockflackern-SG": "18",
+          "Blendpuls-SG": "18"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+4) + WI-Bonus (+3)) × 10) + ((BW-Modifikator (+5) + BW-Bonus (+3)) × 5) + (30 × 10) = 510 LP",
+        "markdown": "`100 + ((WI-Modifikator (+4) + WI-Bonus (+3)) × 10) + ((BW-Modifikator (+5) + BW-Bonus (+3)) × 5) + (30 × 10) = 510 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Ätherfunke",
+            "cost": "1 Aktion",
+            "type": "Elementarangriff",
+            "attribute": "IN",
+            "attack_or_dc": "W20 + +11",
+            "range_area": "10 m",
+            "damage_effect": "9W8 + 11",
+            "damage_type": "Licht",
+            "defense_save": "Magieverteidigung",
+            "avg_raw_damage": "51,5",
+            "notes": "Keine Zusatzwirkung.",
+            "avg_raw_damage_value": 51.5,
+            "id": "irrlicht-l30-a01-aetherfunke",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Ätherfunke",
+              "Kosten": "1 Aktion",
+              "Typ": "Elementarangriff",
+              "Attribut": "IN",
+              "Angriff / SG": "`W20 + +11`",
+              "Reichweite / Fläche": "10 m",
+              "Schaden / Wirkung": "`9W8 + 11`",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "Magieverteidigung",
+              "Ø Rohschaden": "51,5",
+              "Zusatz": "Keine Zusatzwirkung."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Lockflackern",
+            "cost": "1 Aktion",
+            "type": "Elementarangriff / Position",
+            "attribute": "IN",
+            "attack_or_dc": "`W20 + +11`; danach SG 18",
+            "range_area": "8 m",
+            "damage_effect": "`8W8 + 11`; bei misslungenem WI-/IT-RW 2 m zum Irrlicht",
+            "damage_type": "Licht",
+            "defense_save": "Magieverteidigung; WI/IT-Rettung",
+            "avg_raw_damage": "47",
+            "notes": "Positionskontrolle statt vollem Standardschaden.",
+            "avg_raw_damage_value": 47.0,
+            "id": "irrlicht-l30-a02-lockflackern",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Lockflackern",
+              "Kosten": "1 Aktion",
+              "Typ": "Elementarangriff / Position",
+              "Attribut": "IN",
+              "Angriff / SG": "`W20 + +11`; danach SG 18",
+              "Reichweite / Fläche": "8 m",
+              "Schaden / Wirkung": "`8W8 + 11`; bei misslungenem WI-/IT-RW 2 m zum Irrlicht",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "Magieverteidigung; WI/IT-Rettung",
+              "Ø Rohschaden": "47",
+              "Zusatz": "Positionskontrolle statt vollem Standardschaden."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Blendpuls",
+            "cost": "2 Aktionen",
+            "type": "Flächenangriff",
+            "attribute": null,
+            "attack_or_dc": "SG 18",
+            "range_area": "Radius 3 m",
+            "damage_effect": "`9W8 + 11`; Erfolg halber Schaden",
+            "damage_type": "Licht",
+            "defense_save": "WA/IT-Rettung; Magieverteidigung",
+            "avg_raw_damage": "51,5",
+            "notes": "Kein Angriffswurf, kein Krit.",
+            "avg_raw_damage_value": 51.5,
+            "id": "irrlicht-l30-a03-blendpuls",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Blendpuls",
+              "Kosten": "2 Aktionen",
+              "Typ": "Flächenangriff",
+              "Attribut": null,
+              "Angriff / SG": "SG 18",
+              "Reichweite / Fläche": "Radius 3 m",
+              "Schaden / Wirkung": "`9W8 + 11`; Erfolg halber Schaden",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "WA/IT-Rettung; Magieverteidigung",
+              "Ø Rohschaden": "51,5",
+              "Zusatz": "Kein Angriffswurf, kein Krit."
+            }
+          },
+          {
+            "number": 4,
+            "name": "Flimmerflug",
+            "cost": "1 Reaktion",
+            "type": "Bewegung",
+            "attribute": null,
+            "attack_or_dc": "Auslöser: Angriff verfehlt",
+            "range_area": "Selbst / 2 m",
+            "damage_effect": "Bis zu 2 m schweben",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "notes": "Höchstens 1× pro Runde.",
+            "id": "irrlicht-l30-a04-flimmerflug",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "4",
+              "Aktion": "Flimmerflug",
+              "Kosten": "1 Reaktion",
+              "Typ": "Bewegung",
+              "Attribut": null,
+              "Angriff / SG": "Auslöser: Angriff verfehlt",
+              "Reichweite / Fläche": "Selbst / 2 m",
+              "Schaden / Wirkung": "Bis zu 2 m schweben",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Zusatz": "Höchstens 1× pro Runde."
+            }
+          }
+        ]
+      },
+      "action_details": [],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "15 % Resistenz",
+            "type": "resistance",
+            "percent": 15
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "15 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 15
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–",
+            "**15 % Resistenz**",
+            "**15 % Verwundbarkeit**"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 475,
+        "line_end": 525
+      }
+    },
+    {
+      "level": 35,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 7,
+          "modifier": -2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "7",
+            "Modifikator": "-2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 25,
+          "modifier": 7,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "25",
+            "Modifikator": "+7",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 21,
+          "modifier": 5,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "21",
+            "Modifikator": "+5",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 13,
+          "modifier": 1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "13",
+            "Modifikator": "+1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 15,
+          "modifier": 2,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "15",
+            "Modifikator": "+2",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 20,
+          "modifier": 5,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "20",
+            "Modifikator": "+5",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 25,
+          "modifier": 7,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "25",
+            "Modifikator": "+7",
+            "Bonus": "+4"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "590",
+          "physische_verteidigung": "21",
+          "magieverteidigung": "23",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Schweben 12 m",
+          "lockflackern_sg": "19",
+          "blendpuls_sg": "19"
+        },
+        "raw_fields": {
+          "Maximale LP": "590",
+          "Physische Verteidigung": "21",
+          "Magieverteidigung": "23",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Schweben 12 m",
+          "Lockflackern-SG": "19",
+          "Blendpuls-SG": "19"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+5) + WI-Bonus (+4)) × 10) + ((BW-Modifikator (+6) + BW-Bonus (+4)) × 5) + (35 × 10) = 590 LP",
+        "markdown": "`100 + ((WI-Modifikator (+5) + WI-Bonus (+4)) × 10) + ((BW-Modifikator (+6) + BW-Bonus (+4)) × 5) + (35 × 10) = 590 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Ätherfunke",
+            "cost": "1 Aktion",
+            "type": "Elementarangriff",
+            "attribute": "IN",
+            "attack_or_dc": "W20 + +12",
+            "range_area": "10 m",
+            "damage_effect": "10W8 + 12",
+            "damage_type": "Licht",
+            "defense_save": "Magieverteidigung",
+            "avg_raw_damage": "57",
+            "notes": "Keine Zusatzwirkung.",
+            "avg_raw_damage_value": 57.0,
+            "id": "irrlicht-l35-a01-aetherfunke",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Ätherfunke",
+              "Kosten": "1 Aktion",
+              "Typ": "Elementarangriff",
+              "Attribut": "IN",
+              "Angriff / SG": "`W20 + +12`",
+              "Reichweite / Fläche": "10 m",
+              "Schaden / Wirkung": "`10W8 + 12`",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "Magieverteidigung",
+              "Ø Rohschaden": "57",
+              "Zusatz": "Keine Zusatzwirkung."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Lockflackern",
+            "cost": "1 Aktion",
+            "type": "Elementarangriff / Position",
+            "attribute": "IN",
+            "attack_or_dc": "`W20 + +12`; danach SG 19",
+            "range_area": "8 m",
+            "damage_effect": "`9W8 + 12`; bei misslungenem WI-/IT-RW 2 m zum Irrlicht",
+            "damage_type": "Licht",
+            "defense_save": "Magieverteidigung; WI/IT-Rettung",
+            "avg_raw_damage": "52,5",
+            "notes": "Positionskontrolle statt vollem Standardschaden.",
+            "avg_raw_damage_value": 52.5,
+            "id": "irrlicht-l35-a02-lockflackern",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Lockflackern",
+              "Kosten": "1 Aktion",
+              "Typ": "Elementarangriff / Position",
+              "Attribut": "IN",
+              "Angriff / SG": "`W20 + +12`; danach SG 19",
+              "Reichweite / Fläche": "8 m",
+              "Schaden / Wirkung": "`9W8 + 12`; bei misslungenem WI-/IT-RW 2 m zum Irrlicht",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "Magieverteidigung; WI/IT-Rettung",
+              "Ø Rohschaden": "52,5",
+              "Zusatz": "Positionskontrolle statt vollem Standardschaden."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Blendpuls",
+            "cost": "2 Aktionen",
+            "type": "Flächenangriff",
+            "attribute": null,
+            "attack_or_dc": "SG 19",
+            "range_area": "Radius 3 m",
+            "damage_effect": "`10W8 + 12`; Erfolg halber Schaden",
+            "damage_type": "Licht",
+            "defense_save": "WA/IT-Rettung; Magieverteidigung",
+            "avg_raw_damage": "57",
+            "notes": "Kein Angriffswurf, kein Krit.",
+            "avg_raw_damage_value": 57.0,
+            "id": "irrlicht-l35-a03-blendpuls",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Blendpuls",
+              "Kosten": "2 Aktionen",
+              "Typ": "Flächenangriff",
+              "Attribut": null,
+              "Angriff / SG": "SG 19",
+              "Reichweite / Fläche": "Radius 3 m",
+              "Schaden / Wirkung": "`10W8 + 12`; Erfolg halber Schaden",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "WA/IT-Rettung; Magieverteidigung",
+              "Ø Rohschaden": "57",
+              "Zusatz": "Kein Angriffswurf, kein Krit."
+            }
+          },
+          {
+            "number": 4,
+            "name": "Flimmerflug",
+            "cost": "1 Reaktion",
+            "type": "Bewegung",
+            "attribute": null,
+            "attack_or_dc": "Auslöser: Angriff verfehlt",
+            "range_area": "Selbst / 2 m",
+            "damage_effect": "Bis zu 2 m schweben",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "notes": "Höchstens 1× pro Runde.",
+            "id": "irrlicht-l35-a04-flimmerflug",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "4",
+              "Aktion": "Flimmerflug",
+              "Kosten": "1 Reaktion",
+              "Typ": "Bewegung",
+              "Attribut": null,
+              "Angriff / SG": "Auslöser: Angriff verfehlt",
+              "Reichweite / Fläche": "Selbst / 2 m",
+              "Schaden / Wirkung": "Bis zu 2 m schweben",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Zusatz": "Höchstens 1× pro Runde."
+            }
+          }
+        ]
+      },
+      "action_details": [],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "15 % Resistenz",
+            "type": "resistance",
+            "percent": 15
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "15 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 15
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–",
+            "**15 % Resistenz**",
+            "**15 % Verwundbarkeit**"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 526,
+        "line_end": 576
+      }
+    },
+    {
+      "level": 40,
+      "attributes": [
+        {
+          "name": "Stärke",
+          "code": "ST",
+          "value": 8,
+          "modifier": -1,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Stärke",
+            "Kürzel": "ST",
+            "Wert": "8",
+            "Modifikator": "-1",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Geschicklichkeit",
+          "code": "GE",
+          "value": 23,
+          "modifier": 6,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Geschicklichkeit",
+            "Kürzel": "GE",
+            "Wert": "23",
+            "Modifikator": "+6",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Beweglichkeit",
+          "code": "BW",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Beweglichkeit",
+            "Kürzel": "BW",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Intelligenz",
+          "code": "IN",
+          "value": 26,
+          "modifier": 8,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Intelligenz",
+            "Kürzel": "IN",
+            "Wert": "26",
+            "Modifikator": "+8",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Wahrnehmung",
+          "code": "WA",
+          "value": 24,
+          "modifier": 7,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Wahrnehmung",
+            "Kürzel": "WA",
+            "Wert": "24",
+            "Modifikator": "+7",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Kreativität",
+          "code": "KR",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 3,
+          "raw": {
+            "Attribut": "Kreativität",
+            "Kürzel": "KR",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+3"
+          }
+        },
+        {
+          "name": "Charisma",
+          "code": "CH",
+          "value": 14,
+          "modifier": 2,
+          "bonus": 0,
+          "raw": {
+            "Attribut": "Charisma",
+            "Kürzel": "CH",
+            "Wert": "14",
+            "Modifikator": "+2",
+            "Bonus": "+0"
+          }
+        },
+        {
+          "name": "Empathie",
+          "code": "EM",
+          "value": 16,
+          "modifier": 3,
+          "bonus": 1,
+          "raw": {
+            "Attribut": "Empathie",
+            "Kürzel": "EM",
+            "Wert": "16",
+            "Modifikator": "+3",
+            "Bonus": "+1"
+          }
+        },
+        {
+          "name": "Willenskraft",
+          "code": "WI",
+          "value": 22,
+          "modifier": 6,
+          "bonus": 4,
+          "raw": {
+            "Attribut": "Willenskraft",
+            "Kürzel": "WI",
+            "Wert": "22",
+            "Modifikator": "+6",
+            "Bonus": "+4"
+          }
+        },
+        {
+          "name": "Intuition",
+          "code": "IT",
+          "value": 25,
+          "modifier": 7,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Intuition",
+            "Kürzel": "IT",
+            "Wert": "25",
+            "Modifikator": "+7",
+            "Bonus": "+5"
+          }
+        },
+        {
+          "name": "Ausweichen",
+          "code": "AU",
+          "value": 26,
+          "modifier": 8,
+          "bonus": 5,
+          "raw": {
+            "Attribut": "Ausweichen",
+            "Kürzel": "AU",
+            "Wert": "26",
+            "Modifikator": "+8",
+            "Bonus": "+5"
+          }
+        }
+      ],
+      "combat_values": {
+        "values": {
+          "maximale_lp": "660",
+          "physische_verteidigung": "23",
+          "magieverteidigung": "25",
+          "kritische_trefferchance": "5 %",
+          "kritischer_schaden": "+20 %",
+          "bewegungsrate": "Schweben 12 m",
+          "lockflackern_sg": "20",
+          "blendpuls_sg": "20"
+        },
+        "raw_fields": {
+          "Maximale LP": "660",
+          "Physische Verteidigung": "23",
+          "Magieverteidigung": "25",
+          "Kritische Trefferchance": "5 %",
+          "Kritischer Schaden": "+20 %",
+          "Bewegungsrate": "Schweben 12 m",
+          "Lockflackern-SG": "20",
+          "Blendpuls-SG": "20"
+        }
+      },
+      "hp_calculation": {
+        "raw": "100 + ((WI-Modifikator (+6) + WI-Bonus (+4)) × 10) + ((BW-Modifikator (+7) + BW-Bonus (+5)) × 5) + (40 × 10) = 660 LP",
+        "markdown": "`100 + ((WI-Modifikator (+6) + WI-Bonus (+4)) × 10) + ((BW-Modifikator (+7) + BW-Bonus (+5)) × 5) + (40 × 10) = 660 LP`"
+      },
+      "actions": {
+        "headers": [
+          "Nr.",
+          "Aktion",
+          "Kosten",
+          "Typ",
+          "Attribut",
+          "Angriff / SG",
+          "Reichweite / Fläche",
+          "Schaden / Wirkung",
+          "Schadensart",
+          "Verteidigung / Rettung",
+          "Ø Rohschaden",
+          "Zusatz"
+        ],
+        "actions": [
+          {
+            "number": 1,
+            "name": "Ätherfunke",
+            "cost": "1 Aktion",
+            "type": "Elementarangriff",
+            "attribute": "IN",
+            "attack_or_dc": "W20 + +13",
+            "range_area": "10 m",
+            "damage_effect": "11W8 + 13",
+            "damage_type": "Licht",
+            "defense_save": "Magieverteidigung",
+            "avg_raw_damage": "62,5",
+            "notes": "Keine Zusatzwirkung.",
+            "avg_raw_damage_value": 62.5,
+            "id": "irrlicht-l40-a01-aetherfunke",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "1",
+              "Aktion": "Ätherfunke",
+              "Kosten": "1 Aktion",
+              "Typ": "Elementarangriff",
+              "Attribut": "IN",
+              "Angriff / SG": "`W20 + +13`",
+              "Reichweite / Fläche": "10 m",
+              "Schaden / Wirkung": "`11W8 + 13`",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "Magieverteidigung",
+              "Ø Rohschaden": "62,5",
+              "Zusatz": "Keine Zusatzwirkung."
+            }
+          },
+          {
+            "number": 2,
+            "name": "Lockflackern",
+            "cost": "1 Aktion",
+            "type": "Elementarangriff / Position",
+            "attribute": "IN",
+            "attack_or_dc": "`W20 + +13`; danach SG 20",
+            "range_area": "8 m",
+            "damage_effect": "`10W8 + 13`; bei misslungenem WI-/IT-RW 2 m zum Irrlicht",
+            "damage_type": "Licht",
+            "defense_save": "Magieverteidigung; WI/IT-Rettung",
+            "avg_raw_damage": "58",
+            "notes": "Positionskontrolle statt vollem Standardschaden.",
+            "avg_raw_damage_value": 58.0,
+            "id": "irrlicht-l40-a02-lockflackern",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "2",
+              "Aktion": "Lockflackern",
+              "Kosten": "1 Aktion",
+              "Typ": "Elementarangriff / Position",
+              "Attribut": "IN",
+              "Angriff / SG": "`W20 + +13`; danach SG 20",
+              "Reichweite / Fläche": "8 m",
+              "Schaden / Wirkung": "`10W8 + 13`; bei misslungenem WI-/IT-RW 2 m zum Irrlicht",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "Magieverteidigung; WI/IT-Rettung",
+              "Ø Rohschaden": "58",
+              "Zusatz": "Positionskontrolle statt vollem Standardschaden."
+            }
+          },
+          {
+            "number": 3,
+            "name": "Blendpuls",
+            "cost": "2 Aktionen",
+            "type": "Flächenangriff",
+            "attribute": null,
+            "attack_or_dc": "SG 20",
+            "range_area": "Radius 3 m",
+            "damage_effect": "`11W8 + 13`; Erfolg halber Schaden",
+            "damage_type": "Licht",
+            "defense_save": "WA/IT-Rettung; Magieverteidigung",
+            "avg_raw_damage": "62,5",
+            "notes": "Kein Angriffswurf, kein Krit.",
+            "avg_raw_damage_value": 62.5,
+            "id": "irrlicht-l40-a03-blendpuls",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "3",
+              "Aktion": "Blendpuls",
+              "Kosten": "2 Aktionen",
+              "Typ": "Flächenangriff",
+              "Attribut": null,
+              "Angriff / SG": "SG 20",
+              "Reichweite / Fläche": "Radius 3 m",
+              "Schaden / Wirkung": "`11W8 + 13`; Erfolg halber Schaden",
+              "Schadensart": "Licht",
+              "Verteidigung / Rettung": "WA/IT-Rettung; Magieverteidigung",
+              "Ø Rohschaden": "62,5",
+              "Zusatz": "Kein Angriffswurf, kein Krit."
+            }
+          },
+          {
+            "number": 4,
+            "name": "Flimmerflug",
+            "cost": "1 Reaktion",
+            "type": "Bewegung",
+            "attribute": null,
+            "attack_or_dc": "Auslöser: Angriff verfehlt",
+            "range_area": "Selbst / 2 m",
+            "damage_effect": "Bis zu 2 m schweben",
+            "damage_type": null,
+            "defense_save": null,
+            "avg_raw_damage": null,
+            "notes": "Höchstens 1× pro Runde.",
+            "id": "irrlicht-l40-a04-flimmerflug",
+            "extra_fields": {},
+            "raw_fields": {
+              "Nr.": "4",
+              "Aktion": "Flimmerflug",
+              "Kosten": "1 Reaktion",
+              "Typ": "Bewegung",
+              "Attribut": null,
+              "Angriff / SG": "Auslöser: Angriff verfehlt",
+              "Reichweite / Fläche": "Selbst / 2 m",
+              "Schaden / Wirkung": "Bis zu 2 m schweben",
+              "Schadensart": null,
+              "Verteidigung / Rettung": null,
+              "Ø Rohschaden": null,
+              "Zusatz": "Höchstens 1× pro Runde."
+            }
+          }
+        ]
+      },
+      "action_details": [],
+      "elemental_resistances": {
+        "elements": {
+          "feuer": {
+            "name": "Feuer",
+            "raw": "10 % Resistenz",
+            "type": "resistance",
+            "percent": 10
+          },
+          "wasser": {
+            "name": "Wasser",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "erde": {
+            "name": "Erde",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "luft": {
+            "name": "Luft",
+            "raw": null,
+            "type": "neutral",
+            "percent": 0
+          },
+          "licht": {
+            "name": "Licht",
+            "raw": "15 % Resistenz",
+            "type": "resistance",
+            "percent": 15
+          },
+          "dunkelheit": {
+            "name": "Dunkelheit",
+            "raw": "15 % Verwundbarkeit",
+            "type": "vulnerability",
+            "percent": 15
+          }
+        },
+        "raw_headers": [
+          "Feuer",
+          "Wasser",
+          "Erde",
+          "Luft",
+          "Licht",
+          "Dunkelheit"
+        ],
+        "raw_rows": [
+          [
+            "**10 % Resistenz**",
+            "–",
+            "–",
+            "–",
+            "**15 % Resistenz**",
+            "**15 % Verwundbarkeit**"
+          ]
+        ]
+      },
+      "extra_sections": [],
+      "source": {
+        "line_start": 577,
+        "line_end": 627
+      }
+    }
+  ],
+  "post_sections": [
+    {
+      "title": "Einsatz als Begegnung",
+      "id": "einsatz-als-begegnung",
+      "markdown": "Das Irrlicht ist für HG 11 als **mittlere Standardbedrohung** gedacht. Seine Stärke entsteht nicht aus extremen Einzelangriffen, sondern aus der Kombination von Fernkampf, hoher Beweglichkeit, Lichtresistenz und begrenzter Positionskontrolle.\n\n- **Ein einzelnes Irrlicht** eignet sich als beweglicher Störgegner in einer gemischten Begegnung oder als kurze eigenständige Gefahr in problematischem Gelände.\n- **Mehrere Irrlichter** sollten nicht gleichzeitig dasselbe Ziel mit Lockflackern in eine tödliche Umweltgefahr ziehen, ohne dem Ziel realistische Rettungs- und Positionsmöglichkeiten zu lassen.\n- **Blendpuls** ist eine Mehrzieloption und bewusst nicht als beste Einzelzielaktion ausgelegt.\n- **Flimmerflug** erhöht die Überlebensfähigkeit, erzeugt aber weder Schaden noch zusätzliche Hauptaktionen.",
+      "tables": [],
+      "source": {
+        "line_start": 628,
+        "line_end": 636
+      }
+    },
+    {
+      "title": "Kurzfassung für den Game Master",
+      "id": "kurzfassung-fuer-den-game-master",
+      "markdown": "Der **Irrlicht** ist ein **HG-11-Standardgegner** mit **Lichtprägung** und dem Archetyp **Ausweichend**. Er besitzt vier Kampfoptionen und arbeitet mit Distanz, Lockbewegung und kurzen Lichtausbrüchen.\n\nSein Elementprofil lautet:\n\n- **15 % Resistenz gegen Licht**,\n- **10 % Resistenz gegen Feuer**,\n- **15 % Verwundbarkeit gegen Dunkelheit**,\n- Wasser, Erde und Luft neutral.\n\nDie Resistenzen werden durch vergleichsweise niedrige physische Verteidigung und die klare Dunkelheitsverwundbarkeit ausgeglichen. Der Gegner besitzt **keinen Phasenwechsel** und keine zusätzlichen kostenlosen Hauptaktionen.",
+      "tables": [],
+      "source": {
+        "line_start": 637,
+        "line_end": 649
+      }
+    },
+    {
+      "title": "Balancekurzprüfung",
+      "id": "balancekurzpruefung",
+      "markdown": "- **HG:** 11 → Band 9–12, mittlere Bedrohung.\n- **Begegnungsrang:** Standard.\n- **Archetyp:** Ausweichend.\n- **HG-Haltbarkeitssoll:** ungefähr 0,95 der gleichstufigen Standardreferenz; verteilt auf niedrigere LP/Phys-VTD, höheres Ausweichen, Magieverteidigung und begrenzte Elementresistenzen.\n- **HG-Output-Soll:** ungefähr 0,95; der zuverlässige Ätherfunke bleibt bewusst unter einem extremen Einzelangriff, während Lockflackern einen Teil des Budgets in Positionskontrolle investiert.\n- **Blendpuls:** 2-Aktionen-Mehrzieloption; gegen ein einzelnes Ziel absichtlich ineffizienter als zwei normale Einzelaktionen.\n- **Flimmerflug:** reine Reaktionsbewegung ohne Schaden.\n- **Elementare Resistenzen:** 15 % Licht, 10 % Feuer.\n- **Verwundbarkeit:** 15 % Dunkelheit.\n- **Phasenwechsel:** keiner.",
+      "tables": [],
+      "source": {
+        "line_start": 650,
+        "line_end": 661
+      }
+    }
+  ],
+  "statistics": {
+    "level_count": 9,
+    "action_count_by_level": {
+      "1": 4,
+      "5": 4,
+      "10": 4,
+      "15": 4,
+      "20": 4,
+      "25": 4,
+      "30": 4,
+      "35": 4,
+      "40": 4
+    },
+    "shared_action_detail_count": 4
+  },
+  "source": {
+    "line_start": 14,
+    "line_end": 661
+  }
+}
