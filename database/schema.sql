@@ -225,6 +225,20 @@ CREATE TABLE IF NOT EXISTS characters (
   CONSTRAINT fk_character_class FOREIGN KEY (class_id) REFERENCES classes(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+CREATE TABLE IF NOT EXISTS character_classes (
+  id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  character_id BIGINT UNSIGNED NOT NULL,
+  class_id VARCHAR(120) NOT NULL,
+  role VARCHAR(20) NOT NULL,
+  class_level SMALLINT UNSIGNED NOT NULL,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  UNIQUE KEY uq_character_class_role (character_id, role),
+  UNIQUE KEY uq_character_class_id (character_id, class_id),
+  CONSTRAINT fk_character_class_character FOREIGN KEY (character_id) REFERENCES characters(id) ON DELETE CASCADE,
+  CONSTRAINT fk_character_class_class FOREIGN KEY (class_id) REFERENCES classes(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
 CREATE TABLE IF NOT EXISTS character_attributes (
   character_id BIGINT UNSIGNED NOT NULL,
   attribute_code VARCHAR(2) NOT NULL,
@@ -239,7 +253,11 @@ CREATE TABLE IF NOT EXISTS character_attributes (
 CREATE TABLE IF NOT EXISTS character_abilities (
   character_id BIGINT UNSIGNED NOT NULL,
   ability_id VARCHAR(190) NOT NULL,
+  class_role VARCHAR(20) NULL,
+  ability_level SMALLINT UNSIGNED NULL,
+  slot_number TINYINT UNSIGNED NULL,
   PRIMARY KEY (character_id, ability_id),
+  UNIQUE KEY uq_character_ability_slot (character_id, class_role, ability_level, slot_number),
   CONSTRAINT fk_char_ability_character FOREIGN KEY (character_id) REFERENCES characters(id) ON DELETE CASCADE,
   CONSTRAINT fk_char_ability_ability FOREIGN KEY (ability_id) REFERENCES abilities(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -250,6 +268,16 @@ CREATE TABLE IF NOT EXISTS character_spells (
   PRIMARY KEY (character_id, spell_id),
   CONSTRAINT fk_char_spell_character FOREIGN KEY (character_id) REFERENCES characters(id) ON DELETE CASCADE,
   CONSTRAINT fk_char_spell_spell FOREIGN KEY (spell_id) REFERENCES spells(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS character_spell_slots (
+  character_id BIGINT UNSIGNED NOT NULL,
+  grade TINYINT UNSIGNED NOT NULL,
+  slot_number SMALLINT UNSIGNED NOT NULL,
+  spell_id VARCHAR(190) NULL,
+  PRIMARY KEY (character_id, grade, slot_number),
+  CONSTRAINT fk_spell_slot_character FOREIGN KEY (character_id) REFERENCES characters(id) ON DELETE CASCADE,
+  CONSTRAINT fk_spell_slot_spell FOREIGN KEY (spell_id) REFERENCES spells(id) ON DELETE SET NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS combat_encounters (
@@ -273,6 +301,7 @@ CREATE TABLE IF NOT EXISTS combat_participants (
   selected_phase VARCHAR(190) NULL,
   max_hp INT UNSIGNED NOT NULL,
   current_hp INT UNSIGNED NOT NULL,
+  current_shield DECIMAL(12,2) NOT NULL DEFAULT 0,
   sort_order INT NOT NULL DEFAULT 0,
   runtime_state_json LONGTEXT NULL,
   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,

@@ -27,3 +27,8 @@ Für Spielercharaktere gelten ganzzahlige Attributwerte von 1 bis 100 sowie ganz
 
 Foreign Keys sichern echte Relationen. Charakteränderungen, Import und Combat-State-Änderungen verwenden Transaktionen.
 
+# Charakterklassen
+
+`character_classes` ist die autoritative Zuordnung der Klassenrollen und individuellen Klassenstufen. `characters.level` bleibt als abgeleiteter Kompatibilitätswert erhalten und entspricht der höchsten Klassenstufe.
+
+`character_spell_slots` speichert optionale Zauberslots getrennt nach Grad (1–10); Zauber werden nicht automatisch durch Klassenstufen begrenzt.

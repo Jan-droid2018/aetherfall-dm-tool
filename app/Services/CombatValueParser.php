@@ -5,7 +5,7 @@ namespace Aetherfall\Services;
 
 final class CombatValueParser
 {
-    public function criticalDamagePercent(array|string|null $combatValues): ?float
+    public function criticalDamagePercent(array|string|null $combatValues, int $phase = 1): ?float
     {
         if (is_string($combatValues)) {
             $combatValues = json_decode($combatValues, true);
@@ -17,6 +17,15 @@ final class CombatValueParser
         $raw = $combatValues['values']['kritischer_schaden']
             ?? $combatValues['kritischer_schaden']
             ?? null;
+
+        if ($raw === null) {
+            return (new CombatProfileValueResolver())->phaseValue(
+                $combatValues,
+                'kritischer_schaden',
+                ['Kritischer Schaden'],
+                $phase
+            );
+        }
 
         if (is_int($raw) || is_float($raw)) {
             return max(0.0, (float)$raw);

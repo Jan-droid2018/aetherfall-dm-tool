@@ -14,7 +14,7 @@ final class CharacterValidator
         if (trim((string)($data['player_name'] ?? '')) === '') $errors['player_name'] = 'Spieler ist erforderlich.';
         if (trim((string)($data['class_id'] ?? '')) === '') $errors['class_id'] = 'Klasse ist erforderlich.';
         $level = filter_var($data['level'] ?? null, FILTER_VALIDATE_INT);
-        if ($level === false || $level < 1 || $level > 999) $errors['level'] = 'Stufe muss zwischen 1 und 999 liegen.';
+        if ($level === false || $level < 1 || $level > 40) $errors['level'] = 'Stufe muss zwischen 1 und 40 liegen.';
         if (array_key_exists('current_hp', $data) && $data['current_hp'] !== '' && $data['current_hp'] !== null) {
             $currentHp = filter_var($data['current_hp'], FILTER_VALIDATE_INT);
             if ($currentHp === false || $currentHp < 0) $errors['current_hp'] = 'Aktuelle LP müssen mindestens 0 sein.';

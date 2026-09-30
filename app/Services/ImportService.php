@@ -137,6 +137,7 @@ final class ImportService
 
     private function importCreatures(): void
     {
+        $resolver = new CombatProfileValueResolver();
         $entityStmt = $this->pdo->prepare('INSERT INTO creatures (id,name,challenge_rating,encounter_rank,archetype,elemental_affinity,schema_version,source_file,source_hash,raw_json) VALUES (?,?,?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE name=VALUES(name),challenge_rating=VALUES(challenge_rating),encounter_rank=VALUES(encounter_rank),archetype=VALUES(archetype),elemental_affinity=VALUES(elemental_affinity),schema_version=VALUES(schema_version),source_file=VALUES(source_file),source_hash=VALUES(source_hash),raw_json=VALUES(raw_json)');
         $levelStmt = $this->pdo->prepare('INSERT INTO creature_levels (creature_id,level,max_hp,physical_defense,magic_defense,attributes_json,combat_values_json,hp_calculation_json,elemental_resistances_json,raw_json) VALUES (?,?,?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE max_hp=VALUES(max_hp),physical_defense=VALUES(physical_defense),magic_defense=VALUES(magic_defense),attributes_json=VALUES(attributes_json),combat_values_json=VALUES(combat_values_json),hp_calculation_json=VALUES(hp_calculation_json),elemental_resistances_json=VALUES(elemental_resistances_json),raw_json=VALUES(raw_json)');
         $actionStmt = $this->pdo->prepare('INSERT INTO creature_actions (id,creature_id,level,number,name,type,attack_data,damage_data,damage_type,defense_save,range_text,notes,raw_json) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE creature_id=VALUES(creature_id),level=VALUES(level),number=VALUES(number),name=VALUES(name),type=VALUES(type),attack_data=VALUES(attack_data),damage_data=VALUES(damage_data),damage_type=VALUES(damage_type),defense_save=VALUES(defense_save),range_text=VALUES(range_text),notes=VALUES(notes),raw_json=VALUES(raw_json)');
@@ -144,8 +145,7 @@ final class ImportService
             $d = Json::decodeFile($file); $raw = (string) file_get_contents($file); $hash = hash('sha256', $raw); $core = $d['core'] ?? [];
             $entityStmt->execute([$d['id'], $d['name'], $core['challenge_rating']['value'] ?? null, $core['encounter_rank'] ?? null, $core['archetype'] ?? null, $core['elemental_affinity'] ?? null, $d['schema_version'], $d['source_file'] ?? basename($file), $hash, $raw]);
             foreach ($d['levels'] ?? [] as $level) {
-                $values = $level['combat_values']['values'] ?? [];
-                $levelStmt->execute([$d['id'], $level['level'], $this->number($values['maximale_lp'] ?? null), $this->number($values['physische_verteidigung'] ?? null), $this->number($values['magieverteidigung'] ?? null), Json::encode($level['attributes'] ?? []), Json::encode($level['combat_values'] ?? []), Json::encode($level['hp_calculation'] ?? []), Json::encode($level['elemental_resistances'] ?? []), Json::encode($level)]);
+                $levelStmt->execute([$d['id'], $level['level'], $resolver->maxHp($level['combat_values'] ?? [], $level['hp_calculation'] ?? []), $resolver->physicalDefense($level['combat_values'] ?? []), $resolver->magicDefense($level['combat_values'] ?? []), Json::encode($level['attributes'] ?? []), Json::encode($level['combat_values'] ?? []), Json::encode($level['hp_calculation'] ?? []), Json::encode($level['elemental_resistances'] ?? []), Json::encode($level)]);
                 $details = [];
                 foreach ($level['action_details'] ?? [] as $detail) { $details[mb_strtolower($detail['name'])] = $detail; }
                 foreach ($level['actions']['actions'] ?? [] as $action) {
@@ -161,6 +161,7 @@ final class ImportService
 
     private function importBosses(): void
     {
+        $resolver = new CombatProfileValueResolver();
         $entityStmt = $this->pdo->prepare('INSERT INTO bosses (id,name,challenge_rating,encounter_rank,archetype,elemental_affinity,phase_count,schema_version,source_file,source_hash,raw_json) VALUES (?,?,?,?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE name=VALUES(name),challenge_rating=VALUES(challenge_rating),encounter_rank=VALUES(encounter_rank),archetype=VALUES(archetype),elemental_affinity=VALUES(elemental_affinity),phase_count=VALUES(phase_count),schema_version=VALUES(schema_version),source_file=VALUES(source_file),source_hash=VALUES(source_hash),raw_json=VALUES(raw_json)');
         $levelStmt = $this->pdo->prepare('INSERT INTO boss_levels (boss_id,level,max_hp,physical_defense,magic_defense,attribute_profiles_json,combat_values_json,hp_calculation_json,elemental_resistances_json,phase_values_json,raw_json) VALUES (?,?,?,?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE max_hp=VALUES(max_hp),physical_defense=VALUES(physical_defense),magic_defense=VALUES(magic_defense),attribute_profiles_json=VALUES(attribute_profiles_json),combat_values_json=VALUES(combat_values_json),hp_calculation_json=VALUES(hp_calculation_json),elemental_resistances_json=VALUES(elemental_resistances_json),phase_values_json=VALUES(phase_values_json),raw_json=VALUES(raw_json)');
         $actionStmt = $this->pdo->prepare('INSERT INTO boss_actions (id,boss_id,level,number,name,attack_data,damage_data,notes,shared_rule_json,raw_json) VALUES (?,?,?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE boss_id=VALUES(boss_id),level=VALUES(level),number=VALUES(number),name=VALUES(name),attack_data=VALUES(attack_data),damage_data=VALUES(damage_data),notes=VALUES(notes),shared_rule_json=VALUES(shared_rule_json),raw_json=VALUES(raw_json)');
@@ -170,8 +171,7 @@ final class ImportService
             $shared = [];
             foreach ($d['shared_action_details'] ?? [] as $detail) { $shared[mb_strtolower($detail['name'])] = $detail; }
             foreach ($d['levels'] ?? [] as $level) {
-                $values = $level['combat_values']['values'] ?? [];
-                $levelStmt->execute([$d['id'], $level['level'], $this->number($values['maximale_lp'] ?? null), $this->number($values['physische_verteidigung'] ?? null), $this->number($values['magieverteidigung'] ?? null), Json::encode($level['attribute_profiles'] ?? []), Json::encode($level['combat_values'] ?? []), Json::encode($level['hp_calculation'] ?? []), Json::encode($level['elemental_resistances'] ?? []), Json::encode($level['phase_values'] ?? []), Json::encode($level)]);
+                $levelStmt->execute([$d['id'], $level['level'], $resolver->maxHp($level['combat_values'] ?? [], $level['hp_calculation'] ?? []), $resolver->physicalDefense($level['combat_values'] ?? []), $resolver->magicDefense($level['combat_values'] ?? []), Json::encode($level['attribute_profiles'] ?? []), Json::encode($level['combat_values'] ?? []), Json::encode($level['hp_calculation'] ?? []), Json::encode($level['elemental_resistances'] ?? []), Json::encode($level['phase_values'] ?? []), Json::encode($level)]);
                 foreach ($level['actions']['actions'] ?? [] as $action) {
                     $rule = $shared[mb_strtolower($action['name'])] ?? null;
                     $actionStmt->execute([$action['id'], $d['id'], $level['level'], $action['number'] ?? 0, $action['name'], $action['attack_or_dc'] ?? null, $action['damage_effect'] ?? null, $action['notes'] ?? null, $rule ? Json::encode($rule) : null, Json::encode($action)]);
@@ -183,13 +183,5 @@ final class ImportService
         }
     }
 
-    private function number(mixed $value): int|float|null
-    {
-        if (is_int($value) || is_float($value)) { return $value; }
-        if (is_string($value) && preg_match('/-?\d+(?:[.,]\d+)?/', str_replace('`', '', $value), $m)) {
-            return (float) str_replace(',', '.', $m[0]);
-        }
-        return null;
-    }
 }
 

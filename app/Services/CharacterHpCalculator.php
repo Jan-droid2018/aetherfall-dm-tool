@@ -12,6 +12,11 @@ final class CharacterHpCalculator
     public const SECONDARY_ATTRIBUTE_MULTIPLIER = 5;
     public const LEVEL_HP_MULTIPLIER = 10;
 
+    public function effectiveLevel(array $classLevels): int
+    {
+        $levels=array_map('intval',$classLevels);return max(array_merge([1],$levels));
+    }
+
     public function calculateMaxHp(
         int $level,
         int $primaryModifier,

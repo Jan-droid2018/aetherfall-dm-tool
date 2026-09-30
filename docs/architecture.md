@@ -24,3 +24,6 @@ Die Webanwendung liest Regelwerkdaten aus der Datenbank. JSON wird ausschließli
 
 Die JavaScript-Berechnung dient nur der unmittelbaren Vorschau. Sie markiert das Haupt- und Sekundärattribut der gewählten Klasse und zeigt den LP-Breakdown an. Klassenanpassungen +2/+1/−2 bleiben reine Information und verändern die eingegebenen Attributwerte nicht.
 
+# Multiclassing
+
+Charaktere werden über `character_classes` mit den Rollen `primary`, `secondary_1` und `secondary_2` verbunden. Jede Relation besitzt eine eigene `class_level`; die Gesamtstufe ist ausschließlich das Maximum dieser Werte. LP verwenden die Attribute der Hauptklasse und die höchste Klassenstufe. Ursprungsvermächtnis ist eine primäre Sonderklasse ohne Nebenklassen.
