@@ -22,8 +22,69 @@ CREATE TABLE IF NOT EXISTS class_resources (
   class_id VARCHAR(120) PRIMARY KEY,
   resource_id VARCHAR(120) NOT NULL,
   name VARCHAR(190) NOT NULL,
+  form TEXT NULL,
+  maximum_formula TEXT NULL,
+  start_value TEXT NULL,
+  base_generation TEXT NULL,
+  generation TEXT NULL,
+  consumption TEXT NULL,
+  relief TEXT NULL,
+  persistence TEXT NULL,
+  recovery TEXT NULL,
+  stacking TEXT NULL,
+  transfer TEXT NULL,
+  loss_decay TEXT NULL,
+  visibility TEXT NULL,
+  multiclass_boundary TEXT NULL,
+  base_function TEXT NULL,
+  rounding TEXT NULL,
+  source_file VARCHAR(255) NULL,
+  source_hash CHAR(64) NULL,
   raw_json LONGTEXT NOT NULL,
+  UNIQUE KEY uq_class_resource_id (resource_id),
   CONSTRAINT fk_resource_class FOREIGN KEY (class_id) REFERENCES classes(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS class_actions (
+  id VARCHAR(220) PRIMARY KEY,
+  class_id VARCHAR(120) NOT NULL,
+  external_id VARCHAR(190) NOT NULL,
+  name VARCHAR(255) NOT NULL,
+  action_type VARCHAR(80) NOT NULL DEFAULT 'class_action',
+  unlock_level SMALLINT UNSIGNED NOT NULL DEFAULT 1,
+  attack_formula TEXT NULL,
+  damage_formula TEXT NULL,
+  damage_type VARCHAR(190) NULL,
+  resource_cost TEXT NULL,
+  resource_gain TEXT NULL,
+  weapon_mode VARCHAR(190) NULL,
+  description TEXT NULL,
+  source_file VARCHAR(255) NULL,
+  source_hash CHAR(64) NULL,
+  raw_json LONGTEXT NOT NULL,
+  UNIQUE KEY uq_class_action_external (class_id, external_id),
+  INDEX idx_class_actions_level (class_id, unlock_level),
+  CONSTRAINT fk_class_action_class FOREIGN KEY (class_id) REFERENCES classes(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS class_weapon_profiles (
+  id VARCHAR(220) PRIMARY KEY,
+  class_id VARCHAR(120) NOT NULL,
+  profile_name VARCHAR(190) NOT NULL,
+  unlock_level SMALLINT UNSIGNED NOT NULL DEFAULT 1,
+  start_die VARCHAR(80) NULL,
+  attack_formula TEXT NULL,
+  damage_formula TEXT NULL,
+  damage_type VARCHAR(190) NULL,
+  handling VARCHAR(80) NULL,
+  range_text VARCHAR(190) NULL,
+  weight VARCHAR(80) NULL,
+  description TEXT NULL,
+  source_file VARCHAR(255) NULL,
+  source_hash CHAR(64) NULL,
+  raw_json LONGTEXT NOT NULL,
+  UNIQUE KEY uq_class_weapon_profile (class_id, profile_name),
+  CONSTRAINT fk_class_weapon_class FOREIGN KEY (class_id) REFERENCES classes(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS class_attribute_adjustments (
@@ -239,6 +300,18 @@ CREATE TABLE IF NOT EXISTS character_classes (
   CONSTRAINT fk_character_class_class FOREIGN KEY (class_id) REFERENCES classes(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+CREATE TABLE IF NOT EXISTS character_class_resources (
+  id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  character_class_id BIGINT UNSIGNED NOT NULL,
+  class_resource_id VARCHAR(120) NOT NULL,
+  current_value DECIMAL(12,2) NOT NULL DEFAULT 0,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  UNIQUE KEY uq_character_class_resource (character_class_id, class_resource_id),
+  CONSTRAINT fk_character_resource_class FOREIGN KEY (character_class_id) REFERENCES character_classes(id) ON DELETE CASCADE,
+  CONSTRAINT fk_character_resource_definition FOREIGN KEY (class_resource_id) REFERENCES class_resources(resource_id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
 CREATE TABLE IF NOT EXISTS character_attributes (
   character_id BIGINT UNSIGNED NOT NULL,
   attribute_code VARCHAR(2) NOT NULL,
@@ -280,6 +353,135 @@ CREATE TABLE IF NOT EXISTS character_spell_slots (
   CONSTRAINT fk_spell_slot_spell FOREIGN KEY (spell_id) REFERENCES spells(id) ON DELETE SET NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+CREATE TABLE IF NOT EXISTS weapons (
+  id VARCHAR(190) PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  display_name VARCHAR(255) NULL,
+  subtitle VARCHAR(255) NULL,
+  base_weapon_type VARCHAR(190) NULL,
+  category VARCHAR(190) NULL,
+  quality VARCHAR(80) NULL,
+  item_level SMALLINT UNSIGNED NULL,
+  is_magical TINYINT(1) NOT NULL DEFAULT 0,
+  is_elemental TINYINT(1) NOT NULL DEFAULT 0,
+  elements_json TEXT NULL,
+  core_die VARCHAR(80) NULL,
+  handling VARCHAR(80) NULL,
+  range_text VARCHAR(190) NULL,
+  damage_type VARCHAR(190) NULL,
+  weight VARCHAR(80) NULL,
+  attack_attribute VARCHAR(190) NULL,
+  attack_formula TEXT NULL,
+  damage_formula TEXT NULL,
+  critical_modification TEXT NULL,
+  special_properties TEXT NULL,
+  active_ability TEXT NULL,
+  class_restriction VARCHAR(190) NULL,
+  appearance TEXT NULL,
+  schema_version VARCHAR(80) NOT NULL,
+  source_file VARCHAR(255) NOT NULL,
+  source_hash CHAR(64) NOT NULL,
+  raw_json LONGTEXT NOT NULL,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  INDEX idx_weapon_search (name, category, quality),
+  INDEX idx_weapon_filters (quality, category, item_level, is_magical)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS character_weapon_slots (
+  character_id BIGINT UNSIGNED NOT NULL,
+  slot VARCHAR(20) NOT NULL,
+  weapon_id VARCHAR(190) NULL,
+  PRIMARY KEY (character_id, slot),
+  CONSTRAINT fk_weapon_slot_character FOREIGN KEY (character_id) REFERENCES characters(id) ON DELETE CASCADE,
+  CONSTRAINT fk_weapon_slot_weapon FOREIGN KEY (weapon_id) REFERENCES weapons(id) ON DELETE SET NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS armors (
+  id VARCHAR(190) PRIMARY KEY,
+  external_id VARCHAR(190) NOT NULL UNIQUE,
+  name VARCHAR(255) NOT NULL,
+  display_name VARCHAR(255) NULL,
+  item_kind VARCHAR(80) NOT NULL,
+  base_item_name VARCHAR(255) NULL,
+  armor_slot VARCHAR(20) NULL,
+  armor_archetype VARCHAR(190) NULL,
+  quality VARCHAR(80) NULL,
+  item_level SMALLINT UNSIGNED NULL,
+  is_magical TINYINT(1) NOT NULL DEFAULT 0,
+  physical_defense DECIMAL(12,2) NULL,
+  magical_defense DECIMAL(12,2) NULL,
+  shield_class VARCHAR(80) NULL,
+  resistances_json LONGTEXT NULL,
+  elements_json LONGTEXT NULL,
+  special_properties LONGTEXT NULL,
+  active_ability LONGTEXT NULL,
+  class_binding LONGTEXT NULL,
+  appearance LONGTEXT NULL,
+  schema_version VARCHAR(80) NOT NULL,
+  source_file VARCHAR(255) NOT NULL,
+  source_hash CHAR(64) NOT NULL,
+  raw_json LONGTEXT NOT NULL,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  INDEX idx_armor_slot (armor_slot),
+  INDEX idx_armor_filter (quality, armor_archetype, item_level)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS magic_foci (
+  id VARCHAR(190) PRIMARY KEY,
+  external_id VARCHAR(190) NOT NULL UNIQUE,
+  name VARCHAR(255) NOT NULL,
+  subtitle VARCHAR(255) NULL,
+  display_name VARCHAR(255) NULL,
+  item_type VARCHAR(190) NULL,
+  base_focus_type VARCHAR(190) NULL,
+  category VARCHAR(190) NULL,
+  quality VARCHAR(80) NULL,
+  item_level SMALLINT UNSIGNED NULL,
+  is_magical TINYINT(1) NOT NULL DEFAULT 0,
+  standard_magic_attack TEXT NULL,
+  magic_attack TEXT NULL,
+  final_magic_attack TEXT NULL,
+  handling VARCHAR(190) NULL,
+  magic_attribute VARCHAR(190) NULL,
+  weight VARCHAR(80) NULL,
+  element_binding LONGTEXT NULL,
+  is_elemental TINYINT(1) NOT NULL DEFAULT 0,
+  attack_roll TEXT NULL,
+  critical_modification TEXT NULL,
+  class_binding LONGTEXT NULL,
+  active_ability LONGTEXT NULL,
+  special_properties LONGTEXT NULL,
+  effect_calculation LONGTEXT NULL,
+  spell_interaction LONGTEXT NULL,
+  lore LONGTEXT NULL,
+  special_rules LONGTEXT NULL,
+  schema_version VARCHAR(80) NOT NULL,
+  source_file VARCHAR(255) NOT NULL,
+  source_hash CHAR(64) NOT NULL,
+  raw_json LONGTEXT NOT NULL,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  INDEX idx_magic_focus_filter (quality, category, item_level, is_elemental)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS character_armor_slots (
+  character_id BIGINT UNSIGNED NOT NULL,
+  slot VARCHAR(20) NOT NULL,
+  armor_id VARCHAR(190) NOT NULL,
+  PRIMARY KEY (character_id, slot),
+  CONSTRAINT fk_armor_slot_character FOREIGN KEY (character_id) REFERENCES characters(id) ON DELETE CASCADE,
+  CONSTRAINT fk_armor_slot_armor FOREIGN KEY (armor_id) REFERENCES armors(id) ON DELETE RESTRICT
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS character_magic_focus (
+  character_id BIGINT UNSIGNED PRIMARY KEY,
+  magic_focus_id VARCHAR(190) NOT NULL,
+  CONSTRAINT fk_character_magic_focus_character FOREIGN KEY (character_id) REFERENCES characters(id) ON DELETE CASCADE,
+  CONSTRAINT fk_character_magic_focus_focus FOREIGN KEY (magic_focus_id) REFERENCES magic_foci(id) ON DELETE RESTRICT
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
 CREATE TABLE IF NOT EXISTS combat_encounters (
   id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(190) NULL,
@@ -308,6 +510,32 @@ CREATE TABLE IF NOT EXISTS combat_participants (
   updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   INDEX idx_participant_order (encounter_id, initiative, sort_order),
   CONSTRAINT fk_participant_encounter FOREIGN KEY (encounter_id) REFERENCES combat_encounters(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS combat_participant_resources (
+  id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  combat_participant_id BIGINT UNSIGNED NOT NULL,
+  character_class_id BIGINT UNSIGNED NULL,
+  class_resource_id VARCHAR(120) NOT NULL,
+  current_value DECIMAL(12,2) NOT NULL DEFAULT 0,
+  max_value_snapshot DECIMAL(12,2) NULL,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  UNIQUE KEY uq_participant_resource (combat_participant_id, class_resource_id),
+  CONSTRAINT fk_participant_resource_participant FOREIGN KEY (combat_participant_id) REFERENCES combat_participants(id) ON DELETE CASCADE,
+  CONSTRAINT fk_participant_resource_character_class FOREIGN KEY (character_class_id) REFERENCES character_classes(id) ON DELETE SET NULL,
+  CONSTRAINT fk_participant_resource_definition FOREIGN KEY (class_resource_id) REFERENCES class_resources(resource_id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS combat_resource_transactions (
+  id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  combat_participant_id BIGINT UNSIGNED NOT NULL,
+  execution_id VARCHAR(190) NOT NULL,
+  class_resource_id VARCHAR(120) NOT NULL,
+  delta DECIMAL(12,2) NOT NULL,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  UNIQUE KEY uq_resource_execution (combat_participant_id, execution_id, class_resource_id),
+  CONSTRAINT fk_resource_transaction_participant FOREIGN KEY (combat_participant_id) REFERENCES combat_participants(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS combat_log (

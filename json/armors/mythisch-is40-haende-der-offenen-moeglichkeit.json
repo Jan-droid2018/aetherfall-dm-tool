@@ -1,0 +1,155 @@
+{
+  "schema_version": "aetherfall.armors.v1",
+  "id": "mythisch-is40-haende-der-offenen-moeglichkeit",
+  "number": 2,
+  "name": "Hände der Offenen Möglichkeit",
+  "display_name": "Hände der Offenen Möglichkeit",
+  "source_type": "set_piece",
+  "item_kind": "armor",
+  "base_item": {
+    "armor": "Panzerhandschuhe",
+    "shield": null,
+    "name": "Panzerhandschuhe"
+  },
+  "slot": {
+    "name": "Hände",
+    "key": "hands"
+  },
+  "armor_archetype": "Spezial – Konvergenzrüstung",
+  "shield_class": null,
+  "quality": "Mythisch",
+  "item_level": 40,
+  "magical": {
+    "raw": "Ja",
+    "value": true
+  },
+  "defense": {
+    "physical": {
+      "raw": "9",
+      "value": 9
+    },
+    "magical": {
+      "raw": "7",
+      "general": 7,
+      "conditional": []
+    }
+  },
+  "resistances": {
+    "raw": null,
+    "entries": []
+  },
+  "elements": [],
+  "is_elemental": false,
+  "special_properties": "Trägerbindung – Vermächtnis der Zwei; Bestandteil des Siegels der Nicht-Krone; trägt die wandelbare Struktur der Prägung des Chaos",
+  "passive_property": null,
+  "active_ability": null,
+  "active_block_ability": null,
+  "reaction_trigger": null,
+  "hand_binding_usage": null,
+  "action_cost": null,
+  "trigger_requirement": "Funktionale Aktivierung nur durch das Ursprungsvermächtnis",
+  "costs": null,
+  "usage_limit": null,
+  "range_target": "Selbst",
+  "duration": "Solange getragen",
+  "saving_throw_dc": null,
+  "calculation": "Phys-VTD 9; Mag-VTD 7",
+  "rule_effect": "Die Verteidigungswerte werden nach den normalen Rüstungsregeln zur Gesamtverteidigung addiert. Die Handschuhe behindern Klassenfähigkeiten des Ursprungsvermächtnisses nicht und passen ihre Form an die Anatomie des Trägers an.",
+  "stacking": "Normale Rüstungsstapelung; gleichnamige Seteffekte existieren nur einmal.",
+  "end_condition": "Beim Ablegen oder Verlust der Klassenbindung",
+  "set": {
+    "name": "Harnisch der Ungekrönten Konvergenz",
+    "bonus": "Teil von Prägung der Zwei und Letztes Geschenk der Ungekrönten"
+  },
+  "class_binding": {
+    "raw": "Ursprungsvermächtnis",
+    "class_name": "Ursprungsvermächtnis"
+  },
+  "upgrade_scaling": "Itemstufe 40 ist erreicht. Eine weitere reguläre Itemstufensteigerung ist nicht möglich; die Qualitätsstufe bleibt Mythisch.",
+  "crafting_requirement": "Nicht normal reproduzierbar. Reparatur oder Aufwertung erfordert einen außergewöhnlichen Meister, einzigartige Materialien und die aktive Resonanz des gebundenen göttlichen Kerns.",
+  "appearance": "Bewegliche Schutzsegmente liegen wie feine überlappende Schuppen oder Platten über den für die jeweilige Gestalt funktionalen Greif- und Führungsorganen. Geometrische Linien brechen an manchen Stellen bewusst auf und bilden bei jeder Bewegung leicht veränderte Muster, ohne je chaotisch funktionslos zu werden.",
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.2",
+    "classification": "Balance 1.0 – DM-Sonderprofil",
+    "dm_exclusive": true,
+    "dm_performance_profile": "Ursprungsvermächtnis-DM-Rüstungsbudget-1.0"
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Rüstung",
+      "Rüstungsset",
+      "Mythisch",
+      "Ursprungsvermächtnis",
+      "Cosmos",
+      "Chaos",
+      "DM-Klasse"
+    ],
+    "aliases": [
+      "Ungekrönte Konvergenz",
+      "Harnisch der Zwei"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.2",
+    "gegenstandsanzahl": 4,
+    "setname": "Harnisch der Ungekrönten Konvergenz",
+    "qualitaet": "Mythisch",
+    "itemstufe": 40,
+    "klasse": "Ursprungsvermächtnis",
+    "dm_exklusiv": true,
+    "dm_leistungsprofil": "Ursprungsvermächtnis-DM-Rüstungsbudget-1.0",
+    "slots": [
+      "Brust",
+      "Hände",
+      "Beine",
+      "Füße"
+    ],
+    "status": "Balance 1.0 – DM-Sonderprofil"
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Basisrüstung": "Panzerhandschuhe",
+    "Slot": "Hände",
+    "Rüstungsarchetyp": "Spezial – Konvergenzrüstung",
+    "Qualitätsstufe": "Mythisch",
+    "Itemstufe": "40",
+    "Magisch": "Ja",
+    "Physische Verteidigung": "**9**",
+    "Magische Verteidigung": "**7**",
+    "Resistenzen": null,
+    "Besondere Eigenschaften": "**Trägerbindung – Vermächtnis der Zwei**; Bestandteil des **Siegels der Nicht-Krone**; trägt die wandelbare Struktur der **Prägung des Chaos**",
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": null,
+    "Auslöser / Voraussetzung": "Funktionale Aktivierung nur durch das Ursprungsvermächtnis",
+    "Einsatzlimit": null,
+    "Reichweite / Ziel": "Selbst",
+    "Dauer": "Solange getragen",
+    "Rettungswurf / SG": null,
+    "Berechnung": "Phys-VTD 9; Mag-VTD 7",
+    "Regelwirkung": "Die Verteidigungswerte werden nach den normalen Rüstungsregeln zur Gesamtverteidigung addiert. Die Handschuhe behindern Klassenfähigkeiten des Ursprungsvermächtnisses nicht und passen ihre Form an die Anatomie des Trägers an.",
+    "Stapelung": "Normale Rüstungsstapelung; gleichnamige Seteffekte existieren nur einmal.",
+    "Ende der Wirkung": "Beim Ablegen oder Verlust der Klassenbindung",
+    "Setzugehörigkeit": "Harnisch der Ungekrönten Konvergenz",
+    "Setbonus": "Teil von **Prägung der Zwei** und **Letztes Geschenk der Ungekrönten**",
+    "Aufwertung / Skalierung": "**Itemstufe 40 ist erreicht.** Eine weitere reguläre Itemstufensteigerung ist nicht möglich; die Qualitätsstufe bleibt Mythisch.",
+    "Herstellungsanforderung": "Nicht normal reproduzierbar. Reparatur oder Aufwertung erfordert einen außergewöhnlichen Meister, einzigartige Materialien und die aktive Resonanz des gebundenen göttlichen Kerns.",
+    "Erscheinungsbild": "Bewegliche Schutzsegmente liegen wie feine überlappende Schuppen oder Platten über den für die jeweilige Gestalt funktionalen Greif- und Führungsorganen. Geometrische Linien brechen an manchen Stellen bewusst auf und bilden bei jeder Bewegung leicht veränderte Muster, ohne je chaotisch funktionslos zu werden."
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Panzerhandschuhe |\n| **Slot** | Hände |\n| **Rüstungsarchetyp** | Spezial – Konvergenzrüstung |\n| **Qualitätsstufe** | Mythisch |\n| **Itemstufe** | 40 |\n| **Magisch** | Ja |\n| **Physische Verteidigung** | **9** |\n| **Magische Verteidigung** | **7** |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | **Trägerbindung – Vermächtnis der Zwei**; Bestandteil des **Siegels der Nicht-Krone**; trägt die wandelbare Struktur der **Prägung des Chaos** |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | Funktionale Aktivierung nur durch das Ursprungsvermächtnis |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | Selbst |\n| **Dauer** | Solange getragen |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | Phys-VTD 9; Mag-VTD 7 |\n| **Regelwirkung** | Die Verteidigungswerte werden nach den normalen Rüstungsregeln zur Gesamtverteidigung addiert. Die Handschuhe behindern Klassenfähigkeiten des Ursprungsvermächtnisses nicht und passen ihre Form an die Anatomie des Trägers an. |\n| **Stapelung** | Normale Rüstungsstapelung; gleichnamige Seteffekte existieren nur einmal. |\n| **Ende der Wirkung** | Beim Ablegen oder Verlust der Klassenbindung |\n| **Setzugehörigkeit** | Harnisch der Ungekrönten Konvergenz |\n| **Setbonus** | Teil von **Prägung der Zwei** und **Letztes Geschenk der Ungekrönten** |\n| **Aufwertung / Skalierung** | **Itemstufe 40 ist erreicht.** Eine weitere reguläre Itemstufensteigerung ist nicht möglich; die Qualitätsstufe bleibt Mythisch. |\n| **Herstellungsanforderung** | Nicht normal reproduzierbar. Reparatur oder Aufwertung erfordert einen außergewöhnlichen Meister, einzigartige Materialien und die aktive Resonanz des gebundenen göttlichen Kerns. |\n| **Erscheinungsbild** | Bewegliche Schutzsegmente liegen wie feine überlappende Schuppen oder Platten über den für die jeweilige Gestalt funktionalen Greif- und Führungsorganen. Geometrische Linien brechen an manchen Stellen bewusst auf und bilden bei jeder Bewegung leicht veränderte Muster, ohne je chaotisch funktionslos zu werden. |",
+  "sections": [
+    {
+      "level": 1,
+      "title": "02. Hände der Offenen Möglichkeit",
+      "markdown": "Die **Hände der Offenen Möglichkeit** verkörpern Chaos nicht als Zerstörung, sondern als Fähigkeit, innerhalb einer bestehenden Form eine neue Möglichkeit zu finden.\n\nIhre Segmente verändern beim Greifen, Wirken oder Gestikulieren geringfügig ihre Anordnung. Keine Bewegung sieht vollkommen identisch aus, dennoch verliert das Relikt niemals seine Schutzfunktion.\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Panzerhandschuhe |\n| **Slot** | Hände |\n| **Rüstungsarchetyp** | Spezial – Konvergenzrüstung |\n| **Qualitätsstufe** | Mythisch |\n| **Itemstufe** | 40 |\n| **Magisch** | Ja |\n| **Physische Verteidigung** | **9** |\n| **Magische Verteidigung** | **7** |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | **Trägerbindung – Vermächtnis der Zwei**; Bestandteil des **Siegels der Nicht-Krone**; trägt die wandelbare Struktur der **Prägung des Chaos** |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | Funktionale Aktivierung nur durch das Ursprungsvermächtnis |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | Selbst |\n| **Dauer** | Solange getragen |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | Phys-VTD 9; Mag-VTD 7 |\n| **Regelwirkung** | Die Verteidigungswerte werden nach den normalen Rüstungsregeln zur Gesamtverteidigung addiert. Die Handschuhe behindern Klassenfähigkeiten des Ursprungsvermächtnisses nicht und passen ihre Form an die Anatomie des Trägers an. |\n| **Stapelung** | Normale Rüstungsstapelung; gleichnamige Seteffekte existieren nur einmal. |\n| **Ende der Wirkung** | Beim Ablegen oder Verlust der Klassenbindung |\n| **Setzugehörigkeit** | Harnisch der Ungekrönten Konvergenz |\n| **Setbonus** | Teil von **Prägung der Zwei** und **Letztes Geschenk der Ungekrönten** |\n| **Aufwertung / Skalierung** | **Itemstufe 40 ist erreicht.** Eine weitere reguläre Itemstufensteigerung ist nicht möglich; die Qualitätsstufe bleibt Mythisch. |\n| **Herstellungsanforderung** | Nicht normal reproduzierbar. Reparatur oder Aufwertung erfordert einen außergewöhnlichen Meister, einzigartige Materialien und die aktive Resonanz des gebundenen göttlichen Kerns. |\n| **Erscheinungsbild** | Bewegliche Schutzsegmente liegen wie feine überlappende Schuppen oder Platten über den für die jeweilige Gestalt funktionalen Greif- und Führungsorganen. Geometrische Linien brechen an manchen Stellen bewusst auf und bilden bei jeder Bewegung leicht veränderte Muster, ohne je chaotisch funktionslos zu werden. |\n\n---",
+      "line_start": 3274,
+      "line_end": 3310
+    }
+  ],
+  "raw_markdown": "# 02. Hände der Offenen Möglichkeit\n\nDie **Hände der Offenen Möglichkeit** verkörpern Chaos nicht als Zerstörung, sondern als Fähigkeit, innerhalb einer bestehenden Form eine neue Möglichkeit zu finden.\n\nIhre Segmente verändern beim Greifen, Wirken oder Gestikulieren geringfügig ihre Anordnung. Keine Bewegung sieht vollkommen identisch aus, dennoch verliert das Relikt niemals seine Schutzfunktion.\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Panzerhandschuhe |\n| **Slot** | Hände |\n| **Rüstungsarchetyp** | Spezial – Konvergenzrüstung |\n| **Qualitätsstufe** | Mythisch |\n| **Itemstufe** | 40 |\n| **Magisch** | Ja |\n| **Physische Verteidigung** | **9** |\n| **Magische Verteidigung** | **7** |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | **Trägerbindung – Vermächtnis der Zwei**; Bestandteil des **Siegels der Nicht-Krone**; trägt die wandelbare Struktur der **Prägung des Chaos** |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | Funktionale Aktivierung nur durch das Ursprungsvermächtnis |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | Selbst |\n| **Dauer** | Solange getragen |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | Phys-VTD 9; Mag-VTD 7 |\n| **Regelwirkung** | Die Verteidigungswerte werden nach den normalen Rüstungsregeln zur Gesamtverteidigung addiert. Die Handschuhe behindern Klassenfähigkeiten des Ursprungsvermächtnisses nicht und passen ihre Form an die Anatomie des Trägers an. |\n| **Stapelung** | Normale Rüstungsstapelung; gleichnamige Seteffekte existieren nur einmal. |\n| **Ende der Wirkung** | Beim Ablegen oder Verlust der Klassenbindung |\n| **Setzugehörigkeit** | Harnisch der Ungekrönten Konvergenz |\n| **Setbonus** | Teil von **Prägung der Zwei** und **Letztes Geschenk der Ungekrönten** |\n| **Aufwertung / Skalierung** | **Itemstufe 40 ist erreicht.** Eine weitere reguläre Itemstufensteigerung ist nicht möglich; die Qualitätsstufe bleibt Mythisch. |\n| **Herstellungsanforderung** | Nicht normal reproduzierbar. Reparatur oder Aufwertung erfordert einen außergewöhnlichen Meister, einzigartige Materialien und die aktive Resonanz des gebundenen göttlichen Kerns. |\n| **Erscheinungsbild** | Bewegliche Schutzsegmente liegen wie feine überlappende Schuppen oder Platten über den für die jeweilige Gestalt funktionalen Greif- und Führungsorganen. Geometrische Linien brechen an manchen Stellen bewusst auf und bilden bei jeder Bewegung leicht veränderte Muster, ohne je chaotisch funktionslos zu werden. |\n\n---",
+  "source": {
+    "file": "Rüstungen.md",
+    "document_title": "Harnisch der Ungekrönten Konvergenz",
+    "line_start": 3274,
+    "line_end": 3310
+  }
+}

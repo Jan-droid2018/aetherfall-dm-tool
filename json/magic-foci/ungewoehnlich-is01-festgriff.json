@@ -1,0 +1,169 @@
+{
+  "schema_version": "aetherfall.magic_foci.v1",
+  "id": "ungewoehnlich-is01-festgriff",
+  "number": 5,
+  "name": "Festgriff",
+  "subtitle": null,
+  "display_name": "Festgriff",
+  "source_type": "catalog_entry",
+  "item_type": "Magiefokus",
+  "base_focus_type": "Fokusrute",
+  "category": "Zauberstäbe und Fokusruten",
+  "quality": "Ungewöhnlich",
+  "item_level": 1,
+  "magical": {
+    "raw": "Nein",
+    "value": false
+  },
+  "magic_attack": {
+    "standard": "1W6",
+    "normal": "1W6 + 1",
+    "final": null,
+    "effective": "1W6 + 1",
+    "dice_terms": [
+      {
+        "raw": "1W6",
+        "count": 1,
+        "sides": 6
+      }
+    ],
+    "flat_numeric_terms": [
+      1
+    ]
+  },
+  "handling": "Einhändig",
+  "magic_attribute": "Willenskraft",
+  "weight": "Leicht",
+  "element_binding": {
+    "raw": "Keine",
+    "value": null,
+    "elements": []
+  },
+  "is_elemental": false,
+  "attack_roll": {
+    "raw": "W20 + Magieattribut-Modifikator + Magieattribut-Bonus",
+    "dice_terms": [
+      {
+        "raw": "W20",
+        "count": 1,
+        "sides": 20
+      }
+    ]
+  },
+  "core_value_formula": null,
+  "critical_modification": null,
+  "class_binding": {
+    "class_name": null,
+    "raw": null,
+    "playable_by": null,
+    "is_class_focus": false,
+    "is_dm_focus": false
+  },
+  "dm_special_profile": null,
+  "special_properties": "Verstärkte Kanalisierung: Wenn eine Regel ausdrücklich den Magieangriff dieses Fokus verwendet, wird nach dem Würfelwurf +1 auf das Ergebnis addiert.",
+  "active_ability": null,
+  "action_cost": null,
+  "trigger_requirement": "Die jeweilige besondere Eigenschaft gilt nur, wenn ihre beschriebene Fokusregel tatsächlich verwendet wird.",
+  "costs": null,
+  "usage_limit": "Passiv; kein eigenes Aktivierungslimit.",
+  "effect_range": "Keine eigene Reichweitenveränderung.",
+  "target_area": "Wie die verwendete Regel oder der verwendete Zauber.",
+  "duration": "Solange der Fokus ausgerüstet und regelkonform verwendet wird.",
+  "saving_throw_dc": "Keine Veränderung.",
+  "effect_calculation": "Magieangriff: 1W6 + 1.",
+  "rule_effect": "Die Verbesserung betrifft ausschließlich den ausdrücklich verwendeten Fokus-Magieangriff und erzeugt keinen zusätzlichen Zauberschaden.",
+  "spell_interaction": "Der Fokus-Magieangriff wird nur verwendet, wenn eine Regel ausdrücklich den Magieangriff des Fokus verwendet. Zauber mit eigener Schadensformel erhalten den Fokuswürfel nicht zusätzlich.",
+  "stacking": "Keine eigene Sonderregel zur Stapelung; es gelten die allgemeinen Regeln.",
+  "end_condition": "Sobald der Fokus nicht mehr verwendet oder ausgerüstet wird.",
+  "upgrade_scaling": "Eine spätere Itemstufenaufwertung verändert die Basisfokusart nicht und erzeugt nicht automatisch neue Eigenschaften. Skalierende Werte müssen bei der Aufwertung neu geprüft werden.",
+  "crafting_requirement": "Ausgebildeter oder erfahrener Handwerker mit Erfahrung in der Herstellung von Magiefoki.",
+  "appearance": "Eine kurze robuste Rute mit dicht gewickeltem Ledergriff und verstärktem Metallabschluss.",
+  "lore": "Ihre sorgfältige Balance macht sie zu einem beliebten Arbeitsfokus für reisende Magier.",
+  "special_rules": {},
+  "formulas": {
+    "all_dice_terms": [
+      {
+        "raw": "1W6",
+        "count": 1,
+        "sides": 6
+      },
+      {
+        "raw": "1W6",
+        "count": 1,
+        "sides": 6
+      },
+      {
+        "raw": "W20",
+        "count": 1,
+        "sides": 20
+      },
+      {
+        "raw": "1W6",
+        "count": 1,
+        "sides": 6
+      }
+    ]
+  },
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.0",
+    "status": null,
+    "profile": null,
+    "awakening_status": null
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Magiefokus",
+      "Ungewöhnlich"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.0",
+    "fokianzahl": 30,
+    "qualitaet": "Ungewöhnlich",
+    "itemstufe": 1,
+    "elementarfoki": 6
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Basisfokusart": "Fokusrute",
+    "Fokuskategorie": "Zauberstäbe und Fokusruten",
+    "Qualitätsstufe": "Ungewöhnlich",
+    "Itemstufe": "1",
+    "Magisch": "Nein",
+    "Standard-Magieangriff": "1W6",
+    "Magieangriff": "1W6 + 1",
+    "Führung": "Einhändig",
+    "Magieattribut": "Willenskraft",
+    "Gewicht": "Leicht",
+    "Elementbindung": "Keine",
+    "Angriffswurf": "W20 + Magieattribut-Modifikator + Magieattribut-Bonus",
+    "Krit-Modifikation": null,
+    "Besondere Eigenschaften": "**Verstärkte Kanalisierung:** Wenn eine Regel ausdrücklich den Magieangriff dieses Fokus verwendet, wird nach dem Würfelwurf **+1** auf das Ergebnis addiert.",
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": null,
+    "Auslöser / Voraussetzung": "Die jeweilige besondere Eigenschaft gilt nur, wenn ihre beschriebene Fokusregel tatsächlich verwendet wird.",
+    "Einsatzlimit": "Passiv; kein eigenes Aktivierungslimit.",
+    "Reichweite des Effekts": "Keine eigene Reichweitenveränderung.",
+    "Ziel / Fläche": "Wie die verwendete Regel oder der verwendete Zauber.",
+    "Dauer": "Solange der Fokus ausgerüstet und regelkonform verwendet wird.",
+    "Rettungswurf / SG": "Keine Veränderung.",
+    "Berechnung des Effekts": "Magieangriff: **1W6 + 1**.",
+    "Regelwirkung": "Die Verbesserung betrifft ausschließlich den ausdrücklich verwendeten Fokus-Magieangriff und erzeugt keinen zusätzlichen Zauberschaden.",
+    "Zauberinteraktion": "Der Fokus-Magieangriff wird nur verwendet, wenn eine Regel ausdrücklich den Magieangriff des Fokus verwendet. Zauber mit eigener Schadensformel erhalten den Fokuswürfel nicht zusätzlich.",
+    "Stapelung": "Keine eigene Sonderregel zur Stapelung; es gelten die allgemeinen Regeln.",
+    "Ende der Wirkung": "Sobald der Fokus nicht mehr verwendet oder ausgerüstet wird.",
+    "Aufwertung / Skalierung": "Eine spätere Itemstufenaufwertung verändert die Basisfokusart nicht und erzeugt nicht automatisch neue Eigenschaften. Skalierende Werte müssen bei der Aufwertung neu geprüft werden.",
+    "Herstellungsanforderung": "Ausgebildeter oder erfahrener Handwerker mit Erfahrung in der Herstellung von Magiefoki.",
+    "Erscheinungsbild": "Eine kurze robuste Rute mit dicht gewickeltem Ledergriff und verstärktem Metallabschluss.",
+    "Herkunft / Lore": "Ihre sorgfältige Balance macht sie zu einem beliebten Arbeitsfokus für reisende Magier."
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basisfokusart** | Fokusrute |\n| **Fokuskategorie** | Zauberstäbe und Fokusruten |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Standard-Magieangriff** | 1W6 |\n| **Magieangriff** | 1W6 + 1 |\n| **Führung** | Einhändig |\n| **Magieattribut** | Willenskraft |\n| **Gewicht** | Leicht |\n| **Elementbindung** | Keine |\n| **Angriffswurf** | W20 + Magieattribut-Modifikator + Magieattribut-Bonus |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | **Verstärkte Kanalisierung:** Wenn eine Regel ausdrücklich den Magieangriff dieses Fokus verwendet, wird nach dem Würfelwurf **+1** auf das Ergebnis addiert. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | Die jeweilige besondere Eigenschaft gilt nur, wenn ihre beschriebene Fokusregel tatsächlich verwendet wird. |\n| **Einsatzlimit** | Passiv; kein eigenes Aktivierungslimit. |\n| **Reichweite des Effekts** | Keine eigene Reichweitenveränderung. |\n| **Ziel / Fläche** | Wie die verwendete Regel oder der verwendete Zauber. |\n| **Dauer** | Solange der Fokus ausgerüstet und regelkonform verwendet wird. |\n| **Rettungswurf / SG** | Keine Veränderung. |\n| **Berechnung des Effekts** | Magieangriff: **1W6 + 1**. |\n| **Regelwirkung** | Die Verbesserung betrifft ausschließlich den ausdrücklich verwendeten Fokus-Magieangriff und erzeugt keinen zusätzlichen Zauberschaden. |\n| **Zauberinteraktion** | Der Fokus-Magieangriff wird nur verwendet, wenn eine Regel ausdrücklich den Magieangriff des Fokus verwendet. Zauber mit eigener Schadensformel erhalten den Fokuswürfel nicht zusätzlich. |\n| **Stapelung** | Keine eigene Sonderregel zur Stapelung; es gelten die allgemeinen Regeln. |\n| **Ende der Wirkung** | Sobald der Fokus nicht mehr verwendet oder ausgerüstet wird. |\n| **Aufwertung / Skalierung** | Eine spätere Itemstufenaufwertung verändert die Basisfokusart nicht und erzeugt nicht automatisch neue Eigenschaften. Skalierende Werte müssen bei der Aufwertung neu geprüft werden. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker mit Erfahrung in der Herstellung von Magiefoki. |\n| **Erscheinungsbild** | Eine kurze robuste Rute mit dicht gewickeltem Ledergriff und verstärktem Metallabschluss. |\n| **Herkunft / Lore** | Ihre sorgfältige Balance macht sie zu einem beliebten Arbeitsfokus für reisende Magier. |",
+  "sections": [],
+  "raw_markdown": "## 05. Festgriff\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basisfokusart** | Fokusrute |\n| **Fokuskategorie** | Zauberstäbe und Fokusruten |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Standard-Magieangriff** | 1W6 |\n| **Magieangriff** | 1W6 + 1 |\n| **Führung** | Einhändig |\n| **Magieattribut** | Willenskraft |\n| **Gewicht** | Leicht |\n| **Elementbindung** | Keine |\n| **Angriffswurf** | W20 + Magieattribut-Modifikator + Magieattribut-Bonus |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | **Verstärkte Kanalisierung:** Wenn eine Regel ausdrücklich den Magieangriff dieses Fokus verwendet, wird nach dem Würfelwurf **+1** auf das Ergebnis addiert. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | Die jeweilige besondere Eigenschaft gilt nur, wenn ihre beschriebene Fokusregel tatsächlich verwendet wird. |\n| **Einsatzlimit** | Passiv; kein eigenes Aktivierungslimit. |\n| **Reichweite des Effekts** | Keine eigene Reichweitenveränderung. |\n| **Ziel / Fläche** | Wie die verwendete Regel oder der verwendete Zauber. |\n| **Dauer** | Solange der Fokus ausgerüstet und regelkonform verwendet wird. |\n| **Rettungswurf / SG** | Keine Veränderung. |\n| **Berechnung des Effekts** | Magieangriff: **1W6 + 1**. |\n| **Regelwirkung** | Die Verbesserung betrifft ausschließlich den ausdrücklich verwendeten Fokus-Magieangriff und erzeugt keinen zusätzlichen Zauberschaden. |\n| **Zauberinteraktion** | Der Fokus-Magieangriff wird nur verwendet, wenn eine Regel ausdrücklich den Magieangriff des Fokus verwendet. Zauber mit eigener Schadensformel erhalten den Fokuswürfel nicht zusätzlich. |\n| **Stapelung** | Keine eigene Sonderregel zur Stapelung; es gelten die allgemeinen Regeln. |\n| **Ende der Wirkung** | Sobald der Fokus nicht mehr verwendet oder ausgerüstet wird. |\n| **Aufwertung / Skalierung** | Eine spätere Itemstufenaufwertung verändert die Basisfokusart nicht und erzeugt nicht automatisch neue Eigenschaften. Skalierende Werte müssen bei der Aufwertung neu geprüft werden. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker mit Erfahrung in der Herstellung von Magiefoki. |\n| **Erscheinungsbild** | Eine kurze robuste Rute mit dicht gewickeltem Ledergriff und verstärktem Metallabschluss. |\n| **Herkunft / Lore** | Ihre sorgfältige Balance macht sie zu einem beliebten Arbeitsfokus für reisende Magier. |",
+  "source": {
+    "file": "Magiefoki.md",
+    "document_title": "Ätherfall – 30 ungewöhnliche Magiefoki – Itemstufe 1",
+    "line_start": 2617,
+    "line_end": 2652
+  }
+}

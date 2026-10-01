@@ -1,0 +1,153 @@
+{
+  "schema_version": "aetherfall.weapons.v1",
+  "id": "gewoehnlich-is01-morgensaum",
+  "number": 59,
+  "name": "Morgensaum",
+  "subtitle": null,
+  "display_name": "Morgensaum",
+  "source_type": "catalog_entry",
+  "item_type": "Waffe",
+  "base_weapon_type": "Kurzschwert",
+  "category": "Schwerter",
+  "quality": "Gewöhnlich",
+  "item_level": 1,
+  "magical": {
+    "raw": "Ja – einfache Elementarprägung (Licht)",
+    "value": true
+  },
+  "elements": [
+    "Licht"
+  ],
+  "is_elemental": true,
+  "core_dice": {
+    "raw": "1W6",
+    "dice_terms": [
+      {
+        "raw": "1W6",
+        "count": 1,
+        "sides": 6
+      }
+    ]
+  },
+  "handling": "Einhändig",
+  "range": "Nah",
+  "damage_type": "Hieb / Stich + Licht",
+  "weight": "Mittel",
+  "attributes": {
+    "attack": "Geschicklichkeit",
+    "primary_class": null,
+    "secondary_class": null
+  },
+  "formulas": {
+    "attack": "W20 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus",
+    "damage": {
+      "default": "1W6 + 9 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus; verursacht nach Wahl Hieb oder Stichschaden. Zusätzlich verursacht derselbe Treffer 1W4 + 7 Lichtschaden. Physischer und Lichtschaden werden getrennt mit der jeweils passenden Verteidigung verrechnet.",
+      "one_handed": null,
+      "two_handed": null
+    },
+    "core_value": null,
+    "dice_terms": [
+      {
+        "raw": "W20",
+        "count": 1,
+        "sides": 20
+      },
+      {
+        "raw": "1W6",
+        "count": 1,
+        "sides": 6
+      },
+      {
+        "raw": "1W4",
+        "count": 1,
+        "sides": 4
+      }
+    ]
+  },
+  "critical_modification": null,
+  "class_binding": {
+    "class_name": null,
+    "raw": null,
+    "is_class_weapon": false,
+    "is_dm_weapon": false
+  },
+  "class_resource": null,
+  "special_properties": "Einfache Elementarprägung – Licht: Die Waffe verursacht den in der Schadensformel angegebenen zusätzlichen Lichtschaden. Die Elementarschadensart erzeugt keine automatische zusätzliche Wirkung oder keinen Zustand.",
+  "class_effect": null,
+  "active_ability": null,
+  "action_cost": null,
+  "trigger_requirement": null,
+  "costs": null,
+  "usage_limit": null,
+  "effect_range": null,
+  "target_area": null,
+  "duration": null,
+  "saving_throw_dc": null,
+  "effect_calculation": "Der zusätzliche Lichtschaden wird nach den normalen Regeln für magischen Schaden gegen die Magieverteidigung des Ziels berechnet. Resistenzen, Verwundbarkeiten und Immunitäten gegen Licht gelten normal.",
+  "rule_effect": "Rein zusätzlicher Elementarschaden; keine weitere Elementwirkung.",
+  "stacking": null,
+  "end_condition": null,
+  "upgrade_scaling": "Kann nach den allgemeinen Regeln über Itemstufen verbessert werden; bei einer Aufwertung werden sowohl der physische Waffenanteil als auch der elementare Anteil für die neue Itemstufe neu auf die Zentralbalance abgestimmt.",
+  "crafting_requirement": "Normale handwerkliche Ausbildung",
+  "appearance": "Ein handliches Kurzschwert mit gerader Klinge, schlichtem Kreuzschutz und hell gegerbtem Ledergriff. Die Schneide reflektiert selbst schwaches Umgebungslicht ungewöhnlich klar und trägt einen schmalen, warmen Schimmer wie frühes Morgenlicht.",
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.0",
+    "classification": null,
+    "dm_performance_profile": null,
+    "status": null
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Waffen"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.0",
+    "waffenanzahl": 62,
+    "elementarwaffen": 12,
+    "qualitaet": "Gewöhnlich",
+    "itemstufe": 1
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Basiswaffenart": "Kurzschwert",
+    "Waffenkategorie": "Schwerter",
+    "Qualitätsstufe": "Gewöhnlich",
+    "Itemstufe": "1",
+    "Magisch": "Ja – einfache Elementarprägung (Licht)",
+    "Kernwürfel": "1W6",
+    "Führung": "Einhändig",
+    "Reichweite": "Nah",
+    "Schadensart": "Hieb / Stich + Licht",
+    "Gewicht": "Mittel",
+    "Angriffsattribut": "Geschicklichkeit",
+    "Angriffswurf": "W20 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus",
+    "Schadensformel": "1W6 + 9 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus; verursacht nach Wahl Hieb oder Stichschaden. Zusätzlich verursacht derselbe Treffer **1W4 + 7 Lichtschaden**. Physischer und Lichtschaden werden getrennt mit der jeweils passenden Verteidigung verrechnet.",
+    "Krit-Modifikation": null,
+    "Besondere Eigenschaften": "**Einfache Elementarprägung – Licht:** Die Waffe verursacht den in der Schadensformel angegebenen zusätzlichen Lichtschaden. Die Elementarschadensart erzeugt **keine automatische zusätzliche Wirkung oder keinen Zustand**.",
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": null,
+    "Auslöser / Voraussetzung": null,
+    "Einsatzlimit": null,
+    "Reichweite des Effekts": null,
+    "Ziel / Fläche": null,
+    "Dauer": null,
+    "Rettungswurf / SG": null,
+    "Berechnung des Effekts": "Der zusätzliche Lichtschaden wird nach den normalen Regeln für magischen Schaden gegen die Magieverteidigung des Ziels berechnet. Resistenzen, Verwundbarkeiten und Immunitäten gegen Licht gelten normal.",
+    "Regelwirkung": "Rein zusätzlicher Elementarschaden; keine weitere Elementwirkung.",
+    "Stapelung": null,
+    "Ende der Wirkung": null,
+    "Aufwertung / Skalierung": "Kann nach den allgemeinen Regeln über Itemstufen verbessert werden; bei einer Aufwertung werden sowohl der physische Waffenanteil als auch der elementare Anteil für die neue Itemstufe neu auf die Zentralbalance abgestimmt.",
+    "Herstellungsanforderung": "Normale handwerkliche Ausbildung",
+    "Erscheinungsbild": "Ein handliches Kurzschwert mit gerader Klinge, schlichtem Kreuzschutz und hell gegerbtem Ledergriff. Die Schneide reflektiert selbst schwaches Umgebungslicht ungewöhnlich klar und trägt einen schmalen, warmen Schimmer wie frühes Morgenlicht."
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basiswaffenart** | Kurzschwert |\n| **Waffenkategorie** | Schwerter |\n| **Qualitätsstufe** | Gewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja – einfache Elementarprägung (Licht) |\n| **Kernwürfel** | 1W6 |\n| **Führung** | Einhändig |\n| **Reichweite** | Nah |\n| **Schadensart** | Hieb / Stich + Licht |\n| **Gewicht** | Mittel |\n| **Angriffsattribut** | Geschicklichkeit |\n| **Angriffswurf** | W20 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus |\n| **Schadensformel** | 1W6 + 9 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus; verursacht nach Wahl Hieb oder Stichschaden. Zusätzlich verursacht derselbe Treffer **1W4 + 7 Lichtschaden**. Physischer und Lichtschaden werden getrennt mit der jeweils passenden Verteidigung verrechnet. |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | **Einfache Elementarprägung – Licht:** Die Waffe verursacht den in der Schadensformel angegebenen zusätzlichen Lichtschaden. Die Elementarschadensart erzeugt **keine automatische zusätzliche Wirkung oder keinen Zustand**. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite des Effekts** | – |\n| **Ziel / Fläche** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | Der zusätzliche Lichtschaden wird nach den normalen Regeln für magischen Schaden gegen die Magieverteidigung des Ziels berechnet. Resistenzen, Verwundbarkeiten und Immunitäten gegen Licht gelten normal. |\n| **Regelwirkung** | Rein zusätzlicher Elementarschaden; keine weitere Elementwirkung. |\n| **Stapelung** | – |\n| **Ende der Wirkung** | – |\n| **Aufwertung / Skalierung** | Kann nach den allgemeinen Regeln über Itemstufen verbessert werden; bei einer Aufwertung werden sowohl der physische Waffenanteil als auch der elementare Anteil für die neue Itemstufe neu auf die Zentralbalance abgestimmt. |\n| **Herstellungsanforderung** | Normale handwerkliche Ausbildung |\n| **Erscheinungsbild** | Ein handliches Kurzschwert mit gerader Klinge, schlichtem Kreuzschutz und hell gegerbtem Ledergriff. Die Schneide reflektiert selbst schwaches Umgebungslicht ungewöhnlich klar und trägt einen schmalen, warmen Schimmer wie frühes Morgenlicht. |",
+  "sections": [],
+  "raw_markdown": "## 59. Morgensaum\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basiswaffenart** | Kurzschwert |\n| **Waffenkategorie** | Schwerter |\n| **Qualitätsstufe** | Gewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja – einfache Elementarprägung (Licht) |\n| **Kernwürfel** | 1W6 |\n| **Führung** | Einhändig |\n| **Reichweite** | Nah |\n| **Schadensart** | Hieb / Stich + Licht |\n| **Gewicht** | Mittel |\n| **Angriffsattribut** | Geschicklichkeit |\n| **Angriffswurf** | W20 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus |\n| **Schadensformel** | 1W6 + 9 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus; verursacht nach Wahl Hieb oder Stichschaden. Zusätzlich verursacht derselbe Treffer **1W4 + 7 Lichtschaden**. Physischer und Lichtschaden werden getrennt mit der jeweils passenden Verteidigung verrechnet. |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | **Einfache Elementarprägung – Licht:** Die Waffe verursacht den in der Schadensformel angegebenen zusätzlichen Lichtschaden. Die Elementarschadensart erzeugt **keine automatische zusätzliche Wirkung oder keinen Zustand**. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite des Effekts** | – |\n| **Ziel / Fläche** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | Der zusätzliche Lichtschaden wird nach den normalen Regeln für magischen Schaden gegen die Magieverteidigung des Ziels berechnet. Resistenzen, Verwundbarkeiten und Immunitäten gegen Licht gelten normal. |\n| **Regelwirkung** | Rein zusätzlicher Elementarschaden; keine weitere Elementwirkung. |\n| **Stapelung** | – |\n| **Ende der Wirkung** | – |\n| **Aufwertung / Skalierung** | Kann nach den allgemeinen Regeln über Itemstufen verbessert werden; bei einer Aufwertung werden sowohl der physische Waffenanteil als auch der elementare Anteil für die neue Itemstufe neu auf die Zentralbalance abgestimmt. |\n| **Herstellungsanforderung** | Normale handwerkliche Ausbildung |\n| **Erscheinungsbild** | Ein handliches Kurzschwert mit gerader Klinge, schlichtem Kreuzschutz und hell gegerbtem Ledergriff. Die Schneide reflektiert selbst schwaches Umgebungslicht ungewöhnlich klar und trägt einen schmalen, warmen Schimmer wie frühes Morgenlicht. |",
+  "source": {
+    "file": "Waffen.md",
+    "document_title": "Ätherfall – 62 gewöhnliche Waffen – Itemstufe 1",
+    "line_start": 2122,
+    "line_end": 2156
+  }
+}

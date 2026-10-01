@@ -1,0 +1,135 @@
+{
+  "schema_version": "aetherfall.armors.v1",
+  "id": "gewoehnlich-is01-riemenlauf",
+  "number": null,
+  "name": "Riemenlauf",
+  "display_name": "Riemenlauf",
+  "source_type": "catalog_armor",
+  "item_kind": "armor",
+  "base_item": {
+    "armor": "Lederstiefel",
+    "shield": null,
+    "name": "Lederstiefel"
+  },
+  "slot": {
+    "name": "Füße",
+    "key": "feet"
+  },
+  "armor_archetype": "Leicht",
+  "shield_class": null,
+  "quality": "Gewöhnlich",
+  "item_level": 1,
+  "magical": {
+    "raw": "Nein",
+    "value": false
+  },
+  "defense": {
+    "physical": {
+      "raw": "1",
+      "value": 1
+    },
+    "magical": {
+      "raw": "0",
+      "general": 0,
+      "conditional": []
+    }
+  },
+  "resistances": {
+    "raw": null,
+    "entries": []
+  },
+  "elements": [],
+  "is_elemental": false,
+  "special_properties": null,
+  "passive_property": null,
+  "active_ability": null,
+  "active_block_ability": null,
+  "reaction_trigger": null,
+  "hand_binding_usage": null,
+  "action_cost": null,
+  "trigger_requirement": null,
+  "costs": null,
+  "usage_limit": null,
+  "range_target": null,
+  "duration": null,
+  "saving_throw_dc": null,
+  "calculation": null,
+  "rule_effect": null,
+  "stacking": "Normale Rüstungsstapelung nach dem Regelwerk.",
+  "end_condition": "Solange das Rüstungsteil getragen wird.",
+  "set": {
+    "name": null,
+    "bonus": null
+  },
+  "class_binding": {
+    "raw": null,
+    "class_name": null
+  },
+  "upgrade_scaling": "Werte ändern sich nur durch eine tatsächliche Erhöhung der Itemstufe; die Qualitätsstufe bleibt dabei Gewöhnlich.",
+  "crafting_requirement": "Normale handwerkliche Ausbildung",
+  "appearance": "Schlichte Lederstiefel mit zwei breiten Riemen über dem Knöchel. Eine feste, aber nicht übermäßig dicke Sohle schützt auf Stein und Geröll.",
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.0",
+    "classification": null,
+    "dm_exclusive": false,
+    "dm_performance_profile": null
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Rüstung",
+      "Schilde"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.0",
+    "gegenstandsanzahl": 62,
+    "qualitaet": "Gewöhnlich",
+    "itemstufe": 1
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Basisrüstung": "Lederstiefel",
+    "Slot": "Füße",
+    "Rüstungsarchetyp": "Leicht",
+    "Qualitätsstufe": "Gewöhnlich",
+    "Itemstufe": "1",
+    "Magisch": "Nein",
+    "Physische Verteidigung": "1",
+    "Magische Verteidigung": "0",
+    "Resistenzen": null,
+    "Besondere Eigenschaften": null,
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": null,
+    "Auslöser / Voraussetzung": null,
+    "Einsatzlimit": null,
+    "Reichweite / Ziel": null,
+    "Dauer": null,
+    "Rettungswurf / SG": null,
+    "Berechnung": null,
+    "Regelwirkung": null,
+    "Stapelung": "Normale Rüstungsstapelung nach dem Regelwerk.",
+    "Ende der Wirkung": "Solange das Rüstungsteil getragen wird.",
+    "Setzugehörigkeit": null,
+    "Setbonus": null,
+    "Aufwertung / Skalierung": "Werte ändern sich nur durch eine tatsächliche Erhöhung der Itemstufe; die Qualitätsstufe bleibt dabei Gewöhnlich.",
+    "Herstellungsanforderung": "Normale handwerkliche Ausbildung",
+    "Erscheinungsbild": "Schlichte Lederstiefel mit zwei breiten Riemen über dem Knöchel. Eine feste, aber nicht übermäßig dicke Sohle schützt auf Stein und Geröll."
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Lederstiefel |\n| **Slot** | Füße |\n| **Rüstungsarchetyp** | Leicht |\n| **Qualitätsstufe** | Gewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Physische Verteidigung** | 1 |\n| **Magische Verteidigung** | 0 |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | – |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | – |\n| **Regelwirkung** | – |\n| **Stapelung** | Normale Rüstungsstapelung nach dem Regelwerk. |\n| **Ende der Wirkung** | Solange das Rüstungsteil getragen wird. |\n| **Setzugehörigkeit** | – |\n| **Setbonus** | – |\n| **Aufwertung / Skalierung** | Werte ändern sich nur durch eine tatsächliche Erhöhung der Itemstufe; die Qualitätsstufe bleibt dabei Gewöhnlich. |\n| **Herstellungsanforderung** | Normale handwerkliche Ausbildung |\n| **Erscheinungsbild** | Schlichte Lederstiefel mit zwei breiten Riemen über dem Knöchel. Eine feste, aber nicht übermäßig dicke Sohle schützt auf Stein und Geröll. |",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Riemenlauf",
+      "markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Lederstiefel |\n| **Slot** | Füße |\n| **Rüstungsarchetyp** | Leicht |\n| **Qualitätsstufe** | Gewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Physische Verteidigung** | 1 |\n| **Magische Verteidigung** | 0 |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | – |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | – |\n| **Regelwirkung** | – |\n| **Stapelung** | Normale Rüstungsstapelung nach dem Regelwerk. |\n| **Ende der Wirkung** | Solange das Rüstungsteil getragen wird. |\n| **Setzugehörigkeit** | – |\n| **Setbonus** | – |\n| **Aufwertung / Skalierung** | Werte ändern sich nur durch eine tatsächliche Erhöhung der Itemstufe; die Qualitätsstufe bleibt dabei Gewöhnlich. |\n| **Herstellungsanforderung** | Normale handwerkliche Ausbildung |\n| **Erscheinungsbild** | Schlichte Lederstiefel mit zwei breiten Riemen über dem Knöchel. Eine feste, aber nicht übermäßig dicke Sohle schützt auf Stein und Geröll. |",
+      "line_start": 1463,
+      "line_end": 1493
+    }
+  ],
+  "raw_markdown": "## Riemenlauf\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Lederstiefel |\n| **Slot** | Füße |\n| **Rüstungsarchetyp** | Leicht |\n| **Qualitätsstufe** | Gewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Physische Verteidigung** | 1 |\n| **Magische Verteidigung** | 0 |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | – |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | – |\n| **Regelwirkung** | – |\n| **Stapelung** | Normale Rüstungsstapelung nach dem Regelwerk. |\n| **Ende der Wirkung** | Solange das Rüstungsteil getragen wird. |\n| **Setzugehörigkeit** | – |\n| **Setbonus** | – |\n| **Aufwertung / Skalierung** | Werte ändern sich nur durch eine tatsächliche Erhöhung der Itemstufe; die Qualitätsstufe bleibt dabei Gewöhnlich. |\n| **Herstellungsanforderung** | Normale handwerkliche Ausbildung |\n| **Erscheinungsbild** | Schlichte Lederstiefel mit zwei breiten Riemen über dem Knöchel. Eine feste, aber nicht übermäßig dicke Sohle schützt auf Stein und Geröll. |",
+  "source": {
+    "file": "Rüstungen.md",
+    "document_title": "Ätherfall – 62 gewöhnliche Rüstungen – Itemstufe 1",
+    "line_start": 1463,
+    "line_end": 1493
+  }
+}

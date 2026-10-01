@@ -1,6 +1,6 @@
 # JSON-Schema-Analyse
 
-Stand: 29.09.2026. Analysiert wurden rekursiv alle 96 JSON-Dateien. Die vier `_manifest.json` sind Metadaten und werden nicht importiert. Alle Dateien sind valides JSON und verwenden je Content-Art genau eine Schema-Version.
+Stand: 01.10.2026. Analysiert wurden rekursiv alle JSON-Dateien. Die `_manifest.json` sind Metadaten und werden nicht importiert. Alle Dateien sind valides JSON und verwenden je Content-Art genau eine Schema-Version.
 
 | Content | Echtdaten | Schema | Laufzeitobjekte |
 |---|---:|---|---:|
@@ -8,6 +8,11 @@ Stand: 29.09.2026. Analysiert wurden rekursiv alle 96 JSON-Dateien. Die vier `_m
 | Kreaturen | 28 | `aetherfall.creatures.v1` | 252 Stufenprofile, 918 konkrete Profilaktionen |
 | Bosse | 32 | `aetherfall.bosses.v1` | 288 Stufenprofile, 2.502 konkrete Profilaktionen |
 | Zauberelemente | 6 | `aetherfall.spells.v1` | 600 Zauber (je 10 Grade × 10 Zauber) |
+| Waffen | 97 | `aetherfall.weapons.v1` | 97 Waffenprofile |
+
+## Waffen
+
+Waffenprofile enthalten stabile ID, Name/Anzeigetext, Basiswaffenart, Kategorie, Qualitäts- und Itemstufe, Magie-/Elementkennzeichnung, Kernwürfel, Führung, Reichweite, Schadensart, Gewicht, Angriffsattribut, Angriffs- und Schadensformel sowie optionale kritische Modifikation, Eigenschaften, aktive Fähigkeit und Klassenbindung. Die normalisierten Suchfelder werden in `weapons` gespeichert; das vollständige Profil bleibt in `raw_json` erhalten.
 
 ## Klassen
 

@@ -1,0 +1,162 @@
+{
+  "schema_version": "aetherfall.magic_foci.v1",
+  "id": "ungewoehnlich-is01-sechskant",
+  "number": 11,
+  "name": "Sechskant",
+  "subtitle": null,
+  "display_name": "Sechskant",
+  "source_type": "catalog_entry",
+  "item_type": "Magiefokus",
+  "base_focus_type": "Kristallprisma",
+  "category": "Kristalle und Fokussteine",
+  "quality": "Ungewöhnlich",
+  "item_level": 1,
+  "magical": {
+    "raw": "Nein",
+    "value": false
+  },
+  "magic_attack": {
+    "standard": "1W6",
+    "normal": "1W6",
+    "final": null,
+    "effective": "1W6",
+    "dice_terms": [
+      {
+        "raw": "1W6",
+        "count": 1,
+        "sides": 6
+      }
+    ],
+    "flat_numeric_terms": []
+  },
+  "handling": "Einhändig",
+  "magic_attribute": "Wahrnehmung",
+  "weight": "Leicht",
+  "element_binding": {
+    "raw": "Keine",
+    "value": null,
+    "elements": []
+  },
+  "is_elemental": false,
+  "attack_roll": {
+    "raw": "W20 + Magieattribut-Modifikator + Magieattribut-Bonus + 1",
+    "dice_terms": [
+      {
+        "raw": "W20",
+        "count": 1,
+        "sides": 20
+      }
+    ]
+  },
+  "core_value_formula": null,
+  "critical_modification": null,
+  "class_binding": {
+    "class_name": null,
+    "raw": null,
+    "playable_by": null,
+    "is_class_focus": false,
+    "is_dm_focus": false
+  },
+  "dm_special_profile": null,
+  "special_properties": "Präzise Führung: Angriffe, deren Angriffswurf ausdrücklich durch diesen Fokus bestimmt wird, erhalten +1 auf den Angriffswurf.",
+  "active_ability": null,
+  "action_cost": null,
+  "trigger_requirement": "Die jeweilige besondere Eigenschaft gilt nur, wenn ihre beschriebene Fokusregel tatsächlich verwendet wird.",
+  "costs": null,
+  "usage_limit": "Passiv; kein eigenes Aktivierungslimit.",
+  "effect_range": "Keine eigene Reichweitenveränderung.",
+  "target_area": "Wie die verwendete Regel oder der verwendete Zauber.",
+  "duration": "Solange der Fokus ausgerüstet und regelkonform verwendet wird.",
+  "saving_throw_dc": "Keine Veränderung.",
+  "effect_calculation": "Trefferbonus: +1 nur auf Angriffswürfe, die ausdrücklich durch diesen Fokus bestimmt werden.",
+  "rule_effect": "Der Bonus erhöht nur die Treffergenauigkeit der betroffenen Fokusangriffe und verändert weder Schaden noch SG.",
+  "spell_interaction": "Der Fokus-Magieangriff wird nur verwendet, wenn eine Regel ausdrücklich den Magieangriff des Fokus verwendet. Zauber mit eigener Schadensformel erhalten den Fokuswürfel nicht zusätzlich. Der +1-Trefferbonus gilt nicht für Rettungswurf-Zauber.",
+  "stacking": "Keine eigene Sonderregel zur Stapelung; es gelten die allgemeinen Regeln.",
+  "end_condition": "Sobald der Fokus nicht mehr verwendet oder ausgerüstet wird.",
+  "upgrade_scaling": "Eine spätere Itemstufenaufwertung verändert die Basisfokusart nicht und erzeugt nicht automatisch neue Eigenschaften. Skalierende Werte müssen bei der Aufwertung neu geprüft werden.",
+  "crafting_requirement": "Ausgebildeter oder erfahrener Handwerker mit Erfahrung in der Herstellung von Magiefoki.",
+  "appearance": "Ein längliches Prisma mit sechs exakt geschliffenen Flächen und einem kleinen matten Haltering.",
+  "lore": "Der Fokus wird wegen seiner klaren Ausrichtung besonders von Magiern geschätzt, die ihre Zielbewegungen visuell führen.",
+  "special_rules": {},
+  "formulas": {
+    "all_dice_terms": [
+      {
+        "raw": "1W6",
+        "count": 1,
+        "sides": 6
+      },
+      {
+        "raw": "1W6",
+        "count": 1,
+        "sides": 6
+      },
+      {
+        "raw": "W20",
+        "count": 1,
+        "sides": 20
+      }
+    ]
+  },
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.0",
+    "status": null,
+    "profile": null,
+    "awakening_status": null
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Magiefokus",
+      "Ungewöhnlich"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.0",
+    "fokianzahl": 30,
+    "qualitaet": "Ungewöhnlich",
+    "itemstufe": 1,
+    "elementarfoki": 6
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Basisfokusart": "Kristallprisma",
+    "Fokuskategorie": "Kristalle und Fokussteine",
+    "Qualitätsstufe": "Ungewöhnlich",
+    "Itemstufe": "1",
+    "Magisch": "Nein",
+    "Standard-Magieangriff": "1W6",
+    "Magieangriff": "1W6",
+    "Führung": "Einhändig",
+    "Magieattribut": "Wahrnehmung",
+    "Gewicht": "Leicht",
+    "Elementbindung": "Keine",
+    "Angriffswurf": "W20 + Magieattribut-Modifikator + Magieattribut-Bonus + 1",
+    "Krit-Modifikation": null,
+    "Besondere Eigenschaften": "**Präzise Führung:** Angriffe, deren Angriffswurf ausdrücklich durch diesen Fokus bestimmt wird, erhalten **+1 auf den Angriffswurf**.",
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": null,
+    "Auslöser / Voraussetzung": "Die jeweilige besondere Eigenschaft gilt nur, wenn ihre beschriebene Fokusregel tatsächlich verwendet wird.",
+    "Einsatzlimit": "Passiv; kein eigenes Aktivierungslimit.",
+    "Reichweite des Effekts": "Keine eigene Reichweitenveränderung.",
+    "Ziel / Fläche": "Wie die verwendete Regel oder der verwendete Zauber.",
+    "Dauer": "Solange der Fokus ausgerüstet und regelkonform verwendet wird.",
+    "Rettungswurf / SG": "Keine Veränderung.",
+    "Berechnung des Effekts": "Trefferbonus: **+1** nur auf Angriffswürfe, die ausdrücklich durch diesen Fokus bestimmt werden.",
+    "Regelwirkung": "Der Bonus erhöht nur die Treffergenauigkeit der betroffenen Fokusangriffe und verändert weder Schaden noch SG.",
+    "Zauberinteraktion": "Der Fokus-Magieangriff wird nur verwendet, wenn eine Regel ausdrücklich den Magieangriff des Fokus verwendet. Zauber mit eigener Schadensformel erhalten den Fokuswürfel nicht zusätzlich. Der +1-Trefferbonus gilt nicht für Rettungswurf-Zauber.",
+    "Stapelung": "Keine eigene Sonderregel zur Stapelung; es gelten die allgemeinen Regeln.",
+    "Ende der Wirkung": "Sobald der Fokus nicht mehr verwendet oder ausgerüstet wird.",
+    "Aufwertung / Skalierung": "Eine spätere Itemstufenaufwertung verändert die Basisfokusart nicht und erzeugt nicht automatisch neue Eigenschaften. Skalierende Werte müssen bei der Aufwertung neu geprüft werden.",
+    "Herstellungsanforderung": "Ausgebildeter oder erfahrener Handwerker mit Erfahrung in der Herstellung von Magiefoki.",
+    "Erscheinungsbild": "Ein längliches Prisma mit sechs exakt geschliffenen Flächen und einem kleinen matten Haltering.",
+    "Herkunft / Lore": "Der Fokus wird wegen seiner klaren Ausrichtung besonders von Magiern geschätzt, die ihre Zielbewegungen visuell führen."
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basisfokusart** | Kristallprisma |\n| **Fokuskategorie** | Kristalle und Fokussteine |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Standard-Magieangriff** | 1W6 |\n| **Magieangriff** | 1W6 |\n| **Führung** | Einhändig |\n| **Magieattribut** | Wahrnehmung |\n| **Gewicht** | Leicht |\n| **Elementbindung** | Keine |\n| **Angriffswurf** | W20 + Magieattribut-Modifikator + Magieattribut-Bonus + 1 |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | **Präzise Führung:** Angriffe, deren Angriffswurf ausdrücklich durch diesen Fokus bestimmt wird, erhalten **+1 auf den Angriffswurf**. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | Die jeweilige besondere Eigenschaft gilt nur, wenn ihre beschriebene Fokusregel tatsächlich verwendet wird. |\n| **Einsatzlimit** | Passiv; kein eigenes Aktivierungslimit. |\n| **Reichweite des Effekts** | Keine eigene Reichweitenveränderung. |\n| **Ziel / Fläche** | Wie die verwendete Regel oder der verwendete Zauber. |\n| **Dauer** | Solange der Fokus ausgerüstet und regelkonform verwendet wird. |\n| **Rettungswurf / SG** | Keine Veränderung. |\n| **Berechnung des Effekts** | Trefferbonus: **+1** nur auf Angriffswürfe, die ausdrücklich durch diesen Fokus bestimmt werden. |\n| **Regelwirkung** | Der Bonus erhöht nur die Treffergenauigkeit der betroffenen Fokusangriffe und verändert weder Schaden noch SG. |\n| **Zauberinteraktion** | Der Fokus-Magieangriff wird nur verwendet, wenn eine Regel ausdrücklich den Magieangriff des Fokus verwendet. Zauber mit eigener Schadensformel erhalten den Fokuswürfel nicht zusätzlich. Der +1-Trefferbonus gilt nicht für Rettungswurf-Zauber. |\n| **Stapelung** | Keine eigene Sonderregel zur Stapelung; es gelten die allgemeinen Regeln. |\n| **Ende der Wirkung** | Sobald der Fokus nicht mehr verwendet oder ausgerüstet wird. |\n| **Aufwertung / Skalierung** | Eine spätere Itemstufenaufwertung verändert die Basisfokusart nicht und erzeugt nicht automatisch neue Eigenschaften. Skalierende Werte müssen bei der Aufwertung neu geprüft werden. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker mit Erfahrung in der Herstellung von Magiefoki. |\n| **Erscheinungsbild** | Ein längliches Prisma mit sechs exakt geschliffenen Flächen und einem kleinen matten Haltering. |\n| **Herkunft / Lore** | Der Fokus wird wegen seiner klaren Ausrichtung besonders von Magiern geschätzt, die ihre Zielbewegungen visuell führen. |",
+  "sections": [],
+  "raw_markdown": "## 11. Sechskant\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basisfokusart** | Kristallprisma |\n| **Fokuskategorie** | Kristalle und Fokussteine |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Standard-Magieangriff** | 1W6 |\n| **Magieangriff** | 1W6 |\n| **Führung** | Einhändig |\n| **Magieattribut** | Wahrnehmung |\n| **Gewicht** | Leicht |\n| **Elementbindung** | Keine |\n| **Angriffswurf** | W20 + Magieattribut-Modifikator + Magieattribut-Bonus + 1 |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | **Präzise Führung:** Angriffe, deren Angriffswurf ausdrücklich durch diesen Fokus bestimmt wird, erhalten **+1 auf den Angriffswurf**. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | Die jeweilige besondere Eigenschaft gilt nur, wenn ihre beschriebene Fokusregel tatsächlich verwendet wird. |\n| **Einsatzlimit** | Passiv; kein eigenes Aktivierungslimit. |\n| **Reichweite des Effekts** | Keine eigene Reichweitenveränderung. |\n| **Ziel / Fläche** | Wie die verwendete Regel oder der verwendete Zauber. |\n| **Dauer** | Solange der Fokus ausgerüstet und regelkonform verwendet wird. |\n| **Rettungswurf / SG** | Keine Veränderung. |\n| **Berechnung des Effekts** | Trefferbonus: **+1** nur auf Angriffswürfe, die ausdrücklich durch diesen Fokus bestimmt werden. |\n| **Regelwirkung** | Der Bonus erhöht nur die Treffergenauigkeit der betroffenen Fokusangriffe und verändert weder Schaden noch SG. |\n| **Zauberinteraktion** | Der Fokus-Magieangriff wird nur verwendet, wenn eine Regel ausdrücklich den Magieangriff des Fokus verwendet. Zauber mit eigener Schadensformel erhalten den Fokuswürfel nicht zusätzlich. Der +1-Trefferbonus gilt nicht für Rettungswurf-Zauber. |\n| **Stapelung** | Keine eigene Sonderregel zur Stapelung; es gelten die allgemeinen Regeln. |\n| **Ende der Wirkung** | Sobald der Fokus nicht mehr verwendet oder ausgerüstet wird. |\n| **Aufwertung / Skalierung** | Eine spätere Itemstufenaufwertung verändert die Basisfokusart nicht und erzeugt nicht automatisch neue Eigenschaften. Skalierende Werte müssen bei der Aufwertung neu geprüft werden. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker mit Erfahrung in der Herstellung von Magiefoki. |\n| **Erscheinungsbild** | Ein längliches Prisma mit sechs exakt geschliffenen Flächen und einem kleinen matten Haltering. |\n| **Herkunft / Lore** | Der Fokus wird wegen seiner klaren Ausrichtung besonders von Magiern geschätzt, die ihre Zielbewegungen visuell führen. |",
+  "source": {
+    "file": "Magiefoki.md",
+    "document_title": "Ätherfall – 30 ungewöhnliche Magiefoki – Itemstufe 1",
+    "line_start": 2837,
+    "line_end": 2872
+  }
+}

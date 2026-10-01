@@ -1,0 +1,693 @@
+{
+  "schema_version": "aetherfall.weapons.v1",
+  "id": "selten-is01-faehrtenbund-der-erste-gleichklang",
+  "number": null,
+  "name": "Fährtenbund – Der erste Gleichklang",
+  "subtitle": null,
+  "display_name": "Fährtenbund – Der erste Gleichklang",
+  "source_type": "special_weapon",
+  "item_type": "Waffe",
+  "base_weapon_type": "Jagdspeer",
+  "category": "Speere",
+  "quality": "Selten",
+  "item_level": 1,
+  "magical": {
+    "raw": "Ja – Bindungs- und Esperresonanz",
+    "value": true
+  },
+  "elements": [],
+  "is_elemental": false,
+  "core_dice": {
+    "raw": "1W8",
+    "dice_terms": [
+      {
+        "raw": "1W8",
+        "count": 1,
+        "sides": 8
+      }
+    ]
+  },
+  "handling": "Variabel – einhändig oder zweihändig",
+  "range": "Mittel",
+  "damage_type": "Stich",
+  "weight": "Mittel",
+  "attributes": {
+    "attack": "Empathie",
+    "primary_class": "Empathie",
+    "secondary_class": "Intuition"
+  },
+  "formulas": {
+    "attack": "W20 + Empathie-Modifikator + Empathie-Bonus gegen das Ausweichergebnis des Ziels",
+    "damage": {
+      "default": "1W8 + 13 + Empathie-Modifikator + Empathie-Bonus Stichschaden",
+      "one_handed": null,
+      "two_handed": null
+    },
+    "core_value": null,
+    "dice_terms": [
+      {
+        "raw": "W20",
+        "count": 1,
+        "sides": 20
+      },
+      {
+        "raw": "1W8",
+        "count": 1,
+        "sides": 8
+      }
+    ]
+  },
+  "critical_modification": null,
+  "class_binding": {
+    "class_name": "Rudelrufer",
+    "raw": "Rudelrufer",
+    "is_class_weapon": true,
+    "is_dm_weapon": false
+  },
+  "class_resource": null,
+  "special_properties": "Zwei-Spuren-Kern",
+  "class_effect": "Geteilte Fährte",
+  "active_ability": null,
+  "action_cost": "Keine zusätzliche Aktion; wird nach einem erfolgreichen normalen Waffenangriff ausgelöst",
+  "trigger_requirement": "Du triffst mit Fährtenbund durch einen normalen Waffenangriff und dein gebundener Gefährte ist handlungsfähig sowie höchstens 3 m vom getroffenen Ziel entfernt.",
+  "costs": null,
+  "usage_limit": "1× pro Runde",
+  "effect_range": "Ziel des erfolgreichen Waffenangriffs; Gefährte höchstens 3 m vom Ziel",
+  "target_area": "1 Kreatur",
+  "duration": "Bis zum Ende deines nächsten Zuges oder bis Geteilte Fährte verbraucht wird",
+  "saving_throw_dc": null,
+  "effect_calculation": "Bei Gemeinsamer Zugriff: 1W4 + ⌊(Intuitions-Modifikator + Intuitions-Bonus) / 2⌋ zusätzlicher Schaden innerhalb des auslösenden Rudelangriffs",
+  "rule_effect": null,
+  "stacking": "Nur eine durch Fährtenbund erzeugte Geteilte Fährte kann gleichzeitig auf derselben Kreatur liegen. Erneute Anwendung ersetzt die bestehende Fährte.",
+  "end_condition": "Nach Verbrauch, am Ende deines nächsten Zuges oder sobald die Bindungsvoraussetzungen nicht mehr erfüllt sind",
+  "upgrade_scaling": "Grundschaden und skalierende Teile der Signatur werden bei steigender Itemstufe neu auf die jeweilige Itemstufe kalibriert. Empathie als Primärattribut, Intuition als Sekundärbindung und das Wechselspiel zwischen Waffenangriff und Rudelangriff bleiben erhalten.",
+  "crafting_requirement": "Erfahrener Spezialist für Speere oder Esperwaffen; resonanzfähiges Schaftmaterial, zwei getrennte Bindungseinlagen und ein freiwillig gewähltes Zeichen des Rudels",
+  "appearance": null,
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.2",
+    "classification": null,
+    "dm_performance_profile": null,
+    "status": "Erste Entwicklungsstufe der Klassenwaffe"
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Waffen",
+      "Klassenwaffe",
+      "Rudelrufer"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.2",
+    "klasse": "Rudelrufer",
+    "waffenanzahl": 1,
+    "qualitaet": "Selten",
+    "itemstufe": 1,
+    "basiswaffenart": "Jagdspeer",
+    "status": "Erste Entwicklungsstufe der Klassenwaffe"
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Name": "**Fährtenbund – Der erste Gleichklang**",
+    "Klassenbindung": "Rudelrufer",
+    "Basiswaffenart": "Jagdspeer",
+    "Waffenkategorie": "Speere",
+    "Qualitätsstufe": "**Selten**",
+    "Itemstufe": "**1**",
+    "Magisch": "Ja – Bindungs- und Esperresonanz",
+    "Kernwürfel": "**1W8**",
+    "Führung": "**Variabel – einhändig oder zweihändig**",
+    "Reichweite": "Mittel",
+    "Schadensart": "Stich",
+    "Gewicht": "Mittel",
+    "Primäres Klassenattribut": "**Empathie**",
+    "Sekundäres Klassenattribut": "**Intuition**",
+    "Angriffsattribut": "**Empathie**",
+    "Angriffswurf": "`W20 + Empathie-Modifikator + Empathie-Bonus` gegen das Ausweichergebnis des Ziels",
+    "Schadensformel": "`1W8 + 13 + Empathie-Modifikator + Empathie-Bonus` Stichschaden",
+    "Krit-Modifikation": null,
+    "Besondere Eigenschaft": "**Zwei-Spuren-Kern**",
+    "Klassenwirkung": "**Geteilte Fährte**",
+    "Aktionskosten": "Keine zusätzliche Aktion; wird nach einem erfolgreichen normalen Waffenangriff ausgelöst",
+    "Auslöser / Voraussetzung": "Du triffst mit Fährtenbund durch einen normalen Waffenangriff und dein gebundener Gefährte ist handlungsfähig sowie höchstens 3 m vom getroffenen Ziel entfernt.",
+    "Kosten": null,
+    "Einsatzlimit": "**1× pro Runde**",
+    "Reichweite des Effekts": "Ziel des erfolgreichen Waffenangriffs; Gefährte höchstens 3 m vom Ziel",
+    "Ziel / Fläche": "1 Kreatur",
+    "Dauer": "Bis zum Ende deines nächsten Zuges oder bis **Geteilte Fährte** verbraucht wird",
+    "Rettungswurf / SG": null,
+    "Berechnung des Effekts": "Bei **Gemeinsamer Zugriff**: `1W4 + ⌊(Intuitions-Modifikator + Intuitions-Bonus) / 2⌋` zusätzlicher Schaden innerhalb des auslösenden Rudelangriffs",
+    "Stapelung": "Nur eine durch Fährtenbund erzeugte **Geteilte Fährte** kann gleichzeitig auf derselben Kreatur liegen. Erneute Anwendung ersetzt die bestehende Fährte.",
+    "Ende der Wirkung": "Nach Verbrauch, am Ende deines nächsten Zuges oder sobald die Bindungsvoraussetzungen nicht mehr erfüllt sind",
+    "Aufwertung / Skalierung": "Grundschaden und skalierende Teile der Signatur werden bei steigender Itemstufe neu auf die jeweilige Itemstufe kalibriert. Empathie als Primärattribut, Intuition als Sekundärbindung und das Wechselspiel zwischen Waffenangriff und Rudelangriff bleiben erhalten.",
+    "Herstellungsanforderung": "Erfahrener Spezialist für Speere oder Esperwaffen; resonanzfähiges Schaftmaterial, zwei getrennte Bindungseinlagen und ein freiwillig gewähltes Zeichen des Rudels"
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Name** | **Fährtenbund – Der erste Gleichklang** |\n| **Klassenbindung** | Rudelrufer |\n| **Basiswaffenart** | Jagdspeer |\n| **Waffenkategorie** | Speere |\n| **Qualitätsstufe** | **Selten** |\n| **Itemstufe** | **1** |\n| **Magisch** | Ja – Bindungs- und Esperresonanz |\n| **Kernwürfel** | **1W8** |\n| **Führung** | **Variabel – einhändig oder zweihändig** |\n| **Reichweite** | Mittel |\n| **Schadensart** | Stich |\n| **Gewicht** | Mittel |\n| **Primäres Klassenattribut** | **Empathie** |\n| **Sekundäres Klassenattribut** | **Intuition** |\n| **Angriffsattribut** | **Empathie** |\n| **Angriffswurf** | `W20 + Empathie-Modifikator + Empathie-Bonus` gegen das Ausweichergebnis des Ziels |\n| **Schadensformel** | `1W8 + 13 + Empathie-Modifikator + Empathie-Bonus` Stichschaden |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaft** | **Zwei-Spuren-Kern** |\n| **Klassenwirkung** | **Geteilte Fährte** |\n| **Aktionskosten** | Keine zusätzliche Aktion; wird nach einem erfolgreichen normalen Waffenangriff ausgelöst |\n| **Auslöser / Voraussetzung** | Du triffst mit Fährtenbund durch einen normalen Waffenangriff und dein gebundener Gefährte ist handlungsfähig sowie höchstens 3 m vom getroffenen Ziel entfernt. |\n| **Kosten** | – |\n| **Einsatzlimit** | **1× pro Runde** |\n| **Reichweite des Effekts** | Ziel des erfolgreichen Waffenangriffs; Gefährte höchstens 3 m vom Ziel |\n| **Ziel / Fläche** | 1 Kreatur |\n| **Dauer** | Bis zum Ende deines nächsten Zuges oder bis **Geteilte Fährte** verbraucht wird |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | Bei **Gemeinsamer Zugriff**: `1W4 + ⌊(Intuitions-Modifikator + Intuitions-Bonus) / 2⌋` zusätzlicher Schaden innerhalb des auslösenden Rudelangriffs |\n| **Stapelung** | Nur eine durch Fährtenbund erzeugte **Geteilte Fährte** kann gleichzeitig auf derselben Kreatur liegen. Erneute Anwendung ersetzt die bestehende Fährte. |\n| **Ende der Wirkung** | Nach Verbrauch, am Ende deines nächsten Zuges oder sobald die Bindungsvoraussetzungen nicht mehr erfüllt sind |\n| **Aufwertung / Skalierung** | Grundschaden und skalierende Teile der Signatur werden bei steigender Itemstufe neu auf die jeweilige Itemstufe kalibriert. Empathie als Primärattribut, Intuition als Sekundärbindung und das Wechselspiel zwischen Waffenangriff und Rudelangriff bleiben erhalten. |\n| **Herstellungsanforderung** | Erfahrener Spezialist für Speere oder Esperwaffen; resonanzfähiges Schaftmaterial, zwei getrennte Bindungseinlagen und ein freiwillig gewähltes Zeichen des Rudels |",
+  "sections": [
+    {
+      "level": 1,
+      "title": "Fährtenbund – Der erste Gleichklang",
+      "markdown": "> _„Nicht die Spitze findet den Weg. Zwei Bewegungen finden ihn gemeinsam.“_\n\n> [!important] Klassenwaffe des Rudelrufers\n> **Fährtenbund** ist keine gewöhnliche Fundwaffe und nicht als austauschbarer Ausrüstungsplatz gedacht. Sie ist eine persönliche **Entwicklungswaffe des Rudelrufers**, die im Verlauf einer Kampagne verstärkt, neu abgestimmt und schließlich bis in die höchsten Qualitäts- und Itemstufen weiterentwickelt werden kann.\n>\n> Diese Fassung beschreibt ihren **ersten spielbaren Zustand: Selten, Itemstufe 1**.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4660,
+        "line_end": 4670
+      }
+    },
+    {
+      "level": 2,
+      "title": "Grundgedanke",
+      "markdown": "Ein Rudelrufer gewinnt einen Kampf nicht dadurch, dass er seinen Gefährten wie eine Waffe führt.\n\nEr gewinnt ihn, weil beide dieselbe Situation unterschiedlich wahrnehmen und trotzdem im richtigen Augenblick dasselbe Ziel verfolgen.\n\n**Fährtenbund** wurde nach genau diesem Gedanken geschaffen.\n\nDie Waffe basiert auf einem **Jagdspeer**, weil seine mittlere Reichweite dem Rudelrufer erlaubt, Gegner zu bedrohen, Linien zu öffnen und gleichzeitig Raum für die natürliche Bewegung des Gefährten zu lassen. Seine Spitze zwingt den Träger nicht dicht an das Ziel, während der lange Schaft Bewegungen markieren, Räume teilen und Angriffsrichtungen sichtbar machen kann.\n\nDoch Fährtenbund wird nicht durch rohe Körperkraft definiert.\n\nDie Waffe besitzt zwei voneinander getrennte Resonanzspuren. Die erste reagiert auf die **Empathie** des Rudelrufers – auf sein Verständnis für Absicht, Spannung und Bewegung des Gefährten. Die zweite reagiert auf seine **Intuition** – auf jenen kurzen Augenblick, in dem er erkennt, welche Öffnung der Gefährte nutzen wird, noch bevor die Bewegung vollständig begonnen hat.\n\nDarum arbeitet Fährtenbund als Klassenwaffe bewusst mit den beiden zentralen Attributen des Rudelrufers:\n\n- **Empathie** führt Angriff und Grundschaden.\n- **Intuition** verstärkt die eigentliche Rudel-Signatur der Waffe.\n\nDie Waffe soll den Rudelrufer nicht in einen gewöhnlichen Speerkämpfer verwandeln.\n\nSie soll seine bestehende Spielweise präziser machen.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4671,
+        "line_end": 4695
+      }
+    },
+    {
+      "level": 1,
+      "title": "Herkunft",
+      "markdown": "Die ersten Fassungen von Fährtenbund entstanden nicht in einer einzigen Schmiede und wurden auch nicht nach einem festen Bauplan vervielfältigt.\n\nGemeinsam ist ihnen nur der sogenannte **Zwei-Spuren-Kern**.\n\nDabei handelt es sich um zwei schmale Resonanzeinlagen, die durch den Schaft verlaufen, sich aber an keiner Stelle direkt berühren. Eine wird auf den Rudelrufer abgestimmt. Die andere bleibt zunächst still.\n\nErst wenn der gebundene Gefährte die Nähe der Waffe freiwillig akzeptiert, beginnt auch die zweite Spur zu reagieren.\n\nDas kann durch Berührung geschehen.\n\nDurch eine Kralle auf dem Schaft.\n\nDurch eine Schnauze an der Speerspitze.\n\nDurch einen Laut.\n\nDurch eine Esperresonanz.\n\nOder bei fremdartigen Wesen durch eine Form der Zustimmung, die nur der Rudelrufer sicher erkennt.\n\nDie zweite Spur ist deshalb kein Siegel des Besitzes.\n\nSie ist ein Zeichen gegenseitiger Anerkennung.\n\nMit jeder späteren Verbesserung werden neue Materialien nicht einfach über die alten gelegt. Teile des Schaftes, Resonanzringe, Wicklungen und Erinnerungszeichen des Rudels bleiben erhalten und werden in die nächste Form übernommen.\n\nSo wächst Fährtenbund nicht nur mit seinem Träger.\n\nSie wächst mit dem Rudel.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4696,
+        "line_end": 4729
+      }
+    },
+    {
+      "level": 1,
+      "title": "Waffenprofil",
+      "markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Name** | **Fährtenbund – Der erste Gleichklang** |\n| **Klassenbindung** | Rudelrufer |\n| **Basiswaffenart** | Jagdspeer |\n| **Waffenkategorie** | Speere |\n| **Qualitätsstufe** | **Selten** |\n| **Itemstufe** | **1** |\n| **Magisch** | Ja – Bindungs- und Esperresonanz |\n| **Kernwürfel** | **1W8** |\n| **Führung** | **Variabel – einhändig oder zweihändig** |\n| **Reichweite** | Mittel |\n| **Schadensart** | Stich |\n| **Gewicht** | Mittel |\n| **Primäres Klassenattribut** | **Empathie** |\n| **Sekundäres Klassenattribut** | **Intuition** |\n| **Angriffsattribut** | **Empathie** |\n| **Angriffswurf** | `W20 + Empathie-Modifikator + Empathie-Bonus` gegen das Ausweichergebnis des Ziels |\n| **Schadensformel** | `1W8 + 13 + Empathie-Modifikator + Empathie-Bonus` Stichschaden |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaft** | **Zwei-Spuren-Kern** |\n| **Klassenwirkung** | **Geteilte Fährte** |\n| **Aktionskosten** | Keine zusätzliche Aktion; wird nach einem erfolgreichen normalen Waffenangriff ausgelöst |\n| **Auslöser / Voraussetzung** | Du triffst mit Fährtenbund durch einen normalen Waffenangriff und dein gebundener Gefährte ist handlungsfähig sowie höchstens 3 m vom getroffenen Ziel entfernt. |\n| **Kosten** | – |\n| **Einsatzlimit** | **1× pro Runde** |\n| **Reichweite des Effekts** | Ziel des erfolgreichen Waffenangriffs; Gefährte höchstens 3 m vom Ziel |\n| **Ziel / Fläche** | 1 Kreatur |\n| **Dauer** | Bis zum Ende deines nächsten Zuges oder bis **Geteilte Fährte** verbraucht wird |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | Bei **Gemeinsamer Zugriff**: `1W4 + ⌊(Intuitions-Modifikator + Intuitions-Bonus) / 2⌋` zusätzlicher Schaden innerhalb des auslösenden Rudelangriffs |\n| **Stapelung** | Nur eine durch Fährtenbund erzeugte **Geteilte Fährte** kann gleichzeitig auf derselben Kreatur liegen. Erneute Anwendung ersetzt die bestehende Fährte. |\n| **Ende der Wirkung** | Nach Verbrauch, am Ende deines nächsten Zuges oder sobald die Bindungsvoraussetzungen nicht mehr erfüllt sind |\n| **Aufwertung / Skalierung** | Grundschaden und skalierende Teile der Signatur werden bei steigender Itemstufe neu auf die jeweilige Itemstufe kalibriert. Empathie als Primärattribut, Intuition als Sekundärbindung und das Wechselspiel zwischen Waffenangriff und Rudelangriff bleiben erhalten. |\n| **Herstellungsanforderung** | Erfahrener Spezialist für Speere oder Esperwaffen; resonanzfähiges Schaftmaterial, zwei getrennte Bindungseinlagen und ein freiwillig gewähltes Zeichen des Rudels |\n\n---",
+      "code_blocks": [],
+      "tables": [
+        {
+          "headers": [
+            "Regelpunkt",
+            "Angabe"
+          ],
+          "rows": [
+            [
+              "**Name**",
+              "**Fährtenbund – Der erste Gleichklang**"
+            ],
+            [
+              "**Klassenbindung**",
+              "Rudelrufer"
+            ],
+            [
+              "**Basiswaffenart**",
+              "Jagdspeer"
+            ],
+            [
+              "**Waffenkategorie**",
+              "Speere"
+            ],
+            [
+              "**Qualitätsstufe**",
+              "**Selten**"
+            ],
+            [
+              "**Itemstufe**",
+              "**1**"
+            ],
+            [
+              "**Magisch**",
+              "Ja – Bindungs- und Esperresonanz"
+            ],
+            [
+              "**Kernwürfel**",
+              "**1W8**"
+            ],
+            [
+              "**Führung**",
+              "**Variabel – einhändig oder zweihändig**"
+            ],
+            [
+              "**Reichweite**",
+              "Mittel"
+            ],
+            [
+              "**Schadensart**",
+              "Stich"
+            ],
+            [
+              "**Gewicht**",
+              "Mittel"
+            ],
+            [
+              "**Primäres Klassenattribut**",
+              "**Empathie**"
+            ],
+            [
+              "**Sekundäres Klassenattribut**",
+              "**Intuition**"
+            ],
+            [
+              "**Angriffsattribut**",
+              "**Empathie**"
+            ],
+            [
+              "**Angriffswurf**",
+              "`W20 + Empathie-Modifikator + Empathie-Bonus` gegen das Ausweichergebnis des Ziels"
+            ],
+            [
+              "**Schadensformel**",
+              "`1W8 + 13 + Empathie-Modifikator + Empathie-Bonus` Stichschaden"
+            ],
+            [
+              "**Krit-Modifikation**",
+              "–"
+            ],
+            [
+              "**Besondere Eigenschaft**",
+              "**Zwei-Spuren-Kern**"
+            ],
+            [
+              "**Klassenwirkung**",
+              "**Geteilte Fährte**"
+            ],
+            [
+              "**Aktionskosten**",
+              "Keine zusätzliche Aktion; wird nach einem erfolgreichen normalen Waffenangriff ausgelöst"
+            ],
+            [
+              "**Auslöser / Voraussetzung**",
+              "Du triffst mit Fährtenbund durch einen normalen Waffenangriff und dein gebundener Gefährte ist handlungsfähig sowie höchstens 3 m vom getroffenen Ziel entfernt."
+            ],
+            [
+              "**Kosten**",
+              "–"
+            ],
+            [
+              "**Einsatzlimit**",
+              "**1× pro Runde**"
+            ],
+            [
+              "**Reichweite des Effekts**",
+              "Ziel des erfolgreichen Waffenangriffs; Gefährte höchstens 3 m vom Ziel"
+            ],
+            [
+              "**Ziel / Fläche**",
+              "1 Kreatur"
+            ],
+            [
+              "**Dauer**",
+              "Bis zum Ende deines nächsten Zuges oder bis **Geteilte Fährte** verbraucht wird"
+            ],
+            [
+              "**Rettungswurf / SG**",
+              "–"
+            ],
+            [
+              "**Berechnung des Effekts**",
+              "Bei **Gemeinsamer Zugriff**: `1W4 + ⌊(Intuitions-Modifikator + Intuitions-Bonus) / 2⌋` zusätzlicher Schaden innerhalb des auslösenden Rudelangriffs"
+            ],
+            [
+              "**Stapelung**",
+              "Nur eine durch Fährtenbund erzeugte **Geteilte Fährte** kann gleichzeitig auf derselben Kreatur liegen. Erneute Anwendung ersetzt die bestehende Fährte."
+            ],
+            [
+              "**Ende der Wirkung**",
+              "Nach Verbrauch, am Ende deines nächsten Zuges oder sobald die Bindungsvoraussetzungen nicht mehr erfüllt sind"
+            ],
+            [
+              "**Aufwertung / Skalierung**",
+              "Grundschaden und skalierende Teile der Signatur werden bei steigender Itemstufe neu auf die jeweilige Itemstufe kalibriert. Empathie als Primärattribut, Intuition als Sekundärbindung und das Wechselspiel zwischen Waffenangriff und Rudelangriff bleiben erhalten."
+            ],
+            [
+              "**Herstellungsanforderung**",
+              "Erfahrener Spezialist für Speere oder Esperwaffen; resonanzfähiges Schaftmaterial, zwei getrennte Bindungseinlagen und ein freiwillig gewähltes Zeichen des Rudels"
+            ]
+          ],
+          "raw_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Name** | **Fährtenbund – Der erste Gleichklang** |\n| **Klassenbindung** | Rudelrufer |\n| **Basiswaffenart** | Jagdspeer |\n| **Waffenkategorie** | Speere |\n| **Qualitätsstufe** | **Selten** |\n| **Itemstufe** | **1** |\n| **Magisch** | Ja – Bindungs- und Esperresonanz |\n| **Kernwürfel** | **1W8** |\n| **Führung** | **Variabel – einhändig oder zweihändig** |\n| **Reichweite** | Mittel |\n| **Schadensart** | Stich |\n| **Gewicht** | Mittel |\n| **Primäres Klassenattribut** | **Empathie** |\n| **Sekundäres Klassenattribut** | **Intuition** |\n| **Angriffsattribut** | **Empathie** |\n| **Angriffswurf** | `W20 + Empathie-Modifikator + Empathie-Bonus` gegen das Ausweichergebnis des Ziels |\n| **Schadensformel** | `1W8 + 13 + Empathie-Modifikator + Empathie-Bonus` Stichschaden |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaft** | **Zwei-Spuren-Kern** |\n| **Klassenwirkung** | **Geteilte Fährte** |\n| **Aktionskosten** | Keine zusätzliche Aktion; wird nach einem erfolgreichen normalen Waffenangriff ausgelöst |\n| **Auslöser / Voraussetzung** | Du triffst mit Fährtenbund durch einen normalen Waffenangriff und dein gebundener Gefährte ist handlungsfähig sowie höchstens 3 m vom getroffenen Ziel entfernt. |\n| **Kosten** | – |\n| **Einsatzlimit** | **1× pro Runde** |\n| **Reichweite des Effekts** | Ziel des erfolgreichen Waffenangriffs; Gefährte höchstens 3 m vom Ziel |\n| **Ziel / Fläche** | 1 Kreatur |\n| **Dauer** | Bis zum Ende deines nächsten Zuges oder bis **Geteilte Fährte** verbraucht wird |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | Bei **Gemeinsamer Zugriff**: `1W4 + ⌊(Intuitions-Modifikator + Intuitions-Bonus) / 2⌋` zusätzlicher Schaden innerhalb des auslösenden Rudelangriffs |\n| **Stapelung** | Nur eine durch Fährtenbund erzeugte **Geteilte Fährte** kann gleichzeitig auf derselben Kreatur liegen. Erneute Anwendung ersetzt die bestehende Fährte. |\n| **Ende der Wirkung** | Nach Verbrauch, am Ende deines nächsten Zuges oder sobald die Bindungsvoraussetzungen nicht mehr erfüllt sind |\n| **Aufwertung / Skalierung** | Grundschaden und skalierende Teile der Signatur werden bei steigender Itemstufe neu auf die jeweilige Itemstufe kalibriert. Empathie als Primärattribut, Intuition als Sekundärbindung und das Wechselspiel zwischen Waffenangriff und Rudelangriff bleiben erhalten. |\n| **Herstellungsanforderung** | Erfahrener Spezialist für Speere oder Esperwaffen; resonanzfähiges Schaftmaterial, zwei getrennte Bindungseinlagen und ein freiwillig gewähltes Zeichen des Rudels |",
+          "source": {
+            "line_start": 4732,
+            "line_end": 4766
+          }
+        }
+      ],
+      "source": {
+        "line_start": 4730,
+        "line_end": 4769
+      }
+    },
+    {
+      "level": 1,
+      "title": "Besondere Eigenschaft – Zwei-Spuren-Kern",
+      "markdown": "Im Inneren von Fährtenbund verlaufen zwei voneinander getrennte Resonanzbahnen.\n\nDie erste gehört dem Rudelrufer.\n\nSie reagiert auf **Empathie**.\n\nNicht auf Muskelkraft.\n\nNicht auf starre Fechttechnik.\n\nSondern auf die Fähigkeit, Bewegung, Absicht und Spannung im eigenen Rudel zu verstehen.\n\nRegeltechnisch bedeutet das:\n\n1. **Fährtenbund verwendet für den Rudelrufer Empathie als Angriffsattribut.**\n2. Der normale Waffenangriff lautet `W20 + Empathie-Modifikator + Empathie-Bonus`.\n3. Der normale Waffenschaden verwendet ebenfalls `Empathie-Modifikator + Empathie-Bonus`.\n4. **Intuition wird nicht zusätzlich kostenlos auf den normalen Grundschaden addiert.** Sie gehört zur Klassen-Signatur und wird dort separat budgetiert.\n5. Die Waffe erzeugt keine eigenen Rudelimpulse und erhöht deren Maximum nicht.\n6. Die Waffe erzeugt keine zusätzliche Aktion, Bonusaktion oder Reaktion des Gefährten.\n\nDie zweite Resonanzbahn gehört dem Gefährten.\n\nSie bleibt ohne freiwillige Bindung weitgehend still.\n\nEin Wesen, das Fährtenbund nicht akzeptiert, kann nicht durch die Waffe gezwungen werden, Teil ihrer Klassenwirkung zu werden.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4770,
+        "line_end": 4800
+      }
+    },
+    {
+      "level": 1,
+      "title": "Klassenwirkung – Geteilte Fährte",
+      "markdown": "Wenn Rudelrufer und Gefährte denselben Gegner lesen, entsteht zwischen ihren Bewegungen für einen Augenblick eine gemeinsame Linie.\n\nDas erste Mal pro Runde, wenn du mit **Fährtenbund** einen normalen Waffenangriff gegen eine feindliche Kreatur triffst, kannst du auf diesem Ziel eine **Geteilte Fährte** erzeugen, sofern dein gebundener Gefährte:\n\n- handlungsfähig ist,\n- sich innerhalb der normalen Bindungsgrenze befindet,\n- und beim Treffer höchstens **3 m** vom Ziel entfernt ist.\n\nDie Geteilte Fährte bleibt bis zum **Ende deines nächsten Zuges** bestehen.\n\nTrifft dein gebundener Gefährte das markierte Ziel vor Ablauf dieser Dauer mit einem **Rudelangriff**, wird die Geteilte Fährte nach der vollständigen Trefferbestätigung verbraucht.\n\nDu wählst dann **eine** der folgenden Wirkungen:",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4801,
+        "line_end": 4816
+      }
+    },
+    {
+      "level": 2,
+      "title": "Gemeinsamer Zugriff",
+      "markdown": "Der Rudelrufer erkennt anhand von Haltung, Blick und Bewegungsrichtung des Gefährten den Moment, in dem sich die Verteidigung des Ziels öffnet.\n\nDer auslösende Rudelangriff verursacht zusätzlich:\n\n```text\n1W4\n+ ⌊(Intuitions-Modifikator + Intuitions-Bonus) / 2⌋\n```\n\nSchaden.\n\nDieser Zusatzschaden:\n\n- besitzt dieselbe physische Schadensart wie der auslösende Rudelangriff,\n- wird als Teil derselben Schadenswirkung verarbeitet,\n- zählt nicht als eigener Angriff,\n- zählt nicht als eigener Treffer,\n- löst keine zusätzliche Basiserzeugung von Rudelimpulsen aus,\n- und verwendet bewusst **Intuition**, weil dieser Teil der Waffe das Lesen des gemeinsamen Angriffsmoments darstellt.",
+      "code_blocks": [
+        "1W4\n+ ⌊(Intuitions-Modifikator + Intuitions-Bonus) / 2⌋"
+      ],
+      "tables": [],
+      "source": {
+        "line_start": 4817,
+        "line_end": 4838
+      }
+    },
+    {
+      "level": 2,
+      "title": "Seitenwechsel",
+      "markdown": "Statt zusätzlichen Schaden zu verursachen, darf die **Gefährtenposition nach vollständiger Abwicklung des Rudelangriffs um bis zu 2 m** auf legalem Weg verschoben werden.\n\nDiese Bewegung:\n\n- ist keine zusätzliche Bewegungsaktion,\n- erzeugt keinen zusätzlichen Angriff,\n- löst durch sich selbst keine weitere Rudelrufer-Klassenreaktion aus,\n- muss alle normalen Gelände- und Positionsregeln einhalten,\n- und stellt keine Teleportation dar.\n\n> [!note] Zweck der Signatur\n> Fährtenbund soll den Ablauf **Rudelrufer öffnet → Gefährte erkennt → Rudel vollendet** verstärken. Die Waffe ersetzt keine Klassenfähigkeit und erschafft keinen zweiten vollständigen Charakter. Sie belohnt ausschließlich das Zusammenspiel, das der Rudelrufer ohnehin ausführen möchte.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4839,
+        "line_end": 4855
+      }
+    },
+    {
+      "level": 1,
+      "title": "Freiwillige Bindung",
+      "markdown": "Fährtenbund besitzt keine Beherrschungsmagie.\n\nDie zweite Resonanzspur kann nicht mit Gewalt aktiviert werden.\n\nMechanisch gilt:\n\n- **Geteilte Fährte** funktioniert nur mit dem gebundenen Gefährten des Rudelrufers.\n- Die Waffe verleiht dem Gefährten keine eigenen Aktionen, Bonusaktionen oder Reaktionen.\n- Die Waffe erhöht das Maximum der **Rudelimpulse** nicht.\n- Die Waffe erzeugt keine Rudelimpulse zusätzlich zum normalen Grundzugang der Klasse.\n- Zusatzschaden aus Fährtenbund zählt niemals als separater Treffer oder separater Ressourcenauslöser.\n- Wird der Gefährte handlungsunfähig oder vollständig von der Bindung getrennt, bleibt Fährtenbund als Waffe verwendbar; die Klassenwirkung ruht jedoch, bis die Voraussetzungen wieder erfüllt sind.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4856,
+        "line_end": 4872
+      }
+    },
+    {
+      "level": 1,
+      "title": "Variable Führung – Raum für zwei",
+      "markdown": "Fährtenbund bleibt trotz ihrer Resonanz eindeutig ein **Jagdspeer**.\n\nDie variable Führung ist Teil ihrer Identität.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4873,
+        "line_end": 4878
+      }
+    },
+    {
+      "level": 2,
+      "title": "Einhändige Führung",
+      "markdown": "Einhändig kann der Rudelrufer die zweite Hand für einen Schild, einen Gegenstand, ein Zeichen oder eine andere zulässige Interaktion freihalten.\n\nDas normale Schadensprofil bleibt in dieser ersten Entwicklungsstufe unverändert.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4879,
+        "line_end": 4884
+      }
+    },
+    {
+      "level": 2,
+      "title": "Zweihändige Führung",
+      "markdown": "Zweihändig kann der Rudelrufer den langen Schaft präziser kontrollieren, Richtungswechsel sauberer markieren und den Speer stärker in die gemeinsame Bewegung mit seinem Gefährten einbinden.\n\nAuch hierbei entsteht in der seltenen Itemstufe-1-Fassung noch kein zweites Schadensprofil.\n\nDie Stärke der Waffe liegt nicht in kostenloser Zweihand-Mehrleistung, sondern in der taktischen Flexibilität des Jagdspeers und seiner Rudelresonanz.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4885,
+        "line_end": 4894
+      }
+    },
+    {
+      "level": 1,
+      "title": "Erscheinungsbild",
+      "markdown": "Fährtenbund besitzt einen knapp mannshohen bis leicht übermannshohen Schaft aus dunklem, zähem Holz oder einem vergleichbaren regionalen Material.\n\nDie breite, blattförmige Speerspitze wirkt jagdtauglich und robust. Unterhalb der Klinge sitzt eine niedrige Querstrebe, die verhindert, dass der Schaft zu tief in ein Ziel oder Hindernis gleitet und zugleich als sichtbarer Übergang zwischen Spitze und Resonanzkern dient.\n\nDurch den gesamten Schaft laufen zwei feine Einlagen.\n\nDie erste ist gleichmäßig und klar.\n\nDie zweite verändert ihre Form nach der Bindung an den Gefährten.\n\nJe nach Wesen kann sie wirken wie:\n\n- eine schmale Kratzspur,\n- ein Federast,\n- eine Schuppenlinie,\n- eine Pflanzenader,\n- ein kristalliner Riss,\n- eine Spur aus schwachem Licht,\n- oder eine kaum sichtbare Esperverwerfung.\n\nKeine dieser Formen gilt als allgemeines Symbol einer Tierart.\n\nSie gehört nur diesem Rudel.\n\nAm unteren Schaftende befindet sich ein kleiner offener Ring. Dort kann ein freiwillig gewähltes Zeichen befestigt werden: ein Band, eine Feder, abgestoßene Schuppe, ein Stück Stoff, ein Metallring oder ein anderer Gegenstand mit gemeinsamer Bedeutung.\n\nWenn **Geteilte Fährte** entsteht, leuchtet zunächst nur die Spur des Rudelrufers auf.\n\nTrifft danach der Rudelangriff, antwortet die zweite Spur.\n\nFür einen Augenblick laufen beide Lichtbewegungen parallel durch den Schaft.\n\nSie verschmelzen nicht.\n\nSie bewegen sich nur gemeinsam.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4895,
+        "line_end": 4934
+      }
+    },
+    {
+      "level": 1,
+      "title": "Warum Fährtenbund eine Rudelrufer-Waffe ist",
+      "markdown": "Fährtenbund versucht nicht, den Rudelrufer zu einem Stärke-basierten Speerkämpfer zu machen.\n\nSie verstärkt genau das, was die Klasse auszeichnet:\n\n- **Empathie** ist das Hauptattribut und führt Angriff sowie normalen Waffenschaden.\n- **Intuition** ist das Sekundärattribut und verstärkt das Lesen gemeinsamer Angriffsfenster.\n- **Rudelimpulse** werden weder ersetzt noch kostenlos zusätzlich erzeugt.\n- **Rudelangriffe** bleiben Bestandteil der Klassenfähigkeiten und erhalten durch die Waffe keine eigene Zusatzaktion.\n- **Gefährtenpositionierung** bleibt ein zentraler taktischer Bestandteil.\n- **gemeinsamer Druck auf dasselbe Ziel** wird belohnt.\n- **mittlere Speerreichweite** schafft Raum für die natürliche Bewegung des Gefährten.\n- **freiwillige Bindung** bleibt wichtiger als Besitz oder Beherrschung.\n\nDie Waffe ergänzt damit die Rolle des Rudelrufers als **Stürmerklasse**, deren tatsächliche Stärke aus der Zusammenarbeit mit dem Gefährten entsteht.\n\nSie gibt dem Rudelrufer keinen Grund, seine Klasse wie einen gewöhnlichen Waffencharakter zu spielen.\n\nSie gibt ihm einen besseren Grund, konsequent als Rudel zu handeln.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4935,
+        "line_end": 4957
+      }
+    },
+    {
+      "level": 1,
+      "title": "Entwicklungsprinzip der Klassenwaffe",
+      "markdown": "Fährtenbund ist nicht dafür geschaffen, auf einer späteren Stufe ersetzt zu werden.\n\nIhre erste seltene Form ist der Beginn einer langfristigen Entwicklung.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4958,
+        "line_end": 4963
+      }
+    },
+    {
+      "level": 2,
+      "title": "Itemstufenentwicklung",
+      "markdown": "Fährtenbund kann grundsätzlich von **Itemstufe 1 bis Itemstufe 40** verbessert werden.\n\nEine Erhöhung der Itemstufe verändert nicht automatisch ihre Qualitätsstufe.\n\nBei späteren Itemstufen sollen insbesondere weiterentwickelt werden:\n\n- das normale Waffenprofil,\n- die Stärke skalierender Teile von **Geteilte Fährte**,\n- die Reichweite oder Flexibilität der Resonanz nur dann, wenn die Balance dies zulässt,\n- die Qualität des Zwei-Spuren-Kerns,\n- die Materialien des Schafts,\n- die persönliche Rudelprägung.\n\nDie sichtbare Schadensformel wird bei neuen Itemstufen **neu kalibriert** und nicht einfach um einen zusätzlichen Würfel pro Stufe erweitert.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4964,
+        "line_end": 4980
+      }
+    },
+    {
+      "level": 2,
+      "title": "Qualitätsentwicklung",
+      "markdown": "Fährtenbund behält über alle Entwicklungsstufen hinweg ihren **Kernnamen**.\n\nMit jeder tatsächlichen Qualitätssteigerung verändert sich ihr Beiname.\n\n| Qualitätsstufe | Name der Waffe | Bedeutung der Entwicklung |\n|---|---|---|\n| **Selten** | **Fährtenbund – Der erste Gleichklang** | Die Waffe erkennt erstmals Rudelrufer und Gefährten als zwei eigenständige Bewegungen, die denselben Augenblick teilen. |\n| **Episch** | **Fährtenbund – Der gemeinsame Pfad** | Das Wechselspiel funktioniert zunehmend in beide Richtungen; nicht nur der Rudelrufer öffnet Wege für den Gefährten. |\n| **Legendär** | **Fährtenbund – Der ungebrochene Gleichklang** | Bewegung, Reaktion und Jagd werden zu einer nahezu lückenlosen gemeinsamen Kampfsprache. |\n| **Mythisch** | **Fährtenbund – Die Spur, die niemals endet** | Die vollendete Best-in-Slot-Form. Der Bund bleibt über Entfernung, Wandel und die Geschichte des Rudels hinweg als gemeinsame Spur bestehen. |\n\n> [!important] Namensentwicklung\n> Die Namensprogression wird **nur durch eine tatsächliche Qualitätssteigerung** ausgelöst. Eine höhere Itemstufe allein verändert den Namen nicht.\n>\n> Trotz wechselndem Beinamen handelt es sich immer um **dieselbe Waffe**. Alte Resonanzeinlagen, Reparaturen, Erinnerungszeichen und sichtbare Spuren des Rudels bleiben Teil ihrer Geschichte und werden in die nächste Form übernommen.\n\nEine spätere Qualitätssteigerung sollte an bedeutende Ereignisse der Kampagne gebunden werden, beispielsweise:\n\n- eine entscheidende gemeinsame Jagd,\n- die Rettung des Gefährten oder Rudelrufers durch den jeweils anderen,\n- ein freiwillig überlassenes besonderes Material des Gefährten,\n- ein Fund aus Eidryth, der auf beide Resonanzspuren reagiert,\n- eine Neuabstimmung durch einen Meister der Esperbindung,\n- oder einen Moment, in dem Rudelrufer und Gefährte eine Situation nur durch vollkommenes gegenseitiges Vertrauen überstehen.\n\nDie höhere Form ersetzt Fährtenbund nicht.\n\nSie ist Fährtenbund nach weiteren gemeinsam gegangenen Wegen.\n\n---",
+      "code_blocks": [],
+      "tables": [
+        {
+          "headers": [
+            "Qualitätsstufe",
+            "Name der Waffe",
+            "Bedeutung der Entwicklung"
+          ],
+          "rows": [
+            [
+              "**Selten**",
+              "**Fährtenbund – Der erste Gleichklang**",
+              "Die Waffe erkennt erstmals Rudelrufer und Gefährten als zwei eigenständige Bewegungen, die denselben Augenblick teilen."
+            ],
+            [
+              "**Episch**",
+              "**Fährtenbund – Der gemeinsame Pfad**",
+              "Das Wechselspiel funktioniert zunehmend in beide Richtungen; nicht nur der Rudelrufer öffnet Wege für den Gefährten."
+            ],
+            [
+              "**Legendär**",
+              "**Fährtenbund – Der ungebrochene Gleichklang**",
+              "Bewegung, Reaktion und Jagd werden zu einer nahezu lückenlosen gemeinsamen Kampfsprache."
+            ],
+            [
+              "**Mythisch**",
+              "**Fährtenbund – Die Spur, die niemals endet**",
+              "Die vollendete Best-in-Slot-Form. Der Bund bleibt über Entfernung, Wandel und die Geschichte des Rudels hinweg als gemeinsame Spur bestehen."
+            ]
+          ],
+          "raw_markdown": "| Qualitätsstufe | Name der Waffe | Bedeutung der Entwicklung |\n|---|---|---|\n| **Selten** | **Fährtenbund – Der erste Gleichklang** | Die Waffe erkennt erstmals Rudelrufer und Gefährten als zwei eigenständige Bewegungen, die denselben Augenblick teilen. |\n| **Episch** | **Fährtenbund – Der gemeinsame Pfad** | Das Wechselspiel funktioniert zunehmend in beide Richtungen; nicht nur der Rudelrufer öffnet Wege für den Gefährten. |\n| **Legendär** | **Fährtenbund – Der ungebrochene Gleichklang** | Bewegung, Reaktion und Jagd werden zu einer nahezu lückenlosen gemeinsamen Kampfsprache. |\n| **Mythisch** | **Fährtenbund – Die Spur, die niemals endet** | Die vollendete Best-in-Slot-Form. Der Bund bleibt über Entfernung, Wandel und die Geschichte des Rudels hinweg als gemeinsame Spur bestehen. |",
+          "source": {
+            "line_start": 4987,
+            "line_end": 4992
+          }
+        }
+      ],
+      "source": {
+        "line_start": 4981,
+        "line_end": 5013
+      }
+    },
+    {
+      "level": 1,
+      "title": "Identitätsanker für spätere Entwicklungsstufen",
+      "markdown": "| Identitätsanker | Muss erhalten bleiben |\n|---|---|\n| **Grundwaffe** | Jagdspeer |\n| **Primärattribut** | **Empathie** |\n| **Sekundärattribut** | **Intuition** |\n| **Klassenressource** | Rudelimpulse werden unterstützt, aber nicht ersetzt oder inflationär erzeugt |\n| **Gefährtenbezug** | Gebundener Gefährte bleibt Voraussetzung der eigentlichen Signatur |\n| **Kampfstil** | Gemeinsamer Druck, Timing und Positionierung statt isolierter Waffenrotation |\n| **Führung** | Variabel |\n| **Rolle** | Stürmer / koordinierter Rudelkampf |\n| **Signaturidee** | Rudelrufer öffnet eine Fährte, Gefährte nutzt sie – spätere Formen erweitern dieses Wechselspiel |\n| **Entwicklung** | Dieselbe Waffe wächst mit demselben Rudel weiter |\n\nEin späterer mythischer Fährtenbund darf wesentlich mächtiger sein.\n\nSie soll jedoch niemals zu einer reinen Stärke-Waffe, einer Beherrschungswaffe oder einem Artefakt werden, das den Gefährten zu einer zusätzlichen vollständigen Figur macht.\n\nIhre höchste Form muss noch immer denselben Grundsatz tragen:\n\n> **Zwei eigenständige Wesen. Eine gemeinsame Spur.**\n\n---",
+      "code_blocks": [],
+      "tables": [
+        {
+          "headers": [
+            "Identitätsanker",
+            "Muss erhalten bleiben"
+          ],
+          "rows": [
+            [
+              "**Grundwaffe**",
+              "Jagdspeer"
+            ],
+            [
+              "**Primärattribut**",
+              "**Empathie**"
+            ],
+            [
+              "**Sekundärattribut**",
+              "**Intuition**"
+            ],
+            [
+              "**Klassenressource**",
+              "Rudelimpulse werden unterstützt, aber nicht ersetzt oder inflationär erzeugt"
+            ],
+            [
+              "**Gefährtenbezug**",
+              "Gebundener Gefährte bleibt Voraussetzung der eigentlichen Signatur"
+            ],
+            [
+              "**Kampfstil**",
+              "Gemeinsamer Druck, Timing und Positionierung statt isolierter Waffenrotation"
+            ],
+            [
+              "**Führung**",
+              "Variabel"
+            ],
+            [
+              "**Rolle**",
+              "Stürmer / koordinierter Rudelkampf"
+            ],
+            [
+              "**Signaturidee**",
+              "Rudelrufer öffnet eine Fährte, Gefährte nutzt sie – spätere Formen erweitern dieses Wechselspiel"
+            ],
+            [
+              "**Entwicklung**",
+              "Dieselbe Waffe wächst mit demselben Rudel weiter"
+            ]
+          ],
+          "raw_markdown": "| Identitätsanker | Muss erhalten bleiben |\n|---|---|\n| **Grundwaffe** | Jagdspeer |\n| **Primärattribut** | **Empathie** |\n| **Sekundärattribut** | **Intuition** |\n| **Klassenressource** | Rudelimpulse werden unterstützt, aber nicht ersetzt oder inflationär erzeugt |\n| **Gefährtenbezug** | Gebundener Gefährte bleibt Voraussetzung der eigentlichen Signatur |\n| **Kampfstil** | Gemeinsamer Druck, Timing und Positionierung statt isolierter Waffenrotation |\n| **Führung** | Variabel |\n| **Rolle** | Stürmer / koordinierter Rudelkampf |\n| **Signaturidee** | Rudelrufer öffnet eine Fährte, Gefährte nutzt sie – spätere Formen erweitern dieses Wechselspiel |\n| **Entwicklung** | Dieselbe Waffe wächst mit demselben Rudel weiter |",
+          "source": {
+            "line_start": 5016,
+            "line_end": 5027
+          }
+        }
+      ],
+      "source": {
+        "line_start": 5014,
+        "line_end": 5038
+      }
+    },
+    {
+      "level": 1,
+      "title": "Spielleiterhinweis – Sonderstatus der Klassenwaffe",
+      "markdown": "> [!warning] Bewusst leicht oberhalb einer normalen seltenen Waffe\n> Der normale Waffenangriff von Fährtenbund orientiert sich am 1W8-Jagdspeerprofil der Itemstufe 1. Seine besondere Klassenbindung ersetzt dabei das gewöhnlich naheliegende körperliche Waffenattribut durch **Empathie**, weil Fährtenbund speziell für den Rudelrufer erschaffen wurde.\n>\n> Die zusätzliche Stärke liegt in **Geteilte Fährte**. Diese Wirkung ist bewusst etwas großzügiger als bei einer gewöhnlichen seltenen Beutewaffe, weil Fährtenbund als dauerhafte Klassenwaffe gedacht ist. Sie ist jedoch mehrfach begrenzt: erfolgreicher Waffenangriff, handlungsfähiger Gefährte, höchstens 3 m Distanz zum Ziel, danach noch ein erfolgreicher Rudelangriff, nur **1× pro Runde**, keine zusätzliche Aktion und keine zusätzliche Rudelimpuls-Erzeugung.\n>\n> **Intuition** wird bewusst nur im Signaturanteil verwendet und nicht zusätzlich auf den normalen Waffenschaden gelegt, damit Haupt- und Sekundärattribut eine klare unterschiedliche Funktion besitzen.\n>\n> Bei späteren Itemstufen und Qualitätssteigerungen muss die gesamte Waffe erneut gegen die dann aktuelle Zentralbalance geprüft werden.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 5039,
+        "line_end": 5051
+      }
+    },
+    {
+      "level": 1,
+      "title": "Kurzfassung",
+      "markdown": "| Punkt | Wert |\n|---|---|\n| **Waffe** | Fährtenbund – Der erste Gleichklang |\n| **Klasse** | Rudelrufer |\n| **Qualität** | Selten |\n| **Itemstufe** | 1 |\n| **Basis** | Jagdspeer |\n| **Kernwürfel** | 1W8 |\n| **Führung** | Variabel – einhändig / zweihändig |\n| **Reichweite** | Mittel |\n| **Primärattribut** | **Empathie** |\n| **Sekundärattribut** | **Intuition** |\n| **Angriff** | `W20 + Empathie-Modifikator + Empathie-Bonus` |\n| **Schaden** | `1W8 + 13 + Empathie-Modifikator + Empathie-Bonus` Stichschaden |\n| **Signatur** | Nach eigenem Treffer wird das Ziel bis Ende des nächsten Zuges mit **Geteilte Fährte** markiert; der nächste treffende Rudelangriff verbraucht sie. |\n| **Gemeinsamer Zugriff** | `1W4 + ⌊(Intuitions-Modifikator + Intuitions-Bonus) / 2⌋` zusätzlicher Schaden innerhalb des Rudelangriffs |\n| **Alternative** | Statt Zusatzschaden Gefährtenposition nach dem Rudelangriff um bis zu 2 m verschieben |\n| **Limit** | 1× pro Runde; keine zusätzliche Aktion; keine zusätzliche Rudelimpuls-Erzeugung |\n| **Langfristiges Ziel** | Dieselbe Waffe bis Itemstufe 40 und über spätere Qualitätssteigerungen zur Best-in-Slot-Klassenwaffe entwickeln |",
+      "code_blocks": [],
+      "tables": [
+        {
+          "headers": [
+            "Punkt",
+            "Wert"
+          ],
+          "rows": [
+            [
+              "**Waffe**",
+              "Fährtenbund – Der erste Gleichklang"
+            ],
+            [
+              "**Klasse**",
+              "Rudelrufer"
+            ],
+            [
+              "**Qualität**",
+              "Selten"
+            ],
+            [
+              "**Itemstufe**",
+              "1"
+            ],
+            [
+              "**Basis**",
+              "Jagdspeer"
+            ],
+            [
+              "**Kernwürfel**",
+              "1W8"
+            ],
+            [
+              "**Führung**",
+              "Variabel – einhändig / zweihändig"
+            ],
+            [
+              "**Reichweite**",
+              "Mittel"
+            ],
+            [
+              "**Primärattribut**",
+              "**Empathie**"
+            ],
+            [
+              "**Sekundärattribut**",
+              "**Intuition**"
+            ],
+            [
+              "**Angriff**",
+              "`W20 + Empathie-Modifikator + Empathie-Bonus`"
+            ],
+            [
+              "**Schaden**",
+              "`1W8 + 13 + Empathie-Modifikator + Empathie-Bonus` Stichschaden"
+            ],
+            [
+              "**Signatur**",
+              "Nach eigenem Treffer wird das Ziel bis Ende des nächsten Zuges mit **Geteilte Fährte** markiert; der nächste treffende Rudelangriff verbraucht sie."
+            ],
+            [
+              "**Gemeinsamer Zugriff**",
+              "`1W4 + ⌊(Intuitions-Modifikator + Intuitions-Bonus) / 2⌋` zusätzlicher Schaden innerhalb des Rudelangriffs"
+            ],
+            [
+              "**Alternative**",
+              "Statt Zusatzschaden Gefährtenposition nach dem Rudelangriff um bis zu 2 m verschieben"
+            ],
+            [
+              "**Limit**",
+              "1× pro Runde; keine zusätzliche Aktion; keine zusätzliche Rudelimpuls-Erzeugung"
+            ],
+            [
+              "**Langfristiges Ziel**",
+              "Dieselbe Waffe bis Itemstufe 40 und über spätere Qualitätssteigerungen zur Best-in-Slot-Klassenwaffe entwickeln"
+            ]
+          ],
+          "raw_markdown": "| Punkt | Wert |\n|---|---|\n| **Waffe** | Fährtenbund – Der erste Gleichklang |\n| **Klasse** | Rudelrufer |\n| **Qualität** | Selten |\n| **Itemstufe** | 1 |\n| **Basis** | Jagdspeer |\n| **Kernwürfel** | 1W8 |\n| **Führung** | Variabel – einhändig / zweihändig |\n| **Reichweite** | Mittel |\n| **Primärattribut** | **Empathie** |\n| **Sekundärattribut** | **Intuition** |\n| **Angriff** | `W20 + Empathie-Modifikator + Empathie-Bonus` |\n| **Schaden** | `1W8 + 13 + Empathie-Modifikator + Empathie-Bonus` Stichschaden |\n| **Signatur** | Nach eigenem Treffer wird das Ziel bis Ende des nächsten Zuges mit **Geteilte Fährte** markiert; der nächste treffende Rudelangriff verbraucht sie. |\n| **Gemeinsamer Zugriff** | `1W4 + ⌊(Intuitions-Modifikator + Intuitions-Bonus) / 2⌋` zusätzlicher Schaden innerhalb des Rudelangriffs |\n| **Alternative** | Statt Zusatzschaden Gefährtenposition nach dem Rudelangriff um bis zu 2 m verschieben |\n| **Limit** | 1× pro Runde; keine zusätzliche Aktion; keine zusätzliche Rudelimpuls-Erzeugung |\n| **Langfristiges Ziel** | Dieselbe Waffe bis Itemstufe 40 und über spätere Qualitätssteigerungen zur Best-in-Slot-Klassenwaffe entwickeln |",
+          "source": {
+            "line_start": 5054,
+            "line_end": 5072
+          }
+        }
+      ],
+      "source": {
+        "line_start": 5052,
+        "line_end": 5073
+      }
+    }
+  ],
+  "raw_markdown": "# Fährtenbund – Der erste Gleichklang\n\n> _„Nicht die Spitze findet den Weg. Zwei Bewegungen finden ihn gemeinsam.“_\n\n> [!important] Klassenwaffe des Rudelrufers\n> **Fährtenbund** ist keine gewöhnliche Fundwaffe und nicht als austauschbarer Ausrüstungsplatz gedacht. Sie ist eine persönliche **Entwicklungswaffe des Rudelrufers**, die im Verlauf einer Kampagne verstärkt, neu abgestimmt und schließlich bis in die höchsten Qualitäts- und Itemstufen weiterentwickelt werden kann.\n>\n> Diese Fassung beschreibt ihren **ersten spielbaren Zustand: Selten, Itemstufe 1**.\n\n---\n\n## Grundgedanke\n\nEin Rudelrufer gewinnt einen Kampf nicht dadurch, dass er seinen Gefährten wie eine Waffe führt.\n\nEr gewinnt ihn, weil beide dieselbe Situation unterschiedlich wahrnehmen und trotzdem im richtigen Augenblick dasselbe Ziel verfolgen.\n\n**Fährtenbund** wurde nach genau diesem Gedanken geschaffen.\n\nDie Waffe basiert auf einem **Jagdspeer**, weil seine mittlere Reichweite dem Rudelrufer erlaubt, Gegner zu bedrohen, Linien zu öffnen und gleichzeitig Raum für die natürliche Bewegung des Gefährten zu lassen. Seine Spitze zwingt den Träger nicht dicht an das Ziel, während der lange Schaft Bewegungen markieren, Räume teilen und Angriffsrichtungen sichtbar machen kann.\n\nDoch Fährtenbund wird nicht durch rohe Körperkraft definiert.\n\nDie Waffe besitzt zwei voneinander getrennte Resonanzspuren. Die erste reagiert auf die **Empathie** des Rudelrufers – auf sein Verständnis für Absicht, Spannung und Bewegung des Gefährten. Die zweite reagiert auf seine **Intuition** – auf jenen kurzen Augenblick, in dem er erkennt, welche Öffnung der Gefährte nutzen wird, noch bevor die Bewegung vollständig begonnen hat.\n\nDarum arbeitet Fährtenbund als Klassenwaffe bewusst mit den beiden zentralen Attributen des Rudelrufers:\n\n- **Empathie** führt Angriff und Grundschaden.\n- **Intuition** verstärkt die eigentliche Rudel-Signatur der Waffe.\n\nDie Waffe soll den Rudelrufer nicht in einen gewöhnlichen Speerkämpfer verwandeln.\n\nSie soll seine bestehende Spielweise präziser machen.\n\n---\n\n# Herkunft\n\nDie ersten Fassungen von Fährtenbund entstanden nicht in einer einzigen Schmiede und wurden auch nicht nach einem festen Bauplan vervielfältigt.\n\nGemeinsam ist ihnen nur der sogenannte **Zwei-Spuren-Kern**.\n\nDabei handelt es sich um zwei schmale Resonanzeinlagen, die durch den Schaft verlaufen, sich aber an keiner Stelle direkt berühren. Eine wird auf den Rudelrufer abgestimmt. Die andere bleibt zunächst still.\n\nErst wenn der gebundene Gefährte die Nähe der Waffe freiwillig akzeptiert, beginnt auch die zweite Spur zu reagieren.\n\nDas kann durch Berührung geschehen.\n\nDurch eine Kralle auf dem Schaft.\n\nDurch eine Schnauze an der Speerspitze.\n\nDurch einen Laut.\n\nDurch eine Esperresonanz.\n\nOder bei fremdartigen Wesen durch eine Form der Zustimmung, die nur der Rudelrufer sicher erkennt.\n\nDie zweite Spur ist deshalb kein Siegel des Besitzes.\n\nSie ist ein Zeichen gegenseitiger Anerkennung.\n\nMit jeder späteren Verbesserung werden neue Materialien nicht einfach über die alten gelegt. Teile des Schaftes, Resonanzringe, Wicklungen und Erinnerungszeichen des Rudels bleiben erhalten und werden in die nächste Form übernommen.\n\nSo wächst Fährtenbund nicht nur mit seinem Träger.\n\nSie wächst mit dem Rudel.\n\n---\n\n# Waffenprofil\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Name** | **Fährtenbund – Der erste Gleichklang** |\n| **Klassenbindung** | Rudelrufer |\n| **Basiswaffenart** | Jagdspeer |\n| **Waffenkategorie** | Speere |\n| **Qualitätsstufe** | **Selten** |\n| **Itemstufe** | **1** |\n| **Magisch** | Ja – Bindungs- und Esperresonanz |\n| **Kernwürfel** | **1W8** |\n| **Führung** | **Variabel – einhändig oder zweihändig** |\n| **Reichweite** | Mittel |\n| **Schadensart** | Stich |\n| **Gewicht** | Mittel |\n| **Primäres Klassenattribut** | **Empathie** |\n| **Sekundäres Klassenattribut** | **Intuition** |\n| **Angriffsattribut** | **Empathie** |\n| **Angriffswurf** | `W20 + Empathie-Modifikator + Empathie-Bonus` gegen das Ausweichergebnis des Ziels |\n| **Schadensformel** | `1W8 + 13 + Empathie-Modifikator + Empathie-Bonus` Stichschaden |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaft** | **Zwei-Spuren-Kern** |\n| **Klassenwirkung** | **Geteilte Fährte** |\n| **Aktionskosten** | Keine zusätzliche Aktion; wird nach einem erfolgreichen normalen Waffenangriff ausgelöst |\n| **Auslöser / Voraussetzung** | Du triffst mit Fährtenbund durch einen normalen Waffenangriff und dein gebundener Gefährte ist handlungsfähig sowie höchstens 3 m vom getroffenen Ziel entfernt. |\n| **Kosten** | – |\n| **Einsatzlimit** | **1× pro Runde** |\n| **Reichweite des Effekts** | Ziel des erfolgreichen Waffenangriffs; Gefährte höchstens 3 m vom Ziel |\n| **Ziel / Fläche** | 1 Kreatur |\n| **Dauer** | Bis zum Ende deines nächsten Zuges oder bis **Geteilte Fährte** verbraucht wird |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | Bei **Gemeinsamer Zugriff**: `1W4 + ⌊(Intuitions-Modifikator + Intuitions-Bonus) / 2⌋` zusätzlicher Schaden innerhalb des auslösenden Rudelangriffs |\n| **Stapelung** | Nur eine durch Fährtenbund erzeugte **Geteilte Fährte** kann gleichzeitig auf derselben Kreatur liegen. Erneute Anwendung ersetzt die bestehende Fährte. |\n| **Ende der Wirkung** | Nach Verbrauch, am Ende deines nächsten Zuges oder sobald die Bindungsvoraussetzungen nicht mehr erfüllt sind |\n| **Aufwertung / Skalierung** | Grundschaden und skalierende Teile der Signatur werden bei steigender Itemstufe neu auf die jeweilige Itemstufe kalibriert. Empathie als Primärattribut, Intuition als Sekundärbindung und das Wechselspiel zwischen Waffenangriff und Rudelangriff bleiben erhalten. |\n| **Herstellungsanforderung** | Erfahrener Spezialist für Speere oder Esperwaffen; resonanzfähiges Schaftmaterial, zwei getrennte Bindungseinlagen und ein freiwillig gewähltes Zeichen des Rudels |\n\n---\n\n# Besondere Eigenschaft – Zwei-Spuren-Kern\n\nIm Inneren von Fährtenbund verlaufen zwei voneinander getrennte Resonanzbahnen.\n\nDie erste gehört dem Rudelrufer.\n\nSie reagiert auf **Empathie**.\n\nNicht auf Muskelkraft.\n\nNicht auf starre Fechttechnik.\n\nSondern auf die Fähigkeit, Bewegung, Absicht und Spannung im eigenen Rudel zu verstehen.\n\nRegeltechnisch bedeutet das:\n\n1. **Fährtenbund verwendet für den Rudelrufer Empathie als Angriffsattribut.**\n2. Der normale Waffenangriff lautet `W20 + Empathie-Modifikator + Empathie-Bonus`.\n3. Der normale Waffenschaden verwendet ebenfalls `Empathie-Modifikator + Empathie-Bonus`.\n4. **Intuition wird nicht zusätzlich kostenlos auf den normalen Grundschaden addiert.** Sie gehört zur Klassen-Signatur und wird dort separat budgetiert.\n5. Die Waffe erzeugt keine eigenen Rudelimpulse und erhöht deren Maximum nicht.\n6. Die Waffe erzeugt keine zusätzliche Aktion, Bonusaktion oder Reaktion des Gefährten.\n\nDie zweite Resonanzbahn gehört dem Gefährten.\n\nSie bleibt ohne freiwillige Bindung weitgehend still.\n\nEin Wesen, das Fährtenbund nicht akzeptiert, kann nicht durch die Waffe gezwungen werden, Teil ihrer Klassenwirkung zu werden.\n\n---\n\n# Klassenwirkung – Geteilte Fährte\n\nWenn Rudelrufer und Gefährte denselben Gegner lesen, entsteht zwischen ihren Bewegungen für einen Augenblick eine gemeinsame Linie.\n\nDas erste Mal pro Runde, wenn du mit **Fährtenbund** einen normalen Waffenangriff gegen eine feindliche Kreatur triffst, kannst du auf diesem Ziel eine **Geteilte Fährte** erzeugen, sofern dein gebundener Gefährte:\n\n- handlungsfähig ist,\n- sich innerhalb der normalen Bindungsgrenze befindet,\n- und beim Treffer höchstens **3 m** vom Ziel entfernt ist.\n\nDie Geteilte Fährte bleibt bis zum **Ende deines nächsten Zuges** bestehen.\n\nTrifft dein gebundener Gefährte das markierte Ziel vor Ablauf dieser Dauer mit einem **Rudelangriff**, wird die Geteilte Fährte nach der vollständigen Trefferbestätigung verbraucht.\n\nDu wählst dann **eine** der folgenden Wirkungen:\n\n## Gemeinsamer Zugriff\n\nDer Rudelrufer erkennt anhand von Haltung, Blick und Bewegungsrichtung des Gefährten den Moment, in dem sich die Verteidigung des Ziels öffnet.\n\nDer auslösende Rudelangriff verursacht zusätzlich:\n\n```text\n1W4\n+ ⌊(Intuitions-Modifikator + Intuitions-Bonus) / 2⌋\n```\n\nSchaden.\n\nDieser Zusatzschaden:\n\n- besitzt dieselbe physische Schadensart wie der auslösende Rudelangriff,\n- wird als Teil derselben Schadenswirkung verarbeitet,\n- zählt nicht als eigener Angriff,\n- zählt nicht als eigener Treffer,\n- löst keine zusätzliche Basiserzeugung von Rudelimpulsen aus,\n- und verwendet bewusst **Intuition**, weil dieser Teil der Waffe das Lesen des gemeinsamen Angriffsmoments darstellt.\n\n## Seitenwechsel\n\nStatt zusätzlichen Schaden zu verursachen, darf die **Gefährtenposition nach vollständiger Abwicklung des Rudelangriffs um bis zu 2 m** auf legalem Weg verschoben werden.\n\nDiese Bewegung:\n\n- ist keine zusätzliche Bewegungsaktion,\n- erzeugt keinen zusätzlichen Angriff,\n- löst durch sich selbst keine weitere Rudelrufer-Klassenreaktion aus,\n- muss alle normalen Gelände- und Positionsregeln einhalten,\n- und stellt keine Teleportation dar.\n\n> [!note] Zweck der Signatur\n> Fährtenbund soll den Ablauf **Rudelrufer öffnet → Gefährte erkennt → Rudel vollendet** verstärken. Die Waffe ersetzt keine Klassenfähigkeit und erschafft keinen zweiten vollständigen Charakter. Sie belohnt ausschließlich das Zusammenspiel, das der Rudelrufer ohnehin ausführen möchte.\n\n---\n\n# Freiwillige Bindung\n\nFährtenbund besitzt keine Beherrschungsmagie.\n\nDie zweite Resonanzspur kann nicht mit Gewalt aktiviert werden.\n\nMechanisch gilt:\n\n- **Geteilte Fährte** funktioniert nur mit dem gebundenen Gefährten des Rudelrufers.\n- Die Waffe verleiht dem Gefährten keine eigenen Aktionen, Bonusaktionen oder Reaktionen.\n- Die Waffe erhöht das Maximum der **Rudelimpulse** nicht.\n- Die Waffe erzeugt keine Rudelimpulse zusätzlich zum normalen Grundzugang der Klasse.\n- Zusatzschaden aus Fährtenbund zählt niemals als separater Treffer oder separater Ressourcenauslöser.\n- Wird der Gefährte handlungsunfähig oder vollständig von der Bindung getrennt, bleibt Fährtenbund als Waffe verwendbar; die Klassenwirkung ruht jedoch, bis die Voraussetzungen wieder erfüllt sind.\n\n---\n\n# Variable Führung – Raum für zwei\n\nFährtenbund bleibt trotz ihrer Resonanz eindeutig ein **Jagdspeer**.\n\nDie variable Führung ist Teil ihrer Identität.\n\n## Einhändige Führung\n\nEinhändig kann der Rudelrufer die zweite Hand für einen Schild, einen Gegenstand, ein Zeichen oder eine andere zulässige Interaktion freihalten.\n\nDas normale Schadensprofil bleibt in dieser ersten Entwicklungsstufe unverändert.\n\n## Zweihändige Führung\n\nZweihändig kann der Rudelrufer den langen Schaft präziser kontrollieren, Richtungswechsel sauberer markieren und den Speer stärker in die gemeinsame Bewegung mit seinem Gefährten einbinden.\n\nAuch hierbei entsteht in der seltenen Itemstufe-1-Fassung noch kein zweites Schadensprofil.\n\nDie Stärke der Waffe liegt nicht in kostenloser Zweihand-Mehrleistung, sondern in der taktischen Flexibilität des Jagdspeers und seiner Rudelresonanz.\n\n---\n\n# Erscheinungsbild\n\nFährtenbund besitzt einen knapp mannshohen bis leicht übermannshohen Schaft aus dunklem, zähem Holz oder einem vergleichbaren regionalen Material.\n\nDie breite, blattförmige Speerspitze wirkt jagdtauglich und robust. Unterhalb der Klinge sitzt eine niedrige Querstrebe, die verhindert, dass der Schaft zu tief in ein Ziel oder Hindernis gleitet und zugleich als sichtbarer Übergang zwischen Spitze und Resonanzkern dient.\n\nDurch den gesamten Schaft laufen zwei feine Einlagen.\n\nDie erste ist gleichmäßig und klar.\n\nDie zweite verändert ihre Form nach der Bindung an den Gefährten.\n\nJe nach Wesen kann sie wirken wie:\n\n- eine schmale Kratzspur,\n- ein Federast,\n- eine Schuppenlinie,\n- eine Pflanzenader,\n- ein kristalliner Riss,\n- eine Spur aus schwachem Licht,\n- oder eine kaum sichtbare Esperverwerfung.\n\nKeine dieser Formen gilt als allgemeines Symbol einer Tierart.\n\nSie gehört nur diesem Rudel.\n\nAm unteren Schaftende befindet sich ein kleiner offener Ring. Dort kann ein freiwillig gewähltes Zeichen befestigt werden: ein Band, eine Feder, abgestoßene Schuppe, ein Stück Stoff, ein Metallring oder ein anderer Gegenstand mit gemeinsamer Bedeutung.\n\nWenn **Geteilte Fährte** entsteht, leuchtet zunächst nur die Spur des Rudelrufers auf.\n\nTrifft danach der Rudelangriff, antwortet die zweite Spur.\n\nFür einen Augenblick laufen beide Lichtbewegungen parallel durch den Schaft.\n\nSie verschmelzen nicht.\n\nSie bewegen sich nur gemeinsam.\n\n---\n\n# Warum Fährtenbund eine Rudelrufer-Waffe ist\n\nFährtenbund versucht nicht, den Rudelrufer zu einem Stärke-basierten Speerkämpfer zu machen.\n\nSie verstärkt genau das, was die Klasse auszeichnet:\n\n- **Empathie** ist das Hauptattribut und führt Angriff sowie normalen Waffenschaden.\n- **Intuition** ist das Sekundärattribut und verstärkt das Lesen gemeinsamer Angriffsfenster.\n- **Rudelimpulse** werden weder ersetzt noch kostenlos zusätzlich erzeugt.\n- **Rudelangriffe** bleiben Bestandteil der Klassenfähigkeiten und erhalten durch die Waffe keine eigene Zusatzaktion.\n- **Gefährtenpositionierung** bleibt ein zentraler taktischer Bestandteil.\n- **gemeinsamer Druck auf dasselbe Ziel** wird belohnt.\n- **mittlere Speerreichweite** schafft Raum für die natürliche Bewegung des Gefährten.\n- **freiwillige Bindung** bleibt wichtiger als Besitz oder Beherrschung.\n\nDie Waffe ergänzt damit die Rolle des Rudelrufers als **Stürmerklasse**, deren tatsächliche Stärke aus der Zusammenarbeit mit dem Gefährten entsteht.\n\nSie gibt dem Rudelrufer keinen Grund, seine Klasse wie einen gewöhnlichen Waffencharakter zu spielen.\n\nSie gibt ihm einen besseren Grund, konsequent als Rudel zu handeln.\n\n---\n\n# Entwicklungsprinzip der Klassenwaffe\n\nFährtenbund ist nicht dafür geschaffen, auf einer späteren Stufe ersetzt zu werden.\n\nIhre erste seltene Form ist der Beginn einer langfristigen Entwicklung.\n\n## Itemstufenentwicklung\n\nFährtenbund kann grundsätzlich von **Itemstufe 1 bis Itemstufe 40** verbessert werden.\n\nEine Erhöhung der Itemstufe verändert nicht automatisch ihre Qualitätsstufe.\n\nBei späteren Itemstufen sollen insbesondere weiterentwickelt werden:\n\n- das normale Waffenprofil,\n- die Stärke skalierender Teile von **Geteilte Fährte**,\n- die Reichweite oder Flexibilität der Resonanz nur dann, wenn die Balance dies zulässt,\n- die Qualität des Zwei-Spuren-Kerns,\n- die Materialien des Schafts,\n- die persönliche Rudelprägung.\n\nDie sichtbare Schadensformel wird bei neuen Itemstufen **neu kalibriert** und nicht einfach um einen zusätzlichen Würfel pro Stufe erweitert.\n\n## Qualitätsentwicklung\n\nFährtenbund behält über alle Entwicklungsstufen hinweg ihren **Kernnamen**.\n\nMit jeder tatsächlichen Qualitätssteigerung verändert sich ihr Beiname.\n\n| Qualitätsstufe | Name der Waffe | Bedeutung der Entwicklung |\n|---|---|---|\n| **Selten** | **Fährtenbund – Der erste Gleichklang** | Die Waffe erkennt erstmals Rudelrufer und Gefährten als zwei eigenständige Bewegungen, die denselben Augenblick teilen. |\n| **Episch** | **Fährtenbund – Der gemeinsame Pfad** | Das Wechselspiel funktioniert zunehmend in beide Richtungen; nicht nur der Rudelrufer öffnet Wege für den Gefährten. |\n| **Legendär** | **Fährtenbund – Der ungebrochene Gleichklang** | Bewegung, Reaktion und Jagd werden zu einer nahezu lückenlosen gemeinsamen Kampfsprache. |\n| **Mythisch** | **Fährtenbund – Die Spur, die niemals endet** | Die vollendete Best-in-Slot-Form. Der Bund bleibt über Entfernung, Wandel und die Geschichte des Rudels hinweg als gemeinsame Spur bestehen. |\n\n> [!important] Namensentwicklung\n> Die Namensprogression wird **nur durch eine tatsächliche Qualitätssteigerung** ausgelöst. Eine höhere Itemstufe allein verändert den Namen nicht.\n>\n> Trotz wechselndem Beinamen handelt es sich immer um **dieselbe Waffe**. Alte Resonanzeinlagen, Reparaturen, Erinnerungszeichen und sichtbare Spuren des Rudels bleiben Teil ihrer Geschichte und werden in die nächste Form übernommen.\n\nEine spätere Qualitätssteigerung sollte an bedeutende Ereignisse der Kampagne gebunden werden, beispielsweise:\n\n- eine entscheidende gemeinsame Jagd,\n- die Rettung des Gefährten oder Rudelrufers durch den jeweils anderen,\n- ein freiwillig überlassenes besonderes Material des Gefährten,\n- ein Fund aus Eidryth, der auf beide Resonanzspuren reagiert,\n- eine Neuabstimmung durch einen Meister der Esperbindung,\n- oder einen Moment, in dem Rudelrufer und Gefährte eine Situation nur durch vollkommenes gegenseitiges Vertrauen überstehen.\n\nDie höhere Form ersetzt Fährtenbund nicht.\n\nSie ist Fährtenbund nach weiteren gemeinsam gegangenen Wegen.\n\n---\n\n# Identitätsanker für spätere Entwicklungsstufen\n\n| Identitätsanker | Muss erhalten bleiben |\n|---|---|\n| **Grundwaffe** | Jagdspeer |\n| **Primärattribut** | **Empathie** |\n| **Sekundärattribut** | **Intuition** |\n| **Klassenressource** | Rudelimpulse werden unterstützt, aber nicht ersetzt oder inflationär erzeugt |\n| **Gefährtenbezug** | Gebundener Gefährte bleibt Voraussetzung der eigentlichen Signatur |\n| **Kampfstil** | Gemeinsamer Druck, Timing und Positionierung statt isolierter Waffenrotation |\n| **Führung** | Variabel |\n| **Rolle** | Stürmer / koordinierter Rudelkampf |\n| **Signaturidee** | Rudelrufer öffnet eine Fährte, Gefährte nutzt sie – spätere Formen erweitern dieses Wechselspiel |\n| **Entwicklung** | Dieselbe Waffe wächst mit demselben Rudel weiter |\n\nEin späterer mythischer Fährtenbund darf wesentlich mächtiger sein.\n\nSie soll jedoch niemals zu einer reinen Stärke-Waffe, einer Beherrschungswaffe oder einem Artefakt werden, das den Gefährten zu einer zusätzlichen vollständigen Figur macht.\n\nIhre höchste Form muss noch immer denselben Grundsatz tragen:\n\n> **Zwei eigenständige Wesen. Eine gemeinsame Spur.**\n\n---\n\n# Spielleiterhinweis – Sonderstatus der Klassenwaffe\n\n> [!warning] Bewusst leicht oberhalb einer normalen seltenen Waffe\n> Der normale Waffenangriff von Fährtenbund orientiert sich am 1W8-Jagdspeerprofil der Itemstufe 1. Seine besondere Klassenbindung ersetzt dabei das gewöhnlich naheliegende körperliche Waffenattribut durch **Empathie**, weil Fährtenbund speziell für den Rudelrufer erschaffen wurde.\n>\n> Die zusätzliche Stärke liegt in **Geteilte Fährte**. Diese Wirkung ist bewusst etwas großzügiger als bei einer gewöhnlichen seltenen Beutewaffe, weil Fährtenbund als dauerhafte Klassenwaffe gedacht ist. Sie ist jedoch mehrfach begrenzt: erfolgreicher Waffenangriff, handlungsfähiger Gefährte, höchstens 3 m Distanz zum Ziel, danach noch ein erfolgreicher Rudelangriff, nur **1× pro Runde**, keine zusätzliche Aktion und keine zusätzliche Rudelimpuls-Erzeugung.\n>\n> **Intuition** wird bewusst nur im Signaturanteil verwendet und nicht zusätzlich auf den normalen Waffenschaden gelegt, damit Haupt- und Sekundärattribut eine klare unterschiedliche Funktion besitzen.\n>\n> Bei späteren Itemstufen und Qualitätssteigerungen muss die gesamte Waffe erneut gegen die dann aktuelle Zentralbalance geprüft werden.\n\n---\n\n# Kurzfassung\n\n| Punkt | Wert |\n|---|---|\n| **Waffe** | Fährtenbund – Der erste Gleichklang |\n| **Klasse** | Rudelrufer |\n| **Qualität** | Selten |\n| **Itemstufe** | 1 |\n| **Basis** | Jagdspeer |\n| **Kernwürfel** | 1W8 |\n| **Führung** | Variabel – einhändig / zweihändig |\n| **Reichweite** | Mittel |\n| **Primärattribut** | **Empathie** |\n| **Sekundärattribut** | **Intuition** |\n| **Angriff** | `W20 + Empathie-Modifikator + Empathie-Bonus` |\n| **Schaden** | `1W8 + 13 + Empathie-Modifikator + Empathie-Bonus` Stichschaden |\n| **Signatur** | Nach eigenem Treffer wird das Ziel bis Ende des nächsten Zuges mit **Geteilte Fährte** markiert; der nächste treffende Rudelangriff verbraucht sie. |\n| **Gemeinsamer Zugriff** | `1W4 + ⌊(Intuitions-Modifikator + Intuitions-Bonus) / 2⌋` zusätzlicher Schaden innerhalb des Rudelangriffs |\n| **Alternative** | Statt Zusatzschaden Gefährtenposition nach dem Rudelangriff um bis zu 2 m verschieben |\n| **Limit** | 1× pro Runde; keine zusätzliche Aktion; keine zusätzliche Rudelimpuls-Erzeugung |\n| **Langfristiges Ziel** | Dieselbe Waffe bis Itemstufe 40 und über spätere Qualitätssteigerungen zur Best-in-Slot-Klassenwaffe entwickeln |",
+  "source": {
+    "file": "Waffen.md",
+    "document_title": "Fährtenbund – Der erste Gleichklang",
+    "line_start": 4660,
+    "line_end": 5073
+  }
+}

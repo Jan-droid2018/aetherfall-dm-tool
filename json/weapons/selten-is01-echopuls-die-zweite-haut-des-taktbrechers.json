@@ -1,0 +1,579 @@
+{
+  "schema_version": "aetherfall.weapons.v1",
+  "id": "selten-is01-echopuls-die-zweite-haut-des-taktbrechers",
+  "number": null,
+  "name": "Echopuls – Die zweite Haut des Taktbrechers",
+  "subtitle": null,
+  "display_name": "Echopuls – Die zweite Haut des Taktbrechers",
+  "source_type": "special_weapon",
+  "item_type": "Einzigartige Klassenwaffe des Taktbrechers",
+  "base_weapon_type": "Cestus",
+  "category": "Faust- und Klauenwaffen",
+  "quality": "Selten",
+  "item_level": 1,
+  "magical": {
+    "raw": "Ja – ätherresonant und trägergebunden",
+    "value": true
+  },
+  "elements": [],
+  "is_elemental": false,
+  "core_dice": {
+    "raw": "1W6",
+    "dice_terms": [
+      {
+        "raw": "1W6",
+        "count": 1,
+        "sides": 6
+      }
+    ]
+  },
+  "handling": "Einhändig je Handschuh; das Paar zählt zusammen als eine Klassenwaffe",
+  "range": "Nah; für Trefferfolgen gelten weiterhin die Reichweitenregeln des Taktbrechers",
+  "damage_type": "Schlag",
+  "weight": "Mittel; durch die Resonanz körpernah verteilt",
+  "attributes": {
+    "attack": "Stärke",
+    "primary_class": null,
+    "secondary_class": "Beweglichkeit darf ausschließlich dort einfließen, wo eine Taktbrecher-Regel, Klassenfähigkeit oder spätere Echopuls-Entwicklung dies ausdrücklich vorsieht"
+  },
+  "formulas": {
+    "attack": "W20 + Stärke-Modifikator + Stärke-Bonus + Taktpräzision gegen das Ausweichergebnis des Ziels",
+    "damage": {
+      "default": "Verwendet beim normalen Taktangriff die jeweils aktuelle Körperangriff-Schadensformel des Taktbrechers. Auf Taktbrecher-Stufe 1 entspricht dies 1W6 + 11 + Stärke-Modifikator + Stärke-Bonus Schlagschaden.",
+      "one_handed": null,
+      "two_handed": null
+    },
+    "core_value": null,
+    "dice_terms": [
+      {
+        "raw": "W20",
+        "count": 1,
+        "sides": 20
+      },
+      {
+        "raw": "1W6",
+        "count": 1,
+        "sides": 6
+      }
+    ]
+  },
+  "critical_modification": "Keine; es gelten die normalen Krit-Regeln",
+  "class_binding": {
+    "class_name": "Taktbrecher",
+    "raw": "Taktbrecher",
+    "is_class_weapon": true,
+    "is_dm_weapon": false
+  },
+  "class_resource": "Kampfspannung; Echopuls besitzt keinen eigenen Ressourcenpool",
+  "special_properties": "Die zweite Haut; Taktabdruck; Paarbindung; Klassenattribut-Sperre; keine Schadensdoppelung",
+  "class_effect": null,
+  "active_ability": null,
+  "action_cost": null,
+  "trigger_requirement": null,
+  "costs": null,
+  "usage_limit": null,
+  "effect_range": null,
+  "target_area": null,
+  "duration": null,
+  "saving_throw_dc": null,
+  "effect_calculation": null,
+  "rule_effect": null,
+  "stacking": null,
+  "end_condition": null,
+  "upgrade_scaling": "Itemstufe 1–40 möglich; Qualitätssteigerungen sind separate, wesentlich größere Entwicklungsstufen und erfolgen nicht automatisch",
+  "crafting_requirement": "Erfahrener Spezialist sowie persönliche Einprägung durch den späteren Träger",
+  "appearance": null,
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.2",
+    "classification": null,
+    "dm_performance_profile": null,
+    "status": "Spielbereit"
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Item",
+      "Waffe",
+      "Klassenwaffe",
+      "Taktbrecher",
+      "Selten"
+    ],
+    "klasse": "Taktbrecher",
+    "gegenstandsart": "Klassenwaffe",
+    "basiswaffenart": "Cestus",
+    "waffenkategorie": "Faust- und Klauenwaffen",
+    "qualitaet": "Selten",
+    "itemstufe": 1,
+    "magisch": true,
+    "klassenbindung": "Taktbrecher",
+    "balance_version": "Ätherfall-Zentralbalance-1.2",
+    "status": "Spielbereit"
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Name": "Echopuls – Die zweite Haut des Taktbrechers",
+    "Basiswaffenart": "Cestus",
+    "Waffenkategorie": "Faust- und Klauenwaffen",
+    "Gegenstandsart": "Einzigartige Klassenwaffe des Taktbrechers",
+    "Qualitätsstufe": "Selten",
+    "Itemstufe": "1",
+    "Magisch": "Ja – ätherresonant und trägergebunden",
+    "Kernwürfel": "1W6",
+    "Führung": "Einhändig je Handschuh; das Paar zählt zusammen als **eine** Klassenwaffe",
+    "Reichweite": "Nah; für Trefferfolgen gelten weiterhin die Reichweitenregeln des Taktbrechers",
+    "Schadensart": "Schlag",
+    "Gewicht": "Mittel; durch die Resonanz körpernah verteilt",
+    "Angriffsattribut": "**Stärke**",
+    "Sekundäres Klassenattribut": "**Beweglichkeit** darf ausschließlich dort einfließen, wo eine Taktbrecher-Regel, Klassenfähigkeit oder spätere Echopuls-Entwicklung dies ausdrücklich vorsieht",
+    "Angriffswurf": "`W20 + Stärke-Modifikator + Stärke-Bonus + Taktpräzision` gegen das Ausweichergebnis des Ziels",
+    "Schadensformel": "Verwendet beim normalen Taktangriff die jeweils aktuelle **Körperangriff-Schadensformel des Taktbrechers**. Auf Taktbrecher-Stufe 1 entspricht dies `1W6 + 11 + Stärke-Modifikator + Stärke-Bonus` Schlagschaden.",
+    "Krit-Modifikation": "Keine; es gelten die normalen Krit-Regeln",
+    "Element": null,
+    "Klassenressource": "Kampfspannung; Echopuls besitzt keinen eigenen Ressourcenpool",
+    "Besondere Eigenschaften": "Die zweite Haut; Taktabdruck; Paarbindung; Klassenattribut-Sperre; keine Schadensdoppelung",
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": null,
+    "Rettungswurf / SG": null,
+    "Herstellungsanforderung": "Erfahrener Spezialist sowie persönliche Einprägung durch den späteren Träger",
+    "Aufwertung / Skalierung": "Itemstufe 1–40 möglich; Qualitätssteigerungen sind separate, wesentlich größere Entwicklungsstufen und erfolgen nicht automatisch"
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Name** | Echopuls – Die zweite Haut des Taktbrechers |\n| **Basiswaffenart** | Cestus |\n| **Waffenkategorie** | Faust- und Klauenwaffen |\n| **Gegenstandsart** | Einzigartige Klassenwaffe des Taktbrechers |\n| **Qualitätsstufe** | Selten |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja – ätherresonant und trägergebunden |\n| **Kernwürfel** | 1W6 |\n| **Führung** | Einhändig je Handschuh; das Paar zählt zusammen als **eine** Klassenwaffe |\n| **Reichweite** | Nah; für Trefferfolgen gelten weiterhin die Reichweitenregeln des Taktbrechers |\n| **Schadensart** | Schlag |\n| **Gewicht** | Mittel; durch die Resonanz körpernah verteilt |\n| **Angriffsattribut** | **Stärke** |\n| **Sekundäres Klassenattribut** | **Beweglichkeit** darf ausschließlich dort einfließen, wo eine Taktbrecher-Regel, Klassenfähigkeit oder spätere Echopuls-Entwicklung dies ausdrücklich vorsieht |\n| **Angriffswurf** | `W20 + Stärke-Modifikator + Stärke-Bonus + Taktpräzision` gegen das Ausweichergebnis des Ziels |\n| **Schadensformel** | Verwendet beim normalen Taktangriff die jeweils aktuelle **Körperangriff-Schadensformel des Taktbrechers**. Auf Taktbrecher-Stufe 1 entspricht dies `1W6 + 11 + Stärke-Modifikator + Stärke-Bonus` Schlagschaden. |\n| **Krit-Modifikation** | Keine; es gelten die normalen Krit-Regeln |\n| **Element** | – |\n| **Klassenressource** | Kampfspannung; Echopuls besitzt keinen eigenen Ressourcenpool |\n| **Besondere Eigenschaften** | Die zweite Haut; Taktabdruck; Paarbindung; Klassenattribut-Sperre; keine Schadensdoppelung |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Rettungswurf / SG** | – |\n| **Herstellungsanforderung** | Erfahrener Spezialist sowie persönliche Einprägung durch den späteren Träger |\n| **Aufwertung / Skalierung** | Itemstufe 1–40 möglich; Qualitätssteigerungen sind separate, wesentlich größere Entwicklungsstufen und erfolgen nicht automatisch |",
+  "sections": [
+    {
+      "level": 1,
+      "title": "Echopuls – Die zweite Haut des Taktbrechers",
+      "markdown": "> *„Eine Waffe beginnt dort, wo mein Körper endet. Diese hier endet nicht.“*\n\n**Echopuls** ist ein Paar körpernah gefertigter Kampfhandschuhe und die erste Entwicklungsstufe einer persönlichen Klassenwaffe des **Taktbrechers**. Sie beginnt auf **Qualitätsstufe Selten** und **Itemstufe 1** und ist ausdrücklich dafür geschaffen, den Träger über einen großen Teil oder die gesamte Kampagne zu begleiten, verbessert, umgearbeitet und schließlich zu einer Best-in-Slot-Klassenwaffe weiterentwickelt zu werden.\n\nEchopuls ist dabei keine zweite Exaltierte Waffe.\n\nDie Handschuhe sind **real, körperlich vorhanden, beschädigbar und aufwertbar**. Gerade deshalb stellen sie für einen Taktbrecher etwas dar, das nach der gewöhnlichen Klassenlehre eigentlich nicht funktionieren dürfte.\n\nSie sind die **absolute Ausnahme**.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 5094,
+        "line_end": 5107
+      }
+    },
+    {
+      "level": 2,
+      "title": "Waffenprofil",
+      "markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Name** | Echopuls – Die zweite Haut des Taktbrechers |\n| **Basiswaffenart** | Cestus |\n| **Waffenkategorie** | Faust- und Klauenwaffen |\n| **Gegenstandsart** | Einzigartige Klassenwaffe des Taktbrechers |\n| **Qualitätsstufe** | Selten |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja – ätherresonant und trägergebunden |\n| **Kernwürfel** | 1W6 |\n| **Führung** | Einhändig je Handschuh; das Paar zählt zusammen als **eine** Klassenwaffe |\n| **Reichweite** | Nah; für Trefferfolgen gelten weiterhin die Reichweitenregeln des Taktbrechers |\n| **Schadensart** | Schlag |\n| **Gewicht** | Mittel; durch die Resonanz körpernah verteilt |\n| **Angriffsattribut** | **Stärke** |\n| **Sekundäres Klassenattribut** | **Beweglichkeit** darf ausschließlich dort einfließen, wo eine Taktbrecher-Regel, Klassenfähigkeit oder spätere Echopuls-Entwicklung dies ausdrücklich vorsieht |\n| **Angriffswurf** | `W20 + Stärke-Modifikator + Stärke-Bonus + Taktpräzision` gegen das Ausweichergebnis des Ziels |\n| **Schadensformel** | Verwendet beim normalen Taktangriff die jeweils aktuelle **Körperangriff-Schadensformel des Taktbrechers**. Auf Taktbrecher-Stufe 1 entspricht dies `1W6 + 11 + Stärke-Modifikator + Stärke-Bonus` Schlagschaden. |\n| **Krit-Modifikation** | Keine; es gelten die normalen Krit-Regeln |\n| **Element** | – |\n| **Klassenressource** | Kampfspannung; Echopuls besitzt keinen eigenen Ressourcenpool |\n| **Besondere Eigenschaften** | Die zweite Haut; Taktabdruck; Paarbindung; Klassenattribut-Sperre; keine Schadensdoppelung |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Rettungswurf / SG** | – |\n| **Herstellungsanforderung** | Erfahrener Spezialist sowie persönliche Einprägung durch den späteren Träger |\n| **Aufwertung / Skalierung** | Itemstufe 1–40 möglich; Qualitätssteigerungen sind separate, wesentlich größere Entwicklungsstufen und erfolgen nicht automatisch |\n\n---",
+      "code_blocks": [],
+      "tables": [
+        {
+          "headers": [
+            "Regelpunkt",
+            "Angabe"
+          ],
+          "rows": [
+            [
+              "**Name**",
+              "Echopuls – Die zweite Haut des Taktbrechers"
+            ],
+            [
+              "**Basiswaffenart**",
+              "Cestus"
+            ],
+            [
+              "**Waffenkategorie**",
+              "Faust- und Klauenwaffen"
+            ],
+            [
+              "**Gegenstandsart**",
+              "Einzigartige Klassenwaffe des Taktbrechers"
+            ],
+            [
+              "**Qualitätsstufe**",
+              "Selten"
+            ],
+            [
+              "**Itemstufe**",
+              "1"
+            ],
+            [
+              "**Magisch**",
+              "Ja – ätherresonant und trägergebunden"
+            ],
+            [
+              "**Kernwürfel**",
+              "1W6"
+            ],
+            [
+              "**Führung**",
+              "Einhändig je Handschuh; das Paar zählt zusammen als **eine** Klassenwaffe"
+            ],
+            [
+              "**Reichweite**",
+              "Nah; für Trefferfolgen gelten weiterhin die Reichweitenregeln des Taktbrechers"
+            ],
+            [
+              "**Schadensart**",
+              "Schlag"
+            ],
+            [
+              "**Gewicht**",
+              "Mittel; durch die Resonanz körpernah verteilt"
+            ],
+            [
+              "**Angriffsattribut**",
+              "**Stärke**"
+            ],
+            [
+              "**Sekundäres Klassenattribut**",
+              "**Beweglichkeit** darf ausschließlich dort einfließen, wo eine Taktbrecher-Regel, Klassenfähigkeit oder spätere Echopuls-Entwicklung dies ausdrücklich vorsieht"
+            ],
+            [
+              "**Angriffswurf**",
+              "`W20 + Stärke-Modifikator + Stärke-Bonus + Taktpräzision` gegen das Ausweichergebnis des Ziels"
+            ],
+            [
+              "**Schadensformel**",
+              "Verwendet beim normalen Taktangriff die jeweils aktuelle **Körperangriff-Schadensformel des Taktbrechers**. Auf Taktbrecher-Stufe 1 entspricht dies `1W6 + 11 + Stärke-Modifikator + Stärke-Bonus` Schlagschaden."
+            ],
+            [
+              "**Krit-Modifikation**",
+              "Keine; es gelten die normalen Krit-Regeln"
+            ],
+            [
+              "**Element**",
+              "–"
+            ],
+            [
+              "**Klassenressource**",
+              "Kampfspannung; Echopuls besitzt keinen eigenen Ressourcenpool"
+            ],
+            [
+              "**Besondere Eigenschaften**",
+              "Die zweite Haut; Taktabdruck; Paarbindung; Klassenattribut-Sperre; keine Schadensdoppelung"
+            ],
+            [
+              "**Aktive Fähigkeit**",
+              "–"
+            ],
+            [
+              "**Aktionskosten**",
+              "–"
+            ],
+            [
+              "**Rettungswurf / SG**",
+              "–"
+            ],
+            [
+              "**Herstellungsanforderung**",
+              "Erfahrener Spezialist sowie persönliche Einprägung durch den späteren Träger"
+            ],
+            [
+              "**Aufwertung / Skalierung**",
+              "Itemstufe 1–40 möglich; Qualitätssteigerungen sind separate, wesentlich größere Entwicklungsstufen und erfolgen nicht automatisch"
+            ]
+          ],
+          "raw_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Name** | Echopuls – Die zweite Haut des Taktbrechers |\n| **Basiswaffenart** | Cestus |\n| **Waffenkategorie** | Faust- und Klauenwaffen |\n| **Gegenstandsart** | Einzigartige Klassenwaffe des Taktbrechers |\n| **Qualitätsstufe** | Selten |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja – ätherresonant und trägergebunden |\n| **Kernwürfel** | 1W6 |\n| **Führung** | Einhändig je Handschuh; das Paar zählt zusammen als **eine** Klassenwaffe |\n| **Reichweite** | Nah; für Trefferfolgen gelten weiterhin die Reichweitenregeln des Taktbrechers |\n| **Schadensart** | Schlag |\n| **Gewicht** | Mittel; durch die Resonanz körpernah verteilt |\n| **Angriffsattribut** | **Stärke** |\n| **Sekundäres Klassenattribut** | **Beweglichkeit** darf ausschließlich dort einfließen, wo eine Taktbrecher-Regel, Klassenfähigkeit oder spätere Echopuls-Entwicklung dies ausdrücklich vorsieht |\n| **Angriffswurf** | `W20 + Stärke-Modifikator + Stärke-Bonus + Taktpräzision` gegen das Ausweichergebnis des Ziels |\n| **Schadensformel** | Verwendet beim normalen Taktangriff die jeweils aktuelle **Körperangriff-Schadensformel des Taktbrechers**. Auf Taktbrecher-Stufe 1 entspricht dies `1W6 + 11 + Stärke-Modifikator + Stärke-Bonus` Schlagschaden. |\n| **Krit-Modifikation** | Keine; es gelten die normalen Krit-Regeln |\n| **Element** | – |\n| **Klassenressource** | Kampfspannung; Echopuls besitzt keinen eigenen Ressourcenpool |\n| **Besondere Eigenschaften** | Die zweite Haut; Taktabdruck; Paarbindung; Klassenattribut-Sperre; keine Schadensdoppelung |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Rettungswurf / SG** | – |\n| **Herstellungsanforderung** | Erfahrener Spezialist sowie persönliche Einprägung durch den späteren Träger |\n| **Aufwertung / Skalierung** | Itemstufe 1–40 möglich; Qualitätssteigerungen sind separate, wesentlich größere Entwicklungsstufen und erfolgen nicht automatisch |",
+          "source": {
+            "line_start": 5110,
+            "line_end": 5136
+          }
+        }
+      ],
+      "source": {
+        "line_start": 5108,
+        "line_end": 5139
+      }
+    },
+    {
+      "level": 1,
+      "title": "Lore – Warum ein Taktbrecher diese Waffe überhaupt führen kann",
+      "markdown": "Taktbrecher lehnen Waffen nicht ab, weil Metall, Holz oder geschmiedete Klingen ihrer Lehre grundsätzlich widersprechen würden.\n\nIhr Problem beginnt an einer anderen Stelle.\n\nEin Taktbrecher kennt den eigenen Körper bis in Bewegungen hinein, die andere Kämpfer kaum bewusst wahrnehmen. Er weiß, wie weit eine Faust reicht, wie viel Widerstand ein Ellenbogen nach einem Treffer zurückgibt, wann die Hüfte eine Drehung abbremsen muss und an welchem Punkt ein Schritt noch Teil derselben Bewegung ist.\n\nEine gewöhnliche Waffe verändert all diese Antworten.\n\nEine Klinge verlängert den Arm.\n\nEin Hammer verschiebt den Schwerpunkt.\n\nEine Axt zieht eine bereits begonnene Bewegung weiter.\n\nSelbst ein einfacher Stock besitzt einen Rücklauf, der nicht mit dem des eigenen Unterarms übereinstimmt.\n\nFür einen Taktbrecher ist eine gewöhnliche Waffe deshalb kein Werkzeug, das lediglich in der Hand gehalten wird. Sie ist ein **fremder Körper**, der in eine Bewegungslehre gezwungen werden müsste, die gerade darauf beruht, dass zwischen Gedanke, Muskel, Treffer und Fortsetzung kein fremdes Gewicht liegt.\n\nEchopuls wurde nicht entwickelt, um dieses Problem durch noch mehr Training zu überwinden.\n\nDie Handschuhe wurden entwickelt, damit das Problem **gar nicht erst entsteht**.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 5140,
+        "line_end": 5163
+      }
+    },
+    {
+      "level": 2,
+      "title": "Die zweite Haut",
+      "markdown": "Echopuls endet dort, wo auch die Hand des Trägers endet.\n\nDie Waffe verlängert die Reichweite nicht. Sie besitzt keinen frei ausschwingenden Kopf, keine Klinge, die dem Arm vorausläuft, und keinen Schwerpunkt, der außerhalb der natürlichen Handlinie liegt. Ihre Verstärkungen ziehen sich eng über Finger, Knöchel, Handrücken, Handgelenk und einen kurzen Teil des Unterarms.\n\nDie äußeren Lamellen sind nicht starr miteinander verbunden. Unter ihnen liegt eine flexible, ätherleitende Schicht, die erst durch die persönliche Einprägung des Taktbrechers vollständig aktiv wird.\n\nWährend dieser Einprägung werden die Handschuhe nicht einfach angelegt und verzaubert.\n\nDer spätere Träger trainiert mit ihnen.\n\nSchlag für Schlag.\n\nSchritt für Schritt.\n\nTreffer für Treffer.\n\nDie wiederholten Bewegungen führen Äther durch dieselben Bahnen, die der Taktbrecher ohnehin für seine Kampfspannung nutzt. Mit der Zeit reagiert das innere Geflecht nicht mehr nur auf die grobe Bewegung der Hand, sondern auf Druck, Muskelspannung, Richtungswechsel und den Moment des Auftreffens.\n\nDadurch verteilt Echopuls sein Gewicht nicht wie ein gewöhnlicher Metallhandschuh.\n\nBeim Ausholen liegt die Verstärkung eng in der natürlichen Bewegungslinie. Beim Auftreffen verhärtet sich die Resonanz für einen Augenblick entlang der getroffenen Fläche. Beim Zurückziehen gibt sie den Impuls wieder in jene Richtung frei, in der der Körper ihn ohnehin auffangen würde.\n\nDer Taktbrecher muss deshalb keinen fremden Rücklauf lernen.\n\nEr spürt keinen zusätzlichen Hebel, den er neu berechnen müsste.\n\nEr trägt keine Waffe **in** der Hand.\n\nEr trägt eine Waffe **als** Hand.\n\nGenau darin liegt der Unterschied zur Exaltierten Waffe.\n\nDie Exaltierte Waffe entsteht unmittelbar aus dem eigenen Äther und fühlt sich deshalb von ihrem ersten Augenblick an vertraut an. Echopuls dagegen ist ein realer Gegenstand. Er muss gefertigt, angepasst, repariert und weiterentwickelt werden.\n\nEr kann verloren gehen.\n\nEr kann beschädigt werden.\n\nEr kann gestohlen werden.\n\nDoch solange er auf einen bestimmten Taktbrecher eingetaktet ist, verhält er sich in dessen Bewegungsablauf nicht wie eine gewöhnliche Waffe.\n\nEr wird zu einem gespeicherten Abdruck seiner eigenen Körpermechanik.\n\nDarum akzeptiert die Klasse Echopuls nicht als Ausnahme, weil der Träger plötzlich gelernt hätte, Waffen zu führen.\n\nSie ist die Ausnahme, weil der Träger **niemals lernen muss, sie wie eine fremde Waffe zu führen**.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 5164,
+        "line_end": 5215
+      }
+    },
+    {
+      "level": 1,
+      "title": "Besondere Eigenschaften",
+      "markdown": null,
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 5216,
+        "line_end": 5217
+      }
+    },
+    {
+      "level": 2,
+      "title": "Die zweite Haut – Absolute Klassenwaffen-Ausnahme",
+      "markdown": "Echopuls zählt für seinen gebundenen Taktbrecher **nicht** als gewöhnliche, nicht Exaltierte Waffe im Sinne des Waffenmalus der Klasse.\n\nFür den gebundenen Taktbrecher gilt daher:\n\n- der normale Malus von **−6 auf Angriffe mit gewöhnlichen Waffen** wird nicht angewendet;\n- Angriffe mit Echopuls zählen als **Taktangriffe**;\n- sie dürfen eine **Trefferfolge beginnen und fortsetzen**, sofern alle übrigen Klassenbedingungen erfüllt sind;\n- für Taktbrecher-Fähigkeiten zählt Echopuls als **Körperangriff**, wenn die Fähigkeit zwischen Körperangriff und Exaltierter Waffe unterscheidet;\n- **Taktpräzision** gilt vollständig;\n- Kampfspannung kann durch Treffer mit Echopuls nach den normalen Klassenregeln erzeugt und verwendet werden;\n- alle Trefferfolge-, Fortsetzungs-, Abschluss- und Taktbruchregeln bleiben unverändert bestehen.\n\n> [!important] Keine Exaltierte Waffe\n> Echopuls wird durch diese Regel **nicht** zur Exaltierten Waffe. Er erhält keine Manifestationsmuster, keine automatische Waffenstufe der Exaltierten Waffe und keine ihrer besonderen Formregeln. Echopuls ist eine eigenständige, reale Klassenwaffe.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 5218,
+        "line_end": 5236
+      }
+    },
+    {
+      "level": 2,
+      "title": "Keine Schadensdoppelung",
+      "markdown": "Echopuls verstärkt die Körperkampfidentität des Taktbrechers, erzeugt jedoch keinen kostenlosen zweiten Schadensblock.\n\nVerwendet eine Taktbrecher-Fähigkeit eine eigene Schadensberechnung, gilt:\n\n> **Die Berechnung der Klassenfähigkeit ersetzt den normalen Echopuls-/Körperangriffsschaden vollständig.**\n\nDer Kernwürfel von Echopuls wird in diesem Fall **nicht zusätzlich** addiert.\n\nEbenso werden Stärke-Modifikator, Stärke-Bonus oder andere Attributsanteile nicht ein zweites Mal aus dem Waffenprofil hinzugefügt, wenn die Klassenfähigkeit sie bereits enthält.\n\nDadurch bleibt Echopuls in die vorhandenen Klassenformeln eingebunden, statt auf jede Fähigkeit einen zusätzlichen Waffenangriff zu stapeln.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 5237,
+        "line_end": 5252
+      }
+    },
+    {
+      "level": 2,
+      "title": "Taktabdruck",
+      "markdown": "Der erste erfolgreiche Taktangriff mit Echopuls in deinem eigenen Zug hinterlässt bis zum Ende der laufenden Trefferfolge einen **Taktabdruck**.\n\nDer Taktabdruck speichert für einen Augenblick die Rückmeldung des bestätigten Treffers: Widerstand, Winkel, Distanz und die Bewegung, mit der das Ziel auf den Kontakt reagiert hat.\n\nDie **unmittelbar nächste Fortsetzung derselben Trefferfolge** erhält auf ihren Angriffswurf den **Resonanzbonus** von Echopuls.\n\n```text\nResonanzbonus\n=\n1 + ⌊(Itemstufe − 1) / 20⌋\n```\n\nDamit gilt:\n\n| Itemstufe | Resonanzbonus |\n|---:|---:|\n| 1–20 | +1 |\n| 21–40 | +2 |\n\nAuf der aktuellen **Itemstufe 1** beträgt der Bonus daher **+1**.",
+      "code_blocks": [
+        "Resonanzbonus\n=\n1 + ⌊(Itemstufe − 1) / 20⌋"
+      ],
+      "tables": [
+        {
+          "headers": [
+            "Itemstufe",
+            "Resonanzbonus"
+          ],
+          "rows": [
+            [
+              "1–20",
+              "+1"
+            ],
+            [
+              "21–40",
+              "+2"
+            ]
+          ],
+          "raw_markdown": "| Itemstufe | Resonanzbonus |\n|---:|---:|\n| 1–20 | +1 |\n| 21–40 | +2 |",
+          "source": {
+            "line_start": 5269,
+            "line_end": 5272
+          }
+        }
+      ],
+      "source": {
+        "line_start": 5253,
+        "line_end": 5275
+      }
+    },
+    {
+      "level": 3,
+      "title": "Regeln des Taktabdrucks",
+      "markdown": "- kann höchstens **einmal pro eigenem Zug** entstehen;\n- gilt nur für die **unmittelbar nächste Fortsetzung** derselben Trefferfolge;\n- wird verbraucht, sobald der Angriffswurf dieser Fortsetzung ausgeführt wurde;\n- verfällt, wenn die Trefferfolge endet;\n- erzeugt keine Kampfspannung;\n- erhöht nicht das Fortsetzungslimit;\n- erzeugt keine zusätzliche Aktion und keinen zusätzlichen Angriff;\n- verhindert bei einem Fehlschlag keinen Taktbruch;\n- mehrere Taktabdrücke können nicht gestapelt oder gespeichert werden.\n\nDer Effekt belohnt damit genau jene Spielweise, auf der der Taktbrecher beruht:\n\n**erst treffen, dann entscheiden, dann fortsetzen.**\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 5276,
+        "line_end": 5293
+      }
+    },
+    {
+      "level": 2,
+      "title": "Paarbindung",
+      "markdown": "Echopuls besteht aus zwei aufeinander abgestimmten Handschuhen, gilt regeltechnisch jedoch als **ein einzelner Gegenstand und eine einzelne Klassenwaffe**.\n\nDas Paar erzeugt daher niemals automatisch:\n\n- einen zweiten Angriff,\n- eine zusätzliche Waffenaktion,\n- einen Nebenhandangriff,\n- zusätzlichen Kernwürfelschaden,\n- eine zweite Instanz von Taktabdruck.\n\nEin Taktbrecher kann mit linker oder rechter Hand angreifen und innerhalb einer Trefferfolge zwischen beiden Händen wechseln. Dieser Wechsel besitzt allein keine zusätzliche Regelwirkung.\n\nDie besonderen Klassenwaffen-Eigenschaften funktionieren nur, solange **beide Handschuhe getragen** werden. Wird einer abgelegt, zerstört oder vom Träger getrennt, bleibt der andere als hochwertiger Kampfhandschuh nutzbar, verliert jedoch **Die zweite Haut** und **Taktabdruck**, bis das Paar wieder vollständig getragen wird.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 5294,
+        "line_end": 5311
+      }
+    },
+    {
+      "level": 2,
+      "title": "Klassenattribut-Sperre",
+      "markdown": "Echopuls ist dauerhaft an die Attributslogik des Taktbrechers gebunden.\n\nFür diese Waffe und alle späteren Entwicklungsstufen gilt:\n\n- **Stärke** bleibt das primäre Angriffs- und Schadensattribut;\n- **Beweglichkeit** darf als sekundäres Klassenattribut nur über ausdrücklich definierte Taktbrecher- oder Echopuls-Regeln einfließen;\n- es wird kein fremdes Waffenattribut verwendet, nur weil eine spätere Bauform oder Verbesserung normalerweise ein anderes Attribut nahelegen würde;\n- sollte eine spätere Entwicklungsstufe einen Rettungswurf erzeugen, verwendet sie grundsätzlich den **Takt-SG des Taktbrechers**, sofern die konkrete Entwicklungsstufe nichts enger Definiertes festlegt;\n- Intelligenz oder andere nicht zur offensiven Klassenmechanik gehörende Attribute ersetzen niemals Stärke oder Beweglichkeit für Echopuls.\n\nDamit bleibt die Waffe auch nach vielen Aufwertungen eine **Taktbrecher-Waffe** und wird nicht schleichend zu einem generischen Ausrüstungsstück.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 5312,
+        "line_end": 5327
+      }
+    },
+    {
+      "level": 1,
+      "title": "Verhältnis zur Exaltierten Waffe",
+      "markdown": "Ein Taktbrecher kann sowohl Echopuls als auch seine Exaltierte Waffe besitzen.\n\nBeide erfüllen jedoch unterschiedliche Funktionen.\n\n| Echopuls | Exaltierte Waffe |\n|---|---|\n| Physischer, realer Gegenstand | Äther-/Esper-Manifestation |\n| Kann beschädigt oder verloren werden | Kann manifestiert und aufgelöst werden |\n| Wird über Itemstufen und spätere Qualitätssteigerungen entwickelt | Skaliert nach den Klassenregeln der Exaltierten Waffe |\n| Bleibt körpernaher Schlagwaffenstil | Kann verschiedene Waffenformen abbilden |\n| Zählt für Klassenfähigkeiten als Körperangriff | Zählt als Exaltierte Waffe |\n\nFür denselben Angriff muss sich der Taktbrecher entscheiden, welche der beiden Waffenformen verwendet wird.\n\nEin einzelner Angriff kann niemals gleichzeitig den Schaden oder die besonderen Eigenschaften von **Echopuls und Exaltierter Waffe** addieren.\n\nWird die Exaltierte Waffe manifestiert, verschwinden die getragenen Echopuls-Handschuhe nicht automatisch. Ihre besonderen Effekte gelten jedoch nur für Angriffe, die tatsächlich mit Echopuls beziehungsweise als durch Echopuls geführte Körperangriffe ausgeführt werden.\n\n---",
+      "code_blocks": [],
+      "tables": [
+        {
+          "headers": [
+            "Echopuls",
+            "Exaltierte Waffe"
+          ],
+          "rows": [
+            [
+              "Physischer, realer Gegenstand",
+              "Äther-/Esper-Manifestation"
+            ],
+            [
+              "Kann beschädigt oder verloren werden",
+              "Kann manifestiert und aufgelöst werden"
+            ],
+            [
+              "Wird über Itemstufen und spätere Qualitätssteigerungen entwickelt",
+              "Skaliert nach den Klassenregeln der Exaltierten Waffe"
+            ],
+            [
+              "Bleibt körpernaher Schlagwaffenstil",
+              "Kann verschiedene Waffenformen abbilden"
+            ],
+            [
+              "Zählt für Klassenfähigkeiten als Körperangriff",
+              "Zählt als Exaltierte Waffe"
+            ]
+          ],
+          "raw_markdown": "| Echopuls | Exaltierte Waffe |\n|---|---|\n| Physischer, realer Gegenstand | Äther-/Esper-Manifestation |\n| Kann beschädigt oder verloren werden | Kann manifestiert und aufgelöst werden |\n| Wird über Itemstufen und spätere Qualitätssteigerungen entwickelt | Skaliert nach den Klassenregeln der Exaltierten Waffe |\n| Bleibt körpernaher Schlagwaffenstil | Kann verschiedene Waffenformen abbilden |\n| Zählt für Klassenfähigkeiten als Körperangriff | Zählt als Exaltierte Waffe |",
+          "source": {
+            "line_start": 5334,
+            "line_end": 5340
+          }
+        }
+      ],
+      "source": {
+        "line_start": 5328,
+        "line_end": 5349
+      }
+    },
+    {
+      "level": 1,
+      "title": "Bindung an den Träger",
+      "markdown": "Echopuls kann theoretisch von jedem Wesen angelegt werden.\n\nDie eigentliche Waffe erwacht dadurch jedoch nicht.\n\nEin nicht gebundener Träger erhält keine Taktbrecher-Ausnahme und keinen Taktabdruck. Für ihn verhält sich das Paar lediglich wie hochwertige, körpernah gefertigte Cestus/Kampfhandschuhe nach den normalen Waffenregeln.\n\nDie Resonanzbindung kann nicht durch bloßes Berühren übertragen werden.\n\nSie entsteht aus wiederholter Bewegung und dem Äther des Trägers. Eine vollständige Neubindung an einen anderen Taktbrecher ist deshalb keine gewöhnliche Weitergabe des Gegenstands, sondern würde eine bewusste spielweltliche Neuanpassung und Entscheidung der Spielleitung erfordern.\n\nFür die vorgesehene Klassenwaffe gilt grundsätzlich:\n\n> **Echopuls gehört zu seinem Taktbrecher, solange dessen Entwicklung nicht bewusst Teil der Geschichte wird.**\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 5350,
+        "line_end": 5367
+      }
+    },
+    {
+      "level": 1,
+      "title": "Herstellung und erste Einprägung",
+      "markdown": "Ein gewöhnlicher Schmied kann stabile Kampfhandschuhe fertigen.\n\nEchopuls verlangt mehr.\n\nDie Grundkonstruktion muss gleichzeitig widerstandsfähig und beweglich sein. Knöchel und Handrücken benötigen Verstärkung, ohne die Finger zu versteifen. Das Handgelenk muss geschützt werden, ohne den Übergang zwischen Faust, Unterarm und Ellenbogen zu unterbrechen. Jede starre Platte wird deshalb durch kleine, bewegliche Segmente und flexible Zwischenlagen mit den angrenzenden Teilen verbunden.\n\nNoch wichtiger ist die Innenschicht.\n\nSie wird nicht auf maximale Härte ausgelegt, sondern auf **Resonanz**.\n\nDer spätere Träger muss bereits während der letzten Anpassung anwesend sein. Passform, Druckpunkte und Gelenkwinkel werden nicht nur im Ruhezustand kontrolliert, sondern während echter Taktbrecher-Bewegungen.\n\nNach der handwerklichen Fertigstellung folgt die **Einprägung**.\n\nDer Taktbrecher trägt Echopuls während wiederholter Trainingsfolgen. Dabei wird kein einzelner Zauber gesprochen und kein fremder Geist in die Handschuhe gebunden. Stattdessen sättigt sich das Resonanzgeflecht schrittweise mit dem Äther, den der Kämpfer ohnehin durch seine Bewegungen und seine Kampfspannung führt.\n\nDer Prozess ist abgeschlossen, wenn die Handschuhe nicht mehr gegen die Bewegung arbeiten.\n\nViele Taktbrecher beschreiben diesen Augenblick ähnlich.\n\nNicht als hätte sich die Waffe verändert.\n\nSondern als hätten die Hände aufgehört, sie zu bemerken.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 5368,
+        "line_end": 5395
+      }
+    },
+    {
+      "level": 1,
+      "title": "Erscheinungsbild",
+      "markdown": "Echopuls wirkt auf den ersten Blick weniger spektakulär als viele seltene Waffen.\n\nDas Paar besteht aus eng anliegenden Kampfhandschuhen, deren Grundform an schwere Trainingswicklungen und einen hochwertigen Cestus erinnert. Finger und Handflächen bleiben ausreichend beweglich, um zu greifen, zu klettern, Gegenstände zu halten oder einen Gegner körpernah zu kontrollieren.\n\nÜber den Knöcheln liegen flache, überlappende Verstärkungen. Sie sind deutlich stabiler als gewöhnliches Leder, stehen jedoch nicht wie die massiven Platten eines schweren Panzerhandschuhs hervor. Schmale Segmente ziehen sich über den Handrücken bis zum Handgelenk und enden in einer kurzen Unterarmmanschette.\n\nIm Ruhezustand ist die ätherische Resonanz kaum sichtbar.\n\nErst wenn der Taktbrecher Spannung aufbaut, erscheinen zwischen einzelnen Segmenten feine Lichtlinien. Sie leuchten nicht dauerhaft und bilden kein festes Element.\n\nBei einem bestätigten Treffer kann für einen Augenblick ein kurzer Impuls über den getroffenen Handschuh laufen.\n\nDer zweite Handschuh antwortet mit einem schwächeren Nachhall.\n\nDieser Nachhall ist der sichtbare Ausdruck des **Taktabdrucks**.\n\nWer den Taktbrecher nicht kennt, könnte die Erscheinung für einen einfachen magischen Effekt halten.\n\nWer seine Kampfkunst versteht, erkennt darin etwas anderes.\n\nDer erste Treffer ist vorbei.\n\nAber die Waffe hat bereits verstanden, wie der zweite folgen muss.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 5396,
+        "line_end": 5423
+      }
+    },
+    {
+      "level": 1,
+      "title": "Entwicklung der Klassenwaffe",
+      "markdown": "Echopuls ist nicht als austauschbarer Fundgegenstand gedacht.\n\nDie Waffe soll zusammen mit ihrem Taktbrecher wachsen.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 5424,
+        "line_end": 5429
+      }
+    },
+    {
+      "level": 2,
+      "title": "Itemstufen",
+      "markdown": "Die Itemstufe kann grundsätzlich von **1 bis 40** erhöht werden.\n\nEine Aufwertung kann unter anderem erfordern:\n\n- passende Metalle, Leder, Faserstoffe oder andere widerstandsfähige Materialien;\n- Ersatz oder Verbesserung der Resonanzschichten;\n- spezialisierte Werkzeuge und Handwerker;\n- Trainingszeit des gebundenen Taktbrechers;\n- bei hohen Itemstufen besondere Komponenten oder Ereignisse aus der Kampagne.\n\nEine Itemstufenaufwertung verändert die Identität der Waffe nicht.\n\nEchopuls bleibt Echopuls.\n\nDer aktuelle seltene Effekt **Taktabdruck** verwendet seine Itemstufe bereits für den Resonanzbonus. Weitere skalierende Werte können in späteren, ausdrücklich ausgearbeiteten Entwicklungsstufen ergänzt werden.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 5430,
+        "line_end": 5447
+      }
+    },
+    {
+      "level": 2,
+      "title": "Qualitätssteigerungen",
+      "markdown": "Eine Erhöhung der Qualitätsstufe geschieht **nicht automatisch** durch Itemstufen.\n\nDer vorgesehene langfristige Entwicklungspfad lautet:\n\n```text\nSelten\n↓\nEpisch\n↓\nLegendär\n↓\nMythisch\n```",
+      "code_blocks": [
+        "Selten\n↓\nEpisch\n↓\nLegendär\n↓\nMythisch"
+      ],
+      "tables": [],
+      "source": {
+        "line_start": 5448,
+        "line_end": 5463
+      }
+    },
+    {
+      "level": 3,
+      "title": "Namensprogression",
+      "markdown": "Mit jeder Qualitätssteigerung entwickelt sich nicht nur die Macht von Echopuls, sondern auch der Name, unter dem die Waffe in ihrer jeweiligen Entwicklungsstufe bekannt ist. **Echopuls** bleibt dabei immer der Kernname. Die späteren Beinamen beschreiben, wie tief die Handschuhe mit der Kampfkunst, dem Rhythmus und der persönlichen Entwicklung ihres Taktbrechers verschmolzen sind.\n\n| Qualitätsstufe | Name der Klassenwaffe | Bedeutung |\n|---|---|---|\n| **Selten** | **Echopuls** | Die Waffe beginnt, den Rhythmus ihres Trägers aufzunehmen und wie eine zweite Haut auf seine Bewegungen zu antworten. |\n| **Episch** | **Echopuls – Die antwortende Faust** | Echopuls reagiert nicht länger nur auf Bewegung, sondern auf bestätigte Treffer, Übergänge und den entstehenden Kampfrhythmus. |\n| **Legendär** | **Echopuls – Der gebrochene Rhythmus** | Träger und Waffe sind so eng verbunden, dass der eigene Takt bewusst gegen den Rhythmus des Gegners gesetzt und im entscheidenden Augenblick gebrochen wird. |\n| **Mythisch** | **Echopuls – Wenn kein zweiter Herzschlag bleibt** | Die vollendete Form. Der erste bestätigte Augenblick trägt bereits die Möglichkeit des gesamten Abschlusses in sich – ein Sinnbild für die höchste Taktbrecher-Lehre, in der dem Gegner nach der endgültigen Öffnung kein zweiter Herzschlag zur Neuordnung bleibt. |\n\n> [!important] Kernidentität der Waffe\n> Die Namensänderung bedeutet **nicht**, dass Echopuls durch einen neuen Gegenstand ersetzt wird. Es bleiben dieselben Kampfhandschuhe, dieselbe Bindung und dieselbe Geschichte. Der neue Name wird verdient, sobald die entsprechende Qualitätsstufe tatsächlich erreicht und ihre Entwicklung innerhalb der Kampagne vollzogen wurde.\n\nJede Qualitätssteigerung soll einen echten Entwicklungsschritt der bestehenden Waffe darstellen und kann neue Materialien, neue Resonanztechniken, besondere Ereignisse, persönliche Meisterschaft oder eine tiefere Verbindung zwischen Taktbrecher und Echopuls verlangen.\n\nDie Waffe wird dabei nicht ersetzt.\n\nSie wird weitergeschrieben.\n\nKratzer, reparierte Nähte, ausgetauschte Segmente und Spuren früherer Kämpfe dürfen erhalten bleiben. Eine spätere mythische Form soll deshalb nicht wie ein vollständig anderes Artefakt wirken, sondern wie die endgültige Gestalt derselben Handschuhe, die auf Itemstufe 1 erstmals zur zweiten Haut ihres Trägers wurden.\n\n---",
+      "code_blocks": [],
+      "tables": [
+        {
+          "headers": [
+            "Qualitätsstufe",
+            "Name der Klassenwaffe",
+            "Bedeutung"
+          ],
+          "rows": [
+            [
+              "**Selten**",
+              "**Echopuls**",
+              "Die Waffe beginnt, den Rhythmus ihres Trägers aufzunehmen und wie eine zweite Haut auf seine Bewegungen zu antworten."
+            ],
+            [
+              "**Episch**",
+              "**Echopuls – Die antwortende Faust**",
+              "Echopuls reagiert nicht länger nur auf Bewegung, sondern auf bestätigte Treffer, Übergänge und den entstehenden Kampfrhythmus."
+            ],
+            [
+              "**Legendär**",
+              "**Echopuls – Der gebrochene Rhythmus**",
+              "Träger und Waffe sind so eng verbunden, dass der eigene Takt bewusst gegen den Rhythmus des Gegners gesetzt und im entscheidenden Augenblick gebrochen wird."
+            ],
+            [
+              "**Mythisch**",
+              "**Echopuls – Wenn kein zweiter Herzschlag bleibt**",
+              "Die vollendete Form. Der erste bestätigte Augenblick trägt bereits die Möglichkeit des gesamten Abschlusses in sich – ein Sinnbild für die höchste Taktbrecher-Lehre, in der dem Gegner nach der endgültigen Öffnung kein zweiter Herzschlag zur Neuordnung bleibt."
+            ]
+          ],
+          "raw_markdown": "| Qualitätsstufe | Name der Klassenwaffe | Bedeutung |\n|---|---|---|\n| **Selten** | **Echopuls** | Die Waffe beginnt, den Rhythmus ihres Trägers aufzunehmen und wie eine zweite Haut auf seine Bewegungen zu antworten. |\n| **Episch** | **Echopuls – Die antwortende Faust** | Echopuls reagiert nicht länger nur auf Bewegung, sondern auf bestätigte Treffer, Übergänge und den entstehenden Kampfrhythmus. |\n| **Legendär** | **Echopuls – Der gebrochene Rhythmus** | Träger und Waffe sind so eng verbunden, dass der eigene Takt bewusst gegen den Rhythmus des Gegners gesetzt und im entscheidenden Augenblick gebrochen wird. |\n| **Mythisch** | **Echopuls – Wenn kein zweiter Herzschlag bleibt** | Die vollendete Form. Der erste bestätigte Augenblick trägt bereits die Möglichkeit des gesamten Abschlusses in sich – ein Sinnbild für die höchste Taktbrecher-Lehre, in der dem Gegner nach der endgültigen Öffnung kein zweiter Herzschlag zur Neuordnung bleibt. |",
+          "source": {
+            "line_start": 5468,
+            "line_end": 5473
+          }
+        }
+      ],
+      "source": {
+        "line_start": 5464,
+        "line_end": 5487
+      }
+    },
+    {
+      "level": 1,
+      "title": "Kompakte Regelzusammenfassung",
+      "markdown": "> [!summary] Echopuls – Selten, Itemstufe 1\n> - Klassenwaffe ausschließlich für den **Taktbrecher**.\n> - Basis: **Cestus**, 1W6, Nah, Schlag, Mittel.\n> - Angriff immer über **Stärke + Taktpräzision**.\n> - Normaler Schaden verwendet die aktuelle **Körperangriff-Schadensformel** des Taktbrechers.\n> - Ignoriert für den gebundenen Taktbrecher den **−6-Malus gewöhnlicher Waffen**.\n> - Angriffe zählen als **Taktangriffe/Körperangriffe** und dürfen Trefferfolgen beginnen oder fortsetzen.\n> - Klassenfähigkeiten ersetzen den normalen Waffenschaden; **keine Schadensdoppelung**.\n> - Erster erfolgreicher Taktangriff pro eigenem Zug erzeugt **Taktabdruck**.\n> - Die unmittelbar nächste Fortsetzung erhält auf Itemstufe 1 **+1 auf den Angriffswurf**.\n> - Das Paar ist **eine** Waffe und erzeugt keinen kostenlosen zweiten Angriff.\n> - Echopuls ist **nicht** die Exaltierte Waffe und kann nicht mit deren Schaden im selben Angriff kombiniert werden.\n> - Entwicklungsziel: Itemstufe 1–40 und langfristig **Echopuls → Echopuls – Die antwortende Faust → Echopuls – Der gebrochene Rhythmus → Echopuls – Wenn kein zweiter Herzschlag bleibt**.\n\n---\n\n> *Der Taktbrecher trägt keine Waffe, um seine Faust zu ersetzen.*\n>\n> *Er trägt Echopuls, damit zwischen Faust und Waffe irgendwann kein Unterschied mehr bleibt.*",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 5488,
+        "line_end": 5508
+      }
+    }
+  ],
+  "raw_markdown": "# Echopuls – Die zweite Haut des Taktbrechers\n\n> *„Eine Waffe beginnt dort, wo mein Körper endet. Diese hier endet nicht.“*\n\n**Echopuls** ist ein Paar körpernah gefertigter Kampfhandschuhe und die erste Entwicklungsstufe einer persönlichen Klassenwaffe des **Taktbrechers**. Sie beginnt auf **Qualitätsstufe Selten** und **Itemstufe 1** und ist ausdrücklich dafür geschaffen, den Träger über einen großen Teil oder die gesamte Kampagne zu begleiten, verbessert, umgearbeitet und schließlich zu einer Best-in-Slot-Klassenwaffe weiterentwickelt zu werden.\n\nEchopuls ist dabei keine zweite Exaltierte Waffe.\n\nDie Handschuhe sind **real, körperlich vorhanden, beschädigbar und aufwertbar**. Gerade deshalb stellen sie für einen Taktbrecher etwas dar, das nach der gewöhnlichen Klassenlehre eigentlich nicht funktionieren dürfte.\n\nSie sind die **absolute Ausnahme**.\n\n---\n\n## Waffenprofil\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Name** | Echopuls – Die zweite Haut des Taktbrechers |\n| **Basiswaffenart** | Cestus |\n| **Waffenkategorie** | Faust- und Klauenwaffen |\n| **Gegenstandsart** | Einzigartige Klassenwaffe des Taktbrechers |\n| **Qualitätsstufe** | Selten |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja – ätherresonant und trägergebunden |\n| **Kernwürfel** | 1W6 |\n| **Führung** | Einhändig je Handschuh; das Paar zählt zusammen als **eine** Klassenwaffe |\n| **Reichweite** | Nah; für Trefferfolgen gelten weiterhin die Reichweitenregeln des Taktbrechers |\n| **Schadensart** | Schlag |\n| **Gewicht** | Mittel; durch die Resonanz körpernah verteilt |\n| **Angriffsattribut** | **Stärke** |\n| **Sekundäres Klassenattribut** | **Beweglichkeit** darf ausschließlich dort einfließen, wo eine Taktbrecher-Regel, Klassenfähigkeit oder spätere Echopuls-Entwicklung dies ausdrücklich vorsieht |\n| **Angriffswurf** | `W20 + Stärke-Modifikator + Stärke-Bonus + Taktpräzision` gegen das Ausweichergebnis des Ziels |\n| **Schadensformel** | Verwendet beim normalen Taktangriff die jeweils aktuelle **Körperangriff-Schadensformel des Taktbrechers**. Auf Taktbrecher-Stufe 1 entspricht dies `1W6 + 11 + Stärke-Modifikator + Stärke-Bonus` Schlagschaden. |\n| **Krit-Modifikation** | Keine; es gelten die normalen Krit-Regeln |\n| **Element** | – |\n| **Klassenressource** | Kampfspannung; Echopuls besitzt keinen eigenen Ressourcenpool |\n| **Besondere Eigenschaften** | Die zweite Haut; Taktabdruck; Paarbindung; Klassenattribut-Sperre; keine Schadensdoppelung |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Rettungswurf / SG** | – |\n| **Herstellungsanforderung** | Erfahrener Spezialist sowie persönliche Einprägung durch den späteren Träger |\n| **Aufwertung / Skalierung** | Itemstufe 1–40 möglich; Qualitätssteigerungen sind separate, wesentlich größere Entwicklungsstufen und erfolgen nicht automatisch |\n\n---\n\n# Lore – Warum ein Taktbrecher diese Waffe überhaupt führen kann\n\nTaktbrecher lehnen Waffen nicht ab, weil Metall, Holz oder geschmiedete Klingen ihrer Lehre grundsätzlich widersprechen würden.\n\nIhr Problem beginnt an einer anderen Stelle.\n\nEin Taktbrecher kennt den eigenen Körper bis in Bewegungen hinein, die andere Kämpfer kaum bewusst wahrnehmen. Er weiß, wie weit eine Faust reicht, wie viel Widerstand ein Ellenbogen nach einem Treffer zurückgibt, wann die Hüfte eine Drehung abbremsen muss und an welchem Punkt ein Schritt noch Teil derselben Bewegung ist.\n\nEine gewöhnliche Waffe verändert all diese Antworten.\n\nEine Klinge verlängert den Arm.\n\nEin Hammer verschiebt den Schwerpunkt.\n\nEine Axt zieht eine bereits begonnene Bewegung weiter.\n\nSelbst ein einfacher Stock besitzt einen Rücklauf, der nicht mit dem des eigenen Unterarms übereinstimmt.\n\nFür einen Taktbrecher ist eine gewöhnliche Waffe deshalb kein Werkzeug, das lediglich in der Hand gehalten wird. Sie ist ein **fremder Körper**, der in eine Bewegungslehre gezwungen werden müsste, die gerade darauf beruht, dass zwischen Gedanke, Muskel, Treffer und Fortsetzung kein fremdes Gewicht liegt.\n\nEchopuls wurde nicht entwickelt, um dieses Problem durch noch mehr Training zu überwinden.\n\nDie Handschuhe wurden entwickelt, damit das Problem **gar nicht erst entsteht**.\n\n## Die zweite Haut\n\nEchopuls endet dort, wo auch die Hand des Trägers endet.\n\nDie Waffe verlängert die Reichweite nicht. Sie besitzt keinen frei ausschwingenden Kopf, keine Klinge, die dem Arm vorausläuft, und keinen Schwerpunkt, der außerhalb der natürlichen Handlinie liegt. Ihre Verstärkungen ziehen sich eng über Finger, Knöchel, Handrücken, Handgelenk und einen kurzen Teil des Unterarms.\n\nDie äußeren Lamellen sind nicht starr miteinander verbunden. Unter ihnen liegt eine flexible, ätherleitende Schicht, die erst durch die persönliche Einprägung des Taktbrechers vollständig aktiv wird.\n\nWährend dieser Einprägung werden die Handschuhe nicht einfach angelegt und verzaubert.\n\nDer spätere Träger trainiert mit ihnen.\n\nSchlag für Schlag.\n\nSchritt für Schritt.\n\nTreffer für Treffer.\n\nDie wiederholten Bewegungen führen Äther durch dieselben Bahnen, die der Taktbrecher ohnehin für seine Kampfspannung nutzt. Mit der Zeit reagiert das innere Geflecht nicht mehr nur auf die grobe Bewegung der Hand, sondern auf Druck, Muskelspannung, Richtungswechsel und den Moment des Auftreffens.\n\nDadurch verteilt Echopuls sein Gewicht nicht wie ein gewöhnlicher Metallhandschuh.\n\nBeim Ausholen liegt die Verstärkung eng in der natürlichen Bewegungslinie. Beim Auftreffen verhärtet sich die Resonanz für einen Augenblick entlang der getroffenen Fläche. Beim Zurückziehen gibt sie den Impuls wieder in jene Richtung frei, in der der Körper ihn ohnehin auffangen würde.\n\nDer Taktbrecher muss deshalb keinen fremden Rücklauf lernen.\n\nEr spürt keinen zusätzlichen Hebel, den er neu berechnen müsste.\n\nEr trägt keine Waffe **in** der Hand.\n\nEr trägt eine Waffe **als** Hand.\n\nGenau darin liegt der Unterschied zur Exaltierten Waffe.\n\nDie Exaltierte Waffe entsteht unmittelbar aus dem eigenen Äther und fühlt sich deshalb von ihrem ersten Augenblick an vertraut an. Echopuls dagegen ist ein realer Gegenstand. Er muss gefertigt, angepasst, repariert und weiterentwickelt werden.\n\nEr kann verloren gehen.\n\nEr kann beschädigt werden.\n\nEr kann gestohlen werden.\n\nDoch solange er auf einen bestimmten Taktbrecher eingetaktet ist, verhält er sich in dessen Bewegungsablauf nicht wie eine gewöhnliche Waffe.\n\nEr wird zu einem gespeicherten Abdruck seiner eigenen Körpermechanik.\n\nDarum akzeptiert die Klasse Echopuls nicht als Ausnahme, weil der Träger plötzlich gelernt hätte, Waffen zu führen.\n\nSie ist die Ausnahme, weil der Träger **niemals lernen muss, sie wie eine fremde Waffe zu führen**.\n\n---\n\n# Besondere Eigenschaften\n\n## Die zweite Haut – Absolute Klassenwaffen-Ausnahme\n\nEchopuls zählt für seinen gebundenen Taktbrecher **nicht** als gewöhnliche, nicht Exaltierte Waffe im Sinne des Waffenmalus der Klasse.\n\nFür den gebundenen Taktbrecher gilt daher:\n\n- der normale Malus von **−6 auf Angriffe mit gewöhnlichen Waffen** wird nicht angewendet;\n- Angriffe mit Echopuls zählen als **Taktangriffe**;\n- sie dürfen eine **Trefferfolge beginnen und fortsetzen**, sofern alle übrigen Klassenbedingungen erfüllt sind;\n- für Taktbrecher-Fähigkeiten zählt Echopuls als **Körperangriff**, wenn die Fähigkeit zwischen Körperangriff und Exaltierter Waffe unterscheidet;\n- **Taktpräzision** gilt vollständig;\n- Kampfspannung kann durch Treffer mit Echopuls nach den normalen Klassenregeln erzeugt und verwendet werden;\n- alle Trefferfolge-, Fortsetzungs-, Abschluss- und Taktbruchregeln bleiben unverändert bestehen.\n\n> [!important] Keine Exaltierte Waffe\n> Echopuls wird durch diese Regel **nicht** zur Exaltierten Waffe. Er erhält keine Manifestationsmuster, keine automatische Waffenstufe der Exaltierten Waffe und keine ihrer besonderen Formregeln. Echopuls ist eine eigenständige, reale Klassenwaffe.\n\n---\n\n## Keine Schadensdoppelung\n\nEchopuls verstärkt die Körperkampfidentität des Taktbrechers, erzeugt jedoch keinen kostenlosen zweiten Schadensblock.\n\nVerwendet eine Taktbrecher-Fähigkeit eine eigene Schadensberechnung, gilt:\n\n> **Die Berechnung der Klassenfähigkeit ersetzt den normalen Echopuls-/Körperangriffsschaden vollständig.**\n\nDer Kernwürfel von Echopuls wird in diesem Fall **nicht zusätzlich** addiert.\n\nEbenso werden Stärke-Modifikator, Stärke-Bonus oder andere Attributsanteile nicht ein zweites Mal aus dem Waffenprofil hinzugefügt, wenn die Klassenfähigkeit sie bereits enthält.\n\nDadurch bleibt Echopuls in die vorhandenen Klassenformeln eingebunden, statt auf jede Fähigkeit einen zusätzlichen Waffenangriff zu stapeln.\n\n---\n\n## Taktabdruck\n\nDer erste erfolgreiche Taktangriff mit Echopuls in deinem eigenen Zug hinterlässt bis zum Ende der laufenden Trefferfolge einen **Taktabdruck**.\n\nDer Taktabdruck speichert für einen Augenblick die Rückmeldung des bestätigten Treffers: Widerstand, Winkel, Distanz und die Bewegung, mit der das Ziel auf den Kontakt reagiert hat.\n\nDie **unmittelbar nächste Fortsetzung derselben Trefferfolge** erhält auf ihren Angriffswurf den **Resonanzbonus** von Echopuls.\n\n```text\nResonanzbonus\n=\n1 + ⌊(Itemstufe − 1) / 20⌋\n```\n\nDamit gilt:\n\n| Itemstufe | Resonanzbonus |\n|---:|---:|\n| 1–20 | +1 |\n| 21–40 | +2 |\n\nAuf der aktuellen **Itemstufe 1** beträgt der Bonus daher **+1**.\n\n### Regeln des Taktabdrucks\n\n- kann höchstens **einmal pro eigenem Zug** entstehen;\n- gilt nur für die **unmittelbar nächste Fortsetzung** derselben Trefferfolge;\n- wird verbraucht, sobald der Angriffswurf dieser Fortsetzung ausgeführt wurde;\n- verfällt, wenn die Trefferfolge endet;\n- erzeugt keine Kampfspannung;\n- erhöht nicht das Fortsetzungslimit;\n- erzeugt keine zusätzliche Aktion und keinen zusätzlichen Angriff;\n- verhindert bei einem Fehlschlag keinen Taktbruch;\n- mehrere Taktabdrücke können nicht gestapelt oder gespeichert werden.\n\nDer Effekt belohnt damit genau jene Spielweise, auf der der Taktbrecher beruht:\n\n**erst treffen, dann entscheiden, dann fortsetzen.**\n\n---\n\n## Paarbindung\n\nEchopuls besteht aus zwei aufeinander abgestimmten Handschuhen, gilt regeltechnisch jedoch als **ein einzelner Gegenstand und eine einzelne Klassenwaffe**.\n\nDas Paar erzeugt daher niemals automatisch:\n\n- einen zweiten Angriff,\n- eine zusätzliche Waffenaktion,\n- einen Nebenhandangriff,\n- zusätzlichen Kernwürfelschaden,\n- eine zweite Instanz von Taktabdruck.\n\nEin Taktbrecher kann mit linker oder rechter Hand angreifen und innerhalb einer Trefferfolge zwischen beiden Händen wechseln. Dieser Wechsel besitzt allein keine zusätzliche Regelwirkung.\n\nDie besonderen Klassenwaffen-Eigenschaften funktionieren nur, solange **beide Handschuhe getragen** werden. Wird einer abgelegt, zerstört oder vom Träger getrennt, bleibt der andere als hochwertiger Kampfhandschuh nutzbar, verliert jedoch **Die zweite Haut** und **Taktabdruck**, bis das Paar wieder vollständig getragen wird.\n\n---\n\n## Klassenattribut-Sperre\n\nEchopuls ist dauerhaft an die Attributslogik des Taktbrechers gebunden.\n\nFür diese Waffe und alle späteren Entwicklungsstufen gilt:\n\n- **Stärke** bleibt das primäre Angriffs- und Schadensattribut;\n- **Beweglichkeit** darf als sekundäres Klassenattribut nur über ausdrücklich definierte Taktbrecher- oder Echopuls-Regeln einfließen;\n- es wird kein fremdes Waffenattribut verwendet, nur weil eine spätere Bauform oder Verbesserung normalerweise ein anderes Attribut nahelegen würde;\n- sollte eine spätere Entwicklungsstufe einen Rettungswurf erzeugen, verwendet sie grundsätzlich den **Takt-SG des Taktbrechers**, sofern die konkrete Entwicklungsstufe nichts enger Definiertes festlegt;\n- Intelligenz oder andere nicht zur offensiven Klassenmechanik gehörende Attribute ersetzen niemals Stärke oder Beweglichkeit für Echopuls.\n\nDamit bleibt die Waffe auch nach vielen Aufwertungen eine **Taktbrecher-Waffe** und wird nicht schleichend zu einem generischen Ausrüstungsstück.\n\n---\n\n# Verhältnis zur Exaltierten Waffe\n\nEin Taktbrecher kann sowohl Echopuls als auch seine Exaltierte Waffe besitzen.\n\nBeide erfüllen jedoch unterschiedliche Funktionen.\n\n| Echopuls | Exaltierte Waffe |\n|---|---|\n| Physischer, realer Gegenstand | Äther-/Esper-Manifestation |\n| Kann beschädigt oder verloren werden | Kann manifestiert und aufgelöst werden |\n| Wird über Itemstufen und spätere Qualitätssteigerungen entwickelt | Skaliert nach den Klassenregeln der Exaltierten Waffe |\n| Bleibt körpernaher Schlagwaffenstil | Kann verschiedene Waffenformen abbilden |\n| Zählt für Klassenfähigkeiten als Körperangriff | Zählt als Exaltierte Waffe |\n\nFür denselben Angriff muss sich der Taktbrecher entscheiden, welche der beiden Waffenformen verwendet wird.\n\nEin einzelner Angriff kann niemals gleichzeitig den Schaden oder die besonderen Eigenschaften von **Echopuls und Exaltierter Waffe** addieren.\n\nWird die Exaltierte Waffe manifestiert, verschwinden die getragenen Echopuls-Handschuhe nicht automatisch. Ihre besonderen Effekte gelten jedoch nur für Angriffe, die tatsächlich mit Echopuls beziehungsweise als durch Echopuls geführte Körperangriffe ausgeführt werden.\n\n---\n\n# Bindung an den Träger\n\nEchopuls kann theoretisch von jedem Wesen angelegt werden.\n\nDie eigentliche Waffe erwacht dadurch jedoch nicht.\n\nEin nicht gebundener Träger erhält keine Taktbrecher-Ausnahme und keinen Taktabdruck. Für ihn verhält sich das Paar lediglich wie hochwertige, körpernah gefertigte Cestus/Kampfhandschuhe nach den normalen Waffenregeln.\n\nDie Resonanzbindung kann nicht durch bloßes Berühren übertragen werden.\n\nSie entsteht aus wiederholter Bewegung und dem Äther des Trägers. Eine vollständige Neubindung an einen anderen Taktbrecher ist deshalb keine gewöhnliche Weitergabe des Gegenstands, sondern würde eine bewusste spielweltliche Neuanpassung und Entscheidung der Spielleitung erfordern.\n\nFür die vorgesehene Klassenwaffe gilt grundsätzlich:\n\n> **Echopuls gehört zu seinem Taktbrecher, solange dessen Entwicklung nicht bewusst Teil der Geschichte wird.**\n\n---\n\n# Herstellung und erste Einprägung\n\nEin gewöhnlicher Schmied kann stabile Kampfhandschuhe fertigen.\n\nEchopuls verlangt mehr.\n\nDie Grundkonstruktion muss gleichzeitig widerstandsfähig und beweglich sein. Knöchel und Handrücken benötigen Verstärkung, ohne die Finger zu versteifen. Das Handgelenk muss geschützt werden, ohne den Übergang zwischen Faust, Unterarm und Ellenbogen zu unterbrechen. Jede starre Platte wird deshalb durch kleine, bewegliche Segmente und flexible Zwischenlagen mit den angrenzenden Teilen verbunden.\n\nNoch wichtiger ist die Innenschicht.\n\nSie wird nicht auf maximale Härte ausgelegt, sondern auf **Resonanz**.\n\nDer spätere Träger muss bereits während der letzten Anpassung anwesend sein. Passform, Druckpunkte und Gelenkwinkel werden nicht nur im Ruhezustand kontrolliert, sondern während echter Taktbrecher-Bewegungen.\n\nNach der handwerklichen Fertigstellung folgt die **Einprägung**.\n\nDer Taktbrecher trägt Echopuls während wiederholter Trainingsfolgen. Dabei wird kein einzelner Zauber gesprochen und kein fremder Geist in die Handschuhe gebunden. Stattdessen sättigt sich das Resonanzgeflecht schrittweise mit dem Äther, den der Kämpfer ohnehin durch seine Bewegungen und seine Kampfspannung führt.\n\nDer Prozess ist abgeschlossen, wenn die Handschuhe nicht mehr gegen die Bewegung arbeiten.\n\nViele Taktbrecher beschreiben diesen Augenblick ähnlich.\n\nNicht als hätte sich die Waffe verändert.\n\nSondern als hätten die Hände aufgehört, sie zu bemerken.\n\n---\n\n# Erscheinungsbild\n\nEchopuls wirkt auf den ersten Blick weniger spektakulär als viele seltene Waffen.\n\nDas Paar besteht aus eng anliegenden Kampfhandschuhen, deren Grundform an schwere Trainingswicklungen und einen hochwertigen Cestus erinnert. Finger und Handflächen bleiben ausreichend beweglich, um zu greifen, zu klettern, Gegenstände zu halten oder einen Gegner körpernah zu kontrollieren.\n\nÜber den Knöcheln liegen flache, überlappende Verstärkungen. Sie sind deutlich stabiler als gewöhnliches Leder, stehen jedoch nicht wie die massiven Platten eines schweren Panzerhandschuhs hervor. Schmale Segmente ziehen sich über den Handrücken bis zum Handgelenk und enden in einer kurzen Unterarmmanschette.\n\nIm Ruhezustand ist die ätherische Resonanz kaum sichtbar.\n\nErst wenn der Taktbrecher Spannung aufbaut, erscheinen zwischen einzelnen Segmenten feine Lichtlinien. Sie leuchten nicht dauerhaft und bilden kein festes Element.\n\nBei einem bestätigten Treffer kann für einen Augenblick ein kurzer Impuls über den getroffenen Handschuh laufen.\n\nDer zweite Handschuh antwortet mit einem schwächeren Nachhall.\n\nDieser Nachhall ist der sichtbare Ausdruck des **Taktabdrucks**.\n\nWer den Taktbrecher nicht kennt, könnte die Erscheinung für einen einfachen magischen Effekt halten.\n\nWer seine Kampfkunst versteht, erkennt darin etwas anderes.\n\nDer erste Treffer ist vorbei.\n\nAber die Waffe hat bereits verstanden, wie der zweite folgen muss.\n\n---\n\n# Entwicklung der Klassenwaffe\n\nEchopuls ist nicht als austauschbarer Fundgegenstand gedacht.\n\nDie Waffe soll zusammen mit ihrem Taktbrecher wachsen.\n\n## Itemstufen\n\nDie Itemstufe kann grundsätzlich von **1 bis 40** erhöht werden.\n\nEine Aufwertung kann unter anderem erfordern:\n\n- passende Metalle, Leder, Faserstoffe oder andere widerstandsfähige Materialien;\n- Ersatz oder Verbesserung der Resonanzschichten;\n- spezialisierte Werkzeuge und Handwerker;\n- Trainingszeit des gebundenen Taktbrechers;\n- bei hohen Itemstufen besondere Komponenten oder Ereignisse aus der Kampagne.\n\nEine Itemstufenaufwertung verändert die Identität der Waffe nicht.\n\nEchopuls bleibt Echopuls.\n\nDer aktuelle seltene Effekt **Taktabdruck** verwendet seine Itemstufe bereits für den Resonanzbonus. Weitere skalierende Werte können in späteren, ausdrücklich ausgearbeiteten Entwicklungsstufen ergänzt werden.\n\n## Qualitätssteigerungen\n\nEine Erhöhung der Qualitätsstufe geschieht **nicht automatisch** durch Itemstufen.\n\nDer vorgesehene langfristige Entwicklungspfad lautet:\n\n```text\nSelten\n↓\nEpisch\n↓\nLegendär\n↓\nMythisch\n```\n\n### Namensprogression\n\nMit jeder Qualitätssteigerung entwickelt sich nicht nur die Macht von Echopuls, sondern auch der Name, unter dem die Waffe in ihrer jeweiligen Entwicklungsstufe bekannt ist. **Echopuls** bleibt dabei immer der Kernname. Die späteren Beinamen beschreiben, wie tief die Handschuhe mit der Kampfkunst, dem Rhythmus und der persönlichen Entwicklung ihres Taktbrechers verschmolzen sind.\n\n| Qualitätsstufe | Name der Klassenwaffe | Bedeutung |\n|---|---|---|\n| **Selten** | **Echopuls** | Die Waffe beginnt, den Rhythmus ihres Trägers aufzunehmen und wie eine zweite Haut auf seine Bewegungen zu antworten. |\n| **Episch** | **Echopuls – Die antwortende Faust** | Echopuls reagiert nicht länger nur auf Bewegung, sondern auf bestätigte Treffer, Übergänge und den entstehenden Kampfrhythmus. |\n| **Legendär** | **Echopuls – Der gebrochene Rhythmus** | Träger und Waffe sind so eng verbunden, dass der eigene Takt bewusst gegen den Rhythmus des Gegners gesetzt und im entscheidenden Augenblick gebrochen wird. |\n| **Mythisch** | **Echopuls – Wenn kein zweiter Herzschlag bleibt** | Die vollendete Form. Der erste bestätigte Augenblick trägt bereits die Möglichkeit des gesamten Abschlusses in sich – ein Sinnbild für die höchste Taktbrecher-Lehre, in der dem Gegner nach der endgültigen Öffnung kein zweiter Herzschlag zur Neuordnung bleibt. |\n\n> [!important] Kernidentität der Waffe\n> Die Namensänderung bedeutet **nicht**, dass Echopuls durch einen neuen Gegenstand ersetzt wird. Es bleiben dieselben Kampfhandschuhe, dieselbe Bindung und dieselbe Geschichte. Der neue Name wird verdient, sobald die entsprechende Qualitätsstufe tatsächlich erreicht und ihre Entwicklung innerhalb der Kampagne vollzogen wurde.\n\nJede Qualitätssteigerung soll einen echten Entwicklungsschritt der bestehenden Waffe darstellen und kann neue Materialien, neue Resonanztechniken, besondere Ereignisse, persönliche Meisterschaft oder eine tiefere Verbindung zwischen Taktbrecher und Echopuls verlangen.\n\nDie Waffe wird dabei nicht ersetzt.\n\nSie wird weitergeschrieben.\n\nKratzer, reparierte Nähte, ausgetauschte Segmente und Spuren früherer Kämpfe dürfen erhalten bleiben. Eine spätere mythische Form soll deshalb nicht wie ein vollständig anderes Artefakt wirken, sondern wie die endgültige Gestalt derselben Handschuhe, die auf Itemstufe 1 erstmals zur zweiten Haut ihres Trägers wurden.\n\n---\n\n# Kompakte Regelzusammenfassung\n\n> [!summary] Echopuls – Selten, Itemstufe 1\n> - Klassenwaffe ausschließlich für den **Taktbrecher**.\n> - Basis: **Cestus**, 1W6, Nah, Schlag, Mittel.\n> - Angriff immer über **Stärke + Taktpräzision**.\n> - Normaler Schaden verwendet die aktuelle **Körperangriff-Schadensformel** des Taktbrechers.\n> - Ignoriert für den gebundenen Taktbrecher den **−6-Malus gewöhnlicher Waffen**.\n> - Angriffe zählen als **Taktangriffe/Körperangriffe** und dürfen Trefferfolgen beginnen oder fortsetzen.\n> - Klassenfähigkeiten ersetzen den normalen Waffenschaden; **keine Schadensdoppelung**.\n> - Erster erfolgreicher Taktangriff pro eigenem Zug erzeugt **Taktabdruck**.\n> - Die unmittelbar nächste Fortsetzung erhält auf Itemstufe 1 **+1 auf den Angriffswurf**.\n> - Das Paar ist **eine** Waffe und erzeugt keinen kostenlosen zweiten Angriff.\n> - Echopuls ist **nicht** die Exaltierte Waffe und kann nicht mit deren Schaden im selben Angriff kombiniert werden.\n> - Entwicklungsziel: Itemstufe 1–40 und langfristig **Echopuls → Echopuls – Die antwortende Faust → Echopuls – Der gebrochene Rhythmus → Echopuls – Wenn kein zweiter Herzschlag bleibt**.\n\n---\n\n> *Der Taktbrecher trägt keine Waffe, um seine Faust zu ersetzen.*\n>\n> *Er trägt Echopuls, damit zwischen Faust und Waffe irgendwann kein Unterschied mehr bleibt.*",
+  "source": {
+    "file": "Waffen.md",
+    "document_title": "Echopuls – Die zweite Haut des Taktbrechers",
+    "line_start": 5094,
+    "line_end": 5508
+  }
+}

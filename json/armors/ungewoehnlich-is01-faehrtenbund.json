@@ -1,0 +1,136 @@
+{
+  "schema_version": "aetherfall.armors.v1",
+  "id": "ungewoehnlich-is01-faehrtenbund",
+  "number": 13,
+  "name": "Fährtenbund",
+  "display_name": "Fährtenbund",
+  "source_type": "catalog_armor",
+  "item_kind": "armor",
+  "base_item": {
+    "armor": "Lederarmschienen",
+    "shield": null,
+    "name": "Lederarmschienen"
+  },
+  "slot": {
+    "name": "Hände / Arme",
+    "key": "hands"
+  },
+  "armor_archetype": "Leicht",
+  "shield_class": null,
+  "quality": "Ungewöhnlich",
+  "item_level": 1,
+  "magical": {
+    "raw": "Nein",
+    "value": false
+  },
+  "defense": {
+    "physical": {
+      "raw": "1",
+      "value": 1
+    },
+    "magical": {
+      "raw": "0",
+      "general": 0,
+      "conditional": []
+    }
+  },
+  "resistances": {
+    "raw": null,
+    "entries": []
+  },
+  "elements": [],
+  "is_elemental": false,
+  "special_properties": null,
+  "passive_property": null,
+  "active_ability": null,
+  "active_block_ability": null,
+  "reaction_trigger": null,
+  "hand_binding_usage": null,
+  "action_cost": null,
+  "trigger_requirement": null,
+  "costs": null,
+  "usage_limit": null,
+  "range_target": "Selbst, solange ausgerüstet",
+  "duration": "Dauerhaft, solange ausgerüstet",
+  "saving_throw_dc": null,
+  "calculation": null,
+  "rule_effect": "Der angegebene Phys-VTD-Wert wird zur gesamten physischen Verteidigung des Trägers addiert und bei gezielten physischen Treffern auf diesen Slot allein verwendet.",
+  "stacking": "Phys- und Mag-VTD werden nach den normalen Rüstungsregeln mit anderen getragenen Rüstungsteilen addiert.",
+  "end_condition": "Sobald das Rüstungsteil abgelegt wird.",
+  "set": {
+    "name": null,
+    "bonus": null
+  },
+  "class_binding": {
+    "raw": null,
+    "class_name": null
+  },
+  "upgrade_scaling": "Bei Erhöhung der Itemstufe werden Phys-VTD, Mag-VTD und gegebenenfalls skalierende Schutzwerte anhand der dann geltenden Zentralbalance neu bestimmt. Die Qualitätsstufe bleibt Ungewöhnlich, solange sie nicht gesondert erhöht wird.",
+  "crafting_requirement": "Ausgebildeter oder erfahrener Handwerker; hochwertige Materialien und sorgfältige Verarbeitung.",
+  "appearance": "Schmale Armschienen aus weichem, aber dichtem Leder. Mehrere flache Riemen erlauben eine genaue Anpassung, ohne die Handgelenke einzuengen.",
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.0",
+    "classification": null,
+    "dm_exclusive": false,
+    "dm_performance_profile": null
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Rüstung",
+      "Ungewöhnlich",
+      "Itemstufe-1"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.0",
+    "gegenstandsanzahl": 30,
+    "qualitaet": "Ungewöhnlich",
+    "itemstufe": 1
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Basisrüstung": "Lederarmschienen",
+    "Slot": "Hände / Arme",
+    "Rüstungsarchetyp": "Leicht",
+    "Qualitätsstufe": "Ungewöhnlich",
+    "Itemstufe": "1",
+    "Magisch": "Nein",
+    "Physische Verteidigung": "1",
+    "Magische Verteidigung": "0",
+    "Resistenzen": null,
+    "Besondere Eigenschaften": null,
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": null,
+    "Auslöser / Voraussetzung": null,
+    "Einsatzlimit": null,
+    "Reichweite / Ziel": "Selbst, solange ausgerüstet",
+    "Dauer": "Dauerhaft, solange ausgerüstet",
+    "Rettungswurf / SG": null,
+    "Berechnung": null,
+    "Regelwirkung": "Der angegebene Phys-VTD-Wert wird zur gesamten physischen Verteidigung des Trägers addiert und bei gezielten physischen Treffern auf diesen Slot allein verwendet.",
+    "Stapelung": "Phys- und Mag-VTD werden nach den normalen Rüstungsregeln mit anderen getragenen Rüstungsteilen addiert.",
+    "Ende der Wirkung": "Sobald das Rüstungsteil abgelegt wird.",
+    "Setzugehörigkeit": null,
+    "Setbonus": null,
+    "Aufwertung / Skalierung": "Bei Erhöhung der Itemstufe werden Phys-VTD, Mag-VTD und gegebenenfalls skalierende Schutzwerte anhand der dann geltenden Zentralbalance neu bestimmt. Die Qualitätsstufe bleibt **Ungewöhnlich**, solange sie nicht gesondert erhöht wird.",
+    "Herstellungsanforderung": "Ausgebildeter oder erfahrener Handwerker; hochwertige Materialien und sorgfältige Verarbeitung.",
+    "Erscheinungsbild": "Schmale Armschienen aus weichem, aber dichtem Leder. Mehrere flache Riemen erlauben eine genaue Anpassung, ohne die Handgelenke einzuengen."
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Lederarmschienen |\n| **Slot** | Hände / Arme |\n| **Rüstungsarchetyp** | Leicht |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Physische Verteidigung** | 1 |\n| **Magische Verteidigung** | 0 |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | – |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | Selbst, solange ausgerüstet |\n| **Dauer** | Dauerhaft, solange ausgerüstet |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | – |\n| **Regelwirkung** | Der angegebene Phys-VTD-Wert wird zur gesamten physischen Verteidigung des Trägers addiert und bei gezielten physischen Treffern auf diesen Slot allein verwendet. |\n| **Stapelung** | Phys- und Mag-VTD werden nach den normalen Rüstungsregeln mit anderen getragenen Rüstungsteilen addiert. |\n| **Ende der Wirkung** | Sobald das Rüstungsteil abgelegt wird. |\n| **Setzugehörigkeit** | – |\n| **Setbonus** | – |\n| **Aufwertung / Skalierung** | Bei Erhöhung der Itemstufe werden Phys-VTD, Mag-VTD und gegebenenfalls skalierende Schutzwerte anhand der dann geltenden Zentralbalance neu bestimmt. Die Qualitätsstufe bleibt **Ungewöhnlich**, solange sie nicht gesondert erhöht wird. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker; hochwertige Materialien und sorgfältige Verarbeitung. |\n| **Erscheinungsbild** | Schmale Armschienen aus weichem, aber dichtem Leder. Mehrere flache Riemen erlauben eine genaue Anpassung, ohne die Handgelenke einzuengen. |",
+  "sections": [
+    {
+      "level": 2,
+      "title": "13. Fährtenbund",
+      "markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Lederarmschienen |\n| **Slot** | Hände / Arme |\n| **Rüstungsarchetyp** | Leicht |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Physische Verteidigung** | 1 |\n| **Magische Verteidigung** | 0 |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | – |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | Selbst, solange ausgerüstet |\n| **Dauer** | Dauerhaft, solange ausgerüstet |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | – |\n| **Regelwirkung** | Der angegebene Phys-VTD-Wert wird zur gesamten physischen Verteidigung des Trägers addiert und bei gezielten physischen Treffern auf diesen Slot allein verwendet. |\n| **Stapelung** | Phys- und Mag-VTD werden nach den normalen Rüstungsregeln mit anderen getragenen Rüstungsteilen addiert. |\n| **Ende der Wirkung** | Sobald das Rüstungsteil abgelegt wird. |\n| **Setzugehörigkeit** | – |\n| **Setbonus** | – |\n| **Aufwertung / Skalierung** | Bei Erhöhung der Itemstufe werden Phys-VTD, Mag-VTD und gegebenenfalls skalierende Schutzwerte anhand der dann geltenden Zentralbalance neu bestimmt. Die Qualitätsstufe bleibt **Ungewöhnlich**, solange sie nicht gesondert erhöht wird. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker; hochwertige Materialien und sorgfältige Verarbeitung. |\n| **Erscheinungsbild** | Schmale Armschienen aus weichem, aber dichtem Leder. Mehrere flache Riemen erlauben eine genaue Anpassung, ohne die Handgelenke einzuengen. |",
+      "line_start": 2422,
+      "line_end": 2452
+    }
+  ],
+  "raw_markdown": "## 13. Fährtenbund\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Lederarmschienen |\n| **Slot** | Hände / Arme |\n| **Rüstungsarchetyp** | Leicht |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Physische Verteidigung** | 1 |\n| **Magische Verteidigung** | 0 |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | – |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | Selbst, solange ausgerüstet |\n| **Dauer** | Dauerhaft, solange ausgerüstet |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | – |\n| **Regelwirkung** | Der angegebene Phys-VTD-Wert wird zur gesamten physischen Verteidigung des Trägers addiert und bei gezielten physischen Treffern auf diesen Slot allein verwendet. |\n| **Stapelung** | Phys- und Mag-VTD werden nach den normalen Rüstungsregeln mit anderen getragenen Rüstungsteilen addiert. |\n| **Ende der Wirkung** | Sobald das Rüstungsteil abgelegt wird. |\n| **Setzugehörigkeit** | – |\n| **Setbonus** | – |\n| **Aufwertung / Skalierung** | Bei Erhöhung der Itemstufe werden Phys-VTD, Mag-VTD und gegebenenfalls skalierende Schutzwerte anhand der dann geltenden Zentralbalance neu bestimmt. Die Qualitätsstufe bleibt **Ungewöhnlich**, solange sie nicht gesondert erhöht wird. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker; hochwertige Materialien und sorgfältige Verarbeitung. |\n| **Erscheinungsbild** | Schmale Armschienen aus weichem, aber dichtem Leder. Mehrere flache Riemen erlauben eine genaue Anpassung, ohne die Handgelenke einzuengen. |",
+  "source": {
+    "file": "Rüstungen.md",
+    "document_title": "Ätherfall – 30 ungewöhnliche Rüstungsteile – Itemstufe 1",
+    "line_start": 2422,
+    "line_end": 2452
+  }
+}

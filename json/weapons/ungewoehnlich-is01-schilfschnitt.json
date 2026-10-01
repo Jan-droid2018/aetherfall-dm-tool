@@ -1,0 +1,146 @@
+{
+  "schema_version": "aetherfall.weapons.v1",
+  "id": "ungewoehnlich-is01-schilfschnitt",
+  "number": 23,
+  "name": "Schilfschnitt",
+  "subtitle": null,
+  "display_name": "Schilfschnitt",
+  "source_type": "catalog_entry",
+  "item_type": "Waffe",
+  "base_weapon_type": "Naginata",
+  "category": "Stangenwaffen",
+  "quality": "Ungewöhnlich",
+  "item_level": 1,
+  "magical": {
+    "raw": "Nein",
+    "value": false
+  },
+  "elements": [],
+  "is_elemental": false,
+  "core_dice": {
+    "raw": "1W10",
+    "dice_terms": [
+      {
+        "raw": "1W10",
+        "count": 1,
+        "sides": 10
+      }
+    ]
+  },
+  "handling": "Zweihändig",
+  "range": "Mittel",
+  "damage_type": "Hieb",
+  "weight": "Mittel",
+  "attributes": {
+    "attack": "Geschicklichkeit",
+    "primary_class": null,
+    "secondary_class": null
+  },
+  "formulas": {
+    "attack": "W20 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus",
+    "damage": {
+      "default": "1W10 + 14 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus Hiebschaden",
+      "one_handed": null,
+      "two_handed": null
+    },
+    "core_value": null,
+    "dice_terms": [
+      {
+        "raw": "W20",
+        "count": 1,
+        "sides": 20
+      },
+      {
+        "raw": "1W10",
+        "count": 1,
+        "sides": 10
+      }
+    ]
+  },
+  "critical_modification": null,
+  "class_binding": {
+    "class_name": null,
+    "raw": null,
+    "is_class_weapon": false,
+    "is_dm_weapon": false
+  },
+  "class_resource": null,
+  "special_properties": "Hochwertige Verarbeitung: Der feste Schadensanteil dieser Waffe ist gegenüber der gewöhnlichen Itemstufe-1-Ausführung um +1 erhöht; dies ist bereits in der Schadensformel enthalten.",
+  "class_effect": null,
+  "active_ability": null,
+  "action_cost": null,
+  "trigger_requirement": null,
+  "costs": null,
+  "usage_limit": null,
+  "effect_range": null,
+  "target_area": null,
+  "duration": null,
+  "saving_throw_dc": null,
+  "effect_calculation": "Zusätzlicher normaler Waffenschaden gegenüber der gewöhnlichen Ausführung = +1.",
+  "rule_effect": "Der zusätzliche Punkt ist Bestandteil des normalen physischen Waffenschadens und wird nicht ein zweites Mal addiert.",
+  "stacking": "Die besondere Eigenschaft wird pro Angriff nur einmal angewendet und stapelt nicht mit sich selbst.",
+  "end_condition": "Sofort nach der vollständigen Abwicklung des jeweiligen Angriffs.",
+  "upgrade_scaling": "Kann nach den allgemeinen Itemstufenregeln verbessert werden; bei einer höheren Itemstufe werden die skalierenden Waffenwerte neu berechnet. Die hier angegebene ungewöhnliche Eigenschaft wird dadurch nicht automatisch stärker.",
+  "crafting_requirement": "Ausgebildeter oder erfahrener Handwerker",
+  "appearance": "Eine lange Stange mit schlanker, leicht gebogener Einschneide. In beiden Händen wirkt sie fließender und leichter als eine schwere europäische Stangenaxt. Die gebogene Klinge ist dünn ausgeschliffen und in einen leichten, elastischen Schaft gesetzt. Die Übergänge sind mit enger Wicklung verstärkt. Die Verarbeitung ist sichtbar hochwertiger als bei einer gewöhnlichen Ausführung, bleibt aber funktional und ohne aufwendige Meisterwerksornamentik.",
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.0",
+    "classification": null,
+    "dm_performance_profile": null,
+    "status": null
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Waffen",
+      "Ungewöhnliche Waffen"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.0",
+    "waffenanzahl": 30,
+    "qualitaet": "Ungewöhnlich",
+    "itemstufe": 1
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Basiswaffenart": "Naginata",
+    "Waffenkategorie": "Stangenwaffen",
+    "Qualitätsstufe": "Ungewöhnlich",
+    "Itemstufe": "1",
+    "Magisch": "Nein",
+    "Kernwürfel": "1W10",
+    "Führung": "Zweihändig",
+    "Reichweite": "Mittel",
+    "Schadensart": "Hieb",
+    "Gewicht": "Mittel",
+    "Angriffsattribut": "Geschicklichkeit",
+    "Angriffswurf": "`W20 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus`",
+    "Schadensformel": "`1W10 + 14 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus` Hiebschaden",
+    "Krit-Modifikation": null,
+    "Besondere Eigenschaften": "**Hochwertige Verarbeitung:** Der feste Schadensanteil dieser Waffe ist gegenüber der gewöhnlichen Itemstufe-1-Ausführung um `+1` erhöht; dies ist bereits in der Schadensformel enthalten.",
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": null,
+    "Auslöser / Voraussetzung": null,
+    "Einsatzlimit": null,
+    "Reichweite des Effekts": null,
+    "Ziel / Fläche": null,
+    "Dauer": null,
+    "Rettungswurf / SG": null,
+    "Berechnung des Effekts": "Zusätzlicher normaler Waffenschaden gegenüber der gewöhnlichen Ausführung = `+1`.",
+    "Regelwirkung": "Der zusätzliche Punkt ist Bestandteil des normalen physischen Waffenschadens und wird nicht ein zweites Mal addiert.",
+    "Stapelung": "Die besondere Eigenschaft wird pro Angriff nur einmal angewendet und stapelt nicht mit sich selbst.",
+    "Ende der Wirkung": "Sofort nach der vollständigen Abwicklung des jeweiligen Angriffs.",
+    "Aufwertung / Skalierung": "Kann nach den allgemeinen Itemstufenregeln verbessert werden; bei einer höheren Itemstufe werden die skalierenden Waffenwerte neu berechnet. Die hier angegebene ungewöhnliche Eigenschaft wird dadurch nicht automatisch stärker.",
+    "Herstellungsanforderung": "Ausgebildeter oder erfahrener Handwerker",
+    "Erscheinungsbild": "Eine lange Stange mit schlanker, leicht gebogener Einschneide. In beiden Händen wirkt sie fließender und leichter als eine schwere europäische Stangenaxt. Die gebogene Klinge ist dünn ausgeschliffen und in einen leichten, elastischen Schaft gesetzt. Die Übergänge sind mit enger Wicklung verstärkt. Die Verarbeitung ist sichtbar hochwertiger als bei einer gewöhnlichen Ausführung, bleibt aber funktional und ohne aufwendige Meisterwerksornamentik."
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basiswaffenart** | Naginata |\n| **Waffenkategorie** | Stangenwaffen |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Kernwürfel** | 1W10 |\n| **Führung** | Zweihändig |\n| **Reichweite** | Mittel |\n| **Schadensart** | Hieb |\n| **Gewicht** | Mittel |\n| **Angriffsattribut** | Geschicklichkeit |\n| **Angriffswurf** | `W20 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus` |\n| **Schadensformel** | `1W10 + 14 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus` Hiebschaden |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | **Hochwertige Verarbeitung:** Der feste Schadensanteil dieser Waffe ist gegenüber der gewöhnlichen Itemstufe-1-Ausführung um `+1` erhöht; dies ist bereits in der Schadensformel enthalten. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite des Effekts** | – |\n| **Ziel / Fläche** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | Zusätzlicher normaler Waffenschaden gegenüber der gewöhnlichen Ausführung = `+1`. |\n| **Regelwirkung** | Der zusätzliche Punkt ist Bestandteil des normalen physischen Waffenschadens und wird nicht ein zweites Mal addiert. |\n| **Stapelung** | Die besondere Eigenschaft wird pro Angriff nur einmal angewendet und stapelt nicht mit sich selbst. |\n| **Ende der Wirkung** | Sofort nach der vollständigen Abwicklung des jeweiligen Angriffs. |\n| **Aufwertung / Skalierung** | Kann nach den allgemeinen Itemstufenregeln verbessert werden; bei einer höheren Itemstufe werden die skalierenden Waffenwerte neu berechnet. Die hier angegebene ungewöhnliche Eigenschaft wird dadurch nicht automatisch stärker. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker |\n| **Erscheinungsbild** | Eine lange Stange mit schlanker, leicht gebogener Einschneide. In beiden Händen wirkt sie fließender und leichter als eine schwere europäische Stangenaxt. Die gebogene Klinge ist dünn ausgeschliffen und in einen leichten, elastischen Schaft gesetzt. Die Übergänge sind mit enger Wicklung verstärkt. Die Verarbeitung ist sichtbar hochwertiger als bei einer gewöhnlichen Ausführung, bleibt aber funktional und ohne aufwendige Meisterwerksornamentik. |",
+  "sections": [],
+  "raw_markdown": "## 23 – Schilfschnitt\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basiswaffenart** | Naginata |\n| **Waffenkategorie** | Stangenwaffen |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Kernwürfel** | 1W10 |\n| **Führung** | Zweihändig |\n| **Reichweite** | Mittel |\n| **Schadensart** | Hieb |\n| **Gewicht** | Mittel |\n| **Angriffsattribut** | Geschicklichkeit |\n| **Angriffswurf** | `W20 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus` |\n| **Schadensformel** | `1W10 + 14 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus` Hiebschaden |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | **Hochwertige Verarbeitung:** Der feste Schadensanteil dieser Waffe ist gegenüber der gewöhnlichen Itemstufe-1-Ausführung um `+1` erhöht; dies ist bereits in der Schadensformel enthalten. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite des Effekts** | – |\n| **Ziel / Fläche** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | Zusätzlicher normaler Waffenschaden gegenüber der gewöhnlichen Ausführung = `+1`. |\n| **Regelwirkung** | Der zusätzliche Punkt ist Bestandteil des normalen physischen Waffenschadens und wird nicht ein zweites Mal addiert. |\n| **Stapelung** | Die besondere Eigenschaft wird pro Angriff nur einmal angewendet und stapelt nicht mit sich selbst. |\n| **Ende der Wirkung** | Sofort nach der vollständigen Abwicklung des jeweiligen Angriffs. |\n| **Aufwertung / Skalierung** | Kann nach den allgemeinen Itemstufenregeln verbessert werden; bei einer höheren Itemstufe werden die skalierenden Waffenwerte neu berechnet. Die hier angegebene ungewöhnliche Eigenschaft wird dadurch nicht automatisch stärker. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker |\n| **Erscheinungsbild** | Eine lange Stange mit schlanker, leicht gebogener Einschneide. In beiden Händen wirkt sie fließender und leichter als eine schwere europäische Stangenaxt. Die gebogene Klinge ist dünn ausgeschliffen und in einen leichten, elastischen Schaft gesetzt. Die Übergänge sind mit enger Wicklung verstärkt. Die Verarbeitung ist sichtbar hochwertiger als bei einer gewöhnlichen Ausführung, bleibt aber funktional und ohne aufwendige Meisterwerksornamentik. |\n\n---",
+  "source": {
+    "file": "Waffen.md",
+    "document_title": "Ätherfall – Ungewöhnliche Waffen – Itemstufe 1",
+    "line_start": 3137,
+    "line_end": 3173
+  }
+}

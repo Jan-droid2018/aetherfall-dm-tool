@@ -1,0 +1,155 @@
+{
+  "schema_version": "aetherfall.armors.v1",
+  "id": "mythisch-is40-schritte-der-freien-zukunft",
+  "number": 4,
+  "name": "Schritte der Freien Zukunft",
+  "display_name": "Schritte der Freien Zukunft",
+  "source_type": "set_piece",
+  "item_kind": "armor",
+  "base_item": {
+    "armor": "Sabatons",
+    "shield": null,
+    "name": "Sabatons"
+  },
+  "slot": {
+    "name": "Füße",
+    "key": "feet"
+  },
+  "armor_archetype": "Spezial – Konvergenzrüstung",
+  "shield_class": null,
+  "quality": "Mythisch",
+  "item_level": 40,
+  "magical": {
+    "raw": "Ja",
+    "value": true
+  },
+  "defense": {
+    "physical": {
+      "raw": "6",
+      "value": 6
+    },
+    "magical": {
+      "raw": "4",
+      "general": 4,
+      "conditional": []
+    }
+  },
+  "resistances": {
+    "raw": null,
+    "entries": []
+  },
+  "elements": [],
+  "is_elemental": false,
+  "special_properties": "Trägerbindung – Vermächtnis der Zwei; Bestandteil des Siegels der Nicht-Krone; vollendet die Bewegungsstruktur der Prägung des Chaos",
+  "passive_property": null,
+  "active_ability": null,
+  "active_block_ability": null,
+  "reaction_trigger": null,
+  "hand_binding_usage": null,
+  "action_cost": null,
+  "trigger_requirement": "Funktionale Aktivierung nur durch das Ursprungsvermächtnis",
+  "costs": null,
+  "usage_limit": null,
+  "range_target": "Selbst",
+  "duration": "Solange getragen",
+  "saving_throw_dc": null,
+  "calculation": "Phys-VTD 6; Mag-VTD 4",
+  "rule_effect": "Die Verteidigungswerte werden nach den normalen Rüstungsregeln zur Gesamtverteidigung addiert. Das Relikt gewährt allein keine zusätzliche Bewegung; die Bewegungswirkung entsteht ausschließlich über das vollständige Vierer-Set.",
+  "stacking": "Normale Rüstungsstapelung; gleichnamige Seteffekte existieren nur einmal.",
+  "end_condition": "Beim Ablegen oder Verlust der Klassenbindung",
+  "set": {
+    "name": "Harnisch der Ungekrönten Konvergenz",
+    "bonus": "Teil von Prägung der Zwei und Letztes Geschenk der Ungekrönten"
+  },
+  "class_binding": {
+    "raw": "Ursprungsvermächtnis",
+    "class_name": "Ursprungsvermächtnis"
+  },
+  "upgrade_scaling": "Itemstufe 40 ist erreicht. Eine weitere reguläre Itemstufensteigerung ist nicht möglich; die Qualitätsstufe bleibt Mythisch.",
+  "crafting_requirement": "Nicht normal reproduzierbar. Reparatur oder Aufwertung erfordert einen außergewöhnlichen Meister, einzigartige Materialien und die aktive Resonanz des gebundenen göttlichen Kerns.",
+  "appearance": "Leichte, gegliederte Fußpanzer oder anatomisch entsprechende Schutzformen, die sich selbst an ungewöhnliche Fortbewegungsarten anpassen. Bei jedem Schritt erscheinen für einen Augenblick feine Ätherlinien und verlöschen unmittelbar wieder, als hätte die Rüstung erst im Moment der Entscheidung erfahren, wohin der Weg führt.",
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.2",
+    "classification": "Balance 1.0 – DM-Sonderprofil",
+    "dm_exclusive": true,
+    "dm_performance_profile": "Ursprungsvermächtnis-DM-Rüstungsbudget-1.0"
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Rüstung",
+      "Rüstungsset",
+      "Mythisch",
+      "Ursprungsvermächtnis",
+      "Cosmos",
+      "Chaos",
+      "DM-Klasse"
+    ],
+    "aliases": [
+      "Ungekrönte Konvergenz",
+      "Harnisch der Zwei"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.2",
+    "gegenstandsanzahl": 4,
+    "setname": "Harnisch der Ungekrönten Konvergenz",
+    "qualitaet": "Mythisch",
+    "itemstufe": 40,
+    "klasse": "Ursprungsvermächtnis",
+    "dm_exklusiv": true,
+    "dm_leistungsprofil": "Ursprungsvermächtnis-DM-Rüstungsbudget-1.0",
+    "slots": [
+      "Brust",
+      "Hände",
+      "Beine",
+      "Füße"
+    ],
+    "status": "Balance 1.0 – DM-Sonderprofil"
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Basisrüstung": "Sabatons",
+    "Slot": "Füße",
+    "Rüstungsarchetyp": "Spezial – Konvergenzrüstung",
+    "Qualitätsstufe": "Mythisch",
+    "Itemstufe": "40",
+    "Magisch": "Ja",
+    "Physische Verteidigung": "**6**",
+    "Magische Verteidigung": "**4**",
+    "Resistenzen": null,
+    "Besondere Eigenschaften": "**Trägerbindung – Vermächtnis der Zwei**; Bestandteil des **Siegels der Nicht-Krone**; vollendet die Bewegungsstruktur der **Prägung des Chaos**",
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": null,
+    "Auslöser / Voraussetzung": "Funktionale Aktivierung nur durch das Ursprungsvermächtnis",
+    "Einsatzlimit": null,
+    "Reichweite / Ziel": "Selbst",
+    "Dauer": "Solange getragen",
+    "Rettungswurf / SG": null,
+    "Berechnung": "Phys-VTD 6; Mag-VTD 4",
+    "Regelwirkung": "Die Verteidigungswerte werden nach den normalen Rüstungsregeln zur Gesamtverteidigung addiert. Das Relikt gewährt allein keine zusätzliche Bewegung; die Bewegungswirkung entsteht ausschließlich über das vollständige Vierer-Set.",
+    "Stapelung": "Normale Rüstungsstapelung; gleichnamige Seteffekte existieren nur einmal.",
+    "Ende der Wirkung": "Beim Ablegen oder Verlust der Klassenbindung",
+    "Setzugehörigkeit": "Harnisch der Ungekrönten Konvergenz",
+    "Setbonus": "Teil von **Prägung der Zwei** und **Letztes Geschenk der Ungekrönten**",
+    "Aufwertung / Skalierung": "**Itemstufe 40 ist erreicht.** Eine weitere reguläre Itemstufensteigerung ist nicht möglich; die Qualitätsstufe bleibt Mythisch.",
+    "Herstellungsanforderung": "Nicht normal reproduzierbar. Reparatur oder Aufwertung erfordert einen außergewöhnlichen Meister, einzigartige Materialien und die aktive Resonanz des gebundenen göttlichen Kerns.",
+    "Erscheinungsbild": "Leichte, gegliederte Fußpanzer oder anatomisch entsprechende Schutzformen, die sich selbst an ungewöhnliche Fortbewegungsarten anpassen. Bei jedem Schritt erscheinen für einen Augenblick feine Ätherlinien und verlöschen unmittelbar wieder, als hätte die Rüstung erst im Moment der Entscheidung erfahren, wohin der Weg führt."
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Sabatons |\n| **Slot** | Füße |\n| **Rüstungsarchetyp** | Spezial – Konvergenzrüstung |\n| **Qualitätsstufe** | Mythisch |\n| **Itemstufe** | 40 |\n| **Magisch** | Ja |\n| **Physische Verteidigung** | **6** |\n| **Magische Verteidigung** | **4** |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | **Trägerbindung – Vermächtnis der Zwei**; Bestandteil des **Siegels der Nicht-Krone**; vollendet die Bewegungsstruktur der **Prägung des Chaos** |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | Funktionale Aktivierung nur durch das Ursprungsvermächtnis |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | Selbst |\n| **Dauer** | Solange getragen |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | Phys-VTD 6; Mag-VTD 4 |\n| **Regelwirkung** | Die Verteidigungswerte werden nach den normalen Rüstungsregeln zur Gesamtverteidigung addiert. Das Relikt gewährt allein keine zusätzliche Bewegung; die Bewegungswirkung entsteht ausschließlich über das vollständige Vierer-Set. |\n| **Stapelung** | Normale Rüstungsstapelung; gleichnamige Seteffekte existieren nur einmal. |\n| **Ende der Wirkung** | Beim Ablegen oder Verlust der Klassenbindung |\n| **Setzugehörigkeit** | Harnisch der Ungekrönten Konvergenz |\n| **Setbonus** | Teil von **Prägung der Zwei** und **Letztes Geschenk der Ungekrönten** |\n| **Aufwertung / Skalierung** | **Itemstufe 40 ist erreicht.** Eine weitere reguläre Itemstufensteigerung ist nicht möglich; die Qualitätsstufe bleibt Mythisch. |\n| **Herstellungsanforderung** | Nicht normal reproduzierbar. Reparatur oder Aufwertung erfordert einen außergewöhnlichen Meister, einzigartige Materialien und die aktive Resonanz des gebundenen göttlichen Kerns. |\n| **Erscheinungsbild** | Leichte, gegliederte Fußpanzer oder anatomisch entsprechende Schutzformen, die sich selbst an ungewöhnliche Fortbewegungsarten anpassen. Bei jedem Schritt erscheinen für einen Augenblick feine Ätherlinien und verlöschen unmittelbar wieder, als hätte die Rüstung erst im Moment der Entscheidung erfahren, wohin der Weg führt. |",
+  "sections": [
+    {
+      "level": 1,
+      "title": "04. Schritte der Freien Zukunft",
+      "markdown": "Die **Schritte der Freien Zukunft** sind das unscheinbarste Relikt des Sets und zugleich sein deutlichstes Bekenntnis zu Chaos' Vorstellung von Freiheit.\n\nSie bestimmen keinen Weg.\n\nSie tragen denjenigen, den der Träger selbst wählt.\n\nKeine Gravur zeigt ein Ziel, keinen heiligen Ort und keine vorgeschriebene Richtung. Erst wenn der Träger handelt, erscheinen für einen kurzen Moment feine Linien entlang der tatsächlich gewählten Bewegung.\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Sabatons |\n| **Slot** | Füße |\n| **Rüstungsarchetyp** | Spezial – Konvergenzrüstung |\n| **Qualitätsstufe** | Mythisch |\n| **Itemstufe** | 40 |\n| **Magisch** | Ja |\n| **Physische Verteidigung** | **6** |\n| **Magische Verteidigung** | **4** |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | **Trägerbindung – Vermächtnis der Zwei**; Bestandteil des **Siegels der Nicht-Krone**; vollendet die Bewegungsstruktur der **Prägung des Chaos** |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | Funktionale Aktivierung nur durch das Ursprungsvermächtnis |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | Selbst |\n| **Dauer** | Solange getragen |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | Phys-VTD 6; Mag-VTD 4 |\n| **Regelwirkung** | Die Verteidigungswerte werden nach den normalen Rüstungsregeln zur Gesamtverteidigung addiert. Das Relikt gewährt allein keine zusätzliche Bewegung; die Bewegungswirkung entsteht ausschließlich über das vollständige Vierer-Set. |\n| **Stapelung** | Normale Rüstungsstapelung; gleichnamige Seteffekte existieren nur einmal. |\n| **Ende der Wirkung** | Beim Ablegen oder Verlust der Klassenbindung |\n| **Setzugehörigkeit** | Harnisch der Ungekrönten Konvergenz |\n| **Setbonus** | Teil von **Prägung der Zwei** und **Letztes Geschenk der Ungekrönten** |\n| **Aufwertung / Skalierung** | **Itemstufe 40 ist erreicht.** Eine weitere reguläre Itemstufensteigerung ist nicht möglich; die Qualitätsstufe bleibt Mythisch. |\n| **Herstellungsanforderung** | Nicht normal reproduzierbar. Reparatur oder Aufwertung erfordert einen außergewöhnlichen Meister, einzigartige Materialien und die aktive Resonanz des gebundenen göttlichen Kerns. |\n| **Erscheinungsbild** | Leichte, gegliederte Fußpanzer oder anatomisch entsprechende Schutzformen, die sich selbst an ungewöhnliche Fortbewegungsarten anpassen. Bei jedem Schritt erscheinen für einen Augenblick feine Ätherlinien und verlöschen unmittelbar wieder, als hätte die Rüstung erst im Moment der Entscheidung erfahren, wohin der Weg führt. |\n\n---",
+      "line_start": 3348,
+      "line_end": 3388
+    }
+  ],
+  "raw_markdown": "# 04. Schritte der Freien Zukunft\n\nDie **Schritte der Freien Zukunft** sind das unscheinbarste Relikt des Sets und zugleich sein deutlichstes Bekenntnis zu Chaos' Vorstellung von Freiheit.\n\nSie bestimmen keinen Weg.\n\nSie tragen denjenigen, den der Träger selbst wählt.\n\nKeine Gravur zeigt ein Ziel, keinen heiligen Ort und keine vorgeschriebene Richtung. Erst wenn der Träger handelt, erscheinen für einen kurzen Moment feine Linien entlang der tatsächlich gewählten Bewegung.\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Sabatons |\n| **Slot** | Füße |\n| **Rüstungsarchetyp** | Spezial – Konvergenzrüstung |\n| **Qualitätsstufe** | Mythisch |\n| **Itemstufe** | 40 |\n| **Magisch** | Ja |\n| **Physische Verteidigung** | **6** |\n| **Magische Verteidigung** | **4** |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | **Trägerbindung – Vermächtnis der Zwei**; Bestandteil des **Siegels der Nicht-Krone**; vollendet die Bewegungsstruktur der **Prägung des Chaos** |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | Funktionale Aktivierung nur durch das Ursprungsvermächtnis |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | Selbst |\n| **Dauer** | Solange getragen |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | Phys-VTD 6; Mag-VTD 4 |\n| **Regelwirkung** | Die Verteidigungswerte werden nach den normalen Rüstungsregeln zur Gesamtverteidigung addiert. Das Relikt gewährt allein keine zusätzliche Bewegung; die Bewegungswirkung entsteht ausschließlich über das vollständige Vierer-Set. |\n| **Stapelung** | Normale Rüstungsstapelung; gleichnamige Seteffekte existieren nur einmal. |\n| **Ende der Wirkung** | Beim Ablegen oder Verlust der Klassenbindung |\n| **Setzugehörigkeit** | Harnisch der Ungekrönten Konvergenz |\n| **Setbonus** | Teil von **Prägung der Zwei** und **Letztes Geschenk der Ungekrönten** |\n| **Aufwertung / Skalierung** | **Itemstufe 40 ist erreicht.** Eine weitere reguläre Itemstufensteigerung ist nicht möglich; die Qualitätsstufe bleibt Mythisch. |\n| **Herstellungsanforderung** | Nicht normal reproduzierbar. Reparatur oder Aufwertung erfordert einen außergewöhnlichen Meister, einzigartige Materialien und die aktive Resonanz des gebundenen göttlichen Kerns. |\n| **Erscheinungsbild** | Leichte, gegliederte Fußpanzer oder anatomisch entsprechende Schutzformen, die sich selbst an ungewöhnliche Fortbewegungsarten anpassen. Bei jedem Schritt erscheinen für einen Augenblick feine Ätherlinien und verlöschen unmittelbar wieder, als hätte die Rüstung erst im Moment der Entscheidung erfahren, wohin der Weg führt. |\n\n---",
+  "source": {
+    "file": "Rüstungen.md",
+    "document_title": "Harnisch der Ungekrönten Konvergenz",
+    "line_start": 3348,
+    "line_end": 3388
+  }
+}

@@ -13,6 +13,11 @@ final class ImportService
         'Klassen' => 0, 'Fähigkeiten' => 0, 'Kreaturen' => 0,
         'Kreaturenstufen' => 0, 'Kreaturenaktionen' => 0, 'Bosse' => 0,
         'Bossstufen' => 0, 'Bossaktionen' => 0, 'Elemente' => 0, 'Zauber' => 0,
+        'Waffen' => 0, 'Waffen neu' => 0, 'Waffen aktualisiert' => 0, 'Waffen übersprungen' => 0,
+        'Klassenressourcen' => 0, 'Klassenaktionen' => 0, 'Klassenwaffenprofile' => 0,
+        'Rüstungen' => 0, 'Rüstungen neu' => 0, 'Rüstungen aktualisiert' => 0, 'Rüstungen übersprungen' => 0,
+        'Schilde' => 0, 'Magiefoki' => 0, 'Magiefoki neu' => 0, 'Magiefoki aktualisiert' => 0,
+        'Magiefoki übersprungen' => 0, 'Elementarfoki' => 0, 'Sonderfoki' => 0,
     ];
     private array $warnings = [];
 
@@ -22,11 +27,17 @@ final class ImportService
 
     public function importAll(): array
     {
+        $this->ensureWeaponTable();
+        $this->ensureEquipmentTables();
+        $this->ensureClassActionTables();
         $this->pdo->beginTransaction();
         try {
             $this->importClasses();
             $this->seedClassAdjustments();
             $this->importSpells();
+            $this->importWeapons();
+            $this->importArmors();
+            $this->importMagicFoci();
             $this->importCreatures();
             $this->importBosses();
             $this->pdo->commit();
@@ -45,10 +56,173 @@ final class ImportService
         ));
     }
 
+    private function ensureWeaponTable(): void
+    {
+        $mysql = $this->pdo->getAttribute(PDO::ATTR_DRIVER_NAME) === 'mysql';
+        $raw = $mysql ? 'LONGTEXT' : 'TEXT';
+        $this->pdo->exec("CREATE TABLE IF NOT EXISTS weapons (id VARCHAR(190) PRIMARY KEY,name VARCHAR(255) NOT NULL,display_name VARCHAR(255) NULL,subtitle VARCHAR(255) NULL,base_weapon_type VARCHAR(190) NULL,category VARCHAR(190) NULL,quality VARCHAR(80) NULL,item_level INTEGER NULL,is_magical INTEGER NOT NULL DEFAULT 0,is_elemental INTEGER NOT NULL DEFAULT 0,elements_json TEXT NULL,core_die VARCHAR(80) NULL,handling VARCHAR(80) NULL,range_text VARCHAR(190) NULL,damage_type VARCHAR(190) NULL,weight VARCHAR(80) NULL,attack_attribute VARCHAR(190) NULL,attack_formula TEXT NULL,damage_formula TEXT NULL,critical_modification TEXT NULL,special_properties TEXT NULL,active_ability TEXT NULL,class_restriction VARCHAR(190) NULL,appearance TEXT NULL,schema_version VARCHAR(80) NOT NULL,source_file VARCHAR(255) NOT NULL,source_hash VARCHAR(64) NOT NULL,raw_json {$raw} NOT NULL,created_at DATETIME DEFAULT CURRENT_TIMESTAMP,updated_at DATETIME DEFAULT CURRENT_TIMESTAMP)");
+    }
+
+    private function ensureEquipmentTables(): void
+    {
+        $mysql = $this->pdo->getAttribute(PDO::ATTR_DRIVER_NAME) === 'mysql';
+        $text = $mysql ? 'LONGTEXT' : 'TEXT';
+        $this->pdo->exec("CREATE TABLE IF NOT EXISTS armors (id VARCHAR(190) PRIMARY KEY,external_id VARCHAR(190) NOT NULL UNIQUE,name VARCHAR(255) NOT NULL,display_name VARCHAR(255) NULL,item_kind VARCHAR(80) NOT NULL,base_item_name VARCHAR(255) NULL,armor_slot VARCHAR(20) NULL,armor_archetype VARCHAR(190) NULL,quality VARCHAR(80) NULL,item_level INTEGER NULL,is_magical INTEGER NOT NULL DEFAULT 0,physical_defense DECIMAL(12,2) NULL,magical_defense DECIMAL(12,2) NULL,shield_class VARCHAR(80) NULL,resistances_json {$text} NULL,elements_json {$text} NULL,special_properties {$text} NULL,active_ability {$text} NULL,class_binding {$text} NULL,appearance {$text} NULL,schema_version VARCHAR(80) NOT NULL,source_file VARCHAR(255) NOT NULL,source_hash VARCHAR(64) NOT NULL,raw_json {$text} NOT NULL,created_at DATETIME DEFAULT CURRENT_TIMESTAMP,updated_at DATETIME DEFAULT CURRENT_TIMESTAMP)");
+        $this->pdo->exec("CREATE TABLE IF NOT EXISTS magic_foci (id VARCHAR(190) PRIMARY KEY,external_id VARCHAR(190) NOT NULL UNIQUE,name VARCHAR(255) NOT NULL,subtitle VARCHAR(255) NULL,display_name VARCHAR(255) NULL,item_type VARCHAR(190) NULL,base_focus_type VARCHAR(190) NULL,category VARCHAR(190) NULL,quality VARCHAR(80) NULL,item_level INTEGER NULL,is_magical INTEGER NOT NULL DEFAULT 0,standard_magic_attack TEXT NULL,magic_attack TEXT NULL,final_magic_attack TEXT NULL,handling VARCHAR(190) NULL,magic_attribute VARCHAR(190) NULL,weight VARCHAR(80) NULL,element_binding {$text} NULL,is_elemental INTEGER NOT NULL DEFAULT 0,attack_roll TEXT NULL,critical_modification TEXT NULL,class_binding {$text} NULL,active_ability {$text} NULL,special_properties {$text} NULL,effect_calculation {$text} NULL,spell_interaction {$text} NULL,lore {$text} NULL,special_rules {$text} NULL,schema_version VARCHAR(80) NOT NULL,source_file VARCHAR(255) NOT NULL,source_hash VARCHAR(64) NOT NULL,raw_json {$text} NOT NULL,created_at DATETIME DEFAULT CURRENT_TIMESTAMP,updated_at DATETIME DEFAULT CURRENT_TIMESTAMP)");
+    }
+
+    private function normalizeArmorSlot(mixed $slot): ?string
+    {
+        $value = mb_strtolower(trim((string)$slot));
+        $value = strtr($value, ['ä'=>'ae','ö'=>'oe','ü'=>'ue','ß'=>'ss']);
+        $value = preg_replace('/\s*\/.*$/', '', $value) ?? $value;
+        return match ($value) {
+            'head', 'kopf', 'helm', 'helmet' => 'head',
+            'chest', 'brust', 'torso' => 'chest',
+            'hands', 'hand', 'haende', 'hande', 'arme', 'hands/arme' => 'hands',
+            'legs', 'beine' => 'legs',
+            'feet', 'fuesse', 'fusse' => 'feet',
+            default => null,
+        };
+    }
+
+    private function importArmors(): void
+    {
+        $sql = 'INSERT INTO armors (id,external_id,name,display_name,item_kind,base_item_name,armor_slot,armor_archetype,quality,item_level,is_magical,physical_defense,magical_defense,shield_class,resistances_json,elements_json,special_properties,active_ability,class_binding,appearance,schema_version,source_file,source_hash,raw_json) VALUES (' . implode(',', array_fill(0, 24, '?')) . ') ON DUPLICATE KEY UPDATE external_id=VALUES(external_id),name=VALUES(name),display_name=VALUES(display_name),item_kind=VALUES(item_kind),base_item_name=VALUES(base_item_name),armor_slot=VALUES(armor_slot),armor_archetype=VALUES(armor_archetype),quality=VALUES(quality),item_level=VALUES(item_level),is_magical=VALUES(is_magical),physical_defense=VALUES(physical_defense),magical_defense=VALUES(magical_defense),shield_class=VALUES(shield_class),resistances_json=VALUES(resistances_json),elements_json=VALUES(elements_json),special_properties=VALUES(special_properties),active_ability=VALUES(active_ability),class_binding=VALUES(class_binding),appearance=VALUES(appearance),schema_version=VALUES(schema_version),source_file=VALUES(source_file),source_hash=VALUES(source_hash),raw_json=VALUES(raw_json)';
+        $stmt = $this->pdo->prepare($sql);
+        $existing = $this->pdo->prepare('SELECT source_hash FROM armors WHERE id=?');
+        foreach ($this->files('armors') as $file) {
+            $data = Json::decodeFile($file); $raw = (string)file_get_contents($file); $hash = hash('sha256', $raw); $id = (string)($data['id'] ?? '');
+            if ($id === '') { $this->warnings[] = 'Rüstungsdatei ohne id: ' . basename($file); continue; }
+            $existing->execute([$id]); $oldHash = $existing->fetchColumn(); $this->counts['Rüstungen']++;
+            $itemKind = (string)($data['item_kind'] ?? 'armor'); $slotData = $data['slot'] ?? []; $slotKey = is_array($slotData) ? ($slotData['key'] ?? $slotData['name'] ?? null) : $slotData;
+            $isShield = $itemKind === 'shield' || $this->normalizeArmorSlot($slotKey) === null && mb_stripos((string)$slotKey, 'schild') !== false;
+            if ($isShield) $this->counts['Schilde']++;
+            if ($oldHash !== false && (string)$oldHash === $hash) { $this->counts['Rüstungen übersprungen']++; continue; }
+            $defense = is_array($data['defense'] ?? null) ? $data['defense'] : [];
+            $physical = $defense['physical']['value'] ?? $defense['physical'] ?? null; $magical = $defense['magical']['general'] ?? $defense['magical']['value'] ?? $defense['magical'] ?? null;
+            $magicFlag = $data['magical']['value'] ?? $data['magical'] ?? false;
+            $base = $data['base_item'] ?? [];
+            $stmt->execute([
+                $id, $id, (string)($data['name'] ?? $data['display_name'] ?? $id), $data['display_name'] ?? null, $itemKind,
+                is_array($base) ? ($base['name'] ?? $base['armor'] ?? null) : null, $isShield ? null : $this->normalizeArmorSlot($slotKey),
+                $data['armor_archetype'] ?? null, $data['quality'] ?? null, isset($data['item_level']) ? (int)$data['item_level'] : null,
+                (int)(bool)$magicFlag, is_numeric($physical) ? (float)$physical : null, is_numeric($magical) ? (float)$magical : null,
+                $data['shield_class'] ?? null, $this->jsonOrNull($data['resistances'] ?? null), $this->jsonOrNull($data['elements'] ?? null),
+                $this->jsonOrNull($data['special_properties'] ?? null), $this->jsonOrNull($data['active_ability'] ?? null), $this->jsonOrNull($data['class_binding'] ?? null),
+                $this->jsonOrNull($data['appearance'] ?? null), $data['schema_version'] ?? 'aetherfall.armors.v1', $data['source_file'] ?? basename($file), $hash, $raw,
+            ]);
+            $this->counts[$oldHash === false ? 'Rüstungen neu' : 'Rüstungen aktualisiert']++;
+        }
+    }
+
+    private function importMagicFoci(): void
+    {
+        $sql = 'INSERT INTO magic_foci (id,external_id,name,subtitle,display_name,item_type,base_focus_type,category,quality,item_level,is_magical,standard_magic_attack,magic_attack,final_magic_attack,handling,magic_attribute,weight,element_binding,is_elemental,attack_roll,critical_modification,class_binding,active_ability,special_properties,effect_calculation,spell_interaction,lore,special_rules,schema_version,source_file,source_hash,raw_json) VALUES (' . implode(',', array_fill(0, 32, '?')) . ') ON DUPLICATE KEY UPDATE external_id=VALUES(external_id),name=VALUES(name),subtitle=VALUES(subtitle),display_name=VALUES(display_name),item_type=VALUES(item_type),base_focus_type=VALUES(base_focus_type),category=VALUES(category),quality=VALUES(quality),item_level=VALUES(item_level),is_magical=VALUES(is_magical),standard_magic_attack=VALUES(standard_magic_attack),magic_attack=VALUES(magic_attack),final_magic_attack=VALUES(final_magic_attack),handling=VALUES(handling),magic_attribute=VALUES(magic_attribute),weight=VALUES(weight),element_binding=VALUES(element_binding),is_elemental=VALUES(is_elemental),attack_roll=VALUES(attack_roll),critical_modification=VALUES(critical_modification),class_binding=VALUES(class_binding),active_ability=VALUES(active_ability),special_properties=VALUES(special_properties),effect_calculation=VALUES(effect_calculation),spell_interaction=VALUES(spell_interaction),lore=VALUES(lore),special_rules=VALUES(special_rules),schema_version=VALUES(schema_version),source_file=VALUES(source_file),source_hash=VALUES(source_hash),raw_json=VALUES(raw_json)';
+        $stmt = $this->pdo->prepare($sql); $existing = $this->pdo->prepare('SELECT source_hash FROM magic_foci WHERE id=?');
+        foreach ($this->files('magic-foci') as $file) {
+            $data = Json::decodeFile($file); $raw = (string)file_get_contents($file); $hash = hash('sha256', $raw); $id = (string)($data['id'] ?? '');
+            if ($id === '') { $this->warnings[] = 'Magiefokusdatei ohne id: ' . basename($file); continue; }
+            $existing->execute([$id]); $oldHash = $existing->fetchColumn(); $this->counts['Magiefoki']++;
+            $binding = $data['element_binding'] ?? []; $elements = is_array($binding) ? ($binding['elements'] ?? []) : [];
+            $elemental = (bool)($data['is_elemental'] ?? false) || (is_array($elements) && count($elements) > 0);
+            if ($elemental) $this->counts['Elementarfoki']++;
+            $classBinding = $data['class_binding'] ?? []; $special = ($data['source_type'] ?? '') === 'special_focus' || (is_array($classBinding) && (bool)($classBinding['is_class_focus'] ?? false));
+            if ($special) $this->counts['Sonderfoki']++;
+            if ($oldHash !== false && (string)$oldHash === $hash) { $this->counts['Magiefoki übersprungen']++; continue; }
+            $attack = is_array($data['magic_attack'] ?? null) ? $data['magic_attack'] : [];
+            $magicFlag = $data['magical']['value'] ?? $data['magical'] ?? false;
+            $stmt->execute([
+                $id, $id, (string)($data['name'] ?? $data['display_name'] ?? $id), $data['subtitle'] ?? null, $data['display_name'] ?? null,
+                $data['item_type'] ?? null, $data['base_focus_type'] ?? null, $data['category'] ?? null, $data['quality'] ?? null, isset($data['item_level']) ? (int)$data['item_level'] : null,
+                (int)(bool)$magicFlag, $attack['standard'] ?? null, $this->jsonOrNull($data['magic_attack'] ?? null), $attack['final'] ?? ($attack['effective'] ?? null),
+                $data['handling'] ?? null, $data['magic_attribute'] ?? null, $data['weight'] ?? null, $this->jsonOrNull($data['element_binding'] ?? null), (int)$elemental,
+                $this->jsonOrNull($data['attack_roll'] ?? null), $this->jsonOrNull($data['critical_modification'] ?? null), $this->jsonOrNull($data['class_binding'] ?? null),
+                $this->jsonOrNull($data['active_ability'] ?? null), $this->jsonOrNull($data['special_properties'] ?? null), $this->jsonOrNull($data['effect_calculation'] ?? null),
+                $this->jsonOrNull($data['spell_interaction'] ?? null), $this->jsonOrNull($data['lore'] ?? null), $this->jsonOrNull($data['special_rules'] ?? null),
+                $data['schema_version'] ?? 'aetherfall.magic-foci.v1', $data['source_file'] ?? basename($file), $hash, $raw,
+            ]);
+            $this->counts[$oldHash === false ? 'Magiefoki neu' : 'Magiefoki aktualisiert']++;
+        }
+    }
+
+    /** These ALTERs keep an existing installation compatible with the expanded importer. */
+    private function ensureClassActionTables(): void
+    {
+        $mysql = $this->pdo->getAttribute(PDO::ATTR_DRIVER_NAME) === 'mysql';
+        $text = $mysql ? 'LONGTEXT' : 'TEXT';
+        try { $this->pdo->exec("CREATE TABLE IF NOT EXISTS class_actions (id VARCHAR(220) PRIMARY KEY,class_id VARCHAR(120) NOT NULL,external_id VARCHAR(190) NOT NULL,name VARCHAR(255) NOT NULL,action_type VARCHAR(80) NOT NULL DEFAULT 'class_action',unlock_level INTEGER NOT NULL DEFAULT 1,attack_formula TEXT NULL,damage_formula TEXT NULL,damage_type VARCHAR(190) NULL,resource_cost TEXT NULL,resource_gain TEXT NULL,weapon_mode VARCHAR(190) NULL,description TEXT NULL,source_file VARCHAR(255) NULL,source_hash VARCHAR(64) NULL,raw_json {$text} NOT NULL,UNIQUE(class_id,external_id))"); } catch (Throwable) {}
+        try { $this->pdo->exec("CREATE TABLE IF NOT EXISTS class_weapon_profiles (id VARCHAR(220) PRIMARY KEY,class_id VARCHAR(120) NOT NULL,profile_name VARCHAR(190) NOT NULL,unlock_level INTEGER NOT NULL DEFAULT 1,start_die VARCHAR(80) NULL,attack_formula TEXT NULL,damage_formula TEXT NULL,damage_type VARCHAR(190) NULL,handling VARCHAR(80) NULL,range_text VARCHAR(190) NULL,weight VARCHAR(80) NULL,description TEXT NULL,source_file VARCHAR(255) NULL,source_hash VARCHAR(64) NULL,raw_json {$text} NOT NULL,UNIQUE(class_id,profile_name))"); } catch (Throwable) {}
+        try { $this->pdo->exec("CREATE UNIQUE INDEX uq_class_resource_id ON class_resources(resource_id)"); } catch (Throwable) {}
+        $columns = [
+            'form'=>'TEXT NULL','maximum_formula'=>'TEXT NULL','start_value'=>'TEXT NULL','base_generation'=>'TEXT NULL',
+            'generation'=>'TEXT NULL','consumption'=>'TEXT NULL','relief'=>'TEXT NULL','persistence'=>'TEXT NULL',
+            'recovery'=>'TEXT NULL','stacking'=>'TEXT NULL','transfer'=>'TEXT NULL','loss_decay'=>'TEXT NULL',
+            'visibility'=>'TEXT NULL','multiclass_boundary'=>'TEXT NULL','base_function'=>'TEXT NULL','rounding'=>'TEXT NULL',
+            'source_file'=>'VARCHAR(255) NULL','source_hash'=>'VARCHAR(64) NULL',
+        ];
+        foreach ($columns as $column=>$definition) { try { $this->pdo->query("SELECT {$column} FROM class_resources LIMIT 1"); } catch (Throwable) { try { $this->pdo->exec("ALTER TABLE class_resources ADD COLUMN {$column} {$definition}"); } catch (Throwable) {} } }
+    }
+
+    private function jsonOrNull(mixed $value): ?string
+    {
+        if ($value === null || $value === '') return null;
+        return is_string($value) ? $value : Json::encode($value);
+    }
+
+    private function importWeapons(): void
+    {
+        $sql = 'INSERT INTO weapons (id,name,display_name,subtitle,base_weapon_type,category,quality,item_level,is_magical,is_elemental,elements_json,core_die,handling,range_text,damage_type,weight,attack_attribute,attack_formula,damage_formula,critical_modification,special_properties,active_ability,class_restriction,appearance,schema_version,source_file,source_hash,raw_json) VALUES (' . implode(',', array_fill(0, 28, '?')) . ') ON DUPLICATE KEY UPDATE name=VALUES(name),display_name=VALUES(display_name),subtitle=VALUES(subtitle),base_weapon_type=VALUES(base_weapon_type),category=VALUES(category),quality=VALUES(quality),item_level=VALUES(item_level),is_magical=VALUES(is_magical),is_elemental=VALUES(is_elemental),elements_json=VALUES(elements_json),core_die=VALUES(core_die),handling=VALUES(handling),range_text=VALUES(range_text),damage_type=VALUES(damage_type),weight=VALUES(weight),attack_attribute=VALUES(attack_attribute),attack_formula=VALUES(attack_formula),damage_formula=VALUES(damage_formula),critical_modification=VALUES(critical_modification),special_properties=VALUES(special_properties),active_ability=VALUES(active_ability),class_restriction=VALUES(class_restriction),appearance=VALUES(appearance),schema_version=VALUES(schema_version),source_file=VALUES(source_file),source_hash=VALUES(source_hash),raw_json=VALUES(raw_json)';
+        $stmt = $this->pdo->prepare($sql);
+        $existing = $this->pdo->prepare('SELECT source_hash FROM weapons WHERE id=?');
+        $files = $this->files('weapons');
+        $manifestPath = BASE_PATH . '/json/weapons/_manifest.json';
+        if (is_file($manifestPath)) {
+            try {
+                $manifest = Json::decodeFile($manifestPath);
+                $expected = (int)($manifest['weapon_count'] ?? $manifest['count'] ?? 0);
+                if ($expected > 0 && $expected !== count($files)) {
+                    $this->warnings[] = "Waffenmanifest erwartet {$expected} Dateien, gefunden wurden " . count($files) . '.';
+                }
+            } catch (Throwable $e) {
+                $this->warnings[] = 'Waffenmanifest konnte nicht gelesen werden: ' . $e->getMessage();
+            }
+        }
+        foreach ($files as $file) {
+            $data = Json::decodeFile($file);
+            $raw = (string)file_get_contents($file);
+            $hash = hash('sha256', $raw);
+            $existing->execute([(string)$data['id']]);
+            $oldHash = $existing->fetchColumn();
+            $this->counts['Waffen']++;
+            if ($oldHash !== false && (string)$oldHash === $hash) {
+                $this->counts['Waffen übersprungen']++;
+                continue;
+            }
+            $magical = $data['magical']['value'] ?? $data['magical'] ?? false;
+            $damage = $data['formulas']['damage'] ?? null;
+            if (is_array($damage)) $damage = $damage['default'] ?? null;
+            $attrs = $data['attributes'] ?? [];
+            $binding = $data['class_binding'] ?? [];
+            $stmt->execute([
+                (string)$data['id'], (string)($data['name'] ?? $data['display_name'] ?? $data['id']), $data['display_name'] ?? null,
+                $data['subtitle'] ?? null, $data['base_weapon_type'] ?? null, $data['category'] ?? null, $data['quality'] ?? null,
+                isset($data['item_level']) ? (int)$data['item_level'] : null, (int)(bool)$magical, (int)(bool)($data['is_elemental'] ?? false),
+                $this->jsonOrNull($data['elements'] ?? []), $data['core_dice']['raw'] ?? null, $data['handling'] ?? null,
+                $data['range'] ?? null, $data['damage_type'] ?? null, $data['weight'] ?? null, $attrs['attack'] ?? null,
+                $data['formulas']['attack'] ?? null, $damage, $this->jsonOrNull($data['critical_modification'] ?? null),
+                $this->jsonOrNull($data['special_properties'] ?? null), $this->jsonOrNull($data['active_ability'] ?? null),
+                $binding['class_name'] ?? null, $data['appearance'] ?? null, $data['schema_version'] ?? 'aetherfall.weapons.v1',
+                $data['source_file'] ?? basename($file), $hash, $raw,
+            ]);
+            $this->counts[$oldHash === false ? 'Waffen neu' : 'Waffen aktualisiert']++;
+        }
+    }
+
     private function importClasses(): void
     {
         $classSql = 'INSERT INTO classes (id,name,schema_version,source_file,source_hash,raw_json) VALUES (?,?,?,?,?,?) ON DUPLICATE KEY UPDATE name=VALUES(name),schema_version=VALUES(schema_version),source_file=VALUES(source_file),source_hash=VALUES(source_hash),raw_json=VALUES(raw_json)';
-        $resourceSql = 'INSERT INTO class_resources (class_id,resource_id,name,raw_json) VALUES (?,?,?,?) ON DUPLICATE KEY UPDATE resource_id=VALUES(resource_id),name=VALUES(name),raw_json=VALUES(raw_json)';
+        $resourceSql = 'INSERT INTO class_resources (class_id,resource_id,name,form,maximum_formula,start_value,base_generation,generation,consumption,relief,persistence,recovery,stacking,transfer,loss_decay,visibility,multiclass_boundary,base_function,rounding,source_file,source_hash,raw_json) VALUES (' . implode(',', array_fill(0, 22, '?')) . ') ON DUPLICATE KEY UPDATE resource_id=VALUES(resource_id),name=VALUES(name),form=VALUES(form),maximum_formula=VALUES(maximum_formula),start_value=VALUES(start_value),base_generation=VALUES(base_generation),generation=VALUES(generation),consumption=VALUES(consumption),relief=VALUES(relief),persistence=VALUES(persistence),recovery=VALUES(recovery),stacking=VALUES(stacking),transfer=VALUES(transfer),loss_decay=VALUES(loss_decay),visibility=VALUES(visibility),multiclass_boundary=VALUES(multiclass_boundary),base_function=VALUES(base_function),rounding=VALUES(rounding),source_file=VALUES(source_file),source_hash=VALUES(source_hash),raw_json=VALUES(raw_json)';
         $abilitySql = 'INSERT INTO abilities (id,class_id,unlock_level,number,name,type,focus,action_cost,trigger_requirement,costs,class_resource,usage_limit,range_text,target_text,area_text,duration_text,attack_roll,saving_throw,dc,attribute_reference,damage_type,calculation,effect,target_effect,status_effect,stacking,end_condition,scaling,source_file,source_hash,raw_json) VALUES (' . implode(',', array_fill(0, 31, '?')) . ') ON DUPLICATE KEY UPDATE class_id=VALUES(class_id),unlock_level=VALUES(unlock_level),number=VALUES(number),name=VALUES(name),type=VALUES(type),focus=VALUES(focus),action_cost=VALUES(action_cost),trigger_requirement=VALUES(trigger_requirement),costs=VALUES(costs),class_resource=VALUES(class_resource),usage_limit=VALUES(usage_limit),range_text=VALUES(range_text),target_text=VALUES(target_text),area_text=VALUES(area_text),duration_text=VALUES(duration_text),attack_roll=VALUES(attack_roll),saving_throw=VALUES(saving_throw),dc=VALUES(dc),attribute_reference=VALUES(attribute_reference),damage_type=VALUES(damage_type),calculation=VALUES(calculation),effect=VALUES(effect),target_effect=VALUES(target_effect),status_effect=VALUES(status_effect),stacking=VALUES(stacking),end_condition=VALUES(end_condition),scaling=VALUES(scaling),source_file=VALUES(source_file),source_hash=VALUES(source_hash),raw_json=VALUES(raw_json)';
         $classStmt = $this->pdo->prepare($classSql);
         $resourceStmt = $this->pdo->prepare($resourceSql);
@@ -60,8 +234,19 @@ final class ImportService
             $classStmt->execute([$data['id'], $data['name'], $data['schema_version'], $data['source_file'] ?? basename($file), $hash, $raw]);
             $resource = $data['resource'] ?? null;
             if (is_array($resource)) {
-                $resourceStmt->execute([$data['id'], $resource['id'] ?? $data['id'] . '-resource', $resource['name'] ?? 'Klassenressource', Json::encode($resource)]);
+                $resourceStmt->execute([
+                    $data['id'], $resource['id'] ?? $data['id'] . '-resource', $resource['name'] ?? 'Klassenressource',
+                    $resource['form'] ?? null, $this->resourceMaximum($resource), $resource['start_value'] ?? null,
+                    $resource['base_generation'] ?? ($resource['base_access'] ?? null), $resource['generation'] ?? null,
+                    $resource['consumption'] ?? null, $resource['relief'] ?? null, $resource['persistence'] ?? null,
+                    $resource['recovery'] ?? null, $resource['stacking'] ?? null, $resource['transfer'] ?? null,
+                    $resource['loss_decay'] ?? null, $resource['visibility'] ?? ($resource['visibility_recognition'] ?? null),
+                    $resource['multiclass_boundary'] ?? null, $resource['base_function'] ?? null, $resource['rounding'] ?? null,
+                    $data['source_file'] ?? basename($file), $hash, Json::encode($resource)
+                ]);
+                $this->counts['Klassenressourcen']++;
             }
+            $this->importClassMechanics($data, $file, $hash);
             foreach ($data['levels'] ?? [] as $level) {
                 foreach ($level['abilities'] ?? [] as $ability) {
                     $abilityStmt->execute([
@@ -79,6 +264,53 @@ final class ImportService
             }
             $this->counts['Klassen']++;
         }
+    }
+
+    private function resourceMaximum(array $resource): ?string
+    {
+        if (isset($resource['maximum']) && is_string($resource['maximum'])) return $resource['maximum'];
+        return isset($resource['maximum']) ? Json::encode($resource['maximum']) : null;
+    }
+
+    private function formulaFromText(mixed $value): ?string
+    {
+        if (!is_string($value) || trim($value)==='') return null;
+        if (preg_match('/`([^`]+)`/u', $value, $m)) $value=$m[1];
+        $value = preg_replace('/\bStärke-Modifikator\b/u','ST-Modifikator',$value) ?? $value;
+        $value = preg_replace('/\bStärke-Bonus\b/u','ST-Bonus',$value) ?? $value;
+        $value = preg_replace('/\bTaktbrecher-Stufe\b/u','Taktbrecher-Stufe',$value) ?? $value;
+        return trim($value);
+    }
+
+    private function tableRows(array $section): array
+    {
+        $rows=[]; foreach (($section['tables'] ?? []) as $table) foreach (($table['rows'] ?? []) as $row) if (is_array($row)) $rows[]=$row; return $rows;
+    }
+
+    private function rowValue(array $rows, string $label): ?string
+    {
+        foreach ($rows as $row) if (isset($row[0]) && mb_stripos(strip_tags((string)$row[0]), $label)!==false) return isset($row[1])?(string)$row[1]:null;
+        return null;
+    }
+
+    /** Normalize only clearly identifiable class mechanics; free-form rules remain in raw_json. */
+    private function importClassMechanics(array $data, string $file, string $hash): void
+    {
+        $classId=(string)($data['id']??''); $sections=$data['class_sections']??[]; if (!$classId || !is_array($sections)) return;
+        $base=null; $profiles=null; $examples=null;
+        foreach ($sections as $section) { $title=(string)($section['title']??''); if (str_contains($title,'Klassenbasis')) $base=$section; if (str_contains($title,'Manifestationsmuster')) $profiles=$section; if (str_contains($title,'Beispiele für die Zuordnung')) $examples=$section; }
+        if (!$base || !$profiles) return;
+        $baseRows=$this->tableRows($base); $attack=$this->formulaFromText($this->rowValue($baseRows,'Angriffswurf')); $damage=$this->formulaFromText($this->rowValue($baseRows,'Körperangriff'));
+        if (!$attack && !$damage || $this->rowValue($baseRows,'Taktangriff')===null) return;
+        $sql="INSERT INTO class_actions (id,class_id,external_id,name,action_type,unlock_level,attack_formula,damage_formula,damage_type,resource_cost,resource_gain,weapon_mode,description,source_file,source_hash,raw_json) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE name=VALUES(name),attack_formula=VALUES(attack_formula),damage_formula=VALUES(damage_formula),damage_type=VALUES(damage_type),description=VALUES(description),source_file=VALUES(source_file),source_hash=VALUES(source_hash),raw_json=VALUES(raw_json)";
+        $stmt=$this->pdo->prepare($sql); $stmt->execute(["{$classId}-normaler-angriff",$classId,'normaler-angriff','Normaler Angriff','class_action',1,$attack,$damage,'Schlag',null,null,'unbewaffnet',$this->rowValue($baseRows,'Taktangriff'),$data['source_file']??basename($file),$hash,Json::encode(['section'=>$base])]); $this->counts['Klassenaktionen']++;
+        $stmt->execute(["{$classId}-exaltierte-waffe",$classId,'exaltierte-waffe','Exaltierte Waffe','class_action',1,$attack,null,null,null,null,'class_weapon','Taktangriff mit der Exaltierten Waffe.',$data['source_file']??basename($file),$hash,Json::encode(['section'=>$base])]); $this->counts['Klassenaktionen']++;
+        $profileStmt=$this->pdo->prepare("INSERT INTO class_weapon_profiles (id,class_id,profile_name,unlock_level,start_die,attack_formula,damage_formula,damage_type,handling,range_text,weight,description,source_file,source_hash,raw_json) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE start_die=VALUES(start_die),attack_formula=VALUES(attack_formula),damage_formula=VALUES(damage_formula),damage_type=VALUES(damage_type),handling=VALUES(handling),range_text=VALUES(range_text),weight=VALUES(weight),description=VALUES(description),source_file=VALUES(source_file),source_hash=VALUES(source_hash),raw_json=VALUES(raw_json)");
+        foreach ($this->tableRows($profiles) as $row) { $name=trim(strip_tags((string)($row[0]??''))); if ($name===''||!str_contains($name,'profil')) continue; $profileName=preg_replace('/\s+/',' ',str_replace('**','',$name))??$name; $die=trim((string)($row[1]??'')); $profileDamage=$this->formulaFromText($row[3]??''); $profileStmt->execute(["{$classId}-".strtolower(str_replace(' ','-', $profileName)),$classId,$profileName,1,$die,$attack,$profileDamage,'Physisch',null,null,null,$row[2]??null,$data['source_file']??basename($file),$hash,Json::encode(['section'=>$profiles,'row'=>$row])]); $this->counts['Klassenwaffenprofile']++; }
+        $this->pdo->prepare("UPDATE class_weapon_profiles SET damage_type='Hieb' WHERE class_id=?")->execute([$classId]);
+        // The base action uses the documented full profile until a concrete
+        // manifestation profile is selected in the tracker.
+        $this->pdo->prepare("UPDATE class_actions SET damage_formula=(SELECT damage_formula FROM class_weapon_profiles WHERE class_id=? AND profile_name='Vollprofil' LIMIT 1),damage_type='Hieb' WHERE class_id=? AND external_id='exaltierte-waffe'")->execute([$classId,$classId]);
     }
 
     private function seedClassAdjustments(): void

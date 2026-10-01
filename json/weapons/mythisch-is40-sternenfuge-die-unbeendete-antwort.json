@@ -1,0 +1,750 @@
+{
+  "schema_version": "aetherfall.weapons.v1",
+  "id": "mythisch-is40-sternenfuge-die-unbeendete-antwort",
+  "number": null,
+  "name": "Sternenfuge",
+  "subtitle": "Die unbeendete Antwort",
+  "display_name": "Sternenfuge – Die unbeendete Antwort",
+  "source_type": "special_weapon",
+  "item_type": "Waffe",
+  "base_weapon_type": "Langschwert",
+  "category": "Schwerter",
+  "quality": "Mythisch",
+  "item_level": 40,
+  "magical": {
+    "raw": "Ja",
+    "value": true
+  },
+  "elements": [],
+  "is_elemental": false,
+  "core_dice": {
+    "raw": "1W8 – Identitätskern des Langschwertes; bleibt in beiden Schadensformeln sichtbar",
+    "dice_terms": [
+      {
+        "raw": "1W8",
+        "count": 1,
+        "sides": 8
+      }
+    ]
+  },
+  "handling": "Variabel",
+  "range": "Nah",
+  "damage_type": "Hieb / Stich",
+  "weight": "Mittel",
+  "attributes": {
+    "attack": "Willenskraft",
+    "primary_class": null,
+    "secondary_class": null
+  },
+  "formulas": {
+    "attack": "W20 + Willenskraft-Modifikator + Willenskraft-Bonus",
+    "damage": {
+      "default": null,
+      "one_handed": "1W8 + 9W10 + 30 + Kernwert",
+      "two_handed": "1W8 + 11W10 + 30 + Kernwert"
+    },
+    "core_value": "Willenskraft-Modifikator + Willenskraft-Bonus + ⌊(Empathie-Modifikator + Empathie-Bonus) / 2⌋",
+    "dice_terms": [
+      {
+        "raw": "W20",
+        "count": 1,
+        "sides": 20
+      },
+      {
+        "raw": "1W8",
+        "count": 1,
+        "sides": 8
+      },
+      {
+        "raw": "9W10",
+        "count": 9,
+        "sides": 10
+      },
+      {
+        "raw": "1W8",
+        "count": 1,
+        "sides": 8
+      },
+      {
+        "raw": "11W10",
+        "count": 11,
+        "sides": 10
+      }
+    ]
+  },
+  "critical_modification": "–; es gelten die normalen Kritregeln",
+  "class_binding": {
+    "class_name": "Ursprungsvermächtnis",
+    "raw": "Ausschließlich Ursprungsvermächtnis",
+    "is_class_weapon": true,
+    "is_dm_weapon": true
+  },
+  "class_resource": null,
+  "special_properties": null,
+  "class_effect": null,
+  "active_ability": null,
+  "action_cost": null,
+  "trigger_requirement": null,
+  "costs": null,
+  "usage_limit": null,
+  "effect_range": null,
+  "target_area": null,
+  "duration": null,
+  "saving_throw_dc": null,
+  "effect_calculation": null,
+  "rule_effect": null,
+  "stacking": null,
+  "end_condition": null,
+  "upgrade_scaling": null,
+  "crafting_requirement": null,
+  "appearance": null,
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.2",
+    "classification": "Bewusst leicht bis deutlich oberhalb einer regulären Itemstufe-40-Waffe; ausschließlich für den DM-Charakter",
+    "dm_performance_profile": "Ursprungsvermächtnis-DM-Sonderbudget-2.0",
+    "status": "Balance 1.0 – DM-Sonderprofil / Itemstufe 40"
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Waffen",
+      "Mythisch",
+      "Ursprungsvermächtnis",
+      "DM-Klasse",
+      "Cosmos",
+      "Chaos"
+    ],
+    "aliases": [
+      "Sternenfuge",
+      "Die unbeendete Antwort",
+      "Klinge der Zwei"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.2",
+    "klasse": "Ursprungsvermächtnis",
+    "klassenbindung": "exklusiv",
+    "qualitaet": "Mythisch",
+    "itemstufe": 40,
+    "basiswaffe": "Langschwert",
+    "dm_leistungsprofil": "Ursprungsvermächtnis-DM-Sonderbudget-2.0",
+    "balance_einordnung": "bewusst_oberhalb_regulaerer_waffenbalance",
+    "status": "Balance 1.0 – DM-Sonderprofil / Itemstufe 40"
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Name": "**Sternenfuge**",
+    "Beiname": "**Die unbeendete Antwort**",
+    "Basiswaffenart": "Langschwert",
+    "Waffenkategorie": "Schwerter",
+    "Qualitätsstufe": "**Mythisch**",
+    "Itemstufe": "**40**",
+    "Magisch": "Ja",
+    "Klassenbindung": "Ausschließlich **Ursprungsvermächtnis**",
+    "DM-Leistungsprofil": "**Ursprungsvermächtnis-DM-Sonderbudget-2.0**",
+    "Balance-Einordnung": "Bewusst leicht bis deutlich oberhalb einer regulären Itemstufe-40-Waffe; ausschließlich für den DM-Charakter",
+    "Kernwürfel": "1W8 – Identitätskern des Langschwertes; bleibt in beiden Schadensformeln sichtbar",
+    "Führung": "Variabel",
+    "Reichweite": "Nah",
+    "Schadensart": "Hieb / Stich",
+    "Gewicht": "Mittel",
+    "Angriffsattribut": "Willenskraft",
+    "Angriffswurf": "`W20 + Willenskraft-Modifikator + Willenskraft-Bonus`",
+    "Schadensformel – einhändig": "`1W8 + 9W10 + 30 + Kernwert`",
+    "Schadensformel – zweihändig": "`1W8 + 11W10 + 30 + Kernwert`",
+    "Kernwert": "`Willenskraft-Modifikator + Willenskraft-Bonus + ⌊(Empathie-Modifikator + Empathie-Bonus) / 2⌋`",
+    "Krit-Modifikation": "–; es gelten die normalen Kritregeln",
+    "Element": "Keines"
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Name** | **Sternenfuge** |\n| **Beiname** | **Die unbeendete Antwort** |\n| **Basiswaffenart** | Langschwert |\n| **Waffenkategorie** | Schwerter |\n| **Qualitätsstufe** | **Mythisch** |\n| **Itemstufe** | **40** |\n| **Magisch** | Ja |\n| **Klassenbindung** | Ausschließlich **Ursprungsvermächtnis** |\n| **DM-Leistungsprofil** | **Ursprungsvermächtnis-DM-Sonderbudget-2.0** |\n| **Balance-Einordnung** | Bewusst leicht bis deutlich oberhalb einer regulären Itemstufe-40-Waffe; ausschließlich für den DM-Charakter |\n| **Kernwürfel** | 1W8 – Identitätskern des Langschwertes; bleibt in beiden Schadensformeln sichtbar |\n| **Führung** | Variabel |\n| **Reichweite** | Nah |\n| **Schadensart** | Hieb / Stich |\n| **Gewicht** | Mittel |\n| **Angriffsattribut** | Willenskraft |\n| **Angriffswurf** | `W20 + Willenskraft-Modifikator + Willenskraft-Bonus` |\n| **Schadensformel – einhändig** | `1W8 + 9W10 + 30 + Kernwert` |\n| **Schadensformel – zweihändig** | `1W8 + 11W10 + 30 + Kernwert` |\n| **Kernwert** | `Willenskraft-Modifikator + Willenskraft-Bonus + ⌊(Empathie-Modifikator + Empathie-Bonus) / 2⌋` |\n| **Krit-Modifikation** | –; es gelten die normalen Kritregeln |\n| **Element** | Keines |",
+  "sections": [
+    {
+      "level": 1,
+      "title": "Sternenfuge",
+      "markdown": null,
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3458,
+        "line_end": 3459
+      }
+    },
+    {
+      "level": 2,
+      "title": "Die unbeendete Antwort",
+      "markdown": "> _„Eine Grenze ist notwendig, damit etwas bestehen kann. Eine Möglichkeit ist notwendig, damit es mehr werden kann als das, was bereits ist.“_\n>\n> — Inschrift, die nur sichtbar wird, wenn Ordnung und Wandel zugleich durch die Klinge fließen\n\n**Sternenfuge** ist keine Waffe, die für das Ursprungsvermächtnis von einem späteren Schmied gefertigt wurde. Sie ist ebenso wenig ein zweites letztes Geschenk, das Cosmos und Chaos unabhängig von ihrem lebenden Vermächtnis in Aetheryn zurückließen.\n\nDie Klinge ist eine **Manifestation desselben göttlichen Ursprungs**, aus dem das Ursprungsvermächtnis hervorging.\n\nAls Cosmos und Chaos ihr letztes gemeinsames Werk erschufen, legten sie nicht jede zukünftige Form seiner Macht fest. Sie hinterließen stattdessen Möglichkeiten im göttlichen Kern – Strukturen, die erst dann Wirklichkeit werden konnten, wenn das Vermächtnis selbst eine Entscheidung traf.\n\nSternenfuge ist eine dieser Möglichkeiten.\n\nCosmos gab ihr die **Grenze**: eine Form, die bestehen kann, eine Schneide, die zwischen zwei Zuständen unterscheidet, und ein Maß, das verhindert, dass Macht ohne Ende in die Welt fließt.\n\nChaos gab ihr die **Abweichung**: keine Bewegung folgt vollkommen der vorherigen, keine Ätherlinie bleibt für immer gleich, und selbst eine gesetzte Grenze darf einen neuen Weg eröffnen, wenn die Zukunft ihn verlangt.\n\nDarum ist Sternenfuge weder eine reine Waffe des Cosmos noch eine reine Waffe des Chaos.\n\nSie ist die Stelle, an der beide Prinzipien einander berühren, ohne einander auszulöschen.\n\nSie ist die **Fuge zwischen Bestand und Möglichkeit**.\n\nUnd wie das Ursprungsvermächtnis selbst trägt sie keine Krone.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3460,
+        "line_end": 3487
+      }
+    },
+    {
+      "level": 1,
+      "title": "Einordnung",
+      "markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Name** | **Sternenfuge** |\n| **Beiname** | **Die unbeendete Antwort** |\n| **Basiswaffenart** | Langschwert |\n| **Waffenkategorie** | Schwerter |\n| **Qualitätsstufe** | **Mythisch** |\n| **Itemstufe** | **40** |\n| **Magisch** | Ja |\n| **Klassenbindung** | Ausschließlich **Ursprungsvermächtnis** |\n| **DM-Leistungsprofil** | **Ursprungsvermächtnis-DM-Sonderbudget-2.0** |\n| **Balance-Einordnung** | Bewusst leicht bis deutlich oberhalb einer regulären Itemstufe-40-Waffe; ausschließlich für den DM-Charakter |\n| **Kernwürfel** | 1W8 – Identitätskern des Langschwertes; bleibt in beiden Schadensformeln sichtbar |\n| **Führung** | Variabel |\n| **Reichweite** | Nah |\n| **Schadensart** | Hieb / Stich |\n| **Gewicht** | Mittel |\n| **Angriffsattribut** | Willenskraft |\n| **Angriffswurf** | `W20 + Willenskraft-Modifikator + Willenskraft-Bonus` |\n| **Schadensformel – einhändig** | `1W8 + 9W10 + 30 + Kernwert` |\n| **Schadensformel – zweihändig** | `1W8 + 11W10 + 30 + Kernwert` |\n| **Kernwert** | `Willenskraft-Modifikator + Willenskraft-Bonus + ⌊(Empathie-Modifikator + Empathie-Bonus) / 2⌋` |\n| **Krit-Modifikation** | –; es gelten die normalen Kritregeln |\n| **Element** | Keines |\n\n> [!important] Bewusste DM-Überhöhung\n> Diese Fassung ist **nicht** als reguläre Spielerwaffe ausbalanciert. Sternenfuge ist die persönliche mythische Itemstufe-40-Waffe der DM-exklusiven Klasse **Ursprungsvermächtnis**. Ihr Grundangriff liegt bewusst oberhalb des normalen 1W8-Waffenankers derselben Itemstufe. Die Mehrmacht wird direkt über zusätzliche Würfel und den festen Itemstufenanteil dargestellt – nicht über einen nachträglichen Multiplikator.\n\n> [!important] Keine Licht-/Dunkelheitszuordnung\n> **Cosmos ist nicht Licht und Chaos ist nicht Dunkelheit.** Sternenfuge besitzt deshalb keine automatische Licht- oder Dunkelheitsprägung. Die sechs Urströme gehören zur späteren Schöpfungsordnung Aetheryns und werden durch diese Waffe nicht kostenlos beherrscht.",
+      "code_blocks": [],
+      "tables": [
+        {
+          "headers": [
+            "Regelpunkt",
+            "Angabe"
+          ],
+          "rows": [
+            [
+              "**Name**",
+              "**Sternenfuge**"
+            ],
+            [
+              "**Beiname**",
+              "**Die unbeendete Antwort**"
+            ],
+            [
+              "**Basiswaffenart**",
+              "Langschwert"
+            ],
+            [
+              "**Waffenkategorie**",
+              "Schwerter"
+            ],
+            [
+              "**Qualitätsstufe**",
+              "**Mythisch**"
+            ],
+            [
+              "**Itemstufe**",
+              "**40**"
+            ],
+            [
+              "**Magisch**",
+              "Ja"
+            ],
+            [
+              "**Klassenbindung**",
+              "Ausschließlich **Ursprungsvermächtnis**"
+            ],
+            [
+              "**DM-Leistungsprofil**",
+              "**Ursprungsvermächtnis-DM-Sonderbudget-2.0**"
+            ],
+            [
+              "**Balance-Einordnung**",
+              "Bewusst leicht bis deutlich oberhalb einer regulären Itemstufe-40-Waffe; ausschließlich für den DM-Charakter"
+            ],
+            [
+              "**Kernwürfel**",
+              "1W8 – Identitätskern des Langschwertes; bleibt in beiden Schadensformeln sichtbar"
+            ],
+            [
+              "**Führung**",
+              "Variabel"
+            ],
+            [
+              "**Reichweite**",
+              "Nah"
+            ],
+            [
+              "**Schadensart**",
+              "Hieb / Stich"
+            ],
+            [
+              "**Gewicht**",
+              "Mittel"
+            ],
+            [
+              "**Angriffsattribut**",
+              "Willenskraft"
+            ],
+            [
+              "**Angriffswurf**",
+              "`W20 + Willenskraft-Modifikator + Willenskraft-Bonus`"
+            ],
+            [
+              "**Schadensformel – einhändig**",
+              "`1W8 + 9W10 + 30 + Kernwert`"
+            ],
+            [
+              "**Schadensformel – zweihändig**",
+              "`1W8 + 11W10 + 30 + Kernwert`"
+            ],
+            [
+              "**Kernwert**",
+              "`Willenskraft-Modifikator + Willenskraft-Bonus + ⌊(Empathie-Modifikator + Empathie-Bonus) / 2⌋`"
+            ],
+            [
+              "**Krit-Modifikation**",
+              "–; es gelten die normalen Kritregeln"
+            ],
+            [
+              "**Element**",
+              "Keines"
+            ]
+          ],
+          "raw_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Name** | **Sternenfuge** |\n| **Beiname** | **Die unbeendete Antwort** |\n| **Basiswaffenart** | Langschwert |\n| **Waffenkategorie** | Schwerter |\n| **Qualitätsstufe** | **Mythisch** |\n| **Itemstufe** | **40** |\n| **Magisch** | Ja |\n| **Klassenbindung** | Ausschließlich **Ursprungsvermächtnis** |\n| **DM-Leistungsprofil** | **Ursprungsvermächtnis-DM-Sonderbudget-2.0** |\n| **Balance-Einordnung** | Bewusst leicht bis deutlich oberhalb einer regulären Itemstufe-40-Waffe; ausschließlich für den DM-Charakter |\n| **Kernwürfel** | 1W8 – Identitätskern des Langschwertes; bleibt in beiden Schadensformeln sichtbar |\n| **Führung** | Variabel |\n| **Reichweite** | Nah |\n| **Schadensart** | Hieb / Stich |\n| **Gewicht** | Mittel |\n| **Angriffsattribut** | Willenskraft |\n| **Angriffswurf** | `W20 + Willenskraft-Modifikator + Willenskraft-Bonus` |\n| **Schadensformel – einhändig** | `1W8 + 9W10 + 30 + Kernwert` |\n| **Schadensformel – zweihändig** | `1W8 + 11W10 + 30 + Kernwert` |\n| **Kernwert** | `Willenskraft-Modifikator + Willenskraft-Bonus + ⌊(Empathie-Modifikator + Empathie-Bonus) / 2⌋` |\n| **Krit-Modifikation** | –; es gelten die normalen Kritregeln |\n| **Element** | Keines |",
+          "source": {
+            "line_start": 3490,
+            "line_end": 3513
+          }
+        }
+      ],
+      "source": {
+        "line_start": 3488,
+        "line_end": 3520
+      }
+    },
+    {
+      "level": 1,
+      "title": "Erscheinungsbild",
+      "markdown": "Sternenfuge besitzt die erkennbare Grundform eines Langschwertes, doch kein Teil der Waffe wirkt wie das Ergebnis gewöhnlicher Schmiedekunst.\n\nDie Klinge ist lang, gerade und schmal genug, um kontrolliert geführt zu werden. Ihre Oberfläche besteht aus einem Material, das weder vollständig Metall noch Kristall zu sein scheint. Unter ruhigem Licht wirkt sie silbern und beinahe farblos. Sobald Äther durch sie fließt, entstehen jedoch zwei gleichzeitig sichtbare Strukturen.\n\nAuf der einen Seite erscheinen **vollkommen klare Linien**. Sie verlaufen in geometrischen Abständen über die Klinge, teilen Flächen, bilden Kreise, Winkel und wiederkehrende Sternenmuster. Keine Linie überschneidet eine andere zufällig. Diese Seite verändert sich nur selten und trägt die Prägung des **Cosmos**.\n\nAuf der anderen Seite bewegen sich feine Ätherspuren in niemals identischen Bahnen. Sie können violett, tiefblau, farblos oder beinahe schwarz erscheinen, ohne dabei Dunkelschaden oder ein Dunkelheitselement darzustellen. Muster entstehen, lösen sich wieder auf und kehren in leicht veränderter Form zurück. Diese Seite trägt die Prägung des **Chaos**.\n\nBeide Hälften sind keine getrennten Klingen.\n\nSie gehören zu derselben Schneide.\n\nIm Parierstück treffen die beiden Muster in einem offenen Ring aufeinander. Der Ring besitzt keine Krone, kein Herrschaftssymbol und kein Zeichen eines Thrones. Um ihn liegen fünf kleine Ätherpunkte, die auf die fünf Urmandate reagieren: **Bewahrung, Erhebung, Leben, Auflösung und Entscheidung**.\n\nDer Griff verändert seine Länge geringfügig, wenn Sternenfuge ein- oder zweihändig geführt wird. Diese Veränderung ist keine vollständige Gestaltwandlung und verändert die Basiswaffenart nicht. Die Waffe bleibt immer ein Langschwert.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3521,
+        "line_end": 3540
+      }
+    },
+    {
+      "level": 1,
+      "title": "Herkunft",
+      "markdown": null,
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3541,
+        "line_end": 3542
+      }
+    },
+    {
+      "level": 2,
+      "title": "Keine zweite Schöpfung neben dem Ursprungsvermächtnis",
+      "markdown": "Sternenfuge wurde nicht als eigenständiges Artefakt neben dem Ursprungsvermächtnis erschaffen.\n\nDas ist für ihre Einordnung entscheidend.\n\nCosmos und Chaos hinterließen mit dem Ursprungsvermächtnis kein Arsenal göttlicher Werkzeuge, das nur darauf wartete, gefunden zu werden. Ihr letztes Geschenk sollte ein **eigenständiges lebendes Wesen** sein und kein Träger vorgefertigter Befehle.\n\nDarum existierte Sternenfuge zunächst nur als **Möglichkeit im göttlichen Kern**.\n\nSie konnte erst Gestalt annehmen, nachdem das Ursprungsvermächtnis selbst begonnen hatte, seine Aufgabe als eigene Verantwortung zu verstehen. Die Waffe ist deshalb weniger ein Erbstück als eine Antwort des göttlichen Kerns auf eine selbst getroffene Entscheidung.\n\nDas Vermächtnis führt sie nicht, weil Cosmos und Chaos es dazu zwingen.\n\nEs führt sie, weil es sich dazu entschieden hat.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3543,
+        "line_end": 3558
+      }
+    },
+    {
+      "level": 2,
+      "title": "Keine Wiedergeburt der Ursprungsgötter",
+      "markdown": "Sternenfuge enthält weder die Seele von Cosmos noch die Seele von Chaos.\n\nSie spricht nicht mit ihren Stimmen, übernimmt nicht den Willen ihres Trägers und kann keine verborgene Persönlichkeit der Ursprungsgötter freisetzen.\n\nDie Klinge trägt ihre **Prinzipien**, nicht ihre fortbestehenden Personen.\n\nIhre Macht ist deshalb mit dem Ursprungsvermächtnis vereinbar: Sie erweitert dessen Möglichkeiten, ohne dessen Eigenständigkeit zu entwerten.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3559,
+        "line_end": 3568
+      }
+    },
+    {
+      "level": 2,
+      "title": "Keine Waffe Eidryths",
+      "markdown": "Sternenfuge stammt nicht aus Eidryth.\n\nSie ist kein Schlüssel zum Turm, besitzt keine natürliche Befehlsgewalt über seine Ebenen und kann weder das Mal der Wiederkehr aufheben noch die Siegel Aetheryns nach Belieben öffnen oder schließen.\n\nEidryth kann auf die Waffe reagieren.\n\nDas bedeutet jedoch Aufmerksamkeit, nicht Zugehörigkeit.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3569,
+        "line_end": 3578
+      }
+    },
+    {
+      "level": 2,
+      "title": "Keine Herrschaft über Esper",
+      "markdown": "Die Esper wurden ebenso wie das Ursprungsvermächtnis mit der Schöpfung von Cosmos und Chaos verbunden. Daraus folgt keine Hierarchie.\n\nSternenfuge kann einen Esper nicht allein aufgrund ihrer Herkunft zwingen, kontrollieren, versiegeln oder befehligen.\n\nEin Esper kann die Waffe erkennen.\n\nEr muss ihr nicht gehorchen.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3579,
+        "line_end": 3590
+      }
+    },
+    {
+      "level": 1,
+      "title": "Klassenbindung – Nur das letzte Geschenk",
+      "markdown": "Sternenfuge ist unmittelbar an den göttlichen Kern des **Ursprungsvermächtnisses** gebunden.\n\nNur ein Wesen mit dieser Klasse kann die Waffe vollständig manifestieren und verwenden.\n\nFür andere Wesen besitzt sie keinen stabilen Griff und keine dauerhaft greifbare Schneide. Versucht ein anderes Wesen, Sternenfuge zu führen, zerfällt ihre Manifestation innerhalb weniger Augenblicke in harmlose Ätherlinien und kehrt in den göttlichen Kern des Ursprungsvermächtnisses zurück.\n\nDiese Bindung kann nicht durch gewöhnliche Identifikation, Diebstahl, Besitzwechsel oder magische Manipulation übertragen werden.\n\n> [!important] Kein allgemeiner Klassengegenstand\n> Sternenfuge ist **keine reguläre mythische Beute** und keine Waffe, die auf andere Klassen abgestimmt werden kann. Sie gehört konzeptionell ausschließlich zum Ursprungsvermächtnis und damit zu einem Dungeon-Master-Charakter.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3591,
+        "line_end": 3605
+      }
+    },
+    {
+      "level": 1,
+      "title": "Göttlicher Griff",
+      "markdown": "Sternenfuge reagiert nicht primär auf Muskelkraft oder reine Fingerfertigkeit, sondern auf die Fähigkeit des Ursprungsvermächtnisses, eine Möglichkeit bewusst in eine Handlung zu überführen.\n\nDarum verwendet die Waffe **Willenskraft** als Angriffsattribut und denselben **Kernwert**, der auch die göttliche Klassenmechanik des Ursprungsvermächtnisses prägt.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3606,
+        "line_end": 3611
+      }
+    },
+    {
+      "level": 3,
+      "title": "Angriffswurf",
+      "markdown": "```text\nW20\n+ Willenskraft-Modifikator\n+ Willenskraft-Bonus\n```\n\nSternenfuge erhält **keinen zusätzlichen pauschalen Trefferbonus**. Ihre DM-Überhöhung liegt primär in Schaden, Resonanz und Signatur – nicht darin, gegnerisches Ausweichen bedeutungslos zu machen.",
+      "code_blocks": [
+        "W20\n+ Willenskraft-Modifikator\n+ Willenskraft-Bonus"
+      ],
+      "tables": [],
+      "source": {
+        "line_start": 3612,
+        "line_end": 3621
+      }
+    },
+    {
+      "level": 3,
+      "title": "Kernwert",
+      "markdown": "```text\nKernwert\n=\nWillenskraft-Modifikator\n+ Willenskraft-Bonus\n+ ⌊(Empathie-Modifikator + Empathie-Bonus) / 2⌋\n```",
+      "code_blocks": [
+        "Kernwert\n=\nWillenskraft-Modifikator\n+ Willenskraft-Bonus\n+ ⌊(Empathie-Modifikator + Empathie-Bonus) / 2⌋"
+      ],
+      "tables": [],
+      "source": {
+        "line_start": 3622,
+        "line_end": 3631
+      }
+    },
+    {
+      "level": 3,
+      "title": "Schaden – einhändig",
+      "markdown": "```text\n1W8\n+ 9W10\n+ 30\n+ Kernwert\n```",
+      "code_blocks": [
+        "1W8\n+ 9W10\n+ 30\n+ Kernwert"
+      ],
+      "tables": [],
+      "source": {
+        "line_start": 3632,
+        "line_end": 3640
+      }
+    },
+    {
+      "level": 3,
+      "title": "Schaden – zweihändig",
+      "markdown": "```text\n1W8\n+ 11W10\n+ 30\n+ Kernwert\n```\n\nDer **1W8** bleibt als sichtbarer Identitätskern des Langschwertes in beiden Formeln erhalten. Die zusätzlichen W10 und der feste Wert stellen die vollständig entwickelte **Itemstufe 40** sowie die bewusste DM-Sonderüberhöhung dar.\n\nDer verursachte Schaden bleibt **physischer Hieb- oder Stichschaden** und wird nach den normalen Regeln für Verteidigung, Resistenz, Verwundbarkeit und kritische Treffer abgewickelt.\n\n> [!note] Führung und Mehrmacht\n> Die zweihändige Führung ist stärker, weil sie die zweite Hand bindet. Sie erzeugt jedoch keine zusätzliche Attacke, keine zweite Schadensinstanz und keine kostenlose Bonusaktion.\n\n> [!important] Keine doppelte Attributsaddition\n> Der Kernwert enthält Willenskraft und die halbe Empathie bereits vollständig. Diese Werte werden nach der obigen Formel **nicht noch einmal** auf den Schaden addiert.",
+      "code_blocks": [
+        "1W8\n+ 11W10\n+ 30\n+ Kernwert"
+      ],
+      "tables": [],
+      "source": {
+        "line_start": 3641,
+        "line_end": 3659
+      }
+    },
+    {
+      "level": 1,
+      "title": "Eigenschaft I – Ruf der Sternenfuge",
+      "markdown": "Solange der göttliche Kern des Ursprungsvermächtnisses funktionsfähig ist, kann Sternenfuge nicht dauerhaft von ihrem Träger getrennt werden.\n\nIst die Waffe nicht in der Hand, kann ihr Träger sie als **Bonusaktion** erneut manifestieren oder zu sich zurückrufen.\n\nDabei entsteht sie in einer freien Hand oder unmittelbar dort, wo sie anschließend regelkonform geführt werden kann.\n\nDiese Eigenschaft:\n\n- erzeugt keine zusätzliche Aktion,\n- erlaubt keinen Angriff als Teil des Rückrufs,\n- umgeht keine Wirkung, die das Ziehen, Halten oder Verwenden von Waffen ausdrücklich verhindert,\n- transportiert keine anderen Gegenstände,\n- kann kein anderes Wesen mit der erscheinenden Klinge treffen.\n\nWird Sternenfuge vollständig zerstört, zerfällt sie in Ätherlinien. Nach einer erfolgreichen **Langen Rast** kann sie erneut aus dem göttlichen Kern manifestiert werden.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3660,
+        "line_end": 3679
+      }
+    },
+    {
+      "level": 1,
+      "title": "Eigenschaft II – Resonanz vor den sechs Strömen",
+      "markdown": "Der Ursprung von Sternenfuge liegt in derselben vorspaltenden Schöpfungsebene wie der göttliche Kern des Ursprungsvermächtnisses.\n\nWenn der Träger eine Klassenfähigkeit verwendet, die ausdrücklich eines der sechs Elemente wählt, können Farbe, Muster und Ätherfluss der Waffe dieses Element optisch widerspiegeln.\n\nDiese Resonanz ist **rein manifestativ**, solange kein anderer Effekt ausdrücklich etwas anderes bestimmt.\n\nSie gewährt insbesondere nicht automatisch:\n\n- zusätzlichen Elementarschaden,\n- Elementresistenz,\n- Elementdurchdringung,\n- Zugriff auf fremde Zauber,\n- eine zweite Elementarprägung,\n- oder freie Beherrschung aller sechs Urströme.\n\nSternenfuge erkennt die Ströme.\n\nSie besitzt sie nicht.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3680,
+        "line_end": 3702
+      }
+    },
+    {
+      "level": 1,
+      "title": "Eigenschaft III – Zweiklang nach der Wechselresonanz",
+      "markdown": "Sternenfuge reagiert auf den Augenblick, in dem das Ursprungsvermächtnis zwischen seinen Urmandaten wechselt und dadurch die gemeinsame Natur von Cosmos und Chaos tatsächlich in Bewegung setzt.\n\n**1× pro Runde**, wenn die Klassenregel **Wechselresonanz** tatsächlich **1 Konvergenz erzeugt**, darf der Träger genau **einen** der folgenden Nachklänge wählen.\n\nAuf **Itemstufe 40** kann der Träger stattdessen beim Auslösen **1 zusätzliche Konvergenz** bezahlen, um **beide** Nachklänge gleichzeitig zu erhalten.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3703,
+        "line_end": 3710
+      }
+    },
+    {
+      "level": 3,
+      "title": "Cosmos – Gesetzte Grenze",
+      "markdown": "Bis zum Beginn deines nächsten Zuges wird der nächste einzelne LP-Schaden, den du nach Resistenz und Verteidigung erleiden würdest, reduziert um:\n\n```text\n4W12\n+ 20\n+ Kernwert\n```\n\nDer Schaden kann dadurch mindestens auf 0 reduziert werden.\n\nWird die Reduktion nicht ausgelöst, endet sie zu Beginn deines nächsten Zuges.",
+      "code_blocks": [
+        "4W12\n+ 20\n+ Kernwert"
+      ],
+      "tables": [],
+      "source": {
+        "line_start": 3711,
+        "line_end": 3724
+      }
+    },
+    {
+      "level": 3,
+      "title": "Chaos – Offener Pfad",
+      "markdown": "Unmittelbar nach vollständiger Auflösung der auslösenden Klassenfähigkeit darfst du dich bis zu\n\n```text\n8 m\n```\n\nbewegen.\n\nDiese Bewegung:\n\n- benötigt keine zusätzliche Aktion,\n- erzeugt keine zusätzliche Aktion,\n- ignoriert keine ausdrücklich geltenden Bewegungsverbote,\n- interagiert normal mit Gelände und anderen Bewegungsregeln,\n- kann nur einmal durch diese Eigenschaft innerhalb derselben Runde entstehen.",
+      "code_blocks": [
+        "8 m"
+      ],
+      "tables": [],
+      "source": {
+        "line_start": 3725,
+        "line_end": 3742
+      }
+    },
+    {
+      "level": 3,
+      "title": "Vollendete Konvergenz",
+      "markdown": "Bezahlt der Träger beim Auslösen **1 Konvergenz**, erhält er **Gesetzte Grenze** und **Offener Pfad** gleichzeitig.\n\nDiese Zusatzkosten:\n\n- können nicht durch Mandatsfokus reduziert werden,\n- erzeugen selbst keine Wechselresonanz,\n- können keine Konvergenz über das Klassenmaximum hinaus erzeugen.\n\n> [!important] Keine doppelte Ressourcenerzeugung\n> **Zweiklang nach der Wechselresonanz erzeugt selbst keine Konvergenz.** Er verändert weder das Maximum der Klassenressource noch die normale Bedingung der Wechselresonanz.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3743,
+        "line_end": 3755
+      }
+    },
+    {
+      "level": 3,
+      "title": "Stapelung",
+      "markdown": "- Die Eigenschaft kann insgesamt nur **1× pro Runde** ausgelöst werden.\n- **Gesetzte Grenze** stapelt nicht mit sich selbst.\n- **Offener Pfad** kann aus dieser Eigenschaft nicht mehrfach in derselben Runde entstehen.\n- Nicht verbrauchte Wirkungen werden nicht in spätere Runden übertragen.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3756,
+        "line_end": 3762
+      }
+    },
+    {
+      "level": 1,
+      "title": "Aktive Signatur – Konvergenz der Zwei: Die unbeendete Antwort",
+      "markdown": "Auf ihrer vollendeten Itemstufe kann Sternenfuge für einen kurzen Augenblick eine wesentlich größere Menge jener vorspaltenden Schöpfungskraft tragen, aus der auch das Ursprungsvermächtnis hervorging.\n\nEs ist kein Rückruf von Cosmos oder Chaos.\n\nEs ist der Moment, in dem ihre beiden hinterlassenen Prinzipien im Willen des heutigen Trägers dieselbe Entscheidung tragen.\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Name** | **Konvergenz der Zwei: Die unbeendete Antwort** |\n| **Typ** | Aktive mythische Waffen-Signatur |\n| **Aktionskosten** | 1 Aktion |\n| **Kosten** | **5 Konvergenz** |\n| **Einsatzlimit** | **1× pro Lange Rast** |\n| **Reichweite** | Nah |\n| **Ziel** | 1 feindliches Wesen |\n| **Angriffswurf** | Normaler Angriff mit Sternenfuge |\n| **Rettungswurf / SG** | – |\n| **Dauer** | Sofort; der anschließende Mandatswechsel bleibt bestehen, bis er nach den normalen Klassenregeln erneut verändert wird |\n| **Bossinteraktion** | Keine Phasenunterbrechung, keine Immunitätsaufhebung, keine automatische Kontrolle und kein Überschreiben ununterdrückbarer Bossmechaniken |",
+      "code_blocks": [],
+      "tables": [
+        {
+          "headers": [
+            "Regelpunkt",
+            "Angabe"
+          ],
+          "rows": [
+            [
+              "**Name**",
+              "**Konvergenz der Zwei: Die unbeendete Antwort**"
+            ],
+            [
+              "**Typ**",
+              "Aktive mythische Waffen-Signatur"
+            ],
+            [
+              "**Aktionskosten**",
+              "1 Aktion"
+            ],
+            [
+              "**Kosten**",
+              "**5 Konvergenz**"
+            ],
+            [
+              "**Einsatzlimit**",
+              "**1× pro Lange Rast**"
+            ],
+            [
+              "**Reichweite**",
+              "Nah"
+            ],
+            [
+              "**Ziel**",
+              "1 feindliches Wesen"
+            ],
+            [
+              "**Angriffswurf**",
+              "Normaler Angriff mit Sternenfuge"
+            ],
+            [
+              "**Rettungswurf / SG**",
+              "–"
+            ],
+            [
+              "**Dauer**",
+              "Sofort; der anschließende Mandatswechsel bleibt bestehen, bis er nach den normalen Klassenregeln erneut verändert wird"
+            ],
+            [
+              "**Bossinteraktion**",
+              "Keine Phasenunterbrechung, keine Immunitätsaufhebung, keine automatische Kontrolle und kein Überschreiben ununterdrückbarer Bossmechaniken"
+            ]
+          ],
+          "raw_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Name** | **Konvergenz der Zwei: Die unbeendete Antwort** |\n| **Typ** | Aktive mythische Waffen-Signatur |\n| **Aktionskosten** | 1 Aktion |\n| **Kosten** | **5 Konvergenz** |\n| **Einsatzlimit** | **1× pro Lange Rast** |\n| **Reichweite** | Nah |\n| **Ziel** | 1 feindliches Wesen |\n| **Angriffswurf** | Normaler Angriff mit Sternenfuge |\n| **Rettungswurf / SG** | – |\n| **Dauer** | Sofort; der anschließende Mandatswechsel bleibt bestehen, bis er nach den normalen Klassenregeln erneut verändert wird |\n| **Bossinteraktion** | Keine Phasenunterbrechung, keine Immunitätsaufhebung, keine automatische Kontrolle und kein Überschreiben ununterdrückbarer Bossmechaniken |",
+          "source": {
+            "line_start": 3771,
+            "line_end": 3783
+          }
+        }
+      ],
+      "source": {
+        "line_start": 3763,
+        "line_end": 3784
+      }
+    },
+    {
+      "level": 2,
+      "title": "Berechnung",
+      "markdown": "Führe einen normalen Angriff mit Sternenfuge in der aktuell gewählten Führungsart aus.\n\nBei einem Treffer verursacht der Angriff zusätzlich:\n\n```text\n12W12\n+ 120\n+ (3 × Ursprungsvermächtnis-Stufe)\n+ Kernwert\n```\n\nphysischen Schaden derselben Schadensart wie der auslösende Angriff.\n\nDer Zusatzschaden:\n\n- ist Teil derselben offensiven Auflösung,\n- ist **kein wahrer Schaden**,\n- ignoriert keine Verteidigung,\n- ignoriert keine Resistenz,\n- hebt keine Immunität auf,\n- erzeugt keine zusätzliche Attacke,\n- erhält keine zweite separate Attributsaddition.\n\nNach vollständiger Auflösung des Angriffs – unabhängig davon, ob er getroffen hat – darfst du dein **Primärmandat** unmittelbar auf ein anderes Urmandat wechseln.\n\nDieser durch Sternenfuge ausgelöste Mandatswechsel:\n\n- benötigt **keine Bonusaktion**,\n- benötigt **keine zusätzliche Konvergenz** über die bereits bezahlten 5 Konvergenz hinaus,\n- erzeugt selbst **keine Wechselresonanz**,\n- zählt nicht als verwendete Klassenfähigkeit,\n- erlaubt keine zusätzliche Aktion,\n- verändert nicht die Mindestkosten oder Einsatzlimits späterer Signaturen und Vollendungen.\n\n> [!important] DM-Signatur statt regulärer Waffenaktivierung\n> Diese Signatur ist absichtlich erheblich stärker als eine normale mythische Waffenaktivierung. Sie gehört ausschließlich zur Kombination aus **Mythisch + Itemstufe 40 + Ursprungsvermächtnis + Dungeon-Master-Sonderprofil**. Ihre Stärke wird durch die hohen Konvergenzkosten und das Limit von 1× pro Langer Rast gebunden.",
+      "code_blocks": [
+        "12W12\n+ 120\n+ (3 × Ursprungsvermächtnis-Stufe)\n+ Kernwert"
+      ],
+      "tables": [],
+      "source": {
+        "line_start": 3785,
+        "line_end": 3823
+      }
+    },
+    {
+      "level": 2,
+      "title": "Bedeutung von Cosmos und Chaos in der Signatur",
+      "markdown": "Der massive gebündelte Schlag stellt die **gesetzte Grenze des Cosmos** dar: Aus vielen möglichen Verläufen wird für einen Augenblick genau eine Wirklichkeit.\n\nDer anschließende freie Mandatswechsel stellt die **offene Zukunft des Chaos** dar: Auch eine vollzogene Entscheidung darf nicht jede spätere Möglichkeit vernichten.\n\nDie Signatur verbindet damit beide Ursprungsgötter, ohne einen von ihnen auf ein Element, eine Schadensart oder ein einzelnes Urmandat zu reduzieren.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3824,
+        "line_end": 3831
+      }
+    },
+    {
+      "level": 1,
+      "title": "Verhältnis zu den fünf Urmandaten",
+      "markdown": "Sternenfuge besitzt **kein eigenes sechstes Mandat**.\n\nSie ergänzt die fünf vorhandenen Urmandate, ersetzt sie aber nicht.\n\n| Urmandat | Resonanz der Waffe |\n|---|---|\n| **Bewahrung** | Die geometrischen Linien werden klarer und bilden geschlossene Schutzmuster. |\n| **Erhebung** | Die fünf Punkte am Parierstück verbinden sich kurz durch feine Sternenlinien. |\n| **Leben** | Die wandernden Ätherspuren werden ruhiger und erinnern an einen gleichmäßigen Puls. |\n| **Auflösung** | Bestehende Muster brechen auf und ordnen sich in neuer Form. |\n| **Entscheidung** | Beide Seiten der Klinge laufen für einen Augenblick in einer einzigen klaren Schneidenlinie zusammen. |\n\nDiese Veränderungen sind zunächst **rein visuell**. Mechanische Wirkungen entstehen ausschließlich dort, wo sie in dieser Datei ausdrücklich beschrieben werden.\n\n---",
+      "code_blocks": [],
+      "tables": [
+        {
+          "headers": [
+            "Urmandat",
+            "Resonanz der Waffe"
+          ],
+          "rows": [
+            [
+              "**Bewahrung**",
+              "Die geometrischen Linien werden klarer und bilden geschlossene Schutzmuster."
+            ],
+            [
+              "**Erhebung**",
+              "Die fünf Punkte am Parierstück verbinden sich kurz durch feine Sternenlinien."
+            ],
+            [
+              "**Leben**",
+              "Die wandernden Ätherspuren werden ruhiger und erinnern an einen gleichmäßigen Puls."
+            ],
+            [
+              "**Auflösung**",
+              "Bestehende Muster brechen auf und ordnen sich in neuer Form."
+            ],
+            [
+              "**Entscheidung**",
+              "Beide Seiten der Klinge laufen für einen Augenblick in einer einzigen klaren Schneidenlinie zusammen."
+            ]
+          ],
+          "raw_markdown": "| Urmandat | Resonanz der Waffe |\n|---|---|\n| **Bewahrung** | Die geometrischen Linien werden klarer und bilden geschlossene Schutzmuster. |\n| **Erhebung** | Die fünf Punkte am Parierstück verbinden sich kurz durch feine Sternenlinien. |\n| **Leben** | Die wandernden Ätherspuren werden ruhiger und erinnern an einen gleichmäßigen Puls. |\n| **Auflösung** | Bestehende Muster brechen auf und ordnen sich in neuer Form. |\n| **Entscheidung** | Beide Seiten der Klinge laufen für einen Augenblick in einer einzigen klaren Schneidenlinie zusammen. |",
+          "source": {
+            "line_start": 3838,
+            "line_end": 3844
+          }
+        }
+      ],
+      "source": {
+        "line_start": 3832,
+        "line_end": 3849
+      }
+    },
+    {
+      "level": 1,
+      "title": "Grenzen der Waffe",
+      "markdown": "Sternenfuge ist mythisch, aber nicht grenzenlos.\n\nSie kann nicht:\n\n- Cosmos oder Chaos zurückrufen,\n- mit den Ursprungsgöttern sprechen,\n- die Persönlichkeit des Trägers überschreiben,\n- das Ursprungsvermächtnis in einen Gott verwandeln,\n- Eidryth kontrollieren,\n- das Mal der Wiederkehr automatisch entfernen,\n- Esper befehligen,\n- alle sechs Elemente gleichzeitig beherrschen,\n- jede Resistenz oder Verteidigung ignorieren,\n- automatisch kritisch treffen,\n- unbegrenzt Konvergenz erzeugen,\n- zusätzliche volle Aktionen erzeugen,\n- oder die fünf Urmandate der Klasse ersetzen.\n\nIhre Macht liegt nicht darin, jede Grenze zu brechen.\n\nIhre Macht liegt darin, zu wissen, **welche Grenze bestehen muss und wo eine neue Möglichkeit offenbleiben darf**.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3850,
+        "line_end": 3875
+      }
+    },
+    {
+      "level": 1,
+      "title": "Vollendete Itemstufe – Itemstufe 40",
+      "markdown": "Sternenfuge befindet sich in dieser Fassung auf **Itemstufe 40** und hat damit die höchste regulär vorgesehene Itemstufe erreicht.\n\nIhre mythische Qualitätsstufe beschreibt weiterhin ihren göttlichen Ursprung, ihre einzigartige Klassenbindung und die Komplexität ihrer Eigenschaften. Die Itemstufe 40 beschreibt dagegen, dass ihre gebundene Waffenmanifestation ihr vollständiges numerisches Entwicklungspotenzial erreicht hat.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3876,
+        "line_end": 3881
+      }
+    },
+    {
+      "level": 2,
+      "title": "Keine Itemstufe 41+",
+      "markdown": "Sternenfuge kann durch normale Aufwertung **nicht über Itemstufe 40** steigen.\n\nWeitere erzählerische Entwicklungen dürfen:\n\n- neue Offenbarungen über ihre Herkunft,\n- veränderte Erscheinungsformen,\n- neue Resonanzen mit Orten oder Ereignissen,\n- alternative, gleichwertige Signaturausprägungen,\n- oder kampagnenspezifische Schlüsselwirkungen\n\nermöglichen.\n\nSie erzeugen jedoch **keine Itemstufe 41 oder höher**, solange das allgemeine Ätherfall-System weiterhin bei Itemstufe 40 endet.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3882,
+        "line_end": 3897
+      }
+    },
+    {
+      "level": 2,
+      "title": "Keine gewöhnliche Schmiedeaufwertung",
+      "markdown": "Eine normale Schmiede kann Sternenfuge weder vollständig zerlegen noch auf übliche Weise neu schmieden.\n\nAuf dieser vollendeten Stufe kann ein außergewöhnlicher Schmied, eine Esperresonanz oder ein kosmologisch bedeutender Ort höchstens:\n\n- ihre Manifestation stabilisieren,\n- Schäden an einer vorübergehend gebundenen Form untersuchen,\n- ihr Erscheinungsbild beeinflussen,\n- oder als Bestandteil eines narrativen Ereignisses dienen.\n\nDie Qualitätsstufe bleibt **Mythisch**.\n\nDie Klassenbindung bleibt **exklusiv**.\n\nDie Waffe bleibt Teil des göttlichen Kerns des Ursprungsvermächtnisses.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3898,
+        "line_end": 3914
+      }
+    },
+    {
+      "level": 1,
+      "title": "Herstellungsanforderung",
+      "markdown": "**Nicht regulär herstellbar.**\n\nSternenfuge ist keine Waffe, deren vollständige Existenz durch Handwerk reproduziert werden kann. Ein Schmied kann möglicherweise an ihrer Manifestation arbeiten, Materialien für eine spätere Itemstufensteigerung vorbereiten oder Schäden an einer zeitweise stabilisierten Form untersuchen.\n\nDie eigentliche Waffe entsteht jedoch aus dem göttlichen Kern des Ursprungsvermächtnisses.\n\nEin zweites Exemplar kann nicht allein durch das Kopieren von Material, Form oder Runen erzeugt werden.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3915,
+        "line_end": 3926
+      }
+    },
+    {
+      "level": 1,
+      "title": "Identifikation",
+      "markdown": "Eine gewöhnliche Identifikation erkennt zunächst:\n\n- mythische Qualität,\n- außergewöhnlich alte beziehungsweise nicht gewöhnlich datierbare Ätherstruktur,\n- eine direkte Bindung an genau einen Träger,\n- und zwei gegensätzliche, aber nicht feindliche Muster in der Waffe.\n\nEine besonders erfolgreiche Untersuchung kann erkennen, dass diese Muster **älter als eine gewöhnliche elementare Prägung** wirken.\n\nSie offenbart jedoch nicht automatisch:\n\n- die vollständige Wahrheit über Cosmos und Chaos,\n- den Zweck Aetheryns als mögliches Siegel,\n- die Geheimnisse Eidryths,\n- oder die vollständige Natur des Ursprungsvermächtnisses.\n\nSternenfuge ist kein Ersatz für verlorenes Wissen.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3927,
+        "line_end": 3948
+      }
+    },
+    {
+      "level": 1,
+      "title": "Kurzbeschreibung für Inventar und Charakterbogen",
+      "markdown": "> **Sternenfuge – Die unbeendete Antwort**  \n> **Mythisches Langschwert, Itemstufe 40, ausschließlich Ursprungsvermächtnis.** Vollendete Manifestation des göttlichen Kerns, in der Cosmos' Grenze und Chaos' Möglichkeit gleichzeitig bestehen. Verwendet Willenskraft und den Klassen-Kernwert für Waffenangriffe.  \n> **Einhändig:** `1W8 + 9W10 + 30 + Kernwert`  \n> **Zweihändig:** `1W8 + 11W10 + 30 + Kernwert`  \n> Reagiert auf Wechselresonanz mit **Zweiklang** und besitzt die stark limitierte DM-Signatur **Konvergenz der Zwei: Die unbeendete Antwort**.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3949,
+        "line_end": 3956
+      }
+    },
+    {
+      "level": 1,
+      "title": "Spielleiterhinweis",
+      "markdown": "Sternenfuge soll das Ursprungsvermächtnis auf seiner höchsten Ausrüstungsstufe **sichtbar und mechanisch spürbar begleiten**, aber nicht zum eigentlichen Ursprung seiner Macht werden.\n\nDie Klasse bleibt auch ohne gezogene Waffe vollständig das letzte Geschenk von Cosmos und Chaos. Ihre Klassenfähigkeiten benötigen Sternenfuge nicht, sofern eine konkrete Fähigkeit dies nicht ausdrücklich festlegt.\n\nDiese Itemstufe-40-Fassung ist bewusst **über der regulären Waffenbalance** angesiedelt:\n\n- Der Grundangriff besitzt deutlich größere Würfelpakete als eine normale Langschwertformel.\n- Die zweihändige Führung erhöht den direkten Waffenwert weiter.\n- **Zweiklang** ist auf Stufe 40 zu einer echten defensiv-mobilen Konvergenzmechanik angewachsen.\n- Die Signatur verwendet **12W12** plus starke feste und stufenabhängige Anteile.\n- Dafür erhält die Waffe keine automatischen Krits, keine pauschale Verteidigungsignorierung, keine unbegrenzte Konvergenz, keine kostenlose zweite Vollaktion und keine Kontrolle über Bossphasen.\n\nDie Überhöhung folgt damit derselben Philosophie wie die DM-Klasse selbst: **mehr direkte Zahlenmacht, aber keine Aufhebung der grundlegenden Spielstruktur**.\n\nCosmos gibt der Waffe Form, Grenze und Maß.\n\nChaos gibt ihr Wandel, Möglichkeit und den nächsten offenen Weg.\n\nDas Ursprungsvermächtnis entscheidet, welche dieser Möglichkeiten Wirklichkeit wird.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3957,
+        "line_end": 3978
+      }
+    }
+  ],
+  "raw_markdown": "# Sternenfuge\n\n## Die unbeendete Antwort\n\n> _„Eine Grenze ist notwendig, damit etwas bestehen kann. Eine Möglichkeit ist notwendig, damit es mehr werden kann als das, was bereits ist.“_\n>\n> — Inschrift, die nur sichtbar wird, wenn Ordnung und Wandel zugleich durch die Klinge fließen\n\n**Sternenfuge** ist keine Waffe, die für das Ursprungsvermächtnis von einem späteren Schmied gefertigt wurde. Sie ist ebenso wenig ein zweites letztes Geschenk, das Cosmos und Chaos unabhängig von ihrem lebenden Vermächtnis in Aetheryn zurückließen.\n\nDie Klinge ist eine **Manifestation desselben göttlichen Ursprungs**, aus dem das Ursprungsvermächtnis hervorging.\n\nAls Cosmos und Chaos ihr letztes gemeinsames Werk erschufen, legten sie nicht jede zukünftige Form seiner Macht fest. Sie hinterließen stattdessen Möglichkeiten im göttlichen Kern – Strukturen, die erst dann Wirklichkeit werden konnten, wenn das Vermächtnis selbst eine Entscheidung traf.\n\nSternenfuge ist eine dieser Möglichkeiten.\n\nCosmos gab ihr die **Grenze**: eine Form, die bestehen kann, eine Schneide, die zwischen zwei Zuständen unterscheidet, und ein Maß, das verhindert, dass Macht ohne Ende in die Welt fließt.\n\nChaos gab ihr die **Abweichung**: keine Bewegung folgt vollkommen der vorherigen, keine Ätherlinie bleibt für immer gleich, und selbst eine gesetzte Grenze darf einen neuen Weg eröffnen, wenn die Zukunft ihn verlangt.\n\nDarum ist Sternenfuge weder eine reine Waffe des Cosmos noch eine reine Waffe des Chaos.\n\nSie ist die Stelle, an der beide Prinzipien einander berühren, ohne einander auszulöschen.\n\nSie ist die **Fuge zwischen Bestand und Möglichkeit**.\n\nUnd wie das Ursprungsvermächtnis selbst trägt sie keine Krone.\n\n---\n\n# Einordnung\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Name** | **Sternenfuge** |\n| **Beiname** | **Die unbeendete Antwort** |\n| **Basiswaffenart** | Langschwert |\n| **Waffenkategorie** | Schwerter |\n| **Qualitätsstufe** | **Mythisch** |\n| **Itemstufe** | **40** |\n| **Magisch** | Ja |\n| **Klassenbindung** | Ausschließlich **Ursprungsvermächtnis** |\n| **DM-Leistungsprofil** | **Ursprungsvermächtnis-DM-Sonderbudget-2.0** |\n| **Balance-Einordnung** | Bewusst leicht bis deutlich oberhalb einer regulären Itemstufe-40-Waffe; ausschließlich für den DM-Charakter |\n| **Kernwürfel** | 1W8 – Identitätskern des Langschwertes; bleibt in beiden Schadensformeln sichtbar |\n| **Führung** | Variabel |\n| **Reichweite** | Nah |\n| **Schadensart** | Hieb / Stich |\n| **Gewicht** | Mittel |\n| **Angriffsattribut** | Willenskraft |\n| **Angriffswurf** | `W20 + Willenskraft-Modifikator + Willenskraft-Bonus` |\n| **Schadensformel – einhändig** | `1W8 + 9W10 + 30 + Kernwert` |\n| **Schadensformel – zweihändig** | `1W8 + 11W10 + 30 + Kernwert` |\n| **Kernwert** | `Willenskraft-Modifikator + Willenskraft-Bonus + ⌊(Empathie-Modifikator + Empathie-Bonus) / 2⌋` |\n| **Krit-Modifikation** | –; es gelten die normalen Kritregeln |\n| **Element** | Keines |\n\n> [!important] Bewusste DM-Überhöhung\n> Diese Fassung ist **nicht** als reguläre Spielerwaffe ausbalanciert. Sternenfuge ist die persönliche mythische Itemstufe-40-Waffe der DM-exklusiven Klasse **Ursprungsvermächtnis**. Ihr Grundangriff liegt bewusst oberhalb des normalen 1W8-Waffenankers derselben Itemstufe. Die Mehrmacht wird direkt über zusätzliche Würfel und den festen Itemstufenanteil dargestellt – nicht über einen nachträglichen Multiplikator.\n\n> [!important] Keine Licht-/Dunkelheitszuordnung\n> **Cosmos ist nicht Licht und Chaos ist nicht Dunkelheit.** Sternenfuge besitzt deshalb keine automatische Licht- oder Dunkelheitsprägung. Die sechs Urströme gehören zur späteren Schöpfungsordnung Aetheryns und werden durch diese Waffe nicht kostenlos beherrscht.\n\n# Erscheinungsbild\n\nSternenfuge besitzt die erkennbare Grundform eines Langschwertes, doch kein Teil der Waffe wirkt wie das Ergebnis gewöhnlicher Schmiedekunst.\n\nDie Klinge ist lang, gerade und schmal genug, um kontrolliert geführt zu werden. Ihre Oberfläche besteht aus einem Material, das weder vollständig Metall noch Kristall zu sein scheint. Unter ruhigem Licht wirkt sie silbern und beinahe farblos. Sobald Äther durch sie fließt, entstehen jedoch zwei gleichzeitig sichtbare Strukturen.\n\nAuf der einen Seite erscheinen **vollkommen klare Linien**. Sie verlaufen in geometrischen Abständen über die Klinge, teilen Flächen, bilden Kreise, Winkel und wiederkehrende Sternenmuster. Keine Linie überschneidet eine andere zufällig. Diese Seite verändert sich nur selten und trägt die Prägung des **Cosmos**.\n\nAuf der anderen Seite bewegen sich feine Ätherspuren in niemals identischen Bahnen. Sie können violett, tiefblau, farblos oder beinahe schwarz erscheinen, ohne dabei Dunkelschaden oder ein Dunkelheitselement darzustellen. Muster entstehen, lösen sich wieder auf und kehren in leicht veränderter Form zurück. Diese Seite trägt die Prägung des **Chaos**.\n\nBeide Hälften sind keine getrennten Klingen.\n\nSie gehören zu derselben Schneide.\n\nIm Parierstück treffen die beiden Muster in einem offenen Ring aufeinander. Der Ring besitzt keine Krone, kein Herrschaftssymbol und kein Zeichen eines Thrones. Um ihn liegen fünf kleine Ätherpunkte, die auf die fünf Urmandate reagieren: **Bewahrung, Erhebung, Leben, Auflösung und Entscheidung**.\n\nDer Griff verändert seine Länge geringfügig, wenn Sternenfuge ein- oder zweihändig geführt wird. Diese Veränderung ist keine vollständige Gestaltwandlung und verändert die Basiswaffenart nicht. Die Waffe bleibt immer ein Langschwert.\n\n---\n\n# Herkunft\n\n## Keine zweite Schöpfung neben dem Ursprungsvermächtnis\n\nSternenfuge wurde nicht als eigenständiges Artefakt neben dem Ursprungsvermächtnis erschaffen.\n\nDas ist für ihre Einordnung entscheidend.\n\nCosmos und Chaos hinterließen mit dem Ursprungsvermächtnis kein Arsenal göttlicher Werkzeuge, das nur darauf wartete, gefunden zu werden. Ihr letztes Geschenk sollte ein **eigenständiges lebendes Wesen** sein und kein Träger vorgefertigter Befehle.\n\nDarum existierte Sternenfuge zunächst nur als **Möglichkeit im göttlichen Kern**.\n\nSie konnte erst Gestalt annehmen, nachdem das Ursprungsvermächtnis selbst begonnen hatte, seine Aufgabe als eigene Verantwortung zu verstehen. Die Waffe ist deshalb weniger ein Erbstück als eine Antwort des göttlichen Kerns auf eine selbst getroffene Entscheidung.\n\nDas Vermächtnis führt sie nicht, weil Cosmos und Chaos es dazu zwingen.\n\nEs führt sie, weil es sich dazu entschieden hat.\n\n## Keine Wiedergeburt der Ursprungsgötter\n\nSternenfuge enthält weder die Seele von Cosmos noch die Seele von Chaos.\n\nSie spricht nicht mit ihren Stimmen, übernimmt nicht den Willen ihres Trägers und kann keine verborgene Persönlichkeit der Ursprungsgötter freisetzen.\n\nDie Klinge trägt ihre **Prinzipien**, nicht ihre fortbestehenden Personen.\n\nIhre Macht ist deshalb mit dem Ursprungsvermächtnis vereinbar: Sie erweitert dessen Möglichkeiten, ohne dessen Eigenständigkeit zu entwerten.\n\n## Keine Waffe Eidryths\n\nSternenfuge stammt nicht aus Eidryth.\n\nSie ist kein Schlüssel zum Turm, besitzt keine natürliche Befehlsgewalt über seine Ebenen und kann weder das Mal der Wiederkehr aufheben noch die Siegel Aetheryns nach Belieben öffnen oder schließen.\n\nEidryth kann auf die Waffe reagieren.\n\nDas bedeutet jedoch Aufmerksamkeit, nicht Zugehörigkeit.\n\n## Keine Herrschaft über Esper\n\nDie Esper wurden ebenso wie das Ursprungsvermächtnis mit der Schöpfung von Cosmos und Chaos verbunden. Daraus folgt keine Hierarchie.\n\nSternenfuge kann einen Esper nicht allein aufgrund ihrer Herkunft zwingen, kontrollieren, versiegeln oder befehligen.\n\nEin Esper kann die Waffe erkennen.\n\nEr muss ihr nicht gehorchen.\n\n---\n\n# Klassenbindung – Nur das letzte Geschenk\n\nSternenfuge ist unmittelbar an den göttlichen Kern des **Ursprungsvermächtnisses** gebunden.\n\nNur ein Wesen mit dieser Klasse kann die Waffe vollständig manifestieren und verwenden.\n\nFür andere Wesen besitzt sie keinen stabilen Griff und keine dauerhaft greifbare Schneide. Versucht ein anderes Wesen, Sternenfuge zu führen, zerfällt ihre Manifestation innerhalb weniger Augenblicke in harmlose Ätherlinien und kehrt in den göttlichen Kern des Ursprungsvermächtnisses zurück.\n\nDiese Bindung kann nicht durch gewöhnliche Identifikation, Diebstahl, Besitzwechsel oder magische Manipulation übertragen werden.\n\n> [!important] Kein allgemeiner Klassengegenstand\n> Sternenfuge ist **keine reguläre mythische Beute** und keine Waffe, die auf andere Klassen abgestimmt werden kann. Sie gehört konzeptionell ausschließlich zum Ursprungsvermächtnis und damit zu einem Dungeon-Master-Charakter.\n\n---\n\n# Göttlicher Griff\n\nSternenfuge reagiert nicht primär auf Muskelkraft oder reine Fingerfertigkeit, sondern auf die Fähigkeit des Ursprungsvermächtnisses, eine Möglichkeit bewusst in eine Handlung zu überführen.\n\nDarum verwendet die Waffe **Willenskraft** als Angriffsattribut und denselben **Kernwert**, der auch die göttliche Klassenmechanik des Ursprungsvermächtnisses prägt.\n\n### Angriffswurf\n\n```text\nW20\n+ Willenskraft-Modifikator\n+ Willenskraft-Bonus\n```\n\nSternenfuge erhält **keinen zusätzlichen pauschalen Trefferbonus**. Ihre DM-Überhöhung liegt primär in Schaden, Resonanz und Signatur – nicht darin, gegnerisches Ausweichen bedeutungslos zu machen.\n\n### Kernwert\n\n```text\nKernwert\n=\nWillenskraft-Modifikator\n+ Willenskraft-Bonus\n+ ⌊(Empathie-Modifikator + Empathie-Bonus) / 2⌋\n```\n\n### Schaden – einhändig\n\n```text\n1W8\n+ 9W10\n+ 30\n+ Kernwert\n```\n\n### Schaden – zweihändig\n\n```text\n1W8\n+ 11W10\n+ 30\n+ Kernwert\n```\n\nDer **1W8** bleibt als sichtbarer Identitätskern des Langschwertes in beiden Formeln erhalten. Die zusätzlichen W10 und der feste Wert stellen die vollständig entwickelte **Itemstufe 40** sowie die bewusste DM-Sonderüberhöhung dar.\n\nDer verursachte Schaden bleibt **physischer Hieb- oder Stichschaden** und wird nach den normalen Regeln für Verteidigung, Resistenz, Verwundbarkeit und kritische Treffer abgewickelt.\n\n> [!note] Führung und Mehrmacht\n> Die zweihändige Führung ist stärker, weil sie die zweite Hand bindet. Sie erzeugt jedoch keine zusätzliche Attacke, keine zweite Schadensinstanz und keine kostenlose Bonusaktion.\n\n> [!important] Keine doppelte Attributsaddition\n> Der Kernwert enthält Willenskraft und die halbe Empathie bereits vollständig. Diese Werte werden nach der obigen Formel **nicht noch einmal** auf den Schaden addiert.\n\n# Eigenschaft I – Ruf der Sternenfuge\n\nSolange der göttliche Kern des Ursprungsvermächtnisses funktionsfähig ist, kann Sternenfuge nicht dauerhaft von ihrem Träger getrennt werden.\n\nIst die Waffe nicht in der Hand, kann ihr Träger sie als **Bonusaktion** erneut manifestieren oder zu sich zurückrufen.\n\nDabei entsteht sie in einer freien Hand oder unmittelbar dort, wo sie anschließend regelkonform geführt werden kann.\n\nDiese Eigenschaft:\n\n- erzeugt keine zusätzliche Aktion,\n- erlaubt keinen Angriff als Teil des Rückrufs,\n- umgeht keine Wirkung, die das Ziehen, Halten oder Verwenden von Waffen ausdrücklich verhindert,\n- transportiert keine anderen Gegenstände,\n- kann kein anderes Wesen mit der erscheinenden Klinge treffen.\n\nWird Sternenfuge vollständig zerstört, zerfällt sie in Ätherlinien. Nach einer erfolgreichen **Langen Rast** kann sie erneut aus dem göttlichen Kern manifestiert werden.\n\n---\n\n# Eigenschaft II – Resonanz vor den sechs Strömen\n\nDer Ursprung von Sternenfuge liegt in derselben vorspaltenden Schöpfungsebene wie der göttliche Kern des Ursprungsvermächtnisses.\n\nWenn der Träger eine Klassenfähigkeit verwendet, die ausdrücklich eines der sechs Elemente wählt, können Farbe, Muster und Ätherfluss der Waffe dieses Element optisch widerspiegeln.\n\nDiese Resonanz ist **rein manifestativ**, solange kein anderer Effekt ausdrücklich etwas anderes bestimmt.\n\nSie gewährt insbesondere nicht automatisch:\n\n- zusätzlichen Elementarschaden,\n- Elementresistenz,\n- Elementdurchdringung,\n- Zugriff auf fremde Zauber,\n- eine zweite Elementarprägung,\n- oder freie Beherrschung aller sechs Urströme.\n\nSternenfuge erkennt die Ströme.\n\nSie besitzt sie nicht.\n\n---\n\n# Eigenschaft III – Zweiklang nach der Wechselresonanz\n\nSternenfuge reagiert auf den Augenblick, in dem das Ursprungsvermächtnis zwischen seinen Urmandaten wechselt und dadurch die gemeinsame Natur von Cosmos und Chaos tatsächlich in Bewegung setzt.\n\n**1× pro Runde**, wenn die Klassenregel **Wechselresonanz** tatsächlich **1 Konvergenz erzeugt**, darf der Träger genau **einen** der folgenden Nachklänge wählen.\n\nAuf **Itemstufe 40** kann der Träger stattdessen beim Auslösen **1 zusätzliche Konvergenz** bezahlen, um **beide** Nachklänge gleichzeitig zu erhalten.\n\n### Cosmos – Gesetzte Grenze\n\nBis zum Beginn deines nächsten Zuges wird der nächste einzelne LP-Schaden, den du nach Resistenz und Verteidigung erleiden würdest, reduziert um:\n\n```text\n4W12\n+ 20\n+ Kernwert\n```\n\nDer Schaden kann dadurch mindestens auf 0 reduziert werden.\n\nWird die Reduktion nicht ausgelöst, endet sie zu Beginn deines nächsten Zuges.\n\n### Chaos – Offener Pfad\n\nUnmittelbar nach vollständiger Auflösung der auslösenden Klassenfähigkeit darfst du dich bis zu\n\n```text\n8 m\n```\n\nbewegen.\n\nDiese Bewegung:\n\n- benötigt keine zusätzliche Aktion,\n- erzeugt keine zusätzliche Aktion,\n- ignoriert keine ausdrücklich geltenden Bewegungsverbote,\n- interagiert normal mit Gelände und anderen Bewegungsregeln,\n- kann nur einmal durch diese Eigenschaft innerhalb derselben Runde entstehen.\n\n### Vollendete Konvergenz\n\nBezahlt der Träger beim Auslösen **1 Konvergenz**, erhält er **Gesetzte Grenze** und **Offener Pfad** gleichzeitig.\n\nDiese Zusatzkosten:\n\n- können nicht durch Mandatsfokus reduziert werden,\n- erzeugen selbst keine Wechselresonanz,\n- können keine Konvergenz über das Klassenmaximum hinaus erzeugen.\n\n> [!important] Keine doppelte Ressourcenerzeugung\n> **Zweiklang nach der Wechselresonanz erzeugt selbst keine Konvergenz.** Er verändert weder das Maximum der Klassenressource noch die normale Bedingung der Wechselresonanz.\n\n### Stapelung\n\n- Die Eigenschaft kann insgesamt nur **1× pro Runde** ausgelöst werden.\n- **Gesetzte Grenze** stapelt nicht mit sich selbst.\n- **Offener Pfad** kann aus dieser Eigenschaft nicht mehrfach in derselben Runde entstehen.\n- Nicht verbrauchte Wirkungen werden nicht in spätere Runden übertragen.\n\n# Aktive Signatur – Konvergenz der Zwei: Die unbeendete Antwort\n\nAuf ihrer vollendeten Itemstufe kann Sternenfuge für einen kurzen Augenblick eine wesentlich größere Menge jener vorspaltenden Schöpfungskraft tragen, aus der auch das Ursprungsvermächtnis hervorging.\n\nEs ist kein Rückruf von Cosmos oder Chaos.\n\nEs ist der Moment, in dem ihre beiden hinterlassenen Prinzipien im Willen des heutigen Trägers dieselbe Entscheidung tragen.\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Name** | **Konvergenz der Zwei: Die unbeendete Antwort** |\n| **Typ** | Aktive mythische Waffen-Signatur |\n| **Aktionskosten** | 1 Aktion |\n| **Kosten** | **5 Konvergenz** |\n| **Einsatzlimit** | **1× pro Lange Rast** |\n| **Reichweite** | Nah |\n| **Ziel** | 1 feindliches Wesen |\n| **Angriffswurf** | Normaler Angriff mit Sternenfuge |\n| **Rettungswurf / SG** | – |\n| **Dauer** | Sofort; der anschließende Mandatswechsel bleibt bestehen, bis er nach den normalen Klassenregeln erneut verändert wird |\n| **Bossinteraktion** | Keine Phasenunterbrechung, keine Immunitätsaufhebung, keine automatische Kontrolle und kein Überschreiben ununterdrückbarer Bossmechaniken |\n\n## Berechnung\n\nFühre einen normalen Angriff mit Sternenfuge in der aktuell gewählten Führungsart aus.\n\nBei einem Treffer verursacht der Angriff zusätzlich:\n\n```text\n12W12\n+ 120\n+ (3 × Ursprungsvermächtnis-Stufe)\n+ Kernwert\n```\n\nphysischen Schaden derselben Schadensart wie der auslösende Angriff.\n\nDer Zusatzschaden:\n\n- ist Teil derselben offensiven Auflösung,\n- ist **kein wahrer Schaden**,\n- ignoriert keine Verteidigung,\n- ignoriert keine Resistenz,\n- hebt keine Immunität auf,\n- erzeugt keine zusätzliche Attacke,\n- erhält keine zweite separate Attributsaddition.\n\nNach vollständiger Auflösung des Angriffs – unabhängig davon, ob er getroffen hat – darfst du dein **Primärmandat** unmittelbar auf ein anderes Urmandat wechseln.\n\nDieser durch Sternenfuge ausgelöste Mandatswechsel:\n\n- benötigt **keine Bonusaktion**,\n- benötigt **keine zusätzliche Konvergenz** über die bereits bezahlten 5 Konvergenz hinaus,\n- erzeugt selbst **keine Wechselresonanz**,\n- zählt nicht als verwendete Klassenfähigkeit,\n- erlaubt keine zusätzliche Aktion,\n- verändert nicht die Mindestkosten oder Einsatzlimits späterer Signaturen und Vollendungen.\n\n> [!important] DM-Signatur statt regulärer Waffenaktivierung\n> Diese Signatur ist absichtlich erheblich stärker als eine normale mythische Waffenaktivierung. Sie gehört ausschließlich zur Kombination aus **Mythisch + Itemstufe 40 + Ursprungsvermächtnis + Dungeon-Master-Sonderprofil**. Ihre Stärke wird durch die hohen Konvergenzkosten und das Limit von 1× pro Langer Rast gebunden.\n\n## Bedeutung von Cosmos und Chaos in der Signatur\n\nDer massive gebündelte Schlag stellt die **gesetzte Grenze des Cosmos** dar: Aus vielen möglichen Verläufen wird für einen Augenblick genau eine Wirklichkeit.\n\nDer anschließende freie Mandatswechsel stellt die **offene Zukunft des Chaos** dar: Auch eine vollzogene Entscheidung darf nicht jede spätere Möglichkeit vernichten.\n\nDie Signatur verbindet damit beide Ursprungsgötter, ohne einen von ihnen auf ein Element, eine Schadensart oder ein einzelnes Urmandat zu reduzieren.\n\n# Verhältnis zu den fünf Urmandaten\n\nSternenfuge besitzt **kein eigenes sechstes Mandat**.\n\nSie ergänzt die fünf vorhandenen Urmandate, ersetzt sie aber nicht.\n\n| Urmandat | Resonanz der Waffe |\n|---|---|\n| **Bewahrung** | Die geometrischen Linien werden klarer und bilden geschlossene Schutzmuster. |\n| **Erhebung** | Die fünf Punkte am Parierstück verbinden sich kurz durch feine Sternenlinien. |\n| **Leben** | Die wandernden Ätherspuren werden ruhiger und erinnern an einen gleichmäßigen Puls. |\n| **Auflösung** | Bestehende Muster brechen auf und ordnen sich in neuer Form. |\n| **Entscheidung** | Beide Seiten der Klinge laufen für einen Augenblick in einer einzigen klaren Schneidenlinie zusammen. |\n\nDiese Veränderungen sind zunächst **rein visuell**. Mechanische Wirkungen entstehen ausschließlich dort, wo sie in dieser Datei ausdrücklich beschrieben werden.\n\n---\n\n# Grenzen der Waffe\n\nSternenfuge ist mythisch, aber nicht grenzenlos.\n\nSie kann nicht:\n\n- Cosmos oder Chaos zurückrufen,\n- mit den Ursprungsgöttern sprechen,\n- die Persönlichkeit des Trägers überschreiben,\n- das Ursprungsvermächtnis in einen Gott verwandeln,\n- Eidryth kontrollieren,\n- das Mal der Wiederkehr automatisch entfernen,\n- Esper befehligen,\n- alle sechs Elemente gleichzeitig beherrschen,\n- jede Resistenz oder Verteidigung ignorieren,\n- automatisch kritisch treffen,\n- unbegrenzt Konvergenz erzeugen,\n- zusätzliche volle Aktionen erzeugen,\n- oder die fünf Urmandate der Klasse ersetzen.\n\nIhre Macht liegt nicht darin, jede Grenze zu brechen.\n\nIhre Macht liegt darin, zu wissen, **welche Grenze bestehen muss und wo eine neue Möglichkeit offenbleiben darf**.\n\n---\n\n# Vollendete Itemstufe – Itemstufe 40\n\nSternenfuge befindet sich in dieser Fassung auf **Itemstufe 40** und hat damit die höchste regulär vorgesehene Itemstufe erreicht.\n\nIhre mythische Qualitätsstufe beschreibt weiterhin ihren göttlichen Ursprung, ihre einzigartige Klassenbindung und die Komplexität ihrer Eigenschaften. Die Itemstufe 40 beschreibt dagegen, dass ihre gebundene Waffenmanifestation ihr vollständiges numerisches Entwicklungspotenzial erreicht hat.\n\n## Keine Itemstufe 41+\n\nSternenfuge kann durch normale Aufwertung **nicht über Itemstufe 40** steigen.\n\nWeitere erzählerische Entwicklungen dürfen:\n\n- neue Offenbarungen über ihre Herkunft,\n- veränderte Erscheinungsformen,\n- neue Resonanzen mit Orten oder Ereignissen,\n- alternative, gleichwertige Signaturausprägungen,\n- oder kampagnenspezifische Schlüsselwirkungen\n\nermöglichen.\n\nSie erzeugen jedoch **keine Itemstufe 41 oder höher**, solange das allgemeine Ätherfall-System weiterhin bei Itemstufe 40 endet.\n\n## Keine gewöhnliche Schmiedeaufwertung\n\nEine normale Schmiede kann Sternenfuge weder vollständig zerlegen noch auf übliche Weise neu schmieden.\n\nAuf dieser vollendeten Stufe kann ein außergewöhnlicher Schmied, eine Esperresonanz oder ein kosmologisch bedeutender Ort höchstens:\n\n- ihre Manifestation stabilisieren,\n- Schäden an einer vorübergehend gebundenen Form untersuchen,\n- ihr Erscheinungsbild beeinflussen,\n- oder als Bestandteil eines narrativen Ereignisses dienen.\n\nDie Qualitätsstufe bleibt **Mythisch**.\n\nDie Klassenbindung bleibt **exklusiv**.\n\nDie Waffe bleibt Teil des göttlichen Kerns des Ursprungsvermächtnisses.\n\n# Herstellungsanforderung\n\n**Nicht regulär herstellbar.**\n\nSternenfuge ist keine Waffe, deren vollständige Existenz durch Handwerk reproduziert werden kann. Ein Schmied kann möglicherweise an ihrer Manifestation arbeiten, Materialien für eine spätere Itemstufensteigerung vorbereiten oder Schäden an einer zeitweise stabilisierten Form untersuchen.\n\nDie eigentliche Waffe entsteht jedoch aus dem göttlichen Kern des Ursprungsvermächtnisses.\n\nEin zweites Exemplar kann nicht allein durch das Kopieren von Material, Form oder Runen erzeugt werden.\n\n---\n\n# Identifikation\n\nEine gewöhnliche Identifikation erkennt zunächst:\n\n- mythische Qualität,\n- außergewöhnlich alte beziehungsweise nicht gewöhnlich datierbare Ätherstruktur,\n- eine direkte Bindung an genau einen Träger,\n- und zwei gegensätzliche, aber nicht feindliche Muster in der Waffe.\n\nEine besonders erfolgreiche Untersuchung kann erkennen, dass diese Muster **älter als eine gewöhnliche elementare Prägung** wirken.\n\nSie offenbart jedoch nicht automatisch:\n\n- die vollständige Wahrheit über Cosmos und Chaos,\n- den Zweck Aetheryns als mögliches Siegel,\n- die Geheimnisse Eidryths,\n- oder die vollständige Natur des Ursprungsvermächtnisses.\n\nSternenfuge ist kein Ersatz für verlorenes Wissen.\n\n---\n\n# Kurzbeschreibung für Inventar und Charakterbogen\n\n> **Sternenfuge – Die unbeendete Antwort**  \n> **Mythisches Langschwert, Itemstufe 40, ausschließlich Ursprungsvermächtnis.** Vollendete Manifestation des göttlichen Kerns, in der Cosmos' Grenze und Chaos' Möglichkeit gleichzeitig bestehen. Verwendet Willenskraft und den Klassen-Kernwert für Waffenangriffe.  \n> **Einhändig:** `1W8 + 9W10 + 30 + Kernwert`  \n> **Zweihändig:** `1W8 + 11W10 + 30 + Kernwert`  \n> Reagiert auf Wechselresonanz mit **Zweiklang** und besitzt die stark limitierte DM-Signatur **Konvergenz der Zwei: Die unbeendete Antwort**.\n\n# Spielleiterhinweis\n\nSternenfuge soll das Ursprungsvermächtnis auf seiner höchsten Ausrüstungsstufe **sichtbar und mechanisch spürbar begleiten**, aber nicht zum eigentlichen Ursprung seiner Macht werden.\n\nDie Klasse bleibt auch ohne gezogene Waffe vollständig das letzte Geschenk von Cosmos und Chaos. Ihre Klassenfähigkeiten benötigen Sternenfuge nicht, sofern eine konkrete Fähigkeit dies nicht ausdrücklich festlegt.\n\nDiese Itemstufe-40-Fassung ist bewusst **über der regulären Waffenbalance** angesiedelt:\n\n- Der Grundangriff besitzt deutlich größere Würfelpakete als eine normale Langschwertformel.\n- Die zweihändige Führung erhöht den direkten Waffenwert weiter.\n- **Zweiklang** ist auf Stufe 40 zu einer echten defensiv-mobilen Konvergenzmechanik angewachsen.\n- Die Signatur verwendet **12W12** plus starke feste und stufenabhängige Anteile.\n- Dafür erhält die Waffe keine automatischen Krits, keine pauschale Verteidigungsignorierung, keine unbegrenzte Konvergenz, keine kostenlose zweite Vollaktion und keine Kontrolle über Bossphasen.\n\nDie Überhöhung folgt damit derselben Philosophie wie die DM-Klasse selbst: **mehr direkte Zahlenmacht, aber keine Aufhebung der grundlegenden Spielstruktur**.\n\nCosmos gibt der Waffe Form, Grenze und Maß.\n\nChaos gibt ihr Wandel, Möglichkeit und den nächsten offenen Weg.\n\nDas Ursprungsvermächtnis entscheidet, welche dieser Möglichkeiten Wirklichkeit wird.",
+  "source": {
+    "file": "Waffen.md",
+    "document_title": "Sternenfuge",
+    "line_start": 3458,
+    "line_end": 3978
+  }
+}

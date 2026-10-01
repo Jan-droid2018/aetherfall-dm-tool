@@ -1,0 +1,148 @@
+{
+  "schema_version": "aetherfall.weapons.v1",
+  "id": "ungewoehnlich-is01-nachtschlinge",
+  "number": 12,
+  "name": "Nachtschlinge",
+  "subtitle": null,
+  "display_name": "Nachtschlinge",
+  "source_type": "catalog_entry",
+  "item_type": "Waffe",
+  "base_weapon_type": "Kettenklinge",
+  "category": "Ketten- und flexible Waffen",
+  "quality": "Ungewöhnlich",
+  "item_level": 1,
+  "magical": {
+    "raw": "Ja",
+    "value": true
+  },
+  "elements": [
+    "Dunkelheit"
+  ],
+  "is_elemental": true,
+  "core_dice": {
+    "raw": "1W8",
+    "dice_terms": [
+      {
+        "raw": "1W8",
+        "count": 1,
+        "sides": 8
+      }
+    ]
+  },
+  "handling": "Zweihändig",
+  "range": "Nah / Mittel",
+  "damage_type": "Hieb",
+  "weight": "Mittel",
+  "attributes": {
+    "attack": "Geschicklichkeit",
+    "primary_class": null,
+    "secondary_class": null
+  },
+  "formulas": {
+    "attack": "W20 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus",
+    "damage": {
+      "default": "1W8 + 12 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus Hiebschaden",
+      "one_handed": null,
+      "two_handed": null
+    },
+    "core_value": null,
+    "dice_terms": [
+      {
+        "raw": "W20",
+        "count": 1,
+        "sides": 20
+      },
+      {
+        "raw": "1W8",
+        "count": 1,
+        "sides": 8
+      }
+    ]
+  },
+  "critical_modification": null,
+  "class_binding": {
+    "class_name": null,
+    "raw": null,
+    "is_class_weapon": false,
+    "is_dm_weapon": false
+  },
+  "class_resource": null,
+  "special_properties": "Dunkelheitsprägung: Nach einem Treffer, bevor der Schaden verrechnet wird, darf der gesamte normale Waffenschaden dieses Angriffs statt als Hieb als Dunkelheitsschaden verursacht werden. Wird die Umwandlung nicht gewählt, verursacht die Waffe ihren normalen physischen Schaden. Die Elementprägung erzeugt keinen automatischen Zustand.",
+  "class_effect": null,
+  "active_ability": null,
+  "action_cost": null,
+  "trigger_requirement": null,
+  "costs": null,
+  "usage_limit": null,
+  "effect_range": null,
+  "target_area": null,
+  "duration": null,
+  "saving_throw_dc": null,
+  "effect_calculation": "Bei gewählter Umwandlung wird die vollständige normale Schadensformel unverändert als Dunkelheitsschaden behandelt; es entsteht kein zusätzlicher Schadenswürfel und kein zusätzlicher Festwert.",
+  "rule_effect": "Der Spieler wählt pro erfolgreichem Treffer zwischen dem normalen physischen Waffenschaden und Dunkelheitsschaden. Physischer und magischer Schaden werden nicht gleichzeitig aus derselben Schadensformel erzeugt.",
+  "stacking": "Die besondere Eigenschaft wird pro Angriff nur einmal angewendet und stapelt nicht mit sich selbst.",
+  "end_condition": "Sofort nach der vollständigen Abwicklung des jeweiligen Angriffs.",
+  "upgrade_scaling": "Kann nach den allgemeinen Itemstufenregeln verbessert werden; bei einer höheren Itemstufe werden die skalierenden Waffenwerte neu berechnet. Die hier angegebene ungewöhnliche Eigenschaft wird dadurch nicht automatisch stärker.",
+  "crafting_requirement": "Ausgebildeter oder erfahrener Handwerker",
+  "appearance": "Eine Klinge oder mehrere Schneidsegmente, die an einer Kette befestigt sind. Der Griff bleibt in der Hand, während der scharfe Teil in weitem Abstand schwingt. Die Kettenglieder sind dunkel brüniert, die Schneidsegmente fast schwarz. Bei magischer Führung scheint die Kontur für einen Augenblick Licht zu schlucken. Die Verarbeitung ist sichtbar hochwertiger als bei einer gewöhnlichen Ausführung, bleibt aber funktional und ohne aufwendige Meisterwerksornamentik.",
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.0",
+    "classification": null,
+    "dm_performance_profile": null,
+    "status": null
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Waffen",
+      "Ungewöhnliche Waffen"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.0",
+    "waffenanzahl": 30,
+    "qualitaet": "Ungewöhnlich",
+    "itemstufe": 1
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Basiswaffenart": "Kettenklinge",
+    "Waffenkategorie": "Ketten- und flexible Waffen",
+    "Qualitätsstufe": "Ungewöhnlich",
+    "Itemstufe": "1",
+    "Magisch": "Ja",
+    "Kernwürfel": "1W8",
+    "Führung": "Zweihändig",
+    "Reichweite": "Nah / Mittel",
+    "Schadensart": "Hieb",
+    "Gewicht": "Mittel",
+    "Angriffsattribut": "Geschicklichkeit",
+    "Angriffswurf": "`W20 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus`",
+    "Schadensformel": "`1W8 + 12 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus` Hiebschaden",
+    "Krit-Modifikation": null,
+    "Besondere Eigenschaften": "**Dunkelheitsprägung:** Nach einem Treffer, bevor der Schaden verrechnet wird, darf der gesamte normale Waffenschaden dieses Angriffs statt als Hieb als Dunkelheitsschaden verursacht werden. Wird die Umwandlung nicht gewählt, verursacht die Waffe ihren normalen physischen Schaden. Die Elementprägung erzeugt keinen automatischen Zustand.",
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": null,
+    "Auslöser / Voraussetzung": null,
+    "Einsatzlimit": null,
+    "Reichweite des Effekts": null,
+    "Ziel / Fläche": null,
+    "Dauer": null,
+    "Rettungswurf / SG": null,
+    "Berechnung des Effekts": "Bei gewählter Umwandlung wird die vollständige normale Schadensformel unverändert als Dunkelheitsschaden behandelt; es entsteht kein zusätzlicher Schadenswürfel und kein zusätzlicher Festwert.",
+    "Regelwirkung": "Der Spieler wählt pro erfolgreichem Treffer zwischen dem normalen physischen Waffenschaden und Dunkelheitsschaden. Physischer und magischer Schaden werden nicht gleichzeitig aus derselben Schadensformel erzeugt.",
+    "Stapelung": "Die besondere Eigenschaft wird pro Angriff nur einmal angewendet und stapelt nicht mit sich selbst.",
+    "Ende der Wirkung": "Sofort nach der vollständigen Abwicklung des jeweiligen Angriffs.",
+    "Aufwertung / Skalierung": "Kann nach den allgemeinen Itemstufenregeln verbessert werden; bei einer höheren Itemstufe werden die skalierenden Waffenwerte neu berechnet. Die hier angegebene ungewöhnliche Eigenschaft wird dadurch nicht automatisch stärker.",
+    "Herstellungsanforderung": "Ausgebildeter oder erfahrener Handwerker",
+    "Erscheinungsbild": "Eine Klinge oder mehrere Schneidsegmente, die an einer Kette befestigt sind. Der Griff bleibt in der Hand, während der scharfe Teil in weitem Abstand schwingt. Die Kettenglieder sind dunkel brüniert, die Schneidsegmente fast schwarz. Bei magischer Führung scheint die Kontur für einen Augenblick Licht zu schlucken. Die Verarbeitung ist sichtbar hochwertiger als bei einer gewöhnlichen Ausführung, bleibt aber funktional und ohne aufwendige Meisterwerksornamentik."
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basiswaffenart** | Kettenklinge |\n| **Waffenkategorie** | Ketten- und flexible Waffen |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja |\n| **Kernwürfel** | 1W8 |\n| **Führung** | Zweihändig |\n| **Reichweite** | Nah / Mittel |\n| **Schadensart** | Hieb |\n| **Gewicht** | Mittel |\n| **Angriffsattribut** | Geschicklichkeit |\n| **Angriffswurf** | `W20 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus` |\n| **Schadensformel** | `1W8 + 12 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus` Hiebschaden |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | **Dunkelheitsprägung:** Nach einem Treffer, bevor der Schaden verrechnet wird, darf der gesamte normale Waffenschaden dieses Angriffs statt als Hieb als Dunkelheitsschaden verursacht werden. Wird die Umwandlung nicht gewählt, verursacht die Waffe ihren normalen physischen Schaden. Die Elementprägung erzeugt keinen automatischen Zustand. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite des Effekts** | – |\n| **Ziel / Fläche** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | Bei gewählter Umwandlung wird die vollständige normale Schadensformel unverändert als Dunkelheitsschaden behandelt; es entsteht kein zusätzlicher Schadenswürfel und kein zusätzlicher Festwert. |\n| **Regelwirkung** | Der Spieler wählt pro erfolgreichem Treffer zwischen dem normalen physischen Waffenschaden und Dunkelheitsschaden. Physischer und magischer Schaden werden nicht gleichzeitig aus derselben Schadensformel erzeugt. |\n| **Stapelung** | Die besondere Eigenschaft wird pro Angriff nur einmal angewendet und stapelt nicht mit sich selbst. |\n| **Ende der Wirkung** | Sofort nach der vollständigen Abwicklung des jeweiligen Angriffs. |\n| **Aufwertung / Skalierung** | Kann nach den allgemeinen Itemstufenregeln verbessert werden; bei einer höheren Itemstufe werden die skalierenden Waffenwerte neu berechnet. Die hier angegebene ungewöhnliche Eigenschaft wird dadurch nicht automatisch stärker. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker |\n| **Erscheinungsbild** | Eine Klinge oder mehrere Schneidsegmente, die an einer Kette befestigt sind. Der Griff bleibt in der Hand, während der scharfe Teil in weitem Abstand schwingt. Die Kettenglieder sind dunkel brüniert, die Schneidsegmente fast schwarz. Bei magischer Führung scheint die Kontur für einen Augenblick Licht zu schlucken. Die Verarbeitung ist sichtbar hochwertiger als bei einer gewöhnlichen Ausführung, bleibt aber funktional und ohne aufwendige Meisterwerksornamentik. |",
+  "sections": [],
+  "raw_markdown": "## 12 – Nachtschlinge\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basiswaffenart** | Kettenklinge |\n| **Waffenkategorie** | Ketten- und flexible Waffen |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja |\n| **Kernwürfel** | 1W8 |\n| **Führung** | Zweihändig |\n| **Reichweite** | Nah / Mittel |\n| **Schadensart** | Hieb |\n| **Gewicht** | Mittel |\n| **Angriffsattribut** | Geschicklichkeit |\n| **Angriffswurf** | `W20 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus` |\n| **Schadensformel** | `1W8 + 12 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus` Hiebschaden |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | **Dunkelheitsprägung:** Nach einem Treffer, bevor der Schaden verrechnet wird, darf der gesamte normale Waffenschaden dieses Angriffs statt als Hieb als Dunkelheitsschaden verursacht werden. Wird die Umwandlung nicht gewählt, verursacht die Waffe ihren normalen physischen Schaden. Die Elementprägung erzeugt keinen automatischen Zustand. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite des Effekts** | – |\n| **Ziel / Fläche** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | Bei gewählter Umwandlung wird die vollständige normale Schadensformel unverändert als Dunkelheitsschaden behandelt; es entsteht kein zusätzlicher Schadenswürfel und kein zusätzlicher Festwert. |\n| **Regelwirkung** | Der Spieler wählt pro erfolgreichem Treffer zwischen dem normalen physischen Waffenschaden und Dunkelheitsschaden. Physischer und magischer Schaden werden nicht gleichzeitig aus derselben Schadensformel erzeugt. |\n| **Stapelung** | Die besondere Eigenschaft wird pro Angriff nur einmal angewendet und stapelt nicht mit sich selbst. |\n| **Ende der Wirkung** | Sofort nach der vollständigen Abwicklung des jeweiligen Angriffs. |\n| **Aufwertung / Skalierung** | Kann nach den allgemeinen Itemstufenregeln verbessert werden; bei einer höheren Itemstufe werden die skalierenden Waffenwerte neu berechnet. Die hier angegebene ungewöhnliche Eigenschaft wird dadurch nicht automatisch stärker. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker |\n| **Erscheinungsbild** | Eine Klinge oder mehrere Schneidsegmente, die an einer Kette befestigt sind. Der Griff bleibt in der Hand, während der scharfe Teil in weitem Abstand schwingt. Die Kettenglieder sind dunkel brüniert, die Schneidsegmente fast schwarz. Bei magischer Führung scheint die Kontur für einen Augenblick Licht zu schlucken. Die Verarbeitung ist sichtbar hochwertiger als bei einer gewöhnlichen Ausführung, bleibt aber funktional und ohne aufwendige Meisterwerksornamentik. |\n\n---",
+  "source": {
+    "file": "Waffen.md",
+    "document_title": "Ätherfall – Ungewöhnliche Waffen – Itemstufe 1",
+    "line_start": 2730,
+    "line_end": 2766
+  }
+}

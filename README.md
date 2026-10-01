@@ -52,6 +52,8 @@ Modifikatoren und maximale LP sind im Formular nicht editierbar und werden beim 
 
 Charakterberechnungen liefern immer Ganzzahlen. Sollte eine Berechnung dennoch einen Nachkommawert ergeben, wird mit `floor` abgerundet: `4,5 → 4` und `4,9 → 4`.
 
+Im Charakterformular können optional zwei Waffen (`Hand 1` und `Hand 2`) aus dem importierten Waffenbestand ausgewählt, gesucht, gefiltert oder entfernt werden. Die Auswahl wird beim Charakter gespeichert und beim Bearbeiten wieder geladen. Waffen sind in dieser Version reine Charakterdaten und werden noch nicht in Combat-Treffer- oder Schadensformeln verwendet.
+
 Unter **Combat Tracker** wird ein Kampf angelegt, danach werden Charaktere, Kreaturen und Bosse mit Initiative beziehungsweise Profilstufe hinzugefügt. Bei Charakteren wird die aktuelle Stufe immer automatisch aus dem Charakterbogen übernommen; nur Kreaturen und Bosse besitzen eine auswählbare Profilstufe. Max-LP von Kreaturen und Bossen kommen automatisch aus dem importierten Stufenprofil; Bossphasen werden anhand der LP-Schwellen automatisch fortgeschrieben und springen bei Heilung nicht zurück. Zugeordnete Charakterfähigkeiten und -zauber erscheinen beim aktiven Zug im Combat Calculator, Kreaturen- und Bossaktionen stammen aus dem gewählten Profil. Die normale Aktionseingabe besteht aus höchstens Trefferwürfel, Schadens-/Effektwürfel, Ziel und Krit-Checkbox; die Spielerwürfel werden als Summen eingetragen. Technische Formeln und einzelne Würfelgruppen bleiben intern. Das Magieattribut ist nur für aktive Charaktere relevant. Resistenz und physische beziehungsweise magische Profilverteidigung werden beim Ziel automatisch aus dem hinterlegten Kreaturen- oder Bossprofil übernommen und müssen nicht manuell eingetragen werden; bei Charakterzielen bleibt die eigene Verteidigungsentscheidung beim Spieler. Bei aktivierter Krit-Checkbox verwendet der Server den Krit-Prozentwert des aktiven Charakters oder Kreaturenprofils einmalig auf den vollständigen normalen Schaden. Heilung erhält keinen Krit-Bonus. Erst „Schaden anwenden“ oder „Heilung anwenden“ ändert Kampf-LP.
 
 ## Diagnose und Tests
@@ -86,6 +88,6 @@ Charakterverknüpfungen zeigen danach automatisch die aktualisierten Definitione
 
 ## Bewusste V1-Grenzen
 
-Kein Login, Spielerportal, Multiplayer, Inventar, Waffen-/Rüstungsverwaltung, vollständiger Charaktergenerator, automatische Ermittlung der Attributwerte oder -boni, Karten oder vollständige Statusengine. Komplexe Texte, verzweigte Mehrfachwirkungen und nicht eindeutig definierte Verteidigungsregeln nutzen den sichtbaren manuellen Fallback. Die Anwendung würfelt nie für Spieler.
+Kein Login, Spielerportal, Multiplayer, vollständige Inventar-/Rüstungsverwaltung, vollständiger Charaktergenerator, automatische Ermittlung der Attributwerte oder -boni, Karten oder vollständige Statusengine. Waffen werden in V1 importiert und können in zwei Charakter-Slots abgelegt werden; eine Combat-Integration ist bewusst noch nicht enthalten. Komplexe Texte, verzweigte Mehrfachwirkungen und nicht eindeutig definierte Verteidigungsregeln nutzen den sichtbaren manuellen Fallback. Die Anwendung würfelt nie für Spieler.
 
 Technische Details stehen in `docs/architecture.md`, `docs/database-schema.md`, `docs/json-schema-analysis.md`, `docs/formula-engine.md` und `docs/formula-patterns.md`.

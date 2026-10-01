@@ -10,11 +10,12 @@ final class ContentRepository
     public function __construct(private PDO $pdo) {}
     public function stats(): array
     {
-        $result=[]; foreach (['classes'=>'Klassen','abilities'=>'Fähigkeiten','creatures'=>'Kreaturen','bosses'=>'Bosse','spells'=>'Zauber'] as $table=>$label) $result[$label]=(int)$this->pdo->query("SELECT COUNT(*) FROM {$table}")->fetchColumn();
+        $result=[]; foreach (['classes'=>'Klassen','abilities'=>'Fähigkeiten','creatures'=>'Kreaturen','bosses'=>'Bosse','spells'=>'Zauber','weapons'=>'Waffen','armors'=>'Rüstungen','magic_foci'=>'Magiefoki'] as $table=>$label) $result[$label]=(int)$this->pdo->query("SELECT COUNT(*) FROM {$table}")->fetchColumn();
         $result['Letzter Import']=$this->pdo->query("SELECT finished_at FROM import_runs WHERE status='success' ORDER BY id DESC LIMIT 1")->fetchColumn() ?: null; return $result;
     }
-    public function classes(): array { return $this->pdo->query("SELECT c.id,c.name,GROUP_CONCAT(CONCAT(caa.role,':',caa.attribute_code,':',caa.adjustment) ORDER BY FIELD(caa.role,'primary','secondary','penalty')) adjustments FROM classes c LEFT JOIN class_attribute_adjustments caa ON caa.class_id=c.id GROUP BY c.id,c.name ORDER BY c.name")->fetchAll(); }
+    public function classes(): array { return $this->pdo->query("SELECT c.id,c.name,cr.resource_id,cr.name resource_name,cr.maximum_formula,GROUP_CONCAT(CONCAT(caa.role,':',caa.attribute_code,':',caa.adjustment) ORDER BY FIELD(caa.role,'primary','secondary','penalty')) adjustments FROM classes c LEFT JOIN class_attribute_adjustments caa ON caa.class_id=c.id LEFT JOIN class_resources cr ON cr.class_id=c.id GROUP BY c.id,c.name,cr.resource_id,cr.name,cr.maximum_formula ORDER BY c.name")->fetchAll(); }
     public function abilities(string $classId, int $level=999): array { $s=$this->pdo->prepare('SELECT id,name,unlock_level,type,costs,effect,attack_roll,calculation,damage_type,action_cost FROM abilities WHERE class_id=? AND unlock_level<=? ORDER BY unlock_level,number');$s->execute([$classId,$level]);return $s->fetchAll(); }
+    public function classResources(string $classId): array { $s=$this->pdo->prepare('SELECT resource_id,name,form,maximum_formula,start_value,base_generation,generation,consumption,recovery,raw_json FROM class_resources WHERE class_id=?');$s->execute([$classId]);return $s->fetchAll(); }
     public function spells(array $filters=[]): array
     {
         $sql='SELECT s.id,s.name,s.grade,s.effect_type,s.element_id,e.name element_name,s.mana_cost_raw,s.attack_roll,s.calculation,s.damage_type,s.rule_effect FROM spells s JOIN spell_elements e ON e.id=s.element_id WHERE 1=1';$args=[];

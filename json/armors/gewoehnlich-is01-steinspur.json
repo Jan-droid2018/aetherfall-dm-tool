@@ -1,0 +1,143 @@
+{
+  "schema_version": "aetherfall.armors.v1",
+  "id": "gewoehnlich-is01-steinspur",
+  "number": null,
+  "name": "Steinspur",
+  "display_name": "Steinspur",
+  "source_type": "catalog_armor",
+  "item_kind": "armor",
+  "base_item": {
+    "armor": "Beschlagene Beinschienen",
+    "shield": null,
+    "name": "Beschlagene Beinschienen"
+  },
+  "slot": {
+    "name": "Beine",
+    "key": "legs"
+  },
+  "armor_archetype": "Mittel",
+  "shield_class": null,
+  "quality": "Gewöhnlich",
+  "item_level": 1,
+  "magical": {
+    "raw": "Ja",
+    "value": true
+  },
+  "defense": {
+    "physical": {
+      "raw": "2",
+      "value": 2
+    },
+    "magical": {
+      "raw": "1 ausschließlich gegen Erde; 0 gegen andere magische Schadensarten",
+      "general": 0,
+      "conditional": [
+        {
+          "damage_type": "Erde",
+          "value": 1,
+          "raw": "1 ausschließlich gegen Erde; 0 gegen andere magische Schadensarten"
+        }
+      ]
+    }
+  },
+  "resistances": {
+    "raw": null,
+    "entries": []
+  },
+  "elements": [
+    "Erde"
+  ],
+  "is_elemental": true,
+  "special_properties": "Elementarprägung – Erde: Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Erdschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung.",
+  "passive_property": null,
+  "active_ability": null,
+  "active_block_ability": null,
+  "reaction_trigger": null,
+  "hand_binding_usage": null,
+  "action_cost": null,
+  "trigger_requirement": null,
+  "costs": null,
+  "usage_limit": null,
+  "range_target": null,
+  "duration": null,
+  "saving_throw_dc": null,
+  "calculation": null,
+  "rule_effect": "Elementarprägung – Erde: Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Erdschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung.",
+  "stacking": "Die bedingte Magische Verteidigung wird wie normale Magische Verteidigung mit anderen getragenen Rüstungsteilen bzw. Schilden addiert.",
+  "end_condition": "Solange das Rüstungsteil getragen wird.",
+  "set": {
+    "name": null,
+    "bonus": null
+  },
+  "class_binding": {
+    "raw": null,
+    "class_name": null
+  },
+  "upgrade_scaling": "Werte ändern sich nur durch eine tatsächliche Erhöhung der Itemstufe; die Qualitätsstufe bleibt dabei Gewöhnlich.",
+  "crafting_requirement": "Normale handwerkliche Ausbildung",
+  "appearance": "Feste Beinschienen aus Leder mit kurzen Metallbeschlägen und grauen Steinplättchen zwischen den Nieten. Bei Erdmagie fühlen sich die Schienen für einen Moment dichter und schwerer an.",
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.0",
+    "classification": null,
+    "dm_exclusive": false,
+    "dm_performance_profile": null
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Rüstung",
+      "Schilde"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.0",
+    "gegenstandsanzahl": 62,
+    "qualitaet": "Gewöhnlich",
+    "itemstufe": 1
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Basisrüstung": "Beschlagene Beinschienen",
+    "Slot": "Beine",
+    "Rüstungsarchetyp": "Mittel",
+    "Qualitätsstufe": "Gewöhnlich",
+    "Itemstufe": "1",
+    "Magisch": "Ja",
+    "Physische Verteidigung": "2",
+    "Magische Verteidigung": "1 ausschließlich gegen Erde; 0 gegen andere magische Schadensarten",
+    "Resistenzen": null,
+    "Besondere Eigenschaften": "**Elementarprägung – Erde:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Erdschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung.",
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": null,
+    "Auslöser / Voraussetzung": null,
+    "Einsatzlimit": null,
+    "Reichweite / Ziel": null,
+    "Dauer": null,
+    "Rettungswurf / SG": null,
+    "Berechnung": null,
+    "Regelwirkung": "**Elementarprägung – Erde:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Erdschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung.",
+    "Stapelung": "Die bedingte Magische Verteidigung wird wie normale Magische Verteidigung mit anderen getragenen Rüstungsteilen bzw. Schilden addiert.",
+    "Ende der Wirkung": "Solange das Rüstungsteil getragen wird.",
+    "Setzugehörigkeit": null,
+    "Setbonus": null,
+    "Aufwertung / Skalierung": "Werte ändern sich nur durch eine tatsächliche Erhöhung der Itemstufe; die Qualitätsstufe bleibt dabei Gewöhnlich.",
+    "Herstellungsanforderung": "Normale handwerkliche Ausbildung",
+    "Erscheinungsbild": "Feste Beinschienen aus Leder mit kurzen Metallbeschlägen und grauen Steinplättchen zwischen den Nieten. Bei Erdmagie fühlen sich die Schienen für einen Moment dichter und schwerer an."
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Beschlagene Beinschienen |\n| **Slot** | Beine |\n| **Rüstungsarchetyp** | Mittel |\n| **Qualitätsstufe** | Gewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja |\n| **Physische Verteidigung** | 2 |\n| **Magische Verteidigung** | 1 ausschließlich gegen Erde; 0 gegen andere magische Schadensarten |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | **Elementarprägung – Erde:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Erdschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | – |\n| **Regelwirkung** | **Elementarprägung – Erde:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Erdschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung. |\n| **Stapelung** | Die bedingte Magische Verteidigung wird wie normale Magische Verteidigung mit anderen getragenen Rüstungsteilen bzw. Schilden addiert. |\n| **Ende der Wirkung** | Solange das Rüstungsteil getragen wird. |\n| **Setzugehörigkeit** | – |\n| **Setbonus** | – |\n| **Aufwertung / Skalierung** | Werte ändern sich nur durch eine tatsächliche Erhöhung der Itemstufe; die Qualitätsstufe bleibt dabei Gewöhnlich. |\n| **Herstellungsanforderung** | Normale handwerkliche Ausbildung |\n| **Erscheinungsbild** | Feste Beinschienen aus Leder mit kurzen Metallbeschlägen und grauen Steinplättchen zwischen den Nieten. Bei Erdmagie fühlen sich die Schienen für einen Moment dichter und schwerer an. |",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Steinspur",
+      "markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Beschlagene Beinschienen |\n| **Slot** | Beine |\n| **Rüstungsarchetyp** | Mittel |\n| **Qualitätsstufe** | Gewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja |\n| **Physische Verteidigung** | 2 |\n| **Magische Verteidigung** | 1 ausschließlich gegen Erde; 0 gegen andere magische Schadensarten |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | **Elementarprägung – Erde:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Erdschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | – |\n| **Regelwirkung** | **Elementarprägung – Erde:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Erdschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung. |\n| **Stapelung** | Die bedingte Magische Verteidigung wird wie normale Magische Verteidigung mit anderen getragenen Rüstungsteilen bzw. Schilden addiert. |\n| **Ende der Wirkung** | Solange das Rüstungsteil getragen wird. |\n| **Setzugehörigkeit** | – |\n| **Setbonus** | – |\n| **Aufwertung / Skalierung** | Werte ändern sich nur durch eine tatsächliche Erhöhung der Itemstufe; die Qualitätsstufe bleibt dabei Gewöhnlich. |\n| **Herstellungsanforderung** | Normale handwerkliche Ausbildung |\n| **Erscheinungsbild** | Feste Beinschienen aus Leder mit kurzen Metallbeschlägen und grauen Steinplättchen zwischen den Nieten. Bei Erdmagie fühlen sich die Schienen für einen Moment dichter und schwerer an. |",
+      "line_start": 1275,
+      "line_end": 1305
+    }
+  ],
+  "raw_markdown": "## Steinspur\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Beschlagene Beinschienen |\n| **Slot** | Beine |\n| **Rüstungsarchetyp** | Mittel |\n| **Qualitätsstufe** | Gewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja |\n| **Physische Verteidigung** | 2 |\n| **Magische Verteidigung** | 1 ausschließlich gegen Erde; 0 gegen andere magische Schadensarten |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | **Elementarprägung – Erde:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Erdschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | – |\n| **Regelwirkung** | **Elementarprägung – Erde:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Erdschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung. |\n| **Stapelung** | Die bedingte Magische Verteidigung wird wie normale Magische Verteidigung mit anderen getragenen Rüstungsteilen bzw. Schilden addiert. |\n| **Ende der Wirkung** | Solange das Rüstungsteil getragen wird. |\n| **Setzugehörigkeit** | – |\n| **Setbonus** | – |\n| **Aufwertung / Skalierung** | Werte ändern sich nur durch eine tatsächliche Erhöhung der Itemstufe; die Qualitätsstufe bleibt dabei Gewöhnlich. |\n| **Herstellungsanforderung** | Normale handwerkliche Ausbildung |\n| **Erscheinungsbild** | Feste Beinschienen aus Leder mit kurzen Metallbeschlägen und grauen Steinplättchen zwischen den Nieten. Bei Erdmagie fühlen sich die Schienen für einen Moment dichter und schwerer an. |",
+  "source": {
+    "file": "Rüstungen.md",
+    "document_title": "Ätherfall – 62 gewöhnliche Rüstungen – Itemstufe 1",
+    "line_start": 1275,
+    "line_end": 1305
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "schema_version": "aetherfall.armors.v1",
+  "id": "ungewoehnlich-is01-morgenkuerass",
+  "number": 12,
+  "name": "Morgenkürass",
+  "display_name": "Morgenkürass",
+  "source_type": "catalog_armor",
+  "item_kind": "armor",
+  "base_item": {
+    "armor": "Kürass",
+    "shield": null,
+    "name": "Kürass"
+  },
+  "slot": {
+    "name": "Brust",
+    "key": "chest"
+  },
+  "armor_archetype": "Schwer",
+  "shield_class": null,
+  "quality": "Ungewöhnlich",
+  "item_level": 1,
+  "magical": {
+    "raw": "Ja",
+    "value": true
+  },
+  "defense": {
+    "physical": {
+      "raw": "3",
+      "value": 3
+    },
+    "magical": {
+      "raw": "1",
+      "general": 1,
+      "conditional": []
+    }
+  },
+  "resistances": {
+    "raw": "10 % Resistenz gegen Lichtschaden",
+    "entries": [
+      {
+        "damage_type": "Licht",
+        "percent": 10,
+        "raw": "10 % Resistenz gegen Lichtschaden"
+      }
+    ]
+  },
+  "elements": [
+    "Licht"
+  ],
+  "is_elemental": true,
+  "special_properties": "Elementprägung – Licht: Die Prägung gewährt 10 % Resistenz gegen Lichtschaden. Sie erzeugt keinen automatischen Zustand und keine weitere Elementwirkung.",
+  "passive_property": null,
+  "active_ability": null,
+  "active_block_ability": null,
+  "reaction_trigger": null,
+  "hand_binding_usage": null,
+  "action_cost": null,
+  "trigger_requirement": null,
+  "costs": null,
+  "usage_limit": null,
+  "range_target": "Selbst, solange ausgerüstet",
+  "duration": "Dauerhaft, solange ausgerüstet",
+  "saving_throw_dc": null,
+  "calculation": "Bei Lichtschaden: aktueller Lichtschaden × 10 % = Schadensreduktion; Bruchteile der Reduktion werden abgerundet. Danach wird der verbleibende Schaden nach den normalen Regeln weiter verrechnet.",
+  "rule_effect": "Der Träger besitzt 10 % Resistenz gegen Lichtschaden. Gleiche Resistenzen gegen dieselbe Schadensart werden nicht addiert; es gilt nur die stärkste passende Resistenz.",
+  "stacking": "Phys- und Mag-VTD werden nach den normalen Rüstungsregeln mit anderen getragenen Rüstungsteilen addiert. Gleichnamige oder gleiche Schadensresistenzen werden nicht addiert; es gilt die stärkste passende Resistenz.",
+  "end_condition": "Sobald das Rüstungsteil abgelegt wird.",
+  "set": {
+    "name": null,
+    "bonus": null
+  },
+  "class_binding": {
+    "raw": null,
+    "class_name": null
+  },
+  "upgrade_scaling": "Bei Erhöhung der Itemstufe werden Phys-VTD, Mag-VTD und gegebenenfalls skalierende Schutzwerte anhand der dann geltenden Zentralbalance neu bestimmt. Die Qualitätsstufe bleibt Ungewöhnlich, solange sie nicht gesondert erhöht wird.",
+  "crafting_requirement": "Ausgebildeter oder erfahrener Handwerker; hochwertige Materialien und sorgfältige Verarbeitung.",
+  "appearance": "Ein passgenauer Vorder- und Rückenpanzer aus hellem Stahl mit goldbleichen Kanten. Auf der Brust liegt ein flaches Sonnensegment, das in Dunkelheit schwach nachleuchtet.",
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.0",
+    "classification": null,
+    "dm_exclusive": false,
+    "dm_performance_profile": null
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Rüstung",
+      "Ungewöhnlich",
+      "Itemstufe-1"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.0",
+    "gegenstandsanzahl": 30,
+    "qualitaet": "Ungewöhnlich",
+    "itemstufe": 1
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Basisrüstung": "Kürass",
+    "Slot": "Brust",
+    "Rüstungsarchetyp": "Schwer",
+    "Qualitätsstufe": "Ungewöhnlich",
+    "Itemstufe": "1",
+    "Magisch": "Ja",
+    "Physische Verteidigung": "3",
+    "Magische Verteidigung": "1",
+    "Resistenzen": "10 % Resistenz gegen Lichtschaden",
+    "Besondere Eigenschaften": "**Elementprägung – Licht:** Die Prägung gewährt 10 % Resistenz gegen Lichtschaden. Sie erzeugt keinen automatischen Zustand und keine weitere Elementwirkung.",
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": null,
+    "Auslöser / Voraussetzung": null,
+    "Einsatzlimit": null,
+    "Reichweite / Ziel": "Selbst, solange ausgerüstet",
+    "Dauer": "Dauerhaft, solange ausgerüstet",
+    "Rettungswurf / SG": null,
+    "Berechnung": "Bei Lichtschaden: aktueller Lichtschaden × 10 % = Schadensreduktion; Bruchteile der Reduktion werden abgerundet. Danach wird der verbleibende Schaden nach den normalen Regeln weiter verrechnet.",
+    "Regelwirkung": "Der Träger besitzt 10 % Resistenz gegen Lichtschaden. Gleiche Resistenzen gegen dieselbe Schadensart werden nicht addiert; es gilt nur die stärkste passende Resistenz.",
+    "Stapelung": "Phys- und Mag-VTD werden nach den normalen Rüstungsregeln mit anderen getragenen Rüstungsteilen addiert. Gleichnamige oder gleiche Schadensresistenzen werden nicht addiert; es gilt die stärkste passende Resistenz.",
+    "Ende der Wirkung": "Sobald das Rüstungsteil abgelegt wird.",
+    "Setzugehörigkeit": null,
+    "Setbonus": null,
+    "Aufwertung / Skalierung": "Bei Erhöhung der Itemstufe werden Phys-VTD, Mag-VTD und gegebenenfalls skalierende Schutzwerte anhand der dann geltenden Zentralbalance neu bestimmt. Die Qualitätsstufe bleibt **Ungewöhnlich**, solange sie nicht gesondert erhöht wird.",
+    "Herstellungsanforderung": "Ausgebildeter oder erfahrener Handwerker; hochwertige Materialien und sorgfältige Verarbeitung.",
+    "Erscheinungsbild": "Ein passgenauer Vorder- und Rückenpanzer aus hellem Stahl mit goldbleichen Kanten. Auf der Brust liegt ein flaches Sonnensegment, das in Dunkelheit schwach nachleuchtet."
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Kürass |\n| **Slot** | Brust |\n| **Rüstungsarchetyp** | Schwer |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja |\n| **Physische Verteidigung** | 3 |\n| **Magische Verteidigung** | 1 |\n| **Resistenzen** | 10 % Resistenz gegen Lichtschaden |\n| **Besondere Eigenschaften** | **Elementprägung – Licht:** Die Prägung gewährt 10 % Resistenz gegen Lichtschaden. Sie erzeugt keinen automatischen Zustand und keine weitere Elementwirkung. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | Selbst, solange ausgerüstet |\n| **Dauer** | Dauerhaft, solange ausgerüstet |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | Bei Lichtschaden: aktueller Lichtschaden × 10 % = Schadensreduktion; Bruchteile der Reduktion werden abgerundet. Danach wird der verbleibende Schaden nach den normalen Regeln weiter verrechnet. |\n| **Regelwirkung** | Der Träger besitzt 10 % Resistenz gegen Lichtschaden. Gleiche Resistenzen gegen dieselbe Schadensart werden nicht addiert; es gilt nur die stärkste passende Resistenz. |\n| **Stapelung** | Phys- und Mag-VTD werden nach den normalen Rüstungsregeln mit anderen getragenen Rüstungsteilen addiert. Gleichnamige oder gleiche Schadensresistenzen werden nicht addiert; es gilt die stärkste passende Resistenz. |\n| **Ende der Wirkung** | Sobald das Rüstungsteil abgelegt wird. |\n| **Setzugehörigkeit** | – |\n| **Setbonus** | – |\n| **Aufwertung / Skalierung** | Bei Erhöhung der Itemstufe werden Phys-VTD, Mag-VTD und gegebenenfalls skalierende Schutzwerte anhand der dann geltenden Zentralbalance neu bestimmt. Die Qualitätsstufe bleibt **Ungewöhnlich**, solange sie nicht gesondert erhöht wird. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker; hochwertige Materialien und sorgfältige Verarbeitung. |\n| **Erscheinungsbild** | Ein passgenauer Vorder- und Rückenpanzer aus hellem Stahl mit goldbleichen Kanten. Auf der Brust liegt ein flaches Sonnensegment, das in Dunkelheit schwach nachleuchtet. |",
+  "sections": [
+    {
+      "level": 2,
+      "title": "12. Morgenkürass",
+      "markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Kürass |\n| **Slot** | Brust |\n| **Rüstungsarchetyp** | Schwer |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja |\n| **Physische Verteidigung** | 3 |\n| **Magische Verteidigung** | 1 |\n| **Resistenzen** | 10 % Resistenz gegen Lichtschaden |\n| **Besondere Eigenschaften** | **Elementprägung – Licht:** Die Prägung gewährt 10 % Resistenz gegen Lichtschaden. Sie erzeugt keinen automatischen Zustand und keine weitere Elementwirkung. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | Selbst, solange ausgerüstet |\n| **Dauer** | Dauerhaft, solange ausgerüstet |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | Bei Lichtschaden: aktueller Lichtschaden × 10 % = Schadensreduktion; Bruchteile der Reduktion werden abgerundet. Danach wird der verbleibende Schaden nach den normalen Regeln weiter verrechnet. |\n| **Regelwirkung** | Der Träger besitzt 10 % Resistenz gegen Lichtschaden. Gleiche Resistenzen gegen dieselbe Schadensart werden nicht addiert; es gilt nur die stärkste passende Resistenz. |\n| **Stapelung** | Phys- und Mag-VTD werden nach den normalen Rüstungsregeln mit anderen getragenen Rüstungsteilen addiert. Gleichnamige oder gleiche Schadensresistenzen werden nicht addiert; es gilt die stärkste passende Resistenz. |\n| **Ende der Wirkung** | Sobald das Rüstungsteil abgelegt wird. |\n| **Setzugehörigkeit** | – |\n| **Setbonus** | – |\n| **Aufwertung / Skalierung** | Bei Erhöhung der Itemstufe werden Phys-VTD, Mag-VTD und gegebenenfalls skalierende Schutzwerte anhand der dann geltenden Zentralbalance neu bestimmt. Die Qualitätsstufe bleibt **Ungewöhnlich**, solange sie nicht gesondert erhöht wird. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker; hochwertige Materialien und sorgfältige Verarbeitung. |\n| **Erscheinungsbild** | Ein passgenauer Vorder- und Rückenpanzer aus hellem Stahl mit goldbleichen Kanten. Auf der Brust liegt ein flaches Sonnensegment, das in Dunkelheit schwach nachleuchtet. |",
+      "line_start": 2391,
+      "line_end": 2421
+    }
+  ],
+  "raw_markdown": "## 12. Morgenkürass\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Kürass |\n| **Slot** | Brust |\n| **Rüstungsarchetyp** | Schwer |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja |\n| **Physische Verteidigung** | 3 |\n| **Magische Verteidigung** | 1 |\n| **Resistenzen** | 10 % Resistenz gegen Lichtschaden |\n| **Besondere Eigenschaften** | **Elementprägung – Licht:** Die Prägung gewährt 10 % Resistenz gegen Lichtschaden. Sie erzeugt keinen automatischen Zustand und keine weitere Elementwirkung. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | Selbst, solange ausgerüstet |\n| **Dauer** | Dauerhaft, solange ausgerüstet |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | Bei Lichtschaden: aktueller Lichtschaden × 10 % = Schadensreduktion; Bruchteile der Reduktion werden abgerundet. Danach wird der verbleibende Schaden nach den normalen Regeln weiter verrechnet. |\n| **Regelwirkung** | Der Träger besitzt 10 % Resistenz gegen Lichtschaden. Gleiche Resistenzen gegen dieselbe Schadensart werden nicht addiert; es gilt nur die stärkste passende Resistenz. |\n| **Stapelung** | Phys- und Mag-VTD werden nach den normalen Rüstungsregeln mit anderen getragenen Rüstungsteilen addiert. Gleichnamige oder gleiche Schadensresistenzen werden nicht addiert; es gilt die stärkste passende Resistenz. |\n| **Ende der Wirkung** | Sobald das Rüstungsteil abgelegt wird. |\n| **Setzugehörigkeit** | – |\n| **Setbonus** | – |\n| **Aufwertung / Skalierung** | Bei Erhöhung der Itemstufe werden Phys-VTD, Mag-VTD und gegebenenfalls skalierende Schutzwerte anhand der dann geltenden Zentralbalance neu bestimmt. Die Qualitätsstufe bleibt **Ungewöhnlich**, solange sie nicht gesondert erhöht wird. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker; hochwertige Materialien und sorgfältige Verarbeitung. |\n| **Erscheinungsbild** | Ein passgenauer Vorder- und Rückenpanzer aus hellem Stahl mit goldbleichen Kanten. Auf der Brust liegt ein flaches Sonnensegment, das in Dunkelheit schwach nachleuchtet. |",
+  "source": {
+    "file": "Rüstungen.md",
+    "document_title": "Ätherfall – 30 ungewöhnliche Rüstungsteile – Itemstufe 1",
+    "line_start": 2391,
+    "line_end": 2421
+  }
+}

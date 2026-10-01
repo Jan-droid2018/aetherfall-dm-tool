@@ -1,0 +1,146 @@
+{
+  "schema_version": "aetherfall.weapons.v1",
+  "id": "gewoehnlich-is01-regenwehr",
+  "number": 50,
+  "name": "Regenwehr",
+  "subtitle": null,
+  "display_name": "Regenwehr",
+  "source_type": "catalog_entry",
+  "item_type": "Waffe",
+  "base_weapon_type": "Schirmklinge",
+  "category": "Ungewöhnliche Waffenarten",
+  "quality": "Gewöhnlich",
+  "item_level": 1,
+  "magical": {
+    "raw": "Nein",
+    "value": false
+  },
+  "elements": [],
+  "is_elemental": false,
+  "core_dice": {
+    "raw": "1W6",
+    "dice_terms": [
+      {
+        "raw": "1W6",
+        "count": 1,
+        "sides": 6
+      }
+    ]
+  },
+  "handling": "Einhändig",
+  "range": "Nah",
+  "damage_type": "Hieb / Stich",
+  "weight": "Mittel",
+  "attributes": {
+    "attack": "Geschicklichkeit",
+    "primary_class": null,
+    "secondary_class": null
+  },
+  "formulas": {
+    "attack": "W20 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus",
+    "damage": {
+      "default": "1W6 + 10 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus; verursacht entsprechend der beim Angriff gewählten Schadensart Hieb- oder Stichschaden.",
+      "one_handed": null,
+      "two_handed": null
+    },
+    "core_value": null,
+    "dice_terms": [
+      {
+        "raw": "W20",
+        "count": 1,
+        "sides": 20
+      },
+      {
+        "raw": "1W6",
+        "count": 1,
+        "sides": 6
+      }
+    ]
+  },
+  "critical_modification": null,
+  "class_binding": {
+    "class_name": null,
+    "raw": null,
+    "is_class_weapon": false,
+    "is_dm_weapon": false
+  },
+  "class_resource": null,
+  "special_properties": null,
+  "class_effect": null,
+  "active_ability": null,
+  "action_cost": null,
+  "trigger_requirement": null,
+  "costs": null,
+  "usage_limit": null,
+  "effect_range": null,
+  "target_area": null,
+  "duration": null,
+  "saving_throw_dc": null,
+  "effect_calculation": null,
+  "rule_effect": null,
+  "stacking": null,
+  "end_condition": null,
+  "upgrade_scaling": "Kann nach den allgemeinen Regeln über Itemstufen verbessert werden; bei einer Aufwertung werden die skalierenden Waffenwerte für die neue Itemstufe neu bestimmt.",
+  "crafting_requirement": "Normale handwerkliche Ausbildung",
+  "appearance": "Ein unscheinbarer verstärkter Schirm mit hölzernem Griff und schmaler Stahlklinge im Stock. Geschlossen wirkt er wie ein gewöhnlicher Wetterschutz; gezogen bleibt die Konstruktion schlicht und zweckmäßig.",
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.0",
+    "classification": null,
+    "dm_performance_profile": null,
+    "status": null
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Waffen"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.0",
+    "waffenanzahl": 62,
+    "elementarwaffen": 12,
+    "qualitaet": "Gewöhnlich",
+    "itemstufe": 1
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Basiswaffenart": "Schirmklinge",
+    "Waffenkategorie": "Ungewöhnliche Waffenarten",
+    "Qualitätsstufe": "Gewöhnlich",
+    "Itemstufe": "1",
+    "Magisch": "Nein",
+    "Kernwürfel": "1W6",
+    "Führung": "Einhändig",
+    "Reichweite": "Nah",
+    "Schadensart": "Hieb / Stich",
+    "Gewicht": "Mittel",
+    "Angriffsattribut": "Geschicklichkeit",
+    "Angriffswurf": "W20 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus",
+    "Schadensformel": "1W6 + 10 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus; verursacht entsprechend der beim Angriff gewählten Schadensart Hieb- oder Stichschaden.",
+    "Krit-Modifikation": null,
+    "Besondere Eigenschaften": null,
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": null,
+    "Auslöser / Voraussetzung": null,
+    "Einsatzlimit": null,
+    "Reichweite des Effekts": null,
+    "Ziel / Fläche": null,
+    "Dauer": null,
+    "Rettungswurf / SG": null,
+    "Berechnung des Effekts": null,
+    "Regelwirkung": null,
+    "Stapelung": null,
+    "Ende der Wirkung": null,
+    "Aufwertung / Skalierung": "Kann nach den allgemeinen Regeln über Itemstufen verbessert werden; bei einer Aufwertung werden die skalierenden Waffenwerte für die neue Itemstufe neu bestimmt.",
+    "Herstellungsanforderung": "Normale handwerkliche Ausbildung",
+    "Erscheinungsbild": "Ein unscheinbarer verstärkter Schirm mit hölzernem Griff und schmaler Stahlklinge im Stock. Geschlossen wirkt er wie ein gewöhnlicher Wetterschutz; gezogen bleibt die Konstruktion schlicht und zweckmäßig."
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basiswaffenart** | Schirmklinge |\n| **Waffenkategorie** | Ungewöhnliche Waffenarten |\n| **Qualitätsstufe** | Gewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Kernwürfel** | 1W6 |\n| **Führung** | Einhändig |\n| **Reichweite** | Nah |\n| **Schadensart** | Hieb / Stich |\n| **Gewicht** | Mittel |\n| **Angriffsattribut** | Geschicklichkeit |\n| **Angriffswurf** | W20 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus |\n| **Schadensformel** | 1W6 + 10 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus; verursacht entsprechend der beim Angriff gewählten Schadensart Hieb- oder Stichschaden. |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | – |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite des Effekts** | – |\n| **Ziel / Fläche** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | – |\n| **Regelwirkung** | – |\n| **Stapelung** | – |\n| **Ende der Wirkung** | – |\n| **Aufwertung / Skalierung** | Kann nach den allgemeinen Regeln über Itemstufen verbessert werden; bei einer Aufwertung werden die skalierenden Waffenwerte für die neue Itemstufe neu bestimmt. |\n| **Herstellungsanforderung** | Normale handwerkliche Ausbildung |\n| **Erscheinungsbild** | Ein unscheinbarer verstärkter Schirm mit hölzernem Griff und schmaler Stahlklinge im Stock. Geschlossen wirkt er wie ein gewöhnlicher Wetterschutz; gezogen bleibt die Konstruktion schlicht und zweckmäßig. |",
+  "sections": [],
+  "raw_markdown": "## 50. Regenwehr\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basiswaffenart** | Schirmklinge |\n| **Waffenkategorie** | Ungewöhnliche Waffenarten |\n| **Qualitätsstufe** | Gewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Kernwürfel** | 1W6 |\n| **Führung** | Einhändig |\n| **Reichweite** | Nah |\n| **Schadensart** | Hieb / Stich |\n| **Gewicht** | Mittel |\n| **Angriffsattribut** | Geschicklichkeit |\n| **Angriffswurf** | W20 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus |\n| **Schadensformel** | 1W6 + 10 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus; verursacht entsprechend der beim Angriff gewählten Schadensart Hieb- oder Stichschaden. |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | – |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite des Effekts** | – |\n| **Ziel / Fläche** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | – |\n| **Regelwirkung** | – |\n| **Stapelung** | – |\n| **Ende der Wirkung** | – |\n| **Aufwertung / Skalierung** | Kann nach den allgemeinen Regeln über Itemstufen verbessert werden; bei einer Aufwertung werden die skalierenden Waffenwerte für die neue Itemstufe neu bestimmt. |\n| **Herstellungsanforderung** | Normale handwerkliche Ausbildung |\n| **Erscheinungsbild** | Ein unscheinbarer verstärkter Schirm mit hölzernem Griff und schmaler Stahlklinge im Stock. Geschlossen wirkt er wie ein gewöhnlicher Wetterschutz; gezogen bleibt die Konstruktion schlicht und zweckmäßig. |\n\n---\n\n# Gewöhnliche Elementarwaffen\n\n> Die folgenden zwölf Waffen bleiben **Gewöhnlich, Itemstufe 1**. Ihre Elementarprägung ist eine bewusst kleine magische Eigenschaft. Damit der Elementaranteil nicht als kostenloser vollständiger Schadensbonus auf eine bereits voll budgetierte Standardwaffe gesetzt wird, ist der feste physische Schadensanteil gegenüber der rein nichtmagischen IS1-Basis jeweils um **1 Punkt** reduziert. Dafür verursacht jeder Treffer zusätzlich **1W4 + 7** Schaden des jeweiligen Elements. Physischer und magischer Schaden werden getrennt verrechnet.\n>\n> Die Elementarprägung erzeugt **keinen Zustand und keine automatische Nebenwirkung**. Feuer verursacht also nicht automatisch Brennend, Wasser nicht automatisch Durchnässt, Erde nicht automatisch Festgesetzt, Luft nicht automatisch Zurückstoßen, Licht nicht automatisch Geblendet und Dunkelheit nicht automatisch Angst.",
+  "source": {
+    "file": "Waffen.md",
+    "document_title": "Ätherfall – 62 gewöhnliche Waffen – Itemstufe 1",
+    "line_start": 1799,
+    "line_end": 1841
+  }
+}

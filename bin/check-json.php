@@ -10,6 +10,9 @@ $expected = [
     'creatures' => 'aetherfall.creatures.v1',
     'bosses' => 'aetherfall.bosses.v1',
     'spells' => 'aetherfall.spells.v1',
+    'weapons' => 'aetherfall.weapons.v1',
+    'armors' => 'aetherfall.armors.v1',
+    'magic-foci' => 'aetherfall.magic_foci.v1',
 ];
 $errors = [];
 $counts = [];

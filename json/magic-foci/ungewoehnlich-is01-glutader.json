@@ -1,0 +1,164 @@
+{
+  "schema_version": "aetherfall.magic_foci.v1",
+  "id": "ungewoehnlich-is01-glutader",
+  "number": 3,
+  "name": "Glutader",
+  "subtitle": null,
+  "display_name": "Glutader",
+  "source_type": "catalog_entry",
+  "item_type": "Magiefokus",
+  "base_focus_type": "Runenstab",
+  "category": "Stäbe und Großstäbe",
+  "quality": "Ungewöhnlich",
+  "item_level": 1,
+  "magical": {
+    "raw": "Ja",
+    "value": true
+  },
+  "magic_attack": {
+    "standard": "1W8",
+    "normal": "1W8",
+    "final": null,
+    "effective": "1W8",
+    "dice_terms": [
+      {
+        "raw": "1W8",
+        "count": 1,
+        "sides": 8
+      }
+    ],
+    "flat_numeric_terms": []
+  },
+  "handling": "Zweihändig",
+  "magic_attribute": "Kreativität",
+  "weight": "Mittel",
+  "element_binding": {
+    "raw": "Feuer",
+    "value": "Feuer",
+    "elements": [
+      "Feuer"
+    ]
+  },
+  "is_elemental": true,
+  "attack_roll": {
+    "raw": "W20 + Magieattribut-Modifikator + Magieattribut-Bonus",
+    "dice_terms": [
+      {
+        "raw": "W20",
+        "count": 1,
+        "sides": 20
+      }
+    ]
+  },
+  "core_value_formula": null,
+  "critical_modification": null,
+  "class_binding": {
+    "class_name": null,
+    "raw": null,
+    "playable_by": null,
+    "is_class_focus": false,
+    "is_dm_focus": false
+  },
+  "dm_special_profile": null,
+  "special_properties": "Elementprägung – Feuer: Wenn eine Regel ausdrücklich den Magieangriff dieses Fokus als Schaden verwendet, kann dieser Schaden als Feuerschaden verursacht werden. Die Prägung erzeugt keinen zusätzlichen Schaden, keinen Zustand und keine automatische Resistenzignorierung.",
+  "active_ability": null,
+  "action_cost": null,
+  "trigger_requirement": "Die jeweilige besondere Eigenschaft gilt nur, wenn ihre beschriebene Fokusregel tatsächlich verwendet wird.",
+  "costs": null,
+  "usage_limit": "Passiv; kein eigenes Aktivierungslimit.",
+  "effect_range": "Keine eigene Reichweitenveränderung.",
+  "target_area": "Wie die verwendete Regel oder der verwendete Zauber.",
+  "duration": "Solange der Fokus ausgerüstet und regelkonform verwendet wird.",
+  "saving_throw_dc": "Keine Veränderung.",
+  "effect_calculation": "Keine zusätzliche Schadensmenge; nur mögliche Umwandlung des ausdrücklich verwendeten Fokus-Magieangriffs in Feuerschaden.",
+  "rule_effect": "Die Elementprägung betrifft ausschließlich den Fokus-Magieangriff. Sie erzeugt keine zusätzlichen Würfel oder Zustände.",
+  "spell_interaction": "Der Fokus-Magieangriff wird nur verwendet, wenn eine Regel ausdrücklich den Magieangriff des Fokus verwendet. Zauber mit eigener Schadensformel erhalten den Fokuswürfel nicht zusätzlich. Zauber mit eigener Schadensformel oder ausdrücklich festgelegter Schadensart werden durch die Feuer-Prägung nicht automatisch verändert.",
+  "stacking": "Keine eigene Sonderregel zur Stapelung; es gelten die allgemeinen Regeln.",
+  "end_condition": "Sobald der Fokus nicht mehr verwendet oder ausgerüstet wird.",
+  "upgrade_scaling": "Eine spätere Itemstufenaufwertung verändert die Basisfokusart nicht und erzeugt nicht automatisch neue Eigenschaften. Skalierende Werte müssen bei der Aufwertung neu geprüft werden.",
+  "crafting_requirement": "Ausgebildeter oder erfahrener Handwerker mit Erfahrung in der Herstellung von Magiefoki.",
+  "appearance": "Ein langer rotbrauner Stab mit schmalen kupferfarbenen Einlagen, die wie eine einzelne glühende Ader durch die eingeschnittenen Runen laufen.",
+  "lore": "Die Fassung wird mit einer festen Feuerprägung abgeschlossen und reagiert besonders gleichmäßig auf Feuerkanalisierung.",
+  "special_rules": {},
+  "formulas": {
+    "all_dice_terms": [
+      {
+        "raw": "1W8",
+        "count": 1,
+        "sides": 8
+      },
+      {
+        "raw": "1W8",
+        "count": 1,
+        "sides": 8
+      },
+      {
+        "raw": "W20",
+        "count": 1,
+        "sides": 20
+      }
+    ]
+  },
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.0",
+    "status": null,
+    "profile": null,
+    "awakening_status": null
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Magiefokus",
+      "Ungewöhnlich"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.0",
+    "fokianzahl": 30,
+    "qualitaet": "Ungewöhnlich",
+    "itemstufe": 1,
+    "elementarfoki": 6
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Basisfokusart": "Runenstab",
+    "Fokuskategorie": "Stäbe und Großstäbe",
+    "Qualitätsstufe": "Ungewöhnlich",
+    "Itemstufe": "1",
+    "Magisch": "Ja",
+    "Standard-Magieangriff": "1W8",
+    "Magieangriff": "1W8",
+    "Führung": "Zweihändig",
+    "Magieattribut": "Kreativität",
+    "Gewicht": "Mittel",
+    "Elementbindung": "Feuer",
+    "Angriffswurf": "W20 + Magieattribut-Modifikator + Magieattribut-Bonus",
+    "Krit-Modifikation": null,
+    "Besondere Eigenschaften": "**Elementprägung – Feuer:** Wenn eine Regel ausdrücklich den Magieangriff dieses Fokus als Schaden verwendet, kann dieser Schaden als **Feuerschaden** verursacht werden. Die Prägung erzeugt keinen zusätzlichen Schaden, keinen Zustand und keine automatische Resistenzignorierung.",
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": null,
+    "Auslöser / Voraussetzung": "Die jeweilige besondere Eigenschaft gilt nur, wenn ihre beschriebene Fokusregel tatsächlich verwendet wird.",
+    "Einsatzlimit": "Passiv; kein eigenes Aktivierungslimit.",
+    "Reichweite des Effekts": "Keine eigene Reichweitenveränderung.",
+    "Ziel / Fläche": "Wie die verwendete Regel oder der verwendete Zauber.",
+    "Dauer": "Solange der Fokus ausgerüstet und regelkonform verwendet wird.",
+    "Rettungswurf / SG": "Keine Veränderung.",
+    "Berechnung des Effekts": "Keine zusätzliche Schadensmenge; nur mögliche Umwandlung des ausdrücklich verwendeten Fokus-Magieangriffs in **Feuerschaden**.",
+    "Regelwirkung": "Die Elementprägung betrifft ausschließlich den Fokus-Magieangriff. Sie erzeugt keine zusätzlichen Würfel oder Zustände.",
+    "Zauberinteraktion": "Der Fokus-Magieangriff wird nur verwendet, wenn eine Regel ausdrücklich den Magieangriff des Fokus verwendet. Zauber mit eigener Schadensformel erhalten den Fokuswürfel nicht zusätzlich. Zauber mit eigener Schadensformel oder ausdrücklich festgelegter Schadensart werden durch die Feuer-Prägung nicht automatisch verändert.",
+    "Stapelung": "Keine eigene Sonderregel zur Stapelung; es gelten die allgemeinen Regeln.",
+    "Ende der Wirkung": "Sobald der Fokus nicht mehr verwendet oder ausgerüstet wird.",
+    "Aufwertung / Skalierung": "Eine spätere Itemstufenaufwertung verändert die Basisfokusart nicht und erzeugt nicht automatisch neue Eigenschaften. Skalierende Werte müssen bei der Aufwertung neu geprüft werden.",
+    "Herstellungsanforderung": "Ausgebildeter oder erfahrener Handwerker mit Erfahrung in der Herstellung von Magiefoki.",
+    "Erscheinungsbild": "Ein langer rotbrauner Stab mit schmalen kupferfarbenen Einlagen, die wie eine einzelne glühende Ader durch die eingeschnittenen Runen laufen.",
+    "Herkunft / Lore": "Die Fassung wird mit einer festen Feuerprägung abgeschlossen und reagiert besonders gleichmäßig auf Feuerkanalisierung."
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basisfokusart** | Runenstab |\n| **Fokuskategorie** | Stäbe und Großstäbe |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja |\n| **Standard-Magieangriff** | 1W8 |\n| **Magieangriff** | 1W8 |\n| **Führung** | Zweihändig |\n| **Magieattribut** | Kreativität |\n| **Gewicht** | Mittel |\n| **Elementbindung** | Feuer |\n| **Angriffswurf** | W20 + Magieattribut-Modifikator + Magieattribut-Bonus |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | **Elementprägung – Feuer:** Wenn eine Regel ausdrücklich den Magieangriff dieses Fokus als Schaden verwendet, kann dieser Schaden als **Feuerschaden** verursacht werden. Die Prägung erzeugt keinen zusätzlichen Schaden, keinen Zustand und keine automatische Resistenzignorierung. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | Die jeweilige besondere Eigenschaft gilt nur, wenn ihre beschriebene Fokusregel tatsächlich verwendet wird. |\n| **Einsatzlimit** | Passiv; kein eigenes Aktivierungslimit. |\n| **Reichweite des Effekts** | Keine eigene Reichweitenveränderung. |\n| **Ziel / Fläche** | Wie die verwendete Regel oder der verwendete Zauber. |\n| **Dauer** | Solange der Fokus ausgerüstet und regelkonform verwendet wird. |\n| **Rettungswurf / SG** | Keine Veränderung. |\n| **Berechnung des Effekts** | Keine zusätzliche Schadensmenge; nur mögliche Umwandlung des ausdrücklich verwendeten Fokus-Magieangriffs in **Feuerschaden**. |\n| **Regelwirkung** | Die Elementprägung betrifft ausschließlich den Fokus-Magieangriff. Sie erzeugt keine zusätzlichen Würfel oder Zustände. |\n| **Zauberinteraktion** | Der Fokus-Magieangriff wird nur verwendet, wenn eine Regel ausdrücklich den Magieangriff des Fokus verwendet. Zauber mit eigener Schadensformel erhalten den Fokuswürfel nicht zusätzlich. Zauber mit eigener Schadensformel oder ausdrücklich festgelegter Schadensart werden durch die Feuer-Prägung nicht automatisch verändert. |\n| **Stapelung** | Keine eigene Sonderregel zur Stapelung; es gelten die allgemeinen Regeln. |\n| **Ende der Wirkung** | Sobald der Fokus nicht mehr verwendet oder ausgerüstet wird. |\n| **Aufwertung / Skalierung** | Eine spätere Itemstufenaufwertung verändert die Basisfokusart nicht und erzeugt nicht automatisch neue Eigenschaften. Skalierende Werte müssen bei der Aufwertung neu geprüft werden. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker mit Erfahrung in der Herstellung von Magiefoki. |\n| **Erscheinungsbild** | Ein langer rotbrauner Stab mit schmalen kupferfarbenen Einlagen, die wie eine einzelne glühende Ader durch die eingeschnittenen Runen laufen. |\n| **Herkunft / Lore** | Die Fassung wird mit einer festen Feuerprägung abgeschlossen und reagiert besonders gleichmäßig auf Feuerkanalisierung. |",
+  "sections": [],
+  "raw_markdown": "## 03. Glutader\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basisfokusart** | Runenstab |\n| **Fokuskategorie** | Stäbe und Großstäbe |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja |\n| **Standard-Magieangriff** | 1W8 |\n| **Magieangriff** | 1W8 |\n| **Führung** | Zweihändig |\n| **Magieattribut** | Kreativität |\n| **Gewicht** | Mittel |\n| **Elementbindung** | Feuer |\n| **Angriffswurf** | W20 + Magieattribut-Modifikator + Magieattribut-Bonus |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | **Elementprägung – Feuer:** Wenn eine Regel ausdrücklich den Magieangriff dieses Fokus als Schaden verwendet, kann dieser Schaden als **Feuerschaden** verursacht werden. Die Prägung erzeugt keinen zusätzlichen Schaden, keinen Zustand und keine automatische Resistenzignorierung. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | Die jeweilige besondere Eigenschaft gilt nur, wenn ihre beschriebene Fokusregel tatsächlich verwendet wird. |\n| **Einsatzlimit** | Passiv; kein eigenes Aktivierungslimit. |\n| **Reichweite des Effekts** | Keine eigene Reichweitenveränderung. |\n| **Ziel / Fläche** | Wie die verwendete Regel oder der verwendete Zauber. |\n| **Dauer** | Solange der Fokus ausgerüstet und regelkonform verwendet wird. |\n| **Rettungswurf / SG** | Keine Veränderung. |\n| **Berechnung des Effekts** | Keine zusätzliche Schadensmenge; nur mögliche Umwandlung des ausdrücklich verwendeten Fokus-Magieangriffs in **Feuerschaden**. |\n| **Regelwirkung** | Die Elementprägung betrifft ausschließlich den Fokus-Magieangriff. Sie erzeugt keine zusätzlichen Würfel oder Zustände. |\n| **Zauberinteraktion** | Der Fokus-Magieangriff wird nur verwendet, wenn eine Regel ausdrücklich den Magieangriff des Fokus verwendet. Zauber mit eigener Schadensformel erhalten den Fokuswürfel nicht zusätzlich. Zauber mit eigener Schadensformel oder ausdrücklich festgelegter Schadensart werden durch die Feuer-Prägung nicht automatisch verändert. |\n| **Stapelung** | Keine eigene Sonderregel zur Stapelung; es gelten die allgemeinen Regeln. |\n| **Ende der Wirkung** | Sobald der Fokus nicht mehr verwendet oder ausgerüstet wird. |\n| **Aufwertung / Skalierung** | Eine spätere Itemstufenaufwertung verändert die Basisfokusart nicht und erzeugt nicht automatisch neue Eigenschaften. Skalierende Werte müssen bei der Aufwertung neu geprüft werden. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker mit Erfahrung in der Herstellung von Magiefoki. |\n| **Erscheinungsbild** | Ein langer rotbrauner Stab mit schmalen kupferfarbenen Einlagen, die wie eine einzelne glühende Ader durch die eingeschnittenen Runen laufen. |\n| **Herkunft / Lore** | Die Fassung wird mit einer festen Feuerprägung abgeschlossen und reagiert besonders gleichmäßig auf Feuerkanalisierung. |\n\n\n# Zauberstäbe und Fokusruten",
+  "source": {
+    "file": "Magiefoki.md",
+    "document_title": "Ätherfall – 30 ungewöhnliche Magiefoki – Itemstufe 1",
+    "line_start": 2543,
+    "line_end": 2580
+  }
+}

@@ -6,13 +6,16 @@ namespace Aetherfall\Repositories;
 use Aetherfall\Services\CharacterAttributeCalculator;
 use Aetherfall\Services\CharacterHpCalculator;
 use Aetherfall\Services\CharacterValidator;
+use Aetherfall\Services\ClassResourceService;
 use Aetherfall\Support\Logger;
 use PDO;
 use RuntimeException;
 
 final class CharacterRepository
 {
-    public function __construct(private PDO $pdo) { $this->ensureAbilitySlots(); $this->ensureSpellSlots(); new \Aetherfall\Services\CharacterClassService($pdo); }
+    private ClassResourceService $resourceService;
+    private \Aetherfall\Services\CharacterEquipmentService $equipmentService;
+    public function __construct(private PDO $pdo) { $this->ensureAbilitySlots(); $this->ensureSpellSlots(); new \Aetherfall\Services\CharacterClassService($pdo); new \Aetherfall\Services\CharacterWeaponService($pdo); $this->resourceService=new ClassResourceService($pdo); $this->equipmentService=new \Aetherfall\Services\CharacterEquipmentService($pdo); }
 
     public function all(): array
     {
@@ -31,7 +34,11 @@ final class CharacterRepository
         $stmt = $this->pdo->prepare('SELECT s.*,e.name AS element_name FROM character_spells cs JOIN spells s ON s.id=cs.spell_id JOIN spell_elements e ON e.id=s.element_id WHERE cs.character_id=? ORDER BY e.name,s.grade,s.number');
         $stmt->execute([$id]); $character['spells'] = $stmt->fetchAll();
         try{$slot=$this->pdo->prepare('SELECT * FROM character_spell_slots WHERE character_id=? ORDER BY grade,slot_number');$slot->execute([$id]);$character['spell_slots']=$slot->fetchAll();}catch(\Throwable){$character['spell_slots']=[];}
+        try{$character['weapons']=(new \Aetherfall\Services\CharacterWeaponService($this->pdo))->slots($id);}catch(\Throwable){$character['weapons']=['hand_1'=>null,'hand_2'=>null];}
+        try{$character['armor_slots']=$this->equipmentService->armorSlots($id);$character['magic_focus']=$this->equipmentService->magicFocus($id);}catch(\Throwable){$character['armor_slots']=array_fill_keys(\Aetherfall\Services\CharacterEquipmentService::ARMOR_SLOTS,null);$character['magic_focus']=null;}
         $classService=new \Aetherfall\Services\CharacterClassService($this->pdo);$character['classes']=$classService->classes($id);$character['effective_level']=$classService->effectiveLevel($id);
+        try{$this->resourceService->ensureCharacterStates($id);$character['resources']=$this->resourceService->definitionsForCharacter($id);}catch(\Throwable){$character['resources']=[];}
+        try{$a=$this->pdo->prepare("SELECT ca.id,ca.name,ca.action_type,ca.unlock_level,ca.attack_formula,ca.damage_formula,ca.damage_type,ca.description,cc.role,cc.class_level,c.name class_name FROM character_classes cc JOIN classes c ON c.id=cc.class_id JOIN class_actions ca ON ca.class_id=cc.class_id WHERE cc.character_id=? AND ca.unlock_level<=cc.class_level ORDER BY cc.id,ca.id");$a->execute([$id]);$character['class_actions']=$a->fetchAll();$w=$this->pdo->prepare("SELECT cw.*,cc.role,cc.class_level,c.name class_name FROM character_classes cc JOIN classes c ON c.id=cc.class_id JOIN class_weapon_profiles cw ON cw.class_id=cc.class_id WHERE cc.character_id=? AND cw.unlock_level<=cc.class_level ORDER BY cc.id,cw.id");$w->execute([$id]);$character['class_weapon_profiles']=$w->fetchAll();}catch(\Throwable){$character['class_actions']=[];$character['class_weapon_profiles']=[];}
         return $character;
     }
 
@@ -80,12 +87,14 @@ final class CharacterRepository
         );
 
         $existingCurrentHp = null;
+        $existingResourceValues = [];
         if ($id !== null) {
             $existing = $this->pdo->prepare('SELECT current_hp FROM characters WHERE id=?');
             $existing->execute([$id]);
             $existingCurrentHp = $existing->fetchColumn();
             if ($existingCurrentHp === false) throw new RuntimeException('Charakter nicht gefunden.');
             $existingCurrentHp = (int)$existingCurrentHp;
+            try{$old=$this->pdo->prepare('SELECT cc.class_id,cc.role,ccr.class_resource_id,ccr.current_value FROM character_classes cc JOIN character_class_resources ccr ON ccr.character_class_id=cc.id WHERE cc.character_id=?');$old->execute([$id]);foreach($old->fetchAll() as $row)$existingResourceValues[(string)$row['class_id'].'|'.(string)$row['class_resource_id'].'|'.(string)$row['role']]=(float)$row['current_value'];}catch(\Throwable){}
         }
         $submittedCurrentHp = array_key_exists('current_hp', $data) && $data['current_hp'] !== '' && $data['current_hp'] !== null
             ? (int)$data['current_hp']
@@ -130,7 +139,8 @@ final class CharacterRepository
             else { foreach ($abilityIds as $index=>$abilityId) { $level=(int)($this->pdo->query("SELECT unlock_level FROM abilities WHERE id=".$this->pdo->quote($abilityId))->fetchColumn()?:1);$link->execute([$id,$abilityId,'primary',$level,($index%2)+1]); } }
             $link = $this->pdo->prepare('INSERT INTO character_spells (character_id,spell_id) VALUES (?,?)');
             foreach ($spellIds as $spellId) $link->execute([$id,$spellId]);
-            if($spellSlots){$slotLink=$this->pdo->prepare('INSERT INTO character_spell_slots (character_id,grade,slot_number,spell_id) VALUES (?,?,?,?)');foreach($spellSlots as $grade=>$slots)foreach((array)$slots as $slot=>$spellId)if($spellId!=='')$slotLink->execute([$id,(int)$grade,(int)$slot,(string)$spellId]);}
+            if($spellSlots){$slotLink=$this->pdo->prepare('INSERT INTO character_spell_slots (character_id,grade,slot_number,spell_id) VALUES (?,?,?,?)');foreach($spellSlots as $grade=>$slots)foreach((array)$slots as $slot=>$spellId)if($spellId!=='')$slotLink->execute([$id,(int)$grade,(int)$slot+1,(string)$spellId]);}
+            try{$this->resourceService->ensureCharacterStates($id);foreach($this->resourceService->definitionsForCharacter($id) as $resource){$key=(string)$resource['class_id'].'|'.(string)$resource['resource_id'].'|'.(string)$resource['role'];if(array_key_exists($key,$existingResourceValues))$this->resourceService->setCharacterCurrent($id,(string)$resource['resource_id'],$existingResourceValues[$key]);}}catch(\Throwable){}
             $this->pdo->commit(); return $id;
         } catch (\Throwable $e) { $this->pdo->rollBack(); throw $e; }
     }
@@ -164,7 +174,7 @@ final class CharacterRepository
     public function delete(int $id): void
     {
         $this->pdo->beginTransaction();
-        try { $this->pdo->prepare('DELETE FROM characters WHERE id=?')->execute([$id]); $this->pdo->commit(); }
+        try { $this->pdo->prepare('DELETE FROM character_armor_slots WHERE character_id=?')->execute([$id]);$this->pdo->prepare('DELETE FROM character_magic_focus WHERE character_id=?')->execute([$id]);$this->pdo->prepare('DELETE FROM characters WHERE id=?')->execute([$id]); $this->pdo->commit(); }
         catch (\Throwable $e) { $this->pdo->rollBack(); throw $e; }
     }
 }

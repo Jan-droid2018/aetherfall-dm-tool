@@ -1,0 +1,146 @@
+{
+  "schema_version": "aetherfall.weapons.v1",
+  "id": "gewoehnlich-is01-steinsang",
+  "number": 24,
+  "name": "Steinsang",
+  "subtitle": null,
+  "display_name": "Steinsang",
+  "source_type": "catalog_entry",
+  "item_type": "Waffe",
+  "base_weapon_type": "Schleuder",
+  "category": "Schleudern und einfache Fernwaffen",
+  "quality": "Gewöhnlich",
+  "item_level": 1,
+  "magical": {
+    "raw": "Nein",
+    "value": false
+  },
+  "elements": [],
+  "is_elemental": false,
+  "core_dice": {
+    "raw": "1W4",
+    "dice_terms": [
+      {
+        "raw": "1W4",
+        "count": 1,
+        "sides": 4
+      }
+    ]
+  },
+  "handling": "Einhändig",
+  "range": "Fern",
+  "damage_type": "Schlag",
+  "weight": "Leicht",
+  "attributes": {
+    "attack": "Geschicklichkeit",
+    "primary_class": null,
+    "secondary_class": null
+  },
+  "formulas": {
+    "attack": "W20 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus",
+    "damage": {
+      "default": "1W4 + 8 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus Schlagschaden.",
+      "one_handed": null,
+      "two_handed": null
+    },
+    "core_value": null,
+    "dice_terms": [
+      {
+        "raw": "W20",
+        "count": 1,
+        "sides": 20
+      },
+      {
+        "raw": "1W4",
+        "count": 1,
+        "sides": 4
+      }
+    ]
+  },
+  "critical_modification": null,
+  "class_binding": {
+    "class_name": null,
+    "raw": null,
+    "is_class_weapon": false,
+    "is_dm_weapon": false
+  },
+  "class_resource": null,
+  "special_properties": null,
+  "class_effect": null,
+  "active_ability": null,
+  "action_cost": null,
+  "trigger_requirement": null,
+  "costs": null,
+  "usage_limit": null,
+  "effect_range": null,
+  "target_area": null,
+  "duration": null,
+  "saving_throw_dc": null,
+  "effect_calculation": null,
+  "rule_effect": null,
+  "stacking": null,
+  "end_condition": null,
+  "upgrade_scaling": "Kann nach den allgemeinen Regeln über Itemstufen verbessert werden; bei einer Aufwertung werden die skalierenden Waffenwerte für die neue Itemstufe neu bestimmt.",
+  "crafting_requirement": "Normale handwerkliche Ausbildung",
+  "appearance": "Eine einfache Schleuder aus zwei geflochtenen Lederriemen und einer tiefen, dunkel gegerbten Geschosstasche. Die Enden sind unterschiedlich geknotet, damit Halte- und Loslassriemen ertastet werden können.",
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.0",
+    "classification": null,
+    "dm_performance_profile": null,
+    "status": null
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Waffen"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.0",
+    "waffenanzahl": 62,
+    "elementarwaffen": 12,
+    "qualitaet": "Gewöhnlich",
+    "itemstufe": 1
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Basiswaffenart": "Schleuder",
+    "Waffenkategorie": "Schleudern und einfache Fernwaffen",
+    "Qualitätsstufe": "Gewöhnlich",
+    "Itemstufe": "1",
+    "Magisch": "Nein",
+    "Kernwürfel": "1W4",
+    "Führung": "Einhändig",
+    "Reichweite": "Fern",
+    "Schadensart": "Schlag",
+    "Gewicht": "Leicht",
+    "Angriffsattribut": "Geschicklichkeit",
+    "Angriffswurf": "W20 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus",
+    "Schadensformel": "1W4 + 8 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus Schlagschaden.",
+    "Krit-Modifikation": null,
+    "Besondere Eigenschaften": null,
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": null,
+    "Auslöser / Voraussetzung": null,
+    "Einsatzlimit": null,
+    "Reichweite des Effekts": null,
+    "Ziel / Fläche": null,
+    "Dauer": null,
+    "Rettungswurf / SG": null,
+    "Berechnung des Effekts": null,
+    "Regelwirkung": null,
+    "Stapelung": null,
+    "Ende der Wirkung": null,
+    "Aufwertung / Skalierung": "Kann nach den allgemeinen Regeln über Itemstufen verbessert werden; bei einer Aufwertung werden die skalierenden Waffenwerte für die neue Itemstufe neu bestimmt.",
+    "Herstellungsanforderung": "Normale handwerkliche Ausbildung",
+    "Erscheinungsbild": "Eine einfache Schleuder aus zwei geflochtenen Lederriemen und einer tiefen, dunkel gegerbten Geschosstasche. Die Enden sind unterschiedlich geknotet, damit Halte- und Loslassriemen ertastet werden können."
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basiswaffenart** | Schleuder |\n| **Waffenkategorie** | Schleudern und einfache Fernwaffen |\n| **Qualitätsstufe** | Gewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Kernwürfel** | 1W4 |\n| **Führung** | Einhändig |\n| **Reichweite** | Fern |\n| **Schadensart** | Schlag |\n| **Gewicht** | Leicht |\n| **Angriffsattribut** | Geschicklichkeit |\n| **Angriffswurf** | W20 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus |\n| **Schadensformel** | 1W4 + 8 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus Schlagschaden. |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | – |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite des Effekts** | – |\n| **Ziel / Fläche** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | – |\n| **Regelwirkung** | – |\n| **Stapelung** | – |\n| **Ende der Wirkung** | – |\n| **Aufwertung / Skalierung** | Kann nach den allgemeinen Regeln über Itemstufen verbessert werden; bei einer Aufwertung werden die skalierenden Waffenwerte für die neue Itemstufe neu bestimmt. |\n| **Herstellungsanforderung** | Normale handwerkliche Ausbildung |\n| **Erscheinungsbild** | Eine einfache Schleuder aus zwei geflochtenen Lederriemen und einer tiefen, dunkel gegerbten Geschosstasche. Die Enden sind unterschiedlich geknotet, damit Halte- und Loslassriemen ertastet werden können. |",
+  "sections": [],
+  "raw_markdown": "## 24. Steinsang\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basiswaffenart** | Schleuder |\n| **Waffenkategorie** | Schleudern und einfache Fernwaffen |\n| **Qualitätsstufe** | Gewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Kernwürfel** | 1W4 |\n| **Führung** | Einhändig |\n| **Reichweite** | Fern |\n| **Schadensart** | Schlag |\n| **Gewicht** | Leicht |\n| **Angriffsattribut** | Geschicklichkeit |\n| **Angriffswurf** | W20 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus |\n| **Schadensformel** | 1W4 + 8 + Geschicklichkeit-Modifikator + Geschicklichkeit-Bonus Schlagschaden. |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | – |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite des Effekts** | – |\n| **Ziel / Fläche** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | – |\n| **Regelwirkung** | – |\n| **Stapelung** | – |\n| **Ende der Wirkung** | – |\n| **Aufwertung / Skalierung** | Kann nach den allgemeinen Regeln über Itemstufen verbessert werden; bei einer Aufwertung werden die skalierenden Waffenwerte für die neue Itemstufe neu bestimmt. |\n| **Herstellungsanforderung** | Normale handwerkliche Ausbildung |\n| **Erscheinungsbild** | Eine einfache Schleuder aus zwei geflochtenen Lederriemen und einer tiefen, dunkel gegerbten Geschosstasche. Die Enden sind unterschiedlich geknotet, damit Halte- und Loslassriemen ertastet werden können. |",
+  "source": {
+    "file": "Waffen.md",
+    "document_title": "Ätherfall – 62 gewöhnliche Waffen – Itemstufe 1",
+    "line_start": 889,
+    "line_end": 923
+  }
+}

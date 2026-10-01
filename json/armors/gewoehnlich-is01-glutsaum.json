@@ -1,0 +1,143 @@
+{
+  "schema_version": "aetherfall.armors.v1",
+  "id": "gewoehnlich-is01-glutsaum",
+  "number": null,
+  "name": "Glutsaum",
+  "display_name": "Glutsaum",
+  "source_type": "catalog_armor",
+  "item_kind": "armor",
+  "base_item": {
+    "armor": "Gambeson",
+    "shield": null,
+    "name": "Gambeson"
+  },
+  "slot": {
+    "name": "Brust",
+    "key": "chest"
+  },
+  "armor_archetype": "Leicht",
+  "shield_class": null,
+  "quality": "Gewöhnlich",
+  "item_level": 1,
+  "magical": {
+    "raw": "Ja",
+    "value": true
+  },
+  "defense": {
+    "physical": {
+      "raw": "1",
+      "value": 1
+    },
+    "magical": {
+      "raw": "1 ausschließlich gegen Feuer; 0 gegen andere magische Schadensarten",
+      "general": 0,
+      "conditional": [
+        {
+          "damage_type": "Feuer",
+          "value": 1,
+          "raw": "1 ausschließlich gegen Feuer; 0 gegen andere magische Schadensarten"
+        }
+      ]
+    }
+  },
+  "resistances": {
+    "raw": null,
+    "entries": []
+  },
+  "elements": [
+    "Feuer"
+  ],
+  "is_elemental": true,
+  "special_properties": "Elementarprägung – Feuer: Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Feuerschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung.",
+  "passive_property": null,
+  "active_ability": null,
+  "active_block_ability": null,
+  "reaction_trigger": null,
+  "hand_binding_usage": null,
+  "action_cost": null,
+  "trigger_requirement": null,
+  "costs": null,
+  "usage_limit": null,
+  "range_target": null,
+  "duration": null,
+  "saving_throw_dc": null,
+  "calculation": null,
+  "rule_effect": "Elementarprägung – Feuer: Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Feuerschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung.",
+  "stacking": "Die bedingte Magische Verteidigung wird wie normale Magische Verteidigung mit anderen getragenen Rüstungsteilen bzw. Schilden addiert.",
+  "end_condition": "Solange das Rüstungsteil getragen wird.",
+  "set": {
+    "name": null,
+    "bonus": null
+  },
+  "class_binding": {
+    "raw": null,
+    "class_name": null
+  },
+  "upgrade_scaling": "Werte ändern sich nur durch eine tatsächliche Erhöhung der Itemstufe; die Qualitätsstufe bleibt dabei Gewöhnlich.",
+  "crafting_requirement": "Normale handwerkliche Ausbildung",
+  "appearance": "Ein rostrot gesteppter Gambeson mit schmalen schwarzen Säumen. Zwischen den Stofflagen liegen wenige wärmespeichernde Fäden, die bei Feuermagie schwach glimmen.",
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.0",
+    "classification": null,
+    "dm_exclusive": false,
+    "dm_performance_profile": null
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Rüstung",
+      "Schilde"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.0",
+    "gegenstandsanzahl": 62,
+    "qualitaet": "Gewöhnlich",
+    "itemstufe": 1
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Basisrüstung": "Gambeson",
+    "Slot": "Brust",
+    "Rüstungsarchetyp": "Leicht",
+    "Qualitätsstufe": "Gewöhnlich",
+    "Itemstufe": "1",
+    "Magisch": "Ja",
+    "Physische Verteidigung": "1",
+    "Magische Verteidigung": "1 ausschließlich gegen Feuer; 0 gegen andere magische Schadensarten",
+    "Resistenzen": null,
+    "Besondere Eigenschaften": "**Elementarprägung – Feuer:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Feuerschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung.",
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": null,
+    "Auslöser / Voraussetzung": null,
+    "Einsatzlimit": null,
+    "Reichweite / Ziel": null,
+    "Dauer": null,
+    "Rettungswurf / SG": null,
+    "Berechnung": null,
+    "Regelwirkung": "**Elementarprägung – Feuer:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Feuerschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung.",
+    "Stapelung": "Die bedingte Magische Verteidigung wird wie normale Magische Verteidigung mit anderen getragenen Rüstungsteilen bzw. Schilden addiert.",
+    "Ende der Wirkung": "Solange das Rüstungsteil getragen wird.",
+    "Setzugehörigkeit": null,
+    "Setbonus": null,
+    "Aufwertung / Skalierung": "Werte ändern sich nur durch eine tatsächliche Erhöhung der Itemstufe; die Qualitätsstufe bleibt dabei Gewöhnlich.",
+    "Herstellungsanforderung": "Normale handwerkliche Ausbildung",
+    "Erscheinungsbild": "Ein rostrot gesteppter Gambeson mit schmalen schwarzen Säumen. Zwischen den Stofflagen liegen wenige wärmespeichernde Fäden, die bei Feuermagie schwach glimmen."
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Gambeson |\n| **Slot** | Brust |\n| **Rüstungsarchetyp** | Leicht |\n| **Qualitätsstufe** | Gewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja |\n| **Physische Verteidigung** | 1 |\n| **Magische Verteidigung** | 1 ausschließlich gegen Feuer; 0 gegen andere magische Schadensarten |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | **Elementarprägung – Feuer:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Feuerschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | – |\n| **Regelwirkung** | **Elementarprägung – Feuer:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Feuerschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung. |\n| **Stapelung** | Die bedingte Magische Verteidigung wird wie normale Magische Verteidigung mit anderen getragenen Rüstungsteilen bzw. Schilden addiert. |\n| **Ende der Wirkung** | Solange das Rüstungsteil getragen wird. |\n| **Setzugehörigkeit** | – |\n| **Setbonus** | – |\n| **Aufwertung / Skalierung** | Werte ändern sich nur durch eine tatsächliche Erhöhung der Itemstufe; die Qualitätsstufe bleibt dabei Gewöhnlich. |\n| **Herstellungsanforderung** | Normale handwerkliche Ausbildung |\n| **Erscheinungsbild** | Ein rostrot gesteppter Gambeson mit schmalen schwarzen Säumen. Zwischen den Stofflagen liegen wenige wärmespeichernde Fäden, die bei Feuermagie schwach glimmen. |",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Glutsaum",
+      "markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Gambeson |\n| **Slot** | Brust |\n| **Rüstungsarchetyp** | Leicht |\n| **Qualitätsstufe** | Gewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja |\n| **Physische Verteidigung** | 1 |\n| **Magische Verteidigung** | 1 ausschließlich gegen Feuer; 0 gegen andere magische Schadensarten |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | **Elementarprägung – Feuer:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Feuerschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | – |\n| **Regelwirkung** | **Elementarprägung – Feuer:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Feuerschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung. |\n| **Stapelung** | Die bedingte Magische Verteidigung wird wie normale Magische Verteidigung mit anderen getragenen Rüstungsteilen bzw. Schilden addiert. |\n| **Ende der Wirkung** | Solange das Rüstungsteil getragen wird. |\n| **Setzugehörigkeit** | – |\n| **Setbonus** | – |\n| **Aufwertung / Skalierung** | Werte ändern sich nur durch eine tatsächliche Erhöhung der Itemstufe; die Qualitätsstufe bleibt dabei Gewöhnlich. |\n| **Herstellungsanforderung** | Normale handwerkliche Ausbildung |\n| **Erscheinungsbild** | Ein rostrot gesteppter Gambeson mit schmalen schwarzen Säumen. Zwischen den Stofflagen liegen wenige wärmespeichernde Fäden, die bei Feuermagie schwach glimmen. |",
+      "line_start": 465,
+      "line_end": 495
+    }
+  ],
+  "raw_markdown": "## Glutsaum\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Gambeson |\n| **Slot** | Brust |\n| **Rüstungsarchetyp** | Leicht |\n| **Qualitätsstufe** | Gewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja |\n| **Physische Verteidigung** | 1 |\n| **Magische Verteidigung** | 1 ausschließlich gegen Feuer; 0 gegen andere magische Schadensarten |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | **Elementarprägung – Feuer:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Feuerschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | – |\n| **Regelwirkung** | **Elementarprägung – Feuer:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Feuerschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung. |\n| **Stapelung** | Die bedingte Magische Verteidigung wird wie normale Magische Verteidigung mit anderen getragenen Rüstungsteilen bzw. Schilden addiert. |\n| **Ende der Wirkung** | Solange das Rüstungsteil getragen wird. |\n| **Setzugehörigkeit** | – |\n| **Setbonus** | – |\n| **Aufwertung / Skalierung** | Werte ändern sich nur durch eine tatsächliche Erhöhung der Itemstufe; die Qualitätsstufe bleibt dabei Gewöhnlich. |\n| **Herstellungsanforderung** | Normale handwerkliche Ausbildung |\n| **Erscheinungsbild** | Ein rostrot gesteppter Gambeson mit schmalen schwarzen Säumen. Zwischen den Stofflagen liegen wenige wärmespeichernde Fäden, die bei Feuermagie schwach glimmen. |",
+  "source": {
+    "file": "Rüstungen.md",
+    "document_title": "Ätherfall – 62 gewöhnliche Rüstungen – Itemstufe 1",
+    "line_start": 465,
+    "line_end": 495
+  }
+}

@@ -1,0 +1,479 @@
+{
+  "schema_version": "aetherfall.weapons.v1",
+  "id": "selten-is01-firmamentnadel-die-erste-naht",
+  "number": null,
+  "name": "Firmamentnadel – Die erste Naht",
+  "subtitle": null,
+  "display_name": "Firmamentnadel – Die erste Naht",
+  "source_type": "special_weapon",
+  "item_type": "Klassenwaffe",
+  "base_weapon_type": "Rapier",
+  "category": "Schwert",
+  "quality": "Selten",
+  "item_level": 1,
+  "magical": {
+    "raw": "Ja – fremdartige Sternenenergie; keinem Element fest zugeordnet",
+    "value": true
+  },
+  "elements": [],
+  "is_elemental": false,
+  "core_dice": {
+    "raw": "1W8",
+    "dice_terms": [
+      {
+        "raw": "1W8",
+        "count": 1,
+        "sides": 8
+      }
+    ]
+  },
+  "handling": "Einhändig",
+  "range": "Nah",
+  "damage_type": "Stich",
+  "weight": "Mittel",
+  "attributes": {
+    "attack": "Intuition; Willenskraft wirkt als stabilisierendes Sekundärattribut",
+    "primary_class": null,
+    "secondary_class": null
+  },
+  "formulas": {
+    "attack": "W20 + Intuition-Modifikator + Intuition-Bonus gegen den normalen Ausweichwurf des Ziels",
+    "damage": {
+      "default": "1W8 + 11 + Intuition-Modifikator + Intuition-Bonus + ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋ Stichschaden",
+      "one_handed": null,
+      "two_handed": null
+    },
+    "core_value": null,
+    "dice_terms": [
+      {
+        "raw": "W20",
+        "count": 1,
+        "sides": 20
+      },
+      {
+        "raw": "1W8",
+        "count": 1,
+        "sides": 8
+      }
+    ]
+  },
+  "critical_modification": null,
+  "class_binding": {
+    "class_name": "Sternensplitter",
+    "raw": "Sternensplitter",
+    "is_class_weapon": true,
+    "is_dm_weapon": false
+  },
+  "class_resource": null,
+  "special_properties": "Sternenführung, Gebrochener Ursprung, Erste Naht, Entwicklungsbindung",
+  "class_effect": null,
+  "active_ability": null,
+  "action_cost": "Normaler Waffenangriff; besondere Eigenschaften verursachen keine zusätzliche Aktion, sofern bei ihnen nichts anderes angegeben ist",
+  "trigger_requirement": "Die besonderen Eigenschaften funktionieren nur für einen Charakter mit Stufen in der Klasse Sternensplitter",
+  "costs": null,
+  "usage_limit": "Siehe jeweilige Eigenschaft",
+  "effect_range": "Bis zu 25 m zu einem eigenen gebundenen Firmamentsplitter",
+  "target_area": "1 Kreatur beziehungsweise ein freier Punkt gemäß Eigenschaft",
+  "duration": "Siehe jeweilige Eigenschaft",
+  "saving_throw_dc": null,
+  "effect_calculation": "Die besonderen Eigenschaften erzeugen auf Selten / Itemstufe 1 keinen zusätzlichen direkten Schadenswürfel und keine zusätzliche Klassenressource",
+  "rule_effect": "Die Waffe kann bestehende gebundene Firmamentsplitter als räumliche Ursprünge normaler Waffenangriffe verwenden und nach einem Treffer vorübergehend einen freien Firmamentsplitter als neuen Anker binden",
+  "stacking": "Mehrere Anwendungen erzeugen keine zusätzlichen Waffenaktionen. Jeder Firmamentsplitter zählt weiterhin normal gegen das Klassenmaximum",
+  "end_condition": "Siehe jeweilige Eigenschaft",
+  "upgrade_scaling": "Die Waffe kann auf Itemstufe 1–40 verbessert und später über besondere Qualitätsaufwertungen zu Episch, Legendär und Mythisch weiterentwickelt werden. Ihre Klassenattribute und Kernidentität bleiben dabei erhalten",
+  "crafting_requirement": "Erfahrener Spezialist, hochwertiger Rapierkörper, ein auf fremde Sternenenergie reagierender kristalliner Kern und die abschließende Resonanzbindung durch den zukünftigen Sternensplitter-Träger",
+  "appearance": "Schlankes Rapier aus dunklem Silbermetall mit kristalliner Mittellinie, unvollständigen Astrolabienringen als Parierstück und einer Spitze, deren räumliche Position bei aktiver Sternenenergie leicht versetzt erscheint",
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.2",
+    "classification": null,
+    "dm_performance_profile": null,
+    "status": "Entwicklungswaffe"
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Waffen",
+      "Klassenwaffe",
+      "Sternensplitter"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.2",
+    "klasse": "Sternensplitter",
+    "gegenstandsart": "Klassenwaffe",
+    "basiswaffenart": "Rapier",
+    "qualitaet": "Selten",
+    "itemstufe": 1,
+    "magisch": true,
+    "status": "Entwicklungswaffe"
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Name": "Firmamentnadel – Die erste Naht",
+    "Basiswaffenart": "Rapier",
+    "Waffenkategorie": "Schwert",
+    "Klassenbindung": "Sternensplitter",
+    "Qualitätsstufe": "Selten",
+    "Itemstufe": "1",
+    "Magisch": "Ja – fremdartige Sternenenergie; keinem Element fest zugeordnet",
+    "Kernwürfel": "1W8",
+    "Führung": "Einhändig",
+    "Reichweite": "Nah",
+    "Schadensart": "Stich",
+    "Gewicht": "Mittel",
+    "Angriffsattribut": "Intuition; Willenskraft wirkt als stabilisierendes Sekundärattribut",
+    "Angriffswurf": "W20 + Intuition-Modifikator + Intuition-Bonus gegen den normalen Ausweichwurf des Ziels",
+    "Schadensformel": "1W8 + 11 + Intuition-Modifikator + Intuition-Bonus + ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋ Stichschaden",
+    "Krit-Modifikation": null,
+    "Besondere Eigenschaften": "**Sternenführung**, **Gebrochener Ursprung**, **Erste Naht**, **Entwicklungsbindung**",
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": "Normaler Waffenangriff; besondere Eigenschaften verursachen keine zusätzliche Aktion, sofern bei ihnen nichts anderes angegeben ist",
+    "Auslöser / Voraussetzung": "Die besonderen Eigenschaften funktionieren nur für einen Charakter mit Stufen in der Klasse Sternensplitter",
+    "Einsatzlimit": "Siehe jeweilige Eigenschaft",
+    "Reichweite des Effekts": "Bis zu 25 m zu einem eigenen gebundenen Firmamentsplitter",
+    "Ziel / Fläche": "1 Kreatur beziehungsweise ein freier Punkt gemäß Eigenschaft",
+    "Dauer": "Siehe jeweilige Eigenschaft",
+    "Rettungswurf / SG": null,
+    "Berechnung des Effekts": "Die besonderen Eigenschaften erzeugen auf Selten / Itemstufe 1 keinen zusätzlichen direkten Schadenswürfel und keine zusätzliche Klassenressource",
+    "Regelwirkung": "Die Waffe kann bestehende gebundene Firmamentsplitter als räumliche Ursprünge normaler Waffenangriffe verwenden und nach einem Treffer vorübergehend einen freien Firmamentsplitter als neuen Anker binden",
+    "Stapelung": "Mehrere Anwendungen erzeugen keine zusätzlichen Waffenaktionen. Jeder Firmamentsplitter zählt weiterhin normal gegen das Klassenmaximum",
+    "Ende der Wirkung": "Siehe jeweilige Eigenschaft",
+    "Aufwertung / Skalierung": "Die Waffe kann auf Itemstufe 1–40 verbessert und später über besondere Qualitätsaufwertungen zu Episch, Legendär und Mythisch weiterentwickelt werden. Ihre Klassenattribute und Kernidentität bleiben dabei erhalten",
+    "Herstellungsanforderung": "Erfahrener Spezialist, hochwertiger Rapierkörper, ein auf fremde Sternenenergie reagierender kristalliner Kern und die abschließende Resonanzbindung durch den zukünftigen Sternensplitter-Träger",
+    "Erscheinungsbild": "Schlankes Rapier aus dunklem Silbermetall mit kristalliner Mittellinie, unvollständigen Astrolabienringen als Parierstück und einer Spitze, deren räumliche Position bei aktiver Sternenenergie leicht versetzt erscheint"
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Name** | Firmamentnadel – Die erste Naht |\n| **Basiswaffenart** | Rapier |\n| **Waffenkategorie** | Schwert |\n| **Klassenbindung** | Sternensplitter |\n| **Qualitätsstufe** | Selten |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja – fremdartige Sternenenergie; keinem Element fest zugeordnet |\n| **Kernwürfel** | 1W8 |\n| **Führung** | Einhändig |\n| **Reichweite** | Nah |\n| **Schadensart** | Stich |\n| **Gewicht** | Mittel |\n| **Angriffsattribut** | Intuition; Willenskraft wirkt als stabilisierendes Sekundärattribut |\n| **Angriffswurf** | W20 + Intuition-Modifikator + Intuition-Bonus gegen den normalen Ausweichwurf des Ziels |\n| **Schadensformel** | 1W8 + 11 + Intuition-Modifikator + Intuition-Bonus + ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋ Stichschaden |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | **Sternenführung**, **Gebrochener Ursprung**, **Erste Naht**, **Entwicklungsbindung** |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | Normaler Waffenangriff; besondere Eigenschaften verursachen keine zusätzliche Aktion, sofern bei ihnen nichts anderes angegeben ist |\n| **Auslöser / Voraussetzung** | Die besonderen Eigenschaften funktionieren nur für einen Charakter mit Stufen in der Klasse Sternensplitter |\n| **Einsatzlimit** | Siehe jeweilige Eigenschaft |\n| **Reichweite des Effekts** | Bis zu 25 m zu einem eigenen gebundenen Firmamentsplitter |\n| **Ziel / Fläche** | 1 Kreatur beziehungsweise ein freier Punkt gemäß Eigenschaft |\n| **Dauer** | Siehe jeweilige Eigenschaft |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | Die besonderen Eigenschaften erzeugen auf Selten / Itemstufe 1 keinen zusätzlichen direkten Schadenswürfel und keine zusätzliche Klassenressource |\n| **Regelwirkung** | Die Waffe kann bestehende gebundene Firmamentsplitter als räumliche Ursprünge normaler Waffenangriffe verwenden und nach einem Treffer vorübergehend einen freien Firmamentsplitter als neuen Anker binden |\n| **Stapelung** | Mehrere Anwendungen erzeugen keine zusätzlichen Waffenaktionen. Jeder Firmamentsplitter zählt weiterhin normal gegen das Klassenmaximum |\n| **Ende der Wirkung** | Siehe jeweilige Eigenschaft |\n| **Aufwertung / Skalierung** | Die Waffe kann auf Itemstufe 1–40 verbessert und später über besondere Qualitätsaufwertungen zu Episch, Legendär und Mythisch weiterentwickelt werden. Ihre Klassenattribute und Kernidentität bleiben dabei erhalten |\n| **Herstellungsanforderung** | Erfahrener Spezialist, hochwertiger Rapierkörper, ein auf fremde Sternenenergie reagierender kristalliner Kern und die abschließende Resonanzbindung durch den zukünftigen Sternensplitter-Träger |\n| **Erscheinungsbild** | Schlankes Rapier aus dunklem Silbermetall mit kristalliner Mittellinie, unvollständigen Astrolabienringen als Parierstück und einer Spitze, deren räumliche Position bei aktiver Sternenenergie leicht versetzt erscheint |",
+  "sections": [
+    {
+      "level": 1,
+      "title": "Firmamentnadel – Die erste Naht",
+      "markdown": "> [!quote]\n> _„Zwischen zwei Punkten liegt nur dann Entfernung, wenn die Welt darauf besteht.“_\n\nDie **Firmamentnadel** ist die persönliche Entwicklungswaffe eines Sternensplitters. Sie ist nicht als gewöhnlicher Ausrüstungsgegenstand gedacht, der nach wenigen Abenteuern gegen eine bessere Waffe ausgetauscht wird. Ihr kristalliner Kern wird auf die Verbindung ihres Trägers zum falschen Himmel abgestimmt und kann im Verlauf der Kampagne immer weiter ausgebaut, neu gefasst und schließlich auf höhere Qualitätsstufen erhoben werden.\n\nIhre erste stabile Form beginnt auf **Qualitätsstufe Selten** und **Itemstufe 1**.\n\nMechanisch verbindet sie drei Kernelemente der Klasse:\n\n- **Intuition** als führendes Klassenattribut,\n- **Willenskraft** als stabilisierendes Klassenattribut,\n- **Firmamentsplitter** als räumliche Anker und alternative Ursprünge.\n\nDie Firmamentnadel soll den Sternensplitter unterstützen, ohne seine eigentlichen Klassenfähigkeiten zu ersetzen. Ihre Stärke liegt deshalb nicht nur in höherem Rohschaden, sondern vor allem darin, einen normalen Waffenangriff in dieselbe räumliche Logik einzubinden, die auch die Klasse selbst prägt.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 3996,
+        "line_end": 4014
+      }
+    },
+    {
+      "level": 2,
+      "title": "Waffenprofil",
+      "markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Name** | Firmamentnadel – Die erste Naht |\n| **Basiswaffenart** | Rapier |\n| **Waffenkategorie** | Schwert |\n| **Klassenbindung** | Sternensplitter |\n| **Qualitätsstufe** | Selten |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja – fremdartige Sternenenergie; keinem Element fest zugeordnet |\n| **Kernwürfel** | 1W8 |\n| **Führung** | Einhändig |\n| **Reichweite** | Nah |\n| **Schadensart** | Stich |\n| **Gewicht** | Mittel |\n| **Angriffsattribut** | Intuition; Willenskraft wirkt als stabilisierendes Sekundärattribut |\n| **Angriffswurf** | W20 + Intuition-Modifikator + Intuition-Bonus gegen den normalen Ausweichwurf des Ziels |\n| **Schadensformel** | 1W8 + 11 + Intuition-Modifikator + Intuition-Bonus + ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋ Stichschaden |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | **Sternenführung**, **Gebrochener Ursprung**, **Erste Naht**, **Entwicklungsbindung** |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | Normaler Waffenangriff; besondere Eigenschaften verursachen keine zusätzliche Aktion, sofern bei ihnen nichts anderes angegeben ist |\n| **Auslöser / Voraussetzung** | Die besonderen Eigenschaften funktionieren nur für einen Charakter mit Stufen in der Klasse Sternensplitter |\n| **Einsatzlimit** | Siehe jeweilige Eigenschaft |\n| **Reichweite des Effekts** | Bis zu 25 m zu einem eigenen gebundenen Firmamentsplitter |\n| **Ziel / Fläche** | 1 Kreatur beziehungsweise ein freier Punkt gemäß Eigenschaft |\n| **Dauer** | Siehe jeweilige Eigenschaft |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | Die besonderen Eigenschaften erzeugen auf Selten / Itemstufe 1 keinen zusätzlichen direkten Schadenswürfel und keine zusätzliche Klassenressource |\n| **Regelwirkung** | Die Waffe kann bestehende gebundene Firmamentsplitter als räumliche Ursprünge normaler Waffenangriffe verwenden und nach einem Treffer vorübergehend einen freien Firmamentsplitter als neuen Anker binden |\n| **Stapelung** | Mehrere Anwendungen erzeugen keine zusätzlichen Waffenaktionen. Jeder Firmamentsplitter zählt weiterhin normal gegen das Klassenmaximum |\n| **Ende der Wirkung** | Siehe jeweilige Eigenschaft |\n| **Aufwertung / Skalierung** | Die Waffe kann auf Itemstufe 1–40 verbessert und später über besondere Qualitätsaufwertungen zu Episch, Legendär und Mythisch weiterentwickelt werden. Ihre Klassenattribute und Kernidentität bleiben dabei erhalten |\n| **Herstellungsanforderung** | Erfahrener Spezialist, hochwertiger Rapierkörper, ein auf fremde Sternenenergie reagierender kristalliner Kern und die abschließende Resonanzbindung durch den zukünftigen Sternensplitter-Träger |\n| **Erscheinungsbild** | Schlankes Rapier aus dunklem Silbermetall mit kristalliner Mittellinie, unvollständigen Astrolabienringen als Parierstück und einer Spitze, deren räumliche Position bei aktiver Sternenenergie leicht versetzt erscheint |\n\n---",
+      "code_blocks": [],
+      "tables": [
+        {
+          "headers": [
+            "Regelpunkt",
+            "Angabe"
+          ],
+          "rows": [
+            [
+              "**Name**",
+              "Firmamentnadel – Die erste Naht"
+            ],
+            [
+              "**Basiswaffenart**",
+              "Rapier"
+            ],
+            [
+              "**Waffenkategorie**",
+              "Schwert"
+            ],
+            [
+              "**Klassenbindung**",
+              "Sternensplitter"
+            ],
+            [
+              "**Qualitätsstufe**",
+              "Selten"
+            ],
+            [
+              "**Itemstufe**",
+              "1"
+            ],
+            [
+              "**Magisch**",
+              "Ja – fremdartige Sternenenergie; keinem Element fest zugeordnet"
+            ],
+            [
+              "**Kernwürfel**",
+              "1W8"
+            ],
+            [
+              "**Führung**",
+              "Einhändig"
+            ],
+            [
+              "**Reichweite**",
+              "Nah"
+            ],
+            [
+              "**Schadensart**",
+              "Stich"
+            ],
+            [
+              "**Gewicht**",
+              "Mittel"
+            ],
+            [
+              "**Angriffsattribut**",
+              "Intuition; Willenskraft wirkt als stabilisierendes Sekundärattribut"
+            ],
+            [
+              "**Angriffswurf**",
+              "W20 + Intuition-Modifikator + Intuition-Bonus gegen den normalen Ausweichwurf des Ziels"
+            ],
+            [
+              "**Schadensformel**",
+              "1W8 + 11 + Intuition-Modifikator + Intuition-Bonus + ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋ Stichschaden"
+            ],
+            [
+              "**Krit-Modifikation**",
+              "–"
+            ],
+            [
+              "**Besondere Eigenschaften**",
+              "**Sternenführung**, **Gebrochener Ursprung**, **Erste Naht**, **Entwicklungsbindung**"
+            ],
+            [
+              "**Aktive Fähigkeit**",
+              "–"
+            ],
+            [
+              "**Aktionskosten**",
+              "Normaler Waffenangriff; besondere Eigenschaften verursachen keine zusätzliche Aktion, sofern bei ihnen nichts anderes angegeben ist"
+            ],
+            [
+              "**Auslöser / Voraussetzung**",
+              "Die besonderen Eigenschaften funktionieren nur für einen Charakter mit Stufen in der Klasse Sternensplitter"
+            ],
+            [
+              "**Einsatzlimit**",
+              "Siehe jeweilige Eigenschaft"
+            ],
+            [
+              "**Reichweite des Effekts**",
+              "Bis zu 25 m zu einem eigenen gebundenen Firmamentsplitter"
+            ],
+            [
+              "**Ziel / Fläche**",
+              "1 Kreatur beziehungsweise ein freier Punkt gemäß Eigenschaft"
+            ],
+            [
+              "**Dauer**",
+              "Siehe jeweilige Eigenschaft"
+            ],
+            [
+              "**Rettungswurf / SG**",
+              "–"
+            ],
+            [
+              "**Berechnung des Effekts**",
+              "Die besonderen Eigenschaften erzeugen auf Selten / Itemstufe 1 keinen zusätzlichen direkten Schadenswürfel und keine zusätzliche Klassenressource"
+            ],
+            [
+              "**Regelwirkung**",
+              "Die Waffe kann bestehende gebundene Firmamentsplitter als räumliche Ursprünge normaler Waffenangriffe verwenden und nach einem Treffer vorübergehend einen freien Firmamentsplitter als neuen Anker binden"
+            ],
+            [
+              "**Stapelung**",
+              "Mehrere Anwendungen erzeugen keine zusätzlichen Waffenaktionen. Jeder Firmamentsplitter zählt weiterhin normal gegen das Klassenmaximum"
+            ],
+            [
+              "**Ende der Wirkung**",
+              "Siehe jeweilige Eigenschaft"
+            ],
+            [
+              "**Aufwertung / Skalierung**",
+              "Die Waffe kann auf Itemstufe 1–40 verbessert und später über besondere Qualitätsaufwertungen zu Episch, Legendär und Mythisch weiterentwickelt werden. Ihre Klassenattribute und Kernidentität bleiben dabei erhalten"
+            ],
+            [
+              "**Herstellungsanforderung**",
+              "Erfahrener Spezialist, hochwertiger Rapierkörper, ein auf fremde Sternenenergie reagierender kristalliner Kern und die abschließende Resonanzbindung durch den zukünftigen Sternensplitter-Träger"
+            ],
+            [
+              "**Erscheinungsbild**",
+              "Schlankes Rapier aus dunklem Silbermetall mit kristalliner Mittellinie, unvollständigen Astrolabienringen als Parierstück und einer Spitze, deren räumliche Position bei aktiver Sternenenergie leicht versetzt erscheint"
+            ]
+          ],
+          "raw_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Name** | Firmamentnadel – Die erste Naht |\n| **Basiswaffenart** | Rapier |\n| **Waffenkategorie** | Schwert |\n| **Klassenbindung** | Sternensplitter |\n| **Qualitätsstufe** | Selten |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja – fremdartige Sternenenergie; keinem Element fest zugeordnet |\n| **Kernwürfel** | 1W8 |\n| **Führung** | Einhändig |\n| **Reichweite** | Nah |\n| **Schadensart** | Stich |\n| **Gewicht** | Mittel |\n| **Angriffsattribut** | Intuition; Willenskraft wirkt als stabilisierendes Sekundärattribut |\n| **Angriffswurf** | W20 + Intuition-Modifikator + Intuition-Bonus gegen den normalen Ausweichwurf des Ziels |\n| **Schadensformel** | 1W8 + 11 + Intuition-Modifikator + Intuition-Bonus + ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋ Stichschaden |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | **Sternenführung**, **Gebrochener Ursprung**, **Erste Naht**, **Entwicklungsbindung** |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | Normaler Waffenangriff; besondere Eigenschaften verursachen keine zusätzliche Aktion, sofern bei ihnen nichts anderes angegeben ist |\n| **Auslöser / Voraussetzung** | Die besonderen Eigenschaften funktionieren nur für einen Charakter mit Stufen in der Klasse Sternensplitter |\n| **Einsatzlimit** | Siehe jeweilige Eigenschaft |\n| **Reichweite des Effekts** | Bis zu 25 m zu einem eigenen gebundenen Firmamentsplitter |\n| **Ziel / Fläche** | 1 Kreatur beziehungsweise ein freier Punkt gemäß Eigenschaft |\n| **Dauer** | Siehe jeweilige Eigenschaft |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | Die besonderen Eigenschaften erzeugen auf Selten / Itemstufe 1 keinen zusätzlichen direkten Schadenswürfel und keine zusätzliche Klassenressource |\n| **Regelwirkung** | Die Waffe kann bestehende gebundene Firmamentsplitter als räumliche Ursprünge normaler Waffenangriffe verwenden und nach einem Treffer vorübergehend einen freien Firmamentsplitter als neuen Anker binden |\n| **Stapelung** | Mehrere Anwendungen erzeugen keine zusätzlichen Waffenaktionen. Jeder Firmamentsplitter zählt weiterhin normal gegen das Klassenmaximum |\n| **Ende der Wirkung** | Siehe jeweilige Eigenschaft |\n| **Aufwertung / Skalierung** | Die Waffe kann auf Itemstufe 1–40 verbessert und später über besondere Qualitätsaufwertungen zu Episch, Legendär und Mythisch weiterentwickelt werden. Ihre Klassenattribute und Kernidentität bleiben dabei erhalten |\n| **Herstellungsanforderung** | Erfahrener Spezialist, hochwertiger Rapierkörper, ein auf fremde Sternenenergie reagierender kristalliner Kern und die abschließende Resonanzbindung durch den zukünftigen Sternensplitter-Träger |\n| **Erscheinungsbild** | Schlankes Rapier aus dunklem Silbermetall mit kristalliner Mittellinie, unvollständigen Astrolabienringen als Parierstück und einer Spitze, deren räumliche Position bei aktiver Sternenenergie leicht versetzt erscheint |",
+          "source": {
+            "line_start": 4017,
+            "line_end": 4050
+          }
+        }
+      ],
+      "source": {
+        "line_start": 4015,
+        "line_end": 4053
+      }
+    },
+    {
+      "level": 1,
+      "title": "Besondere Eigenschaften",
+      "markdown": null,
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4054,
+        "line_end": 4055
+      }
+    },
+    {
+      "level": 2,
+      "title": "1. Sternenführung",
+      "markdown": "Die Firmamentnadel wird nicht über rohe Kraft geführt. Der Träger richtet ihre Spitze über Wahrnehmung, räumliches Gespür und geistige Stabilität aus.\n\nFür **jeden normalen Waffenangriff** mit der Firmamentnadel gilt daher:\n\n```text\nAngriffswurf\n=\nW20\n+ Intuition-Modifikator\n+ Intuition-Bonus\n```\n\nDer normale Waffenschaden lautet auf Itemstufe 1:\n\n```text\n1W8\n+ 11\n+ Intuition-Modifikator\n+ Intuition-Bonus\n+ ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋\nStichschaden\n```\n\nDie in dieser Formel genannten Attributsanteile werden **nicht zusätzlich ein zweites Mal** auf den Schaden addiert.\n\n**Intuition** bleibt für diese Waffe das führende Attribut. **Willenskraft** stabilisiert die räumliche Form der Klinge und wird deshalb als halber stabilisierender Anteil in den Waffenschaden aufgenommen.\n\nStärke, Geschicklichkeit oder ein anderes gewöhnliches Waffenattribut ersetzen diese beiden Klassenattribute nicht. **Auch spätere Entwicklungsstufen der Firmamentnadel behalten Intuition und Willenskraft als ihre verbindlichen Klassenattribute bei.**\n\n> [!important] Klassenidentität\n> Die Firmamentnadel ist ausdrücklich eine Sternensplitter-Klassenwaffe. Ihre spätere Entwicklung darf ihre Zahlen verändern, aber **Intuition und Willenskraft bleiben ihre grundlegenden Waffenattribute**.\n\n---",
+      "code_blocks": [
+        "Angriffswurf\n=\nW20\n+ Intuition-Modifikator\n+ Intuition-Bonus",
+        "1W8\n+ 11\n+ Intuition-Modifikator\n+ Intuition-Bonus\n+ ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋\nStichschaden"
+      ],
+      "tables": [],
+      "source": {
+        "line_start": 4056,
+        "line_end": 4091
+      }
+    },
+    {
+      "level": 2,
+      "title": "2. Gebrochener Ursprung",
+      "markdown": "**1× pro Runde**, wenn du einen normalen Waffenangriff mit der Firmamentnadel ausführst, darfst du den Ursprung des Angriffes verschieben.\n\nWähle dafür entweder:\n\n- deine eigene Position, oder\n- die Position eines von dir **gebundenen Firmamentsplitters innerhalb von 25 m**.\n\nWählst du einen gebundenen Firmamentsplitter, gilt für diesen Angriff:\n\n- Der Angriff entspringt räumlich an der Position des gewählten Firmamentsplitters.\n- Das Ziel muss sich in **Nah-Reichweite** zu diesem Punkt befinden.\n- Du musst das Ziel selbst sehen können oder seine Position über den gewählten gebundenen Firmamentsplitter eindeutig bestimmen können.\n- Angriffswurf und Schaden verwenden weiterhin vollständig deine eigenen Werte sowie die Werte der Firmamentnadel.\n- Der Angriff bleibt regeltechnisch ein **normaler Waffenangriff mit einer Nahkampfwaffe**. Die räumliche Verschiebung erzeugt keine zusätzliche Waffenaktion.\n- Der Firmamentsplitter wird dadurch **nicht verbraucht, nicht gelöst und nicht erneut erzeugt**.\n- Deine tatsächliche Körperposition verändert sich nicht.\n- Für alle Regeln außer Ursprung, Reichweite und Sichtlinie bleibt deine tatsächliche Position maßgeblich.\n\nDie Klinge scheint dabei nicht durch den gesamten Zwischenraum zu fliegen. Für einen Augenblick liegt ihre Spitze gleichzeitig in der Hand des Trägers und am gewählten räumlichen Anker.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4092,
+        "line_end": 4115
+      }
+    },
+    {
+      "level": 2,
+      "title": "3. Erste Naht",
+      "markdown": "**1× pro Runde**, nachdem du einer feindlichen Kreatur mit einem normalen Angriff der Firmamentnadel tatsächlich mindestens 1 LP Schaden zugefügt hast, darfst du **1 freien Firmamentsplitter binden**.\n\nWähle einen freien Punkt innerhalb von **2 m um das getroffene Ziel**.\n\nDer gewählte freie Firmamentsplitter wird an diesem Punkt gebunden und bleibt dort bis zum **Beginn deines nächsten Zuges**.\n\nFür diese Bindung gelten die normalen Regeln deiner Klassenressource:\n\n- der gebundene Firmamentsplitter zählt weiterhin gegen dein Maximum,\n- er kann während der Bindung nicht als freier Firmamentsplitter ausgegeben werden,\n- er wird durch diese Eigenschaft **nicht verbraucht**,\n- er wird durch diese Eigenschaft **nicht erzeugt**,\n- zu Beginn deines nächsten Zuges wird er wieder frei, sofern keine andere Wirkung seine Bindung ausdrücklich verlängert oder verändert.\n\n**Erste Naht** löst die Basiserzeugung von Firmamentsplittern nicht selbst aus, da ein normaler Waffenangriff keine Sternensplitter-Klassenfähigkeit ist.\n\nDiese Eigenschaft soll die Waffe mit dem eigentlichen Klassenkreislauf verbinden: Der Waffenangriff kann einen räumlichen Anker vorbereiten, den nachfolgende Sternensplitter-Fähigkeiten verwenden können.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4116,
+        "line_end": 4137
+      }
+    },
+    {
+      "level": 2,
+      "title": "4. Entwicklungsbindung",
+      "markdown": "Die Firmamentnadel besitzt einen kristallinen Kern, der während ihrer ersten vollständigen Resonanz auf einen bestimmten Sternensplitter abgestimmt wird.\n\nDie Waffe ist deshalb als **dauerhafte Klassenwaffe** gedacht.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4138,
+        "line_end": 4143
+      }
+    },
+    {
+      "level": 3,
+      "title": "Itemstufenentwicklung",
+      "markdown": "Die Firmamentnadel kann innerhalb ihrer aktuellen Qualitätsstufe von **Itemstufe 1 bis Itemstufe 40** verbessert werden.\n\nBei späteren Itemstufenaufwertungen dürfen insbesondere angepasst werden:\n\n- der skalierende Anteil des normalen Waffenschadens,\n- begrenzte Reichweitenwerte ihrer räumlichen Eigenschaften,\n- die Stärke später freigeschalteter Effekte,\n- ausdrücklich definierte Waffenboni.\n\nDer **Kernwürfel 1W8**, die Basiswaffenart Rapier sowie die Verwendung von **Intuition und Willenskraft** bleiben ihre Identitätsanker.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4144,
+        "line_end": 4156
+      }
+    },
+    {
+      "level": 3,
+      "title": "Qualitätsentwicklung",
+      "markdown": "Die Firmamentnadel kann im Verlauf einer Kampagne über besondere Aufwertungen weiterentwickelt werden:\n\n```text\nSelten\n→ Episch\n→ Legendär\n→ Mythisch\n```\n\nEine solche Qualitätssteigerung geschieht **nicht automatisch** durch Itemstufen.\n\nSie soll einen bedeutenden Entwicklungsschritt darstellen, bei dem beispielsweise:\n\n- der bestehende kristalline Kern neu gefasst wird,\n- außergewöhnliche Materialien in die Waffe integriert werden,\n- die Resonanz zum falschen Himmel vertieft wird,\n- eine besondere Begegnung mit einem Riss, Relikt oder Ort jenseitiger Sternenenergie notwendig wird.\n\nDie Waffe wird dabei nicht einfach ersetzt. Ihr bestehender Kern bleibt erhalten und bildet die Grundlage der nächsten Form.\n\n> [!important] Leitlinie für spätere Formen\n> Höhere Qualitätsstufen sollen vor allem die Themen **gebundene Firmamentsplitter, alternative Ursprünge, gekrümmte Entfernung, präzise Raumstiche und kontrollierte Öffnungen des Firmaments** vertiefen. Sie sollen nicht bloß immer mehr rohe Schadenswürfel oder kostenlose zusätzliche Aktionen hinzufügen.\n\n---",
+      "code_blocks": [
+        "Selten\n→ Episch\n→ Legendär\n→ Mythisch"
+      ],
+      "tables": [],
+      "source": {
+        "line_start": 4157,
+        "line_end": 4183
+      }
+    },
+    {
+      "level": 2,
+      "title": "Namensprogression der Entwicklungsformen",
+      "markdown": "Die Firmamentnadel behält über alle Qualitätsstufen hinweg ihren **Grundnamen**, damit klar bleibt, dass es sich immer um **dieselbe wachsende Klassenwaffe** handelt.\n\nMit jeder höheren Qualitätsstufe verändert sich ihr **Beiname**, um den zunehmenden Eingriff in Raum, Entfernung und das Geheimnis des falschen Himmels widerzuspiegeln.\n\n| Qualitätsstufe | Entwicklungsname | Bedeutung |\n|---|---|---|\n| **Selten** | **Firmamentnadel – Die erste Naht** | Die erste stabile Form der Waffe. Sie beweist, dass Entfernung für einen Augenblick „vernäht“ werden kann. |\n| **Episch** | **Firmamentnadel – Die wandernde Naht** | Die Waffe kann ihre räumliche Verbindung bereits sicherer verschieben und den Ursprung ihrer Angriffe bewusster versetzen. |\n| **Legendär** | **Firmamentnadel – Der Riss im falschen Himmel** | Die Waffe ist nicht länger nur ein Instrument der Verbindung, sondern ein Werkzeug, das die Grenze des sichtbaren Himmels selbst verletzen kann. |\n| **Mythisch** | **Firmamentnadel – Jenseits des Firmaments** | Die vollendete Form. Die Waffe wirkt, als reiche ein Teil ihrer Natur bereits an den Ort hinter dem falschen Himmel. |",
+      "code_blocks": [],
+      "tables": [
+        {
+          "headers": [
+            "Qualitätsstufe",
+            "Entwicklungsname",
+            "Bedeutung"
+          ],
+          "rows": [
+            [
+              "**Selten**",
+              "**Firmamentnadel – Die erste Naht**",
+              "Die erste stabile Form der Waffe. Sie beweist, dass Entfernung für einen Augenblick „vernäht“ werden kann."
+            ],
+            [
+              "**Episch**",
+              "**Firmamentnadel – Die wandernde Naht**",
+              "Die Waffe kann ihre räumliche Verbindung bereits sicherer verschieben und den Ursprung ihrer Angriffe bewusster versetzen."
+            ],
+            [
+              "**Legendär**",
+              "**Firmamentnadel – Der Riss im falschen Himmel**",
+              "Die Waffe ist nicht länger nur ein Instrument der Verbindung, sondern ein Werkzeug, das die Grenze des sichtbaren Himmels selbst verletzen kann."
+            ],
+            [
+              "**Mythisch**",
+              "**Firmamentnadel – Jenseits des Firmaments**",
+              "Die vollendete Form. Die Waffe wirkt, als reiche ein Teil ihrer Natur bereits an den Ort hinter dem falschen Himmel."
+            ]
+          ],
+          "raw_markdown": "| Qualitätsstufe | Entwicklungsname | Bedeutung |\n|---|---|---|\n| **Selten** | **Firmamentnadel – Die erste Naht** | Die erste stabile Form der Waffe. Sie beweist, dass Entfernung für einen Augenblick „vernäht“ werden kann. |\n| **Episch** | **Firmamentnadel – Die wandernde Naht** | Die Waffe kann ihre räumliche Verbindung bereits sicherer verschieben und den Ursprung ihrer Angriffe bewusster versetzen. |\n| **Legendär** | **Firmamentnadel – Der Riss im falschen Himmel** | Die Waffe ist nicht länger nur ein Instrument der Verbindung, sondern ein Werkzeug, das die Grenze des sichtbaren Himmels selbst verletzen kann. |\n| **Mythisch** | **Firmamentnadel – Jenseits des Firmaments** | Die vollendete Form. Die Waffe wirkt, als reiche ein Teil ihrer Natur bereits an den Ort hinter dem falschen Himmel. |",
+          "source": {
+            "line_start": 4190,
+            "line_end": 4195
+          }
+        }
+      ],
+      "source": {
+        "line_start": 4184,
+        "line_end": 4196
+      }
+    },
+    {
+      "level": 3,
+      "title": "Leitgedanke der Progression",
+      "markdown": "Die Namensfolge erzählt denselben Weg, den auch ein Sternensplitter selbst durchläuft:\n\n1. **Er erkennt die Entfernung als formbar.**\n2. **Er lernt, sie zu verschieben und für sich arbeiten zu lassen.**\n3. **Er beginnt, die Grenze des falschen Himmels selbst zu verletzen.**\n4. **Er greift nach einer Macht, die bereits jenseits dieser Grenze liegt.**\n\nDie mythische Form **„Firmamentnadel – Jenseits des Firmaments“** ist damit der vorgesehene Endname der Waffe.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4197,
+        "line_end": 4209
+      }
+    },
+    {
+      "level": 1,
+      "title": "Erscheinungsbild",
+      "markdown": "In ihrer ersten Form ist die Firmamentnadel noch klar als Rapier erkennbar.\n\nDie Waffe besitzt eine lange, schmale Stichklinge aus dunkel schimmerndem Metall. Durch ihre Mitte verläuft jedoch eine fast haarfeine kristalline Linie. Im Ruhezustand wirkt sie wie eine helle Einlage. Sobald der Träger Sternenenergie durch die Waffe leitet, scheint sich diese Linie nach innen zu öffnen.\n\nWer direkt auf die Klinge blickt, sieht für einen Augenblick keine Vertiefung im Metall, sondern eine Entfernung, die unmöglich in die geringe Breite der Waffe passen kann.\n\nDas Parierstück besteht aus drei dünnen, unvollständig geschlossenen Metallringen. Sie liegen leicht gegeneinander versetzt und erinnern an ein kleines Astrolabium. Beim Binden eines Firmamentsplitters drehen sich die Ringe wenige Grade gegeneinander, obwohl kein sichtbarer Mechanismus sie bewegt.\n\nDer Griff ist mit dunklem, griffigem Material umwickelt. Zwischen Griff und Klinge sitzt der **Resonanzkern** – ein unregelmäßig geschliffener Kristall, der auf die Sternenenergie seines Trägers reagiert.\n\nDie Spitze der Firmamentnadel wirkt niemals vollkommen stabil.\n\nIm Stillstand befindet sie sich dort, wo eine Rapierklinge enden sollte. Wird jedoch ein gebundener Firmamentsplitter in der Nähe aktiv, scheint die Spitze für einzelne Augenblicke wenige Fingerbreit versetzt zu sein. Bei **Gebrochener Ursprung** verschwindet dieser Versatz vollständig aus der Nähe des Trägers und erscheint stattdessen am gewählten räumlichen Anker.\n\nEs entsteht kein sichtbarer Strahl zwischen beiden Punkten.\n\nNur für einen Herzschlag wirkt es, als hätte die Welt vergessen, dass zwischen ihnen Entfernung liegen sollte.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4210,
+        "line_end": 4231
+      }
+    },
+    {
+      "level": 1,
+      "title": "Herkunft und Lore",
+      "markdown": "Unter Gelehrten existiert eine alte Beschreibung Eidryths, nach der der Turm einer gewaltigen **Nadel** gleiche, die Aetheryn mit etwas jenseits des Firmaments verbinde.\n\nOb die ersten Erbauer der Firmamentnadel diese Vorstellung kannten oder lediglich unabhängig zu demselben Bild gelangten, ist nicht überliefert.\n\nDie Konstruktion folgt jedenfalls einem ähnlichen Gedanken im Kleinen.\n\nEine gewöhnliche Klinge besitzt einen Anfang, ein Ende und den Raum dazwischen. Die Firmamentnadel versucht nicht, diesen Raum schneller zu überwinden. Sie versucht, ihn für einen Augenblick bedeutungslos zu machen.\n\nDafür wird ein hochwertiger Rapierkörper um einen kristallinen Resonanzkern aufgebaut. Der Kern muss bereits auf fremde Sternenenergie reagiert haben oder während der Bindung erstmals eine solche Reaktion zeigen. Anschließend führt der zukünftige Träger einen freien Firmamentsplitter durch die Waffe, bis Kristall, Metall und seine eigene Verbindung zum falschen Himmel dieselbe räumliche Ausrichtung annehmen.\n\nGelingt die Bindung, bleibt im Inneren der Waffe etwas zurück, das sich nur schwer als Magie beschreiben lässt.\n\nKeine gespeicherte Flamme.\n\nKein gewöhnlicher Zauber.\n\nEher die Erinnerung an zwei Punkte, die für einen Augenblick derselbe Ort waren.\n\nDarum kann eine Firmamentnadel mit ihrem Träger wachsen.\n\nNeue Materialien ersetzen nicht einfach das Alte. Sie werden um diese Erinnerung herum aufgebaut. Neue Fassungen, stärkere Legierungen und mächtigere Kristalle geben der Waffe lediglich mehr Möglichkeiten, dieselbe erste unmögliche Verbindung erneut zu öffnen.\n\nDie seltene Form trägt deshalb den Beinamen:\n\n**Die erste Naht.**\n\nSie ist noch kein Riss im Himmel.\n\nAber sie beweist, dass selbst eine Grenze genäht werden kann – und dass jede Naht auch wieder geöffnet werden könnte.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4232,
+        "line_end": 4263
+      }
+    }
+  ],
+  "raw_markdown": "# Firmamentnadel – Die erste Naht\n\n> [!quote]\n> _„Zwischen zwei Punkten liegt nur dann Entfernung, wenn die Welt darauf besteht.“_\n\nDie **Firmamentnadel** ist die persönliche Entwicklungswaffe eines Sternensplitters. Sie ist nicht als gewöhnlicher Ausrüstungsgegenstand gedacht, der nach wenigen Abenteuern gegen eine bessere Waffe ausgetauscht wird. Ihr kristalliner Kern wird auf die Verbindung ihres Trägers zum falschen Himmel abgestimmt und kann im Verlauf der Kampagne immer weiter ausgebaut, neu gefasst und schließlich auf höhere Qualitätsstufen erhoben werden.\n\nIhre erste stabile Form beginnt auf **Qualitätsstufe Selten** und **Itemstufe 1**.\n\nMechanisch verbindet sie drei Kernelemente der Klasse:\n\n- **Intuition** als führendes Klassenattribut,\n- **Willenskraft** als stabilisierendes Klassenattribut,\n- **Firmamentsplitter** als räumliche Anker und alternative Ursprünge.\n\nDie Firmamentnadel soll den Sternensplitter unterstützen, ohne seine eigentlichen Klassenfähigkeiten zu ersetzen. Ihre Stärke liegt deshalb nicht nur in höherem Rohschaden, sondern vor allem darin, einen normalen Waffenangriff in dieselbe räumliche Logik einzubinden, die auch die Klasse selbst prägt.\n\n---\n\n## Waffenprofil\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Name** | Firmamentnadel – Die erste Naht |\n| **Basiswaffenart** | Rapier |\n| **Waffenkategorie** | Schwert |\n| **Klassenbindung** | Sternensplitter |\n| **Qualitätsstufe** | Selten |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja – fremdartige Sternenenergie; keinem Element fest zugeordnet |\n| **Kernwürfel** | 1W8 |\n| **Führung** | Einhändig |\n| **Reichweite** | Nah |\n| **Schadensart** | Stich |\n| **Gewicht** | Mittel |\n| **Angriffsattribut** | Intuition; Willenskraft wirkt als stabilisierendes Sekundärattribut |\n| **Angriffswurf** | W20 + Intuition-Modifikator + Intuition-Bonus gegen den normalen Ausweichwurf des Ziels |\n| **Schadensformel** | 1W8 + 11 + Intuition-Modifikator + Intuition-Bonus + ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋ Stichschaden |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | **Sternenführung**, **Gebrochener Ursprung**, **Erste Naht**, **Entwicklungsbindung** |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | Normaler Waffenangriff; besondere Eigenschaften verursachen keine zusätzliche Aktion, sofern bei ihnen nichts anderes angegeben ist |\n| **Auslöser / Voraussetzung** | Die besonderen Eigenschaften funktionieren nur für einen Charakter mit Stufen in der Klasse Sternensplitter |\n| **Einsatzlimit** | Siehe jeweilige Eigenschaft |\n| **Reichweite des Effekts** | Bis zu 25 m zu einem eigenen gebundenen Firmamentsplitter |\n| **Ziel / Fläche** | 1 Kreatur beziehungsweise ein freier Punkt gemäß Eigenschaft |\n| **Dauer** | Siehe jeweilige Eigenschaft |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | Die besonderen Eigenschaften erzeugen auf Selten / Itemstufe 1 keinen zusätzlichen direkten Schadenswürfel und keine zusätzliche Klassenressource |\n| **Regelwirkung** | Die Waffe kann bestehende gebundene Firmamentsplitter als räumliche Ursprünge normaler Waffenangriffe verwenden und nach einem Treffer vorübergehend einen freien Firmamentsplitter als neuen Anker binden |\n| **Stapelung** | Mehrere Anwendungen erzeugen keine zusätzlichen Waffenaktionen. Jeder Firmamentsplitter zählt weiterhin normal gegen das Klassenmaximum |\n| **Ende der Wirkung** | Siehe jeweilige Eigenschaft |\n| **Aufwertung / Skalierung** | Die Waffe kann auf Itemstufe 1–40 verbessert und später über besondere Qualitätsaufwertungen zu Episch, Legendär und Mythisch weiterentwickelt werden. Ihre Klassenattribute und Kernidentität bleiben dabei erhalten |\n| **Herstellungsanforderung** | Erfahrener Spezialist, hochwertiger Rapierkörper, ein auf fremde Sternenenergie reagierender kristalliner Kern und die abschließende Resonanzbindung durch den zukünftigen Sternensplitter-Träger |\n| **Erscheinungsbild** | Schlankes Rapier aus dunklem Silbermetall mit kristalliner Mittellinie, unvollständigen Astrolabienringen als Parierstück und einer Spitze, deren räumliche Position bei aktiver Sternenenergie leicht versetzt erscheint |\n\n---\n\n# Besondere Eigenschaften\n\n## 1. Sternenführung\n\nDie Firmamentnadel wird nicht über rohe Kraft geführt. Der Träger richtet ihre Spitze über Wahrnehmung, räumliches Gespür und geistige Stabilität aus.\n\nFür **jeden normalen Waffenangriff** mit der Firmamentnadel gilt daher:\n\n```text\nAngriffswurf\n=\nW20\n+ Intuition-Modifikator\n+ Intuition-Bonus\n```\n\nDer normale Waffenschaden lautet auf Itemstufe 1:\n\n```text\n1W8\n+ 11\n+ Intuition-Modifikator\n+ Intuition-Bonus\n+ ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋\nStichschaden\n```\n\nDie in dieser Formel genannten Attributsanteile werden **nicht zusätzlich ein zweites Mal** auf den Schaden addiert.\n\n**Intuition** bleibt für diese Waffe das führende Attribut. **Willenskraft** stabilisiert die räumliche Form der Klinge und wird deshalb als halber stabilisierender Anteil in den Waffenschaden aufgenommen.\n\nStärke, Geschicklichkeit oder ein anderes gewöhnliches Waffenattribut ersetzen diese beiden Klassenattribute nicht. **Auch spätere Entwicklungsstufen der Firmamentnadel behalten Intuition und Willenskraft als ihre verbindlichen Klassenattribute bei.**\n\n> [!important] Klassenidentität\n> Die Firmamentnadel ist ausdrücklich eine Sternensplitter-Klassenwaffe. Ihre spätere Entwicklung darf ihre Zahlen verändern, aber **Intuition und Willenskraft bleiben ihre grundlegenden Waffenattribute**.\n\n---\n\n## 2. Gebrochener Ursprung\n\n**1× pro Runde**, wenn du einen normalen Waffenangriff mit der Firmamentnadel ausführst, darfst du den Ursprung des Angriffes verschieben.\n\nWähle dafür entweder:\n\n- deine eigene Position, oder\n- die Position eines von dir **gebundenen Firmamentsplitters innerhalb von 25 m**.\n\nWählst du einen gebundenen Firmamentsplitter, gilt für diesen Angriff:\n\n- Der Angriff entspringt räumlich an der Position des gewählten Firmamentsplitters.\n- Das Ziel muss sich in **Nah-Reichweite** zu diesem Punkt befinden.\n- Du musst das Ziel selbst sehen können oder seine Position über den gewählten gebundenen Firmamentsplitter eindeutig bestimmen können.\n- Angriffswurf und Schaden verwenden weiterhin vollständig deine eigenen Werte sowie die Werte der Firmamentnadel.\n- Der Angriff bleibt regeltechnisch ein **normaler Waffenangriff mit einer Nahkampfwaffe**. Die räumliche Verschiebung erzeugt keine zusätzliche Waffenaktion.\n- Der Firmamentsplitter wird dadurch **nicht verbraucht, nicht gelöst und nicht erneut erzeugt**.\n- Deine tatsächliche Körperposition verändert sich nicht.\n- Für alle Regeln außer Ursprung, Reichweite und Sichtlinie bleibt deine tatsächliche Position maßgeblich.\n\nDie Klinge scheint dabei nicht durch den gesamten Zwischenraum zu fliegen. Für einen Augenblick liegt ihre Spitze gleichzeitig in der Hand des Trägers und am gewählten räumlichen Anker.\n\n---\n\n## 3. Erste Naht\n\n**1× pro Runde**, nachdem du einer feindlichen Kreatur mit einem normalen Angriff der Firmamentnadel tatsächlich mindestens 1 LP Schaden zugefügt hast, darfst du **1 freien Firmamentsplitter binden**.\n\nWähle einen freien Punkt innerhalb von **2 m um das getroffene Ziel**.\n\nDer gewählte freie Firmamentsplitter wird an diesem Punkt gebunden und bleibt dort bis zum **Beginn deines nächsten Zuges**.\n\nFür diese Bindung gelten die normalen Regeln deiner Klassenressource:\n\n- der gebundene Firmamentsplitter zählt weiterhin gegen dein Maximum,\n- er kann während der Bindung nicht als freier Firmamentsplitter ausgegeben werden,\n- er wird durch diese Eigenschaft **nicht verbraucht**,\n- er wird durch diese Eigenschaft **nicht erzeugt**,\n- zu Beginn deines nächsten Zuges wird er wieder frei, sofern keine andere Wirkung seine Bindung ausdrücklich verlängert oder verändert.\n\n**Erste Naht** löst die Basiserzeugung von Firmamentsplittern nicht selbst aus, da ein normaler Waffenangriff keine Sternensplitter-Klassenfähigkeit ist.\n\nDiese Eigenschaft soll die Waffe mit dem eigentlichen Klassenkreislauf verbinden: Der Waffenangriff kann einen räumlichen Anker vorbereiten, den nachfolgende Sternensplitter-Fähigkeiten verwenden können.\n\n---\n\n## 4. Entwicklungsbindung\n\nDie Firmamentnadel besitzt einen kristallinen Kern, der während ihrer ersten vollständigen Resonanz auf einen bestimmten Sternensplitter abgestimmt wird.\n\nDie Waffe ist deshalb als **dauerhafte Klassenwaffe** gedacht.\n\n### Itemstufenentwicklung\n\nDie Firmamentnadel kann innerhalb ihrer aktuellen Qualitätsstufe von **Itemstufe 1 bis Itemstufe 40** verbessert werden.\n\nBei späteren Itemstufenaufwertungen dürfen insbesondere angepasst werden:\n\n- der skalierende Anteil des normalen Waffenschadens,\n- begrenzte Reichweitenwerte ihrer räumlichen Eigenschaften,\n- die Stärke später freigeschalteter Effekte,\n- ausdrücklich definierte Waffenboni.\n\nDer **Kernwürfel 1W8**, die Basiswaffenart Rapier sowie die Verwendung von **Intuition und Willenskraft** bleiben ihre Identitätsanker.\n\n### Qualitätsentwicklung\n\nDie Firmamentnadel kann im Verlauf einer Kampagne über besondere Aufwertungen weiterentwickelt werden:\n\n```text\nSelten\n→ Episch\n→ Legendär\n→ Mythisch\n```\n\nEine solche Qualitätssteigerung geschieht **nicht automatisch** durch Itemstufen.\n\nSie soll einen bedeutenden Entwicklungsschritt darstellen, bei dem beispielsweise:\n\n- der bestehende kristalline Kern neu gefasst wird,\n- außergewöhnliche Materialien in die Waffe integriert werden,\n- die Resonanz zum falschen Himmel vertieft wird,\n- eine besondere Begegnung mit einem Riss, Relikt oder Ort jenseitiger Sternenenergie notwendig wird.\n\nDie Waffe wird dabei nicht einfach ersetzt. Ihr bestehender Kern bleibt erhalten und bildet die Grundlage der nächsten Form.\n\n> [!important] Leitlinie für spätere Formen\n> Höhere Qualitätsstufen sollen vor allem die Themen **gebundene Firmamentsplitter, alternative Ursprünge, gekrümmte Entfernung, präzise Raumstiche und kontrollierte Öffnungen des Firmaments** vertiefen. Sie sollen nicht bloß immer mehr rohe Schadenswürfel oder kostenlose zusätzliche Aktionen hinzufügen.\n\n---\n\n## Namensprogression der Entwicklungsformen\n\nDie Firmamentnadel behält über alle Qualitätsstufen hinweg ihren **Grundnamen**, damit klar bleibt, dass es sich immer um **dieselbe wachsende Klassenwaffe** handelt.\n\nMit jeder höheren Qualitätsstufe verändert sich ihr **Beiname**, um den zunehmenden Eingriff in Raum, Entfernung und das Geheimnis des falschen Himmels widerzuspiegeln.\n\n| Qualitätsstufe | Entwicklungsname | Bedeutung |\n|---|---|---|\n| **Selten** | **Firmamentnadel – Die erste Naht** | Die erste stabile Form der Waffe. Sie beweist, dass Entfernung für einen Augenblick „vernäht“ werden kann. |\n| **Episch** | **Firmamentnadel – Die wandernde Naht** | Die Waffe kann ihre räumliche Verbindung bereits sicherer verschieben und den Ursprung ihrer Angriffe bewusster versetzen. |\n| **Legendär** | **Firmamentnadel – Der Riss im falschen Himmel** | Die Waffe ist nicht länger nur ein Instrument der Verbindung, sondern ein Werkzeug, das die Grenze des sichtbaren Himmels selbst verletzen kann. |\n| **Mythisch** | **Firmamentnadel – Jenseits des Firmaments** | Die vollendete Form. Die Waffe wirkt, als reiche ein Teil ihrer Natur bereits an den Ort hinter dem falschen Himmel. |\n\n### Leitgedanke der Progression\n\nDie Namensfolge erzählt denselben Weg, den auch ein Sternensplitter selbst durchläuft:\n\n1. **Er erkennt die Entfernung als formbar.**\n2. **Er lernt, sie zu verschieben und für sich arbeiten zu lassen.**\n3. **Er beginnt, die Grenze des falschen Himmels selbst zu verletzen.**\n4. **Er greift nach einer Macht, die bereits jenseits dieser Grenze liegt.**\n\nDie mythische Form **„Firmamentnadel – Jenseits des Firmaments“** ist damit der vorgesehene Endname der Waffe.\n\n---\n\n# Erscheinungsbild\n\nIn ihrer ersten Form ist die Firmamentnadel noch klar als Rapier erkennbar.\n\nDie Waffe besitzt eine lange, schmale Stichklinge aus dunkel schimmerndem Metall. Durch ihre Mitte verläuft jedoch eine fast haarfeine kristalline Linie. Im Ruhezustand wirkt sie wie eine helle Einlage. Sobald der Träger Sternenenergie durch die Waffe leitet, scheint sich diese Linie nach innen zu öffnen.\n\nWer direkt auf die Klinge blickt, sieht für einen Augenblick keine Vertiefung im Metall, sondern eine Entfernung, die unmöglich in die geringe Breite der Waffe passen kann.\n\nDas Parierstück besteht aus drei dünnen, unvollständig geschlossenen Metallringen. Sie liegen leicht gegeneinander versetzt und erinnern an ein kleines Astrolabium. Beim Binden eines Firmamentsplitters drehen sich die Ringe wenige Grade gegeneinander, obwohl kein sichtbarer Mechanismus sie bewegt.\n\nDer Griff ist mit dunklem, griffigem Material umwickelt. Zwischen Griff und Klinge sitzt der **Resonanzkern** – ein unregelmäßig geschliffener Kristall, der auf die Sternenenergie seines Trägers reagiert.\n\nDie Spitze der Firmamentnadel wirkt niemals vollkommen stabil.\n\nIm Stillstand befindet sie sich dort, wo eine Rapierklinge enden sollte. Wird jedoch ein gebundener Firmamentsplitter in der Nähe aktiv, scheint die Spitze für einzelne Augenblicke wenige Fingerbreit versetzt zu sein. Bei **Gebrochener Ursprung** verschwindet dieser Versatz vollständig aus der Nähe des Trägers und erscheint stattdessen am gewählten räumlichen Anker.\n\nEs entsteht kein sichtbarer Strahl zwischen beiden Punkten.\n\nNur für einen Herzschlag wirkt es, als hätte die Welt vergessen, dass zwischen ihnen Entfernung liegen sollte.\n\n---\n\n# Herkunft und Lore\n\nUnter Gelehrten existiert eine alte Beschreibung Eidryths, nach der der Turm einer gewaltigen **Nadel** gleiche, die Aetheryn mit etwas jenseits des Firmaments verbinde.\n\nOb die ersten Erbauer der Firmamentnadel diese Vorstellung kannten oder lediglich unabhängig zu demselben Bild gelangten, ist nicht überliefert.\n\nDie Konstruktion folgt jedenfalls einem ähnlichen Gedanken im Kleinen.\n\nEine gewöhnliche Klinge besitzt einen Anfang, ein Ende und den Raum dazwischen. Die Firmamentnadel versucht nicht, diesen Raum schneller zu überwinden. Sie versucht, ihn für einen Augenblick bedeutungslos zu machen.\n\nDafür wird ein hochwertiger Rapierkörper um einen kristallinen Resonanzkern aufgebaut. Der Kern muss bereits auf fremde Sternenenergie reagiert haben oder während der Bindung erstmals eine solche Reaktion zeigen. Anschließend führt der zukünftige Träger einen freien Firmamentsplitter durch die Waffe, bis Kristall, Metall und seine eigene Verbindung zum falschen Himmel dieselbe räumliche Ausrichtung annehmen.\n\nGelingt die Bindung, bleibt im Inneren der Waffe etwas zurück, das sich nur schwer als Magie beschreiben lässt.\n\nKeine gespeicherte Flamme.\n\nKein gewöhnlicher Zauber.\n\nEher die Erinnerung an zwei Punkte, die für einen Augenblick derselbe Ort waren.\n\nDarum kann eine Firmamentnadel mit ihrem Träger wachsen.\n\nNeue Materialien ersetzen nicht einfach das Alte. Sie werden um diese Erinnerung herum aufgebaut. Neue Fassungen, stärkere Legierungen und mächtigere Kristalle geben der Waffe lediglich mehr Möglichkeiten, dieselbe erste unmögliche Verbindung erneut zu öffnen.\n\nDie seltene Form trägt deshalb den Beinamen:\n\n**Die erste Naht.**\n\nSie ist noch kein Riss im Himmel.\n\nAber sie beweist, dass selbst eine Grenze genäht werden kann – und dass jede Naht auch wieder geöffnet werden könnte.",
+  "source": {
+    "file": "Waffen.md",
+    "document_title": "Firmamentnadel – Die erste Naht",
+    "line_start": 3996,
+    "line_end": 4263
+  }
+}

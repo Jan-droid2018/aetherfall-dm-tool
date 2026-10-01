@@ -1,0 +1,143 @@
+{
+  "schema_version": "aetherfall.armors.v1",
+  "id": "gewoehnlich-is01-regentuch",
+  "number": null,
+  "name": "Regentuch",
+  "display_name": "Regentuch",
+  "source_type": "catalog_armor",
+  "item_kind": "armor",
+  "base_item": {
+    "armor": "Stoffkapuze mit Polsterung",
+    "shield": null,
+    "name": "Stoffkapuze mit Polsterung"
+  },
+  "slot": {
+    "name": "Kopf",
+    "key": "head"
+  },
+  "armor_archetype": "Leicht",
+  "shield_class": null,
+  "quality": "Gewöhnlich",
+  "item_level": 1,
+  "magical": {
+    "raw": "Ja",
+    "value": true
+  },
+  "defense": {
+    "physical": {
+      "raw": "1",
+      "value": 1
+    },
+    "magical": {
+      "raw": "1 ausschließlich gegen Wasser; 0 gegen andere magische Schadensarten",
+      "general": 0,
+      "conditional": [
+        {
+          "damage_type": "Wasser",
+          "value": 1,
+          "raw": "1 ausschließlich gegen Wasser; 0 gegen andere magische Schadensarten"
+        }
+      ]
+    }
+  },
+  "resistances": {
+    "raw": null,
+    "entries": []
+  },
+  "elements": [
+    "Wasser"
+  ],
+  "is_elemental": true,
+  "special_properties": "Elementarprägung – Wasser: Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Wasserschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung.",
+  "passive_property": null,
+  "active_ability": null,
+  "active_block_ability": null,
+  "reaction_trigger": null,
+  "hand_binding_usage": null,
+  "action_cost": null,
+  "trigger_requirement": null,
+  "costs": null,
+  "usage_limit": null,
+  "range_target": null,
+  "duration": null,
+  "saving_throw_dc": null,
+  "calculation": null,
+  "rule_effect": "Elementarprägung – Wasser: Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Wasserschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung.",
+  "stacking": "Die bedingte Magische Verteidigung wird wie normale Magische Verteidigung mit anderen getragenen Rüstungsteilen bzw. Schilden addiert.",
+  "end_condition": "Solange das Rüstungsteil getragen wird.",
+  "set": {
+    "name": null,
+    "bonus": null
+  },
+  "class_binding": {
+    "raw": null,
+    "class_name": null
+  },
+  "upgrade_scaling": "Werte ändern sich nur durch eine tatsächliche Erhöhung der Itemstufe; die Qualitätsstufe bleibt dabei Gewöhnlich.",
+  "crafting_requirement": "Normale handwerkliche Ausbildung",
+  "appearance": "Eine dunkelblaue Stoffkapuze mit dichter Polsterung an Stirn und Nacken. Der Stoff wirkt selbst bei trockenem Wetter leicht kühl und zeigt an den Säumen wellenförmige Steppnähte.",
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.0",
+    "classification": null,
+    "dm_exclusive": false,
+    "dm_performance_profile": null
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Rüstung",
+      "Schilde"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.0",
+    "gegenstandsanzahl": 62,
+    "qualitaet": "Gewöhnlich",
+    "itemstufe": 1
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Basisrüstung": "Stoffkapuze mit Polsterung",
+    "Slot": "Kopf",
+    "Rüstungsarchetyp": "Leicht",
+    "Qualitätsstufe": "Gewöhnlich",
+    "Itemstufe": "1",
+    "Magisch": "Ja",
+    "Physische Verteidigung": "1",
+    "Magische Verteidigung": "1 ausschließlich gegen Wasser; 0 gegen andere magische Schadensarten",
+    "Resistenzen": null,
+    "Besondere Eigenschaften": "**Elementarprägung – Wasser:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Wasserschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung.",
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": null,
+    "Auslöser / Voraussetzung": null,
+    "Einsatzlimit": null,
+    "Reichweite / Ziel": null,
+    "Dauer": null,
+    "Rettungswurf / SG": null,
+    "Berechnung": null,
+    "Regelwirkung": "**Elementarprägung – Wasser:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Wasserschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung.",
+    "Stapelung": "Die bedingte Magische Verteidigung wird wie normale Magische Verteidigung mit anderen getragenen Rüstungsteilen bzw. Schilden addiert.",
+    "Ende der Wirkung": "Solange das Rüstungsteil getragen wird.",
+    "Setzugehörigkeit": null,
+    "Setbonus": null,
+    "Aufwertung / Skalierung": "Werte ändern sich nur durch eine tatsächliche Erhöhung der Itemstufe; die Qualitätsstufe bleibt dabei Gewöhnlich.",
+    "Herstellungsanforderung": "Normale handwerkliche Ausbildung",
+    "Erscheinungsbild": "Eine dunkelblaue Stoffkapuze mit dichter Polsterung an Stirn und Nacken. Der Stoff wirkt selbst bei trockenem Wetter leicht kühl und zeigt an den Säumen wellenförmige Steppnähte."
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Stoffkapuze mit Polsterung |\n| **Slot** | Kopf |\n| **Rüstungsarchetyp** | Leicht |\n| **Qualitätsstufe** | Gewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja |\n| **Physische Verteidigung** | 1 |\n| **Magische Verteidigung** | 1 ausschließlich gegen Wasser; 0 gegen andere magische Schadensarten |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | **Elementarprägung – Wasser:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Wasserschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | – |\n| **Regelwirkung** | **Elementarprägung – Wasser:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Wasserschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung. |\n| **Stapelung** | Die bedingte Magische Verteidigung wird wie normale Magische Verteidigung mit anderen getragenen Rüstungsteilen bzw. Schilden addiert. |\n| **Ende der Wirkung** | Solange das Rüstungsteil getragen wird. |\n| **Setzugehörigkeit** | – |\n| **Setbonus** | – |\n| **Aufwertung / Skalierung** | Werte ändern sich nur durch eine tatsächliche Erhöhung der Itemstufe; die Qualitätsstufe bleibt dabei Gewöhnlich. |\n| **Herstellungsanforderung** | Normale handwerkliche Ausbildung |\n| **Erscheinungsbild** | Eine dunkelblaue Stoffkapuze mit dichter Polsterung an Stirn und Nacken. Der Stoff wirkt selbst bei trockenem Wetter leicht kühl und zeigt an den Säumen wellenförmige Steppnähte. |",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Regentuch",
+      "markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Stoffkapuze mit Polsterung |\n| **Slot** | Kopf |\n| **Rüstungsarchetyp** | Leicht |\n| **Qualitätsstufe** | Gewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja |\n| **Physische Verteidigung** | 1 |\n| **Magische Verteidigung** | 1 ausschließlich gegen Wasser; 0 gegen andere magische Schadensarten |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | **Elementarprägung – Wasser:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Wasserschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | – |\n| **Regelwirkung** | **Elementarprägung – Wasser:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Wasserschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung. |\n| **Stapelung** | Die bedingte Magische Verteidigung wird wie normale Magische Verteidigung mit anderen getragenen Rüstungsteilen bzw. Schilden addiert. |\n| **Ende der Wirkung** | Solange das Rüstungsteil getragen wird. |\n| **Setzugehörigkeit** | – |\n| **Setbonus** | – |\n| **Aufwertung / Skalierung** | Werte ändern sich nur durch eine tatsächliche Erhöhung der Itemstufe; die Qualitätsstufe bleibt dabei Gewöhnlich. |\n| **Herstellungsanforderung** | Normale handwerkliche Ausbildung |\n| **Erscheinungsbild** | Eine dunkelblaue Stoffkapuze mit dichter Polsterung an Stirn und Nacken. Der Stoff wirkt selbst bei trockenem Wetter leicht kühl und zeigt an den Säumen wellenförmige Steppnähte. |",
+      "line_start": 153,
+      "line_end": 183
+    }
+  ],
+  "raw_markdown": "## Regentuch\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Stoffkapuze mit Polsterung |\n| **Slot** | Kopf |\n| **Rüstungsarchetyp** | Leicht |\n| **Qualitätsstufe** | Gewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Ja |\n| **Physische Verteidigung** | 1 |\n| **Magische Verteidigung** | 1 ausschließlich gegen Wasser; 0 gegen andere magische Schadensarten |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | **Elementarprägung – Wasser:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Wasserschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | – |\n| **Regelwirkung** | **Elementarprägung – Wasser:** Dieses Rüstungsteil gewährt 1 Magische Verteidigung ausschließlich gegen Wasserschaden. Die Prägung verursacht keinen Zustand und besitzt keine weitere Wirkung. |\n| **Stapelung** | Die bedingte Magische Verteidigung wird wie normale Magische Verteidigung mit anderen getragenen Rüstungsteilen bzw. Schilden addiert. |\n| **Ende der Wirkung** | Solange das Rüstungsteil getragen wird. |\n| **Setzugehörigkeit** | – |\n| **Setbonus** | – |\n| **Aufwertung / Skalierung** | Werte ändern sich nur durch eine tatsächliche Erhöhung der Itemstufe; die Qualitätsstufe bleibt dabei Gewöhnlich. |\n| **Herstellungsanforderung** | Normale handwerkliche Ausbildung |\n| **Erscheinungsbild** | Eine dunkelblaue Stoffkapuze mit dichter Polsterung an Stirn und Nacken. Der Stoff wirkt selbst bei trockenem Wetter leicht kühl und zeigt an den Säumen wellenförmige Steppnähte. |",
+  "source": {
+    "file": "Rüstungen.md",
+    "document_title": "Ätherfall – 62 gewöhnliche Rüstungen – Itemstufe 1",
+    "line_start": 153,
+    "line_end": 183
+  }
+}

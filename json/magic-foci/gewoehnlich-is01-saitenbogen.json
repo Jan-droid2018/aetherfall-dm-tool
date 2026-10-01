@@ -1,0 +1,163 @@
+{
+  "schema_version": "aetherfall.magic_foci.v1",
+  "id": "gewoehnlich-is01-saitenbogen",
+  "number": 46,
+  "name": "Saitenbogen",
+  "subtitle": null,
+  "display_name": "Saitenbogen",
+  "source_type": "catalog_entry",
+  "item_type": "Magiefokus",
+  "base_focus_type": "Leier",
+  "category": "Klang- und Instrumentenfoki",
+  "quality": "Gewöhnlich",
+  "item_level": 1,
+  "magical": {
+    "raw": "Nein",
+    "value": false
+  },
+  "magic_attack": {
+    "standard": "1W8",
+    "normal": "1W8",
+    "final": null,
+    "effective": "1W8",
+    "dice_terms": [
+      {
+        "raw": "1W8",
+        "count": 1,
+        "sides": 8
+      }
+    ],
+    "flat_numeric_terms": []
+  },
+  "handling": "Zweihändig",
+  "magic_attribute": "Charisma",
+  "weight": "Mittel",
+  "element_binding": {
+    "raw": "Keine",
+    "value": null,
+    "elements": []
+  },
+  "is_elemental": false,
+  "attack_roll": {
+    "raw": "W20 + Charisma-Modifikator + Charisma-Bonus",
+    "dice_terms": [
+      {
+        "raw": "W20",
+        "count": 1,
+        "sides": 20
+      }
+    ]
+  },
+  "core_value_formula": null,
+  "critical_modification": null,
+  "class_binding": {
+    "class_name": null,
+    "raw": null,
+    "playable_by": null,
+    "is_class_focus": false,
+    "is_dm_focus": false
+  },
+  "dm_special_profile": null,
+  "special_properties": null,
+  "active_ability": null,
+  "action_cost": null,
+  "trigger_requirement": null,
+  "costs": null,
+  "usage_limit": null,
+  "effect_range": null,
+  "target_area": null,
+  "duration": null,
+  "saving_throw_dc": null,
+  "effect_calculation": null,
+  "rule_effect": "Der Fokus verwendet einen Magieangriff von 1W8 und ersetzt damit den normalen Grundmagieangriff von 1W4, sofern eine Regel ausdrücklich den Magieangriff verwendet.",
+  "spell_interaction": "Keine Sonderinteraktion. Der Fokus verwendet seinen normalen Magieangriff nur dort, wo eine Regel ausdrücklich den Magieangriff des Fokus verwendet; Zauber mit eigener Schadensformel erhalten den Fokuswürfel nicht zusätzlich.",
+  "stacking": "Keine besondere Stapelwirkung.",
+  "end_condition": null,
+  "upgrade_scaling": "Itemstufenaufwertungen erfolgen nach den allgemeinen Aufwertungsregeln. Auf Itemstufe 1 entsteht keine automatische zusätzliche Eigenschaft oder Magieangriffserhöhung.",
+  "crafting_requirement": "Normale handwerkliche Ausbildung; konkrete Materialien und Verfahren legt die Spielleitung beziehungsweise die Herstellungsmethode fest.",
+  "appearance": "Ein kleiner Buchenholzrahmen mit schlichten Metallsaiten; die beiden Arme sind durch eine dunkle Lederwicklung verstärkt.",
+  "lore": null,
+  "special_rules": {},
+  "formulas": {
+    "all_dice_terms": [
+      {
+        "raw": "1W8",
+        "count": 1,
+        "sides": 8
+      },
+      {
+        "raw": "1W8",
+        "count": 1,
+        "sides": 8
+      },
+      {
+        "raw": "W20",
+        "count": 1,
+        "sides": 20
+      }
+    ]
+  },
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.0",
+    "status": null,
+    "profile": null,
+    "awakening_status": null
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Magiefokus",
+      "Gewöhnlich",
+      "Itemstufe-1"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.0",
+    "fokianzahl": 62,
+    "qualitaet": "Gewöhnlich",
+    "itemstufe": 1,
+    "elementarfoki": 12
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Basisfokusart": "Leier",
+    "Fokuskategorie": "Klang- und Instrumentenfoki",
+    "Qualitätsstufe": "Gewöhnlich",
+    "Itemstufe": "1",
+    "Magisch": "Nein",
+    "Standard-Magieangriff": "1W8",
+    "Magieangriff": "1W8",
+    "Führung": "Zweihändig",
+    "Magieattribut": "Charisma",
+    "Gewicht": "Mittel",
+    "Elementbindung": "Keine",
+    "Angriffswurf": "W20 + Charisma-Modifikator + Charisma-Bonus",
+    "Krit-Modifikation": null,
+    "Besondere Eigenschaften": null,
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": null,
+    "Auslöser / Voraussetzung": null,
+    "Einsatzlimit": null,
+    "Reichweite des Effekts": null,
+    "Ziel / Fläche": null,
+    "Dauer": null,
+    "Rettungswurf / SG": null,
+    "Berechnung des Effekts": null,
+    "Regelwirkung": "Der Fokus verwendet einen Magieangriff von 1W8 und ersetzt damit den normalen Grundmagieangriff von 1W4, sofern eine Regel ausdrücklich den Magieangriff verwendet.",
+    "Zauberinteraktion": "Keine Sonderinteraktion. Der Fokus verwendet seinen normalen Magieangriff nur dort, wo eine Regel ausdrücklich den Magieangriff des Fokus verwendet; Zauber mit eigener Schadensformel erhalten den Fokuswürfel nicht zusätzlich.",
+    "Stapelung": "Keine besondere Stapelwirkung.",
+    "Ende der Wirkung": null,
+    "Aufwertung / Skalierung": "Itemstufenaufwertungen erfolgen nach den allgemeinen Aufwertungsregeln. Auf Itemstufe 1 entsteht keine automatische zusätzliche Eigenschaft oder Magieangriffserhöhung.",
+    "Herstellungsanforderung": "Normale handwerkliche Ausbildung; konkrete Materialien und Verfahren legt die Spielleitung beziehungsweise die Herstellungsmethode fest.",
+    "Erscheinungsbild": "Ein kleiner Buchenholzrahmen mit schlichten Metallsaiten; die beiden Arme sind durch eine dunkle Lederwicklung verstärkt.",
+    "Herkunft / Lore": null
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basisfokusart** | Leier |\n| **Fokuskategorie** | Klang- und Instrumentenfoki |\n| **Qualitätsstufe** | Gewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Standard-Magieangriff** | 1W8 |\n| **Magieangriff** | 1W8 |\n| **Führung** | Zweihändig |\n| **Magieattribut** | Charisma |\n| **Gewicht** | Mittel |\n| **Elementbindung** | Keine |\n| **Angriffswurf** | W20 + Charisma-Modifikator + Charisma-Bonus |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | – |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite des Effekts** | – |\n| **Ziel / Fläche** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | – |\n| **Regelwirkung** | Der Fokus verwendet einen Magieangriff von 1W8 und ersetzt damit den normalen Grundmagieangriff von 1W4, sofern eine Regel ausdrücklich den Magieangriff verwendet. |\n| **Zauberinteraktion** | Keine Sonderinteraktion. Der Fokus verwendet seinen normalen Magieangriff nur dort, wo eine Regel ausdrücklich den Magieangriff des Fokus verwendet; Zauber mit eigener Schadensformel erhalten den Fokuswürfel nicht zusätzlich. |\n| **Stapelung** | Keine besondere Stapelwirkung. |\n| **Ende der Wirkung** | – |\n| **Aufwertung / Skalierung** | Itemstufenaufwertungen erfolgen nach den allgemeinen Aufwertungsregeln. Auf Itemstufe 1 entsteht keine automatische zusätzliche Eigenschaft oder Magieangriffserhöhung. |\n| **Herstellungsanforderung** | Normale handwerkliche Ausbildung; konkrete Materialien und Verfahren legt die Spielleitung beziehungsweise die Herstellungsmethode fest. |\n| **Erscheinungsbild** | Ein kleiner Buchenholzrahmen mit schlichten Metallsaiten; die beiden Arme sind durch eine dunkle Lederwicklung verstärkt. |\n| **Herkunft / Lore** | – |",
+  "sections": [],
+  "raw_markdown": "## 46. Saitenbogen\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basisfokusart** | Leier |\n| **Fokuskategorie** | Klang- und Instrumentenfoki |\n| **Qualitätsstufe** | Gewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Standard-Magieangriff** | 1W8 |\n| **Magieangriff** | 1W8 |\n| **Führung** | Zweihändig |\n| **Magieattribut** | Charisma |\n| **Gewicht** | Mittel |\n| **Elementbindung** | Keine |\n| **Angriffswurf** | W20 + Charisma-Modifikator + Charisma-Bonus |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | – |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite des Effekts** | – |\n| **Ziel / Fläche** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | – |\n| **Regelwirkung** | Der Fokus verwendet einen Magieangriff von 1W8 und ersetzt damit den normalen Grundmagieangriff von 1W4, sofern eine Regel ausdrücklich den Magieangriff verwendet. |\n| **Zauberinteraktion** | Keine Sonderinteraktion. Der Fokus verwendet seinen normalen Magieangriff nur dort, wo eine Regel ausdrücklich den Magieangriff des Fokus verwendet; Zauber mit eigener Schadensformel erhalten den Fokuswürfel nicht zusätzlich. |\n| **Stapelung** | Keine besondere Stapelwirkung. |\n| **Ende der Wirkung** | – |\n| **Aufwertung / Skalierung** | Itemstufenaufwertungen erfolgen nach den allgemeinen Aufwertungsregeln. Auf Itemstufe 1 entsteht keine automatische zusätzliche Eigenschaft oder Magieangriffserhöhung. |\n| **Herstellungsanforderung** | Normale handwerkliche Ausbildung; konkrete Materialien und Verfahren legt die Spielleitung beziehungsweise die Herstellungsmethode fest. |\n| **Erscheinungsbild** | Ein kleiner Buchenholzrahmen mit schlichten Metallsaiten; die beiden Arme sind durch eine dunkle Lederwicklung verstärkt. |\n| **Herkunft / Lore** | – |",
+  "source": {
+    "file": "Magiefoki.md",
+    "document_title": "Ätherfall – 62 gewöhnliche Magiefoki – Itemstufe 1",
+    "line_start": 1763,
+    "line_end": 1798
+  }
+}

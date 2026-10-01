@@ -1,0 +1,674 @@
+{
+  "schema_version": "aetherfall.weapons.v1",
+  "id": "selten-is01-felsanker-der-erste-halt",
+  "number": null,
+  "name": "Felsanker – Der erste Halt",
+  "subtitle": null,
+  "display_name": "Felsanker – Der erste Halt",
+  "source_type": "special_weapon",
+  "item_type": "Waffe",
+  "base_weapon_type": "Streithammer – als übergroßer, gewaltiger Kriegshammer ausgeführt",
+  "category": "Schlagwaffe",
+  "quality": "Selten",
+  "item_level": 1,
+  "magical": {
+    "raw": "Ja",
+    "value": true
+  },
+  "elements": [],
+  "is_elemental": false,
+  "core_dice": {
+    "raw": "1W10 einhändig / 1W12 zweihändig",
+    "dice_terms": [
+      {
+        "raw": "1W10",
+        "count": 1,
+        "sides": 10
+      },
+      {
+        "raw": "1W12",
+        "count": 1,
+        "sides": 12
+      }
+    ]
+  },
+  "handling": "Variabel – einhändig oder zweihändig",
+  "range": "Nah",
+  "damage_type": "Schlag / Stich",
+  "weight": "Schwer; außergewöhnlich massiv und kopflastig. Einhändige Führung ist möglich, bleibt aber sichtbar kraftintensiv.",
+  "attributes": {
+    "attack": "Stärke",
+    "primary_class": null,
+    "secondary_class": null
+  },
+  "formulas": {
+    "attack": "W20 + Stärke-Modifikator + Stärke-Bonus gegen das Ausweichergebnis des Ziels",
+    "damage": {
+      "default": null,
+      "one_handed": "1W10 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus",
+      "two_handed": "1W12 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus"
+    },
+    "core_value": null,
+    "dice_terms": [
+      {
+        "raw": "W20",
+        "count": 1,
+        "sides": 20
+      },
+      {
+        "raw": "1W10",
+        "count": 1,
+        "sides": 10
+      },
+      {
+        "raw": "2W6",
+        "count": 2,
+        "sides": 6
+      },
+      {
+        "raw": "1W12",
+        "count": 1,
+        "sides": 12
+      },
+      {
+        "raw": "2W6",
+        "count": 2,
+        "sides": 6
+      }
+    ]
+  },
+  "critical_modification": null,
+  "class_binding": {
+    "class_name": "Tiefenpanzer",
+    "raw": "Tiefenpanzer",
+    "is_class_weapon": true,
+    "is_dm_weapon": false
+  },
+  "class_resource": null,
+  "special_properties": "Lastkern des ersten Pfeilers",
+  "class_effect": null,
+  "active_ability": "Geleitete Gegenlast",
+  "action_cost": "Keine zusätzliche Aktion; wird nach einem erfolgreichen normalen Waffenangriff ausgelöst",
+  "trigger_requirement": "Du triffst mit Felsanker durch einen normalen Waffenangriff, berührst eine Fläche, die dein Gewicht trägt, und besitzt mindestens 1 Druck.",
+  "costs": "1 Druck",
+  "usage_limit": "1× pro Runde",
+  "effect_range": "2 m",
+  "target_area": "Du oder ein Verbündeter in 2 m",
+  "duration": "Bis zum Beginn deines nächsten Zuges oder bis der Schutz ausgelöst wurde",
+  "saving_throw_dc": null,
+  "effect_calculation": "1W6 + 2 + ⌊(Stärke-Modifikator + Stärke-Bonus) / 2⌋ + ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋",
+  "rule_effect": null,
+  "stacking": "Stapelt nicht mit sich selbst. Betrifft derselbe Schadensfall bereits einen Schutzwert aus einer Tiefenpanzer-Klassenfähigkeit, wird nur der höhere der beiden Schutzwerte verwendet.",
+  "end_condition": "Nach der ersten passenden Schadensreduktion oder zu Beginn deines nächsten Zuges",
+  "upgrade_scaling": "Beide Schadensprofile und die Schutzwirkung werden bei steigender Itemstufe neu auf die jeweilige Itemstufe kalibriert. Die Identität aus variabler Führung, enormer Masse, Drucknutzung, Kraftableitung und Verankerung bleibt erhalten.",
+  "crafting_requirement": "Erfahrener Spezialist für schwere Waffen oder Tiefenpanzer-Ausrüstung; dichte Erze, druckreaktiver Kristall, verstärkter Schaft und ein persönliches Materialstück des späteren Trägers",
+  "appearance": null,
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.2",
+    "classification": null,
+    "dm_performance_profile": null,
+    "status": "Erste Entwicklungsstufe der Klassenwaffe"
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Waffen",
+      "Klassenwaffe",
+      "Tiefenpanzer"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.2",
+    "klasse": "Tiefenpanzer",
+    "waffenanzahl": 1,
+    "qualitaet": "Selten",
+    "itemstufe": 1,
+    "basiswaffenart": "Streithammer",
+    "status": "Erste Entwicklungsstufe der Klassenwaffe"
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Name": "**Felsanker – Der erste Halt**",
+    "Klassenbindung": "Tiefenpanzer",
+    "Basiswaffenart": "Streithammer – als übergroßer, gewaltiger Kriegshammer ausgeführt",
+    "Waffenkategorie": "Schlagwaffe",
+    "Qualitätsstufe": "**Selten**",
+    "Itemstufe": "**1**",
+    "Magisch": "Ja",
+    "Kernwürfel": "**1W10 einhändig / 1W12 zweihändig**",
+    "Führung": "**Variabel – einhändig oder zweihändig**",
+    "Reichweite": "Nah",
+    "Schadensart": "Schlag / Stich",
+    "Gewicht": "**Schwer**; außergewöhnlich massiv und kopflastig. Einhändige Führung ist möglich, bleibt aber sichtbar kraftintensiv.",
+    "Angriffsattribut": "Stärke",
+    "Angriffswurf": "`W20 + Stärke-Modifikator + Stärke-Bonus` gegen das Ausweichergebnis des Ziels",
+    "Schadensformel – einhändig": "`1W10 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus`",
+    "Schadensformel – zweihändig": "`1W12 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus`",
+    "Krit-Modifikation": null,
+    "Besondere Eigenschaft": "**Lastkern des ersten Pfeilers**",
+    "Aktive Fähigkeit": "**Geleitete Gegenlast**",
+    "Aktionskosten": "Keine zusätzliche Aktion; wird nach einem erfolgreichen normalen Waffenangriff ausgelöst",
+    "Auslöser / Voraussetzung": "Du triffst mit Felsanker durch einen normalen Waffenangriff, berührst eine Fläche, die dein Gewicht trägt, und besitzt mindestens 1 Druck.",
+    "Kosten": "**1 Druck**",
+    "Einsatzlimit": "**1× pro Runde**",
+    "Reichweite des Effekts": "2 m",
+    "Ziel / Fläche": "Du oder ein Verbündeter in 2 m",
+    "Dauer": "Bis zum Beginn deines nächsten Zuges oder bis der Schutz ausgelöst wurde",
+    "Rettungswurf / SG": null,
+    "Berechnung des Effekts": "`1W6 + 2 + ⌊(Stärke-Modifikator + Stärke-Bonus) / 2⌋ + ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋`",
+    "Stapelung": "Stapelt nicht mit sich selbst. Betrifft derselbe Schadensfall bereits einen Schutzwert aus einer Tiefenpanzer-Klassenfähigkeit, wird nur der höhere der beiden Schutzwerte verwendet.",
+    "Ende der Wirkung": "Nach der ersten passenden Schadensreduktion oder zu Beginn deines nächsten Zuges",
+    "Aufwertung / Skalierung": "Beide Schadensprofile und die Schutzwirkung werden bei steigender Itemstufe neu auf die jeweilige Itemstufe kalibriert. Die Identität aus variabler Führung, enormer Masse, Drucknutzung, Kraftableitung und Verankerung bleibt erhalten.",
+    "Herstellungsanforderung": "Erfahrener Spezialist für schwere Waffen oder Tiefenpanzer-Ausrüstung; dichte Erze, druckreaktiver Kristall, verstärkter Schaft und ein persönliches Materialstück des späteren Trägers"
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Name** | **Felsanker – Der erste Halt** |\n| **Klassenbindung** | Tiefenpanzer |\n| **Basiswaffenart** | Streithammer – als übergroßer, gewaltiger Kriegshammer ausgeführt |\n| **Waffenkategorie** | Schlagwaffe |\n| **Qualitätsstufe** | **Selten** |\n| **Itemstufe** | **1** |\n| **Magisch** | Ja |\n| **Kernwürfel** | **1W10 einhändig / 1W12 zweihändig** |\n| **Führung** | **Variabel – einhändig oder zweihändig** |\n| **Reichweite** | Nah |\n| **Schadensart** | Schlag / Stich |\n| **Gewicht** | **Schwer**; außergewöhnlich massiv und kopflastig. Einhändige Führung ist möglich, bleibt aber sichtbar kraftintensiv. |\n| **Angriffsattribut** | Stärke |\n| **Angriffswurf** | `W20 + Stärke-Modifikator + Stärke-Bonus` gegen das Ausweichergebnis des Ziels |\n| **Schadensformel – einhändig** | `1W10 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus` |\n| **Schadensformel – zweihändig** | `1W12 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus` |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaft** | **Lastkern des ersten Pfeilers** |\n| **Aktive Fähigkeit** | **Geleitete Gegenlast** |\n| **Aktionskosten** | Keine zusätzliche Aktion; wird nach einem erfolgreichen normalen Waffenangriff ausgelöst |\n| **Auslöser / Voraussetzung** | Du triffst mit Felsanker durch einen normalen Waffenangriff, berührst eine Fläche, die dein Gewicht trägt, und besitzt mindestens 1 Druck. |\n| **Kosten** | **1 Druck** |\n| **Einsatzlimit** | **1× pro Runde** |\n| **Reichweite des Effekts** | 2 m |\n| **Ziel / Fläche** | Du oder ein Verbündeter in 2 m |\n| **Dauer** | Bis zum Beginn deines nächsten Zuges oder bis der Schutz ausgelöst wurde |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | `1W6 + 2 + ⌊(Stärke-Modifikator + Stärke-Bonus) / 2⌋ + ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋` |\n| **Stapelung** | Stapelt nicht mit sich selbst. Betrifft derselbe Schadensfall bereits einen Schutzwert aus einer Tiefenpanzer-Klassenfähigkeit, wird nur der höhere der beiden Schutzwerte verwendet. |\n| **Ende der Wirkung** | Nach der ersten passenden Schadensreduktion oder zu Beginn deines nächsten Zuges |\n| **Aufwertung / Skalierung** | Beide Schadensprofile und die Schutzwirkung werden bei steigender Itemstufe neu auf die jeweilige Itemstufe kalibriert. Die Identität aus variabler Führung, enormer Masse, Drucknutzung, Kraftableitung und Verankerung bleibt erhalten. |\n| **Herstellungsanforderung** | Erfahrener Spezialist für schwere Waffen oder Tiefenpanzer-Ausrüstung; dichte Erze, druckreaktiver Kristall, verstärkter Schaft und ein persönliches Materialstück des späteren Trägers |",
+  "sections": [
+    {
+      "level": 1,
+      "title": "Felsanker – Der erste Halt",
+      "markdown": "> _„Eine Rüstung hält die Wucht. Felsanker gibt ihr Gewicht, Richtung und einen Weg in die Tiefe.“_\n\n> [!important] Klassenwaffe des Tiefenpanzers\n> **Felsanker** ist keine gewöhnliche Fundwaffe und nicht als austauschbarer Ausrüstungsplatz gedacht. Sie ist eine persönliche **Entwicklungswaffe des Tiefenpanzers**, die im Verlauf einer Kampagne verstärkt, umgeschmiedet und schließlich bis in die höchsten Qualitäts- und Itemstufen weiterentwickelt werden kann.\n>\n> Diese Fassung beschreibt ihren **ersten spielbaren Zustand: Selten, Itemstufe 1**.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4280,
+        "line_end": 4290
+      }
+    },
+    {
+      "level": 2,
+      "title": "Grundgedanke",
+      "markdown": "Ein Tiefenpanzer lernt früh, dass Gewalt nicht verschwindet, nur weil sie aufgehalten wurde.\n\nSie muss weitergeleitet werden.\n\nDurch Platte in Strebe. Durch Strebe in Bein. Durch Bein in Sohle. Durch Sohle in den Boden.\n\n**Felsanker** wurde nach genau demselben Gedanken geschaffen.\n\nFelsanker ist bewusst als **gewaltiger Kriegshammer** geschmiedet. Der Hammerkopf ist groß, schwer und tief gelagert; der lange Schaft ist eigentlich für zwei Hände gebaut, kann von einem Tiefenpanzer mit ausreichender Kraft jedoch auch kontrolliert einhändig geführt werden. Die Waffe bleibt dabei sichtbar überdimensioniert: Einhändige Führung macht Felsanker nicht kleiner oder leichter, sondern stellt eine bewusst kraftzehrende Führungsweise dar. Mit beiden Händen kann der Träger Masse, Hebel und Stand wesentlich vollständiger in den Schlag übertragen.\n\nEr ist Waffe, Werkzeug und zusätzlicher Pfeiler zugleich.\n\nDer Tiefenpanzer kann den langen Schaft gegen Boden, Mauerwerk oder eine tragende Struktur setzen und den gesamten Hammer als Verankerung in seine Haltungen einbinden. In **zweihändiger Führung** erfüllt Felsanker dabei ausdrücklich die Voraussetzung von Tiefenpanzer-Fähigkeiten, die eine zweihändige Waffe als Stütze verlangen. Im Angriff entsteht seine Wucht nicht durch Schnelligkeit, sondern durch Masse, kontrollierte Beschleunigung und den festen Stand des Trägers.\n\nFelsanker belohnt daher nicht Geschwindigkeit.\n\nSie belohnt Stand.\n\nSie belohnt Gewicht.\n\nUnd sie belohnt einen Träger, der einen erhaltenen Schlag nicht nur überlebt, sondern entscheidet, wohin dessen Kraft als Nächstes fließt.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4291,
+        "line_end": 4316
+      }
+    },
+    {
+      "level": 1,
+      "title": "Herkunft",
+      "markdown": "Niemand bezeichnet Felsanker als vollendet.\n\nSchon ihre erste Form wurde mit der Erwartung geschmiedet, dass sie eines Tages wieder geöffnet werden müsse.\n\nDer innere Kern des Hammerkopfes besteht aus mehreren Lagen dichten Erzes, wie es Tiefenpanzer seit Generationen für belastete Rüstungsteile verwenden. Zwischen diesen Lagen sitzt ein dunkler, druckempfindlicher Kristall, dessen genaue Herkunft nicht mehr sicher bestimmt werden kann. Seine Reaktion ähnelt jedoch jenen fremdartigen Stoffen, die aus Eidryth geborgen wurden: Unter ruhiger Belastung bleibt er beinahe reglos, bei einem gewaltsamen Impuls verdunkelt er sich und nimmt einen Teil der Erschütterung auf.\n\nDer Kristall ist nicht groß genug, um einen Angriff vollständig zu speichern.\n\nDas wäre auch nicht seine Aufgabe.\n\nEr hält die Wucht nur lange genug fest, damit der Tiefenpanzer sie neu ausrichten kann.\n\nVon dort verlaufen schmale Metalladern durch den Hammerkopf in den Schaft. Sie enden in drei schweren Ringen nahe des Griffes. Wird Druck durch den Hammer geführt, spannen sich diese Ringe hörbar gegeneinander. Das tiefe Knacken gilt unter Tiefenpanzern nicht als Beschädigung, sondern als Zeichen dafür, dass die Kraft ihren vorgesehenen Weg gefunden hat.\n\nDie äußeren Platten des Hammerkopfes sind absichtlich austauschbar.\n\nWenn Felsanker verbessert wird, werden alte Teile nicht einfach entfernt und fortgeworfen. Bewährte Stücke werden in die nächste Schicht übernommen, beschädigte Flächen mit neuen Metallen umschlossen und bedeutende Risse häufig mit Material aus der eigenen Rüstung des Trägers verstärkt.\n\nSo wächst die Waffe auf dieselbe Weise wie ein Tiefenpanzer selbst.\n\nNicht indem ihre Vergangenheit verschwindet.\n\nSondern indem jede überstandene Belastung zu einer weiteren Schicht wird.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4317,
+        "line_end": 4344
+      }
+    },
+    {
+      "level": 1,
+      "title": "Waffenprofil",
+      "markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Name** | **Felsanker – Der erste Halt** |\n| **Klassenbindung** | Tiefenpanzer |\n| **Basiswaffenart** | Streithammer – als übergroßer, gewaltiger Kriegshammer ausgeführt |\n| **Waffenkategorie** | Schlagwaffe |\n| **Qualitätsstufe** | **Selten** |\n| **Itemstufe** | **1** |\n| **Magisch** | Ja |\n| **Kernwürfel** | **1W10 einhändig / 1W12 zweihändig** |\n| **Führung** | **Variabel – einhändig oder zweihändig** |\n| **Reichweite** | Nah |\n| **Schadensart** | Schlag / Stich |\n| **Gewicht** | **Schwer**; außergewöhnlich massiv und kopflastig. Einhändige Führung ist möglich, bleibt aber sichtbar kraftintensiv. |\n| **Angriffsattribut** | Stärke |\n| **Angriffswurf** | `W20 + Stärke-Modifikator + Stärke-Bonus` gegen das Ausweichergebnis des Ziels |\n| **Schadensformel – einhändig** | `1W10 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus` |\n| **Schadensformel – zweihändig** | `1W12 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus` |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaft** | **Lastkern des ersten Pfeilers** |\n| **Aktive Fähigkeit** | **Geleitete Gegenlast** |\n| **Aktionskosten** | Keine zusätzliche Aktion; wird nach einem erfolgreichen normalen Waffenangriff ausgelöst |\n| **Auslöser / Voraussetzung** | Du triffst mit Felsanker durch einen normalen Waffenangriff, berührst eine Fläche, die dein Gewicht trägt, und besitzt mindestens 1 Druck. |\n| **Kosten** | **1 Druck** |\n| **Einsatzlimit** | **1× pro Runde** |\n| **Reichweite des Effekts** | 2 m |\n| **Ziel / Fläche** | Du oder ein Verbündeter in 2 m |\n| **Dauer** | Bis zum Beginn deines nächsten Zuges oder bis der Schutz ausgelöst wurde |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | `1W6 + 2 + ⌊(Stärke-Modifikator + Stärke-Bonus) / 2⌋ + ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋` |\n| **Stapelung** | Stapelt nicht mit sich selbst. Betrifft derselbe Schadensfall bereits einen Schutzwert aus einer Tiefenpanzer-Klassenfähigkeit, wird nur der höhere der beiden Schutzwerte verwendet. |\n| **Ende der Wirkung** | Nach der ersten passenden Schadensreduktion oder zu Beginn deines nächsten Zuges |\n| **Aufwertung / Skalierung** | Beide Schadensprofile und die Schutzwirkung werden bei steigender Itemstufe neu auf die jeweilige Itemstufe kalibriert. Die Identität aus variabler Führung, enormer Masse, Drucknutzung, Kraftableitung und Verankerung bleibt erhalten. |\n| **Herstellungsanforderung** | Erfahrener Spezialist für schwere Waffen oder Tiefenpanzer-Ausrüstung; dichte Erze, druckreaktiver Kristall, verstärkter Schaft und ein persönliches Materialstück des späteren Trägers |\n\n---",
+      "code_blocks": [],
+      "tables": [
+        {
+          "headers": [
+            "Regelpunkt",
+            "Angabe"
+          ],
+          "rows": [
+            [
+              "**Name**",
+              "**Felsanker – Der erste Halt**"
+            ],
+            [
+              "**Klassenbindung**",
+              "Tiefenpanzer"
+            ],
+            [
+              "**Basiswaffenart**",
+              "Streithammer – als übergroßer, gewaltiger Kriegshammer ausgeführt"
+            ],
+            [
+              "**Waffenkategorie**",
+              "Schlagwaffe"
+            ],
+            [
+              "**Qualitätsstufe**",
+              "**Selten**"
+            ],
+            [
+              "**Itemstufe**",
+              "**1**"
+            ],
+            [
+              "**Magisch**",
+              "Ja"
+            ],
+            [
+              "**Kernwürfel**",
+              "**1W10 einhändig / 1W12 zweihändig**"
+            ],
+            [
+              "**Führung**",
+              "**Variabel – einhändig oder zweihändig**"
+            ],
+            [
+              "**Reichweite**",
+              "Nah"
+            ],
+            [
+              "**Schadensart**",
+              "Schlag / Stich"
+            ],
+            [
+              "**Gewicht**",
+              "**Schwer**; außergewöhnlich massiv und kopflastig. Einhändige Führung ist möglich, bleibt aber sichtbar kraftintensiv."
+            ],
+            [
+              "**Angriffsattribut**",
+              "Stärke"
+            ],
+            [
+              "**Angriffswurf**",
+              "`W20 + Stärke-Modifikator + Stärke-Bonus` gegen das Ausweichergebnis des Ziels"
+            ],
+            [
+              "**Schadensformel – einhändig**",
+              "`1W10 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus`"
+            ],
+            [
+              "**Schadensformel – zweihändig**",
+              "`1W12 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus`"
+            ],
+            [
+              "**Krit-Modifikation**",
+              "–"
+            ],
+            [
+              "**Besondere Eigenschaft**",
+              "**Lastkern des ersten Pfeilers**"
+            ],
+            [
+              "**Aktive Fähigkeit**",
+              "**Geleitete Gegenlast**"
+            ],
+            [
+              "**Aktionskosten**",
+              "Keine zusätzliche Aktion; wird nach einem erfolgreichen normalen Waffenangriff ausgelöst"
+            ],
+            [
+              "**Auslöser / Voraussetzung**",
+              "Du triffst mit Felsanker durch einen normalen Waffenangriff, berührst eine Fläche, die dein Gewicht trägt, und besitzt mindestens 1 Druck."
+            ],
+            [
+              "**Kosten**",
+              "**1 Druck**"
+            ],
+            [
+              "**Einsatzlimit**",
+              "**1× pro Runde**"
+            ],
+            [
+              "**Reichweite des Effekts**",
+              "2 m"
+            ],
+            [
+              "**Ziel / Fläche**",
+              "Du oder ein Verbündeter in 2 m"
+            ],
+            [
+              "**Dauer**",
+              "Bis zum Beginn deines nächsten Zuges oder bis der Schutz ausgelöst wurde"
+            ],
+            [
+              "**Rettungswurf / SG**",
+              "–"
+            ],
+            [
+              "**Berechnung des Effekts**",
+              "`1W6 + 2 + ⌊(Stärke-Modifikator + Stärke-Bonus) / 2⌋ + ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋`"
+            ],
+            [
+              "**Stapelung**",
+              "Stapelt nicht mit sich selbst. Betrifft derselbe Schadensfall bereits einen Schutzwert aus einer Tiefenpanzer-Klassenfähigkeit, wird nur der höhere der beiden Schutzwerte verwendet."
+            ],
+            [
+              "**Ende der Wirkung**",
+              "Nach der ersten passenden Schadensreduktion oder zu Beginn deines nächsten Zuges"
+            ],
+            [
+              "**Aufwertung / Skalierung**",
+              "Beide Schadensprofile und die Schutzwirkung werden bei steigender Itemstufe neu auf die jeweilige Itemstufe kalibriert. Die Identität aus variabler Führung, enormer Masse, Drucknutzung, Kraftableitung und Verankerung bleibt erhalten."
+            ],
+            [
+              "**Herstellungsanforderung**",
+              "Erfahrener Spezialist für schwere Waffen oder Tiefenpanzer-Ausrüstung; dichte Erze, druckreaktiver Kristall, verstärkter Schaft und ein persönliches Materialstück des späteren Trägers"
+            ]
+          ],
+          "raw_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Name** | **Felsanker – Der erste Halt** |\n| **Klassenbindung** | Tiefenpanzer |\n| **Basiswaffenart** | Streithammer – als übergroßer, gewaltiger Kriegshammer ausgeführt |\n| **Waffenkategorie** | Schlagwaffe |\n| **Qualitätsstufe** | **Selten** |\n| **Itemstufe** | **1** |\n| **Magisch** | Ja |\n| **Kernwürfel** | **1W10 einhändig / 1W12 zweihändig** |\n| **Führung** | **Variabel – einhändig oder zweihändig** |\n| **Reichweite** | Nah |\n| **Schadensart** | Schlag / Stich |\n| **Gewicht** | **Schwer**; außergewöhnlich massiv und kopflastig. Einhändige Führung ist möglich, bleibt aber sichtbar kraftintensiv. |\n| **Angriffsattribut** | Stärke |\n| **Angriffswurf** | `W20 + Stärke-Modifikator + Stärke-Bonus` gegen das Ausweichergebnis des Ziels |\n| **Schadensformel – einhändig** | `1W10 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus` |\n| **Schadensformel – zweihändig** | `1W12 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus` |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaft** | **Lastkern des ersten Pfeilers** |\n| **Aktive Fähigkeit** | **Geleitete Gegenlast** |\n| **Aktionskosten** | Keine zusätzliche Aktion; wird nach einem erfolgreichen normalen Waffenangriff ausgelöst |\n| **Auslöser / Voraussetzung** | Du triffst mit Felsanker durch einen normalen Waffenangriff, berührst eine Fläche, die dein Gewicht trägt, und besitzt mindestens 1 Druck. |\n| **Kosten** | **1 Druck** |\n| **Einsatzlimit** | **1× pro Runde** |\n| **Reichweite des Effekts** | 2 m |\n| **Ziel / Fläche** | Du oder ein Verbündeter in 2 m |\n| **Dauer** | Bis zum Beginn deines nächsten Zuges oder bis der Schutz ausgelöst wurde |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | `1W6 + 2 + ⌊(Stärke-Modifikator + Stärke-Bonus) / 2⌋ + ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋` |\n| **Stapelung** | Stapelt nicht mit sich selbst. Betrifft derselbe Schadensfall bereits einen Schutzwert aus einer Tiefenpanzer-Klassenfähigkeit, wird nur der höhere der beiden Schutzwerte verwendet. |\n| **Ende der Wirkung** | Nach der ersten passenden Schadensreduktion oder zu Beginn deines nächsten Zuges |\n| **Aufwertung / Skalierung** | Beide Schadensprofile und die Schutzwirkung werden bei steigender Itemstufe neu auf die jeweilige Itemstufe kalibriert. Die Identität aus variabler Führung, enormer Masse, Drucknutzung, Kraftableitung und Verankerung bleibt erhalten. |\n| **Herstellungsanforderung** | Erfahrener Spezialist für schwere Waffen oder Tiefenpanzer-Ausrüstung; dichte Erze, druckreaktiver Kristall, verstärkter Schaft und ein persönliches Materialstück des späteren Trägers |",
+          "source": {
+            "line_start": 4347,
+            "line_end": 4380
+          }
+        }
+      ],
+      "source": {
+        "line_start": 4345,
+        "line_end": 4383
+      }
+    },
+    {
+      "level": 1,
+      "title": "Besondere Eigenschaft – Lastkern des ersten Pfeilers",
+      "markdown": "Im Zentrum von Felsanker liegt ein dunkler Belastungskristall, der nicht wie ein gewöhnlicher Energiespeicher funktioniert.\n\nEr sammelt keine frei verfügbare Macht.\n\nEr hält lediglich einen Teil einer bereits vorhandenen Belastung für einen Augenblick fest und gibt dem Tiefenpanzer dadurch die Möglichkeit, ihren Weg neu festzulegen.\n\nRegeltechnisch besitzt diese Eigenschaft drei Grundsätze:\n\n1. **Felsanker erzeugt keinen eigenen Druck-Pool.** Sie verwendet ausschließlich die Klassenressource **Druck** des Tiefenpanzers.\n2. **Die Waffe umgeht weder Druckmaximum noch Erzeugungsgrenze.** Sie gibt keine zusätzlichen Druckpunkte außerhalb der Klassenregeln.\n3. **Ohne tragfähigen Untergrund kann der Lastkern nicht gezielt ableiten.** Die normale Waffenfunktion bleibt erhalten, die Klassenwirkung **Geleitete Gegenlast** kann jedoch nicht eingesetzt werden.\n\nEin Wesen ohne Zugriff auf die Klassenressource **Druck** kann Felsanker wie einen außergewöhnlich hochwertigen, variabel geführten Kriegshammer verwenden, erhält jedoch keinen Zugriff auf ihre Klassenwirkung.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4384,
+        "line_end": 4401
+      }
+    },
+    {
+      "level": 1,
+      "title": "Klassenwirkung – Geleitete Gegenlast",
+      "markdown": "Wenn ein Tiefenpanzer mit Felsanker trifft, läuft ein Teil des Rückstoßes nicht vollständig in seine Arme zurück.\n\nDer Hammerkopf verdunkelt sich.\n\nDie Metalladern im Schaft spannen sich.\n\nDer Träger öffnet für einen Augenblick eine zweite Kraftbahn.\n\nNach einem erfolgreichen **normalen Waffenangriff** mit Felsanker darfst du **1 Druck** ausgeben. Wähle dich selbst oder einen Verbündeten innerhalb von **2 m**.\n\nBis zum Beginn deines nächsten Zuges wird der **nächste Schaden**, den das gewählte Ziel erleiden würde, nach Treffer und möglichem Krit als direkte Schadensanpassung um folgenden Wert reduziert:\n\n```text\n1W6\n+ 2\n+ ⌊(Stärke-Modifikator + Stärke-Bonus) / 2⌋\n+ ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋\n```\n\nDanach werden Resistenz, Verwundbarkeit und Verteidigung normal angewendet.\n\nDie Wirkung endet unmittelbar nach dieser Reduktion.\n\n**Geleitete Gegenlast kann höchstens einmal pro Runde ausgelöst werden.**\n\nWenn derselbe Schadensfall bereits durch einen Schutzwert einer Tiefenpanzer-Klassenfähigkeit reduziert würde, werden die Werte **nicht addiert**. Verwende ausschließlich den höheren Schutzwert.\n\n> [!note] Zweck der Signatur\n> Felsanker soll dem Tiefenpanzer erlauben, auch in einem Zug mit einem normalen Waffenangriff seine Hüteridentität beizubehalten. Die Waffe ersetzt keine Klassenfähigkeit: Ihre Ableitung ist kleiner, kostet Druck und benötigt zuerst einen erfolgreichen Treffer.\n\n---",
+      "code_blocks": [
+        "1W6\n+ 2\n+ ⌊(Stärke-Modifikator + Stärke-Bonus) / 2⌋\n+ ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋"
+      ],
+      "tables": [],
+      "source": {
+        "line_start": 4402,
+        "line_end": 4435
+      }
+    },
+    {
+      "level": 1,
+      "title": "Variable Führung – Hammer und Pfeiler",
+      "markdown": "Felsanker ist von Anfang an als **gewaltige, variabel geführte Kriegshammerwaffe** gedacht. Seine Masse ist Teil seiner Identität; die Möglichkeit zur einhändigen Führung bedeutet ausdrücklich nicht, dass der Hammer klein oder leicht wäre.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4436,
+        "line_end": 4439
+      }
+    },
+    {
+      "level": 3,
+      "title": "Einhändige Führung",
+      "markdown": "In einer Hand wird Felsanker näher am Schwerpunkt gegriffen und mit kürzeren, stärker kontrollierten Bewegungen geführt. Der Tiefenpanzer kann dadurch die zweite Hand für einen Schild, eine Interaktion oder eine andere zulässige Nutzung freihalten. Der Preis dafür ist das niedrigere einhändige Schadensprofil.\n\n```text\n1W10 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus\n```",
+      "code_blocks": [
+        "1W10 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus"
+      ],
+      "tables": [],
+      "source": {
+        "line_start": 4440,
+        "line_end": 4447
+      }
+    },
+    {
+      "level": 3,
+      "title": "Zweihändige Führung",
+      "markdown": "Mit beiden Händen kann der Träger den langen Schaft vollständig als Hebel nutzen und mehr von Stand, Hüfte, Schulter und Körpergewicht in den Schlag übertragen. Dadurch verwendet Felsanker das höhere zweihändige Schadensprofil.\n\n```text\n1W12 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus\n```\n\nNur in **zweihändiger Führung** erfüllt Felsanker die Voraussetzung von Tiefenpanzer-Fähigkeiten, die ausdrücklich eine **zweihändige Waffe** als Aufstützung oder Verankerung verlangen.\n\nWird der Hammer in eine Haltung eingerammt oder aufgesetzt, verteilt sich die Last über Kopf, Schaft, Arme, Rüstung und Beine bis in den Boden. Im Angriff gilt dasselbe Prinzip in umgekehrter Richtung: Der Träger hebt nicht einfach einen Hammer an – er löst einen Teil seines eigenen Fundaments und setzt ihn gegen das Ziel in Bewegung.\n\n---",
+      "code_blocks": [
+        "1W12 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus"
+      ],
+      "tables": [],
+      "source": {
+        "line_start": 4448,
+        "line_end": 4461
+      }
+    },
+    {
+      "level": 1,
+      "title": "Erscheinungsbild",
+      "markdown": "Felsanker ist ein **gewaltiger Kriegshammer**, dessen Größe schon auf den ersten Blick deutlich macht, dass er nicht für gewöhnliche Kämpfer geschmiedet wurde.\n\nDer Hammerkopf ist breit, tief und aus mehreren massiven Metallschichten aufgebaut. Er wirkt beinahe wie ein tragbarer Abschnitt einer Festungsstütze. Seine Masse sitzt sichtbar weit vor den Händen, sodass jeder Schlag vorbereitet, getragen und mit dem gesamten Körper geführt werden muss.\n\nDer lange Schaft ist vollständig mit dunklen Metallstreben umschlossen und besitzt mehrere deutlich voneinander getrennte Griffzonen. Ein tief liegender Griff nahe dem Hammerkopf ermöglicht die kontrollierte **einhändige Führung**, während die weiter auseinanderliegenden Griffbereiche für die volle **zweihändige Führung** und Verankerung vorgesehen sind. Selbst einhändig wirkt Felsanker nie wie ein kleiner Hammer; der Träger kontrolliert lediglich dieselbe gewaltige Masse mit kürzerem Hebel.\n\nDer Hammerkopf besitzt zwei deutlich unterschiedliche Seiten.\n\nDie erste ist eine breite, nahezu rechteckige Schlagfläche. Mehrere Linien laufen von ihrem Rand zur Mitte und erinnern an die Kraftbahnen einer Tiefenpanzer-Rüstung.\n\nDie zweite Seite endet in einem kurzen, kräftigen Meißeldorn. Er ist nicht fein genug für eine elegante Stichwaffe. Er wirkt eher wie ein Werkzeug, mit dem ein Bergmann eine Fuge öffnet oder ein Tiefenpanzer einen Halt in Stein erzwingt.\n\nZwischen beiden Seiten sitzt der **Lastkern**.\n\nIm Ruhezustand erscheint er dunkelgrau und beinahe undurchsichtig. Wenn Druck durch die Waffe geleitet wird, zieht sich ein matter violettschwarzer Schimmer durch feine Risse im Kristall. Das Licht läuft nicht nach außen, sondern scheinbar tiefer in den Stein hinein.\n\nDrei massive Metallringe umschließen den oberen Schaft.\n\nBei starker Belastung verschieben sie sich um wenige Millimeter gegeneinander.\n\nDas dabei entstehende tiefe Knacken klingt weniger wie eine Waffe und mehr wie eine Stütze in einem Bergwerk, die sich unter Last setzt.\n\nAm unteren Ende befindet sich kein dekorativer Knauf.\n\nDort sitzt eine breite, austauschbare Metallkappe. Sie kann gegen Boden oder Mauerwerk gesetzt werden, ohne den Schaft zu beschädigen. Mit jeder späteren Aufwertung darf diese Kappe durch Material von Orten ersetzt werden, an denen der Tiefenpanzer eine Linie gehalten, einen Einsturz überstanden oder einen Gefährten geschützt hat.\n\nSo wird bereits die äußere Form der Waffe zu einer Chronik.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4462,
+        "line_end": 4493
+      }
+    },
+    {
+      "level": 1,
+      "title": "Warum Felsanker eine Tiefenpanzer-Waffe ist",
+      "markdown": "Felsanker versucht nicht, aus dem Tiefenpanzer einen Vollstrecker zu machen.\n\nSie verstärkt genau das, was die Klasse bereits auszeichnet:\n\n- **Stärke** führt den Schlag und trägt die Hauptlast.\n- **Willenskraft** stabilisiert die kontrollierte Ableitung.\n- **Druck** wird nicht ersetzt, sondern als bestehende Klassenressource genutzt.\n- **tragfähiger Untergrund** bleibt Voraussetzung für die eigentliche Signatur.\n- **variable Führung** erlaubt Schildspiel oder maximale Zweihandwucht, ohne die Identität des gewaltigen Kriegshammers zu verlieren.\n- **zweihändige Verankerung** bleibt der stärkste Stützmodus und erfüllt entsprechende Voraussetzungen von Klassenfähigkeiten.\n- **enorme Masse** und ein langer verstärkter Schaft unterstützen die standfeste Spielweise der Klasse.\n- **Schutz eines Verbündeten** wird mit einem offensiven Zug verbunden, ohne eine vollwertige Klassen-Schutzfähigkeit zu ersetzen.\n- **Gewicht und kontrollierte Bewegung** sind wichtiger als Geschwindigkeit oder hohe Beweglichkeit.\n\nDie Waffe ergänzt damit die Rolle des Tiefenpanzers als Hüter.\n\nSie gibt ihm keinen Grund, seine Klasse anders zu spielen.\n\nSie gibt ihm einen besseren Grund, sie konsequent zu spielen.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4494,
+        "line_end": 4517
+      }
+    },
+    {
+      "level": 1,
+      "title": "Entwicklungsprinzip der Klassenwaffe",
+      "markdown": "Felsanker besitzt bewusst eine Konstruktion, die für jahrzehntelange Veränderung geeignet ist.\n\nIhre erste seltene Form ist nicht das Ende der Waffe.\n\nSie ist ihr Fundament.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4518,
+        "line_end": 4525
+      }
+    },
+    {
+      "level": 2,
+      "title": "Itemstufenentwicklung",
+      "markdown": "Felsanker kann grundsätzlich von **Itemstufe 1 bis Itemstufe 40** verbessert werden.\n\nEine Erhöhung der Itemstufe verändert nicht automatisch ihre Qualitätsstufe.\n\nBei jeder größeren Aufwertung sollen vor allem folgende Teile weiterentwickelt werden:\n\n- Kernschaden der Waffe,\n- Stärke der **Geleiteten Gegenlast**,\n- Belastbarkeit des Lastkerns,\n- Kraftleitung zwischen Hammerkopf und Schaft,\n- Materialien der äußeren Platten,\n- Verankerungskappe am Griffende.\n\nDie sichtbare Schadens- und Schutzformel wird bei neuen Itemstufen **neu kalibriert** und nicht einfach um einen zusätzlichen Würfel pro Stufe erweitert.",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4526,
+        "line_end": 4542
+      }
+    },
+    {
+      "level": 2,
+      "title": "Qualitätsentwicklung",
+      "markdown": null,
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4543,
+        "line_end": 4544
+      }
+    },
+    {
+      "level": 3,
+      "title": "Namensprogression der Klassenwaffe",
+      "markdown": "Felsanker behält über alle Entwicklungsstufen hinweg seinen **Kernnamen**. Mit jeder erreichten Qualitätsstufe verändert sich jedoch der Beiname der Waffe und spiegelt wider, wie weit sie gemeinsam mit ihrem Träger gewachsen ist.\n\n| Qualitätsstufe | Name der Waffe | Bedeutung der Entwicklung |\n|---|---|---|\n| **Selten** | **Felsanker – Der erste Halt** | Die erste vollwertige Form der Klassenwaffe. Der Hammer beginnt, den Stand und die Schutzlehre des Tiefenpanzers in sich aufzunehmen. |\n| **Episch** | **Felsanker – Der tragende Schwur** | Die Waffe ist nicht länger nur Werkzeug und Anker, sondern ein bewusst getragener Schwur, Last für andere mitzutragen. |\n| **Legendär** | **Felsanker – Der unbeugsame Grund** | Felsanker ist zu einem festen Bestandteil der Standhaftigkeit seines Trägers geworden. Was auf ihm ruht, soll nicht weichen. |\n| **Mythisch** | **Felsanker – Das Fundament der Tiefe** | Die vollendete Form der Klassenwaffe. Sie steht nicht mehr nur auf einem Fundament – sie verkörpert selbst den Grund, auf dem der Tiefenpanzer seine Linie hält. |\n\n> [!important] Namensentwicklung\n> Die Namensprogression wird **nur durch eine tatsächliche Qualitätssteigerung** ausgelöst. Eine höhere Itemstufe allein verändert den Namen nicht. Eine seltene Felsanker-Waffe auf Itemstufe 40 heißt daher weiterhin **Felsanker – Der erste Halt**, solange ihre Qualitätsstufe nicht auf Episch erhöht wurde.\n>\n> Trotz wechselndem Beinamen handelt es sich immer um **dieselbe Waffe**. Alte Materialien, Beschädigungen, Reparaturen und persönliche Bestandteile bleiben Teil ihrer Geschichte und werden in die nächste Form übernommen.\n\nEine spätere Erhöhung von **Selten** auf **Episch**, **Legendär** oder schließlich **Mythisch** ist keine normale Itemstufenverbesserung.\n\nSie sollte an bedeutende Ereignisse der Kampagne gebunden werden, beispielsweise:\n\n- Einbau eines Materials aus einer außergewöhnlichen Tiefe,\n- Übernahme eines Stückes aus einer zerstörten Tiefenrüstung,\n- ein bedeutender überstandener Einsturz oder Belagerungskampf,\n- ein besonderer Fund aus Eidryth,\n- eine Neuschmiedung durch einen Meister, der den Lastkern versteht,\n- oder ein Moment, in dem Felsanker eine Belastung übersteht, für die ihre bisherige Form nicht geschaffen war.\n\nBei einer Qualitätssteigerung soll die Waffe **nicht durch eine neue Waffe ersetzt** werden.\n\nDer vorhandene Hammer bleibt erhalten.\n\nNeue Schichten werden um alte gelegt.\n\nDer Lastkern wird erweitert, nicht ausgetauscht.\n\nBeschädigungen können Teil des späteren Designs bleiben.\n\nDamit folgt Felsanker derselben Philosophie wie die Rüstung des Tiefenpanzers:\n\n> **Was gehalten hat, wird nicht verworfen. Es wird zum Fundament der nächsten Schicht.**\n\n---",
+      "code_blocks": [],
+      "tables": [
+        {
+          "headers": [
+            "Qualitätsstufe",
+            "Name der Waffe",
+            "Bedeutung der Entwicklung"
+          ],
+          "rows": [
+            [
+              "**Selten**",
+              "**Felsanker – Der erste Halt**",
+              "Die erste vollwertige Form der Klassenwaffe. Der Hammer beginnt, den Stand und die Schutzlehre des Tiefenpanzers in sich aufzunehmen."
+            ],
+            [
+              "**Episch**",
+              "**Felsanker – Der tragende Schwur**",
+              "Die Waffe ist nicht länger nur Werkzeug und Anker, sondern ein bewusst getragener Schwur, Last für andere mitzutragen."
+            ],
+            [
+              "**Legendär**",
+              "**Felsanker – Der unbeugsame Grund**",
+              "Felsanker ist zu einem festen Bestandteil der Standhaftigkeit seines Trägers geworden. Was auf ihm ruht, soll nicht weichen."
+            ],
+            [
+              "**Mythisch**",
+              "**Felsanker – Das Fundament der Tiefe**",
+              "Die vollendete Form der Klassenwaffe. Sie steht nicht mehr nur auf einem Fundament – sie verkörpert selbst den Grund, auf dem der Tiefenpanzer seine Linie hält."
+            ]
+          ],
+          "raw_markdown": "| Qualitätsstufe | Name der Waffe | Bedeutung der Entwicklung |\n|---|---|---|\n| **Selten** | **Felsanker – Der erste Halt** | Die erste vollwertige Form der Klassenwaffe. Der Hammer beginnt, den Stand und die Schutzlehre des Tiefenpanzers in sich aufzunehmen. |\n| **Episch** | **Felsanker – Der tragende Schwur** | Die Waffe ist nicht länger nur Werkzeug und Anker, sondern ein bewusst getragener Schwur, Last für andere mitzutragen. |\n| **Legendär** | **Felsanker – Der unbeugsame Grund** | Felsanker ist zu einem festen Bestandteil der Standhaftigkeit seines Trägers geworden. Was auf ihm ruht, soll nicht weichen. |\n| **Mythisch** | **Felsanker – Das Fundament der Tiefe** | Die vollendete Form der Klassenwaffe. Sie steht nicht mehr nur auf einem Fundament – sie verkörpert selbst den Grund, auf dem der Tiefenpanzer seine Linie hält. |",
+          "source": {
+            "line_start": 4549,
+            "line_end": 4554
+          }
+        }
+      ],
+      "source": {
+        "line_start": 4545,
+        "line_end": 4587
+      }
+    },
+    {
+      "level": 1,
+      "title": "Identitätsanker für spätere Entwicklungsstufen",
+      "markdown": "Unabhängig davon, wie mächtig Felsanker später wird, sollen folgende Eigenschaften erhalten bleiben:\n\n| Identitätsanker | Muss erhalten bleiben |\n|---|---|\n| **Grundwaffe** | Streithammer / gewaltiger Kriegshammer |\n| **Primärattribut** | Stärke |\n| **Sekundäre Klassenbindung** | Willenskraft |\n| **Klassenressource** | Druck |\n| **Untergrundbezug** | Tragfähiger Boden als Teil der Signatur |\n| **Kampfstil** | Kontrollierte, gewaltige Wucht aus festem Stand statt schneller Schlagfolge |\n| **Führung** | Variabel; einhändig kontrolliert, zweihändig mit vollem Hebel und als Verankerung |\n| **Rolle** | Hüter / Schutz / Standfestigkeit |\n| **Signaturidee** | Belastung aufnehmen, neu ausrichten und in Schutz oder Gegenlast überführen |\n| **Entwicklung** | Bestehende Schichten behalten und weiterbauen statt Waffe ersetzen |\n\nEin späterer mythischer Felsanker darf wesentlich mächtiger sein.\n\nSie soll jedoch niemals zu einer schnellen Duellwaffe, einem reinen Schadensartefakt oder einer beliebigen Elementarwaffe werden.\n\nIhre höchste Form muss noch immer wie dieselbe Waffe wirken, die auf Itemstufe 1 mit einem einfachen Grundsatz begann:\n\n**Jeder Druck muss einen Weg finden.**\n\n---",
+      "code_blocks": [],
+      "tables": [
+        {
+          "headers": [
+            "Identitätsanker",
+            "Muss erhalten bleiben"
+          ],
+          "rows": [
+            [
+              "**Grundwaffe**",
+              "Streithammer / gewaltiger Kriegshammer"
+            ],
+            [
+              "**Primärattribut**",
+              "Stärke"
+            ],
+            [
+              "**Sekundäre Klassenbindung**",
+              "Willenskraft"
+            ],
+            [
+              "**Klassenressource**",
+              "Druck"
+            ],
+            [
+              "**Untergrundbezug**",
+              "Tragfähiger Boden als Teil der Signatur"
+            ],
+            [
+              "**Kampfstil**",
+              "Kontrollierte, gewaltige Wucht aus festem Stand statt schneller Schlagfolge"
+            ],
+            [
+              "**Führung**",
+              "Variabel; einhändig kontrolliert, zweihändig mit vollem Hebel und als Verankerung"
+            ],
+            [
+              "**Rolle**",
+              "Hüter / Schutz / Standfestigkeit"
+            ],
+            [
+              "**Signaturidee**",
+              "Belastung aufnehmen, neu ausrichten und in Schutz oder Gegenlast überführen"
+            ],
+            [
+              "**Entwicklung**",
+              "Bestehende Schichten behalten und weiterbauen statt Waffe ersetzen"
+            ]
+          ],
+          "raw_markdown": "| Identitätsanker | Muss erhalten bleiben |\n|---|---|\n| **Grundwaffe** | Streithammer / gewaltiger Kriegshammer |\n| **Primärattribut** | Stärke |\n| **Sekundäre Klassenbindung** | Willenskraft |\n| **Klassenressource** | Druck |\n| **Untergrundbezug** | Tragfähiger Boden als Teil der Signatur |\n| **Kampfstil** | Kontrollierte, gewaltige Wucht aus festem Stand statt schneller Schlagfolge |\n| **Führung** | Variabel; einhändig kontrolliert, zweihändig mit vollem Hebel und als Verankerung |\n| **Rolle** | Hüter / Schutz / Standfestigkeit |\n| **Signaturidee** | Belastung aufnehmen, neu ausrichten und in Schutz oder Gegenlast überführen |\n| **Entwicklung** | Bestehende Schichten behalten und weiterbauen statt Waffe ersetzen |",
+          "source": {
+            "line_start": 4592,
+            "line_end": 4603
+          }
+        }
+      ],
+      "source": {
+        "line_start": 4588,
+        "line_end": 4614
+      }
+    },
+    {
+      "level": 1,
+      "title": "Spielleiterhinweis – Sonderstatus der Klassenwaffe",
+      "markdown": "> [!warning] Bewusst leicht oberhalb einer normalen seltenen Waffe\n> Der normale Waffenangriff von Felsanker orientiert sich an zwei klar getrennten Führungsprofilen: einhändig am schweren variablen Streithammer und zweihändig am vollen Zweihandhammer-Profil. Ihre zusätzliche Stärke liegt in der klassenspezifischen Schutzwirkung.\n>\n> Diese Schutzwirkung ist bewusst etwas großzügiger als bei einer gewöhnlichen seltenen Beutewaffe, weil Felsanker als dauerhafte Klassenwaffe gedacht ist. Sie wird durch mehrere Bedingungen begrenzt: erfolgreicher Treffer, **1 Druck** Kosten, **1× pro Runde**, tragfähiger Untergrund, kurze Reichweite und keine additive Stapelung mit Tiefenpanzer-Schutzwerten auf denselben Schadensfall.\n>\n> Bei späteren Itemstufen und Qualitätssteigerungen muss die gesamte Waffe erneut gegen die dann aktuelle Zentralbalance geprüft werden.\n\n---",
+      "code_blocks": [],
+      "tables": [],
+      "source": {
+        "line_start": 4615,
+        "line_end": 4625
+      }
+    },
+    {
+      "level": 1,
+      "title": "Kurzfassung",
+      "markdown": "| Punkt | Wert |\n|---|---|\n| **Waffe** | Felsanker – Der erste Halt |\n| **Klasse** | Tiefenpanzer |\n| **Qualität** | Selten |\n| **Itemstufe** | 1 |\n| **Basis** | Streithammer / gewaltiger Kriegshammer |\n| **Kernwürfel** | 1W10 einhändig / 1W12 zweihändig |\n| **Schaden – einhändig** | `1W10 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus` |\n| **Schaden – zweihändig** | `1W12 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus` |\n| **Führung** | Variabel – einhändig / zweihändig |\n| **Signatur** | Nach Treffer 1 Druck ausgeben, um den nächsten Schaden gegen dich oder einen Verbündeten in 2 m zu reduzieren |\n| **Schutz** | `1W6 + 2 + ⌊(Stärke-Modifikator + Stärke-Bonus) / 2⌋ + ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋` |\n| **Limit** | 1× pro Runde |\n| **Langfristiges Ziel** | Dieselbe Waffe bis Itemstufe 40 und über spätere Qualitätssteigerungen zur Best-in-Slot-Klassenwaffe entwickeln |",
+      "code_blocks": [],
+      "tables": [
+        {
+          "headers": [
+            "Punkt",
+            "Wert"
+          ],
+          "rows": [
+            [
+              "**Waffe**",
+              "Felsanker – Der erste Halt"
+            ],
+            [
+              "**Klasse**",
+              "Tiefenpanzer"
+            ],
+            [
+              "**Qualität**",
+              "Selten"
+            ],
+            [
+              "**Itemstufe**",
+              "1"
+            ],
+            [
+              "**Basis**",
+              "Streithammer / gewaltiger Kriegshammer"
+            ],
+            [
+              "**Kernwürfel**",
+              "1W10 einhändig / 1W12 zweihändig"
+            ],
+            [
+              "**Schaden – einhändig**",
+              "`1W10 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus`"
+            ],
+            [
+              "**Schaden – zweihändig**",
+              "`1W12 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus`"
+            ],
+            [
+              "**Führung**",
+              "Variabel – einhändig / zweihändig"
+            ],
+            [
+              "**Signatur**",
+              "Nach Treffer 1 Druck ausgeben, um den nächsten Schaden gegen dich oder einen Verbündeten in 2 m zu reduzieren"
+            ],
+            [
+              "**Schutz**",
+              "`1W6 + 2 + ⌊(Stärke-Modifikator + Stärke-Bonus) / 2⌋ + ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋`"
+            ],
+            [
+              "**Limit**",
+              "1× pro Runde"
+            ],
+            [
+              "**Langfristiges Ziel**",
+              "Dieselbe Waffe bis Itemstufe 40 und über spätere Qualitätssteigerungen zur Best-in-Slot-Klassenwaffe entwickeln"
+            ]
+          ],
+          "raw_markdown": "| Punkt | Wert |\n|---|---|\n| **Waffe** | Felsanker – Der erste Halt |\n| **Klasse** | Tiefenpanzer |\n| **Qualität** | Selten |\n| **Itemstufe** | 1 |\n| **Basis** | Streithammer / gewaltiger Kriegshammer |\n| **Kernwürfel** | 1W10 einhändig / 1W12 zweihändig |\n| **Schaden – einhändig** | `1W10 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus` |\n| **Schaden – zweihändig** | `1W12 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus` |\n| **Führung** | Variabel – einhändig / zweihändig |\n| **Signatur** | Nach Treffer 1 Druck ausgeben, um den nächsten Schaden gegen dich oder einen Verbündeten in 2 m zu reduzieren |\n| **Schutz** | `1W6 + 2 + ⌊(Stärke-Modifikator + Stärke-Bonus) / 2⌋ + ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋` |\n| **Limit** | 1× pro Runde |\n| **Langfristiges Ziel** | Dieselbe Waffe bis Itemstufe 40 und über spätere Qualitätssteigerungen zur Best-in-Slot-Klassenwaffe entwickeln |",
+          "source": {
+            "line_start": 4628,
+            "line_end": 4642
+          }
+        }
+      ],
+      "source": {
+        "line_start": 4626,
+        "line_end": 4643
+      }
+    }
+  ],
+  "raw_markdown": "# Felsanker – Der erste Halt\n\n> _„Eine Rüstung hält die Wucht. Felsanker gibt ihr Gewicht, Richtung und einen Weg in die Tiefe.“_\n\n> [!important] Klassenwaffe des Tiefenpanzers\n> **Felsanker** ist keine gewöhnliche Fundwaffe und nicht als austauschbarer Ausrüstungsplatz gedacht. Sie ist eine persönliche **Entwicklungswaffe des Tiefenpanzers**, die im Verlauf einer Kampagne verstärkt, umgeschmiedet und schließlich bis in die höchsten Qualitäts- und Itemstufen weiterentwickelt werden kann.\n>\n> Diese Fassung beschreibt ihren **ersten spielbaren Zustand: Selten, Itemstufe 1**.\n\n---\n\n## Grundgedanke\n\nEin Tiefenpanzer lernt früh, dass Gewalt nicht verschwindet, nur weil sie aufgehalten wurde.\n\nSie muss weitergeleitet werden.\n\nDurch Platte in Strebe. Durch Strebe in Bein. Durch Bein in Sohle. Durch Sohle in den Boden.\n\n**Felsanker** wurde nach genau demselben Gedanken geschaffen.\n\nFelsanker ist bewusst als **gewaltiger Kriegshammer** geschmiedet. Der Hammerkopf ist groß, schwer und tief gelagert; der lange Schaft ist eigentlich für zwei Hände gebaut, kann von einem Tiefenpanzer mit ausreichender Kraft jedoch auch kontrolliert einhändig geführt werden. Die Waffe bleibt dabei sichtbar überdimensioniert: Einhändige Führung macht Felsanker nicht kleiner oder leichter, sondern stellt eine bewusst kraftzehrende Führungsweise dar. Mit beiden Händen kann der Träger Masse, Hebel und Stand wesentlich vollständiger in den Schlag übertragen.\n\nEr ist Waffe, Werkzeug und zusätzlicher Pfeiler zugleich.\n\nDer Tiefenpanzer kann den langen Schaft gegen Boden, Mauerwerk oder eine tragende Struktur setzen und den gesamten Hammer als Verankerung in seine Haltungen einbinden. In **zweihändiger Führung** erfüllt Felsanker dabei ausdrücklich die Voraussetzung von Tiefenpanzer-Fähigkeiten, die eine zweihändige Waffe als Stütze verlangen. Im Angriff entsteht seine Wucht nicht durch Schnelligkeit, sondern durch Masse, kontrollierte Beschleunigung und den festen Stand des Trägers.\n\nFelsanker belohnt daher nicht Geschwindigkeit.\n\nSie belohnt Stand.\n\nSie belohnt Gewicht.\n\nUnd sie belohnt einen Träger, der einen erhaltenen Schlag nicht nur überlebt, sondern entscheidet, wohin dessen Kraft als Nächstes fließt.\n\n---\n\n# Herkunft\n\nNiemand bezeichnet Felsanker als vollendet.\n\nSchon ihre erste Form wurde mit der Erwartung geschmiedet, dass sie eines Tages wieder geöffnet werden müsse.\n\nDer innere Kern des Hammerkopfes besteht aus mehreren Lagen dichten Erzes, wie es Tiefenpanzer seit Generationen für belastete Rüstungsteile verwenden. Zwischen diesen Lagen sitzt ein dunkler, druckempfindlicher Kristall, dessen genaue Herkunft nicht mehr sicher bestimmt werden kann. Seine Reaktion ähnelt jedoch jenen fremdartigen Stoffen, die aus Eidryth geborgen wurden: Unter ruhiger Belastung bleibt er beinahe reglos, bei einem gewaltsamen Impuls verdunkelt er sich und nimmt einen Teil der Erschütterung auf.\n\nDer Kristall ist nicht groß genug, um einen Angriff vollständig zu speichern.\n\nDas wäre auch nicht seine Aufgabe.\n\nEr hält die Wucht nur lange genug fest, damit der Tiefenpanzer sie neu ausrichten kann.\n\nVon dort verlaufen schmale Metalladern durch den Hammerkopf in den Schaft. Sie enden in drei schweren Ringen nahe des Griffes. Wird Druck durch den Hammer geführt, spannen sich diese Ringe hörbar gegeneinander. Das tiefe Knacken gilt unter Tiefenpanzern nicht als Beschädigung, sondern als Zeichen dafür, dass die Kraft ihren vorgesehenen Weg gefunden hat.\n\nDie äußeren Platten des Hammerkopfes sind absichtlich austauschbar.\n\nWenn Felsanker verbessert wird, werden alte Teile nicht einfach entfernt und fortgeworfen. Bewährte Stücke werden in die nächste Schicht übernommen, beschädigte Flächen mit neuen Metallen umschlossen und bedeutende Risse häufig mit Material aus der eigenen Rüstung des Trägers verstärkt.\n\nSo wächst die Waffe auf dieselbe Weise wie ein Tiefenpanzer selbst.\n\nNicht indem ihre Vergangenheit verschwindet.\n\nSondern indem jede überstandene Belastung zu einer weiteren Schicht wird.\n\n---\n\n# Waffenprofil\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Name** | **Felsanker – Der erste Halt** |\n| **Klassenbindung** | Tiefenpanzer |\n| **Basiswaffenart** | Streithammer – als übergroßer, gewaltiger Kriegshammer ausgeführt |\n| **Waffenkategorie** | Schlagwaffe |\n| **Qualitätsstufe** | **Selten** |\n| **Itemstufe** | **1** |\n| **Magisch** | Ja |\n| **Kernwürfel** | **1W10 einhändig / 1W12 zweihändig** |\n| **Führung** | **Variabel – einhändig oder zweihändig** |\n| **Reichweite** | Nah |\n| **Schadensart** | Schlag / Stich |\n| **Gewicht** | **Schwer**; außergewöhnlich massiv und kopflastig. Einhändige Führung ist möglich, bleibt aber sichtbar kraftintensiv. |\n| **Angriffsattribut** | Stärke |\n| **Angriffswurf** | `W20 + Stärke-Modifikator + Stärke-Bonus` gegen das Ausweichergebnis des Ziels |\n| **Schadensformel – einhändig** | `1W10 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus` |\n| **Schadensformel – zweihändig** | `1W12 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus` |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaft** | **Lastkern des ersten Pfeilers** |\n| **Aktive Fähigkeit** | **Geleitete Gegenlast** |\n| **Aktionskosten** | Keine zusätzliche Aktion; wird nach einem erfolgreichen normalen Waffenangriff ausgelöst |\n| **Auslöser / Voraussetzung** | Du triffst mit Felsanker durch einen normalen Waffenangriff, berührst eine Fläche, die dein Gewicht trägt, und besitzt mindestens 1 Druck. |\n| **Kosten** | **1 Druck** |\n| **Einsatzlimit** | **1× pro Runde** |\n| **Reichweite des Effekts** | 2 m |\n| **Ziel / Fläche** | Du oder ein Verbündeter in 2 m |\n| **Dauer** | Bis zum Beginn deines nächsten Zuges oder bis der Schutz ausgelöst wurde |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | `1W6 + 2 + ⌊(Stärke-Modifikator + Stärke-Bonus) / 2⌋ + ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋` |\n| **Stapelung** | Stapelt nicht mit sich selbst. Betrifft derselbe Schadensfall bereits einen Schutzwert aus einer Tiefenpanzer-Klassenfähigkeit, wird nur der höhere der beiden Schutzwerte verwendet. |\n| **Ende der Wirkung** | Nach der ersten passenden Schadensreduktion oder zu Beginn deines nächsten Zuges |\n| **Aufwertung / Skalierung** | Beide Schadensprofile und die Schutzwirkung werden bei steigender Itemstufe neu auf die jeweilige Itemstufe kalibriert. Die Identität aus variabler Führung, enormer Masse, Drucknutzung, Kraftableitung und Verankerung bleibt erhalten. |\n| **Herstellungsanforderung** | Erfahrener Spezialist für schwere Waffen oder Tiefenpanzer-Ausrüstung; dichte Erze, druckreaktiver Kristall, verstärkter Schaft und ein persönliches Materialstück des späteren Trägers |\n\n---\n\n# Besondere Eigenschaft – Lastkern des ersten Pfeilers\n\nIm Zentrum von Felsanker liegt ein dunkler Belastungskristall, der nicht wie ein gewöhnlicher Energiespeicher funktioniert.\n\nEr sammelt keine frei verfügbare Macht.\n\nEr hält lediglich einen Teil einer bereits vorhandenen Belastung für einen Augenblick fest und gibt dem Tiefenpanzer dadurch die Möglichkeit, ihren Weg neu festzulegen.\n\nRegeltechnisch besitzt diese Eigenschaft drei Grundsätze:\n\n1. **Felsanker erzeugt keinen eigenen Druck-Pool.** Sie verwendet ausschließlich die Klassenressource **Druck** des Tiefenpanzers.\n2. **Die Waffe umgeht weder Druckmaximum noch Erzeugungsgrenze.** Sie gibt keine zusätzlichen Druckpunkte außerhalb der Klassenregeln.\n3. **Ohne tragfähigen Untergrund kann der Lastkern nicht gezielt ableiten.** Die normale Waffenfunktion bleibt erhalten, die Klassenwirkung **Geleitete Gegenlast** kann jedoch nicht eingesetzt werden.\n\nEin Wesen ohne Zugriff auf die Klassenressource **Druck** kann Felsanker wie einen außergewöhnlich hochwertigen, variabel geführten Kriegshammer verwenden, erhält jedoch keinen Zugriff auf ihre Klassenwirkung.\n\n---\n\n# Klassenwirkung – Geleitete Gegenlast\n\nWenn ein Tiefenpanzer mit Felsanker trifft, läuft ein Teil des Rückstoßes nicht vollständig in seine Arme zurück.\n\nDer Hammerkopf verdunkelt sich.\n\nDie Metalladern im Schaft spannen sich.\n\nDer Träger öffnet für einen Augenblick eine zweite Kraftbahn.\n\nNach einem erfolgreichen **normalen Waffenangriff** mit Felsanker darfst du **1 Druck** ausgeben. Wähle dich selbst oder einen Verbündeten innerhalb von **2 m**.\n\nBis zum Beginn deines nächsten Zuges wird der **nächste Schaden**, den das gewählte Ziel erleiden würde, nach Treffer und möglichem Krit als direkte Schadensanpassung um folgenden Wert reduziert:\n\n```text\n1W6\n+ 2\n+ ⌊(Stärke-Modifikator + Stärke-Bonus) / 2⌋\n+ ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋\n```\n\nDanach werden Resistenz, Verwundbarkeit und Verteidigung normal angewendet.\n\nDie Wirkung endet unmittelbar nach dieser Reduktion.\n\n**Geleitete Gegenlast kann höchstens einmal pro Runde ausgelöst werden.**\n\nWenn derselbe Schadensfall bereits durch einen Schutzwert einer Tiefenpanzer-Klassenfähigkeit reduziert würde, werden die Werte **nicht addiert**. Verwende ausschließlich den höheren Schutzwert.\n\n> [!note] Zweck der Signatur\n> Felsanker soll dem Tiefenpanzer erlauben, auch in einem Zug mit einem normalen Waffenangriff seine Hüteridentität beizubehalten. Die Waffe ersetzt keine Klassenfähigkeit: Ihre Ableitung ist kleiner, kostet Druck und benötigt zuerst einen erfolgreichen Treffer.\n\n---\n\n# Variable Führung – Hammer und Pfeiler\n\nFelsanker ist von Anfang an als **gewaltige, variabel geführte Kriegshammerwaffe** gedacht. Seine Masse ist Teil seiner Identität; die Möglichkeit zur einhändigen Führung bedeutet ausdrücklich nicht, dass der Hammer klein oder leicht wäre.\n\n### Einhändige Führung\n\nIn einer Hand wird Felsanker näher am Schwerpunkt gegriffen und mit kürzeren, stärker kontrollierten Bewegungen geführt. Der Tiefenpanzer kann dadurch die zweite Hand für einen Schild, eine Interaktion oder eine andere zulässige Nutzung freihalten. Der Preis dafür ist das niedrigere einhändige Schadensprofil.\n\n```text\n1W10 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus\n```\n\n### Zweihändige Führung\n\nMit beiden Händen kann der Träger den langen Schaft vollständig als Hebel nutzen und mehr von Stand, Hüfte, Schulter und Körpergewicht in den Schlag übertragen. Dadurch verwendet Felsanker das höhere zweihändige Schadensprofil.\n\n```text\n1W12 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus\n```\n\nNur in **zweihändiger Führung** erfüllt Felsanker die Voraussetzung von Tiefenpanzer-Fähigkeiten, die ausdrücklich eine **zweihändige Waffe** als Aufstützung oder Verankerung verlangen.\n\nWird der Hammer in eine Haltung eingerammt oder aufgesetzt, verteilt sich die Last über Kopf, Schaft, Arme, Rüstung und Beine bis in den Boden. Im Angriff gilt dasselbe Prinzip in umgekehrter Richtung: Der Träger hebt nicht einfach einen Hammer an – er löst einen Teil seines eigenen Fundaments und setzt ihn gegen das Ziel in Bewegung.\n\n---\n\n# Erscheinungsbild\n\nFelsanker ist ein **gewaltiger Kriegshammer**, dessen Größe schon auf den ersten Blick deutlich macht, dass er nicht für gewöhnliche Kämpfer geschmiedet wurde.\n\nDer Hammerkopf ist breit, tief und aus mehreren massiven Metallschichten aufgebaut. Er wirkt beinahe wie ein tragbarer Abschnitt einer Festungsstütze. Seine Masse sitzt sichtbar weit vor den Händen, sodass jeder Schlag vorbereitet, getragen und mit dem gesamten Körper geführt werden muss.\n\nDer lange Schaft ist vollständig mit dunklen Metallstreben umschlossen und besitzt mehrere deutlich voneinander getrennte Griffzonen. Ein tief liegender Griff nahe dem Hammerkopf ermöglicht die kontrollierte **einhändige Führung**, während die weiter auseinanderliegenden Griffbereiche für die volle **zweihändige Führung** und Verankerung vorgesehen sind. Selbst einhändig wirkt Felsanker nie wie ein kleiner Hammer; der Träger kontrolliert lediglich dieselbe gewaltige Masse mit kürzerem Hebel.\n\nDer Hammerkopf besitzt zwei deutlich unterschiedliche Seiten.\n\nDie erste ist eine breite, nahezu rechteckige Schlagfläche. Mehrere Linien laufen von ihrem Rand zur Mitte und erinnern an die Kraftbahnen einer Tiefenpanzer-Rüstung.\n\nDie zweite Seite endet in einem kurzen, kräftigen Meißeldorn. Er ist nicht fein genug für eine elegante Stichwaffe. Er wirkt eher wie ein Werkzeug, mit dem ein Bergmann eine Fuge öffnet oder ein Tiefenpanzer einen Halt in Stein erzwingt.\n\nZwischen beiden Seiten sitzt der **Lastkern**.\n\nIm Ruhezustand erscheint er dunkelgrau und beinahe undurchsichtig. Wenn Druck durch die Waffe geleitet wird, zieht sich ein matter violettschwarzer Schimmer durch feine Risse im Kristall. Das Licht läuft nicht nach außen, sondern scheinbar tiefer in den Stein hinein.\n\nDrei massive Metallringe umschließen den oberen Schaft.\n\nBei starker Belastung verschieben sie sich um wenige Millimeter gegeneinander.\n\nDas dabei entstehende tiefe Knacken klingt weniger wie eine Waffe und mehr wie eine Stütze in einem Bergwerk, die sich unter Last setzt.\n\nAm unteren Ende befindet sich kein dekorativer Knauf.\n\nDort sitzt eine breite, austauschbare Metallkappe. Sie kann gegen Boden oder Mauerwerk gesetzt werden, ohne den Schaft zu beschädigen. Mit jeder späteren Aufwertung darf diese Kappe durch Material von Orten ersetzt werden, an denen der Tiefenpanzer eine Linie gehalten, einen Einsturz überstanden oder einen Gefährten geschützt hat.\n\nSo wird bereits die äußere Form der Waffe zu einer Chronik.\n\n---\n\n# Warum Felsanker eine Tiefenpanzer-Waffe ist\n\nFelsanker versucht nicht, aus dem Tiefenpanzer einen Vollstrecker zu machen.\n\nSie verstärkt genau das, was die Klasse bereits auszeichnet:\n\n- **Stärke** führt den Schlag und trägt die Hauptlast.\n- **Willenskraft** stabilisiert die kontrollierte Ableitung.\n- **Druck** wird nicht ersetzt, sondern als bestehende Klassenressource genutzt.\n- **tragfähiger Untergrund** bleibt Voraussetzung für die eigentliche Signatur.\n- **variable Führung** erlaubt Schildspiel oder maximale Zweihandwucht, ohne die Identität des gewaltigen Kriegshammers zu verlieren.\n- **zweihändige Verankerung** bleibt der stärkste Stützmodus und erfüllt entsprechende Voraussetzungen von Klassenfähigkeiten.\n- **enorme Masse** und ein langer verstärkter Schaft unterstützen die standfeste Spielweise der Klasse.\n- **Schutz eines Verbündeten** wird mit einem offensiven Zug verbunden, ohne eine vollwertige Klassen-Schutzfähigkeit zu ersetzen.\n- **Gewicht und kontrollierte Bewegung** sind wichtiger als Geschwindigkeit oder hohe Beweglichkeit.\n\nDie Waffe ergänzt damit die Rolle des Tiefenpanzers als Hüter.\n\nSie gibt ihm keinen Grund, seine Klasse anders zu spielen.\n\nSie gibt ihm einen besseren Grund, sie konsequent zu spielen.\n\n---\n\n# Entwicklungsprinzip der Klassenwaffe\n\nFelsanker besitzt bewusst eine Konstruktion, die für jahrzehntelange Veränderung geeignet ist.\n\nIhre erste seltene Form ist nicht das Ende der Waffe.\n\nSie ist ihr Fundament.\n\n## Itemstufenentwicklung\n\nFelsanker kann grundsätzlich von **Itemstufe 1 bis Itemstufe 40** verbessert werden.\n\nEine Erhöhung der Itemstufe verändert nicht automatisch ihre Qualitätsstufe.\n\nBei jeder größeren Aufwertung sollen vor allem folgende Teile weiterentwickelt werden:\n\n- Kernschaden der Waffe,\n- Stärke der **Geleiteten Gegenlast**,\n- Belastbarkeit des Lastkerns,\n- Kraftleitung zwischen Hammerkopf und Schaft,\n- Materialien der äußeren Platten,\n- Verankerungskappe am Griffende.\n\nDie sichtbare Schadens- und Schutzformel wird bei neuen Itemstufen **neu kalibriert** und nicht einfach um einen zusätzlichen Würfel pro Stufe erweitert.\n\n## Qualitätsentwicklung\n\n### Namensprogression der Klassenwaffe\n\nFelsanker behält über alle Entwicklungsstufen hinweg seinen **Kernnamen**. Mit jeder erreichten Qualitätsstufe verändert sich jedoch der Beiname der Waffe und spiegelt wider, wie weit sie gemeinsam mit ihrem Träger gewachsen ist.\n\n| Qualitätsstufe | Name der Waffe | Bedeutung der Entwicklung |\n|---|---|---|\n| **Selten** | **Felsanker – Der erste Halt** | Die erste vollwertige Form der Klassenwaffe. Der Hammer beginnt, den Stand und die Schutzlehre des Tiefenpanzers in sich aufzunehmen. |\n| **Episch** | **Felsanker – Der tragende Schwur** | Die Waffe ist nicht länger nur Werkzeug und Anker, sondern ein bewusst getragener Schwur, Last für andere mitzutragen. |\n| **Legendär** | **Felsanker – Der unbeugsame Grund** | Felsanker ist zu einem festen Bestandteil der Standhaftigkeit seines Trägers geworden. Was auf ihm ruht, soll nicht weichen. |\n| **Mythisch** | **Felsanker – Das Fundament der Tiefe** | Die vollendete Form der Klassenwaffe. Sie steht nicht mehr nur auf einem Fundament – sie verkörpert selbst den Grund, auf dem der Tiefenpanzer seine Linie hält. |\n\n> [!important] Namensentwicklung\n> Die Namensprogression wird **nur durch eine tatsächliche Qualitätssteigerung** ausgelöst. Eine höhere Itemstufe allein verändert den Namen nicht. Eine seltene Felsanker-Waffe auf Itemstufe 40 heißt daher weiterhin **Felsanker – Der erste Halt**, solange ihre Qualitätsstufe nicht auf Episch erhöht wurde.\n>\n> Trotz wechselndem Beinamen handelt es sich immer um **dieselbe Waffe**. Alte Materialien, Beschädigungen, Reparaturen und persönliche Bestandteile bleiben Teil ihrer Geschichte und werden in die nächste Form übernommen.\n\nEine spätere Erhöhung von **Selten** auf **Episch**, **Legendär** oder schließlich **Mythisch** ist keine normale Itemstufenverbesserung.\n\nSie sollte an bedeutende Ereignisse der Kampagne gebunden werden, beispielsweise:\n\n- Einbau eines Materials aus einer außergewöhnlichen Tiefe,\n- Übernahme eines Stückes aus einer zerstörten Tiefenrüstung,\n- ein bedeutender überstandener Einsturz oder Belagerungskampf,\n- ein besonderer Fund aus Eidryth,\n- eine Neuschmiedung durch einen Meister, der den Lastkern versteht,\n- oder ein Moment, in dem Felsanker eine Belastung übersteht, für die ihre bisherige Form nicht geschaffen war.\n\nBei einer Qualitätssteigerung soll die Waffe **nicht durch eine neue Waffe ersetzt** werden.\n\nDer vorhandene Hammer bleibt erhalten.\n\nNeue Schichten werden um alte gelegt.\n\nDer Lastkern wird erweitert, nicht ausgetauscht.\n\nBeschädigungen können Teil des späteren Designs bleiben.\n\nDamit folgt Felsanker derselben Philosophie wie die Rüstung des Tiefenpanzers:\n\n> **Was gehalten hat, wird nicht verworfen. Es wird zum Fundament der nächsten Schicht.**\n\n---\n\n# Identitätsanker für spätere Entwicklungsstufen\n\nUnabhängig davon, wie mächtig Felsanker später wird, sollen folgende Eigenschaften erhalten bleiben:\n\n| Identitätsanker | Muss erhalten bleiben |\n|---|---|\n| **Grundwaffe** | Streithammer / gewaltiger Kriegshammer |\n| **Primärattribut** | Stärke |\n| **Sekundäre Klassenbindung** | Willenskraft |\n| **Klassenressource** | Druck |\n| **Untergrundbezug** | Tragfähiger Boden als Teil der Signatur |\n| **Kampfstil** | Kontrollierte, gewaltige Wucht aus festem Stand statt schneller Schlagfolge |\n| **Führung** | Variabel; einhändig kontrolliert, zweihändig mit vollem Hebel und als Verankerung |\n| **Rolle** | Hüter / Schutz / Standfestigkeit |\n| **Signaturidee** | Belastung aufnehmen, neu ausrichten und in Schutz oder Gegenlast überführen |\n| **Entwicklung** | Bestehende Schichten behalten und weiterbauen statt Waffe ersetzen |\n\nEin späterer mythischer Felsanker darf wesentlich mächtiger sein.\n\nSie soll jedoch niemals zu einer schnellen Duellwaffe, einem reinen Schadensartefakt oder einer beliebigen Elementarwaffe werden.\n\nIhre höchste Form muss noch immer wie dieselbe Waffe wirken, die auf Itemstufe 1 mit einem einfachen Grundsatz begann:\n\n**Jeder Druck muss einen Weg finden.**\n\n---\n\n# Spielleiterhinweis – Sonderstatus der Klassenwaffe\n\n> [!warning] Bewusst leicht oberhalb einer normalen seltenen Waffe\n> Der normale Waffenangriff von Felsanker orientiert sich an zwei klar getrennten Führungsprofilen: einhändig am schweren variablen Streithammer und zweihändig am vollen Zweihandhammer-Profil. Ihre zusätzliche Stärke liegt in der klassenspezifischen Schutzwirkung.\n>\n> Diese Schutzwirkung ist bewusst etwas großzügiger als bei einer gewöhnlichen seltenen Beutewaffe, weil Felsanker als dauerhafte Klassenwaffe gedacht ist. Sie wird durch mehrere Bedingungen begrenzt: erfolgreicher Treffer, **1 Druck** Kosten, **1× pro Runde**, tragfähiger Untergrund, kurze Reichweite und keine additive Stapelung mit Tiefenpanzer-Schutzwerten auf denselben Schadensfall.\n>\n> Bei späteren Itemstufen und Qualitätssteigerungen muss die gesamte Waffe erneut gegen die dann aktuelle Zentralbalance geprüft werden.\n\n---\n\n# Kurzfassung\n\n| Punkt | Wert |\n|---|---|\n| **Waffe** | Felsanker – Der erste Halt |\n| **Klasse** | Tiefenpanzer |\n| **Qualität** | Selten |\n| **Itemstufe** | 1 |\n| **Basis** | Streithammer / gewaltiger Kriegshammer |\n| **Kernwürfel** | 1W10 einhändig / 1W12 zweihändig |\n| **Schaden – einhändig** | `1W10 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus` |\n| **Schaden – zweihändig** | `1W12 + 2W6 + 5 + Stärke-Modifikator + Stärke-Bonus` |\n| **Führung** | Variabel – einhändig / zweihändig |\n| **Signatur** | Nach Treffer 1 Druck ausgeben, um den nächsten Schaden gegen dich oder einen Verbündeten in 2 m zu reduzieren |\n| **Schutz** | `1W6 + 2 + ⌊(Stärke-Modifikator + Stärke-Bonus) / 2⌋ + ⌊(Willenskraft-Modifikator + Willenskraft-Bonus) / 2⌋` |\n| **Limit** | 1× pro Runde |\n| **Langfristiges Ziel** | Dieselbe Waffe bis Itemstufe 40 und über spätere Qualitätssteigerungen zur Best-in-Slot-Klassenwaffe entwickeln |",
+  "source": {
+    "file": "Waffen.md",
+    "document_title": "Felsanker – Der erste Halt",
+    "line_start": 4280,
+    "line_end": 4643
+  }
+}

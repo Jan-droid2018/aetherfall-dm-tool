@@ -1,0 +1,146 @@
+{
+  "schema_version": "aetherfall.weapons.v1",
+  "id": "ungewoehnlich-is01-weitdorn",
+  "number": 6,
+  "name": "Weitdorn",
+  "subtitle": null,
+  "display_name": "Weitdorn",
+  "source_type": "catalog_entry",
+  "item_type": "Waffe",
+  "base_weapon_type": "Speer",
+  "category": "Speere",
+  "quality": "Ungewöhnlich",
+  "item_level": 1,
+  "magical": {
+    "raw": "Nein",
+    "value": false
+  },
+  "elements": [],
+  "is_elemental": false,
+  "core_dice": {
+    "raw": "1W8",
+    "dice_terms": [
+      {
+        "raw": "1W8",
+        "count": 1,
+        "sides": 8
+      }
+    ]
+  },
+  "handling": "Variabel",
+  "range": "Mittel",
+  "damage_type": "Stich",
+  "weight": "Mittel",
+  "attributes": {
+    "attack": "Stärke",
+    "primary_class": null,
+    "secondary_class": null
+  },
+  "formulas": {
+    "attack": "W20 + Stärke-Modifikator + Stärke-Bonus + 1",
+    "damage": {
+      "default": "1W8 + 12 + Stärke-Modifikator + Stärke-Bonus Stichschaden",
+      "one_handed": null,
+      "two_handed": null
+    },
+    "core_value": null,
+    "dice_terms": [
+      {
+        "raw": "W20",
+        "count": 1,
+        "sides": 20
+      },
+      {
+        "raw": "1W8",
+        "count": 1,
+        "sides": 8
+      }
+    ]
+  },
+  "critical_modification": null,
+  "class_binding": {
+    "class_name": null,
+    "raw": null,
+    "is_class_weapon": false,
+    "is_dm_weapon": false
+  },
+  "class_resource": null,
+  "special_properties": "Feine Balance: Angriffe mit dieser Waffe erhalten +1 auf den Angriffswurf.",
+  "class_effect": null,
+  "active_ability": null,
+  "action_cost": null,
+  "trigger_requirement": null,
+  "costs": null,
+  "usage_limit": null,
+  "effect_range": null,
+  "target_area": null,
+  "duration": null,
+  "saving_throw_dc": null,
+  "effect_calculation": "Angriffsbonus der Eigenschaft = +1.",
+  "rule_effect": "Der Bonus gilt ausschließlich für Angriffswürfe mit dieser Waffe und erhöht nicht den Schaden.",
+  "stacking": "Die besondere Eigenschaft wird pro Angriff nur einmal angewendet und stapelt nicht mit sich selbst.",
+  "end_condition": "Sofort nach der vollständigen Abwicklung des jeweiligen Angriffs.",
+  "upgrade_scaling": "Kann nach den allgemeinen Itemstufenregeln verbessert werden; bei einer höheren Itemstufe werden die skalierenden Waffenwerte neu berechnet. Die hier angegebene ungewöhnliche Eigenschaft wird dadurch nicht automatisch stärker.",
+  "crafting_requirement": "Ausgebildeter oder erfahrener Handwerker",
+  "appearance": "Ein gerader, mannshoher Holzschaft mit einfacher blattförmiger Metallspitze. Er wird ein- oder beidhändig geführt und ragt weit vor den Körper. Die blattförmige Spitze ist schmaler und gerader als üblich; der Schaft wurde entlang seiner ganzen Länge aus einem besonders gleichmäßigen Stück Hartholz gearbeitet. Die Verarbeitung ist sichtbar hochwertiger als bei einer gewöhnlichen Ausführung, bleibt aber funktional und ohne aufwendige Meisterwerksornamentik.",
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.0",
+    "classification": null,
+    "dm_performance_profile": null,
+    "status": null
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Waffen",
+      "Ungewöhnliche Waffen"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.0",
+    "waffenanzahl": 30,
+    "qualitaet": "Ungewöhnlich",
+    "itemstufe": 1
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Basiswaffenart": "Speer",
+    "Waffenkategorie": "Speere",
+    "Qualitätsstufe": "Ungewöhnlich",
+    "Itemstufe": "1",
+    "Magisch": "Nein",
+    "Kernwürfel": "1W8",
+    "Führung": "Variabel",
+    "Reichweite": "Mittel",
+    "Schadensart": "Stich",
+    "Gewicht": "Mittel",
+    "Angriffsattribut": "Stärke",
+    "Angriffswurf": "`W20 + Stärke-Modifikator + Stärke-Bonus + 1`",
+    "Schadensformel": "`1W8 + 12 + Stärke-Modifikator + Stärke-Bonus` Stichschaden",
+    "Krit-Modifikation": null,
+    "Besondere Eigenschaften": "**Feine Balance:** Angriffe mit dieser Waffe erhalten `+1` auf den Angriffswurf.",
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": null,
+    "Auslöser / Voraussetzung": null,
+    "Einsatzlimit": null,
+    "Reichweite des Effekts": null,
+    "Ziel / Fläche": null,
+    "Dauer": null,
+    "Rettungswurf / SG": null,
+    "Berechnung des Effekts": "Angriffsbonus der Eigenschaft = `+1`.",
+    "Regelwirkung": "Der Bonus gilt ausschließlich für Angriffswürfe mit dieser Waffe und erhöht nicht den Schaden.",
+    "Stapelung": "Die besondere Eigenschaft wird pro Angriff nur einmal angewendet und stapelt nicht mit sich selbst.",
+    "Ende der Wirkung": "Sofort nach der vollständigen Abwicklung des jeweiligen Angriffs.",
+    "Aufwertung / Skalierung": "Kann nach den allgemeinen Itemstufenregeln verbessert werden; bei einer höheren Itemstufe werden die skalierenden Waffenwerte neu berechnet. Die hier angegebene ungewöhnliche Eigenschaft wird dadurch nicht automatisch stärker.",
+    "Herstellungsanforderung": "Ausgebildeter oder erfahrener Handwerker",
+    "Erscheinungsbild": "Ein gerader, mannshoher Holzschaft mit einfacher blattförmiger Metallspitze. Er wird ein- oder beidhändig geführt und ragt weit vor den Körper. Die blattförmige Spitze ist schmaler und gerader als üblich; der Schaft wurde entlang seiner ganzen Länge aus einem besonders gleichmäßigen Stück Hartholz gearbeitet. Die Verarbeitung ist sichtbar hochwertiger als bei einer gewöhnlichen Ausführung, bleibt aber funktional und ohne aufwendige Meisterwerksornamentik."
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basiswaffenart** | Speer |\n| **Waffenkategorie** | Speere |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Kernwürfel** | 1W8 |\n| **Führung** | Variabel |\n| **Reichweite** | Mittel |\n| **Schadensart** | Stich |\n| **Gewicht** | Mittel |\n| **Angriffsattribut** | Stärke |\n| **Angriffswurf** | `W20 + Stärke-Modifikator + Stärke-Bonus + 1` |\n| **Schadensformel** | `1W8 + 12 + Stärke-Modifikator + Stärke-Bonus` Stichschaden |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | **Feine Balance:** Angriffe mit dieser Waffe erhalten `+1` auf den Angriffswurf. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite des Effekts** | – |\n| **Ziel / Fläche** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | Angriffsbonus der Eigenschaft = `+1`. |\n| **Regelwirkung** | Der Bonus gilt ausschließlich für Angriffswürfe mit dieser Waffe und erhöht nicht den Schaden. |\n| **Stapelung** | Die besondere Eigenschaft wird pro Angriff nur einmal angewendet und stapelt nicht mit sich selbst. |\n| **Ende der Wirkung** | Sofort nach der vollständigen Abwicklung des jeweiligen Angriffs. |\n| **Aufwertung / Skalierung** | Kann nach den allgemeinen Itemstufenregeln verbessert werden; bei einer höheren Itemstufe werden die skalierenden Waffenwerte neu berechnet. Die hier angegebene ungewöhnliche Eigenschaft wird dadurch nicht automatisch stärker. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker |\n| **Erscheinungsbild** | Ein gerader, mannshoher Holzschaft mit einfacher blattförmiger Metallspitze. Er wird ein- oder beidhändig geführt und ragt weit vor den Körper. Die blattförmige Spitze ist schmaler und gerader als üblich; der Schaft wurde entlang seiner ganzen Länge aus einem besonders gleichmäßigen Stück Hartholz gearbeitet. Die Verarbeitung ist sichtbar hochwertiger als bei einer gewöhnlichen Ausführung, bleibt aber funktional und ohne aufwendige Meisterwerksornamentik. |",
+  "sections": [],
+  "raw_markdown": "## 06 – Weitdorn\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basiswaffenart** | Speer |\n| **Waffenkategorie** | Speere |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Kernwürfel** | 1W8 |\n| **Führung** | Variabel |\n| **Reichweite** | Mittel |\n| **Schadensart** | Stich |\n| **Gewicht** | Mittel |\n| **Angriffsattribut** | Stärke |\n| **Angriffswurf** | `W20 + Stärke-Modifikator + Stärke-Bonus + 1` |\n| **Schadensformel** | `1W8 + 12 + Stärke-Modifikator + Stärke-Bonus` Stichschaden |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | **Feine Balance:** Angriffe mit dieser Waffe erhalten `+1` auf den Angriffswurf. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite des Effekts** | – |\n| **Ziel / Fläche** | – |\n| **Dauer** | – |\n| **Rettungswurf / SG** | – |\n| **Berechnung des Effekts** | Angriffsbonus der Eigenschaft = `+1`. |\n| **Regelwirkung** | Der Bonus gilt ausschließlich für Angriffswürfe mit dieser Waffe und erhöht nicht den Schaden. |\n| **Stapelung** | Die besondere Eigenschaft wird pro Angriff nur einmal angewendet und stapelt nicht mit sich selbst. |\n| **Ende der Wirkung** | Sofort nach der vollständigen Abwicklung des jeweiligen Angriffs. |\n| **Aufwertung / Skalierung** | Kann nach den allgemeinen Itemstufenregeln verbessert werden; bei einer höheren Itemstufe werden die skalierenden Waffenwerte neu berechnet. Die hier angegebene ungewöhnliche Eigenschaft wird dadurch nicht automatisch stärker. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker |\n| **Erscheinungsbild** | Ein gerader, mannshoher Holzschaft mit einfacher blattförmiger Metallspitze. Er wird ein- oder beidhändig geführt und ragt weit vor den Körper. Die blattförmige Spitze ist schmaler und gerader als üblich; der Schaft wurde entlang seiner ganzen Länge aus einem besonders gleichmäßigen Stück Hartholz gearbeitet. Die Verarbeitung ist sichtbar hochwertiger als bei einer gewöhnlichen Ausführung, bleibt aber funktional und ohne aufwendige Meisterwerksornamentik. |\n\n---",
+  "source": {
+    "file": "Waffen.md",
+    "document_title": "Ätherfall – Ungewöhnliche Waffen – Itemstufe 1",
+    "line_start": 2508,
+    "line_end": 2544
+  }
+}

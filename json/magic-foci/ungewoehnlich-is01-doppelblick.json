@@ -1,0 +1,162 @@
+{
+  "schema_version": "aetherfall.magic_foci.v1",
+  "id": "ungewoehnlich-is01-doppelblick",
+  "number": 28,
+  "name": "Doppelblick",
+  "subtitle": null,
+  "display_name": "Doppelblick",
+  "source_type": "catalog_entry",
+  "item_type": "Magiefokus",
+  "base_focus_type": "Fokusspiegel",
+  "category": "Spiegel- und Reflexionsfoki",
+  "quality": "Ungewöhnlich",
+  "item_level": 1,
+  "magical": {
+    "raw": "Nein",
+    "value": false
+  },
+  "magic_attack": {
+    "standard": "1W8",
+    "normal": "1W8",
+    "final": null,
+    "effective": "1W8",
+    "dice_terms": [
+      {
+        "raw": "1W8",
+        "count": 1,
+        "sides": 8
+      }
+    ],
+    "flat_numeric_terms": []
+  },
+  "handling": "Einhändig",
+  "magic_attribute": "Intuition",
+  "weight": "Mittel",
+  "element_binding": {
+    "raw": "Keine",
+    "value": null,
+    "elements": []
+  },
+  "is_elemental": false,
+  "attack_roll": {
+    "raw": "W20 + Magieattribut-Modifikator + Magieattribut-Bonus",
+    "dice_terms": [
+      {
+        "raw": "W20",
+        "count": 1,
+        "sides": 20
+      }
+    ]
+  },
+  "core_value_formula": null,
+  "critical_modification": null,
+  "class_binding": {
+    "class_name": null,
+    "raw": null,
+    "playable_by": null,
+    "is_class_focus": false,
+    "is_dm_focus": false
+  },
+  "dm_special_profile": null,
+  "special_properties": "Saubere Resonanz: Wenn der Magieangriff dieses Fokus gewürfelt wird, darf ein Ergebnis von 1 auf diesem Würfel einmal neu gewürfelt werden; das neue Ergebnis muss verwendet werden.",
+  "active_ability": null,
+  "action_cost": null,
+  "trigger_requirement": "Die jeweilige besondere Eigenschaft gilt nur, wenn ihre beschriebene Fokusregel tatsächlich verwendet wird.",
+  "costs": null,
+  "usage_limit": "Passiv; kein eigenes Aktivierungslimit.",
+  "effect_range": "Keine eigene Reichweitenveränderung.",
+  "target_area": "Wie die verwendete Regel oder der verwendete Zauber.",
+  "duration": "Solange der Fokus ausgerüstet und regelkonform verwendet wird.",
+  "saving_throw_dc": "Keine Veränderung.",
+  "effect_calculation": "Beim Wurf des Fokus-Magieangriffs darf eine gewürfelte 1 einmal neu gewürfelt werden.",
+  "rule_effect": "Die Wiederholung gilt nur für den Fokus-Magieangriff selbst und nicht für Würfel einer eigenen Zauberschadensformel.",
+  "spell_interaction": "Der Fokus-Magieangriff wird nur verwendet, wenn eine Regel ausdrücklich den Magieangriff des Fokus verwendet. Zauber mit eigener Schadensformel erhalten den Fokuswürfel nicht zusätzlich.",
+  "stacking": "Keine eigene Sonderregel zur Stapelung; es gelten die allgemeinen Regeln.",
+  "end_condition": "Sobald der Fokus nicht mehr verwendet oder ausgerüstet wird.",
+  "upgrade_scaling": "Eine spätere Itemstufenaufwertung verändert die Basisfokusart nicht und erzeugt nicht automatisch neue Eigenschaften. Skalierende Werte müssen bei der Aufwertung neu geprüft werden.",
+  "crafting_requirement": "Ausgebildeter oder erfahrener Handwerker mit Erfahrung in der Herstellung von Magiefoki.",
+  "appearance": "Ein stabil gefasster Spiegel mit zwei schmalen konzentrischen Rahmenlinien und griffigem kurzen Griff.",
+  "lore": "Die besonders plane Oberfläche wird von Fokusmachern auf geringe Verzerrung und gleichmäßige Reflexion geprüft.",
+  "special_rules": {},
+  "formulas": {
+    "all_dice_terms": [
+      {
+        "raw": "1W8",
+        "count": 1,
+        "sides": 8
+      },
+      {
+        "raw": "1W8",
+        "count": 1,
+        "sides": 8
+      },
+      {
+        "raw": "W20",
+        "count": 1,
+        "sides": 20
+      }
+    ]
+  },
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.0",
+    "status": null,
+    "profile": null,
+    "awakening_status": null
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Magiefokus",
+      "Ungewöhnlich"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.0",
+    "fokianzahl": 30,
+    "qualitaet": "Ungewöhnlich",
+    "itemstufe": 1,
+    "elementarfoki": 6
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Basisfokusart": "Fokusspiegel",
+    "Fokuskategorie": "Spiegel- und Reflexionsfoki",
+    "Qualitätsstufe": "Ungewöhnlich",
+    "Itemstufe": "1",
+    "Magisch": "Nein",
+    "Standard-Magieangriff": "1W8",
+    "Magieangriff": "1W8",
+    "Führung": "Einhändig",
+    "Magieattribut": "Intuition",
+    "Gewicht": "Mittel",
+    "Elementbindung": "Keine",
+    "Angriffswurf": "W20 + Magieattribut-Modifikator + Magieattribut-Bonus",
+    "Krit-Modifikation": null,
+    "Besondere Eigenschaften": "**Saubere Resonanz:** Wenn der Magieangriff dieses Fokus gewürfelt wird, darf ein Ergebnis von **1** auf diesem Würfel einmal neu gewürfelt werden; das neue Ergebnis muss verwendet werden.",
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": null,
+    "Auslöser / Voraussetzung": "Die jeweilige besondere Eigenschaft gilt nur, wenn ihre beschriebene Fokusregel tatsächlich verwendet wird.",
+    "Einsatzlimit": "Passiv; kein eigenes Aktivierungslimit.",
+    "Reichweite des Effekts": "Keine eigene Reichweitenveränderung.",
+    "Ziel / Fläche": "Wie die verwendete Regel oder der verwendete Zauber.",
+    "Dauer": "Solange der Fokus ausgerüstet und regelkonform verwendet wird.",
+    "Rettungswurf / SG": "Keine Veränderung.",
+    "Berechnung des Effekts": "Beim Wurf des Fokus-Magieangriffs darf eine gewürfelte **1** einmal neu gewürfelt werden.",
+    "Regelwirkung": "Die Wiederholung gilt nur für den Fokus-Magieangriff selbst und nicht für Würfel einer eigenen Zauberschadensformel.",
+    "Zauberinteraktion": "Der Fokus-Magieangriff wird nur verwendet, wenn eine Regel ausdrücklich den Magieangriff des Fokus verwendet. Zauber mit eigener Schadensformel erhalten den Fokuswürfel nicht zusätzlich.",
+    "Stapelung": "Keine eigene Sonderregel zur Stapelung; es gelten die allgemeinen Regeln.",
+    "Ende der Wirkung": "Sobald der Fokus nicht mehr verwendet oder ausgerüstet wird.",
+    "Aufwertung / Skalierung": "Eine spätere Itemstufenaufwertung verändert die Basisfokusart nicht und erzeugt nicht automatisch neue Eigenschaften. Skalierende Werte müssen bei der Aufwertung neu geprüft werden.",
+    "Herstellungsanforderung": "Ausgebildeter oder erfahrener Handwerker mit Erfahrung in der Herstellung von Magiefoki.",
+    "Erscheinungsbild": "Ein stabil gefasster Spiegel mit zwei schmalen konzentrischen Rahmenlinien und griffigem kurzen Griff.",
+    "Herkunft / Lore": "Die besonders plane Oberfläche wird von Fokusmachern auf geringe Verzerrung und gleichmäßige Reflexion geprüft."
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basisfokusart** | Fokusspiegel |\n| **Fokuskategorie** | Spiegel- und Reflexionsfoki |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Standard-Magieangriff** | 1W8 |\n| **Magieangriff** | 1W8 |\n| **Führung** | Einhändig |\n| **Magieattribut** | Intuition |\n| **Gewicht** | Mittel |\n| **Elementbindung** | Keine |\n| **Angriffswurf** | W20 + Magieattribut-Modifikator + Magieattribut-Bonus |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | **Saubere Resonanz:** Wenn der Magieangriff dieses Fokus gewürfelt wird, darf ein Ergebnis von **1** auf diesem Würfel einmal neu gewürfelt werden; das neue Ergebnis muss verwendet werden. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | Die jeweilige besondere Eigenschaft gilt nur, wenn ihre beschriebene Fokusregel tatsächlich verwendet wird. |\n| **Einsatzlimit** | Passiv; kein eigenes Aktivierungslimit. |\n| **Reichweite des Effekts** | Keine eigene Reichweitenveränderung. |\n| **Ziel / Fläche** | Wie die verwendete Regel oder der verwendete Zauber. |\n| **Dauer** | Solange der Fokus ausgerüstet und regelkonform verwendet wird. |\n| **Rettungswurf / SG** | Keine Veränderung. |\n| **Berechnung des Effekts** | Beim Wurf des Fokus-Magieangriffs darf eine gewürfelte **1** einmal neu gewürfelt werden. |\n| **Regelwirkung** | Die Wiederholung gilt nur für den Fokus-Magieangriff selbst und nicht für Würfel einer eigenen Zauberschadensformel. |\n| **Zauberinteraktion** | Der Fokus-Magieangriff wird nur verwendet, wenn eine Regel ausdrücklich den Magieangriff des Fokus verwendet. Zauber mit eigener Schadensformel erhalten den Fokuswürfel nicht zusätzlich. |\n| **Stapelung** | Keine eigene Sonderregel zur Stapelung; es gelten die allgemeinen Regeln. |\n| **Ende der Wirkung** | Sobald der Fokus nicht mehr verwendet oder ausgerüstet wird. |\n| **Aufwertung / Skalierung** | Eine spätere Itemstufenaufwertung verändert die Basisfokusart nicht und erzeugt nicht automatisch neue Eigenschaften. Skalierende Werte müssen bei der Aufwertung neu geprüft werden. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker mit Erfahrung in der Herstellung von Magiefoki. |\n| **Erscheinungsbild** | Ein stabil gefasster Spiegel mit zwei schmalen konzentrischen Rahmenlinien und griffigem kurzen Griff. |\n| **Herkunft / Lore** | Die besonders plane Oberfläche wird von Fokusmachern auf geringe Verzerrung und gleichmäßige Reflexion geprüft. |",
+  "sections": [],
+  "raw_markdown": "## 28. Doppelblick\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basisfokusart** | Fokusspiegel |\n| **Fokuskategorie** | Spiegel- und Reflexionsfoki |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Standard-Magieangriff** | 1W8 |\n| **Magieangriff** | 1W8 |\n| **Führung** | Einhändig |\n| **Magieattribut** | Intuition |\n| **Gewicht** | Mittel |\n| **Elementbindung** | Keine |\n| **Angriffswurf** | W20 + Magieattribut-Modifikator + Magieattribut-Bonus |\n| **Krit-Modifikation** | – |\n| **Besondere Eigenschaften** | **Saubere Resonanz:** Wenn der Magieangriff dieses Fokus gewürfelt wird, darf ein Ergebnis von **1** auf diesem Würfel einmal neu gewürfelt werden; das neue Ergebnis muss verwendet werden. |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | Die jeweilige besondere Eigenschaft gilt nur, wenn ihre beschriebene Fokusregel tatsächlich verwendet wird. |\n| **Einsatzlimit** | Passiv; kein eigenes Aktivierungslimit. |\n| **Reichweite des Effekts** | Keine eigene Reichweitenveränderung. |\n| **Ziel / Fläche** | Wie die verwendete Regel oder der verwendete Zauber. |\n| **Dauer** | Solange der Fokus ausgerüstet und regelkonform verwendet wird. |\n| **Rettungswurf / SG** | Keine Veränderung. |\n| **Berechnung des Effekts** | Beim Wurf des Fokus-Magieangriffs darf eine gewürfelte **1** einmal neu gewürfelt werden. |\n| **Regelwirkung** | Die Wiederholung gilt nur für den Fokus-Magieangriff selbst und nicht für Würfel einer eigenen Zauberschadensformel. |\n| **Zauberinteraktion** | Der Fokus-Magieangriff wird nur verwendet, wenn eine Regel ausdrücklich den Magieangriff des Fokus verwendet. Zauber mit eigener Schadensformel erhalten den Fokuswürfel nicht zusätzlich. |\n| **Stapelung** | Keine eigene Sonderregel zur Stapelung; es gelten die allgemeinen Regeln. |\n| **Ende der Wirkung** | Sobald der Fokus nicht mehr verwendet oder ausgerüstet wird. |\n| **Aufwertung / Skalierung** | Eine spätere Itemstufenaufwertung verändert die Basisfokusart nicht und erzeugt nicht automatisch neue Eigenschaften. Skalierende Werte müssen bei der Aufwertung neu geprüft werden. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker mit Erfahrung in der Herstellung von Magiefoki. |\n| **Erscheinungsbild** | Ein stabil gefasster Spiegel mit zwei schmalen konzentrischen Rahmenlinien und griffigem kurzen Griff. |\n| **Herkunft / Lore** | Die besonders plane Oberfläche wird von Fokusmachern auf geringe Verzerrung und gleichmäßige Reflexion geprüft. |\n\n\n# Stationäre Ritualfoki",
+  "source": {
+    "file": "Magiefoki.md",
+    "document_title": "Ätherfall – 30 ungewöhnliche Magiefoki – Itemstufe 1",
+    "line_start": 3461,
+    "line_end": 3498
+  }
+}

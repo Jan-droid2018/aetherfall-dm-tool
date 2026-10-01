@@ -1,0 +1,136 @@
+{
+  "schema_version": "aetherfall.armors.v1",
+  "id": "ungewoehnlich-is01-leisetritt",
+  "number": 26,
+  "name": "Leisetritt",
+  "display_name": "Leisetritt",
+  "source_type": "catalog_armor",
+  "item_kind": "armor",
+  "base_item": {
+    "armor": "Verstärkte Lederstiefel",
+    "shield": null,
+    "name": "Verstärkte Lederstiefel"
+  },
+  "slot": {
+    "name": "Füße",
+    "key": "feet"
+  },
+  "armor_archetype": "Leicht",
+  "shield_class": null,
+  "quality": "Ungewöhnlich",
+  "item_level": 1,
+  "magical": {
+    "raw": "Nein",
+    "value": false
+  },
+  "defense": {
+    "physical": {
+      "raw": "1",
+      "value": 1
+    },
+    "magical": {
+      "raw": "0",
+      "general": 0,
+      "conditional": []
+    }
+  },
+  "resistances": {
+    "raw": null,
+    "entries": []
+  },
+  "elements": [],
+  "is_elemental": false,
+  "special_properties": null,
+  "passive_property": null,
+  "active_ability": null,
+  "active_block_ability": null,
+  "reaction_trigger": null,
+  "hand_binding_usage": null,
+  "action_cost": null,
+  "trigger_requirement": null,
+  "costs": null,
+  "usage_limit": null,
+  "range_target": "Selbst, solange ausgerüstet",
+  "duration": "Dauerhaft, solange ausgerüstet",
+  "saving_throw_dc": null,
+  "calculation": null,
+  "rule_effect": "Der angegebene Phys-VTD-Wert wird zur gesamten physischen Verteidigung des Trägers addiert und bei gezielten physischen Treffern auf diesen Slot allein verwendet.",
+  "stacking": "Phys- und Mag-VTD werden nach den normalen Rüstungsregeln mit anderen getragenen Rüstungsteilen addiert.",
+  "end_condition": "Sobald das Rüstungsteil abgelegt wird.",
+  "set": {
+    "name": null,
+    "bonus": null
+  },
+  "class_binding": {
+    "raw": null,
+    "class_name": null
+  },
+  "upgrade_scaling": "Bei Erhöhung der Itemstufe werden Phys-VTD, Mag-VTD und gegebenenfalls skalierende Schutzwerte anhand der dann geltenden Zentralbalance neu bestimmt. Die Qualitätsstufe bleibt Ungewöhnlich, solange sie nicht gesondert erhöht wird.",
+  "crafting_requirement": "Ausgebildeter oder erfahrener Handwerker; hochwertige Materialien und sorgfältige Verarbeitung.",
+  "appearance": "Eng anliegende Stiefel aus weichem schwarzem Leder mit verstärkter Zehenkappe und dicker, geräuscharmer Sohle.",
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.0",
+    "classification": null,
+    "dm_exclusive": false,
+    "dm_performance_profile": null
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Rüstung",
+      "Ungewöhnlich",
+      "Itemstufe-1"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.0",
+    "gegenstandsanzahl": 30,
+    "qualitaet": "Ungewöhnlich",
+    "itemstufe": 1
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Basisrüstung": "Verstärkte Lederstiefel",
+    "Slot": "Füße",
+    "Rüstungsarchetyp": "Leicht",
+    "Qualitätsstufe": "Ungewöhnlich",
+    "Itemstufe": "1",
+    "Magisch": "Nein",
+    "Physische Verteidigung": "1",
+    "Magische Verteidigung": "0",
+    "Resistenzen": null,
+    "Besondere Eigenschaften": null,
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": null,
+    "Auslöser / Voraussetzung": null,
+    "Einsatzlimit": null,
+    "Reichweite / Ziel": "Selbst, solange ausgerüstet",
+    "Dauer": "Dauerhaft, solange ausgerüstet",
+    "Rettungswurf / SG": null,
+    "Berechnung": null,
+    "Regelwirkung": "Der angegebene Phys-VTD-Wert wird zur gesamten physischen Verteidigung des Trägers addiert und bei gezielten physischen Treffern auf diesen Slot allein verwendet.",
+    "Stapelung": "Phys- und Mag-VTD werden nach den normalen Rüstungsregeln mit anderen getragenen Rüstungsteilen addiert.",
+    "Ende der Wirkung": "Sobald das Rüstungsteil abgelegt wird.",
+    "Setzugehörigkeit": null,
+    "Setbonus": null,
+    "Aufwertung / Skalierung": "Bei Erhöhung der Itemstufe werden Phys-VTD, Mag-VTD und gegebenenfalls skalierende Schutzwerte anhand der dann geltenden Zentralbalance neu bestimmt. Die Qualitätsstufe bleibt **Ungewöhnlich**, solange sie nicht gesondert erhöht wird.",
+    "Herstellungsanforderung": "Ausgebildeter oder erfahrener Handwerker; hochwertige Materialien und sorgfältige Verarbeitung.",
+    "Erscheinungsbild": "Eng anliegende Stiefel aus weichem schwarzem Leder mit verstärkter Zehenkappe und dicker, geräuscharmer Sohle."
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Verstärkte Lederstiefel |\n| **Slot** | Füße |\n| **Rüstungsarchetyp** | Leicht |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Physische Verteidigung** | 1 |\n| **Magische Verteidigung** | 0 |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | – |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | Selbst, solange ausgerüstet |\n| **Dauer** | Dauerhaft, solange ausgerüstet |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | – |\n| **Regelwirkung** | Der angegebene Phys-VTD-Wert wird zur gesamten physischen Verteidigung des Trägers addiert und bei gezielten physischen Treffern auf diesen Slot allein verwendet. |\n| **Stapelung** | Phys- und Mag-VTD werden nach den normalen Rüstungsregeln mit anderen getragenen Rüstungsteilen addiert. |\n| **Ende der Wirkung** | Sobald das Rüstungsteil abgelegt wird. |\n| **Setzugehörigkeit** | – |\n| **Setbonus** | – |\n| **Aufwertung / Skalierung** | Bei Erhöhung der Itemstufe werden Phys-VTD, Mag-VTD und gegebenenfalls skalierende Schutzwerte anhand der dann geltenden Zentralbalance neu bestimmt. Die Qualitätsstufe bleibt **Ungewöhnlich**, solange sie nicht gesondert erhöht wird. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker; hochwertige Materialien und sorgfältige Verarbeitung. |\n| **Erscheinungsbild** | Eng anliegende Stiefel aus weichem schwarzem Leder mit verstärkter Zehenkappe und dicker, geräuscharmer Sohle. |",
+  "sections": [
+    {
+      "level": 2,
+      "title": "26. Leisetritt",
+      "markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Verstärkte Lederstiefel |\n| **Slot** | Füße |\n| **Rüstungsarchetyp** | Leicht |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Physische Verteidigung** | 1 |\n| **Magische Verteidigung** | 0 |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | – |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | Selbst, solange ausgerüstet |\n| **Dauer** | Dauerhaft, solange ausgerüstet |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | – |\n| **Regelwirkung** | Der angegebene Phys-VTD-Wert wird zur gesamten physischen Verteidigung des Trägers addiert und bei gezielten physischen Treffern auf diesen Slot allein verwendet. |\n| **Stapelung** | Phys- und Mag-VTD werden nach den normalen Rüstungsregeln mit anderen getragenen Rüstungsteilen addiert. |\n| **Ende der Wirkung** | Sobald das Rüstungsteil abgelegt wird. |\n| **Setzugehörigkeit** | – |\n| **Setbonus** | – |\n| **Aufwertung / Skalierung** | Bei Erhöhung der Itemstufe werden Phys-VTD, Mag-VTD und gegebenenfalls skalierende Schutzwerte anhand der dann geltenden Zentralbalance neu bestimmt. Die Qualitätsstufe bleibt **Ungewöhnlich**, solange sie nicht gesondert erhöht wird. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker; hochwertige Materialien und sorgfältige Verarbeitung. |\n| **Erscheinungsbild** | Eng anliegende Stiefel aus weichem schwarzem Leder mit verstärkter Zehenkappe und dicker, geräuscharmer Sohle. |",
+      "line_start": 2825,
+      "line_end": 2855
+    }
+  ],
+  "raw_markdown": "## 26. Leisetritt\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Verstärkte Lederstiefel |\n| **Slot** | Füße |\n| **Rüstungsarchetyp** | Leicht |\n| **Qualitätsstufe** | Ungewöhnlich |\n| **Itemstufe** | 1 |\n| **Magisch** | Nein |\n| **Physische Verteidigung** | 1 |\n| **Magische Verteidigung** | 0 |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | – |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | – |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | Selbst, solange ausgerüstet |\n| **Dauer** | Dauerhaft, solange ausgerüstet |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | – |\n| **Regelwirkung** | Der angegebene Phys-VTD-Wert wird zur gesamten physischen Verteidigung des Trägers addiert und bei gezielten physischen Treffern auf diesen Slot allein verwendet. |\n| **Stapelung** | Phys- und Mag-VTD werden nach den normalen Rüstungsregeln mit anderen getragenen Rüstungsteilen addiert. |\n| **Ende der Wirkung** | Sobald das Rüstungsteil abgelegt wird. |\n| **Setzugehörigkeit** | – |\n| **Setbonus** | – |\n| **Aufwertung / Skalierung** | Bei Erhöhung der Itemstufe werden Phys-VTD, Mag-VTD und gegebenenfalls skalierende Schutzwerte anhand der dann geltenden Zentralbalance neu bestimmt. Die Qualitätsstufe bleibt **Ungewöhnlich**, solange sie nicht gesondert erhöht wird. |\n| **Herstellungsanforderung** | Ausgebildeter oder erfahrener Handwerker; hochwertige Materialien und sorgfältige Verarbeitung. |\n| **Erscheinungsbild** | Eng anliegende Stiefel aus weichem schwarzem Leder mit verstärkter Zehenkappe und dicker, geräuscharmer Sohle. |",
+  "source": {
+    "file": "Rüstungen.md",
+    "document_title": "Ätherfall – 30 ungewöhnliche Rüstungsteile – Itemstufe 1",
+    "line_start": 2825,
+    "line_end": 2855
+  }
+}

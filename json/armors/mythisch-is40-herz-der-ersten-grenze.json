@@ -1,0 +1,155 @@
+{
+  "schema_version": "aetherfall.armors.v1",
+  "id": "mythisch-is40-herz-der-ersten-grenze",
+  "number": 1,
+  "name": "Herz der Ersten Grenze",
+  "display_name": "Herz der Ersten Grenze",
+  "source_type": "set_piece",
+  "item_kind": "armor",
+  "base_item": {
+    "armor": "Halbplattenrüstung",
+    "shield": null,
+    "name": "Halbplattenrüstung"
+  },
+  "slot": {
+    "name": "Brust",
+    "key": "chest"
+  },
+  "armor_archetype": "Spezial – Konvergenzrüstung",
+  "shield_class": null,
+  "quality": "Mythisch",
+  "item_level": 40,
+  "magical": {
+    "raw": "Ja",
+    "value": true
+  },
+  "defense": {
+    "physical": {
+      "raw": "17",
+      "value": 17
+    },
+    "magical": {
+      "raw": "12",
+      "general": 12,
+      "conditional": []
+    }
+  },
+  "resistances": {
+    "raw": null,
+    "entries": []
+  },
+  "elements": [],
+  "is_elemental": false,
+  "special_properties": "Trägerbindung – Vermächtnis der Zwei; Bestandteil des Siegels der Nicht-Krone; trägt den stabilisierenden Anker der Prägung des Cosmos",
+  "passive_property": null,
+  "active_ability": null,
+  "active_block_ability": null,
+  "reaction_trigger": null,
+  "hand_binding_usage": null,
+  "action_cost": null,
+  "trigger_requirement": "Funktionale Aktivierung nur durch das Ursprungsvermächtnis",
+  "costs": null,
+  "usage_limit": null,
+  "range_target": "Selbst",
+  "duration": "Solange getragen",
+  "saving_throw_dc": null,
+  "calculation": "Phys-VTD 17; Mag-VTD 12",
+  "rule_effect": "Die Verteidigungswerte werden nach den normalen Rüstungsregeln zur Gesamtverteidigung addiert. Die mythischen Seteffekte funktionieren nur bei vollständig aktiviertem Vierer-Set.",
+  "stacking": "Normale Rüstungsstapelung; gleichnamige Seteffekte existieren nur einmal.",
+  "end_condition": "Beim Ablegen oder Verlust der Klassenbindung",
+  "set": {
+    "name": "Harnisch der Ungekrönten Konvergenz",
+    "bonus": "Teil von Prägung der Zwei und Letztes Geschenk der Ungekrönten"
+  },
+  "class_binding": {
+    "raw": "Ursprungsvermächtnis",
+    "class_name": "Ursprungsvermächtnis"
+  },
+  "upgrade_scaling": "Itemstufe 40 ist erreicht. Eine weitere reguläre Itemstufensteigerung ist nicht möglich; die Qualitätsstufe bleibt Mythisch.",
+  "crafting_requirement": "Nicht normal reproduzierbar. Reparatur oder Aufwertung erfordert einen außergewöhnlichen Meister, einzigartige Materialien und die aktive Resonanz des gebundenen göttlichen Kerns.",
+  "appearance": "Eine körpernahe Halbplattenrüstung, deren feste Partien in präzisen, fast sternkartenartigen Linien aufeinander treffen. Zwischen ihnen liegen flexible Flächen, die nicht vernäht wirken, sondern wie durch eine unsichtbare Ordnung zusammengehalten werden. Die sichtbare Form passt sich vollständig an Körperbau und Wesenart des Trägers an.",
+  "balance": {
+    "version": "Ätherfall-Zentralbalance-1.2",
+    "classification": "Balance 1.0 – DM-Sonderprofil",
+    "dm_exclusive": true,
+    "dm_performance_profile": "Ursprungsvermächtnis-DM-Rüstungsbudget-1.0"
+  },
+  "metadata": {
+    "tags": [
+      "Ätherfall",
+      "Ausrüstung",
+      "Rüstung",
+      "Rüstungsset",
+      "Mythisch",
+      "Ursprungsvermächtnis",
+      "Cosmos",
+      "Chaos",
+      "DM-Klasse"
+    ],
+    "aliases": [
+      "Ungekrönte Konvergenz",
+      "Harnisch der Zwei"
+    ],
+    "balance_version": "Ätherfall-Zentralbalance-1.2",
+    "gegenstandsanzahl": 4,
+    "setname": "Harnisch der Ungekrönten Konvergenz",
+    "qualitaet": "Mythisch",
+    "itemstufe": 40,
+    "klasse": "Ursprungsvermächtnis",
+    "dm_exklusiv": true,
+    "dm_leistungsprofil": "Ursprungsvermächtnis-DM-Rüstungsbudget-1.0",
+    "slots": [
+      "Brust",
+      "Hände",
+      "Beine",
+      "Füße"
+    ],
+    "status": "Balance 1.0 – DM-Sonderprofil"
+  },
+  "extra_fields": {},
+  "raw_fields": {
+    "Basisrüstung": "Halbplattenrüstung",
+    "Slot": "Brust",
+    "Rüstungsarchetyp": "Spezial – Konvergenzrüstung",
+    "Qualitätsstufe": "Mythisch",
+    "Itemstufe": "40",
+    "Magisch": "Ja",
+    "Physische Verteidigung": "**17**",
+    "Magische Verteidigung": "**12**",
+    "Resistenzen": null,
+    "Besondere Eigenschaften": "**Trägerbindung – Vermächtnis der Zwei**; Bestandteil des **Siegels der Nicht-Krone**; trägt den stabilisierenden Anker der **Prägung des Cosmos**",
+    "Aktive Fähigkeit": null,
+    "Aktionskosten": null,
+    "Auslöser / Voraussetzung": "Funktionale Aktivierung nur durch das Ursprungsvermächtnis",
+    "Einsatzlimit": null,
+    "Reichweite / Ziel": "Selbst",
+    "Dauer": "Solange getragen",
+    "Rettungswurf / SG": null,
+    "Berechnung": "Phys-VTD 17; Mag-VTD 12",
+    "Regelwirkung": "Die Verteidigungswerte werden nach den normalen Rüstungsregeln zur Gesamtverteidigung addiert. Die mythischen Seteffekte funktionieren nur bei vollständig aktiviertem Vierer-Set.",
+    "Stapelung": "Normale Rüstungsstapelung; gleichnamige Seteffekte existieren nur einmal.",
+    "Ende der Wirkung": "Beim Ablegen oder Verlust der Klassenbindung",
+    "Setzugehörigkeit": "Harnisch der Ungekrönten Konvergenz",
+    "Setbonus": "Teil von **Prägung der Zwei** und **Letztes Geschenk der Ungekrönten**",
+    "Aufwertung / Skalierung": "**Itemstufe 40 ist erreicht.** Eine weitere reguläre Itemstufensteigerung ist nicht möglich; die Qualitätsstufe bleibt Mythisch.",
+    "Herstellungsanforderung": "Nicht normal reproduzierbar. Reparatur oder Aufwertung erfordert einen außergewöhnlichen Meister, einzigartige Materialien und die aktive Resonanz des gebundenen göttlichen Kerns.",
+    "Erscheinungsbild": "Eine körpernahe Halbplattenrüstung, deren feste Partien in präzisen, fast sternkartenartigen Linien aufeinander treffen. Zwischen ihnen liegen flexible Flächen, die nicht vernäht wirken, sondern wie durch eine unsichtbare Ordnung zusammengehalten werden. Die sichtbare Form passt sich vollständig an Körperbau und Wesenart des Trägers an."
+  },
+  "raw_profile_table_markdown": "| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Halbplattenrüstung |\n| **Slot** | Brust |\n| **Rüstungsarchetyp** | Spezial – Konvergenzrüstung |\n| **Qualitätsstufe** | Mythisch |\n| **Itemstufe** | 40 |\n| **Magisch** | Ja |\n| **Physische Verteidigung** | **17** |\n| **Magische Verteidigung** | **12** |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | **Trägerbindung – Vermächtnis der Zwei**; Bestandteil des **Siegels der Nicht-Krone**; trägt den stabilisierenden Anker der **Prägung des Cosmos** |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | Funktionale Aktivierung nur durch das Ursprungsvermächtnis |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | Selbst |\n| **Dauer** | Solange getragen |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | Phys-VTD 17; Mag-VTD 12 |\n| **Regelwirkung** | Die Verteidigungswerte werden nach den normalen Rüstungsregeln zur Gesamtverteidigung addiert. Die mythischen Seteffekte funktionieren nur bei vollständig aktiviertem Vierer-Set. |\n| **Stapelung** | Normale Rüstungsstapelung; gleichnamige Seteffekte existieren nur einmal. |\n| **Ende der Wirkung** | Beim Ablegen oder Verlust der Klassenbindung |\n| **Setzugehörigkeit** | Harnisch der Ungekrönten Konvergenz |\n| **Setbonus** | Teil von **Prägung der Zwei** und **Letztes Geschenk der Ungekrönten** |\n| **Aufwertung / Skalierung** | **Itemstufe 40 ist erreicht.** Eine weitere reguläre Itemstufensteigerung ist nicht möglich; die Qualitätsstufe bleibt Mythisch. |\n| **Herstellungsanforderung** | Nicht normal reproduzierbar. Reparatur oder Aufwertung erfordert einen außergewöhnlichen Meister, einzigartige Materialien und die aktive Resonanz des gebundenen göttlichen Kerns. |\n| **Erscheinungsbild** | Eine körpernahe Halbplattenrüstung, deren feste Partien in präzisen, fast sternkartenartigen Linien aufeinander treffen. Zwischen ihnen liegen flexible Flächen, die nicht vernäht wirken, sondern wie durch eine unsichtbare Ordnung zusammengehalten werden. Die sichtbare Form passt sich vollständig an Körperbau und Wesenart des Trägers an. |",
+  "sections": [
+    {
+      "level": 1,
+      "title": "01. Herz der Ersten Grenze",
+      "markdown": "Das **Herz der Ersten Grenze** ist der zentrale Anker des Harnischs. Seine Platten folgen keiner gewöhnlichen Schmiedelogik. Starre Segmente liegen neben Bereichen, die sich wie dichtes Gewebe bewegen. Jede Kante endet dort, wo Beweglichkeit erhalten bleiben muss.\n\nIn seiner göttlichen Prägung trägt dieses Relikt vor allem Cosmos' Anteil: Nicht Herrschaft und nicht starres Gesetz, sondern die Fähigkeit, einer Form lange genug Bestand zu geben, damit sie Bedeutung tragen kann.\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Halbplattenrüstung |\n| **Slot** | Brust |\n| **Rüstungsarchetyp** | Spezial – Konvergenzrüstung |\n| **Qualitätsstufe** | Mythisch |\n| **Itemstufe** | 40 |\n| **Magisch** | Ja |\n| **Physische Verteidigung** | **17** |\n| **Magische Verteidigung** | **12** |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | **Trägerbindung – Vermächtnis der Zwei**; Bestandteil des **Siegels der Nicht-Krone**; trägt den stabilisierenden Anker der **Prägung des Cosmos** |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | Funktionale Aktivierung nur durch das Ursprungsvermächtnis |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | Selbst |\n| **Dauer** | Solange getragen |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | Phys-VTD 17; Mag-VTD 12 |\n| **Regelwirkung** | Die Verteidigungswerte werden nach den normalen Rüstungsregeln zur Gesamtverteidigung addiert. Die mythischen Seteffekte funktionieren nur bei vollständig aktiviertem Vierer-Set. |\n| **Stapelung** | Normale Rüstungsstapelung; gleichnamige Seteffekte existieren nur einmal. |\n| **Ende der Wirkung** | Beim Ablegen oder Verlust der Klassenbindung |\n| **Setzugehörigkeit** | Harnisch der Ungekrönten Konvergenz |\n| **Setbonus** | Teil von **Prägung der Zwei** und **Letztes Geschenk der Ungekrönten** |\n| **Aufwertung / Skalierung** | **Itemstufe 40 ist erreicht.** Eine weitere reguläre Itemstufensteigerung ist nicht möglich; die Qualitätsstufe bleibt Mythisch. |\n| **Herstellungsanforderung** | Nicht normal reproduzierbar. Reparatur oder Aufwertung erfordert einen außergewöhnlichen Meister, einzigartige Materialien und die aktive Resonanz des gebundenen göttlichen Kerns. |\n| **Erscheinungsbild** | Eine körpernahe Halbplattenrüstung, deren feste Partien in präzisen, fast sternkartenartigen Linien aufeinander treffen. Zwischen ihnen liegen flexible Flächen, die nicht vernäht wirken, sondern wie durch eine unsichtbare Ordnung zusammengehalten werden. Die sichtbare Form passt sich vollständig an Körperbau und Wesenart des Trägers an. |\n\n---",
+      "line_start": 3237,
+      "line_end": 3273
+    }
+  ],
+  "raw_markdown": "# 01. Herz der Ersten Grenze\n\nDas **Herz der Ersten Grenze** ist der zentrale Anker des Harnischs. Seine Platten folgen keiner gewöhnlichen Schmiedelogik. Starre Segmente liegen neben Bereichen, die sich wie dichtes Gewebe bewegen. Jede Kante endet dort, wo Beweglichkeit erhalten bleiben muss.\n\nIn seiner göttlichen Prägung trägt dieses Relikt vor allem Cosmos' Anteil: Nicht Herrschaft und nicht starres Gesetz, sondern die Fähigkeit, einer Form lange genug Bestand zu geben, damit sie Bedeutung tragen kann.\n\n| Regelpunkt | Angabe |\n|---|---|\n| **Basisrüstung** | Halbplattenrüstung |\n| **Slot** | Brust |\n| **Rüstungsarchetyp** | Spezial – Konvergenzrüstung |\n| **Qualitätsstufe** | Mythisch |\n| **Itemstufe** | 40 |\n| **Magisch** | Ja |\n| **Physische Verteidigung** | **17** |\n| **Magische Verteidigung** | **12** |\n| **Resistenzen** | – |\n| **Besondere Eigenschaften** | **Trägerbindung – Vermächtnis der Zwei**; Bestandteil des **Siegels der Nicht-Krone**; trägt den stabilisierenden Anker der **Prägung des Cosmos** |\n| **Aktive Fähigkeit** | – |\n| **Aktionskosten** | – |\n| **Auslöser / Voraussetzung** | Funktionale Aktivierung nur durch das Ursprungsvermächtnis |\n| **Einsatzlimit** | – |\n| **Reichweite / Ziel** | Selbst |\n| **Dauer** | Solange getragen |\n| **Rettungswurf / SG** | – |\n| **Berechnung** | Phys-VTD 17; Mag-VTD 12 |\n| **Regelwirkung** | Die Verteidigungswerte werden nach den normalen Rüstungsregeln zur Gesamtverteidigung addiert. Die mythischen Seteffekte funktionieren nur bei vollständig aktiviertem Vierer-Set. |\n| **Stapelung** | Normale Rüstungsstapelung; gleichnamige Seteffekte existieren nur einmal. |\n| **Ende der Wirkung** | Beim Ablegen oder Verlust der Klassenbindung |\n| **Setzugehörigkeit** | Harnisch der Ungekrönten Konvergenz |\n| **Setbonus** | Teil von **Prägung der Zwei** und **Letztes Geschenk der Ungekrönten** |\n| **Aufwertung / Skalierung** | **Itemstufe 40 ist erreicht.** Eine weitere reguläre Itemstufensteigerung ist nicht möglich; die Qualitätsstufe bleibt Mythisch. |\n| **Herstellungsanforderung** | Nicht normal reproduzierbar. Reparatur oder Aufwertung erfordert einen außergewöhnlichen Meister, einzigartige Materialien und die aktive Resonanz des gebundenen göttlichen Kerns. |\n| **Erscheinungsbild** | Eine körpernahe Halbplattenrüstung, deren feste Partien in präzisen, fast sternkartenartigen Linien aufeinander treffen. Zwischen ihnen liegen flexible Flächen, die nicht vernäht wirken, sondern wie durch eine unsichtbare Ordnung zusammengehalten werden. Die sichtbare Form passt sich vollständig an Körperbau und Wesenart des Trägers an. |\n\n---",
+  "source": {
+    "file": "Rüstungen.md",
+    "document_title": "Harnisch der Ungekrönten Konvergenz",
+    "line_start": 3237,
+    "line_end": 3273
+  }
+}

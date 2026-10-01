@@ -9,7 +9,9 @@ use RuntimeException;
 
 final class EncounterService
 {
-    public function __construct(private PDO $pdo) { $this->ensureRuntimeColumns(); }
+    private ClassResourceService $resourceService;
+    private WeaponCombatResolver $weaponCombat;
+    public function __construct(private PDO $pdo) { $this->ensureRuntimeColumns(); $this->resourceService=new ClassResourceService($pdo); $this->weaponCombat=new WeaponCombatResolver($pdo); }
     public function all(): array { return $this->pdo->query("SELECT e.*,COUNT(p.id) participant_count FROM combat_encounters e LEFT JOIN combat_participants p ON p.encounter_id=e.id GROUP BY e.id ORDER BY e.id DESC")->fetchAll(); }
     public function create(?string $name): int { $s=$this->pdo->prepare('INSERT INTO combat_encounters (name) VALUES (?)');$s->execute([$name ?: 'Neuer Kampf']);return (int)$this->pdo->lastInsertId(); }
     public function find(int $id): ?array
@@ -21,6 +23,7 @@ final class EncounterService
             $p['details']=$this->participantDetails($p);if($p['participant_type']==='character')$p['details']=array_merge($p['details'],$this->characterClassDetails((int)$p['reference_id']));
             if($p['participant_type']==='character'&&isset($p['details']['level']))$p['selected_level']=(int)$p['details']['level'];
             $p['content']=$this->participantContent($p);
+            $p['resources']=$p['participant_type']==='character'?$this->resourceService->statesForParticipant((int)$p['id']):[];
         }
         $s=$this->pdo->prepare('SELECT * FROM combat_log WHERE encounter_id=? ORDER BY id DESC LIMIT 100');$s->execute([$id]);$e['log']=$s->fetchAll();return $e;
     }
@@ -41,7 +44,7 @@ final class EncounterService
         $name=trim((string)($data['display_name']??'')) ?: $entity['name'].($n>1?" #{$n}":'');
         if($type==='boss'){$data['selected_phase']=1;$data['runtime_state_json']=Json::encode(['current_phase'=>1,'highest_phase_reached'=>1,'phase_mode'=>'auto','phase_override'=>false]);}
         $s=$this->pdo->prepare('INSERT INTO combat_participants (encounter_id,participant_type,reference_id,display_name,initiative,selected_level,selected_phase,max_hp,current_hp,current_shield,sort_order,runtime_state_json) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)');
-        $s->execute([$encounterId,$type,$reference,$name,(float)($data['initiative']??0),$level,$data['selected_phase']??null,$maxHp,max(0,(int)($data['current_hp']??$entity['current_hp']??$maxHp)),max(0,(float)($data['current_shield']??0)),(int)($data['sort_order']??0),$data['runtime_state_json']??Json::encode([])]);return(int)$this->pdo->lastInsertId();
+        $s->execute([$encounterId,$type,$reference,$name,(float)($data['initiative']??0),$level,$data['selected_phase']??null,$maxHp,max(0,(int)($data['current_hp']??$entity['current_hp']??$maxHp)),max(0,(float)($data['current_shield']??0)),(int)($data['sort_order']??0),$data['runtime_state_json']??Json::encode([])]);$id=(int)$this->pdo->lastInsertId();if($type==='character')$this->resourceService->createCombatSnapshot($id,(int)$reference);return$id;
     }
     public function updateParticipant(int $encounterId,int $participantId,array $data): void
     {
@@ -60,21 +63,61 @@ final class EncounterService
         if($old!==$new){$round=(int)$this->pdo->query('SELECT current_round FROM combat_encounters WHERE id='.(int)$encounterId)->fetchColumn();$message=$p['display_name'].' wechselt manuell von '.$this->phaseName($phases,$old).' zu '.$selected['name'].'.';$log=$this->pdo->prepare('INSERT INTO combat_log (encounter_id,round_number,participant_id,event_type,message,calculation_json) VALUES (?,?,?,?,?,?)');$log->execute([$encounterId,$round,$participantId,'phase',$message,Json::encode(['from'=>$old,'to'=>$new,'phase'=>$selected['name'],'manual'=>true])]);}
     }
     public function removeParticipant(int $encounterId,int $participantId): void { $s=$this->pdo->prepare('DELETE FROM combat_participants WHERE encounter_id=? AND id=?');$s->execute([$encounterId,$participantId]); }
+    public function setParticipantResource(int $encounterId,int $participantId,string $resourceId,float $value): array
+    {
+        $check=$this->pdo->prepare('SELECT id FROM combat_participants WHERE encounter_id=? AND id=? AND participant_type=\'character\'');$check->execute([$encounterId,$participantId]);if(!$check->fetchColumn())throw new RuntimeException('Kampfteilnehmer nicht gefunden.');$result=$this->resourceService->setCombatCurrent($participantId,$resourceId,$value);$round=(int)$this->pdo->query('SELECT current_round FROM combat_encounters WHERE id='.(int)$encounterId)->fetchColumn();$log=$this->pdo->prepare('INSERT INTO combat_log (encounter_id,round_number,participant_id,event_type,message,calculation_json) VALUES (?,?,?,?,?,?)');$log->execute([$encounterId,$round,$participantId,'resource','Klassenressource '.$resourceId.' manuell auf '.$this->number($result['current']).' gesetzt.',Json::encode($result)]);return$result;
+    }
     public function moveTurn(int $encounterId,int $direction): void
     {
         $this->pdo->beginTransaction();try{$s=$this->pdo->prepare('SELECT current_round,current_turn_index FROM combat_encounters WHERE id=? FOR UPDATE');$s->execute([$encounterId]);$e=$s->fetch();if(!$e)throw new RuntimeException('Kampf nicht gefunden.');$s=$this->pdo->prepare('SELECT COUNT(*) FROM combat_participants WHERE encounter_id=?');$s->execute([$encounterId]);$count=(int)$s->fetchColumn();if(!$count)throw new RuntimeException('Keine Teilnehmer vorhanden.');$index=(int)$e['current_turn_index'];$round=(int)$e['current_round'];if($direction>0){$index++;if($index>=$count){$index=0;$round++;}}else{$index--;if($index<0){$index=$count-1;$round=max(1,$round-1);}}$s=$this->pdo->prepare('UPDATE combat_encounters SET current_turn_index=?,current_round=? WHERE id=?');$s->execute([$index,$round,$encounterId]);$this->pdo->commit();}catch(\Throwable $e){$this->pdo->rollBack();throw$e;}
     }
     public function applyEffect(int $encounterId,array $data): array
     {
+        $target=(int)($data['target_participant_id']??0);$validTarget=$this->pdo->prepare('SELECT id FROM combat_participants WHERE encounter_id=? AND id=?');$validTarget->execute([$encounterId,$target]);if(!$validTarget->fetchColumn())throw new RuntimeException('Ziel nicht gefunden.');
+        if(($data['mode']??'damage')==='damage'&&(($data['calculation']??[])['attack']['hit']??null)===false)throw new RuntimeException('Der Trefferwurf ist fehlgeschlagen; es kann kein Schaden angewendet werden.');
+        $this->consumeActionResources($encounterId,$data);
         if (($data['mode'] ?? 'damage') === 'shield') return $this->applyShield($encounterId, $data);
         if (($data['mode'] ?? 'damage') === 'damage') { $check=$this->pdo->prepare('SELECT current_shield FROM combat_participants WHERE encounter_id=? AND id=?');$check->execute([$encounterId,(int)($data['target_participant_id']??0)]);if((float)$check->fetchColumn()>0)return $this->applyDamageWithShield($encounterId,$data); }
         $target=(int)($data['target_participant_id']??0);$amount=max(0,(float)($data['amount']??0));$mode=$data['mode']??'damage';
         $this->pdo->beginTransaction();try{$s=$this->pdo->prepare('SELECT p.*,e.current_round FROM combat_participants p JOIN combat_encounters e ON e.id=p.encounter_id WHERE p.encounter_id=? AND p.id=? FOR UPDATE');$s->execute([$encounterId,$target]);$p=$s->fetch();if(!$p)throw new RuntimeException('Ziel nicht gefunden.');$before=(float)$p['current_hp'];$after=$mode==='healing'?min((float)$p['max_hp'],$before+$amount):max(0,$before-$amount);$this->pdo->prepare('UPDATE combat_participants SET current_hp=? WHERE id=?')->execute([$after,$target]);$calculation=$data['calculation']??[];$critical=$calculation['damage']??[];if($mode==='damage'&&($critical['critical_applied']??false)){$actor='Angriff';if(!empty($data['participant_id'])){$a=$this->pdo->prepare('SELECT display_name FROM combat_participants WHERE encounter_id=? AND id=?');$a->execute([$encounterId,$data['participant_id']]);$actor=(string)($a->fetchColumn()?:$actor);}$message=sprintf('%s trifft %s kritisch: normal %s, Krit-Bonus +%s (%s %%), nach Krit %s, final %s LP.',$actor,$p['display_name'],$this->number($critical['normal_damage']??0),$this->number($critical['critical_bonus']??0),$this->number($critical['critical_damage_percent']??0),$this->number($critical['damage_after_critical']??0),$this->number($amount));}else{$message=sprintf('%s: %s %s LP (%s → %s).',$p['display_name'],$mode==='healing'?'Heilung':'Schaden',$this->number($amount),$this->number($before),$this->number($after));}$s=$this->pdo->prepare('INSERT INTO combat_log (encounter_id,round_number,participant_id,target_participant_id,event_type,source_type,source_id,message,calculation_json) VALUES (?,?,?,?,?,?,?,?,?)');$s->execute([$encounterId,$p['current_round'],$data['participant_id']??null,$target,$mode,$data['source_type']??null,$data['source_id']??null,$message,Json::encode($calculation)]);$this->pdo->commit();return['before'=>$before,'after'=>$after,'message'=>$message];}catch(\Throwable $e){$this->pdo->rollBack();throw$e;}
     }
+
+    private function consumeActionResources(int $encounterId,array $data): void
+    {
+        $costs=$data['resource_costs']??(($data['calculation']??[])['resource_costs']??[]);if(!is_array($costs)||!$costs)return;
+        $participant=(int)($data['participant_id']??0);$execution=(string)($data['execution_id']??(($data['calculation']??[])['execution_id']??''));if(!$participant||$execution==='')throw new RuntimeException('Die Aktion besitzt keine gültige Ausführungs-ID.');
+        $spent=0;$already=0;$validCosts=[];foreach($costs as $cost){$rid=(string)($cost['resource_id']??'');$amount=(float)($cost['amount']??0);if($rid===''||$amount<=0)continue;$validCosts[]=['resource_id'=>$rid,'amount'=>$amount];}
+        foreach($validCosts as $cost){$check=$this->pdo->prepare('SELECT current_value FROM combat_participant_resources WHERE combat_participant_id=? AND class_resource_id=?');$check->execute([$participant,$cost['resource_id']]);$current=$check->fetchColumn();if($current===false||((float)$current<$cost['amount']))throw new RuntimeException('Nicht genug Klassenressource vorhanden.');}
+        foreach($validCosts as $cost){$rid=$cost['resource_id'];$amount=$cost['amount'];$ok=$this->resourceService->spend($participant,$execution,$rid,$amount);if($ok)$spent++;else$already++;}
+        if($spent===0&&$already>0)throw new RuntimeException('Diese Aktion wurde für diese Berechnung bereits ausgeführt.');
+        if($spent>0){$round=(int)$this->pdo->query('SELECT current_round FROM combat_encounters WHERE id='.(int)$encounterId)->fetchColumn();$log=$this->pdo->prepare('INSERT INTO combat_log (encounter_id,round_number,participant_id,event_type,message,calculation_json) VALUES (?,?,?,?,?,?)');$log->execute([$encounterId,$round,$participant,'resource','Klassenressource für die Aktion verbraucht.',Json::encode(['execution_id'=>$execution,'resource_costs'=>$costs])]);}
+    }
     private function characterContent(array $p): array
     {
-        $s=$this->pdo->prepare("SELECT cc.role,cc.class_id,cc.class_level,c.name class_name FROM character_classes cc JOIN classes c ON c.id=cc.class_id WHERE cc.character_id=? ORDER BY CASE cc.role WHEN 'primary' THEN 1 WHEN 'secondary_1' THEN 2 ELSE 3 END");$s->execute([(int)$p['reference_id']]);$out=[];foreach($s->fetchAll() as $class){$origin=mb_strtolower($class['class_id'])==='ursprungsvermaechtnis'||str_contains(mb_strtolower($class['class_id']),'ursprungsvermaechtnis');$sql=$origin?'SELECT a.id,a.name,a.type,a.attack_roll,a.calculation,a.damage_type,a.effect rule_text,NULL magic_attribute,a.unlock_level FROM abilities a WHERE a.class_id=? AND a.unlock_level<=? ORDER BY a.unlock_level,a.number':'SELECT a.id,a.name,a.type,a.attack_roll,a.calculation,a.damage_type,a.effect rule_text,NULL magic_attribute,a.unlock_level,ca.slot_number FROM character_abilities ca JOIN abilities a ON a.id=ca.ability_id WHERE ca.character_id=? AND a.class_id=? AND (ca.class_role=? OR ca.class_role IS NULL) AND ca.ability_level<=? AND a.unlock_level<=? ORDER BY ca.ability_level,ca.slot_number';$args=$origin?[$class['class_id'],(int)$class['class_level']]:[(int)$p['reference_id'],$class['class_id'],$class['role'],(int)$class['class_level'],(int)$class['class_level']];$q=$this->pdo->prepare($sql);$q->execute($args);foreach($q->fetchAll() as $row){$row['source_type']='ability';$row['class_role']=$class['role'];$row['class_name']=$class['class_name'];$row['class_level']=$class['class_level'];$out[]=$row;}}
-        $q=$this->pdo->prepare("SELECT 'spell' source_type,s.id,s.name,s.effect_type type,s.attack_roll,s.calculation,s.damage_type,s.rule_effect rule_text,s.magic_attribute,NULL class_role,NULL class_name,NULL class_level,NULL unlock_level FROM character_spells cs JOIN spells s ON s.id=cs.spell_id WHERE cs.character_id=?");$q->execute([(int)$p['reference_id']]);return array_merge($out,$q->fetchAll());
+        $characterId=(int)$p['reference_id'];
+        $s=$this->pdo->prepare("SELECT cc.role,cc.class_id,cc.class_level,c.name class_name FROM character_classes cc JOIN classes c ON c.id=cc.class_id WHERE cc.character_id=? ORDER BY CASE cc.role WHEN 'primary' THEN 1 WHEN 'secondary_1' THEN 2 ELSE 3 END");$s->execute([$characterId]);$out=[];
+        foreach($s->fetchAll() as $class){
+            $action=$this->pdo->prepare('SELECT id,name,action_type,attack_formula attack_roll,damage_formula calculation,damage_type,description rule_text,resource_cost,resource_gain,unlock_level,raw_json FROM class_actions WHERE class_id=? AND unlock_level<=? ORDER BY unlock_level,id');$action->execute([$class['class_id'],(int)$class['class_level']]);
+            foreach($action->fetchAll() as $row){$row['source_type']='class_action';$row['class_role']=$class['role'];$row['class_name']=$class['class_name'];$row['class_level']=$class['class_level'];$row['roll_inputs']=$this->rollInputs($row);$out[]=$row;}
+            $profile=$this->pdo->prepare('SELECT id,profile_name,attack_formula attack_roll,damage_formula calculation,damage_type,description rule_text,start_die,handling,range_text,weight,raw_json FROM class_weapon_profiles WHERE class_id=? AND unlock_level<=? ORDER BY id');$profile->execute([$class['class_id'],(int)$class['class_level']]);
+            foreach($profile->fetchAll() as $row){$row['name']='Exaltierte Waffe · '.$row['profile_name'];$row['source_type']='class_weapon';$row['class_role']=$class['role'];$row['class_name']=$class['class_name'];$row['class_level']=$class['class_level'];$row['roll_inputs']=$this->rollInputs($row);$out[]=$row;}
+            $origin=mb_strtolower($class['class_id'])==='ursprungsvermaechtnis'||str_contains(mb_strtolower($class['class_id']),'ursprungsvermaechtnis');
+            $sql=$origin?'SELECT a.id,a.name,a.type,a.attack_roll,a.calculation,a.damage_type,a.effect rule_text,NULL magic_attribute,a.unlock_level,a.costs resource_cost,a.class_resource,a.raw_json FROM abilities a WHERE a.class_id=? AND a.unlock_level<=? ORDER BY a.unlock_level,a.number':'SELECT a.id,a.name,a.type,a.attack_roll,a.calculation,a.damage_type,a.effect rule_text,NULL magic_attribute,a.unlock_level,a.costs resource_cost,a.class_resource,a.raw_json,ca.slot_number FROM character_abilities ca JOIN abilities a ON a.id=ca.ability_id WHERE ca.character_id=? AND a.class_id=? AND (ca.class_role=? OR ca.class_role IS NULL) AND ca.ability_level<=? AND a.unlock_level<=? ORDER BY ca.ability_level,ca.slot_number';$args=$origin?[$class['class_id'],(int)$class['class_level']]:[$characterId,$class['class_id'],$class['role'],(int)$class['class_level'],(int)$class['class_level']];$q=$this->pdo->prepare($sql);$q->execute($args);
+            foreach($q->fetchAll() as $row){$row['source_type']='ability';$row['class_role']=$class['role'];$row['class_name']=$class['class_name'];$row['class_level']=$class['class_level'];$meta=WeaponCombatResolver::classify($row);$row=array_merge($row,$meta);$row['weapon_options']=$meta['requires_weapon']?$this->weaponCombat->equippedOptions($characterId):[];$row['roll_inputs']=$this->rollInputs($row);$out[]=$row;}
+        }
+        $weaponOptions=$this->weaponCombat->equippedOptions($characterId);
+        foreach($weaponOptions as $option){$context=$option['weapon'];$out[]=['source_type'=>'weapon_attack','source_id'=>$option['weapon_id'],'id'=>$option['weapon_id'],'name'=>$option['name'].' · normaler Waffenangriff','type'=>'Waffenangriff','attack_roll'=>$context['attack_formula'],'calculation'=>$context['damage_formula'],'damage_type'=>$context['damage_type'],'weapon_slot'=>$option['slot'],'weapon'=>$context,'requires_weapon'=>false,'weapon_usage_type'=>'normal_weapon_attack','roll_inputs'=>$this->rollInputs(['attack_roll'=>$context['attack_formula'],'calculation'=>$context['damage_formula'],'weapon_attack'=>true])];}
+        $q=$this->pdo->prepare("SELECT 'spell' source_type,s.id,s.name,s.effect_type type,s.attack_roll,s.calculation,s.damage_type,s.rule_effect rule_text,s.magic_attribute,NULL class_role,NULL class_name,NULL class_level,NULL unlock_level,s.raw_json FROM character_spells cs JOIN spells s ON s.id=cs.spell_id WHERE cs.character_id=?");$q->execute([$characterId]);foreach($q->fetchAll() as $row){$row['roll_inputs']=$this->rollInputs($row);$out[]=$row;}
+        return $out;
+    }
+
+    private function rollInputs(array $row): array
+    {
+        $formula=(string)($row['calculation']??'');$attack=(string)($row['attack_roll']??'');$inputs=[];
+        if($attack!==''&&preg_match('/(?:W20|waffen[- ]?angriff|angriffswurf)/iu',$attack))$inputs[]=['key'=>'hit','label'=>'Trefferwürfel','purpose'=>'hit','formula_dice'=>'W20'];
+        $dice=preg_match_all('/\b(?:\d*)W\d+\b/iu',$formula,$matches)?array_values(array_unique(array_map('strtoupper',$matches[0]))):[];
+        if($dice)$inputs[]=['key'=>!empty($row['weapon_attack'])?'weapon_damage':'damage','label'=>!empty($row['weapon_attack'])?'Waffenschadenswürfel':'Schadenswürfel','purpose'=>'damage','formula_dice'=>implode(' + ',$dice)];
+        return $inputs;
     }
 
     private function participantContent(array $p): array
