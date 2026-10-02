@@ -14,6 +14,7 @@ final class ImportService
         'Kreaturenstufen' => 0, 'Kreaturenaktionen' => 0, 'Bosse' => 0,
         'Bossstufen' => 0, 'Bossaktionen' => 0, 'Elemente' => 0, 'Zauber' => 0,
         'Waffen' => 0, 'Waffen neu' => 0, 'Waffen aktualisiert' => 0, 'Waffen übersprungen' => 0,
+        'Waffenprofile' => 0, 'Mehrprofil-Waffen' => 0, 'Waffenvariablen' => 0,
         'Klassenressourcen' => 0, 'Klassenaktionen' => 0, 'Klassenwaffenprofile' => 0,
         'Rüstungen' => 0, 'Rüstungen neu' => 0, 'Rüstungen aktualisiert' => 0, 'Rüstungen übersprungen' => 0,
         'Schilde' => 0, 'Magiefoki' => 0, 'Magiefoki neu' => 0, 'Magiefoki aktualisiert' => 0,
@@ -60,7 +61,10 @@ final class ImportService
     {
         $mysql = $this->pdo->getAttribute(PDO::ATTR_DRIVER_NAME) === 'mysql';
         $raw = $mysql ? 'LONGTEXT' : 'TEXT';
-        $this->pdo->exec("CREATE TABLE IF NOT EXISTS weapons (id VARCHAR(190) PRIMARY KEY,name VARCHAR(255) NOT NULL,display_name VARCHAR(255) NULL,subtitle VARCHAR(255) NULL,base_weapon_type VARCHAR(190) NULL,category VARCHAR(190) NULL,quality VARCHAR(80) NULL,item_level INTEGER NULL,is_magical INTEGER NOT NULL DEFAULT 0,is_elemental INTEGER NOT NULL DEFAULT 0,elements_json TEXT NULL,core_die VARCHAR(80) NULL,handling VARCHAR(80) NULL,range_text VARCHAR(190) NULL,damage_type VARCHAR(190) NULL,weight VARCHAR(80) NULL,attack_attribute VARCHAR(190) NULL,attack_formula TEXT NULL,damage_formula TEXT NULL,critical_modification TEXT NULL,special_properties TEXT NULL,active_ability TEXT NULL,class_restriction VARCHAR(190) NULL,appearance TEXT NULL,schema_version VARCHAR(80) NOT NULL,source_file VARCHAR(255) NOT NULL,source_hash VARCHAR(64) NOT NULL,raw_json {$raw} NOT NULL,created_at DATETIME DEFAULT CURRENT_TIMESTAMP,updated_at DATETIME DEFAULT CURRENT_TIMESTAMP)");
+        $this->pdo->exec("CREATE TABLE IF NOT EXISTS weapons (id VARCHAR(190) PRIMARY KEY,name VARCHAR(255) NOT NULL,display_name VARCHAR(255) NULL,subtitle VARCHAR(255) NULL,base_weapon_type VARCHAR(190) NULL,category VARCHAR(190) NULL,quality VARCHAR(80) NULL,item_level INTEGER NULL,is_magical INTEGER NOT NULL DEFAULT 0,is_elemental INTEGER NOT NULL DEFAULT 0,elements_json TEXT NULL,core_die VARCHAR(80) NULL,handling VARCHAR(80) NULL,range_text VARCHAR(190) NULL,damage_type VARCHAR(190) NULL,weight VARCHAR(80) NULL,attack_attribute VARCHAR(190) NULL,attack_formula TEXT NULL,damage_formula TEXT NULL,formula_variables_json TEXT NULL,critical_modification TEXT NULL,special_properties TEXT NULL,active_ability TEXT NULL,class_restriction VARCHAR(190) NULL,appearance TEXT NULL,schema_version VARCHAR(80) NOT NULL,source_file VARCHAR(255) NOT NULL,source_hash VARCHAR(64) NOT NULL,raw_json {$raw} NOT NULL,created_at DATETIME DEFAULT CURRENT_TIMESTAMP,updated_at DATETIME DEFAULT CURRENT_TIMESTAMP)");
+        try { $this->pdo->query('SELECT formula_variables_json FROM weapons LIMIT 1'); } catch (Throwable) { try { $this->pdo->exec('ALTER TABLE weapons ADD COLUMN formula_variables_json TEXT NULL'); } catch (Throwable) {} }
+        $profileId = $mysql ? 'BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY' : 'INTEGER PRIMARY KEY AUTOINCREMENT';
+        $this->pdo->exec("CREATE TABLE IF NOT EXISTS weapon_combat_profiles (id {$profileId},weapon_id VARCHAR(190) NOT NULL,profile_key VARCHAR(80) NOT NULL,label VARCHAR(190) NOT NULL,handling VARCHAR(190) NULL,attack_formula TEXT NULL,attack_attribute VARCHAR(190) NULL,damage_formula TEXT NULL,damage_type VARCHAR(190) NULL,sort_order INTEGER NOT NULL DEFAULT 0,raw_json {$raw} NULL,created_at DATETIME DEFAULT CURRENT_TIMESTAMP,updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,UNIQUE(weapon_id,profile_key))");
     }
 
     private function ensureEquipmentTables(): void
@@ -153,7 +157,19 @@ final class ImportService
         $text = $mysql ? 'LONGTEXT' : 'TEXT';
         try { $this->pdo->exec("CREATE TABLE IF NOT EXISTS class_actions (id VARCHAR(220) PRIMARY KEY,class_id VARCHAR(120) NOT NULL,external_id VARCHAR(190) NOT NULL,name VARCHAR(255) NOT NULL,action_type VARCHAR(80) NOT NULL DEFAULT 'class_action',unlock_level INTEGER NOT NULL DEFAULT 1,attack_formula TEXT NULL,damage_formula TEXT NULL,damage_type VARCHAR(190) NULL,resource_cost TEXT NULL,resource_gain TEXT NULL,weapon_mode VARCHAR(190) NULL,description TEXT NULL,source_file VARCHAR(255) NULL,source_hash VARCHAR(64) NULL,raw_json {$text} NOT NULL,UNIQUE(class_id,external_id))"); } catch (Throwable) {}
         try { $this->pdo->exec("CREATE TABLE IF NOT EXISTS class_weapon_profiles (id VARCHAR(220) PRIMARY KEY,class_id VARCHAR(120) NOT NULL,profile_name VARCHAR(190) NOT NULL,unlock_level INTEGER NOT NULL DEFAULT 1,start_die VARCHAR(80) NULL,attack_formula TEXT NULL,damage_formula TEXT NULL,damage_type VARCHAR(190) NULL,handling VARCHAR(80) NULL,range_text VARCHAR(190) NULL,weight VARCHAR(80) NULL,description TEXT NULL,source_file VARCHAR(255) NULL,source_hash VARCHAR(64) NULL,raw_json {$text} NOT NULL,UNIQUE(class_id,profile_name))"); } catch (Throwable) {}
-        try { $this->pdo->exec("CREATE UNIQUE INDEX uq_class_resource_id ON class_resources(resource_id)"); } catch (Throwable) {}
+        // Resource IDs are scoped to their owning class.  A global resource_id
+        // index would make two classes overwrite each other's definitions.
+        foreach (['fk_character_resource_definition','fk_participant_resource_definition'] as $foreignKey) {
+            foreach (['character_class_resources','combat_participant_resources'] as $table) {
+                try { $this->pdo->exec("ALTER TABLE {$table} DROP FOREIGN KEY {$foreignKey}"); } catch (Throwable) {}
+            }
+        }
+        try { $this->pdo->exec('ALTER TABLE class_resources DROP PRIMARY KEY, ADD PRIMARY KEY (class_id,resource_id)'); } catch (Throwable) {}
+        try { $this->pdo->exec('DROP INDEX uq_class_resource_id ON class_resources'); } catch (Throwable) {}
+        try { $this->pdo->exec('ALTER TABLE combat_resource_transactions ADD COLUMN character_class_id BIGINT UNSIGNED NULL AFTER execution_id'); } catch (Throwable) {}
+        try { $this->pdo->exec('ALTER TABLE combat_resource_transactions MODIFY character_class_id BIGINT UNSIGNED NULL'); } catch (Throwable) {}
+        try { $this->pdo->exec('ALTER TABLE combat_participant_resources DROP INDEX uq_participant_resource, ADD UNIQUE KEY uq_participant_resource (combat_participant_id,character_class_id,class_resource_id)'); } catch (Throwable) {}
+        try { $this->pdo->exec('ALTER TABLE combat_resource_transactions DROP INDEX uq_resource_execution, ADD UNIQUE KEY uq_resource_execution (combat_participant_id,execution_id,character_class_id,class_resource_id)'); } catch (Throwable) {}
         $columns = [
             'form'=>'TEXT NULL','maximum_formula'=>'TEXT NULL','start_value'=>'TEXT NULL','base_generation'=>'TEXT NULL',
             'generation'=>'TEXT NULL','consumption'=>'TEXT NULL','relief'=>'TEXT NULL','persistence'=>'TEXT NULL',
@@ -170,9 +186,89 @@ final class ImportService
         return is_string($value) ? $value : Json::encode($value);
     }
 
+    /** Normalize every damage profile emitted by the JSON parser.  The source
+     * field may use an ASCII hyphen, en/em dash or a structured formulas map. */
+    private function weaponProfiles(array $data): array
+    {
+        $profiles = [];
+        $add = function (string $key, mixed $formula, ?string $label = null, array $meta = []) use (&$profiles): void {
+            if (!is_scalar($formula)) return;
+            $formula = trim((string)$formula, " \t\r\n`.;:");
+            if ($formula === '' || $formula === '-') return;
+            $key = $this->weaponProfileKey($key);
+            $profiles[$key] = array_merge($profiles[$key] ?? [
+                'key' => $key, 'label' => $label ?: $this->weaponProfileLabel($key),
+                'handling' => null, 'attack_formula' => null, 'attack_attribute' => null,
+                'damage_formula' => null, 'damage_type' => null, 'sort_order' => count($profiles),
+            ], array_filter([
+                'label' => $label ?: null, 'handling' => $meta['handling'] ?? null,
+                'attack_formula' => $meta['attack_formula'] ?? null, 'attack_attribute' => $meta['attack_attribute'] ?? null,
+                'damage_type' => $meta['damage_type'] ?? null, 'damage_formula' => $formula,
+            ], static fn($v) => $v !== null && $v !== ''));
+        };
+        $damage = $data['formulas']['damage'] ?? null;
+        if (is_array($damage)) {
+            foreach ($damage as $key => $formula) $add((string)$key, $formula);
+        } elseif (is_scalar($damage)) {
+            $add('default', $damage, 'Standard');
+        }
+        foreach (['combat_profiles', 'weapon_profiles'] as $field) {
+            if (!is_array($data[$field] ?? null)) continue;
+            foreach ($data[$field] as $key => $profile) {
+                if (is_scalar($profile)) { $add((string)$key, $profile); continue; }
+                if (is_array($profile)) $add((string)($profile['key'] ?? $key), $profile['damage_formula'] ?? null, $profile['label'] ?? null, $profile);
+            }
+        }
+        foreach (array_merge((array)($data['raw_fields'] ?? []), (array)($data['extra_fields'] ?? [])) as $field => $value) {
+            if (preg_match('/^Schadensformel\s*[-–—]\s*(.+)$/u', (string)$field, $match)) $add($match[1], $value);
+            elseif (mb_strtolower(trim((string)$field)) === 'schadensformel') $add('default', $value, 'Standard');
+        }
+        $attack = $data['formulas']['attack'] ?? null;
+        $attribute = $data['attributes']['attack'] ?? null;
+        foreach ($profiles as &$profile) {
+            $profile['attack_formula'] ??= $attack;
+            $profile['attack_attribute'] ??= $attribute;
+            $profile['handling'] ??= $data['handling'] ?? null;
+            $profile['damage_type'] ??= $data['damage_type'] ?? null;
+        }
+        unset($profile);
+        uasort($profiles, static fn(array $a, array $b): int => ($a['sort_order'] <=> $b['sort_order']) ?: strcmp($a['key'], $b['key']));
+        return array_values($profiles);
+    }
+
+    private function weaponProfileKey(string $value): string
+    {
+        $value = mb_strtolower(trim($value));
+        $value = strtr($value, ['ä'=>'ae','ö'=>'oe','ü'=>'ue','ß'=>'ss','–'=>'-','—'=>'-']);
+        if (str_contains($value, 'einhaend') || str_contains($value, 'einhänd') || str_contains($value, 'one_handed')) return 'one_handed';
+        if (str_contains($value, 'zweihänd') || str_contains($value, 'zweihand') || str_contains($value, 'zweihaend') || str_contains($value, 'two_handed')) return 'two_handed';
+        if ($value === 'default' || $value === 'standard' || $value === 'schadensformel') return 'default';
+        $value = preg_replace('/[^a-z0-9]+/u', '_', $value) ?? 'profile';
+        return trim($value, '_') ?: 'profile';
+    }
+
+    private function weaponProfileLabel(string $key): string
+    {
+        return match ($key) { 'default' => 'Standard', 'one_handed' => 'Einhändig', 'two_handed' => 'Zweihändig', default => ucwords(str_replace('_', ' ', $key)) };
+    }
+
+    private function weaponFormulaVariables(array $data): array
+    {
+        $variables = [];
+        $core = $data['formulas']['core_value'] ?? null;
+        if (is_scalar($core) && trim((string)$core) !== '') $variables['Kernwert'] = trim((string)$core, " \t\r\n`.;:");
+        foreach (array_merge((array)($data['raw_fields'] ?? []), (array)($data['extra_fields'] ?? [])) as $field => $value) {
+            $name = trim((string)$field); $formula = is_scalar($value) ? trim((string)$value, " \t\r\n`.;:") : '';
+            if ($name === '' || $formula === '' || $formula === '-') continue;
+            if (isset($variables[$name]) || in_array(mb_strtolower($name), ['schadensformel','angriffswurf','kernwürfel','kernwuerfel','regelwirkung'], true) || !preg_match('/^[\p{L}][\p{L}\d_-]{0,40}$/u', $name)) continue;
+            if (preg_match('/(?:Modifikator|Bonus|floor|ceil|⌊|⌈)/iu', $formula)) $variables[$name] = $formula;
+        }
+        return $variables;
+    }
+
     private function importWeapons(): void
     {
-        $sql = 'INSERT INTO weapons (id,name,display_name,subtitle,base_weapon_type,category,quality,item_level,is_magical,is_elemental,elements_json,core_die,handling,range_text,damage_type,weight,attack_attribute,attack_formula,damage_formula,critical_modification,special_properties,active_ability,class_restriction,appearance,schema_version,source_file,source_hash,raw_json) VALUES (' . implode(',', array_fill(0, 28, '?')) . ') ON DUPLICATE KEY UPDATE name=VALUES(name),display_name=VALUES(display_name),subtitle=VALUES(subtitle),base_weapon_type=VALUES(base_weapon_type),category=VALUES(category),quality=VALUES(quality),item_level=VALUES(item_level),is_magical=VALUES(is_magical),is_elemental=VALUES(is_elemental),elements_json=VALUES(elements_json),core_die=VALUES(core_die),handling=VALUES(handling),range_text=VALUES(range_text),damage_type=VALUES(damage_type),weight=VALUES(weight),attack_attribute=VALUES(attack_attribute),attack_formula=VALUES(attack_formula),damage_formula=VALUES(damage_formula),critical_modification=VALUES(critical_modification),special_properties=VALUES(special_properties),active_ability=VALUES(active_ability),class_restriction=VALUES(class_restriction),appearance=VALUES(appearance),schema_version=VALUES(schema_version),source_file=VALUES(source_file),source_hash=VALUES(source_hash),raw_json=VALUES(raw_json)';
+        $sql = 'INSERT INTO weapons (id,name,display_name,subtitle,base_weapon_type,category,quality,item_level,is_magical,is_elemental,elements_json,core_die,handling,range_text,damage_type,weight,attack_attribute,attack_formula,damage_formula,formula_variables_json,critical_modification,special_properties,active_ability,class_restriction,appearance,schema_version,source_file,source_hash,raw_json) VALUES (' . implode(',', array_fill(0, 29, '?')) . ') ON DUPLICATE KEY UPDATE name=VALUES(name),display_name=VALUES(display_name),subtitle=VALUES(subtitle),base_weapon_type=VALUES(base_weapon_type),category=VALUES(category),quality=VALUES(quality),item_level=VALUES(item_level),is_magical=VALUES(is_magical),is_elemental=VALUES(is_elemental),elements_json=VALUES(elements_json),core_die=VALUES(core_die),handling=VALUES(handling),range_text=VALUES(range_text),damage_type=VALUES(damage_type),weight=VALUES(weight),attack_attribute=VALUES(attack_attribute),attack_formula=VALUES(attack_formula),damage_formula=VALUES(damage_formula),formula_variables_json=VALUES(formula_variables_json),critical_modification=VALUES(critical_modification),special_properties=VALUES(special_properties),active_ability=VALUES(active_ability),class_restriction=VALUES(class_restriction),appearance=VALUES(appearance),schema_version=VALUES(schema_version),source_file=VALUES(source_file),source_hash=VALUES(source_hash),raw_json=VALUES(raw_json)';
         $stmt = $this->pdo->prepare($sql);
         $existing = $this->pdo->prepare('SELECT source_hash FROM weapons WHERE id=?');
         $files = $this->files('weapons');
@@ -195,13 +291,12 @@ final class ImportService
             $existing->execute([(string)$data['id']]);
             $oldHash = $existing->fetchColumn();
             $this->counts['Waffen']++;
-            if ($oldHash !== false && (string)$oldHash === $hash) {
-                $this->counts['Waffen übersprungen']++;
-                continue;
-            }
             $magical = $data['magical']['value'] ?? $data['magical'] ?? false;
-            $damage = $data['formulas']['damage'] ?? null;
-            if (is_array($damage)) $damage = $damage['default'] ?? null;
+            $profiles = $this->weaponProfiles($data);
+            $damage = null;
+            foreach ($profiles as $profile) if ($profile['key'] === 'default') { $damage = $profile['damage_formula']; break; }
+            if ($damage === null && count($profiles) === 1) $damage = $profiles[0]['damage_formula'];
+            $variables = $this->weaponFormulaVariables($data);
             $attrs = $data['attributes'] ?? [];
             $binding = $data['class_binding'] ?? [];
             $stmt->execute([
@@ -210,11 +305,20 @@ final class ImportService
                 isset($data['item_level']) ? (int)$data['item_level'] : null, (int)(bool)$magical, (int)(bool)($data['is_elemental'] ?? false),
                 $this->jsonOrNull($data['elements'] ?? []), $data['core_dice']['raw'] ?? null, $data['handling'] ?? null,
                 $data['range'] ?? null, $data['damage_type'] ?? null, $data['weight'] ?? null, $attrs['attack'] ?? null,
-                $data['formulas']['attack'] ?? null, $damage, $this->jsonOrNull($data['critical_modification'] ?? null),
+                $data['formulas']['attack'] ?? null, $damage, $this->jsonOrNull($variables), $this->jsonOrNull($data['critical_modification'] ?? null),
                 $this->jsonOrNull($data['special_properties'] ?? null), $this->jsonOrNull($data['active_ability'] ?? null),
                 $binding['class_name'] ?? null, $data['appearance'] ?? null, $data['schema_version'] ?? 'aetherfall.weapons.v1',
                 $data['source_file'] ?? basename($file), $hash, $raw,
             ]);
+            $this->pdo->prepare('DELETE FROM weapon_combat_profiles WHERE weapon_id=?')->execute([(string)$data['id']]);
+            $profileStmt = $this->pdo->prepare('INSERT INTO weapon_combat_profiles (weapon_id,profile_key,label,handling,attack_formula,attack_attribute,damage_formula,damage_type,sort_order,raw_json) VALUES (?,?,?,?,?,?,?,?,?,?)');
+            foreach ($profiles as $profile) {
+                $profileStmt->execute([(string)$data['id'], $profile['key'], $profile['label'], $profile['handling'], $profile['attack_formula'], $profile['attack_attribute'], $profile['damage_formula'], $profile['damage_type'], $profile['sort_order'], $this->jsonOrNull($profile)]);
+                $this->counts['Waffenprofile']++;
+            }
+            if (count($profiles) > 1) $this->counts['Mehrprofil-Waffen']++;
+            if ($variables) $this->counts['Waffenvariablen']++;
+            if ($oldHash !== false && (string)$oldHash === $hash) { $this->counts['Waffen übersprungen']++; continue; }
             $this->counts[$oldHash === false ? 'Waffen neu' : 'Waffen aktualisiert']++;
         }
     }
@@ -232,8 +336,10 @@ final class ImportService
             $raw = (string) file_get_contents($file);
             $hash = hash('sha256', $raw);
             $classStmt->execute([$data['id'], $data['name'], $data['schema_version'], $data['source_file'] ?? basename($file), $hash, $raw]);
-            $resource = $data['resource'] ?? null;
-            if (is_array($resource)) {
+            $resourceDefinitions = $data['resources'] ?? ($data['resource'] ?? null);
+            if (is_array($resourceDefinitions) && (array_key_exists('id', $resourceDefinitions) || array_keys($resourceDefinitions) !== range(0, count($resourceDefinitions) - 1))) $resourceDefinitions = [$resourceDefinitions];
+            if (is_array($resourceDefinitions)) foreach ($resourceDefinitions as $resource) {
+                if (!is_array($resource)) continue;
                 $resourceStmt->execute([
                     $data['id'], $resource['id'] ?? $data['id'] . '-resource', $resource['name'] ?? 'Klassenressource',
                     $resource['form'] ?? null, $this->resourceMaximum($resource), $resource['start_value'] ?? null,

@@ -20,7 +20,7 @@ final class CharacterWeaponService
     public function slots(int $characterId): array
     {
         $result = ['hand_1' => null, 'hand_2' => null];
-        $stmt = $this->pdo->prepare('SELECT cws.slot,w.id,w.name,w.display_name,w.subtitle,w.base_weapon_type,w.category,w.quality,w.item_level,w.is_magical,w.is_elemental,w.elements_json,w.core_die,w.handling,w.range_text,w.damage_type,w.weight,w.attack_attribute,w.attack_formula,w.damage_formula,w.critical_modification,w.special_properties,w.active_ability,w.class_restriction,w.appearance FROM character_weapon_slots cws LEFT JOIN weapons w ON w.id=cws.weapon_id WHERE cws.character_id=?');
+        $stmt = $this->pdo->prepare('SELECT cws.slot,w.id,w.name,w.display_name,w.subtitle,w.base_weapon_type,w.category,w.quality,w.item_level,w.is_magical,w.is_elemental,w.elements_json,w.core_die,w.handling,w.range_text,w.damage_type,w.weight,w.attack_attribute,w.attack_formula,w.damage_formula,w.formula_variables_json,w.critical_modification,w.special_properties,w.active_ability,w.class_restriction,w.appearance FROM character_weapon_slots cws LEFT JOIN weapons w ON w.id=cws.weapon_id WHERE cws.character_id=?');
         $stmt->execute([$characterId]);
         foreach ($stmt->fetchAll() as $row) {
             if (!in_array($row['slot'], self::SLOTS, true) || !$row['id']) continue;
@@ -29,7 +29,10 @@ final class CharacterWeaponService
             $row['is_magical'] = (bool)$row['is_magical'];
             $row['is_elemental'] = (bool)$row['is_elemental'];
             $row['elements'] = json_decode((string)($row['elements_json'] ?? '[]'), true) ?: [];
-            unset($row['elements_json']);
+            $row['formula_variables'] = json_decode((string)($row['formula_variables_json'] ?? '{}'), true) ?: [];
+            $row['combat_profiles'] = $this->weapons?->profiles((string)$row['id']) ?? [];
+            $row['available_profiles'] = array_map(static fn(array $profile): array => ['key' => (string)$profile['profile_key'], 'label' => (string)($profile['label'] ?? $profile['profile_key'])], $row['combat_profiles']);
+            unset($row['elements_json'], $row['formula_variables_json']);
             $result[$slot] = $row;
         }
         return $result;

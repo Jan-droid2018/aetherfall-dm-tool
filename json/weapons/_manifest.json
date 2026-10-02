@@ -1,6 +1,9 @@
 {
   "schema_version": "aetherfall.weapons.v1",
   "weapon_count": 97,
+  "profile_count": 99,
+  "multi_profile_weapon_count": 2,
+  "profiles": ["default", "one_handed", "two_handed"],
   "catalog_weapon_count": 92,
   "special_weapon_count": 5,
   "elemental_weapon_count": 18,

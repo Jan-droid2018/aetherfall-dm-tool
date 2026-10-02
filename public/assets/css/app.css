@@ -20,3 +20,364 @@ body.modal-open{overflow:hidden}
 .character-weapons{margin-top:24px}.character-weapons .section-head{margin-bottom:10px}.character-weapons .section-head h4{margin:0}.weapon-slots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.weapon-slot-card{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:14px;background:#101317;border:1px solid var(--line);border-radius:7px}.weapon-slot-info{display:flex;flex-direction:column;min-width:0}.weapon-slot-info small,.weapon-option small{color:var(--muted)}.weapon-slot-info strong{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.weapon-slot-actions{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}.weapon-slot-actions button{padding:7px 10px}.weapon-modal-card{width:min(900px,calc(100vw - 48px))}.weapon-filters{grid-template-columns:2fr 1fr 1.2fr 1fr}.weapon-options{display:flex;flex-direction:column;gap:8px;margin-top:14px;max-height:calc(100dvh - 230px);overflow:auto}.weapon-option{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px;background:#101317;border:1px solid var(--line);border-radius:6px}.weapon-option>div{display:flex;flex-direction:column;min-width:0}.weapon-option strong{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.weapon-option button{white-space:nowrap}@media(max-width:700px){.weapon-slots,.weapon-filters{grid-template-columns:1fr}.weapon-slot-card{align-items:flex-start;flex-direction:column}.weapon-slot-actions{justify-content:flex-start}.weapon-option{align-items:flex-start;flex-direction:column}}
  .character-resources{margin:1rem 0}.resource-card,.class-action-card{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.65rem .8rem;margin:.35rem 0;border:1px solid var(--line,#38404a);border-radius:.4rem;background:rgba(0,0,0,.12)}.resource-card div:first-child{display:grid;gap:.15rem}.resource-card span,.resource-card small,.class-action-card small{display:block}.resource-controls,.combat-resource{display:flex;align-items:center;gap:.4rem}.combat-resource-list{margin-top:.8rem;padding:.6rem;border-top:1px solid var(--line,#38404a)}.combat-resource{justify-content:flex-end;margin-top:.35rem}.combat-resource span:first-child{margin-right:auto}
 .character-equipment{margin-top:24px}.character-equipment .section-head{margin-bottom:10px}.character-equipment .section-head h4{margin:0}.armor-slots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.armor-slot-card,.magic-focus-card{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:14px;background:#101317;border:1px solid var(--line);border-radius:7px}.armor-slot-info,.magic-focus-info,.equipment-option>div{display:flex;flex-direction:column;min-width:0}.armor-slot-info small,.magic-focus-info small,.equipment-option small{color:var(--muted)}.armor-slot-info strong,.magic-focus-info strong,.equipment-option strong{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.armor-slot-actions,.magic-focus-actions{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}.armor-slot-actions button,.magic-focus-actions button{padding:7px 10px}.magic-focus-slot{margin-top:12px}.equipment-modal-card{width:min(900px,calc(100vw - 48px))}.equipment-filters{grid-template-columns:2fr 1fr 1fr 1fr}.equipment-options{display:flex;flex-direction:column;gap:8px;margin-top:14px;max-height:calc(100dvh - 260px);overflow:auto}.equipment-option{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px;background:#101317;border:1px solid var(--line);border-radius:6px}.equipment-option button{white-space:nowrap}@media(max-width:700px){.armor-slots,.equipment-filters{grid-template-columns:1fr}.armor-slot-card,.magic-focus-card,.equipment-option{align-items:flex-start;flex-direction:column}.armor-slot-actions,.magic-focus-actions{justify-content:flex-start}}
+.combat-calculator-open{width:100%;margin:0 0 18px}.combat-calculator-modal-card{width:min(980px,calc(100vw - 32px));max-height:calc(100dvh - 24px);padding:0;overflow-y:auto}.combat-calculator-modal-card>.modal-close{z-index:2}.combat-calculator-modal-card .calculator{margin:0;border:0;box-shadow:none;padding:24px}.modal-open{overflow:hidden}@media(max-width:700px){.combat-calculator-modal-card{width:calc(100vw - 16px);max-height:calc(100dvh - 16px)}.combat-calculator-modal-card .calculator{padding:18px 14px}}
+.notice{z-index:10001}body.modal-open #notice{top:88px;right:22px;transform:none;max-width:min(420px,calc(100vw - 44px));text-align:left}
+.character-defense-summary{margin-top:24px}.character-defense-values{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.character-defense-values>div{padding:14px;background:#101317;border:1px solid var(--line);border-radius:7px}.character-defense-values strong{display:block;color:var(--gold);font-size:22px}.active-defense{display:flex;gap:14px;flex-wrap:wrap;margin:8px 0;color:var(--gold);font-size:13px}.active-defense span{padding:4px 8px;border:1px solid var(--line);border-radius:5px}@media(max-width:600px){.character-defense-values{grid-template-columns:1fr}}
+.participant-hp-editor{display:flex;align-items:center;gap:5px;margin-top:6px}.participant-hp-editor input{width:78px;padding:5px 7px;font-size:12px}.participant-hp-editor button,.active-hp-editor button{padding:5px 8px;font-size:12px;white-space:nowrap}.active-hp-editor{display:flex;align-items:flex-end;gap:8px;margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}.active-hp-editor label{flex:1}.active-hp-editor input{padding:7px 9px}
+.combat-layout{grid-template-columns:minmax(360px,420px) minmax(0,1fr);gap:24px}.initiative-sidebar{width:100%}.participant{grid-template-columns:68px minmax(0,1fr);grid-template-areas:"initiative-init initiative-details" "initiative-init initiative-hp" "initiative-init initiative-actions";gap:10px 14px;padding:16px}.participant>.init{grid-area:initiative-init;align-self:start}.participant>div{grid-area:initiative-details;min-width:0}.participant>.participant-hp-value{grid-area:initiative-hp;align-items:flex-start;font-size:14px}.participant>.participant-actions{grid-area:initiative-actions;grid-column:auto;justify-content:flex-start}.participant-hp-editor{flex-wrap:wrap}.participant-hp-editor input{width:96px}
+@media(max-width:950px){.combat-layout{grid-template-columns:1fr}.participant{grid-template-columns:62px minmax(0,1fr)}}
+.magic-focus-context{display:flex;flex-direction:column;justify-content:center;gap:.18rem;border:1px solid var(--line,#37404a);border-radius:.35rem;padding:.55rem .75rem;background:rgba(206,165,74,.08);min-height:2.7rem}.magic-focus-context .field-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted,#9aa3ad)}.magic-focus-context strong{color:var(--gold,#d9ad52)}.magic-focus-context span:last-child{font-size:.82rem;color:var(--muted,#9aa3ad)}
+
+/* UI/UX refactor: the rules below form the responsive application shell. */
+:root{
+  --bg-app:#0b0d10;--bg-panel:#15191d;--bg-panel-soft:#1b2026;--bg-input:#0e1216;
+  --border:#303842;--border-strong:#4a5562;--text:#f4f1e9;--text-muted:#a5adb6;
+  --accent:#d4aa55;--accent-hover:#e3bd6d;--success:#78ad82;--warning:#d8a84e;--danger:#d16b6b;
+  --radius-sm:5px;--radius-md:8px;--radius-lg:12px;--space-xs:6px;--space-sm:10px;--space-md:16px;--space-lg:24px;
+  --app-header:60px;--workspace-gutter:clamp(14px,2.5vw,36px);
+  --bg:var(--bg-app);--surface:var(--bg-panel);--surface2:var(--bg-panel-soft);--line:var(--border);--muted:#a5adb6;
+}
+html{height:100%;background:var(--bg-app)}
+html,body{max-width:100%;overflow-x:hidden}
+body.app-shell{height:100dvh;min-height:100dvh;display:grid;grid-template-rows:var(--app-header) minmax(0,1fr);overflow:hidden;background:radial-gradient(circle at 70% -20%,#3b2c202b,transparent 42%),var(--bg-app)}
+body.app-shell .topbar{height:var(--app-header);min-height:var(--app-header);padding:0 var(--workspace-gutter);position:relative;top:auto;box-shadow:0 1px 0 #0008}
+body.app-shell main{width:100%;max-width:1760px;height:100%;min-height:0;margin:0 auto;padding:clamp(16px,2.2vw,30px) var(--workspace-gutter) clamp(18px,2.5vw,34px);overflow:auto}
+body:has(#page-combat.active) main{overflow:hidden}
+body.app-shell button,body.app-shell input,body.app-shell select,body.app-shell textarea{max-width:100%}
+body.app-shell select{min-width:0;text-overflow:ellipsis}
+.page.active{min-width:0}
+.section-head{margin-bottom:clamp(14px,2vw,22px);gap:var(--space-md)}
+.section-head h2{font-size:clamp(30px,3.2vw,44px)}
+.panel{padding:clamp(14px,1.5vw,22px);border-radius:var(--radius-lg);box-shadow:0 14px 34px #0003}
+button,.primary{min-height:40px;border-radius:var(--radius-sm);transition:background .16s ease,border-color .16s ease,transform .16s ease}
+button:hover{border-color:var(--accent);background:#252b32}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.primary:hover{background:var(--accent-hover);border-color:var(--accent-hover);color:#17130d}
+.danger:hover{border-color:var(--danger);background:#3a2023}
+.topbar nav{gap:4px}.topbar nav button{padding:8px 12px;font-size:13px}
+.topbar .brand{white-space:nowrap}
+
+/* Combat desktop workspace */
+#page-combat.active{height:100%;min-height:0;display:flex;flex-direction:column}
+#page-combat>.section-head{flex:0 0 auto}
+#encounter-list{min-height:0;overflow:auto}
+.encounter-card{display:flex;flex-direction:column;gap:10px}.encounter-open{width:100%;padding:0;background:transparent;border:0;text-align:left;color:inherit}.encounter-open:hover{background:transparent;border-color:transparent;transform:none}.encounter-delete{align-self:flex-start;padding:7px 10px;font-size:12px}
+#encounter-detail{height:100%;min-height:0;display:flex;flex-direction:column;gap:10px}
+#encounter-detail .combat-toolbar{position:sticky;top:0;z-index:3;flex:0 0 auto;max-width:none;margin:0;padding:8px 2px;background:transparent;backdrop-filter:none}
+#encounter-detail .combat-toolbar h3{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.combat-toolbar .round{margin-left:auto;white-space:nowrap}.combat-toolbar button{min-height:36px;padding:7px 11px}
+.combat-layout{flex:1;min-height:0;min-width:0;grid-template-columns:clamp(280px,22vw,340px) minmax(0,1fr);gap:clamp(14px,2vw,24px);align-items:stretch;overflow:hidden}
+.initiative-sidebar{height:100%;min-height:0;display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:8px;position:relative;top:auto;align-self:stretch}
+.sidebar-heading{padding:0 2px}.sidebar-heading h4{margin:0;font-size:clamp(20px,2vw,25px)}
+#initiative-list{min-height:0;overflow-y:auto;overflow-x:hidden;padding:2px 3px 2px 0;scrollbar-gutter:stable}
+.add-participant-button{position:sticky;bottom:0;margin:0;z-index:2;box-shadow:0 -10px 18px #0b0d10cc}
+.participant{grid-template-columns:52px minmax(0,1fr);grid-template-areas:"initiative-init initiative-details" "initiative-init initiative-hp" "initiative-init initiative-actions";gap:6px 10px;padding:12px;align-items:start}
+.participant>.init{grid-area:initiative-init;align-self:start;width:52px;min-height:42px}.participant>div{grid-area:initiative-details;min-width:0}.participant>div strong{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.participant>div small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-muted)}
+.participant>.participant-hp-value{grid-area:initiative-hp;align-items:flex-start;font-size:13px}.participant>.participant-actions{grid-area:initiative-actions;grid-column:auto;justify-content:flex-start}.participant-actions button{min-width:34px;min-height:34px;padding:6px 9px}
+.combat-main{height:100%;min-width:0;min-height:0;display:grid;grid-template-rows:auto auto minmax(120px,1fr);gap:12px;overflow:hidden}
+#active-card.panel{margin:0;padding:clamp(12px,1.3vw,18px);min-height:0;overflow:auto;scrollbar-gutter:stable}
+#active-card .eyebrow{margin:0 0 4px}.active-name{font-size:clamp(22px,2.4vw,30px)}
+.active-hp-value{margin:6px 0 4px;font-weight:700}.active-defense{margin:7px 0 0}.attribute-chips{display:grid;grid-template-columns:repeat(auto-fit,minmax(74px,1fr));gap:6px;margin-top:9px;max-height:68px;overflow:auto}.attribute-chips small{display:flex;flex-direction:column;gap:1px;padding:5px 7px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-input);font-size:11px;line-height:1.25}.attribute-chips small strong{color:var(--accent);font-size:12px}.source-list{margin:9px 0 0;font-size:12px}
+.combat-calculator-open{margin:0;min-height:42px}
+#encounter-detail .combat-main>.panel:last-child{min-height:0;height:100%;margin:0;display:flex;flex-direction:column;overflow:hidden}
+#encounter-detail .combat-main>.panel:last-child h4{flex:0 0 auto;margin:0 0 8px}
+#combat-log{max-height:none;min-height:0;flex:1;overflow-y:auto;scrollbar-gutter:stable;padding-right:5px}
+.log-entry{padding:7px 0;font-size:12px}
+
+/* Calculator and result hierarchy */
+.combat-calculator-modal-card{width:min(1040px,calc(100vw - 32px));height:min(820px,calc(100dvh - 28px));max-height:calc(100dvh - 28px);overflow:hidden;display:flex;flex-direction:column}
+.combat-calculator-modal-card .calculator{min-height:0;overflow-y:auto;overflow-x:hidden;padding:clamp(16px,2vw,26px);margin:0;border:0;box-shadow:none;scrollbar-gutter:stable}
+.calculator h4{margin:0 0 16px;font-size:clamp(20px,2vw,26px)}
+.calculator>label,.calculator .form-grid>label{min-width:0}.calculator label{margin:7px 0}.calculator .form-grid{gap:10px}
+.formula-output{min-height:42px;white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word;line-height:1.4;background:var(--bg-input);border-color:var(--border)}
+.calculator #dice-inputs{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:10px 0}.calculator #dice-inputs label{margin:0}.calculator #dice-inputs input{max-width:190px}.calculator .field-hint{margin:3px 0 0;font-size:12px}
+.calculator #automatic-target-hint{margin:12px 0 6px}.calculator #manual-values:empty{display:none!important}
+.calculator #calculation-result{min-height:0}.calculator .result{margin-top:12px;padding:14px 16px;background:#101419;border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0}.calculator .attack-result{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;color:var(--accent)}
+.calculator .breakdown{gap:5px 14px}.calculator .breakdown strong:last-child{color:var(--accent);font-size:1.12em}.critical-breakdown{padding:9px 0;margin-bottom:9px;border-bottom:1px solid var(--border)}
+.calculator .apply-row{position:sticky;bottom:-1px;z-index:4;display:flex;flex-wrap:wrap;gap:8px;margin:14px -1px -1px;padding:12px 0 1px;background:linear-gradient(180deg,transparent,var(--bg-panel) 26%)}.calculator .apply-row button{flex:1 1 170px}
+.magic-focus-context{min-width:0}.combat-source-tabs{display:flex;gap:6px;margin:0 0 10px;flex-wrap:wrap}.combat-source-tabs button{flex:1 1 150px;min-height:38px}.combat-source-tabs button.active{border-color:var(--accent);color:var(--accent);background:#2a2418}
+
+/* Character workspace and long pickers */
+#character-form{margin:0;min-width:0}.attributes{gap:8px}.attribute-row{min-width:0}.attribute-row input{min-width:0}.hp-breakdown{margin:12px 0;padding:12px;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--bg-input);font-size:13px}
+#character-form .split{gap:clamp(14px,2vw,24px);align-items:start}.split>div{min-width:0}.split>div>h4{margin-top:0}.ability-options-grid{max-height:440px;overflow:auto;padding-right:4px;scrollbar-gutter:stable}.ability-class-box{height:auto;min-height:0;max-height:420px}.options,#spell-options{height:440px;max-height:440px;overflow:auto;scrollbar-gutter:stable}.filters{min-width:0}.filters>*{min-width:0}.weapon-options,.equipment-options{scrollbar-gutter:stable}
+.character-weapons,.character-equipment,.character-defense-summary{margin-top:clamp(18px,2vw,28px)}
+.actions{position:sticky;bottom:0;z-index:3;margin:18px -1px -1px;padding:12px 0 1px;background:linear-gradient(180deg,transparent,var(--bg-panel) 28%)}
+
+/* Consistent overlays: bounded cards, independently scrolling collections. */
+.modal{padding:clamp(10px,3vw,24px)}.modal-card{width:min(900px,calc(100vw - 32px));max-height:calc(100dvh - 32px);overflow:hidden;display:flex;flex-direction:column}.modal-card h3{flex:0 0 auto;margin:0 0 16px}.modal-card .filters{flex:0 0 auto}.weapon-options,.equipment-options{min-height:0;flex:1;max-height:none;overflow:auto}.weapon-modal-card,.equipment-modal-card{height:min(760px,calc(100dvh - 32px))}.participant-modal-card{height:auto}
+.magic-focus-context{background:rgba(212,170,85,.08);border-color:#796031}
+
+/* Mobile workspace navigation: only the selected work surface is visible. */
+.combat-mobile-tabs{display:none}
+@media(max-width:1100px){
+  .combat-layout{grid-template-columns:clamp(270px,29vw,320px) minmax(0,1fr)}
+  .combat-toolbar{flex-wrap:wrap}.combat-toolbar h3{order:1;flex:1 1 220px}.combat-toolbar .round{order:2}.combat-toolbar #previous-turn{order:3}.combat-toolbar #next-turn{order:4}.combat-toolbar #back-encounters{order:0}
+}
+@media(max-width:900px){
+  body.app-shell{--app-header:56px}
+  body.app-shell main{padding:14px var(--workspace-gutter) 18px}
+  body:has(#page-combat.active) main{overflow:hidden}
+  #page-combat.active{height:100%}
+  #page-combat>.section-head{margin-bottom:10px}.combat-mobile-tabs{display:flex;flex:0 0 auto;gap:6px;padding:4px;background:var(--bg-panel-soft);border:1px solid var(--border);border-radius:var(--radius-md)}.combat-mobile-tabs button{flex:1;min-height:38px;padding:7px 8px}.combat-mobile-tabs button.active{background:var(--accent);border-color:var(--accent);color:#17130d;font-weight:800}
+  #encounter-detail{gap:8px}.combat-toolbar{padding:4px 0}.combat-toolbar #back-encounters{display:none}.combat-toolbar h3{font-size:16px}.combat-toolbar .round strong{font-size:21px}.combat-toolbar button{min-height:34px;padding:6px 8px;font-size:12px}
+  .combat-layout{display:block;position:relative;overflow:hidden}.initiative-sidebar,.combat-main{height:100%;width:100%;min-height:0}.initiative-sidebar{display:grid}.combat-main{display:grid}
+  #encounter-detail[data-mobile-view="participants"] .combat-main{display:none}#encounter-detail[data-mobile-view="combat"] .initiative-sidebar,#encounter-detail[data-mobile-view="log"] .initiative-sidebar{display:none}
+  #encounter-detail[data-mobile-view="log"] .combat-main{display:block;overflow:hidden}#encounter-detail[data-mobile-view="log"] .combat-main>#active-card,#encounter-detail[data-mobile-view="log"] .combat-main>.combat-calculator-open{display:none}#encounter-detail[data-mobile-view="log"] .combat-main>.panel:last-child{height:100%}
+  #encounter-detail[data-mobile-view="combat"] .combat-main>.panel:last-child{display:none}
+  #initiative-list{padding-right:2px}.participant{grid-template-columns:48px minmax(0,1fr);padding:11px}.participant>.init{width:48px}.attribute-chips{max-height:58px}
+  .combat-calculator-modal-card{width:calc(100vw - 16px);height:calc(100dvh - 16px);max-height:calc(100dvh - 16px)}
+  .combat-calculator-modal-card .calculator .form-grid.two{grid-template-columns:1fr}.calculator .check{padding-top:5px}.calculator #dice-inputs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .section-head h2{font-size:30px}.topbar nav button{padding:7px 8px;font-size:12px}.topbar nav{gap:2px}
+}
+@media(max-width:600px){
+  body.app-shell .topbar{padding:0 12px}.brand{font-size:16px;letter-spacing:.08em}.brand span{font-size:10px}.topbar nav button{font-size:11px;padding:6px 7px}
+  .section-head{align-items:flex-start;flex-wrap:wrap}.section-head .primary{width:100%}.launch-grid,.split,.form-grid.four,.form-grid.three,.form-grid.two,.attributes{grid-template-columns:1fr}.card-list{grid-template-columns:1fr}.panel{padding:14px}.attribute-row{grid-template-columns:82px repeat(3,minmax(0,1fr));gap:6px;padding:7px}.attribute-row input{padding:8px 6px}.attribute-name{padding:7px 0;font-size:12px}.options,#spell-options,.ability-options-grid{height:360px;max-height:360px}.weapon-slots,.armor-slots{grid-template-columns:1fr}.weapon-slot-card,.armor-slot-card,.magic-focus-card{align-items:flex-start;flex-direction:column}.weapon-slot-actions,.armor-slot-actions,.magic-focus-actions{justify-content:flex-start}.filters{grid-template-columns:1fr}.calculator #dice-inputs{grid-template-columns:1fr}.calculator .apply-row button{flex-basis:100%}.modal-card{width:calc(100vw - 16px);max-height:calc(100dvh - 16px)}.weapon-modal-card,.equipment-modal-card{height:calc(100dvh - 16px)}
+}
+
+/* Combat calculator modal: use the available desktop width and keep one primary scroll body. */
+#combat-calculator-modal .combat-calculator-modal-card{width:min(90vw,1400px)!important;max-width:1400px;height:auto;max-height:calc(100dvh - 32px);padding:0;overflow:hidden;display:flex;flex-direction:column}
+#combat-calculator-modal .combat-calculator-modal-card>.modal-close{position:absolute;top:10px;right:12px;z-index:12}
+#combat-calculator-modal .calculator{display:grid;grid-template-columns:minmax(300px,.9fr) minmax(420px,1.1fr);grid-template-areas:"header header" "tabs tabs" "source source" "weapon profile" "target secondary" "hitformula hitroll" "damageformula rolls" "meta meta" "auto auto" "resource resource" "manual manual" "result result" "action action";column-gap:clamp(14px,2vw,24px);row-gap:10px;align-content:start;min-width:0;min-height:0;overflow-y:auto;overflow-x:hidden;padding:18px clamp(20px,2.5vw,34px) 20px;scrollbar-gutter:stable}
+#combat-calculator-modal .calculator>*{min-width:0;margin-top:0;margin-bottom:0}
+#combat-calculator-modal #combat-calculator-title{grid-area:header;display:flex;align-items:baseline;gap:10px;min-height:34px;margin:0;padding:0 42px 6px 0;position:sticky;top:-18px;z-index:9;background:linear-gradient(var(--bg-panel) 82%,transparent);font-size:clamp(20px,1.7vw,26px)}
+#combat-calculator-modal #calculator-actor{margin-left:auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-muted);font:600 13px/1.3 system-ui,-apple-system,"Segoe UI",sans-serif}
+#combat-calculator-modal #combat-source-tabs-runtime{grid-area:tabs;position:sticky;top:34px;z-index:8;margin:0;padding:4px 0 8px;background:linear-gradient(var(--bg-panel) 84%,transparent);display:flex;gap:8px;min-width:0}
+#combat-calculator-modal #combat-source-tabs-runtime button{flex:1 1 0;min-width:0;min-height:38px;padding:7px 10px;white-space:nowrap}
+#combat-calculator-modal #combat-source-groups-runtime{grid-area:source;min-width:0}
+#combat-calculator-modal #combat-source-groups-runtime label{display:flex;flex-direction:column;gap:6px;margin:0;min-width:0;color:var(--text-muted);font-size:12px}
+#combat-calculator-modal #weapon-selection-field{grid-area:weapon}
+#combat-calculator-modal #weapon-profile-selection-field{grid-area:profile}
+#combat-calculator-modal #combat-target-field{grid-area:target}
+#combat-calculator-modal #combat-secondary-target-field{grid-area:secondary}
+#combat-calculator-modal #attack-formula-field{grid-area:hitformula}
+#combat-calculator-modal #hit-roll-fields{grid-area:hitroll;display:grid;grid-template-columns:minmax(130px,200px) minmax(0,1fr);align-items:end;gap:10px;min-width:0}
+#combat-calculator-modal #hit-roll-field{grid-column:1;margin:0}
+#combat-calculator-modal #target-roll-field{grid-column:2;margin:0}
+#combat-calculator-modal #hit-preview{grid-column:2;align-self:center;justify-self:start;margin:0;padding:8px 0;min-height:0}
+#combat-calculator-modal #combat-damage-formula-field{grid-area:damageformula}
+#combat-calculator-modal #dice-inputs{grid-area:rolls;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;align-items:end;min-width:0;margin:0}
+#combat-calculator-modal #dice-inputs label{min-width:0;margin:0}
+#combat-calculator-modal #dice-inputs input{max-width:200px}
+#combat-calculator-modal #combat-meta-fields{grid-area:meta;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;gap:10px;align-items:end;min-width:0}
+#combat-calculator-modal #combat-meta-fields label{min-width:0;margin:0}
+#combat-calculator-modal #combat-meta-fields .check{align-self:end;white-space:nowrap;padding:0;flex-direction:row;align-items:center;gap:7px}
+#combat-calculator-modal #automatic-target-hint{grid-area:auto;margin:0;padding:8px 10px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-input);font-size:12px}
+#combat-calculator-modal #resource-cost-hint{grid-area:resource;margin:0;padding:8px 10px;border:1px solid #6b5730;border-radius:var(--radius-sm);background:rgba(212,170,85,.08);color:var(--accent);font-size:12px}
+#combat-calculator-modal #manual-values{grid-area:manual;min-width:0}
+#combat-calculator-modal #calculation-result{grid-area:result;min-width:0}
+#combat-calculator-modal #calculation-result .result{min-width:0;margin:0}
+#combat-calculator-modal #calculator-action-bar{grid-area:action;position:sticky;bottom:-20px;z-index:8;display:flex;align-items:center;justify-content:space-between;gap:12px;min-width:0;margin:4px -1px -20px;padding:12px 1px 20px;background:linear-gradient(180deg,transparent,var(--bg-panel) 28%)}
+#combat-calculator-modal #calculator-action-bar>#calculate{flex:0 0 auto;min-width:150px}
+#combat-calculator-modal #calculator-action-bar .apply-row{position:static;display:flex;flex:1 1 auto;justify-content:flex-end;gap:8px;margin:0;padding:0;background:none}
+#combat-calculator-modal #calculator-action-bar .apply-row button{flex:0 1 auto;min-width:150px}
+#combat-calculator-modal .formula-output{width:100%;min-width:0;white-space:normal;overflow-wrap:anywhere;word-break:break-word}
+
+@media(max-width:1100px){
+  #combat-calculator-modal .combat-calculator-modal-card{width:min(94vw,1100px)!important}
+  #combat-calculator-modal .calculator{grid-template-columns:minmax(260px,.9fr) minmax(360px,1.1fr)}
+}
+@media(max-width:1000px){
+  #combat-calculator-modal .combat-calculator-modal-card{width:calc(100vw - 24px)!important;height:calc(100dvh - 24px);max-height:calc(100dvh - 24px)}
+  #combat-calculator-modal .calculator{grid-template-columns:minmax(0,1fr);grid-template-areas:"header" "tabs" "source" "weapon" "profile" "target" "secondary" "hitformula" "hitroll" "damageformula" "rolls" "meta" "auto" "resource" "manual" "result" "action";padding:16px 18px 18px}
+  #combat-calculator-modal #combat-source-tabs-runtime{top:34px}
+  #combat-calculator-modal #combat-meta-fields{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  #combat-calculator-modal #combat-meta-fields .check{grid-column:1/-1;justify-self:start}
+}
+@media(max-width:600px){
+  #combat-calculator-modal .combat-calculator-modal-card{width:calc(100vw - 8px)!important;height:calc(100dvh - 8px);max-height:calc(100dvh - 8px)}
+  #combat-calculator-modal .calculator{padding:14px 12px 14px;row-gap:9px}
+  #combat-calculator-modal #combat-calculator-title{top:-14px;padding-right:38px;flex-wrap:wrap;gap:2px 8px}
+  #combat-calculator-modal #calculator-actor{flex:1 1 100%;margin-left:0}
+  #combat-calculator-modal #combat-source-tabs-runtime{top:48px;gap:4px;padding-bottom:6px}
+  #combat-calculator-modal #combat-source-tabs-runtime button{min-height:36px;padding:6px 5px;font-size:12px}
+  #combat-calculator-modal #hit-roll-fields,#combat-calculator-modal #combat-meta-fields{grid-template-columns:minmax(0,1fr)}
+  #combat-calculator-modal #hit-roll-field,#combat-calculator-modal #target-roll-field,#combat-calculator-modal #hit-preview{grid-column:1}
+  #combat-calculator-modal #combat-meta-fields .check{grid-column:1}
+  #combat-calculator-modal #calculator-action-bar{align-items:stretch;flex-direction:column;bottom:-14px;margin-bottom:-14px;padding-bottom:14px}
+  #combat-calculator-modal #calculator-action-bar>#calculate,#combat-calculator-modal #calculator-action-bar .apply-row,#combat-calculator-modal #calculator-action-bar .apply-row button{width:100%;min-width:0}
+  #combat-calculator-modal #calculator-action-bar .apply-row{flex-direction:column}
+}
+
+/* Compact, accessible critical-hit control. The native checkbox remains in the DOM. */
+#combat-calculator-modal #critical-control{display:flex;align-items:center;justify-content:space-between;gap:12px;min-width:0;margin:0;padding:10px 12px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg-input);user-select:none;-webkit-user-select:none;transition:background .16s ease,border-color .16s ease,box-shadow .16s ease}
+#combat-calculator-modal #critical-control:hover{border-color:var(--accent);background:rgba(212,170,85,.08);cursor:pointer}
+#combat-calculator-modal #critical-control:has(#critical:checked){border-color:var(--accent);background:rgba(212,170,85,.12);box-shadow:0 0 0 1px rgba(212,170,85,.12),0 0 12px rgba(212,170,85,.1)}
+#combat-calculator-modal #critical-control:has(#critical:disabled){opacity:.55;cursor:not-allowed}
+#combat-calculator-modal .crit-check{position:relative;display:inline-flex;flex-direction:row;align-items:center;gap:8px;min-width:0;margin:0;color:var(--text);font-size:13px;line-height:1.3;cursor:pointer}
+#combat-calculator-modal .crit-check input{position:absolute;width:1px;height:1px;margin:-1px;opacity:0;pointer-events:none}
+#combat-calculator-modal .crit-check-box{display:inline-grid;place-items:center;flex:0 0 20px;width:20px;height:20px;border:1px solid var(--border);border-radius:4px;background:var(--bg-panel);transition:background .16s ease,border-color .16s ease,box-shadow .16s ease,transform .16s ease}
+#combat-calculator-modal #critical:checked + .crit-check-box{border-color:var(--accent);background:var(--accent);box-shadow:0 0 0 2px rgba(212,170,85,.16),0 0 9px rgba(212,170,85,.22);transform:scale(1.03)}
+#combat-calculator-modal #critical:checked + .crit-check-box::after{content:'✓';color:#1b160d;font-size:14px;font-weight:900;line-height:1}
+#combat-calculator-modal #critical:focus-visible + .crit-check-box{outline:2px solid var(--accent);outline-offset:2px}
+#combat-calculator-modal #critical:disabled + .crit-check-box{border-color:var(--border);background:var(--bg-panel);box-shadow:none;transform:none}
+#combat-calculator-modal .crit-check:has(#critical:disabled){color:var(--text-muted);cursor:not-allowed}
+#combat-calculator-modal .crit-badge{display:inline-flex;align-items:center;justify-content:center;flex:0 1 auto;min-height:26px;max-width:100%;padding:4px 9px;border:1px solid rgba(212,170,85,.58);border-radius:999px;background:rgba(212,170,85,.08);color:var(--accent);font-size:12px;font-weight:700;line-height:1.2;white-space:nowrap}
+#combat-calculator-modal #critical-control:has(#critical:disabled) .crit-badge{border-color:var(--border);background:var(--bg-panel);color:var(--text-muted)}
+#combat-calculator-modal .crit-badge:empty{display:none}
+@media(max-width:1000px){#combat-calculator-modal #critical-control{grid-column:1/-1}}
+@media(max-width:600px){#combat-calculator-modal #critical-control{align-items:flex-start;flex-wrap:wrap}#combat-calculator-modal .crit-check{flex:1 1 170px}#combat-calculator-modal .crit-badge{flex:0 1 auto;white-space:normal}}
+
+/* Combat controls: keep context, hit and physical rolls visually distinct. */
+#combat-calculator-modal .calculator{grid-template-areas:"header header" "tabs tabs" "source source" "weapon profile" "target secondary" "hitformula hitformula" "hitroll hitroll" "damageformula damageformula" "rolls rolls" "meta meta" "auto auto" "resource resource" "manual manual" "calculate calculate" "result result"}
+#combat-calculator-modal #combat-source-groups-runtime{padding:12px 14px;border:1px solid var(--border);border-radius:var(--radius-md);background:linear-gradient(145deg,var(--bg-panel-soft),var(--bg-input));}
+#combat-calculator-modal #weapon-selection-field,#combat-calculator-modal #weapon-profile-selection-field,#combat-calculator-modal #combat-target-field,#combat-calculator-modal #combat-secondary-target-field{padding:12px 14px;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--bg-panel-soft);color:var(--text-muted);}
+#combat-calculator-modal #weapon-selection-field select,#combat-calculator-modal #weapon-profile-selection-field select,#combat-calculator-modal #combat-target-field select,#combat-calculator-modal #combat-secondary-target-field select{min-height:44px;border-radius:8px;background:var(--bg-input);transition:border-color .16s ease,background .16s ease,box-shadow .16s ease;}
+#combat-calculator-modal #weapon-selection-field select:hover,#combat-calculator-modal #weapon-profile-selection-field select:hover,#combat-calculator-modal #combat-target-field select:hover,#combat-calculator-modal #combat-secondary-target-field select:hover{border-color:var(--accent);background:rgba(212,170,85,.05)}
+#combat-calculator-modal #attack-formula-field,#combat-calculator-modal #hit-roll-fields,#combat-calculator-modal #combat-damage-formula-field{min-width:0;padding:14px 16px;border:1px solid var(--border);border-radius:var(--radius-md);background:linear-gradient(145deg,var(--bg-panel-soft),var(--bg-input));}
+#combat-calculator-modal #attack-formula-field{position:relative;gap:7px;}
+#combat-calculator-modal #attack-formula-field::before{content:'TREFFER';display:block;color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.1em;line-height:1;text-transform:uppercase;}
+#combat-calculator-modal #attack-formula-field .formula-output,#combat-calculator-modal #combat-damage-formula-field .formula-output{margin-top:2px;background:rgba(16,19,23,.72);font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',monospace;font-size:13px;}
+#combat-calculator-modal #combat-damage-formula-field{position:relative;gap:7px;}
+#combat-calculator-modal #combat-damage-formula-field::before{content:'FORMEL';display:block;color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.1em;line-height:1;text-transform:uppercase;}
+#combat-calculator-modal #hit-roll-fields{display:grid;grid-template-columns:minmax(150px,220px) minmax(180px,1fr);align-items:end;gap:12px;}
+#combat-calculator-modal #hit-roll-field,#combat-calculator-modal #target-roll-field{min-width:0;margin:0;gap:6px;}
+#combat-calculator-modal #hit-roll-field input,#combat-calculator-modal #target-roll-field input,#combat-calculator-modal #dice-inputs input{min-height:48px;text-align:center;font-size:1.12rem;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:.02em;border-radius:8px;background:#0d1013;}
+#combat-calculator-modal #hit-preview{display:flex;align-items:center;justify-content:center;align-self:end;width:100%;max-width:190px;height:var(--combat-control-height);min-height:var(--combat-control-height);justify-self:start;margin:0;padding:8px 14px;border:1px solid rgba(212,170,85,.45);border-radius:8px;background:rgba(212,170,85,.08);color:var(--accent);font-size:1.15rem;font-weight:800;font-variant-numeric:tabular-nums;text-align:center;}
+#combat-calculator-modal #dice-inputs{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;align-items:stretch;margin:0;}
+#combat-calculator-modal #dice-inputs .combat-roll-card{display:flex;flex-direction:column;align-items:stretch;gap:8px;min-width:0;margin:0;padding:14px 16px;border:1px solid var(--border);border-radius:var(--radius-md);background:linear-gradient(145deg,var(--bg-panel-soft),var(--bg-input));color:var(--text);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;transition:border-color .16s ease,box-shadow .16s ease,transform .16s ease;}
+#combat-calculator-modal #dice-inputs .combat-roll-card:hover{border-color:var(--border-strong);box-shadow:0 8px 20px rgba(0,0,0,.16);transform:translateY(-1px);}
+#combat-calculator-modal #dice-inputs .combat-roll-card:focus-within{border-color:var(--accent);box-shadow:0 0 0 2px rgba(212,170,85,.14);}
+#combat-calculator-modal #dice-inputs .combat-roll-input{width:100%;max-width:none;order:2;}
+#combat-calculator-modal #dice-inputs .combat-roll-hint{order:3;display:block;margin:0;padding:5px 8px;border:1px solid rgba(212,170,85,.32);border-radius:999px;background:rgba(212,170,85,.07);color:var(--accent);font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',monospace;font-size:11px;font-weight:600;letter-spacing:0;text-transform:none;line-height:1.3;white-space:normal;overflow-wrap:anywhere;}
+#combat-calculator-modal #dice-inputs .combat-roll-card[data-roll-type="shield"]{border-color:rgba(168,200,220,.42);}
+#combat-calculator-modal #dice-inputs .combat-roll-card[data-roll-type="shield"] .combat-roll-hint{border-color:rgba(168,200,220,.35);color:#a8c8dc;background:rgba(168,200,220,.07);}
+#combat-calculator-modal #dice-inputs .combat-roll-card[data-roll-type="healing"]{border-color:rgba(109,157,120,.42);}
+#combat-calculator-modal #dice-inputs .combat-roll-card[data-roll-type="healing"] .combat-roll-hint{border-color:rgba(109,157,120,.35);color:#9bc5a5;background:rgba(109,157,120,.07);}
+#combat-calculator-modal #combat-damage-formula-field + #dice-inputs{margin-top:0;}
+@media(max-width:600px){
+  #combat-calculator-modal #hit-roll-fields{grid-template-columns:1fr;}
+  #combat-calculator-modal #hit-roll-field,#combat-calculator-modal #target-roll-field,#combat-calculator-modal #hit-preview{grid-column:1;}
+  #combat-calculator-modal #dice-inputs{grid-template-columns:1fr;}
+}
+
+/* Combat result layout: keep calculation, result and apply actions in normal flow. */
+#combat-calculator-modal .calculator{grid-template-areas:"header header" "tabs tabs" "source source" "weapon profile" "target secondary" "hitformula hitformula" "hitroll hitroll" "damageformula damageformula" "rolls rolls" "meta meta" "auto auto" "resource resource" "manual manual" "calculate calculate" "result result"}
+#combat-calculator-modal #calculator-calculate-bar{grid-area:calculate;display:flex;align-items:center;justify-content:flex-start;min-width:0;margin:2px 0 0;padding:0}
+#combat-calculator-modal #calculator-calculate-bar #calculate{min-width:150px}
+#combat-calculator-modal #combat-result-shell{grid-area:result;display:none;min-width:0;flex-direction:column;overflow:visible;margin:0;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--bg-panel-soft)}
+#combat-calculator-modal #combat-result-shell:has(#calculation-result:not(:empty)){display:flex}
+#combat-calculator-modal #calculation-result{grid-area:auto;min-width:0;margin:0;padding:0}
+#combat-calculator-modal #calculator-action-bar{grid-area:auto;position:static;display:flex;align-items:center;justify-content:flex-end;gap:12px;min-width:0;margin:0;padding:12px 16px;border-top:1px solid var(--border);background:transparent}
+#combat-calculator-modal #calculator-action-bar:has(.apply-row.hidden){display:none}
+#combat-calculator-modal #calculator-action-bar .apply-row{position:static;display:flex;flex:0 1 auto;justify-content:flex-end;gap:8px;margin:0;padding:0;background:none}
+#combat-calculator-modal #calculator-action-bar .apply-row button{min-width:160px}
+#combat-calculator-modal #calculator-action-bar .apply-row button:first-child{border-color:var(--accent);background:var(--accent);color:#17130d;font-weight:800}
+#combat-calculator-modal #calculation-result>.result{margin:0;padding:16px;border:0;border-radius:0;background:transparent;box-shadow:none}
+#combat-calculator-modal .combat-result{min-width:0;padding:16px}
+#combat-calculator-modal .combat-result-title{margin:0 0 4px;color:var(--text);font:600 18px/1.25 Georgia,serif}
+#combat-calculator-modal .combat-result-section{min-width:0;padding:12px 0;border-top:1px solid var(--border)}
+#combat-calculator-modal .combat-result-section:first-of-type{border-top:0;padding-top:4px}
+#combat-calculator-modal .combat-result-section h5{margin:0 0 8px;color:var(--accent);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+#combat-calculator-modal .combat-result-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:baseline;gap:16px;min-width:0;padding:4px 0;color:var(--text)}
+#combat-calculator-modal .combat-result-row>span{min-width:0;color:var(--text-muted)}
+#combat-calculator-modal .combat-result-row>strong{min-width:5ch;color:var(--text);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+#combat-calculator-modal .combat-result-value-emphasis>strong{color:var(--accent);font-size:1.05em}
+#combat-calculator-modal .combat-result-positive>strong{color:var(--accent)}
+#combat-calculator-modal .combat-result-defense>strong{color:var(--text-muted)}
+#combat-calculator-modal .combat-result-final{margin-top:8px;padding-top:10px;border-top:1px solid var(--border-strong)}
+#combat-calculator-modal .combat-result-final>span{color:var(--text);font-weight:700}
+#combat-calculator-modal .combat-result-final>strong{color:var(--accent);font-size:1.25em;font-weight:800}
+#combat-calculator-modal .combat-result-shield>strong{color:#a8c8dc}
+#combat-calculator-modal .combat-result-details{margin-top:10px;color:var(--text-muted);font-size:12px}
+#combat-calculator-modal .combat-result-details summary{width:max-content;max-width:100%;cursor:pointer;color:var(--accent)}
+#combat-calculator-modal .combat-result-details .combat-result-row{padding:2px 0}
+#combat-calculator-modal .combat-result-details .combat-result-row>strong{font-size:12px;color:var(--text-muted)}
+#combat-calculator-modal .combat-result-details p{margin:6px 0 0;color:var(--text-muted)}
+#combat-calculator-modal .combat-result-resource-row>span{display:flex;flex-wrap:wrap;gap:3px 10px}
+#combat-calculator-modal .combat-result-resource-current{flex:0 0 100%;color:var(--text-muted);font-size:11px}
+#combat-calculator-modal #automatic-target-hint{display:flex;align-items:flex-start;gap:7px;border-style:dashed;background:rgba(48,56,66,.35);color:var(--text-muted)}
+#combat-calculator-modal #automatic-target-hint::before{content:'ⓘ';flex:0 0 auto;color:var(--accent);font-size:14px;line-height:1}
+#combat-calculator-modal #resource-cost-hint{width:max-content;max-width:100%;padding:7px 10px;background:rgba(212,170,85,.08);font-size:12px;line-height:1.35}
+@media(max-width:1000px){#combat-calculator-modal .calculator{grid-template-areas:"header" "tabs" "source" "weapon" "profile" "target" "secondary" "hitformula" "hitroll" "damageformula" "rolls" "meta" "auto" "resource" "manual" "calculate" "result"}}
+@media(max-width:600px){#combat-calculator-modal #calculator-action-bar{align-items:stretch;flex-direction:column;padding:12px}.combat-result{padding:12px}#combat-calculator-modal #calculator-action-bar .apply-row,#combat-calculator-modal #calculator-action-bar .apply-row button{width:100%;min-width:0}#combat-calculator-modal #calculator-action-bar .apply-row{flex-direction:column}#combat-calculator-modal .combat-result-row{gap:10px}}
+
+/* Desktop density pass: keep the calculator a compact workspace. */
+#combat-calculator-modal .combat-calculator-modal-card{height:auto;max-height:calc(100dvh - 24px);}
+#combat-calculator-modal .calculator{--combat-gap:6px;--combat-control-height:40px;row-gap:var(--combat-gap);padding:12px 16px 14px;grid-template-areas:"header header" "tabs tabs" "source source" "weapon profile" "target secondary" "hitformula hitroll" "damageformula rolls" "meta meta" "auto auto" "resource resource" "manual manual" "calculate calculate" "result result";}
+#combat-calculator-modal #combat-calculator-title{min-height:30px;padding-bottom:3px;font-size:clamp(19px,1.55vw,24px);}
+#combat-calculator-modal #calculator-actor{font-size:12px;}
+#combat-calculator-modal #combat-source-tabs-runtime{top:30px;gap:6px;padding:1px 0 4px;}
+#combat-calculator-modal #combat-source-tabs-runtime button{min-height:36px;padding:6px 9px;}
+#combat-calculator-modal #combat-source-groups-runtime{padding:8px 10px;border-radius:var(--radius-sm);}
+#combat-calculator-modal #combat-source-groups-runtime label{gap:4px;}
+#combat-calculator-modal .calculator label{gap:4px;margin:0;}
+#combat-calculator-modal #weapon-selection-field,#combat-calculator-modal #weapon-profile-selection-field,#combat-calculator-modal #combat-target-field,#combat-calculator-modal #combat-secondary-target-field{padding:8px 10px;border-radius:var(--radius-sm);}
+#combat-calculator-modal #weapon-selection-field select,#combat-calculator-modal #weapon-profile-selection-field select,#combat-calculator-modal #combat-target-field select,#combat-calculator-modal #combat-secondary-target-field select{min-height:var(--combat-control-height);height:var(--combat-control-height);padding:7px 9px;border-radius:7px;}
+#combat-calculator-modal #attack-formula-field,#combat-calculator-modal #hit-roll-fields,#combat-calculator-modal #combat-damage-formula-field{padding:9px 11px;border-radius:var(--radius-sm);gap:4px;}
+#combat-calculator-modal #attack-formula-field::before,#combat-calculator-modal #combat-damage-formula-field::before{font-size:11px;}
+#combat-calculator-modal #attack-formula-field .formula-output,#combat-calculator-modal #combat-damage-formula-field .formula-output{min-height:34px;padding:7px 9px;font-size:12px;line-height:1.3;}
+#combat-calculator-modal #hit-roll-fields{grid-template-columns:minmax(130px,190px) minmax(160px,1fr);gap:8px;}
+#combat-calculator-modal #hit-roll-field,#combat-calculator-modal #target-roll-field{gap:4px;}
+#combat-calculator-modal #hit-roll-field input,#combat-calculator-modal #target-roll-field input,#combat-calculator-modal #dice-inputs input{min-height:var(--combat-control-height);height:var(--combat-control-height);padding:6px 9px;font-size:1rem;}
+#combat-calculator-modal #hit-preview{min-height:var(--combat-control-height);padding:6px 10px;font-size:1rem;}
+#combat-calculator-modal #dice-inputs{grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px;}
+#combat-calculator-modal #dice-inputs .combat-roll-card{gap:5px;padding:9px 11px;border-radius:var(--radius-sm);font-size:11px;}
+#combat-calculator-modal #dice-inputs .combat-roll-hint{padding:3px 7px;font-size:11px;}
+#combat-calculator-modal #combat-meta-fields{gap:8px;}
+#combat-calculator-modal #critical-control{padding:6px 9px;}
+#combat-calculator-modal #automatic-target-hint{gap:6px;padding:5px 8px;font-size:11px;line-height:1.3;}
+#combat-calculator-modal #resource-cost-hint{padding:5px 8px;font-size:11px;line-height:1.25;}
+#combat-calculator-modal #calculator-calculate-bar{margin-top:0;}
+#combat-calculator-modal #calculator-calculate-bar #calculate{min-width:150px;min-height:40px;padding:8px 13px;}
+#combat-calculator-modal #calculator-action-bar{padding:7px 12px;}
+#combat-calculator-modal #calculator-action-bar .apply-row button{min-height:40px;}
+#combat-calculator-modal #combat-result-shell{border-radius:var(--radius-sm);}
+#combat-calculator-modal #combat-result-shell .combat-result{padding:11px 13px;}
+#combat-calculator-modal #combat-result-shell .combat-result-section{padding:8px 0;}
+#combat-calculator-modal #combat-result-shell .combat-result{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:18px;align-items:start;}
+#combat-calculator-modal #combat-result-shell .combat-result-title{grid-column:1/-1;}
+#combat-calculator-modal #combat-result-shell .combat-result-hit,#combat-calculator-modal #combat-result-shell .combat-result-damage{grid-column:1;}
+#combat-calculator-modal #combat-result-shell .combat-result-effect,#combat-calculator-modal #combat-result-shell .combat-result-resource{grid-column:2;}
+#combat-calculator-modal #combat-result-shell .combat-result-section:first-of-type{padding-top:3px;}
+#combat-calculator-modal #combat-result-shell .combat-result-details{margin-top:5px;}
+#combat-calculator-modal select{color-scheme:dark;}
+#combat-calculator-modal select option{background-color:var(--bg-input);color:var(--text);}
+#combat-calculator-modal select option:checked{background-color:var(--accent);color:#17130d;}
+#combat-calculator-modal select option:hover,#combat-calculator-modal select option:focus,#combat-calculator-modal select option:active{background-color:var(--accent)!important;color:#17130d!important;}
+/* The OS popup cannot be themed consistently on every desktop platform. */
+#combat-calculator-modal .combat-select-wrap{position:relative;display:block;width:100%;min-width:0;}
+#combat-calculator-modal select.combat-select-native{position:absolute!important;width:1px!important;height:1px!important;margin:-1px!important;padding:0!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;clip-path:inset(50%)!important;border:0!important;opacity:0!important;pointer-events:none!important;white-space:nowrap!important;}
+#combat-calculator-modal .combat-select-trigger{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;min-height:var(--combat-control-height,40px);padding:7px 10px;border:1px solid var(--border);border-radius:7px;background:var(--bg-input);color:var(--text);font:inherit;text-align:left;transition:border-color .16s ease,background .16s ease,box-shadow .16s ease;}
+#combat-calculator-modal .combat-select-trigger::after{content:'⌄';flex:0 0 auto;color:var(--text-muted);font-size:16px;line-height:1;transform:translateY(-1px);}
+#combat-calculator-modal .combat-select-trigger:hover{border-color:var(--accent);background:rgba(212,170,85,.05);}
+#combat-calculator-modal .combat-select-trigger:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-color:var(--accent);}
+#combat-calculator-modal .combat-select-trigger.is-placeholder{color:var(--text-muted);}
+#combat-calculator-modal .combat-select-trigger:disabled{opacity:.55;cursor:not-allowed;border-color:var(--border);background:var(--bg-panel);}
+.combat-select-menu{position:fixed;z-index:100000;display:flex;flex-direction:column;gap:2px;max-height:260px;overflow:auto;padding:5px;border:1px solid var(--accent);border-radius:8px;background:#101317;box-shadow:0 14px 32px rgba(0,0,0,.55);color:var(--text);}
+.combat-select-menu[hidden]{display:none;}
+.combat-select-option{display:flex;align-items:center;width:100%;min-height:36px;padding:7px 10px;border:1px solid transparent;border-radius:5px;background:transparent;color:var(--text);font:inherit;text-align:left;white-space:normal;}
+.combat-select-option:hover,.combat-select-option:focus-visible,.combat-select-option.is-selected{border-color:rgba(212,170,85,.6);background:var(--accent);color:#17130d;outline:none;}
+.combat-select-option:disabled{opacity:.45;cursor:not-allowed;}
+@media(max-width:600px){#combat-calculator-modal .combat-select-trigger{min-height:42px;height:42px}.combat-select-option{min-height:40px;}}
+@media(max-width:1000px){#combat-calculator-modal #combat-result-shell .combat-result{display:block;}.combat-result-section{grid-column:auto!important;}}
+
+@media(max-height:800px) and (min-width:1001px){
+  #combat-calculator-modal .combat-calculator-modal-card{max-height:calc(100dvh - 16px);}
+  #combat-calculator-modal .calculator{--combat-gap:4px;padding:8px 14px 10px;}
+  #combat-calculator-modal #combat-calculator-title{min-height:27px;top:-8px;}
+  #combat-calculator-modal #combat-source-tabs-runtime{top:27px;padding-bottom:2px;}
+  #combat-calculator-modal #combat-source-tabs-runtime button{min-height:34px;padding:5px 8px;}
+  #combat-calculator-modal #combat-source-groups-runtime{padding:6px 8px;}
+  #combat-calculator-modal #weapon-selection-field,#combat-calculator-modal #weapon-profile-selection-field,#combat-calculator-modal #combat-target-field,#combat-calculator-modal #combat-secondary-target-field{padding:6px 8px;}
+  #combat-calculator-modal .calculator select{min-height:36px;height:36px;padding:5px 8px;}
+  #combat-calculator-modal #attack-formula-field,#combat-calculator-modal #hit-roll-fields,#combat-calculator-modal #combat-damage-formula-field{padding:7px 9px;}
+  #combat-calculator-modal #attack-formula-field .formula-output,#combat-calculator-modal #combat-damage-formula-field .formula-output{min-height:30px;padding:5px 8px;}
+  #combat-calculator-modal #hit-roll-field input,#combat-calculator-modal #target-roll-field input,#combat-calculator-modal #dice-inputs input,#combat-calculator-modal #hit-preview{min-height:36px;height:36px;}
+  #combat-calculator-modal #dice-inputs .combat-roll-card{padding:7px 9px;}
+  #combat-calculator-modal #critical-control{padding:5px 8px;}
+  #combat-calculator-modal #automatic-target-hint{padding:4px 7px;}
+  #combat-calculator-modal #resource-cost-hint{padding:4px 7px;}
+  #combat-calculator-modal #calculator-calculate-bar #calculate{min-height:36px;padding:6px 12px;}
+}
+@media(max-width:1000px){
+  #combat-calculator-modal .calculator{grid-template-areas:"header" "tabs" "source" "weapon" "profile" "target" "secondary" "hitformula" "hitroll" "damageformula" "rolls" "meta" "auto" "resource" "manual" "calculate" "result";}
+}
+@media(max-width:600px){
+  #combat-calculator-modal .combat-calculator-modal-card{max-height:calc(100dvh - 8px);}
+  #combat-calculator-modal .calculator{padding:10px 12px 12px;}
+  #combat-calculator-modal #combat-source-groups-runtime{padding:8px;}
+  #combat-calculator-modal #weapon-selection-field,#combat-calculator-modal #weapon-profile-selection-field,#combat-calculator-modal #combat-target-field,#combat-calculator-modal #combat-secondary-target-field{padding:8px;}
+  #combat-calculator-modal .calculator select{min-height:42px;height:42px;}
+  #combat-calculator-modal #hit-roll-field input,#combat-calculator-modal #target-roll-field input,#combat-calculator-modal #dice-inputs input,#combat-calculator-modal #hit-preview{min-height:42px;height:42px;}
+  #combat-calculator-modal #hit-preview{max-width:none;}
+}

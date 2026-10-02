@@ -23,12 +23,8 @@ try {
     $pdo = Database::connection();
     echo "Datenbank {$database} wurde angelegt.\n";
 }
-// Existing installations predate normalized class resources. Prepare their
-// table before schema.sql creates the new state tables that reference it.
-try {
-    $pdo->exec('ALTER TABLE class_resources ADD UNIQUE KEY uq_class_resource_id (resource_id)');
-} catch (Throwable) {}
 $pdo->exec((string) file_get_contents(BASE_PATH . '/database/schema.sql'));
+(new \Aetherfall\Services\ClassResourceService($pdo));
 
 $attributes = [
     ['ST', 'Stärke'], ['GE', 'Geschicklichkeit'], ['BW', 'Beweglichkeit'],

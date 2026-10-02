@@ -68,8 +68,42 @@ final class Parser
             $this->breakdown[] = ['source'=>$token['value'],'value'=>$value]; return $value;
         }
         if ($token['type'] === '(') { $value = $this->expression(); $this->expect(')'); return $value; }
-        if ($token['type'] === 'floor_open') { $value = floor($this->expression()); $this->expect('floor_close'); $this->breakdown[]=['source'=>'Abrunden','value'=>$value]; return $value; }
-        if ($token['type'] === 'ceil_open') { $value = ceil($this->expression()); $this->expect('ceil_close'); $this->breakdown[]=['source'=>'Aufrunden','value'=>$value]; return $value; }
+        if ($token['type'] === 'floor_open') {
+            // Some imported rule tables use the readable form ⌊(expression)
+            // without a trailing ⌋. Treat the parenthesized form as the same
+            // mathematical floor while still requiring balanced expressions.
+            if ($this->match('(')) {
+                $value = $this->expression();
+                $this->expect(')');
+                // Imported formulas commonly write ⌊(numerator) / divisor⌋.
+                // Continue parsing operators that are still inside the floor
+                // delimiters after the parenthesized numerator.
+                while (in_array($this->current()['type'], ['+', '-', '*', '/'], true)) {
+                    $operator = $this->advance()['type']; $right = $this->term();
+                    if ($operator === '/' && abs($right) < 0.0000001) { throw new FormulaException('Division durch null.'); }
+                    $value = $operator === '+' ? $value + $right : ($operator === '-' ? $value - $right : ($operator === '*' ? $value * $right : $value / $right));
+                }
+                if ($this->match('floor_close')) {}
+                $value = floor($value);
+            }
+            else { $value = floor($this->expression()); $this->expect('floor_close'); }
+            $this->breakdown[]=['source'=>'Abrunden','value'=>$value]; return $value;
+        }
+        if ($token['type'] === 'ceil_open') {
+            if ($this->match('(')) {
+                $value = $this->expression();
+                $this->expect(')');
+                while (in_array($this->current()['type'], ['+', '-', '*', '/'], true)) {
+                    $operator = $this->advance()['type']; $right = $this->term();
+                    if ($operator === '/' && abs($right) < 0.0000001) { throw new FormulaException('Division durch null.'); }
+                    $value = $operator === '+' ? $value + $right : ($operator === '-' ? $value - $right : ($operator === '*' ? $value * $right : $value / $right));
+                }
+                if ($this->match('ceil_close')) {}
+                $value = ceil($value);
+            }
+            else { $value = ceil($this->expression()); $this->expect('ceil_close'); }
+            $this->breakdown[]=['source'=>'Aufrunden','value'=>$value]; return $value;
+        }
         if (in_array($token['type'], ['floor_fn','ceil_fn'], true)) {
             $this->expect('('); $value = $this->expression(); $this->expect(')');
             $value = $token['type'] === 'floor_fn' ? floor($value) : ceil($value);

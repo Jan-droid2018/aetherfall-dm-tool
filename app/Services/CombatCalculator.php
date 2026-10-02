@@ -24,10 +24,12 @@ final class CombatCalculator
             $adjustment = -$value * ($resistancePercent / 100);
             $value += $adjustment; $steps[]=['label'=>"Resistenz ({$resistancePercent} %)",'value'=>$adjustment];
         }
-        if ($isDamage && $defense != 0) { $value -= $defense; $steps[]=['label'=>'Verteidigung','value'=>-$defense]; }
+        $damageBeforeDefense = $value;
+        $applicableDefense = $isDamage ? max(0, $defense) : 0;
+        if ($isDamage && $applicableDefense != 0) { $value -= $applicableDefense; $steps[]=['label'=>'Verteidigung','value'=>-$applicableDefense]; }
         $value = max(0, round($value, 2));
         $steps[] = ['label'=>$isDamage?'Finaler Schaden':'Finale Wirkung','value'=>$value];
-        return array_merge($criticalResult, ['is_damage'=>$isDamage, 'value'=>$value, 'steps'=>$steps]);
+        return array_merge($criticalResult, ['is_damage'=>$isDamage, 'value'=>$value, 'steps'=>$steps, 'damage_before_defense'=>$damageBeforeDefense, 'applicable_defense'=>$applicableDefense, 'damage_after_defense'=>$value]);
     }
 
     public function applyDamage(float $currentHp, float $damage): float { return max(0, $currentHp - max(0, $damage)); }

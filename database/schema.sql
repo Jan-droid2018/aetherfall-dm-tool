@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS classes (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS class_resources (
-  class_id VARCHAR(120) PRIMARY KEY,
+  class_id VARCHAR(120) NOT NULL,
   resource_id VARCHAR(120) NOT NULL,
   name VARCHAR(190) NOT NULL,
   form TEXT NULL,
@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS class_resources (
   source_file VARCHAR(255) NULL,
   source_hash CHAR(64) NULL,
   raw_json LONGTEXT NOT NULL,
-  UNIQUE KEY uq_class_resource_id (resource_id),
+  PRIMARY KEY (class_id, resource_id),
   CONSTRAINT fk_resource_class FOREIGN KEY (class_id) REFERENCES classes(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -54,6 +54,7 @@ CREATE TABLE IF NOT EXISTS class_actions (
   unlock_level SMALLINT UNSIGNED NOT NULL DEFAULT 1,
   attack_formula TEXT NULL,
   damage_formula TEXT NULL,
+  formula_variables_json TEXT NULL,
   damage_type VARCHAR(190) NULL,
   resource_cost TEXT NULL,
   resource_gain TEXT NULL,
@@ -65,6 +66,25 @@ CREATE TABLE IF NOT EXISTS class_actions (
   UNIQUE KEY uq_class_action_external (class_id, external_id),
   INDEX idx_class_actions_level (class_id, unlock_level),
   CONSTRAINT fk_class_action_class FOREIGN KEY (class_id) REFERENCES classes(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS weapon_combat_profiles (
+  id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  weapon_id VARCHAR(190) NOT NULL,
+  profile_key VARCHAR(80) NOT NULL,
+  label VARCHAR(190) NOT NULL,
+  handling VARCHAR(190) NULL,
+  attack_formula TEXT NULL,
+  attack_attribute VARCHAR(190) NULL,
+  damage_formula TEXT NULL,
+  damage_type VARCHAR(190) NULL,
+  sort_order SMALLINT NOT NULL DEFAULT 0,
+  raw_json LONGTEXT NULL,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  UNIQUE KEY uq_weapon_combat_profile (weapon_id, profile_key),
+  INDEX idx_weapon_profile_weapon (weapon_id),
+  CONSTRAINT fk_weapon_profile_weapon FOREIGN KEY (weapon_id) REFERENCES weapons(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS class_weapon_profiles (
@@ -309,7 +329,7 @@ CREATE TABLE IF NOT EXISTS character_class_resources (
   updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   UNIQUE KEY uq_character_class_resource (character_class_id, class_resource_id),
   CONSTRAINT fk_character_resource_class FOREIGN KEY (character_class_id) REFERENCES character_classes(id) ON DELETE CASCADE,
-  CONSTRAINT fk_character_resource_definition FOREIGN KEY (class_resource_id) REFERENCES class_resources(resource_id) ON DELETE CASCADE
+  INDEX idx_character_resource_definition (class_resource_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS character_attributes (
@@ -521,20 +541,21 @@ CREATE TABLE IF NOT EXISTS combat_participant_resources (
   max_value_snapshot DECIMAL(12,2) NULL,
   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  UNIQUE KEY uq_participant_resource (combat_participant_id, class_resource_id),
+  UNIQUE KEY uq_participant_resource (combat_participant_id, character_class_id, class_resource_id),
   CONSTRAINT fk_participant_resource_participant FOREIGN KEY (combat_participant_id) REFERENCES combat_participants(id) ON DELETE CASCADE,
   CONSTRAINT fk_participant_resource_character_class FOREIGN KEY (character_class_id) REFERENCES character_classes(id) ON DELETE SET NULL,
-  CONSTRAINT fk_participant_resource_definition FOREIGN KEY (class_resource_id) REFERENCES class_resources(resource_id) ON DELETE CASCADE
+  INDEX idx_participant_resource_definition (class_resource_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS combat_resource_transactions (
   id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   combat_participant_id BIGINT UNSIGNED NOT NULL,
   execution_id VARCHAR(190) NOT NULL,
+  character_class_id BIGINT UNSIGNED NULL,
   class_resource_id VARCHAR(120) NOT NULL,
   delta DECIMAL(12,2) NOT NULL,
   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  UNIQUE KEY uq_resource_execution (combat_participant_id, execution_id, class_resource_id),
+  UNIQUE KEY uq_resource_execution (combat_participant_id, execution_id, character_class_id, class_resource_id),
   CONSTRAINT fk_resource_transaction_participant FOREIGN KEY (combat_participant_id) REFERENCES combat_participants(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
