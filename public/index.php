@@ -245,6 +245,7 @@ try {
     }
     if(preg_match('#^encounters/(\d+)/participants/(\d+)/resources/([^/]+)$#',$api,$m)&&($method==='PATCH'||$method==='PUT'))respond($encounters->setParticipantResource((int)$m[1],(int)$m[2],$m[3],(float)($body['value']??$body['current']??0),isset($body['class_id'])?(string)$body['class_id']:null,isset($body['character_class_id'])?(int)$body['character_class_id']:null));
     if(preg_match('#^encounters/(\d+)/participants/(\d+)/phase$#',$api,$m)&&$method==='PATCH'){$encounters->setBossPhase((int)$m[1],(int)$m[2],(string)($body['phase']??''));respond(['ok'=>true]);}
+    if(preg_match('#^encounters/(\d+)/participants/(\d+)/select$#',$api,$m)&&$method==='POST'){$encounters->selectParticipant((int)$m[1],(int)$m[2]);respond(['ok'=>true]);}
     if(preg_match('#^encounters/(\d+)/(next|previous)$#',$api,$m)&&$method==='POST'){ $encounters->moveTurn((int)$m[1],$m[2]==='next'?1:-1);respond(['ok'=>true]); }
     if(preg_match('#^encounters/(\d+)/apply-effect$#',$api,$m)&&$method==='POST')respond($encounters->applyEffect((int)$m[1],$body));
     if($api==='calculate'&&$method==='POST') respond(calculateCombatRequest($pdo,$body,$resources));
