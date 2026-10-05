@@ -16,7 +16,7 @@ final class CharacterRepository
     private ClassResourceService $resourceService;
     private \Aetherfall\Services\CharacterEquipmentService $equipmentService;
     private \Aetherfall\Services\CharacterDefenseService $defenseService;
-    public function __construct(private PDO $pdo) { $this->ensureAbilitySlots(); $this->ensureSpellSlots(); new \Aetherfall\Services\CharacterClassService($pdo); new \Aetherfall\Services\CharacterWeaponService($pdo); $this->resourceService=new ClassResourceService($pdo); $this->equipmentService=new \Aetherfall\Services\CharacterEquipmentService($pdo); $this->defenseService=new \Aetherfall\Services\CharacterDefenseService($pdo); }
+    public function __construct(private PDO $pdo) { $this->ensureNickname(); $this->ensureAbilitySlots(); $this->ensureSpellSlots(); new \Aetherfall\Services\CharacterClassService($pdo); new \Aetherfall\Services\CharacterWeaponService($pdo); $this->resourceService=new ClassResourceService($pdo); $this->equipmentService=new \Aetherfall\Services\CharacterEquipmentService($pdo); $this->defenseService=new \Aetherfall\Services\CharacterDefenseService($pdo); }
 
     public function all(): array
     {
@@ -123,15 +123,16 @@ final class CharacterRepository
             $stmt = $this->pdo->prepare("SELECT COUNT(*) FROM spells WHERE id IN ({$placeholders})"); $stmt->execute($spellIds);
             if ((int)$stmt->fetchColumn() !== count($spellIds)) throw new RuntimeException('Mindestens ein Zauber existiert nicht.');
         }
+        $nickname=trim((string)($data['nickname']??''));$nickname=$nickname!==''?$nickname:null;
         $this->pdo->beginTransaction();
         try {
             if ($id === null) {
-                $stmt = $this->pdo->prepare('INSERT INTO characters (name,player_name,class_id,level,max_hp,current_hp,critical_damage_percent) VALUES (?,?,?,?,?,?,?)');
-                $stmt->execute([$data['name'],$data['player_name'],$data['class_id'],$data['level'],$maxHp,$currentHp,$data['critical_damage_percent']]);
+                $stmt = $this->pdo->prepare('INSERT INTO characters (name,nickname,player_name,class_id,level,max_hp,current_hp,critical_damage_percent) VALUES (?,?,?,?,?,?,?,?)');
+                $stmt->execute([$data['name'],$nickname,$data['player_name'],$data['class_id'],$data['level'],$maxHp,$currentHp,$data['critical_damage_percent']]);
                 $id = (int)$this->pdo->lastInsertId();
             } else {
-                $stmt = $this->pdo->prepare('UPDATE characters SET name=?,player_name=?,class_id=?,level=?,max_hp=?,current_hp=?,critical_damage_percent=? WHERE id=?');
-                $stmt->execute([$data['name'],$data['player_name'],$data['class_id'],$data['level'],$maxHp,$currentHp,$data['critical_damage_percent'],$id]);
+                $stmt = $this->pdo->prepare('UPDATE characters SET name=?,nickname=?,player_name=?,class_id=?,level=?,max_hp=?,current_hp=?,critical_damage_percent=? WHERE id=?');
+                $stmt->execute([$data['name'],$nickname,$data['player_name'],$data['class_id'],$data['level'],$maxHp,$currentHp,$data['critical_damage_percent'],$id]);
                 $this->pdo->prepare('DELETE FROM character_attributes WHERE character_id=?')->execute([$id]);
                 $this->pdo->prepare('DELETE FROM character_abilities WHERE character_id=?')->execute([$id]);
                 $this->pdo->prepare('DELETE FROM character_spells WHERE character_id=?')->execute([$id]);$this->pdo->prepare('DELETE FROM character_spell_slots WHERE character_id=?')->execute([$id]);
@@ -148,6 +149,16 @@ final class CharacterRepository
             try{$this->resourceService->ensureCharacterStates($id);foreach($this->resourceService->definitionsForCharacter($id) as $resource){$key=(string)$resource['class_id'].'|'.(string)$resource['resource_id'].'|'.(string)$resource['role'];if(array_key_exists($key,$existingResourceValues))$this->resourceService->setCharacterCurrentForClass($id,(int)$resource['character_class_id'],(string)$resource['resource_id'],$existingResourceValues[$key]);}}catch(\Throwable){}
             $this->pdo->commit(); return $id;
         } catch (\Throwable $e) { $this->pdo->rollBack(); throw $e; }
+    }
+
+    private function ensureNickname(): void
+    {
+        try { $this->pdo->query('SELECT nickname FROM characters LIMIT 1'); return; } catch (\Throwable) {}
+        try {
+            $this->pdo->exec($this->pdo->getAttribute(PDO::ATTR_DRIVER_NAME)==='mysql'
+                ? 'ALTER TABLE characters ADD COLUMN nickname VARCHAR(190) NULL AFTER name'
+                : 'ALTER TABLE characters ADD COLUMN nickname VARCHAR(190) NULL');
+        } catch (\Throwable) {}
     }
 
     private function ensureSpellSlots(): void
