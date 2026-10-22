@@ -25,6 +25,7 @@ try {
 }
 $pdo->exec((string) file_get_contents(BASE_PATH . '/database/schema.sql'));
 (new \Aetherfall\Services\ClassResourceService($pdo));
+$skillService = new \Aetherfall\Services\CharacterSkillService($pdo);
 
 $attributes = [
     ['ST', 'Stärke'], ['GE', 'Geschicklichkeit'], ['BW', 'Beweglichkeit'],
@@ -38,4 +39,5 @@ foreach ($attributes as $index => [$code, $name]) {
 }
 
 echo "Migration und Attribut-Seed erfolgreich.\n";
+echo sprintf("Fertigkeitsdefinitionen: %d\n", count($skillService->definitions()));
 

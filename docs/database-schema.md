@@ -16,11 +16,15 @@ Alle zentralen Regelobjekte nutzen stabile String-IDs. Normalisierte Felder dien
 
 - `characters`: nur Name, Spieler, Klasse, Stufe, Max/Aktuell-LP und kritischer Schaden in Prozent. `max_hp` wird beim Speichern aus Klasse, Stufe und Attributen abgeleitet; `current_hp` bleibt ein separater Zustand.
 - `character_attributes`: Unique/Primary Key aus Charakter und Attribut. Wert und Bonus werden manuell gepflegt; der gespeicherte Modifikator ist ein serverseitig berechneter, abgeleiteter Wert.
+- `skill_definitions`: exakt 47 zentrale Fertigkeitsdefinitionen mit Kategorie sowie Primär-/Sekundärattribut.
+- `character_skills`: einmalig initialisierte Fertigkeitsgrundwerte (`base_value`), aktuelle manuelle Werte und Boni je Charakter. Der Fertigkeitsmodifikator wird ausschließlich aus `value` abgeleitet und nicht redundant gespeichert. `characters.skills_initialized_at` schützt die einmalige Initialisierung.
 - `character_abilities`, `character_spells`: reine Relationstabellen.
 - `character_weapon_slots`: maximal zwei optionale Relationen pro Charakter (`hand_1`, `hand_2`). Die Zuordnung wird separat gespeichert und ist nicht Teil der Combat-Berechnung.
 - `character_class_resources`: aktueller Wert je Klassenrelation und Ressource; das Maximum wird aus Definition und individueller Klassenstufe aufgelöst.
 
 Für Spielercharaktere gelten ganzzahlige Attributwerte von 1 bis 100 sowie ganzzahlige Attributboni. Der gespeicherte Modifikator ist `floor((Wert - 10) / 2)`. Maximale LP sind `floor(100 + ((Haupt-Mod + Haupt-Bonus) × 10) + ((Sekundär-Mod + Sekundär-Bonus) × 5) + (Stufe × 10))`. Haupt- und Sekundärattribut stammen aus `class_attribute_adjustments`; die dort hinterlegten Anpassungswerte +2/+1/−2 werden dabei nicht auf den Attributwert angewendet.
+
+Fertigkeitswerte werden bei neuen Charakteren nach dem Attributspeichern einmalig mit `floor(((Primärwert × 2) + Sekundärwert) / 3)` berechnet. Bestehende Charaktere starten mit `skills_initialized_at = NULL` und werden über den Character-Sheet-Button initialisiert. Danach verändern Attributänderungen den Fertigkeitswert nicht mehr; manuelle Änderungen an `value` berechnen den Modifikator weiterhin automatisch mit derselben zentralen Formel wie Attribute. `bonus` bleibt unabhängig und editierbar.
 
 ## Combat
 

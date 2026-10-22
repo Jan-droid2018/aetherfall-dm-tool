@@ -12,6 +12,7 @@ JSON (Source of Truth)
 - `app/Support`: Umgebung, PDO, JSON und Logging.
 - `app/Repositories`: relationale Abfragen und transaktionales Charakter-CRUD.
 - `app/Services`: Import, Validierung, zentrale Charakterberechnungen, Charakter-Waffenslots, Combat State und Schadenspipeline.
+- `CharacterSkillService` seedet die 47 Fertigkeitsdefinitionen, initialisiert Charakterfertigkeiten transaktional und löst den Modifikator ausschließlich aus dem aktuellen Fertigkeitswert auf.
 - `ClassResourceService` trennt importierte Klassenressourcen von persistenten Charakterwerten und den pro Encounter erzeugten Snapshots. `class_actions` und `class_weapon_profiles` werden wie andere Regelquellen über den normalen Combat-Resolver angeboten.
 - `app/Formula`: sicherer Tokenizer, Parser und Variablenresolver ohne `eval`.
 - `bin`: Migration, Import und Diagnostik.
@@ -24,6 +25,8 @@ Die Webanwendung liest Regelwerkdaten aus der Datenbank. JSON wird ausschließli
 `CharacterAttributeCalculator` ist die serverseitige Source of Truth für Charakter-Modifikatoren und akzeptiert ausschließlich Attributwerte von 1 bis 100. `CharacterHpCalculator` berechnet Max-LP und kapselt das Verhalten der aktuellen LP. Das Repository ignoriert vom Client gelieferte Modifikatoren und Max-LP, berechnet beide Werte neu und speichert sie gemeinsam mit dem Charakter in einer Transaktion.
 
 Die JavaScript-Berechnung dient nur der unmittelbaren Vorschau. Sie markiert das Haupt- und Sekundärattribut der gewählten Klasse und zeigt den LP-Breakdown an. Klassenanpassungen +2/+1/−2 bleiben reine Information und verändern die eingegebenen Attributwerte nicht.
+
+Fertigkeiten stehen direkt unter den Attributen. Der Client zeigt eine Live-Vorschau des abgeleiteten Modifikators, sendet aber nur `value` und `bonus`; der Server verwirft manipulierte Modifikatorwerte.
 
 # Waffen
 

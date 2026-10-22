@@ -91,7 +91,20 @@ function rollDiceContext(string $expression,array $body,?array $weaponContext=nu
     $effectRoll=$rolls['effect_1']??$rolls['effect']??$legacy;
     preg_match_all('/\b(?:\d*)W\d+\b/iu',$expression,$matches);$notations=[];foreach($matches[0] as $notation){$key=strtoupper(str_replace('D','W',preg_replace('/\s+/','',$notation)));if(str_starts_with($key,'W'))$key='1'.$key;if(!in_array($key,$notations,true))$notations[]=$key;}
     $weaponDice=[];if($weaponContext) {preg_match_all('/\b(?:\d*)W\d+\b/iu',(string)($weaponContext['damage_formula']??''),$wm);foreach($wm[0] as $notation){$key=strtoupper(str_replace('D','W',preg_replace('/\s+/','',$notation)));if(str_starts_with($key,'W'))$key='1'.$key;$weaponDice[]=$key;}}
-    foreach($notations as $index=>$key){$value=null;if($weaponRoll!==null&&$weaponRoll!==''){if(!$weaponDice||in_array($key,$weaponDice,true))$value=$weaponRoll;}if($value===null&&$effectRoll!==null&&$effectRoll!=='')$value=$effectRoll;if($value!==null)$dice[$key]=(float)$value;}
+    $weaponDice=array_values(array_unique($weaponDice));
+    if (!$notations) return $dice;
+
+    // Each combat input is the sum of all physical dice in its group.  Keep
+    // the group membership in the context; Parser consumes each group sum
+    // once and treats all remaining notations in that group as zero.
+    $weaponGroup = $weaponDice
+        ? array_values(array_intersect($notations, $weaponDice))
+        : (($weaponRoll!==null&&$weaponRoll!=='') ? $notations : []);
+    $effectGroup = array_values(array_diff($notations, $weaponGroup));
+    $groups=[];
+    if($weaponRoll!==null&&$weaponRoll!==''&&$weaponGroup){$groups[]=['key'=>'weapon','notations'=>$weaponGroup,'value'=>(float)$weaponRoll];}
+    if($effectRoll!==null&&$effectRoll!==''&&$effectGroup){$groups[]=['key'=>'effect','notations'=>$effectGroup,'value'=>(float)$effectRoll];}
+    if($groups)$dice['__aggregate_groups']=$groups;
     return$dice;
 }
 function effectDiceContext(string $expression,array $effect,array $body,?array $weaponContext=null): array {
@@ -165,7 +178,7 @@ function calculateCombatRequest(PDO $pdo,array $body,ClassResourceService $resou
     $resultLocal=[];if($weapon&&$weaponContext){$resultLocal=(new WeaponCombatResolver($pdo))->localVariables($weapon,$variables);$variables=array_merge($variables,$resultLocal);}$variables=array_merge($variables,$sourceType==='spell'?[]:($body['manual_variables']??[]));
     $attackFormula=trim((string)($source['attack_roll']??''));$attackRequired=$actorType==='character'&&$attackFormula!==''&&$attackFormula!=='-'&&preg_match('/(?:W20|normal(?:er|en)?\s+(?:Waffen[- ]?)?angriff|Waffenschaden|angriffswurf)/iu',$attackFormula);$attack=null;
     $resolveAttack=function()use(&$attack,$attackRequired,$attackFormula,$body,$engine,$variables,$targetId,$weaponContext,$pdo):array{
-        if(!$attackRequired)return[];$attackExpression=$engine->extractMath($attackFormula)??'W20';$attackDice=[];$hitRoll=$body['hit_roll']??($body['rolls']['hit']??'');$attack=[];$targetVars=$targetId?targetVariables($pdo,$targetId):[];$needsTargetRoll=(bool)preg_match('/gegen\s+(?:den\s+normalen\s+)?(?:W20|Ausweichwurf)/iu',$attackFormula);$targetRoll=$body['target_roll']??'';if($hitRoll!==''){$attackDice['W20']=(float)$hitRoll;$attack=$engine->evaluate($attackExpression,['variables'=>$variables,'dice'=>$attackDice]);}$attack['expression']=$attackExpression;$targetText=preg_replace('/^.*?\s+gegen\s+/iu','',$attackFormula)??'';if($needsTargetRoll&&$targetRoll!==''){$targetExpression=$engine->extractMath($targetText)??'W20 + Ausweichen-Modifikator des Ziels + Ausweichen-Bonus des Ziels';$target=$engine->evaluate($targetExpression,['variables'=>$targetVars,'dice'=>['W20'=>(float)$targetRoll]]);$attack['target']=$target;$attack['target_total']=$target['value'];}elseif($weaponContext&&$targetId)$attack['target_total']=($targetVars['AU-Modifikator des Ziels']??0)+($targetVars['AU-Bonus des Ziels']??0);elseif(!$needsTargetRoll){$target=$targetId?targetAdjustments($pdo,$targetId,$body['damage_type']??null):['defense'=>0];$attack['target_total']=$target['defense'];}if($hitRoll!==''){$attack['value']=$attack['value']??null;$attack['hit']=($attack['value']!==null&&isset($attack['target_total']))?($attack['value']>=(float)$attack['target_total']):null;}else{$attack['value']=null;$attack['hit']=null;}return$attack;
+        if(!$attackRequired)return[];$attackExpression=$engine->extractMath($attackFormula)??'W20';$hitRoll=$body['hit_roll']??($body['rolls']['hit']??'');$attack=[];$targetVars=$targetId?targetVariables($pdo,$targetId):[];$needsTargetRoll=(bool)preg_match('/gegen\s+(?:den\s+normalen\s+)?(?:W20|Ausweichwurf)/iu',$attackFormula);$targetRoll=$body['target_roll']??'';if($hitRoll!==''){$attackDice=rollDiceContext($attackExpression,['rolls'=>['effect_1'=>$hitRoll],'effect_roll'=>$hitRoll]);$attack=$engine->evaluate($attackExpression,['variables'=>$variables,'dice'=>$attackDice]);}$attack['expression']=$attackExpression;$targetText=preg_replace('/^.*?\s+gegen\s+/iu','',$attackFormula)??'';if($needsTargetRoll&&$targetRoll!==''){$targetExpression=$engine->extractMath($targetText)??'W20 + Ausweichen-Modifikator des Ziels + Ausweichen-Bonus des Ziels';$targetDice=rollDiceContext($targetExpression,['rolls'=>['effect_1'=>$targetRoll],'effect_roll'=>$targetRoll]);$target=$engine->evaluate($targetExpression,['variables'=>$targetVars,'dice'=>$targetDice]);$attack['target']=$target;$attack['target_total']=$target['value'];}elseif($weaponContext&&$targetId)$attack['target_total']=($targetVars['AU-Modifikator des Ziels']??0)+($targetVars['AU-Bonus des Ziels']??0);elseif(!$needsTargetRoll){$target=$targetId?targetAdjustments($pdo,$targetId,$body['damage_type']??null):['defense'=>0];$attack['target_total']=$target['defense'];}if($hitRoll!==''){$attack['value']=$attack['value']??null;$attack['hit']=($attack['value']!==null&&isset($attack['target_total']))?($attack['value']>=(float)$attack['target_total']):null;}else{$attack['value']=null;$attack['hit']=null;}return$attack;
     };
     $attack=$resolveAttack();if($mode==='hit'){if($actorType!=='character')throw new RuntimeException('Trefferprüfung ist nur für Spielercharaktere verfügbar.');if(!$attackRequired)throw new RuntimeException('Für diese Fähigkeit ist keine Trefferformel hinterlegt.');return['supported'=>true,'attack'=>$attack,'original_text'=>$attackFormula,'expression'=>$attackFormula,'weapon'=>$weaponContext,'magic_attribute'=>$magicFocusContext];}
     $resolvedEffects=[];$damageEvaluation=null;$firstEvaluation=null;$allMissing=[];$allSupported=true;
@@ -223,6 +236,13 @@ try {
         if ($method==='PUT'||$method==='PATCH') { $focusId=trim((string)($body['magic_focus_id']??'')); if($focusId==='')respond(['error'=>'magic_focus_id ist erforderlich.'],422); respond($characterEquipment->setMagicFocus($characterId,$focusId)); }
         if ($method==='DELETE') { $characterEquipment->clearMagicFocus($characterId); respond(['magic_focus'=>null]); }
     }
+    if (preg_match('#^characters/(\d+)/skills/initialize$#', $api, $m) && $method === 'POST') {
+        $characterId = (int)$m[1];
+        respond(['skills' => $characters->initializeSkills($characterId), 'skills_initialized_at' => $characters->find($characterId)['skills_initialized_at'] ?? null]);
+    }
+    if (preg_match('#^characters/(\d+)/skills/([^/]+)$#', $api, $m) && ($method === 'PATCH' || $method === 'PUT')) {
+        respond($characters->updateSkill((int)$m[1], rawurldecode($m[2]), $body));
+    }
     if (preg_match('#^characters/(\d+)$#',$api,$m)) {
         $id=(int)$m[1]; if($method==='GET'){ $row=$characters->find($id); $row?respond($row):respond(['error'=>'Charakter nicht gefunden.'],404); }
         if($method==='PUT'){ $characters->save($body,$id); respond($characters->find($id)); }
@@ -237,8 +257,10 @@ try {
         if($method==='GET'){ $row=$encounters->find((int)$m[1]);$row?respond($row):respond(['error'=>'Kampf nicht gefunden.'],404); }
         if($method==='DELETE'){ $encounters->delete((int)$m[1]);respond(['ok'=>true]); }
     }
+    if(preg_match('#^encounters/(\d+)/log$#',$api,$m)&&$method==='DELETE')respond(['ok'=>true,'deleted'=>$encounters->clearLog((int)$m[1])]);
     if(preg_match('#^encounters/(\d+)/participants$#',$api,$m)&&$method==='POST')respond(['id'=>$encounters->addParticipant((int)$m[1],$body)],201);
     if(preg_match('#^encounters/(\d+)/participants/(\d+)/hp$#',$api,$m)&&($method==='PATCH'||$method==='PUT'))respond($encounters->setParticipantHp((int)$m[1],(int)$m[2],$body['current_hp']??$body['hp']??$body['value']??null));
+    if(preg_match('#^encounters/(\d+)/participants/(\d+)/initiative$#',$api,$m)&&($method==='PATCH'||$method==='PUT'))respond($encounters->setParticipantInitiative((int)$m[1],(int)$m[2],$body['initiative_roll']??$body['initiative']??$body['roll']??null));
     if(preg_match('#^encounters/(\d+)/participants/(\d+)$#',$api,$m)){
         if($method==='PATCH'){ $encounters->updateParticipant((int)$m[1],(int)$m[2],$body);respond(['ok'=>true]); }
         if($method==='DELETE'){ $encounters->removeParticipant((int)$m[1],(int)$m[2]);respond(['ok'=>true]); }

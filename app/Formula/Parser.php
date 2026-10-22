@@ -16,6 +16,13 @@ final class Parser
         private VariableResolver $resolver,
     ) {}
 
+    /**
+     * The combat UI accepts one physical sum for a dice group (for example
+     * 1W10 + 2W6 is entered as 22).  Keep track of groups that already used
+     * that sum so the same input is not counted once for every notation.
+     */
+    private array $aggregateDiceUsed = [];
+
     public function evaluate(): array
     {
         $value = $this->expression();
@@ -114,7 +121,33 @@ final class Parser
 
     private function findDice(string $notation): ?float
     {
+        $aggregateGroups = $this->dice['__aggregate_groups'] ?? null;
+        if (is_array($aggregateGroups)) {
+            foreach ($aggregateGroups as $index => $group) {
+                if (!is_array($group)) {
+                    continue;
+                }
+                $notations = $group['notations'] ?? [];
+                if (!is_array($notations) || !in_array(strtoupper($notation), array_map('strtoupper', $notations), true)) {
+                    continue;
+                }
+                $value = $group['value'] ?? null;
+                if (!is_numeric($value)) {
+                    return null;
+                }
+                $groupKey = (string)($group['key'] ?? $index);
+                if (($this->aggregateDiceUsed[$groupKey] ?? false) === true) {
+                    return 0.0;
+                }
+                $this->aggregateDiceUsed[$groupKey] = true;
+                return (float)$value;
+            }
+        }
+
         foreach ($this->dice as $key => $value) {
+            if ($key === '__aggregate_groups') {
+                continue;
+            }
             $normalized = strtoupper((string) $key);
             if (str_starts_with($normalized, 'W')) { $normalized = '1' . $normalized; }
             if ($normalized === strtoupper($notation) && is_numeric($value)) { return (float) $value; }

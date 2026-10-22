@@ -302,6 +302,7 @@ CREATE TABLE IF NOT EXISTS characters (
   max_hp INT UNSIGNED NOT NULL,
   current_hp INT UNSIGNED NOT NULL,
   critical_damage_percent DECIMAL(8,2) NOT NULL DEFAULT 0,
+  skills_initialized_at DATETIME NULL,
   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   CONSTRAINT fk_character_class FOREIGN KEY (class_id) REFERENCES classes(id)
@@ -342,6 +343,33 @@ CREATE TABLE IF NOT EXISTS character_attributes (
   PRIMARY KEY (character_id, attribute_code),
   CONSTRAINT fk_char_attr_character FOREIGN KEY (character_id) REFERENCES characters(id) ON DELETE CASCADE,
   CONSTRAINT fk_char_attr_definition FOREIGN KEY (attribute_code) REFERENCES attribute_definitions(code)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS skill_definitions (
+  id VARCHAR(190) PRIMARY KEY,
+  external_id VARCHAR(190) NOT NULL UNIQUE,
+  name VARCHAR(190) NOT NULL,
+  category VARCHAR(30) NOT NULL,
+  primary_attribute VARCHAR(2) NOT NULL,
+  secondary_attribute VARCHAR(2) NOT NULL,
+  sort_order INT NOT NULL,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  CONSTRAINT fk_skill_definition_primary_attribute FOREIGN KEY (primary_attribute) REFERENCES attribute_definitions(code),
+  CONSTRAINT fk_skill_definition_secondary_attribute FOREIGN KEY (secondary_attribute) REFERENCES attribute_definitions(code)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS character_skills (
+  character_id BIGINT UNSIGNED NOT NULL,
+  skill_definition_id VARCHAR(190) NOT NULL,
+  base_value INT NOT NULL,
+  value INT NOT NULL,
+  bonus INT NOT NULL DEFAULT 0,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (character_id, skill_definition_id),
+  CONSTRAINT fk_character_skill_character FOREIGN KEY (character_id) REFERENCES characters(id) ON DELETE CASCADE,
+  CONSTRAINT fk_character_skill_definition FOREIGN KEY (skill_definition_id) REFERENCES skill_definitions(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS character_abilities (

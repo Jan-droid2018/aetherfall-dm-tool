@@ -50,6 +50,8 @@ Die maximalen Charakter-LP werden automatisch berechnet:
 
 Modifikatoren und maximale LP sind im Formular nicht editierbar und werden beim Speichern serverseitig neu berechnet. Aktuelle LP bleiben separat: Eine neue Figur beginnt bei ihren maximalen LP; beim Bearbeiten wird sie durch steigende Max-LP nicht geheilt und bei sinkenden Max-LP höchstens auf den neuen Maximalwert reduziert.
 
+Direkt unter den Attributen liegen 47 Fertigkeiten in fünf Kategorien. Neue Charaktere werden nach dem Speichern automatisch einmalig initialisiert. Bei bestehenden Charakteren übernimmt der Button **Fertigkeiten berechnen & festschreiben** die Initialisierung. Der Grundwert ist `floor(((Primärwert × 2) + Sekundärwert) / 3)` und wird danach als `base_value`/`value` gespeichert. Fertigkeitswerte und Boni bleiben manuell editierbar; der Modifikator wird immer mit derselben Formel wie bei Attributen aus dem aktuellen Fertigkeitswert abgeleitet und nicht gespeichert. Spätere Attributänderungen verändern bereits initialisierte Fertigkeiten nicht.
+
 Charakterberechnungen liefern immer Ganzzahlen. Sollte eine Berechnung dennoch einen Nachkommawert ergeben, wird mit `floor` abgerundet: `4,5 → 4` und `4,9 → 4`.
 
 Im Charakterformular können optional zwei Waffen (`Hand 1` und `Hand 2`) aus dem importierten Waffenbestand ausgewählt, gesucht, gefiltert oder entfernt werden. Die Auswahl wird beim Charakter gespeichert und beim Bearbeiten wieder geladen. Waffen sind in dieser Version reine Charakterdaten und werden noch nicht in Combat-Treffer- oder Schadensformeln verwendet.

@@ -17,11 +17,14 @@ final class EncounterService
     public function all(): array { return $this->pdo->query("SELECT e.*,COUNT(p.id) participant_count FROM combat_encounters e LEFT JOIN combat_participants p ON p.encounter_id=e.id GROUP BY e.id ORDER BY e.id DESC")->fetchAll(); }
     public function create(?string $name): int { $s=$this->pdo->prepare('INSERT INTO combat_encounters (name) VALUES (?)');$s->execute([$name ?: 'Neuer Kampf']);return (int)$this->pdo->lastInsertId(); }
     public function delete(int $id): void { $s=$this->pdo->prepare('DELETE FROM combat_encounters WHERE id=?');$s->execute([$id]);if($s->rowCount()!==1)throw new RuntimeException('Kampf nicht gefunden.'); }
+    public function clearLog(int $id): int { $check=$this->pdo->prepare('SELECT id FROM combat_encounters WHERE id=?');$check->execute([$id]);if(!$check->fetchColumn())throw new RuntimeException('Kampf nicht gefunden.');$s=$this->pdo->prepare('DELETE FROM combat_log WHERE encounter_id=?');$s->execute([$id]);return $s->rowCount(); }
     public function find(int $id): ?array
     {
         $s=$this->pdo->prepare('SELECT * FROM combat_encounters WHERE id=?');$s->execute([$id]);$e=$s->fetch();if(!$e)return null;
         $s=$this->pdo->prepare('SELECT * FROM combat_participants WHERE encounter_id=? ORDER BY initiative DESC,sort_order ASC,id ASC');$s->execute([$id]);$e['participants']=$s->fetchAll();
         foreach($e['participants'] as &$p){
+            $runtimeState=json_decode((string)($p['runtime_state_json']??'{}'),true)?:[];
+            $p['initiative_roll']=isset($runtimeState['initiative_roll'])?(int)$runtimeState['initiative_roll']:null;
             if($p['participant_type']==='boss'){$this->syncBossPhase($p);}
             $p['details']=$this->participantDetails($p);if($p['participant_type']==='character')$p['details']=array_merge($p['details'],$this->characterClassDetails((int)$p['reference_id']));
             if($p['participant_type']==='character'&&isset($p['details']['level']))$p['selected_level']=(int)$p['details']['level'];
@@ -49,15 +52,32 @@ final class EncounterService
         $maxHp=(int)($data['max_hp']??$profileMaxHp??0);if($type==='boss')$maxHp=(int)floor($maxHp*$bossHpMultiplier);if($maxHp<1)throw new RuntimeException('Die maximalen LP konnten für dieses Profil nicht aus den Regelwerkdaten ermittelt werden.');
         $count=$this->pdo->prepare('SELECT COUNT(*) FROM combat_participants WHERE encounter_id=? AND participant_type=? AND reference_id=?');$count->execute([$encounterId,$type,$reference]);$n=(int)$count->fetchColumn()+1;
         $name=trim((string)($data['display_name']??'')) ?: $entity['name'].($n>1?" #{$n}":'');
-        if($type==='boss'){$data['selected_phase']=1;$data['runtime_state_json']=Json::encode(['current_phase'=>1,'highest_phase_reached'=>1,'phase_mode'=>'auto','phase_override'=>false,'hp_multiplier'=>$bossHpMultiplier]);}
+        $runtimeState=json_decode((string)($data['runtime_state_json']??'{}'),true)?:[];$runtimeState['initiative_roll']=(int)$initiativeRoll;
+        if($type==='boss'){$data['selected_phase']=1;$runtimeState=array_merge($runtimeState,['current_phase'=>1,'highest_phase_reached'=>1,'phase_mode'=>'auto','phase_override'=>false,'hp_multiplier'=>$bossHpMultiplier]);}
         $s=$this->pdo->prepare('INSERT INTO combat_participants (encounter_id,participant_type,reference_id,display_name,initiative,selected_level,selected_phase,max_hp,current_hp,current_shield,sort_order,runtime_state_json) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)');
         $initialHp=$data['current_hp']??($type==='boss'?$maxHp:($entity['current_hp']??$maxHp));
-        $s->execute([$encounterId,$type,$reference,$name,$initiative,$level,$data['selected_phase']??null,$maxHp,max(0,(int)$initialHp),max(0,(float)($data['current_shield']??0)),(int)($data['sort_order']??0),$data['runtime_state_json']??Json::encode([])]);$id=(int)$this->pdo->lastInsertId();if($type==='character')$this->resourceService->createCombatSnapshot($id,(int)$reference);return$id;
+        $s->execute([$encounterId,$type,$reference,$name,$initiative,$level,$data['selected_phase']??null,$maxHp,max(0,(int)$initialHp),max(0,(float)($data['current_shield']??0)),(int)($data['sort_order']??0),Json::encode($runtimeState)]);$id=(int)$this->pdo->lastInsertId();if($type==='character')$this->resourceService->createCombatSnapshot($id,(int)$reference);return$id;
     }
     public function updateParticipant(int $encounterId,int $participantId,array $data): void
     {
         if(array_key_exists('current_hp',$data)){$this->setParticipantHp($encounterId,$participantId,$data['current_hp']);unset($data['current_hp']);}
         $allowed=['display_name','selected_phase','max_hp','sort_order'];$parts=[];$args=[];foreach($allowed as $key){if(array_key_exists($key,$data)){$parts[]="{$key}=?";$args[]=$data[$key];}}if(!$parts)return;$args[]=$encounterId;$args[]=$participantId;$s=$this->pdo->prepare('UPDATE combat_participants SET '.implode(',',$parts).' WHERE encounter_id=? AND id=?');$s->execute($args);
+    }
+    public function setParticipantInitiative(int $encounterId,int $participantId,mixed $roll): array
+    {
+        if(!is_numeric($roll)||!is_finite((float)$roll)||floor((float)$roll)!==(float)$roll||(float)$roll<1||(float)$roll>20)throw new RuntimeException('Der Initiative-Wurf muss eine ganze Zahl von 1 bis 20 sein.');
+        $s=$this->pdo->prepare('SELECT * FROM combat_participants WHERE encounter_id=? AND id=?');$s->execute([$encounterId,$participantId]);$participant=$s->fetch();if(!$participant)throw new RuntimeException('Kampfteilnehmer nicht gefunden.');
+        $ordered=$this->pdo->prepare('SELECT id FROM combat_participants WHERE encounter_id=? ORDER BY initiative DESC,sort_order ASC,id ASC');$ordered->execute([$encounterId]);$orderedIds=array_map('intval',$ordered->fetchAll(PDO::FETCH_COLUMN));$currentIndex=(int)$this->pdo->query('SELECT current_turn_index FROM combat_encounters WHERE id='.(int)$encounterId)->fetchColumn();$activeId=$orderedIds[$currentIndex]??null;
+        $type=(string)$participant['participant_type'];$reference=(string)$participant['reference_id'];$level=isset($participant['selected_level'])?(int)$participant['selected_level']:null;
+        if($type==='character'){$s=$this->pdo->prepare('SELECT name,level,max_hp,current_hp FROM characters WHERE id=?');$s->execute([(int)$reference]);}
+        elseif($type==='creature'){$s=$this->pdo->prepare('SELECT c.name,cl.max_hp,cl.max_hp current_hp,cl.attributes_json,cl.combat_values_json,cl.hp_calculation_json FROM creatures c JOIN creature_levels cl ON cl.creature_id=c.id WHERE c.id=? AND cl.level=?');$s->execute([$reference,$level]);}
+        else{$s=$this->pdo->prepare('SELECT b.name,bl.max_hp,bl.max_hp current_hp,bl.attribute_profiles_json,bl.phase_values_json,bl.combat_values_json,bl.hp_calculation_json FROM bosses b JOIN boss_levels bl ON bl.boss_id=b.id WHERE b.id=? AND bl.level=?');$s->execute([$reference,$level]);}
+        $entity=$s->fetch();if(!$entity)throw new RuntimeException('Regelobjekt oder Stufenprofil nicht gefunden.');
+        $initiative=$this->calculateInitiative($type,$reference,$roll,$entity);$state=json_decode((string)($participant['runtime_state_json']??'{}'),true)?:[];$state['initiative_roll']=(int)$roll;
+        $this->pdo->prepare('UPDATE combat_participants SET initiative=?,runtime_state_json=? WHERE encounter_id=? AND id=?')->execute([$initiative,Json::encode($state),$encounterId,$participantId]);
+        if($activeId!==null){$ordered->execute([$encounterId]);$newIndex=0;$found=false;foreach(array_map('intval',$ordered->fetchAll(PDO::FETCH_COLUMN)) as $index=>$id){if($id===$activeId){$newIndex=$index;$found=true;break;}}if($found)$this->pdo->prepare('UPDATE combat_encounters SET current_turn_index=? WHERE id=?')->execute([$newIndex,$encounterId]);}
+        $round=(int)$this->pdo->query('SELECT current_round FROM combat_encounters WHERE id='.(int)$encounterId)->fetchColumn();$message=sprintf('%s: Initiative neu gesetzt (W20 %d → Gesamt %d).',$participant['display_name'],(int)$roll,$initiative);$log=$this->pdo->prepare('INSERT INTO combat_log (encounter_id,round_number,participant_id,event_type,message,calculation_json) VALUES (?,?,?,?,?,?)');$log->execute([$encounterId,$round,$participantId,'initiative',$message,Json::encode(['initiative_roll'=>(int)$roll,'initiative'=>$initiative])]);
+        return ['initiative_roll'=>(int)$roll,'initiative'=>$initiative,'message'=>$message];
     }
     public function setParticipantHp(int $encounterId,int $participantId,mixed $value): array
     {
